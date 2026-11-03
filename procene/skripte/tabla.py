@@ -151,6 +151,13 @@ def main():
                     st[s] = dict(mu=x['mu'], var=x['var'], q=q, rpm=round(x['mu'] / e['min'], 4) if e['min'] else 0,
                                  A=P['A'][s], C=round(c_eff, 4), of=x['of'], pros=x['pros'], posl=x['poslednje'], linije=[],
                                  vatra=vatra([r for r in g if r['dan'] < u['dan']], s) if e['min'] >= 15 else None)
+                # zbir P+S+A: očekivanja se sabiraju; rasipanje sa umerenom međusobnom vezom (ρ = 0,3 kroz minute)
+                vs = [st[x]['var'] for x in 'PSA']
+                v_pra = sum(vs) + 2 * 0.3 * sum(math.sqrt(vs[i] * vs[j]) for i in range(3) for j in range(i + 1, 3))
+                mu_pra = round(sum(st[x]['mu'] for x in 'PSA'), 2)
+                st['PRA'] = dict(mu=mu_pra, var=round(v_pra, 2), q=percentili(mu_pra, v_pra), of=None,
+                                 pros=round(sum(st[x]['pros'] for x in 'PSA'), 2),
+                                 posl=[sum(t) for t in zip(*(st[x]['posl'] for x in 'PSA'))], linije=[], vatra=None)
                 igraci.append(dict(k=k, ime=ime, pos=e['pos'], n=e['n'], min=e['min'], min_cv=e['min_cv'],
                                    posl_min=e['poslednji_min'], prosla=e['prosla'], odsutan=odsutan,
                                    ne_igra=(rm == 0) or bool(sastav and k not in sastav),
