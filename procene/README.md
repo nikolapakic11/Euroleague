@@ -31,7 +31,8 @@ Sve skripte se pokreću iz korena repozitorijuma.
 | Podešavanje modela | `python3 procene/skripte/podesi.py --do-kola 6` | Parametri u `procene/model_parametri.json`, podešeni na učinke, ne na ponude. |
 | Provera | `python3 procene/skripte/provera.py` | `procene/provera/izvestaj.md`: model naspram kvota na svim ponudama od oktobra, preko i ispod. |
 | Tabla | `python3 procene/skripte/tabla.py --kolo 11 --dnevnik` | `procene/tabla/kolo11.json` i `.html` (objavljuje se kao artefakt) i dnevnik procena. |
-| Javni predlozi | `python3 procene/skripte/predlozi.py --kolo 11` | Posle table: bira predloge po pravilu (ispod, skokovi i asistencije, prednost ≥ 20%), zaključava ih na početku utakmice, upisuje ishode i pravi `procene/javno/predlozi.html`. |
+| Spajanje | `python3 procene/skripte/spajanje.py` | Posle provere: spaja model i kvote u jednu verovatnoću podešenu prema ishodima (`procene/spajanje.json`), sa testom na kolima 7 do 9. |
+| Javni predlozi | `python3 procene/skripte/predlozi.py --kolo 11` | Posle table: preko ili ispod, sve tri stavke; strana ulazi ako je spojena verovatnoća ≥ 55%, prednost ≥ 10%, kvota ≥ 1,40; jedan predlog po igraču (najizgledniji). Zaključava na početku utakmice, upisuje ishode, pravi `procene/javno/predlozi.html`. |
 | Ishodi | `python3 procene/skripte/dnevnik.py --kolo 11` | Upisuje stvarne učinke u dnevnik i ispisuje tačnost. |
 
 Ručni minuti i „ne igra“ za kolo: `procene/minuti.json`, npr. `{"11": {"nikola milutinov": 0}}` (ključ je ime malim slovima, bez kvačica).

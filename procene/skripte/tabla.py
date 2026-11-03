@@ -16,6 +16,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 import model
 from model import Baza, verovatnoca_preko, percentili, raspodela
 from zajedno import BAZA, PROCENE, BG, ucitaj, sacuvaj, tim, utakmice, pn
+import spajanje
 
 KLADIONICE = ('admiral', 'maxbet', 'mozzart', 'soccerbet')
 IME_KL = {'admiral': 'Admiral', 'maxbet': 'MaxBet', 'mozzart': 'Mozzart', 'soccerbet': 'Soccerbet'}
@@ -86,6 +87,8 @@ def main():
     rp = os.path.join(PROCENE, 'minuti.json')
     if os.path.exists(rp):
         rucno = ucitaj(rp).get(str(a.kolo), {})
+    sp_put = os.path.join(PROCENE, 'spajanje.json')
+    sp_w = ucitaj(sp_put)['w'] if os.path.exists(sp_put) else None
     dani = {u['dan'] for u in kolo}
     pon = ponude_za_dane(dani)
     poslednji_dan = max(r['dan'] for r in B.rows)
@@ -152,7 +155,8 @@ def main():
                 x = i['s'][p['s']]
                 pm = verovatnoca_preko(p['s'], x['mu'], x['var'], p['l'])
                 tr = (1 / p['o']) / (1 / p['u'] + 1 / p['o'])
-                x['linije'].append(dict(kl=kl, l=p['l'], u=p['u'], o=p['o'], m=p.get('m', 1), pm=round(pm, 4), tr=round(tr, 4)))
+                pc = spajanje.preko(sp_w, p['s'], pm, tr) if sp_w else pm
+                x['linije'].append(dict(kl=kl, l=p['l'], u=p['u'], o=p['o'], m=p.get('m', 1), pm=round(pm, 4), tr=round(tr, 4), pc=round(pc, 4)))
         # razilaženja: preko na nižoj granici kod jedne, ispod na višoj kod druge
         raz = []
         for st_i in stranice:
@@ -172,7 +176,7 @@ def main():
                          dom=u['dom'], gost=u['gost'], pocela=u['utc'] <= sada, strane=stranice, raz=raz,
                          snimci={IME_KL[k]: v for k, v in snimci.items()}, nepoznati=dict(nepoznati)))
     out = dict(kolo=a.kolo, napravljeno=sada.astimezone(BG).strftime('%d.%m.%Y. %H:%M'),
-               podaci_do=poslednji_dan, parametri=P.get('_podeseno', ''), kal=P.get('KAL', {}), utakmice=utak,
+               podaci_do=poslednji_dan, parametri=P.get('_podeseno', ''), kal=P.get('KAL', {}), sp_w=sp_w, utakmice=utak,
                kladionice=[IME_KL[k] for k in KLADIONICE])
     put = os.path.join(PROCENE, 'tabla', f'kolo{a.kolo}.json')
     sacuvaj(put, out, kompaktno=True)
@@ -209,7 +213,7 @@ def main():
                         dn['stavke'].append(dict(g=u['g'], dan=u['dan'], k=i['k'], ime=i['ime'], tim=st['tim'], s=s,
                                                  upisano=out['napravljeno'], podaci_do=poslednji_dan, min=i['min'],
                                                  mu=x['mu'], var=x['var'], q=x['q'],
-                                                 linije=[dict(kl=z['kl'], l=z['l'], u=z['u'], o=z['o'], pm=z['pm'], tr=z['tr']) for z in x['linije']]))
+                                                 linije=[dict(kl=z['kl'], l=z['l'], u=z['u'], o=z['o'], pm=z['pm'], tr=z['tr'], pc=z['pc']) for z in x['linije']]))
                         novo += 1
         sacuvaj(dp, dn, kompaktno=True)
         print('dnevnik: osveženih procena', novo, 'ukupno', len(dn['stavke']))

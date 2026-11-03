@@ -108,7 +108,7 @@ tr.ne-igra .igrac b{text-decoration:line-through;color:var(--muted)}
   <main id="sadrzaj" class="utak"></main>
   <footer class="legenda">
     <span><b>Očekivano</b> je procena modela za datu stavku. <b>Raspon</b>: tanka linija je 10. do 90. percentil, deblja 25. do 75., crta je sredina.</span>
-    <span>Kod svake kladionice: granica, kvote ispod i preko, verovatnoća koju model daje za preko i prednost bolje strane (verovatnoća × kvota − 1). Obojeno polje ima prednost iznad 5%, uokvireno je najbolja cena za tu stranu među kladionicama.</span>
+    <span>Kod svake kladionice: granica, kvote ispod i preko, spojena verovatnoća za preko (model i kvote, podešeno prema ishodima ranijih granica; u zagradi sam model) i prednost bolje strane (verovatnoća × kvota − 1). Obojeno polje ima prednost iznad 5%, uokvireno je najbolja cena za tu stranu među kladionicama.</span>
     <span>Minuti se mogu menjati: upiši broj i procena se odmah preračuna. Dugme „ne igra“ isključuje igrača (npr. povreda); ponovni klik ili „Vrati igrača“ ga vraća. Izmene ostaju samo u ovom pregledaču.</span>
     <span>Razilaženje: preko na nižoj granici kod jedne i ispod na višoj kod druge kladionice; navedena je verovatnoća da prođu obe.</span>
   </footer>
@@ -137,6 +137,8 @@ function pmf(mu,v){const n=Math.floor(mu+12*Math.sqrt(v)+20);const o=[];
   const s=o.reduce((a,b)=>a+b,0);return o.map(x=>x/s)}
 function preko(s,mu,v,l){const pm=pmf(mu,v);const pr=Math.floor(l)+1;let p=0;for(let i=pr;i<pm.length;i++)p+=pm[i];
   p=Math.min(Math.max(p,1e-5),1-1e-5);const k=(D.kal&&D.kal[s])||[0,1];const z=k[0]+k[1]*Math.log(p/(1-p));return 1/(1+Math.exp(-z))}
+function lgt(p){p=Math.min(Math.max(p,1e-4),1-1e-4);return Math.log(p/(1-p))}
+function spoji(s,pm,tr){const w=D.sp_w; if(!w)return pm; const z=w[0]+w[1]*lgt(pm)+w[2]*lgt(tr)+(s==='S'?w[3]:0)+(s==='A'?w[4]:0); return 1/(1+Math.exp(-z))}
 function perc(mu,v){const pm=pmf(mu,v);const q=[.1,.25,.5,.75,.9],o=[];let c=0,i=0;for(const t of q){while(i<pm.length&&c+pm[i]<t){c+=pm[i];i++}o.push(i)}return o}
 
 function stat(ig,s){
@@ -148,8 +150,8 @@ function stat(ig,s){
 }
 function linije(ig,s,st){
   return (ig.s[s].linije||[]).map(z=>{
-    const pm=st?preko(s,st.mu,st.v,z.l):z.pm; const evo=pm*z.o-1, evu=(1-pm)*z.u-1;
-    return Object.assign({},z,{pm,evo,evu,strana:evu>evo?'u':'o',ev:Math.max(evo,evu)});
+    const pm=st?preko(s,st.mu,st.v,z.l):z.pm; const pc=st?spoji(s,pm,z.tr):(z.pc??pm); const evo=pc*z.o-1, evu=(1-pc)*z.u-1;
+    return Object.assign({},z,{pm,pc,evo,evu,strana:evu>evo?'u':'o',ev:Math.max(evo,evu)});
   });
 }
 function rasponSvg(q,mu){
@@ -205,7 +207,7 @@ function crtaj(){
         const vr=gl.ev>.05?(gl.strana==='u'?'vr-u':'vr-o'):'';
         const naj=(gl.strana==='u'&&gl===najU&&L.length>1)||(gl.strana==='o'&&gl===najO&&L.length>1)?'naj':'';
         const altT=alt.length?`<span class="alt">još: ${alt.map(z=>zarez(z.l)+' ('+(z.strana==='u'?'ispod':'preko')+' '+(z.ev>=0?'+':'')+Math.round(z.ev*100)+'%)').join(', ')}</span>`:'';
-        return `<td><div class="lin ${vr} ${naj}"><span class="g">${zarez(gl.l)}</span><span class="k">${zarez(gl.u,2)} ispod · ${zarez(gl.o,2)} preko</span><span class="v">preko ${pct(gl.pm)} · <span class="${gl.strana}">${gl.strana==='u'?'ispod':'preko'} ${gl.ev>=0?'+':''}${Math.round(gl.ev*100)}%</span></span>${altT}</div></td>`;
+        return `<td><div class="lin ${vr} ${naj}"><span class="g">${zarez(gl.l)}</span><span class="k">${zarez(gl.u,2)} ispod · ${zarez(gl.o,2)} preko</span><span class="v">preko ${pct(gl.pc)} <span class="alt">(model ${pct(gl.pm)})</span> · <span class="${gl.strana}">${gl.strana==='u'?'ispod':'preko'} ${gl.ev>=0?'+':''}${Math.round(gl.ev*100)}%</span></span>${altT}</div></td>`;
       }).join('');
       return `<tr>${igr}${mn}${ok}${rs}${kol}</tr>`;
     }).join('');

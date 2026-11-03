@@ -1,4 +1,4 @@
-<title>Evroliga ispod</title>
+<title>Evroliga preko i ispod</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap">
@@ -51,6 +51,7 @@ p{margin:0;max-width:68ch}
 .ko .t{font-size:13.5px;color:var(--muted)}
 .tip{font:700 19px var(--f-disp);font-variant-numeric:tabular-nums}
 .tip .i{color:var(--accent)}
+.tip .pr{color:var(--plavo)}
 .brojke{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13.5px;color:var(--muted);font-variant-numeric:tabular-nums}
 .brojke b{color:var(--fg);font-weight:600}
 .status{justify-self:end;font:600 14px var(--f-disp);padding:5px 10px;border-radius:7px;white-space:nowrap;background:var(--sivo-soft);color:var(--muted);text-align:center}
@@ -74,8 +75,8 @@ a:focus-visible{outline:2px solid var(--plavo);outline-offset:2px}
 <div class="wrap">
   <header class="uvod">
     <span class="lbl">Evroliga 2026/27 · igrači</span>
-    <h1>Evroliga <span>ispod</span></h1>
-    <p id="opis">Predlozi po kolu za skokove i asistencije igrača Evrolige, iz statističkog modela i kvota više kladionica. Svaki predlog ostaje zabeležen sa ishodom.</p>
+    <h1>Evroliga <span>preko i ispod</span></h1>
+    <p id="opis">Predlozi po kolu za poene, skokove i asistencije igrača Evrolige, na preko ili ispod, gde god je jedna strana izglednija. Iz statističkog modela i kvota više kladionica; svaki predlog ostaje zabeležen sa ishodom.</p>
     <span class="meta" id="osvezeno"></span>
   </header>
 
@@ -105,7 +106,7 @@ a:focus-visible{outline:2px solid var(--plavo);outline-offset:2px}
   </footer>
 </div>
 
-<script type="application/json" id="podaci">{"osvezeno":"03.11.2026. 16:51","pravilo":{"prag":0.2,"kvota_min":1.5,"stavke":["skokovi","asistencije"]},"kladionice":{"admiral":"Admiral","maxbet":"MaxBet","mozzart":"Mozzart","soccerbet":"Soccerbet"},"kola":[{"kolo":11,"predlozi":[],"osvezeno":"03.11.2026. 16:51","utakmice":[{"g":102,"dom":"PAR","gost":"BAS","vreme":"11.11. 20:45","dan":"2026-11-11","ponude":[]},{"g":101,"dom":"PRS","gost":"ULK","vreme":"11.11. 20:45","dan":"2026-11-11","ponude":[]},{"g":103,"dom":"TEL","gost":"HTA","vreme":"12.11. 20:05","dan":"2026-11-12","ponude":[]},{"g":107,"dom":"OLY","gost":"DUB","vreme":"12.11. 20:15","dan":"2026-11-12","ponude":[]},{"g":105,"dom":"PAM","gost":"MUN","vreme":"12.11. 20:30","dan":"2026-11-12","ponude":[]},{"g":104,"dom":"MIL","gost":"ZAL","vreme":"12.11. 20:30","dan":"2026-11-12","ponude":[]},{"g":106,"dom":"MAD","gost":"RED","vreme":"12.11. 21:00","dan":"2026-11-12","ponude":[]},{"g":109,"dom":"IST","gost":"VIR","vreme":"13.11. 18:30","dan":"2026-11-13","ponude":[]},{"g":110,"dom":"PAN","gost":"BAR","vreme":"13.11. 20:15","dan":"2026-11-13","ponude":[]},{"g":108,"dom":"ASV","gost":"BES","vreme":"13.11. 20:30","dan":"2026-11-13","ponude":[]}]}],"unazad":{"kola":[{"kolo":4,"n":27,"prosao":18,"dobit":7.24},{"kolo":5,"n":38,"prosao":23,"dobit":10.82},{"kolo":6,"n":31,"prosao":20,"dobit":9.54},{"kolo":7,"n":36,"prosao":23,"dobit":9.49},{"kolo":8,"n":38,"prosao":20,"dobit":3.92},{"kolo":9,"n":46,"prosao":28,"dobit":12.26}],"n":216,"prosao":132,"dobit":53.27,"izvor":"Admiral i MaxBet, 8.10. do 30.10.2026, jedna kladionica po danu"}}</script>
+<script type="application/json" id="podaci">{"osvezeno":"03.11.2026. 17:03","pravilo":{"p_min":0.55,"ev_min":0.1,"kvota_min":1.4},"kladionice":{"admiral":"Admiral","maxbet":"MaxBet","mozzart":"Mozzart","soccerbet":"Soccerbet"},"kola":[{"kolo":11,"predlozi":[],"osvezeno":"03.11.2026. 17:03","utakmice":[{"g":102,"dom":"PAR","gost":"BAS","vreme":"11.11. 20:45","dan":"2026-11-11","ponude":[]},{"g":101,"dom":"PRS","gost":"ULK","vreme":"11.11. 20:45","dan":"2026-11-11","ponude":[]},{"g":103,"dom":"TEL","gost":"HTA","vreme":"12.11. 20:05","dan":"2026-11-12","ponude":[]},{"g":107,"dom":"OLY","gost":"DUB","vreme":"12.11. 20:15","dan":"2026-11-12","ponude":[]},{"g":105,"dom":"PAM","gost":"MUN","vreme":"12.11. 20:30","dan":"2026-11-12","ponude":[]},{"g":104,"dom":"MIL","gost":"ZAL","vreme":"12.11. 20:30","dan":"2026-11-12","ponude":[]},{"g":106,"dom":"MAD","gost":"RED","vreme":"12.11. 21:00","dan":"2026-11-12","ponude":[]},{"g":109,"dom":"IST","gost":"VIR","vreme":"13.11. 18:30","dan":"2026-11-13","ponude":[]},{"g":110,"dom":"PAN","gost":"BAR","vreme":"13.11. 20:15","dan":"2026-11-13","ponude":[]},{"g":108,"dom":"ASV","gost":"BES","vreme":"13.11. 20:30","dan":"2026-11-13","ponude":[]}]}],"unazad":{"opis":"koeficijenti iz kola 4–6, predlozi na kolima 7–9 (van podešavanja); Admiral i MaxBet, jedna kladionica po danu","kola":[{"kolo":7,"n":90,"prosao":60,"dobit":24.03,"preko":1,"ispod":89,"P":32,"S":32,"A":26},{"kolo":8,"n":90,"prosao":51,"dobit":7.53,"preko":0,"ispod":90,"P":34,"S":37,"A":19},{"kolo":9,"n":89,"prosao":48,"dobit":4.73,"preko":0,"ispod":89,"P":32,"S":33,"A":24}],"n":269,"prosao":159,"dobit":36.29,"preko":1,"ll_spojeno":0.6943,"ll_kvote":0.6887,"ll_model":0.7115}}</script>
 <script>
 (function(){
 const D=JSON.parse(document.getElementById('podaci').textContent);
@@ -117,9 +118,9 @@ const znak=x=>(x>=0?'+':'−')+z(Math.abs(x),2);
 document.getElementById('osvezeno').textContent='Osveženo '+D.osvezeno;
 const pr=D.pravilo;
 document.getElementById('pravilo').innerHTML=[
- 'Samo ispod, samo '+pr.stavke.join(' i ')+'. Preko i poeni ne ulaze: u proveri unazad nisu donosili ništa.',
- 'Prednost modela najmanje '+Math.round(pr.prag*100)+'%: verovatnoća za ispod puta kvota, minus 1.',
- 'Kvota najmanje '+z(pr.kvota_min,2)+'. Uzima se kladionica i granica sa najvećom prednošću.',
+ 'Za svaku granicu se računa verovatnoća za preko i za ispod: procena modela spojena sa kvotama i podešena prema stvarnim ishodima ranijih granica. Obe strane i sve tri stavke prolaze isti test.',
+ 'Strana ulazi ako je njena verovatnoća najmanje '+Math.round(pr.p_min*100)+'% i prednost najmanje '+Math.round(pr.ev_min*100)+'% (verovatnoća puta kvota, minus 1), uz kvotu najmanje '+z(pr.kvota_min,2)+'.',
+ 'Od svega što prođe, za igrača se uzima najizglednija strana i granica, kod kladionice sa najboljom kvotom.',
  'Igrač sa bar 3 utakmice ove sezone, koji je igrao sve 3 poslednje utakmice svog tima.',
  'Najviše jedan predlog po igraču u utakmici. Broj predloga po kolu nije unapred određen.'
 ].map(t=>'<li>'+esc(t)+'</li>').join('');
@@ -149,13 +150,13 @@ function crtajKolo(n){
   let h=`<div class="kolo-zag"><h2>${k.kolo}. kolo</h2><span class="meta">${P.length} predloga${g.length?` · prošlo ${g.filter(p=>p.prosao).length} od ${g.length} · ${znak(d)} jed.`:''} · osveženo ${esc(k.osvezeno||'')}</span></div>`;
   const ut=(k.utakmice||[]).slice();
   for(const u of ut){
-    const pp=P.filter(p=>p.g===u.g).sort((a,b)=>b.ev-a.ev);
+    const pp=P.filter(p=>p.g===u.g).sort((a,b)=>(b.pp??b.pu)-(a.pp??a.pu));
     h+=`<section class="utak"><div class="utak-zag"><h3>${u.dom} <span>–</span> ${u.gost}</h3><span class="meta">${esc(u.vreme)}</span></div>`;
     if(!pp.length){h+=`<div class="prazno">${u.ponude&&u.ponude.length?'Nijedna granica ne prolazi pravilo.':'Ponude se kače na dan utakmice; predlozi stižu tada.'}</div>`}
     for(const p of pp){
       h+=`<div class="pred"><div class="ko"><b>${esc(p.ime)}</b><span class="t">${p.tim} protiv ${p.prot}</span>
-        <span class="tip">${S[p.s]} <span class="i">ispod ${z(p.l)}</span> · ${z(p.kvota,2)}</span>
-        <span class="brojke"><span>${esc(D.kladionice[p.kl]||p.kl)}</span><span>model ispod <b>${Math.round(p.pu*100)}%</b></span><span>prednost <b>+${Math.round(p.ev*100)}%</b></span><span>očekivano ${z(p.mu)}</span></span></div>${status(p)}</div>`;
+        <span class="tip">${S[p.s]} <span class="${p.strana==='o'?'pr':'i'}">${p.strana==='o'?'preko':'ispod'} ${z(p.l)}</span> · ${z(p.kvota,2)}</span>
+        <span class="brojke"><span>${esc(D.kladionice[p.kl]||p.kl)}</span><span>verovatnoća <b>${Math.round((p.pp??p.pu)*100)}%</b></span><span>prednost <b>+${Math.round(p.ev*100)}%</b></span><span>očekivano ${z(p.mu)}</span></span></div>${status(p)}</div>`;
     }
     h+='</section>';
   }
@@ -169,10 +170,10 @@ window.addEventListener('hashchange',izHasha); izHasha();
 // provera unazad
 if(D.unazad&&D.unazad.n){
   const U=D.unazad; document.getElementById('unazad-blok').hidden=false;
-  document.getElementById('unazad-opis').textContent=`Isto pravilo primenjeno na ranije ponude (${U.izvor}). Pravilo je izabrano posle gledanja ovih podataka, pa je ovo gornja granica, a ne obećanje. Pravi test su kola od objavljivanja.`;
-  document.getElementById('unazad').innerHTML='<tr><th>Kolo</th><th>Predloga</th><th>Prošlo</th><th>Jedinica</th></tr>'+
-   U.kola.map(k=>`<tr><td>${k.kolo}.</td><td>${k.n}</td><td>${k.prosao} (${Math.round(k.prosao/k.n*100)}%)</td><td class="${k.dobit>=0?'plus':'minus'}">${znak(k.dobit)}</td></tr>`).join('')+
-   `<tr><td><b>Ukupno</b></td><td><b>${U.n}</b></td><td><b>${U.prosao} (${Math.round(U.prosao/U.n*100)}%)</b></td><td class="${U.dobit>=0?'plus':'minus'}"><b>${znak(U.dobit)}</b> (${(U.dobit>=0?'+':'−')+Math.abs(Math.round(U.dobit/U.n*1000)/10).toLocaleString('sr-RS')}%)</td></tr>`;
+  document.getElementById('unazad-opis').textContent=`Isto pravilo na ranijim ponudama: ${U.opis}. Spajanje je podešeno samo na kolima 4 do 6, a predlozi su provereni na kolima 7 do 9 koje nije videlo. Granice preko su u oktobru bile preskupe, pa je preko izašlo samo ${U.preko} put. Pravi test su kola od objavljivanja.`;
+  document.getElementById('unazad').innerHTML='<tr><th>Kolo</th><th>Predloga</th><th>Poeni / skokovi / asist.</th><th>Prošlo</th><th>Jedinica</th></tr>'+
+   U.kola.map(k=>`<tr><td>${k.kolo}.</td><td>${k.n}</td><td>${k.P} / ${k.S} / ${k.A}</td><td>${k.prosao} (${Math.round(k.prosao/k.n*100)}%)</td><td class="${k.dobit>=0?'plus':'minus'}">${znak(k.dobit)}</td></tr>`).join('')+
+   `<tr><td><b>Ukupno</b></td><td><b>${U.n}</b></td><td></td><td><b>${U.prosao} (${Math.round(U.prosao/U.n*100)}%)</b></td><td class="${U.dobit>=0?'plus':'minus'}"><b>${znak(U.dobit)}</b> (${(U.dobit>=0?'+':'−')+Math.abs(Math.round(U.dobit/U.n*1000)/10).toLocaleString('sr-RS')}%)</td></tr>`;
 }
 })();
 </script>

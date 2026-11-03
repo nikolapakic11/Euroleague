@@ -1,0 +1,67 @@
+{
+ "w": [
+  -0.0467,
+  0.214,
+  0.7521,
+  -0.2467,
+  -0.2014
+ ],
+ "w_kola_4_6": [
+  -0.1071,
+  0.4539,
+  0.2912,
+  -0.1856,
+  -0.1585
+ ],
+ "n_granica": 1907,
+ "pravilo": {
+  "p_min": 0.55,
+  "ev_min": 0.1,
+  "kvota_min": 1.4
+ },
+ "test": {
+  "opis": "koeficijenti iz kola 4–6, predlozi na kolima 7–9 (van podešavanja); Admiral i MaxBet, jedna kladionica po danu",
+  "kola": [
+   {
+    "kolo": 7,
+    "n": 90,
+    "prosao": 60,
+    "dobit": 24.03,
+    "preko": 1,
+    "ispod": 89,
+    "P": 32,
+    "S": 32,
+    "A": 26
+   },
+   {
+    "kolo": 8,
+    "n": 90,
+    "prosao": 51,
+    "dobit": 7.53,
+    "preko": 0,
+    "ispod": 90,
+    "P": 34,
+    "S": 37,
+    "A": 19
+   },
+   {
+    "kolo": 9,
+    "n": 89,
+    "prosao": 48,
+    "dobit": 4.73,
+    "preko": 0,
+    "ispod": 89,
+    "P": 32,
+    "S": 33,
+    "A": 24
+   }
+  ],
+  "n": 269,
+  "prosao": 159,
+  "dobit": 36.29,
+  "preko": 1,
+  "ll_spojeno": 0.6943,
+  "ll_kvote": 0.6887,
+  "ll_model": 0.7115
+ }
+}
