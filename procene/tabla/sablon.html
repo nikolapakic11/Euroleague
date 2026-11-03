@@ -53,7 +53,10 @@ table{border-collapse:collapse;width:100%;min-width:860px;font-variant-numeric:t
 th{font:600 12px var(--f-disp);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
 td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
 tr:last-child td{border-bottom:0}
-tr.ne-igra td{opacity:.45}
+tr.ne-igra td{background:var(--bg)}
+tr.ne-igra .igrac b{text-decoration:line-through;color:var(--muted)}
+.min button[aria-pressed="true"]{background:var(--ispod-soft);color:var(--ispod);border-color:var(--ispod)}
+.vrati{border:0;background:none;color:var(--accent);font:inherit;text-decoration:underline;cursor:pointer;padding:0}
 .igrac{display:flex;flex-direction:column;gap:3px;min-width:150px}
 .igrac b{font-weight:600}
 .chips{display:flex;flex-wrap:wrap;gap:4px}
@@ -106,7 +109,7 @@ tr.ne-igra td{opacity:.45}
   <footer class="legenda">
     <span><b>Očekivano</b> je procena modela za datu stavku. <b>Raspon</b>: tanka linija je 10. do 90. percentil, deblja 25. do 75., crta je sredina.</span>
     <span>Kod svake kladionice: granica, kvote ispod i preko, verovatnoća koju model daje za preko i prednost bolje strane (verovatnoća × kvota − 1). Obojeno polje ima prednost iznad 5%, uokvireno je najbolja cena za tu stranu među kladionicama.</span>
-    <span>Minuti se mogu menjati: procena se odmah preračuna. Izmene ostaju samo u ovom pregledaču. „Ne igra“ sklanja igrača iz procene.</span>
+    <span>Minuti se mogu menjati: upiši broj i procena se odmah preračuna. Dugme „ne igra“ isključuje igrača (npr. povreda); ponovni klik ili „Vrati igrača“ ga vraća. Izmene ostaju samo u ovom pregledaču.</span>
     <span>Razilaženje: preko na nižoj granici kod jedne i ispod na višoj kod druge kladionice; navedena je verovatnoća da prođu obe.</span>
   </footer>
 </div>
@@ -191,8 +194,8 @@ function crtaj(){
       const posl=ig.s[s].posl.join(' · ');
       const minV=(rucno[ig.k]!==undefined&&rucno[ig.k]!==null)?rucno[ig.k]:'';
       const igr=`<td><div class="igrac"><b>${esc(ig.ime)}</b><div class="chips">${chips.join('')}</div><span class="alt">poslednje: ${posl} (min ${ig.posl_min.join(' · ')})</span></div></td>`;
-      const mn=`<td><div class="min"><input type="number" min="0" max="45" step="1" id="m-${ig.k.replace(/\W/g,'_')}" data-k="${esc(ig.k)}" value="${minV}" placeholder="${zarez(ig.min)}" aria-label="Minuti za ${esc(ig.ime)}"><button data-ni="${esc(ig.k)}">${neIgra?'igra':'ne igra'}</button></div></td>`;
-      if(!x)return `<tr class="ne-igra">${igr}${mn}<td colspan="${2+KL.length}" class="prazno">ne igra</td></tr>`;
+      const mn=`<td><div class="min"><input type="number" min="0" max="45" step="1" id="m-${ig.k.replace(/\W/g,'_')}" data-k="${esc(ig.k)}" value="${minV}" placeholder="${zarez(ig.min)}" aria-label="Minuti za ${esc(ig.ime)}"><button data-ni="${esc(ig.k)}" aria-pressed="${neIgra}" title="Isključi igrača iz procene">${neIgra?'ne igra ✓':'ne igra'}</button></div></td>`;
+      if(!x)return `<tr class="ne-igra">${igr}${mn}<td colspan="${2+KL.length}" class="prazno">Označen da ne igra, procena je sklonjena. <button class="vrati" data-ni="${esc(ig.k)}">Vrati igrača</button></td></tr>`;
       const ok=`<td><div class="ocek">${zarez(x.mu)}<small>prosek ${zarez(ig.s[s].pros)} · protivnik ×${zarez(ig.s[s].of,2)}</small></div></td>`;
       const rs=`<td><div class="rasp">${rasponSvg(x.q,x.mu)}<div class="br"><span>${x.q[0]}</span><span>${x.q[1]}–${x.q[3]}</span><span>${x.q[4]}</span></div></div></td>`;
       const najO=L.reduce((a,b)=>(!a||b.evo>a.evo)?b:a,null), najU=L.reduce((a,b)=>(!a||b.evu>a.evu)?b:a,null);

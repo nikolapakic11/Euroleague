@@ -15,7 +15,7 @@ Procene igrača Evrolige zasnovane na statistici i kontekstu, bez tipova i bez t
 1. Model raspona (umesto „da li minus prolazi“) i provera na ponudama od oktobra, za pluseve i minuse.
 2. Preuzimanje ponuda: Soccerbet direktno, Admiral i MaxBet preko postojećih pomoćnika, Mozzart novi pomoćnik.
 3. Probna tabla za kolo 11 (11. do 13.11.2026) i dnevnik procena od tog kola.
-4. Do kraja sezone samo za Nikolu; javno tek ako procene drže i ima interesovanja.
+4. Javna stranica sa predlozima po kolu od kola 11 (odluka 3.11.2026), sa svim ishodima.
 
 Ovaj folder koristi samo `baza/`. Ništa iz `minusi/`.
 
@@ -31,10 +31,12 @@ Sve skripte se pokreću iz korena repozitorijuma.
 | Podešavanje modela | `python3 procene/skripte/podesi.py --do-kola 6` | Parametri u `procene/model_parametri.json`, podešeni na učinke, ne na ponude. |
 | Provera | `python3 procene/skripte/provera.py` | `procene/provera/izvestaj.md`: model naspram kvota na svim ponudama od oktobra, preko i ispod. |
 | Tabla | `python3 procene/skripte/tabla.py --kolo 11 --dnevnik` | `procene/tabla/kolo11.json` i `.html` (objavljuje se kao artefakt) i dnevnik procena. |
+| Javni predlozi | `python3 procene/skripte/predlozi.py --kolo 11` | Posle table: bira predloge po pravilu (ispod, skokovi i asistencije, prednost ≥ 20%), zaključava ih na početku utakmice, upisuje ishode i pravi `procene/javno/predlozi.html`. |
 | Ishodi | `python3 procene/skripte/dnevnik.py --kolo 11` | Upisuje stvarne učinke u dnevnik i ispisuje tačnost. |
 
 Ručni minuti i „ne igra“ za kolo: `procene/minuti.json`, npr. `{"11": {"nikola milutinov": 0}}` (ključ je ime malim slovima, bez kvačica).
 
 Tabla za kolo 11: https://claude.ai/artifact/P3awRXNbkBvDErZ8Jug9vZ
+Javna stranica sa predlozima: https://claude.ai/artifact/HUT71aS4AnLVknR6pKgpDv (javna kad se uključi deljenje u meniju Share)
 
 Model ukratko: očekivani minuti × učinak po minutu (ova sezona, skupljena ka prošloj sezoni, pa ka proseku pozicije) × odbrana protivnika prema poziciji × tempo; raspodela je negativna binomna. Detalji u `procene/skripte/model.py`.

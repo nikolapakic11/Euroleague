@@ -1,0 +1,178 @@
+<title>Evroliga ispod</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Raspored: naslov i učinak, kartice kola, predlozi po utakmici, pravilo i provera unazad, napomena */
+:root{
+  --bg:#f3f5f7; --panel:#ffffff; --fg:#16202a; --muted:#5b6977; --line:#d9e0e7;
+  --accent:#c4501f; --accent-soft:#f8e6dc; --plavo:#1d5aa8; --plavo-soft:#e2ebf7;
+  --dobro:#1f7a55; --dobro-soft:#e0f1e8; --lose:#b3302f; --lose-soft:#f8e1e0; --sivo-soft:#eceff3;
+  --f-disp:"Barlow Semi Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e141a; --panel:#161d25; --fg:#e6ebf0; --muted:#95a3b0; --line:#29343f;
+  --accent:#f08a55; --accent-soft:#3a2216; --plavo:#77a9ee; --plavo-soft:#1a2a3f;
+  --dobro:#5ec997; --dobro-soft:#14302a; --lose:#f07c7a; --lose-soft:#3a1c1c; --sivo-soft:#202a34; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e141a; --panel:#161d25; --fg:#e6ebf0; --muted:#95a3b0; --line:#29343f;
+  --accent:#f08a55; --accent-soft:#3a2216; --plavo:#77a9ee; --plavo-soft:#1a2a3f;
+  --dobro:#5ec997; --dobro-soft:#14302a; --lose:#f07c7a; --lose-soft:#3a1c1c; --sivo-soft:#202a34; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:16px/1.5 var(--f-body)}
+.wrap{max-width:880px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 56px;display:flex;flex-direction:column;gap:22px}
+h1,h2,h3{font-family:var(--f-disp);margin:0;text-wrap:balance}
+h1{font-size:40px;font-weight:800;letter-spacing:.005em;line-height:1.05}
+h1 span{color:var(--accent)}
+h2{font-size:24px;font-weight:700}
+h3{font-size:18px;font-weight:600}
+p{margin:0;max-width:68ch}
+.lbl{font:600 12px var(--f-disp);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.uvod{display:flex;flex-direction:column;gap:10px}
+.uvod p{color:var(--muted)}
+.ucinak{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.ucinak div{background:var(--panel);padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+.ucinak b{font:700 26px var(--f-disp);font-variant-numeric:tabular-nums}
+.ucinak small{color:var(--muted);font-size:13px}
+.kola{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px}
+.kola a{flex:0 0 auto;font:600 15px var(--f-disp);text-decoration:none;color:var(--fg);border:1px solid var(--line);background:var(--panel);border-radius:8px;padding:7px 14px}
+.kola a[aria-current="page"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.kolo{display:flex;flex-direction:column;gap:14px}
+.kolo-zag{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 14px}
+.meta{color:var(--muted);font-size:14px}
+.utak{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.utak-zag{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 12px;padding:11px 16px;border-bottom:1px solid var(--line)}
+.utak-zag h3 span{color:var(--muted);font-weight:500}
+.prazno{padding:12px 16px;color:var(--muted);font-size:14.5px}
+.pred{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 16px;padding:12px 16px;border-top:1px solid var(--line);align-items:center}
+.pred:first-of-type{border-top:0}
+.ko{display:flex;flex-direction:column;gap:2px;min-width:0}
+.ko b{font-weight:600}
+.ko .t{font-size:13.5px;color:var(--muted)}
+.tip{font:700 19px var(--f-disp);font-variant-numeric:tabular-nums}
+.tip .i{color:var(--accent)}
+.brojke{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.brojke b{color:var(--fg);font-weight:600}
+.status{justify-self:end;font:600 14px var(--f-disp);padding:5px 10px;border-radius:7px;white-space:nowrap;background:var(--sivo-soft);color:var(--muted);text-align:center}
+.status.da{background:var(--dobro-soft);color:var(--dobro)}
+.status.ne{background:var(--lose-soft);color:var(--lose)}
+.blok{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.blok ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.skrol{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;font-size:14.5px}
+th{font:600 12px var(--f-disp);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:right;padding:6px 10px;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+td{text-align:right;padding:6px 10px;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+.plus{color:var(--dobro)} .minus{color:var(--lose)}
+.napomena{font-size:13.5px;color:var(--muted);display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:16px}
+a{color:var(--plavo)}
+a:focus-visible{outline:2px solid var(--plavo);outline-offset:2px}
+@media (max-width:600px){h1{font-size:32px}.ucinak{grid-template-columns:repeat(2,minmax(0,1fr))}.pred{grid-template-columns:minmax(0,1fr)}.status{justify-self:start}}
+</style>
+
+<div class="wrap">
+  <header class="uvod">
+    <span class="lbl">Evroliga 2026/27 · igrači</span>
+    <h1>Evroliga <span>ispod</span></h1>
+    <p id="opis">Predlozi po kolu za skokove i asistencije igrača Evrolige, iz statističkog modela i kvota više kladionica. Svaki predlog ostaje zabeležen sa ishodom.</p>
+    <span class="meta" id="osvezeno"></span>
+  </header>
+
+  <section aria-labelledby="uc-n" style="display:flex;flex-direction:column;gap:8px">
+    <span class="lbl" id="uc-n">Učinak od početka objavljivanja</span>
+    <div class="ucinak" id="ucinak"></div>
+  </section>
+
+  <nav class="kola" id="kola" aria-label="Kola"></nav>
+  <main id="kolo" class="kolo"></main>
+
+  <section class="blok">
+    <h2>Pravilo</h2>
+    <ul id="pravilo"></ul>
+    <p class="meta">Verovatnoća je procena modela: očekivani minuti, učinak igrača u ovoj i prošloj sezoni, odbrana protivnika prema poziciji i tempo. Predlozi za utakmicu se zaključavaju kad utakmica počne.</p>
+  </section>
+
+  <section class="blok" id="unazad-blok" hidden>
+    <h2>Provera unazad</h2>
+    <p class="meta" id="unazad-opis"></p>
+    <div class="skrol"><table id="unazad"></table></div>
+  </section>
+
+  <footer class="napomena">
+    <span>Samo za punoletne. Ovo nisu saveti za klađenje ni garancija ishoda; kvote i granice se menjaju posle objavljivanja. Igre na sreću mogu izazvati zavisnost: igrajte odgovorno i samo novcem koji možete da izgubite.</span>
+    <span>Povraćaj je računat na ravan ulog od jedne jedinice po predlogu, po kvoti iz trenutka objavljivanja. Igrač koji ne uđe u igru: predlog se ne računa.</span>
+  </footer>
+</div>
+
+<script type="application/json" id="podaci">{"osvezeno":"03.11.2026. 16:51","pravilo":{"prag":0.2,"kvota_min":1.5,"stavke":["skokovi","asistencije"]},"kladionice":{"admiral":"Admiral","maxbet":"MaxBet","mozzart":"Mozzart","soccerbet":"Soccerbet"},"kola":[{"kolo":11,"predlozi":[],"osvezeno":"03.11.2026. 16:51","utakmice":[{"g":102,"dom":"PAR","gost":"BAS","vreme":"11.11. 20:45","dan":"2026-11-11","ponude":[]},{"g":101,"dom":"PRS","gost":"ULK","vreme":"11.11. 20:45","dan":"2026-11-11","ponude":[]},{"g":103,"dom":"TEL","gost":"HTA","vreme":"12.11. 20:05","dan":"2026-11-12","ponude":[]},{"g":107,"dom":"OLY","gost":"DUB","vreme":"12.11. 20:15","dan":"2026-11-12","ponude":[]},{"g":105,"dom":"PAM","gost":"MUN","vreme":"12.11. 20:30","dan":"2026-11-12","ponude":[]},{"g":104,"dom":"MIL","gost":"ZAL","vreme":"12.11. 20:30","dan":"2026-11-12","ponude":[]},{"g":106,"dom":"MAD","gost":"RED","vreme":"12.11. 21:00","dan":"2026-11-12","ponude":[]},{"g":109,"dom":"IST","gost":"VIR","vreme":"13.11. 18:30","dan":"2026-11-13","ponude":[]},{"g":110,"dom":"PAN","gost":"BAR","vreme":"13.11. 20:15","dan":"2026-11-13","ponude":[]},{"g":108,"dom":"ASV","gost":"BES","vreme":"13.11. 20:30","dan":"2026-11-13","ponude":[]}]}],"unazad":{"kola":[{"kolo":4,"n":27,"prosao":18,"dobit":7.24},{"kolo":5,"n":38,"prosao":23,"dobit":10.82},{"kolo":6,"n":31,"prosao":20,"dobit":9.54},{"kolo":7,"n":36,"prosao":23,"dobit":9.49},{"kolo":8,"n":38,"prosao":20,"dobit":3.92},{"kolo":9,"n":46,"prosao":28,"dobit":12.26}],"n":216,"prosao":132,"dobit":53.27,"izvor":"Admiral i MaxBet, 8.10. do 30.10.2026, jedna kladionica po danu"}}</script>
+<script>
+(function(){
+const D=JSON.parse(document.getElementById('podaci').textContent);
+const S={S:'Skokovi',A:'Asistencije',P:'Poeni'};
+const z=(x,d=1)=>Number(x).toLocaleString('sr-RS',{minimumFractionDigits:d,maximumFractionDigits:d});
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const znak=x=>(x>=0?'+':'−')+z(Math.abs(x),2);
+
+document.getElementById('osvezeno').textContent='Osveženo '+D.osvezeno;
+const pr=D.pravilo;
+document.getElementById('pravilo').innerHTML=[
+ 'Samo ispod, samo '+pr.stavke.join(' i ')+'. Preko i poeni ne ulaze: u proveri unazad nisu donosili ništa.',
+ 'Prednost modela najmanje '+Math.round(pr.prag*100)+'%: verovatnoća za ispod puta kvota, minus 1.',
+ 'Kvota najmanje '+z(pr.kvota_min,2)+'. Uzima se kladionica i granica sa najvećom prednošću.',
+ 'Igrač sa bar 3 utakmice ove sezone, koji je igrao sve 3 poslednje utakmice svog tima.',
+ 'Najviše jedan predlog po igraču u utakmici. Broj predloga po kolu nije unapred određen.'
+].map(t=>'<li>'+esc(t)+'</li>').join('');
+
+// učinak (samo objavljena kola)
+const sve=D.kola.flatMap(k=>k.predlozi);
+const gotovi=sve.filter(p=>p.prosao===true||p.prosao===false);
+const prosli=gotovi.filter(p=>p.prosao).length;
+const dobit=gotovi.reduce((a,p)=>a+(p.prosao?p.kvota-1:-1),0);
+document.getElementById('ucinak').innerHTML=gotovi.length?
+ `<div><span class="lbl">Predloga</span><b>${gotovi.length}</b><small>sa ishodom</small></div>
+  <div><span class="lbl">Prošlo</span><b>${prosli}</b><small>${Math.round(prosli/gotovi.length*100)}%</small></div>
+  <div><span class="lbl">Jedinica</span><b class="${dobit>=0?'plus':'minus'}">${znak(dobit)}</b><small>ulog 1 po predlogu</small></div>
+  <div><span class="lbl">Povraćaj</span><b class="${dobit>=0?'plus':'minus'}">${(dobit>=0?'+':'−')+Math.abs(Math.round(dobit/gotovi.length*1000)/10).toLocaleString('sr-RS')}%</b><small>na uloženo</small></div>`
+ :`<div style="grid-column:1/-1"><b style="font-size:20px">Još nema ishoda</b><small>Prvi rezultati posle prvog objavljenog kola. Do tada pogledaj proveru unazad ispod.</small></div>`;
+
+function status(p){
+  if(p.nije_igrao)return '<span class="status">nije igrao</span>';
+  if(p.prosao===true)return `<span class="status da">prošao · ${p.ishod}</span>`;
+  if(p.prosao===false)return `<span class="status ne">pao · ${p.ishod}</span>`;
+  return '<span class="status">čeka</span>';
+}
+function crtajKolo(n){
+  const k=D.kola.find(x=>x.kolo===n)||D.kola[D.kola.length-1]; if(!k){document.getElementById('kolo').innerHTML='<p class="meta">Još nema objavljenih kola.</p>';return}
+  document.querySelectorAll('#kola a').forEach(a=>a.setAttribute('aria-current',+a.dataset.k===k.kolo?'page':'false'));
+  const P=k.predlozi; const g=P.filter(p=>p.prosao===true||p.prosao===false); const d=g.reduce((a,p)=>a+(p.prosao?p.kvota-1:-1),0);
+  let h=`<div class="kolo-zag"><h2>${k.kolo}. kolo</h2><span class="meta">${P.length} predloga${g.length?` · prošlo ${g.filter(p=>p.prosao).length} od ${g.length} · ${znak(d)} jed.`:''} · osveženo ${esc(k.osvezeno||'')}</span></div>`;
+  const ut=(k.utakmice||[]).slice();
+  for(const u of ut){
+    const pp=P.filter(p=>p.g===u.g).sort((a,b)=>b.ev-a.ev);
+    h+=`<section class="utak"><div class="utak-zag"><h3>${u.dom} <span>–</span> ${u.gost}</h3><span class="meta">${esc(u.vreme)}</span></div>`;
+    if(!pp.length){h+=`<div class="prazno">${u.ponude&&u.ponude.length?'Nijedna granica ne prolazi pravilo.':'Ponude se kače na dan utakmice; predlozi stižu tada.'}</div>`}
+    for(const p of pp){
+      h+=`<div class="pred"><div class="ko"><b>${esc(p.ime)}</b><span class="t">${p.tim} protiv ${p.prot}</span>
+        <span class="tip">${S[p.s]} <span class="i">ispod ${z(p.l)}</span> · ${z(p.kvota,2)}</span>
+        <span class="brojke"><span>${esc(D.kladionice[p.kl]||p.kl)}</span><span>model ispod <b>${Math.round(p.pu*100)}%</b></span><span>prednost <b>+${Math.round(p.ev*100)}%</b></span><span>očekivano ${z(p.mu)}</span></span></div>${status(p)}</div>`;
+    }
+    h+='</section>';
+  }
+  document.getElementById('kolo').innerHTML=h;
+}
+const nav=document.getElementById('kola');
+nav.innerHTML=D.kola.map(k=>`<a href="#kolo-${k.kolo}" data-k="${k.kolo}">${k.kolo}. kolo</a>`).join('');
+function izHasha(){const m=location.hash.match(/^#kolo-(\d+)$/);crtajKolo(m?+m[1]:(D.kola.length?D.kola[D.kola.length-1].kolo:0))}
+window.addEventListener('hashchange',izHasha); izHasha();
+
+// provera unazad
+if(D.unazad&&D.unazad.n){
+  const U=D.unazad; document.getElementById('unazad-blok').hidden=false;
+  document.getElementById('unazad-opis').textContent=`Isto pravilo primenjeno na ranije ponude (${U.izvor}). Pravilo je izabrano posle gledanja ovih podataka, pa je ovo gornja granica, a ne obećanje. Pravi test su kola od objavljivanja.`;
+  document.getElementById('unazad').innerHTML='<tr><th>Kolo</th><th>Predloga</th><th>Prošlo</th><th>Jedinica</th></tr>'+
+   U.kola.map(k=>`<tr><td>${k.kolo}.</td><td>${k.n}</td><td>${k.prosao} (${Math.round(k.prosao/k.n*100)}%)</td><td class="${k.dobit>=0?'plus':'minus'}">${znak(k.dobit)}</td></tr>`).join('')+
+   `<tr><td><b>Ukupno</b></td><td><b>${U.n}</b></td><td><b>${U.prosao} (${Math.round(U.prosao/U.n*100)}%)</b></td><td class="${U.dobit>=0?'plus':'minus'}"><b>${znak(U.dobit)}</b> (${(U.dobit>=0?'+':'−')+Math.abs(Math.round(U.dobit/U.n*1000)/10).toLocaleString('sr-RS')}%)</td></tr>`;
+}
+})();
+</script>
