@@ -54,7 +54,13 @@ class Baza:
     """Učitani rows.json i pomoćni indeksi."""
 
     def __init__(self, rows=None):
-        rows = rows if rows is not None else ucitaj(os.path.join(BAZA, 'rows.json'))
+        if rows is None:
+            rows = ucitaj(os.path.join(BAZA, 'rows.json'))
+            # dopuna: završene utakmice koje još nisu u baza/rows.json (procene/skripte/dopuna.py)
+            dp = os.path.join(os.path.dirname(__file__), '..', 'podaci', 'dopuna.json')
+            if os.path.exists(dp):
+                u_bazi = {r['g'] for r in rows}
+                rows = rows + [r for r in ucitaj(dp) if r['g'] not in u_bazi]
         for r in rows:
             r['dan'] = r['d'][:10]
         self.rows = sorted(rows, key=lambda r: (r['d'], r['g']))

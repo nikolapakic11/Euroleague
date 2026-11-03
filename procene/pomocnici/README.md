@@ -12,7 +12,10 @@ Upotreba:
 1. Otvori mozzartbet.com, idi na Košarka, Evroliga, ponuda igrača.
 2. Klikni obeleživač. Dole desno se pojavi panel.
 3. Proklikni utakmice ili igrače da stranica učita ponudu (panel broji uhvaćene odgovore, granice i igrače).
-4. „Izvezi“ preuzima `mozzart_<datum>_<vreme>.json` u formatu v2. Pošalji ga u razgovor za procene, ide u `baza/ponude/mozzart/`.
+4. „Izvezi“ preuzima `<datum>_mozzart_<vreme>.json` u formatu v2.
+5. Okači fajl na GitHub u `baza/ponude/mozzart/` (u aplikaciji ili na sajtu: Add file → Upload files), ili ga pošalji u razgovor za procene. Sledeće zakazano pokretanje ga uzima automatski.
+
+Isto važi za Admiral i MaxBet: fajl iz njihovih pomoćnika ide u `baza/ponude/admiral/` odnosno `baza/ponude/maxbet/`; ime može biti bilo koje dok sadrži datum (npr. `2026-11-04_a.json`).
 
 Ako panel pokazuje 0 granica iako je ponuda otvorena: klikni „Sirovo“ i pošalji taj fajl. Na osnovu njega se čitač prilagodi tačnom Mozzartovom formatu. Prva verzija čitača je napravljena bez pristupa Mozzartu, pa je prvi pravi snimak ujedno i provera.
 

@@ -7,18 +7,18 @@
 :root{
   --bg:#f4f6f8; --panel:#ffffff; --fg:#17212b; --muted:#5d6b79; --line:#dbe1e7;
   --accent:#17212b; --plus:#1d5aa8; --plus-soft:#e2ebf7; --minus:#c4501f; --minus-soft:#f8e6dc;
-  --warn:#9a6a00; --warn-soft:#fbf0d4; --bar:#c9d3de; --bar-in:#8fa3b8; --vatra:#e0531f; --vatra-in:#f6b13a;
+  --warn:#9a6a00; --warn-soft:#fbf0d4; --bar:#c9d3de; --bar-in:#8fa3b8; --vatra:#e0531f; --vatra-in:#f6b13a; --mat-lako:#1f7a55; --mat-lako-soft:#e0f1e8; --mat-tesko:#7a4b9a; --mat-tesko-soft:#efe6f6;
   --f-disp:"Barlow Semi Condensed","Arial Narrow",system-ui,sans-serif;
   --f-body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#0f151c; --panel:#161e27; --fg:#e4eaf0; --muted:#93a2b1; --line:#2a3542;
   --accent:#e4eaf0; --plus:#77a9ee; --plus-soft:#1a2a3f; --minus:#f08a55; --minus-soft:#3a2216;
-  --warn:#e3b54a; --warn-soft:#352a12; --bar:#33414f; --bar-in:#5f7489; --vatra:#ff7a3d; --vatra-in:#ffc75a; color-scheme:dark}}
+  --warn:#e3b54a; --warn-soft:#352a12; --bar:#33414f; --bar-in:#5f7489; --vatra:#ff7a3d; --vatra-in:#ffc75a; --mat-lako:#5ec997; --mat-lako-soft:#14302a; --mat-tesko:#c39be3; --mat-tesko-soft:#2c2138; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0f151c; --panel:#161e27; --fg:#e4eaf0; --muted:#93a2b1; --line:#2a3542;
   --accent:#e4eaf0; --plus:#77a9ee; --plus-soft:#1a2a3f; --minus:#f08a55; --minus-soft:#3a2216;
-  --warn:#e3b54a; --warn-soft:#352a12; --bar:#33414f; --bar-in:#5f7489; --vatra:#ff7a3d; --vatra-in:#ffc75a; color-scheme:dark}
+  --warn:#e3b54a; --warn-soft:#352a12; --bar:#33414f; --bar-in:#5f7489; --vatra:#ff7a3d; --vatra-in:#ffc75a; --mat-lako:#5ec997; --mat-lako-soft:#14302a; --mat-tesko:#c39be3; --mat-tesko-soft:#2c2138; color-scheme:dark}
 body{background:var(--bg);color:var(--fg);font:15px/1.45 var(--f-body)}
 .wrap{max-width:1240px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px;display:flex;flex-direction:column;gap:18px}
 h1,h2,h3{font-family:var(--f-disp);margin:0;text-wrap:balance;letter-spacing:.01em}
@@ -84,6 +84,10 @@ tr.ne-igra td{background:var(--bg);color:var(--muted)}
 .vat .tt{position:absolute;left:50%;bottom:calc(100% + 6px);transform:translateX(-50%);width:max-content;max-width:240px;background:var(--fg);color:var(--bg);font:12.5px/1.35 var(--f-body);padding:6px 9px;border-radius:6px;white-space:normal;text-align:left;z-index:5;pointer-events:none;opacity:0;visibility:hidden}
 .vat:hover .tt,.vat:focus .tt,.vat:focus-within .tt{opacity:1;visibility:visible}
 .vat:focus-visible{outline:2px solid var(--vatra);outline-offset:2px}
+.mat{display:inline-block;font:12px/1.3 var(--f-body);padding:2px 6px;border-radius:5px;margin-top:3px}
+.mat.lako{background:var(--mat-lako-soft);color:var(--mat-lako)}
+.mat.tesko{background:var(--mat-tesko-soft);color:var(--mat-tesko)}
+.pom{display:block;font-size:11.5px;color:var(--warn);font-weight:600}
 .legenda{font-size:13px;color:var(--muted);display:flex;flex-direction:column;gap:4px;max-width:78ch}
 @media (max-width:600px){h1{font-size:25px}input[type=search]{width:100%}}
 </style>
@@ -109,7 +113,7 @@ tr.ne-igra td{background:var(--bg);color:var(--muted)}
     <span><b>Minuti</b> su prosek igrača u ovoj sezoni. Pozicija: bek, krilo ili centar. Plamen pored imena: igrač je u formi u izabranoj stavci (poslednje 3 utakmice bar 30% iznad ranijeg proseka); detalji na prelaz mišem ili dodir. <b>Očekivano</b> je procena modela za datu stavku. <b>Raspon</b>: tanka linija je 10. do 90. percentil, deblja 25. do 75., crta je sredina.</span>
     <span><b>Smer</b> pokazuje predlog za tu stavku ako ga ima: <b>▲ PLUS</b> (preko) ili <b>▼ MINUS</b> (ispod), po istim pravilima kao javna stranica. Kod kladionice koja daje taj predlog polje je obojeno i označeno.</span>
     <span>Kod svake kladionice: granica, kvote ispod i preko, spojena verovatnoća za preko (model i kvote, podešeno prema ishodima ranijih granica; u zagradi sam model).</span>
-    <span>Razilaženje: preko na nižoj granici kod jedne i ispod na višoj kod druge kladionice; navedena je verovatnoća da prođu obe.</span>
+    <span>Oznaka protivnika: koliko protivnik dozvoljava igračima te pozicije u toj stavci u odnosu na prosek lige (prikazano od ±12%). Žuto „granica 5,5 → 4,5“: glavna granica se pomerila od prvog snimka tog dana. Razilaženje: preko na nižoj granici kod jedne i ispod na višoj kod druge kladionice; navedena je verovatnoća da prođu obe.</span>
   </footer>
 </div>
 
@@ -133,6 +137,10 @@ function vatraIkona(v,s){if(!v)return '';const t=`U formi: poslednje 3 utakmice 
 
 
 // predlog za granicu po pravilima javne stranice: 'o' (PLUS), 'u' (MINUS) ili null
+const POZM={G:'bekovima',F:'krilima',C:'centrima'}, SNM={P:'poena',S:'skokova',A:'asistencija'};
+function matchup(of,pos,s){if(of==null||Math.abs(of-1)<0.12)return '';const p=Math.round((of-1)*100);
+ return `<span class="mat ${p>0?'lako':'tesko'}" title="Koliko ovaj protivnik dozvoljava ${POZM[pos]||'igračima na ovoj poziciji'} u ${SNM[s]}, u odnosu na prosek lige">protivnik ${p>0?'dozvoljava':'brani'} ${POZM[pos]||''} ${p>0?'+':'−'}${Math.abs(p)}% ${SNM[s]}</span>`}
+function pomeraj(z){if(z.l0==null)return '';const g=z.l>z.l0;return `<span class="pom" title="Glavna granica se pomerila od prvog snimka tog dana">granica ${zarez(z.l0)} → ${zarez(z.l)} ${g?'↑':'↓'}</span>`}
 function linije(ig,s){
   return (ig.s[s].linije||[]).map(z=>{
     const pc=z.pc??z.pm, pu=1-pc, evu=pu*z.u-1, raz=z.pm-z.tr;
@@ -162,7 +170,7 @@ function crtajTraku(){
 function crtaj(){
   const u=D.utakmice[stanje.g], s=stanje.s;
   const ima=Object.keys(u.snimci||{});
-  let h=`<div class="utak-zag"><h2>${u.dom} – ${u.gost}</h2><span class="meta">${u.vreme} · ponude: ${ima.length?ima.map(k=>esc(k)+' ('+new Date(u.snimci[k]).toLocaleString('sr-RS',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})+')').join(', '):'još nema snimaka za ovaj dan'}</span></div>`;
+  let h=`<div class="utak-zag"><h2>${u.dom} – ${u.gost}</h2><span class="meta">${u.vreme}${u.sastav?' · sastavi objavljeni':''} · ponude: ${ima.length?ima.map(k=>esc(k)+' ('+new Date(u.snimci[k]).toLocaleString('sr-RS',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})+')').join(', '):'još nema snimaka za ovaj dan'}</span></div>`;
   const raz=(u.raz||[]).filter(r=>r.s===s);
   if(raz.length){h+=`<section class="raz"><h3>Razilaženja granica</h3><ul>`+raz.map(r=>`<li><b>${esc(r.ime)}</b> (${r.tim}): preko ${zarez(r.preko.l)} kod ${IME[r.preko.kl]} @${zarez(r.preko.o,2)}, ispod ${zarez(r.ispod.l)} kod ${IME[r.ispod.kl]} @${zarez(r.ispod.u,2)} · obe prolaze ${pct(r.p_obe)}</li>`).join('')+`</ul></section>`;}
   for(const st of u.strane){
@@ -178,15 +186,15 @@ function crtaj(){
     const telo=red.map(({ig,L,sm})=>{
       const x=ig.s[s];
       const chips=[];
-      if(ig.ne_igra)chips.push(`<span class="chip w">ne igra</span>`);
+      if(ig.ne_igra)chips.push(`<span class="chip w">${ig.razlog==='nije u sastavu'?'nije u sastavu':'ne igra'}</span>`);
       if(ig.odsutan)chips.push(`<span class="chip w">nije igrao ${ig.odsutan} od posl. 3</span>`);
       if(ig.n<3)chips.push(`<span class="chip w">${ig.n} utak.</span>`);
       if(!ig.prosla)chips.push(`<span class="chip">bez prošle sezone</span>`);
       chips.push(`<span class="chip">${POZ[ig.pos]||ig.pos}</span>`);
       const igr=`<td><div class="igrac"><b>${esc(ig.ime)}${vatraIkona(x.vatra,s)}</b><div class="chips">${chips.join('')}</div><span class="alt">poslednje: ${x.posl.join(' · ')} (min ${ig.posl_min.join(' · ')})</span></div></td>`;
       const mn=`<td><div class="min">${zarez(ig.min)}<small>${ig.n} utak.</small></div></td>`;
-      if(ig.ne_igra)return `<tr class="ne-igra">${igr}${mn}<td colspan="${3+KL.length}">ne igra, procena nije rađena</td></tr>`;
-      const ok=`<td><div class="ocek">${zarez(x.mu)}<small>prosek ${zarez(x.pros)} · protivnik ×${zarez(x.of,2)}</small></div></td>`;
+      if(ig.ne_igra)return `<tr class="ne-igra">${igr}${mn}<td colspan="${3+KL.length}">ne igra${ig.razlog==='nije u sastavu'?' (nije u objavljenom sastavu)':''}, procena nije rađena</td></tr>`;
+      const ok=`<td><div class="ocek">${zarez(x.mu)}<small>prosek ${zarez(x.pros)}</small>${matchup(x.of,ig.pos,s)}</div></td>`;
       const rs=`<td><div class="rasp">${rasponSvg(x.q,x.mu)}<div class="br"><span>${x.q[0]}</span><span>${x.q[1]}–${x.q[3]}</span><span>${x.q[4]}</span></div></div></td>`;
       const smt=sm?`<td><span class="smer ${sm.s}"><span>${sm.s==='o'?'▲':'▼'}</span>${sm.s==='o'?'PLUS':'MINUS'}<small>${sm.s==='o'?'preko':'ispod'} ${zarez(sm.z.l)} · ${IME[sm.z.kl]}</small></span></td>`
                   :`<td><span class="smer n">${L.length?'nema':'—'}</span></td>`;
@@ -196,7 +204,7 @@ function crtaj(){
         const alt=zz.filter(z=>z!==gl);
         const zn=gl.pred==='o'?'<span class="zn">▲ PLUS</span>':gl.pred==='u'?'<span class="zn">▼ MINUS</span>':'';
         const altT=alt.length?`<span class="alt">još: ${alt.map(z=>zarez(z.l)+(z.pred?(z.pred==='o'?' ▲':' ▼'):'')).join(', ')}</span>`:'';
-        return `<td><div class="lin ${gl.pred||''}">${zn}<span class="g">${zarez(gl.l)}</span><span class="k">${zarez(gl.u,2)} ispod · ${zarez(gl.o,2)} preko</span><span class="v">preko ${pct(gl.pc)} <span class="alt">(model ${pct(gl.pm)})</span></span>${altT}</div></td>`;
+        return `<td><div class="lin ${gl.pred||''}">${zn}<span class="g">${zarez(gl.l)}</span>${pomeraj(gl)}<span class="k">${zarez(gl.u,2)} ispod · ${zarez(gl.o,2)} preko</span><span class="v">preko ${pct(gl.pc)} <span class="alt">(model ${pct(gl.pm)})</span></span>${altT}</div></td>`;
       }).join('');
       return `<tr>${igr}${mn}${ok}${rs}${smt}${kol}</tr>`;
     }).join('');

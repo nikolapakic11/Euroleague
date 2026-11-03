@@ -205,7 +205,7 @@
   function izvezi() {
     var picks = citaj();
     if (!picks.length) { poruka('Nije pronađena nijedna granica. Otvori ponudu igrača Evrolige, sačekaj da se učita i pokušaj ponovo. Ako i dalje ne radi, preuzmi „Sirovo“ i pošalji ga.'); return; }
-    preuzmi('mozzart_' + dan() + '_' + satMin() + '.json', { v: 2, src: 'mozzart', at: new Date().toISOString(), pomocnik: V, picks: picks, el: null });
+    preuzmi(dan() + '_mozzart_' + satMin() + '.json', { v: 2, src: 'mozzart', at: new Date().toISOString(), pomocnik: V, picks: picks, el: null });
     poruka('Izvezeno: ' + picks.length + ' granica, ' + new Set(picks.map(function (x) { return x.p; })).size + ' igrača.');
   }
   function sirovo() {

@@ -5,7 +5,7 @@
 Za svaku utakmicu kola i svakog igrača koji je igrao ove sezone:
   očekivano i raspon za P, S, A; ponude svih kladionica za dan utakmice (poslednji snimak),
   verovatnoća za preko i ispod na svakoj granici, najbolja cena i razilaženja granica.
-Minuti su prosek ove sezone (model.PAR['MINUTI']). Izuzeci (povreda, „ne igra“) samo kroz procene/minuti.json, npr.
+Minuti su prosek ove sezone (model.PAR['MINUTI']). Igrač koji nije u objavljenom sastavu (sastavi.py) ne igra. Izuzeci (povreda, „ne igra“) samo kroz procene/minuti.json, npr.
   {"11": {"nikola milutinov": 0, "facundo campazzo": 22}}
 Izlaz: procene/tabla/kolo<N>.json (podaci) i procene/tabla/kolo<N>.html (stranica table, iz sablon.html).
 --dnevnik: upisuje procene za utakmice koje još nisu počele u procene/dnevnik/kolo<N>.json;
@@ -15,7 +15,7 @@ import argparse, collections, datetime as dt, glob, json, math, os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
 import model
 from model import Baza, verovatnoca_preko, percentili, raspodela
-from zajedno import BAZA, PROCENE, BG, ucitaj, sacuvaj, tim, utakmice, pn
+from zajedno import kljuc_snimka, BAZA, PROCENE, BG, ucitaj, sacuvaj, tim, utakmice, pn
 import spajanje
 
 KLADIONICE = ('admiral', 'maxbet', 'mozzart', 'soccerbet')
@@ -32,13 +32,15 @@ def dan_ponude(p, rezerva):
 
 
 def ponude_za_dane(dani):
-    """{(kladionica, dan): (snimak_vreme, [picks])} — poslednji snimak koji sadrži taj dan."""
+    """{(kladionica, dan): (snimak_vreme, [picks], [picks prvog snimka tog dana])} — poslednji snimak koji sadrži taj dan."""
     out = {}
     for kl in KLADIONICE:
-        for f in sorted(glob.glob(os.path.join(BAZA, 'ponude', kl, '*.json'))):
+        for f in sorted(glob.glob(os.path.join(BAZA, 'ponude', kl, '*.json')), key=kljuc_snimka):
             ime = os.path.basename(f)
-            if not re.match(r'\d{4}-\d{2}-\d{2}', ime):
+            md = re.search(r'\d{4}-\d{2}-\d{2}', ime)      # npr. 2026-11-04_a.json ili mozzart_2026-11-04_1630.json
+            if not md:
                 continue
+            ime = ime[md.start():]
             j = ucitaj(f)
             if 'picks' not in j:
                 continue
@@ -47,7 +49,8 @@ def ponude_za_dane(dani):
                 po[dan_ponude(p, ime[:10])].append(p)
             for d, lst in po.items():
                 if d in dani:
-                    out[(kl, d)] = (j.get('at'), lst)
+                    prvi = out[(kl, d)][2] if (kl, d) in out else lst
+                    out[(kl, d)] = (j.get('at'), lst, prvi)
     return out
 
 
@@ -109,6 +112,8 @@ def main():
     dani = {u['dan'] for u in kolo}
     pon = ponude_za_dane(dani)
     poslednji_dan = max(r['dan'] for r in B.rows)
+    sp_sast = os.path.join(PROCENE, 'podaci', 'sastavi.json')
+    sastavi = ucitaj(sp_sast) if os.path.exists(sp_sast) else {}
     sada = dt.datetime.now(dt.timezone.utc)
 
     # odigrane utakmice po timu (za „nije igrao poslednjih N“)
@@ -128,6 +133,7 @@ def main():
             kljucevi = {k for k in kljucevi if B.byk[k][-1]['team'] == kod or k in ros.get(kod, {})}
             igraci = []
             poslednje3 = tim_g[kod][-3:]
+            sastav = set((sastavi.get(str(u['g'])) or {}).get(kod) or [])
             for k in kljucevi:
                 g = B.byk[k]
                 ime = lepo_ime(ros.get(kod, {}).get(k, (g[-1]['name'], ''))[0])
@@ -147,7 +153,9 @@ def main():
                                  vatra=vatra([r for r in g if r['dan'] < u['dan']], s) if e['min'] >= 15 else None)
                 igraci.append(dict(k=k, ime=ime, pos=e['pos'], n=e['n'], min=e['min'], min_cv=e['min_cv'],
                                    posl_min=e['poslednji_min'], prosla=e['prosla'], odsutan=odsutan,
-                                   ne_igra=(rm == 0), rucno_min=rm if rm not in (None, 0) else None, s=st))
+                                   ne_igra=(rm == 0) or bool(sastav and k not in sastav),
+                                   razlog=('nije u sastavu' if sastav and k not in sastav else 'ručno' if rm == 0 else None),
+                                   rucno_min=rm if rm not in (None, 0) else None, s=st))
             igraci.sort(key=lambda x: -x['min'])
             stranice.append(dict(tim=kod, prot=prot, igraci=igraci))
         # ponude
@@ -157,7 +165,12 @@ def main():
         for kl in KLADIONICE:
             if (kl, u['dan']) not in pon:
                 continue
-            at, picks = pon[(kl, u['dan'])]
+            at, picks, prvi = pon[(kl, u['dan'])]
+            # glavne granice iz prvog snimka dana, za kretanje granice
+            prve = {}
+            for p in prvi:
+                if p.get('m', 1) and p.get('s') in ('P', 'S', 'A'):
+                    prve[(p['p'].lower(), p['s'])] = p['l']
             for p in picks:
                 if p.get('s') not in ('P', 'S', 'A') or not p.get('u') or not p.get('o'):
                     continue
@@ -174,7 +187,11 @@ def main():
                 pm = verovatnoca_preko(p['s'], x['mu'], x['var'], p['l'])
                 tr = (1 / p['o']) / (1 / p['u'] + 1 / p['o'])
                 pc = spajanje.preko(sp_w, p['s'], pm, tr) if sp_w else pm
-                x['linije'].append(dict(kl=kl, l=p['l'], u=p['u'], o=p['o'], m=p.get('m', 1), pm=round(pm, 4), tr=round(tr, 4), pc=round(pc, 4)))
+                lin = dict(kl=kl, l=p['l'], u=p['u'], o=p['o'], m=p.get('m', 1), pm=round(pm, 4), tr=round(tr, 4), pc=round(pc, 4))
+                l0 = prve.get((p['p'].lower(), p['s']))
+                if p.get('m', 1) and l0 is not None and l0 != p['l']:
+                    lin['l0'] = l0                     # granica se pomerila od prvog snimka dana
+                x['linije'].append(lin)
         # razilaženja: preko na nižoj granici kod jedne, ispod na višoj kod druge
         raz = []
         for st_i in stranice:
@@ -192,6 +209,7 @@ def main():
                                         p_obe=round(sred, 3)))
         utak.append(dict(g=u['g'], dan=u['dan'], vreme=u['utc'].astimezone(BG).strftime('%d.%m. %H:%M'),
                          dom=u['dom'], gost=u['gost'], pocela=u['utc'] <= sada, strane=stranice, raz=raz,
+                         sastav=(sastavi.get(str(u['g'])) or {}).get('at'),
                          snimci={IME_KL[k]: v for k, v in snimci.items()}, nepoznati=dict(nepoznati)))
     out = dict(kolo=a.kolo, napravljeno=sada.astimezone(BG).strftime('%d.%m.%Y. %H:%M'),
                podaci_do=poslednji_dan, parametri=P.get('_podeseno', ''), kal=P.get('KAL', {}), sp_w=sp_w, pravilo=sp_j.get('pravilo'), utakmice=utak,

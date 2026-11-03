@@ -88,7 +88,7 @@ def utakmice():
     out = []
     for x in ucitaj(os.path.join(BAZA, 'games.json'))['data']:
         u = dt.datetime.fromisoformat(x['utcDate'].replace('Z', '+00:00'))
-        out.append(dict(g=x['gameCode'], r=x['round'], utc=u, dan=u.astimezone(BG).date().isoformat(),
+        out.append(dict(g=x['gameCode'], r=x['round'], utc=u, dan=u.astimezone(BG).date().isoformat(), lok=x['date'],
                         dom=x['local']['club']['code'], gost=x['road']['club']['code'], odigrana=x['played']))
     return out
 
@@ -112,3 +112,10 @@ def sledece_slovo(folder, dan):
         if not os.path.exists(os.path.join(folder, f'{dan}_{s}.json')):
             return s
     raise RuntimeError('previše snimaka za ' + dan)
+
+
+def kljuc_snimka(f):
+    """Redosled snimaka ponude po datumu i oznaci iz imena fajla (datum može biti bilo gde u imenu)."""
+    ime = os.path.basename(f)
+    m = re.search(r'\d{4}-\d{2}-\d{2}.*', ime)
+    return m.group(0) if m else ime

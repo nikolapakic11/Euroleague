@@ -34,7 +34,8 @@ def izaberi(tabla, w):
                         p = spajanje.preko(w, s, z['pm'], z['tr'])
                         osn = dict(id=(u['g'], i['k']), g=u['g'], dan=u['dan'], vreme=u['vreme'], k=i['k'], ime=i['ime'],
                                    tim=st['tim'], prot=st['prot'], s=s, l=z['l'], kl=z['kl'], pm=z['pm'], tr=z['tr'],
-                                   mu=i['s'][s]['mu'], min=i['min'], vatra=i['s'][s].get('vatra'))
+                                   mu=i['s'][s]['mu'], min=i['min'], vatra=i['s'][s].get('vatra'),
+                                   pos=i['pos'], of=i['s'][s]['of'], l0=z.get('l0'))
                         kand.append(dict(osn, strana='o', pp=p, ev=p * z['o'] - 1, k_=z['o'], raz=z['pm'] - z['tr']))
                         kand.append(dict(osn, strana='u', pp=1 - p, ev=(1 - p) * z['u'] - 1, k_=z['u'], raz=z['tr'] - z['pm']))
     for c in kand:
@@ -90,7 +91,11 @@ def main():
         sacuvaj(f, st)
         kola.append(st)
 
-    stranica = dict(osvezeno=sada, pravilo=sp['pravilo'], kladionice=IME_KL, kola=kola, unazad=sp['test'])
+    from zajedno import utakmice
+    sad = dt.datetime.now(dt.timezone.utc)
+    buduce = sorted([u for u in utakmice() if u['utc'] > sad - dt.timedelta(hours=3)], key=lambda u: u['utc'])
+    tekuce = buduce[0]['r'] if buduce else None
+    stranica = dict(osvezeno=sada, pravilo=sp['pravilo'], kladionice=IME_KL, kola=kola, unazad=sp['test'], tekuce=tekuce)
     sab = open(os.path.join(PROCENE, 'javno', 'sablon.html'), encoding='utf-8').read()
     js = json.dumps(stranica, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
     with open(os.path.join(PROCENE, 'javno', 'predlozi.html'), 'w', encoding='utf-8') as f:

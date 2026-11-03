@@ -16,7 +16,7 @@ import collections, glob, json, math, os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
 import model
 from model import Baza, verovatnoca_preko, percentili
-from zajedno import BAZA, PROCENE, ucitaj, sacuvaj, tim
+from zajedno import kljuc_snimka, BAZA, PROCENE, ucitaj, sacuvaj, tim
 
 MESECI = re.compile(r'(\d{1,2})\.\s*(\d{1,2})\.\s*(\d{4})')
 
@@ -41,10 +41,12 @@ def ponude():
     # snimci po kladionicama: poslednji snimak dana
     for kl in ('admiral', 'maxbet', 'soccerbet', 'mozzart'):
         po_danu = collections.defaultdict(list)
-        for f in sorted(glob.glob(os.path.join(BAZA, 'ponude', kl, '*.json'))):
+        for f in sorted(glob.glob(os.path.join(BAZA, 'ponude', kl, '*.json')), key=kljuc_snimka):
             ime = os.path.basename(f)
-            if not re.match(r'\d{4}-\d{2}-\d{2}', ime):
+            md = re.search(r'\d{4}-\d{2}-\d{2}', ime)
+            if not md:
                 continue
+            ime = ime[md.start():]
             j = ucitaj(f)
             if 'picks' not in j:
                 continue
