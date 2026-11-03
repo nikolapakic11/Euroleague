@@ -118,7 +118,7 @@ th.sort[aria-sort]{color:var(--fg)}
       <button data-v="u" aria-pressed="true">Po utakmici</button><button data-v="svi" aria-pressed="false">Svi igrači u kolu</button>
     </div>
     <div class="seg" id="stavke" role="group" aria-label="Stavka">
-      <button data-s="P" aria-pressed="true">Poeni</button><button data-s="S" aria-pressed="false">Skokovi</button><button data-s="A" aria-pressed="false">Asistencije</button><button data-s="PRA" aria-pressed="false">P+S+A</button>
+      <button data-s="P" aria-pressed="true">Poeni</button><button data-s="S" aria-pressed="false">Skokovi</button><button data-s="A" aria-pressed="false">Asistencije</button>
     </div>
     <label class="chk"><input type="checkbox" id="samoLinije"> samo igrači sa granicom</label>
     <label class="chk"><input type="checkbox" id="samoPredlozi"> samo PLUS i MINUS</label>
@@ -130,8 +130,8 @@ th.sort[aria-sort]{color:var(--fg)}
     <label class="pol">Najmanje minuta <input type="number" id="fMin" min="0" max="40" step="1" value="0"></label>
     <label class="chk"><input type="checkbox" id="fForma"> u formi (plamen)</label>
     <label class="pol">Sortiraj <select id="fSort">
-      <option value="min">minuti</option><option value="PRA">očekivano P+S+A</option><option value="P">očekivano poeni</option><option value="S">očekivano skokovi</option><option value="A">očekivano asistencije</option>
-      <option value="rPRA">raspon P+S+A</option><option value="rP">raspon poeni</option><option value="rS">raspon skokovi</option><option value="rA">raspon asistencije</option>
+      <option value="min">minuti</option><option value="P">očekivano poeni</option><option value="S">očekivano skokovi</option><option value="A">očekivano asistencije</option>
+      <option value="rP">raspon poeni</option><option value="rS">raspon skokovi</option><option value="rA">raspon asistencije</option>
       <option value="pred">predlozi (najjači prvo)</option><option value="vreme">vreme utakmice</option><option value="ime">ime</option>
     </select></label>
     <button class="smer-btn" id="fSmer" aria-label="Promeni smer sortiranja">opadajuće ↓</button>
@@ -140,7 +140,7 @@ th.sort[aria-sort]{color:var(--fg)}
   <main id="sadrzaj" class="utak"></main>
   <footer class="legenda">
     <span><b>Minuti</b> su prosek igrača u ovoj sezoni. Pozicija: bek, krilo ili centar. Plamen pored imena: igrač je u formi u izabranoj stavci (poslednje 3 utakmice bar 30% iznad ranijeg proseka); detalji na prelaz mišem ili dodir. <b>Očekivano</b> je procena modela za datu stavku. <b>Raspon</b>: tanka linija je 10. do 90. percentil, deblja 25. do 75., crta je sredina.</span>
-    <span><b>Svi igrači u kolu</b>: jedna tabela za celo kolo sa poenima, skokovima, asistencijama i zbirom P+S+A (očekivano, raspon 10. do 90. percentil i sredina), filterima po timu, poziciji, minutima i formi, i sortiranjem (klik na naslov kolone ili izbor „Sortiraj“). Zbir P+S+A sabira očekivanja; raspon zbira je približan.</span>
+    <span><b>Svi igrači u kolu</b>: jedna tabela za celo kolo sa poenima, skokovima i asistencijama (očekivano, raspon 10. do 90. percentil i sredina), filterima po timu, poziciji, minutima i formi, i sortiranjem (klik na naslov kolone ili izbor „Sortiraj“).</span>
     <span><b>Smer</b> pokazuje predlog za tu stavku ako ga ima: <b>▲ PLUS</b> (preko) ili <b>▼ MINUS</b> (ispod), po istim pravilima kao javna stranica. Kod kladionice koja daje taj predlog polje je obojeno i označeno.</span>
     <span>Kod svake kladionice: granica, kvote ispod i preko, spojena verovatnoća za preko (model i kvote, podešeno prema ishodima ranijih granica; u zagradi sam model).</span>
     <span>Oznaka protivnika: koliko protivnik dozvoljava igračima te pozicije u toj stavci u odnosu na prosek lige (prikazano od ±12%). Žuto „granica 5,5 → 4,5“: glavna granica se pomerila od prvog snimka tog dana. Razilaženje: preko na nižoj granici kod jedne i ispod na višoj kod druge kladionice; navedena je verovatnoća da prođu obe.</span>
@@ -161,8 +161,8 @@ try{const h=location.hash.slice(1); const i=D.utakmice.findIndex(u=>'g'+u.g===h)
 const zarez=(x,d=1)=>Number(x).toLocaleString('sr-RS',{minimumFractionDigits:d,maximumFractionDigits:d});
 const pct=x=>Math.round(x*100)+'%';
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const SNAZ={P:'poena',S:'skokova',A:'asistencija',PRA:'poena, skokova i asistencija'};
-const SKR={P:'Poeni',S:'Skokovi',A:'Asistencije',PRA:'P+S+A'};
+const SNAZ={P:'poena',S:'skokova',A:'asistencija'};
+const SKR={P:'Poeni',S:'Skokovi',A:'Asistencije'};
 function vatraIkona(v,s){if(!v)return '';const t=`U formi: poslednje 3 utakmice ${v.l3.join(', ')} ${SNAZ[s]} (prosek ${zarez(v.a3)}), a ranije ${zarez(v.ap)}${v.pct!=null?' (+'+v.pct+'%)':''}. Samo informacija: forma je već u proceni, a u proveri nije sama predviđala ishod.`;
  return `<span class="vat" tabindex="0" role="img" aria-label="${esc(t)}">${'<svg viewBox="0 0 16 18" aria-hidden="true"><path d="M8.6 1c.4 2.6-1 3.9-2.3 5.3C5 7.7 3.5 9.2 3.5 11.7 3.5 14.8 5.6 17 8.3 17c2.9 0 4.9-2.2 4.9-5.2 0-2.2-1-3.8-2.1-5.1-.3 1.2-.9 2-1.8 2.4.6-2.9-.1-5.6-.7-8.1z" fill="var(--vatra)"/><path d="M8.4 9.3c.2 1.4-.6 2-1.2 2.7-.5.5-.9 1.1-.9 1.9 0 1.3.9 2.2 2 2.2 1.2 0 2.1-.9 2.1-2.2 0-1.6-1-2.9-2-4.6z" fill="var(--vatra-in)"/></svg>'}<span class="tt">${esc(t)}</span></span>`}
 
@@ -214,7 +214,7 @@ function crtajSve(){
     if(k[0]==='r'){const q=x[k.slice(1)].q;return q[4]-q[0]} return x[k].mu};
   red.sort((a,b)=>{const A=key(a),B=key(b); const c=(typeof A==='string')?A.localeCompare(B,'sr'):A-B; return stanje.opad?-c:c});
   document.getElementById('fBroj').textContent=red.length+' igrača';
-  const kol=['P','S','A','PRA'];
+  const kol=['P','S','A'];
   const th=(k,t)=>`<th class="sort" data-k="${k}"${stanje.sort===k?` aria-sort="${stanje.opad?'descending':'ascending'}"`:''}>${t}${stanje.sort===k?(stanje.opad?' ↓':' ↑'):''}</th>`;
   const glava=`<tr>${th('ime','Igrač')}${th('vreme','Utakmica')}${th('min','Minuti')}${kol.map(s=>th(s,SKR[s])).join('')}${th('pred','Predlozi')}</tr>`;
   const telo=red.map(({u,st,ig,per,pred})=>{
@@ -234,7 +234,7 @@ function crtajSve(){
     const cp=pred.length?`<td><div class="chips">${pred.map(p=>`<span class="mini ${p.smer}">${p.smer==='o'?'▲ PLUS':'▼ MINUS'} ${({P:'poeni',S:'skokovi',A:'asist.'})[p.stat]} ${zarez(p.z.l)} · ${IME[p.z.kl]}</span>`).join('')}</div></td>`:'<td class="prazno">—</td>';
     return `<tr class="${ig.ne_igra?'ne-igra':''}">${c1}${c2}${c3}${cs}${cp}</tr>`;
   }).join('');
-  document.getElementById('sadrzaj').innerHTML=`<section class="tim"><div class="tim-zag"><h3>Svi igrači, ${D.kolo}. kolo</h3><span class="meta">raspon je 10. do 90. percentil; klik na naslov kolone sortira</span></div><div class="skrol"><table>${glava}${telo||`<tr><td colspan="8" class="prazno">nema igrača za ovaj izbor</td></tr>`}</table></div></section>`;
+  document.getElementById('sadrzaj').innerHTML=`<section class="tim"><div class="tim-zag"><h3>Svi igrači, ${D.kolo}. kolo</h3><span class="meta">raspon je 10. do 90. percentil; klik na naslov kolone sortira</span></div><div class="skrol"><table>${glava}${telo||`<tr><td colspan="7" class="prazno">nema igrača za ovaj izbor</td></tr>`}</table></div></section>`;
   document.querySelectorAll('th.sort').forEach(h=>h.onclick=()=>{const k=h.dataset.k; if(stanje.sort===k)stanje.opad=!stanje.opad; else {stanje.sort=k; stanje.opad=!(k==='ime'||k==='vreme')} document.getElementById('fSort').value=k; azurirajSmer(); crtaj()});
 }
 function azurirajSmer(){document.getElementById('fSmer').textContent=stanje.opad?'opadajuće ↓':'rastuće ↑'}
