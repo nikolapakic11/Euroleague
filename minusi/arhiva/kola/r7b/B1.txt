@@ -1,0 +1,6 @@
+targets [('Wilbekin', 14), ('Zizic', 12), ('Saric', 12), ('Obst', 15), ('Thiemann', 15), ('Bacon', 15), ('Okobo', 13), ('Maledon', 13), ('Campazzo', 11), ('Tavares', 11), ('Hoard', 11), ('Nunn', 11), ('Bolmaro', 17), ('Peters', 17), ('Wright', 16), ('Parra', 13), ('Nwora', 17), ('Moneke', 17), ('Babb', 16), ('Jones', 12), ('Kabengele', 13), ('Washington', 13), ('Beauchamp', 12), ('Ojeleye', 12), ('IV', 12), ('Nowell', 11), ('Guduric', 11), ('Feliz', 10), ('Lawson', 9), ('Brissett', 9)] 390
+iters 517405 est {'p1': 0.224, 'ew': 0.402, 'ew10': 0.098, 'ew12': 0.304, 'p2': 0.084, 'ref': 2.15} market {'p1': 0.069, 'ew': 0.093, 'ew10': 0.019, 'ew12': 0.074, 'p2': 0.015, 'ref': 0.71}
+usage [('Wilbekin', 14), ('Zizic', 12), ('Saric', 12), ('Obst', 15), ('Thiemann', 15), ('Bacon', 15), ('Okobo', 13), ('Maledon', 13), ('Campazzo', 11), ('Tavares', 11), ('Hoard', 11), ('Nunn', 11), ('Bolmaro', 17), ('Peters', 17), ('Wright', 16), ('Parra', 13), ('Nwora', 17), ('Moneke', 17), ('Babb', 16), ('Jones', 12), ('Kabengele', 13), ('Washington', 13), ('Beauchamp', 12), ('Ojeleye', 12), ('IV', 12), ('Nowell', 11), ('Guduric', 11), ('Feliz', 10), ('Lawson', 9), ('Brissett', 9)]
+tickets per game {'MUN-DUB': 39, 'MIL-BAR': 36, 'PAR-RED': 37, 'IST-BES': 26, 'TEL-MAD': 29, 'PAN-BAS': 16}
+odds10 141 689 odds12 513 2411
+avg shared share 0.348 max usage share 0.425

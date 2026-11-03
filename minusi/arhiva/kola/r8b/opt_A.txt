@@ -1,0 +1,2 @@
+FAIL at ticket 19 size 8
+[('Tremont Waters', ('ASV-PAR', 2)), ('Hugo Besson', ('ASV-PAR', 2)), ('Joel Bolomboy', ('ASV-PAR', 2)), ('Scottie Wilbekin', ('BES-OLY', 1)), ('Elijah Bryant', ('HTA-IST', 0)), ('Tomas Satoransky', ('HTA-IST', 0)), ('Dario Saric', ('HTA-IST', 0)), ('Zach LeDay', ('HTA-IST', 2)), ('Aliou Diarra', ('VIR-ZAL', 0)), ('Jonas Valanciunas', ('VIR-ZAL', 2)), ('Carsen Edwards', ('VIR-ZAL', 2))]

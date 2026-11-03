@@ -1,0 +1,4 @@
+iters 5066300 est {'p1': 0.426, 'ew': 1.003, 'bys': {8: np.float64(1.003)}, 'ref': 4.57} market {'p1': 0.11, 'ew': 0.159, 'bys': {8: np.float64(0.159)}, 'ref': 1.21}
+player tickets [('Will Clyburn', 16), ('Wade Baldwin', 16), ('Theo Maledon', 16), ('Chima Moneke', 16), ('Facundo Campazzo', 16), ('Jared Rhoden', 16), ('Jordan Nwora', 16), ('Alize Johnson', 16), ('Semi Ojeleye', 16), ('Nadir Hifi', 16), ('Oshae Brissett', 16), ('Shavon Shields', 16), ('Walter Tavares', 16), ('Andreas Obst', 16), ('Nicolo Melli', 16), ('Andres Feliz', 16), ('Austin Wiley', 16), ('Talen Horton-Tucker', 15), ('Duane Washington', 13), ('Allan Dokossi', 10), ('Mikael Jantunen', 9), ('Braxton Key', 1)]
+pairs used 42 max pair 16 players used 22
+avg shared players share 0.369

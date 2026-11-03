@@ -1,0 +1,101 @@
+{
+ "date": "2026-10-29",
+ "round": "9",
+ "src": "ponuda 10:11",
+ "picks": [
+  {
+   "p": "Justinian Jessup",
+   "t": "Bayern",
+   "s": "P",
+   "l": 6.5,
+   "o": 1.8,
+   "prob": 0.612
+  },
+  {
+   "p": "Keaton Wallace",
+   "t": "Maccabi Tel Aviv",
+   "s": "P",
+   "l": 5.5,
+   "o": 1.82,
+   "prob": 0.612
+  },
+  {
+   "p": "Vladimir Lucic",
+   "t": "Bayern",
+   "s": "S",
+   "l": 2.5,
+   "o": 1.78,
+   "prob": 0.611
+  },
+  {
+   "p": "Ebuka Izundu",
+   "t": "Crvena Zvezda",
+   "s": "P",
+   "l": 4.5,
+   "o": 1.92,
+   "prob": 0.602
+  },
+  {
+   "p": "Bonzie Colson",
+   "t": "Maccabi Tel Aviv",
+   "s": "P",
+   "l": 9.5,
+   "o": 1.83,
+   "prob": 0.575
+  },
+  {
+   "p": "Tyson Carter",
+   "t": "Crvena Zvezda",
+   "s": "P",
+   "l": 8.5,
+   "o": 1.92,
+   "prob": 0.565
+  },
+  {
+   "p": "Leopold Cavaliere",
+   "t": "Paris",
+   "s": "P",
+   "l": 3.5,
+   "o": 1.92,
+   "prob": 0.565
+  }
+ ],
+ "extra": [
+  {
+   "p": "Roman Sorkin",
+   "t": "Maccabi Tel Aviv",
+   "s": "P",
+   "l": 11.5,
+   "o": 1.92,
+   "prob": 0.546
+  },
+  {
+   "p": "Chris Jones",
+   "t": "Crvena Zvezda",
+   "s": "P",
+   "l": 10.5,
+   "o": 1.92,
+   "prob": 0.527
+  },
+  {
+   "p": "Rokas Jokubaitis",
+   "t": "Bayern",
+   "s": "P",
+   "l": 8.5,
+   "o": 1.92,
+   "prob": 0.524
+  }
+ ],
+ "rezultat": {
+  "Justinian Jessup P": "nije igrao",
+  "Keaton Wallace P": "7 prošao",
+  "Vladimir Lucic S": "4 prošao",
+  "Ebuka Izundu S": "nije igrao",
+  "Bonzie Colson P": "16 prošao",
+  "Tyson Carter P": "14 prošao",
+  "Leopold Cavaliere P": "4 prošao",
+  "Roman Sorkin P": "16 prošao",
+  "Rokas Jokubaitis P": "0 pao",
+  "Chris Jones P (izbačen)": "21? vidi box"
+ }
+}

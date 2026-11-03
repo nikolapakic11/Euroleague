@@ -1,0 +1,4 @@
+iters 3256991 est {'p1': 0.307, 'ew': 0.531, 'bys': {8: np.float64(0.531)}, 'ref': 2.37} market {'p1': 0.068, 'ew': 0.084, 'bys': {8: np.float64(0.084)}, 'ref': 0.64}
+player tickets [('Chima Moneke', 9), ('Wade Baldwin', 9), ('Walter Tavares', 9), ('Andres Feliz', 9), ('Jordan Nwora', 9), ('Jared Rhoden', 9), ('Shavon Shields', 9), ('Will Clyburn', 9), ('Facundo Campazzo', 9), ('Andreas Obst', 9), ('Theo Maledon', 9), ('Nadir Hifi', 8), ('Alize Johnson', 8), ('Oshae Brissett', 8), ('Talen Horton-Tucker', 7), ('Semi Ojeleye', 7), ('Austin Wiley', 6), ('Nicolo Melli', 4), ('Mikael Jantunen', 4), ('Duane Washington', 4), ('Allan Dokossi', 3), ('Braxton Key', 2)]
+pairs used 38 max pair 9 players used 22
+avg shared players share 0.368

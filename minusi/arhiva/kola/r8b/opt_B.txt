@@ -1,0 +1,4 @@
+iters 1386181 est {'p1': 0.403, 'ew': 0.834, 'bys': {8: np.float64(0.834)}, 'ref': 3.68} market {'p1': 0.103, 'ew': 0.138, 'bys': {8: np.float64(0.138)}, 'ref': 1.03}
+player tickets [('Scottie Wilbekin', 11), ('Wendell Moore Jr.', 11), ('Derrick Alston Jr', 11), ('Tomas Satoransky', 11), ('Azuolas Tubelis', 11), ('Aliou Diarra', 11), ('Marcus Carr', 11), ('Carsen Edwards', 11), ('Dario Saric', 11), ('Elijah Bryant', 11), ('Vasilije Micic', 10), ('Jonas Valanciunas', 10), ('Tremont Waters', 10), ('Carlik Jones', 10), ('Marius Grigonis', 10), ('Ante Zizic', 10), ('Patty Mills', 10), ('Hugo Besson', 9), ('Zach LeDay', 9), ('Jaylen Nowell', 8), ('Joel Bolomboy', 8), ('Both Tut Gach', 8), ('Amir Coffey', 8), ('Sterling Brown', 7), ('Trent Frazier', 3)]
+pairs used 37 max pair 10 players used 25
+avg shared players share 0.308

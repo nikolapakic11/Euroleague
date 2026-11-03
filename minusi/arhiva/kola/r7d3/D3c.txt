@@ -1,0 +1,5 @@
+targets [('Lee', 9), ('Shorts', 4), ('Horton-Tucker', 9), ('Taylor', 4), ('Edwards', 9), ('Brooks', 4), ('Baldwin', 9), ('Mills', 9), ('Shields', 9), ('Tubelis', 8), ('Valanciunas', 8), ('Clyburn', 9), ('Besson', 7), ('Brown', 7), ('Key', 8), ('Mirotic', 5), ('Bingham', 6), ('Bolomboy', 5), ('Crowder', 5), ('Grigonis', 5), ('Forrest', 5), ('Melli', 5), ('Waters', 4), ('Butkevicius', 4), ('Puerto', 3)] 160
+iters 1069666 est {'p1': 0.199, 'ew': 0.356, 'ew10': 0.0, 'ew12': 0.356, 'p2': 0.075, 'ref': 1.71} market {'p1': 0.082, 'ew': 0.121, 'ew10': 0.0, 'ew12': 0.121, 'p2': 0.022, 'ref': 0.78}
+usage [('Lee', 9), ('Shorts', 4), ('Horton-Tucker', 9), ('Taylor', 4), ('Edwards', 9), ('Brooks', 4), ('Baldwin', 9), ('Mills', 9), ('Shields', 9), ('Tubelis', 8), ('Valanciunas', 8), ('Clyburn', 9), ('Besson', 7), ('Brown', 7), ('Key', 8), ('Mirotic', 5), ('Bingham', 6), ('Bolomboy', 5), ('Crowder', 5), ('Grigonis', 5), ('Forrest', 5), ('Melli', 5), ('Waters', 4), ('Butkevicius', 4), ('Puerto', 3)]
+tickets per game {'ZAL-ASV': 20, 'OLY-ULK': 20, 'PRS-PAM': 20}
+avg shared share 0.32 max usage share 0.45

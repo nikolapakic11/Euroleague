@@ -1,0 +1,4 @@
+iters 2324412 est {'p1': 0.294, 'ew': 0.68, 'bys': {8: np.float64(0.626), 10: np.float64(0.052), 12: np.float64(0.003)}, 'ref': 3.25} market {'p1': 0.123, 'ew': 0.211, 'bys': {8: np.float64(0.19), 10: np.float64(0.02), 12: np.float64(0.001)}, 'ref': 1.39}
+player tickets [('T.J. Shorts', 18), ('Patty Mills', 18), ('Sterling Brown', 18), ('Jonas Valanciunas', 18), ('Shavon Shields', 18), ('Wade Baldwin', 18), ('Will Clyburn', 18), ('Braxton Key', 18), ('Talen Horton-Tucker', 18), ('Hugo Besson', 18), ('Azuolas Tubelis', 18), ('Arnas Butkevicius', 18), ('Joel Bolomboy', 18), ('Carsen Edwards', 18), ('Armoni Brooks', 17), ('Kameron Taylor', 16), ('Saben Lee', 14), ('Jae Crowder', 14), ('Marcus Bingham', 14), ('Tremont Waters', 14), ('Marius Grigonis', 14), ('Nicolo Melli', 13), ('Trent Forrest', 12), ('Both Tut Gach', 12), ('Nikola Mirotic', 6), ('Josep Puerto', 1), ('Dylan Osetkowski', 1)]
+pairs used 46 max pair 14 players used 27
+avg shared players share 0.359

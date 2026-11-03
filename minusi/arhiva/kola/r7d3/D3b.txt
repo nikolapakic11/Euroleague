@@ -1,0 +1,9 @@
+targets [('Lee', 10), ('Shorts', 10), ('Horton-Tucker', 10), ('Taylor', 10), ('Edwards', 10), ('Brooks', 10), ('Baldwin', 9), ('Mills', 9), ('Shields', 9), ('Tubelis', 7), ('Valanciunas', 7), ('Clyburn', 6), ('Besson', 6), ('Brown', 5), ('Key', 5), ('Mirotic', 5), ('Bingham', 4), ('Bolomboy', 4), ('Crowder', 4), ('Grigonis', 4), ('Forrest', 4), ('Melli', 3), ('Waters', 3), ('Butkevicius', 3), ('Puerto', 3)] 160
+iters 898911 est {'p1': 0.205, 'ew': 0.389, 'ew10': 0.0, 'ew12': 0.389, 'p2': 0.082, 'ref': 1.81} market {'p1': 0.083, 'ew': 0.126, 'ew10': 0.0, 'ew12': 0.126, 'p2': 0.023, 'ref': 0.8}
+usage [('Lee', 10), ('Shorts', 10), ('Horton-Tucker', 10), ('Taylor', 10), ('Edwards', 10), ('Brooks', 10), ('Baldwin', 9), ('Mills', 9), ('Shields', 9), ('Tubelis', 7), ('Valanciunas', 7), ('Clyburn', 6), ('Besson', 6), ('Brown', 5), ('Key', 5), ('Mirotic', 5), ('Bingham', 4), ('Bolomboy', 4), ('Crowder', 4), ('Grigonis', 4), ('Forrest', 4), ('Melli', 3), ('Waters', 3), ('Butkevicius', 3), ('Puerto', 3)]
+tickets per game {'OLY-ULK': 20, 'PRS-PAM': 20, 'ZAL-ASV': 20}
+Traceback (most recent call last):
+  File "/home/claude/r7d3/optg2.py", line 98, in <module>
+    print('odds10',round(min(odds[:20])),round(max(odds[:20])),'odds12',round(min(odds[20:])),round(max(odds[20:])))
+                                                                              ~~~^^^^^^^^^^^
+ValueError: min() iterable argument is empty

@@ -1,0 +1,5 @@
+targets [('Wilbekin', 21), ('Zizic', 19), ('Saric', 18), ('Obst', 25), ('Thiemann', 24), ('Bacon', 25), ('Okobo', 21), ('Maledon', 21), ('Campazzo', 18), ('Tavares', 16), ('Hoard', 17), ('Nunn', 16), ('Bolmaro', 28), ('Peters', 27), ('Wright', 25), ('Parra', 21), ('Nwora', 27), ('Moneke', 28), ('Babb', 25), ('Jones', 18)] 440
+iters 901839 est {'p1': 0.091, 'ew': 0.195, 'ew10': 0.144, 'ew12': 0.051, 'p2': 0.036, 'ref': 1.26} market {'p1': 0.022, 'ew': 0.035, 'ew10': 0.027, 'ew12': 0.008, 'p2': 0.006, 'ref': 0.32}
+usage [('Wilbekin', 21), ('Zizic', 19), ('Saric', 18), ('Obst', 25), ('Thiemann', 24), ('Bacon', 25), ('Okobo', 21), ('Maledon', 21), ('Campazzo', 18), ('Tavares', 16), ('Hoard', 17), ('Nunn', 16), ('Bolmaro', 28), ('Peters', 27), ('Wright', 25), ('Parra', 21), ('Nwora', 27), ('Moneke', 28), ('Babb', 25), ('Jones', 18)]
+tickets per game {'IST-BES': 34, 'MIL-BAR': 40, 'PAN-BAS': 16, 'PAR-RED': 40, 'MUN-DUB': 37, 'TEL-MAD': 36}
+odds10 473 696 odds12 1508 2375

@@ -1,0 +1,243 @@
+{
+ "date": "2026-10-30",
+ "picks": [
+  {
+   "c": "84043",
+   "p": "Mbaye Ndiaye",
+   "t": "Olympiacos",
+   "s": "P",
+   "l": 9.5,
+   "u": 1.92,
+   "pr": 0.62,
+   "fair": 0.5,
+   "g": "OLY-MIL",
+   "time": "petak, 30. 10. 2026. 20:15",
+   "cur": "10,0 poena 8 ut., 18 min"
+  },
+  {
+   "c": "84042",
+   "p": "Codi Miller-McIntyre",
+   "t": "Olympiacos",
+   "s": "A",
+   "l": 6.5,
+   "u": 1.75,
+   "pr": 0.62,
+   "fair": 0.53,
+   "g": "OLY-MIL",
+   "time": "petak, 30. 10. 2026. 20:15",
+   "cur": "5,2 asist. 8 ut., 21 min"
+  },
+  {
+   "c": "84053",
+   "p": "Marko Guduric",
+   "t": "Olimpia Milano",
+   "s": "P",
+   "l": 6.5,
+   "u": 1.92,
+   "pr": 0.61,
+   "fair": 0.5,
+   "g": "OLY-MIL",
+   "time": "petak, 30. 10. 2026. 20:15",
+   "cur": "7,4 poena 7 ut., 19 min"
+  },
+  {
+   "c": "84036",
+   "p": "Damion Baugh",
+   "t": "Baskonia",
+   "s": "A",
+   "l": 5.5,
+   "u": 1.8,
+   "pr": 0.59,
+   "fair": 0.514,
+   "g": "ASV-BAS",
+   "time": "petak, 30. 10. 2026. 20:00",
+   "cur": "4,9 asist. 8 ut., 20 min"
+  },
+  {
+   "c": "84041",
+   "p": "Tyson Ward",
+   "t": "Olympiacos",
+   "s": "P",
+   "l": 10.5,
+   "u": 1.97,
+   "pr": 0.57,
+   "fair": 0.487,
+   "g": "OLY-MIL",
+   "time": "petak, 30. 10. 2026. 20:15",
+   "cur": "8,4 poena 8 ut., 22 min"
+  },
+  {
+   "c": "84045",
+   "p": "Tyrique Jones",
+   "t": "Olympiacos",
+   "s": "P",
+   "l": 7.5,
+   "u": 1.92,
+   "pr": 0.57,
+   "fair": 0.5,
+   "g": "OLY-MIL",
+   "time": "petak, 30. 10. 2026. 20:15",
+   "cur": "6,8 poena 8 ut., 14 min"
+  },
+  {
+   "c": "83953",
+   "p": "Filip Petrusev",
+   "t": "Dubai",
+   "s": "P",
+   "l": 7.5,
+   "u": 1.92,
+   "pr": 0.58,
+   "fair": 0.5,
+   "g": "DUB-HTA",
+   "time": "petak, 30. 10. 2026. 17:00",
+   "cur": "7,1 poena 7 ut., 15 min"
+  },
+  {
+   "c": "84008",
+   "p": "Ethan Thompson",
+   "t": "Partizan",
+   "s": "P",
+   "l": 7.5,
+   "u": 1.92,
+   "pr": 0.57,
+   "fair": 0.5,
+   "g": "ZAL-PAR",
+   "time": "petak, 30. 10. 2026. 19:00",
+   "cur": "7,0 poena 8 ut., 19 min"
+  },
+  {
+   "c": "84030",
+   "p": "Kobi Simmons",
+   "t": "Baskonia",
+   "s": "A",
+   "l": 2.5,
+   "u": 1.95,
+   "pr": 0.56,
+   "fair": 0.473,
+   "g": "ASV-BAS",
+   "time": "petak, 30. 10. 2026. 20:00",
+   "cur": "2,7 asist. 7 ut., 20 min"
+  },
+  {
+   "c": "84022",
+   "p": "Joel Bolomboy",
+   "t": "Lyon-Villeurbanne",
+   "s": "P",
+   "l": 6.5,
+   "u": 1.92,
+   "pr": 0.56,
+   "fair": 0.5,
+   "g": "ASV-BAS",
+   "time": "petak, 30. 10. 2026. 20:00",
+   "cur": "5,8 poena 8 ut., 19 min"
+  },
+  {
+   "c": "84050",
+   "p": "RJ Cole",
+   "t": "Olimpia Milano",
+   "s": "P",
+   "l": 8.5,
+   "u": 1.92,
+   "pr": 0.57,
+   "fair": 0.5,
+   "g": "OLY-MIL",
+   "time": "petak, 30. 10. 2026. 20:15",
+   "cur": "8,4 poena 8 ut., 18 min"
+  },
+  {
+   "c": "83994",
+   "p": "Brancou Badio",
+   "t": "Panathinaikos",
+   "s": "P",
+   "l": 4.5,
+   "u": 1.92,
+   "pr": 0.56,
+   "fair": 0.5,
+   "g": "IST-PAN",
+   "time": "petak, 30. 10. 2026. 18:30",
+   "cur": "5,1 poena 8 ut., 20 min"
+  }
+ ],
+ "tickets": [
+  [
+   "Tyrique Jones P",
+   "Ethan Thompson P",
+   "Joel Bolomboy P",
+   "Codi Miller-McIntyre A",
+   "Marko Guduric P",
+   "Filip Petrusev P"
+  ],
+  [
+   "Damion Baugh A",
+   "RJ Cole P",
+   "Kobi Simmons A",
+   "Codi Miller-McIntyre A",
+   "Tyrique Jones P",
+   "Joel Bolomboy P"
+  ],
+  [
+   "Mbaye Ndiaye P",
+   "Tyson Ward P",
+   "Damion Baugh A",
+   "Brancou Badio P",
+   "Kobi Simmons A",
+   "RJ Cole P"
+  ],
+  [
+   "Mbaye Ndiaye P",
+   "Filip Petrusev P",
+   "Codi Miller-McIntyre A",
+   "Damion Baugh A",
+   "Brancou Badio P",
+   "Marko Guduric P"
+  ],
+  [
+   "Mbaye Ndiaye P",
+   "Marko Guduric P",
+   "Tyson Ward P",
+   "Filip Petrusev P",
+   "Brancou Badio P",
+   "Ethan Thompson P"
+  ],
+  [
+   "Codi Miller-McIntyre A",
+   "Joel Bolomboy P",
+   "Brancou Badio P",
+   "Mbaye Ndiaye P",
+   "RJ Cole P",
+   "Ethan Thompson P"
+  ],
+  [
+   "Kobi Simmons A",
+   "Marko Guduric P",
+   "Joel Bolomboy P",
+   "RJ Cole P",
+   "Ethan Thompson P",
+   "Damion Baugh A"
+  ],
+  [
+   "Ethan Thompson P",
+   "Codi Miller-McIntyre A",
+   "Kobi Simmons A",
+   "Mbaye Ndiaye P",
+   "Damion Baugh A",
+   "Marko Guduric P"
+  ],
+  [
+   "Marko Guduric P",
+   "Kobi Simmons A",
+   "Mbaye Ndiaye P",
+   "Joel Bolomboy P",
+   "RJ Cole P",
+   "Filip Petrusev P"
+  ],
+  [
+   "Tyson Ward P",
+   "Damion Baugh A",
+   "Codi Miller-McIntyre A",
+   "Filip Petrusev P",
+   "RJ Cole P",
+   "Ethan Thompson P"
+  ]
+ ]
+}

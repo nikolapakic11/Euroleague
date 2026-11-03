@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/claude/r7d3b/optg4.py", line 40, in <module>
+    assert tk[k] is not None, 'no construct for size %d'%L
+           ^^^^^^^^^^^^^^^^^
+AssertionError: no construct for size 8

@@ -1,0 +1,82 @@
+PLUSEVI, 30.10.2026: 10 tiketa po 6 parova, ulog 50 din (ukupno 500 din)
+Unosi ručno (pomoćnik bira minuse). Svi parovi su PLUS (više od granice).
+
+Tiket 1 (kvota oko 43.5):
+  Filip Petrusev (Dubai) poeni više od 7,5 @1,92
+  Damion Baugh (Baskonia) asistencije više od 5,5 @1,8
+  Kobi Simmons (Baskonia) asistencije više od 2,5 @1,95
+  Marko Guduric (Olimpia Milano) poeni više od 6,5 @1,92
+  Jason Burnell (Olimpia Milano) poeni više od 4,5 @1,92
+  Codi Miller-McIntyre (Olympiacos) asistencije više od 6,5 @1,75
+
+Tiket 2 (kvota oko 52.2):
+  Filip Petrusev (Dubai) poeni više od 7,5 @1,92
+  Kobi Simmons (Baskonia) asistencije više od 2,5 @1,95
+  DJ Stewart JR (Baskonia) poeni više od 9,5 @1,92
+  Jason Burnell (Olimpia Milano) poeni više od 4,5 @1,92
+  Mbaye Ndiaye (Olympiacos) poeni više od 9,5 @1,92
+  Tyson Ward (Olympiacos) poeni više od 10,5 @1,97
+
+Tiket 3 (kvota oko 46.4):
+  DJ Stewart JR (Baskonia) poeni više od 9,5 @1,92
+  Joel Bolomboy (Lyon-Villeurbanne) poeni više od 6,5 @1,92
+  Kobi Simmons (Baskonia) asistencije više od 2,5 @1,95
+  Tyrique Jones (Olympiacos) poeni više od 7,5 @1,92
+  Jason Burnell (Olimpia Milano) poeni više od 4,5 @1,92
+  Codi Miller-McIntyre (Olympiacos) asistencije više od 6,5 @1,75
+
+Tiket 4 (kvota oko 47.0):
+  Damion Baugh (Baskonia) asistencije više od 5,5 @1,8
+  DJ Stewart JR (Baskonia) poeni više od 9,5 @1,92
+  Joel Bolomboy (Lyon-Villeurbanne) poeni više od 6,5 @1,92
+  Tyrique Jones (Olympiacos) poeni više od 7,5 @1,92
+  Mbaye Ndiaye (Olympiacos) poeni više od 9,5 @1,92
+  Jason Burnell (Olimpia Milano) poeni više od 4,5 @1,92
+
+Tiket 5 (kvota oko 45.7):
+  Filip Petrusev (Dubai) poeni više od 7,5 @1,92
+  Ethan Thompson (Partizan) poeni više od 7,5 @1,92
+  Joel Bolomboy (Lyon-Villeurbanne) poeni više od 6,5 @1,92
+  Marko Guduric (Olimpia Milano) poeni više od 6,5 @1,92
+  Codi Miller-McIntyre (Olympiacos) asistencije više od 6,5 @1,75
+  Mbaye Ndiaye (Olympiacos) poeni više od 9,5 @1,92
+
+Tiket 6 (kvota oko 42.8):
+  Filip Petrusev (Dubai) poeni više od 7,5 @1,92
+  Damion Baugh (Baskonia) asistencije više od 5,5 @1,8
+  DJ Stewart JR (Baskonia) poeni više od 9,5 @1,92
+  Mbaye Ndiaye (Olympiacos) poeni više od 9,5 @1,92
+  Codi Miller-McIntyre (Olympiacos) asistencije više od 6,5 @1,75
+  Marko Guduric (Olimpia Milano) poeni više od 6,5 @1,92
+
+Tiket 7 (kvota oko 43.9):
+  Ethan Thompson (Partizan) poeni više od 7,5 @1,92
+  Joel Bolomboy (Lyon-Villeurbanne) poeni više od 6,5 @1,92
+  Damion Baugh (Baskonia) asistencije više od 5,5 @1,8
+  DJ Stewart JR (Baskonia) poeni više od 9,5 @1,92
+  Tyson Ward (Olympiacos) poeni više od 10,5 @1,97
+  Codi Miller-McIntyre (Olympiacos) asistencije više od 6,5 @1,75
+
+Tiket 8 (kvota oko 48.9):
+  Kobi Simmons (Baskonia) asistencije više od 2,5 @1,95
+  Damion Baugh (Baskonia) asistencije više od 5,5 @1,8
+  Joel Bolomboy (Lyon-Villeurbanne) poeni više od 6,5 @1,92
+  Tyson Ward (Olympiacos) poeni više od 10,5 @1,97
+  Mbaye Ndiaye (Olympiacos) poeni više od 9,5 @1,92
+  Marko Guduric (Olimpia Milano) poeni više od 6,5 @1,92
+
+Tiket 9 (kvota oko 43.5):
+  Ethan Thompson (Partizan) poeni više od 7,5 @1,92
+  Kobi Simmons (Baskonia) asistencije više od 2,5 @1,95
+  Damion Baugh (Baskonia) asistencije više od 5,5 @1,8
+  Codi Miller-McIntyre (Olympiacos) asistencije više od 6,5 @1,75
+  Mbaye Ndiaye (Olympiacos) poeni više od 9,5 @1,92
+  Jason Burnell (Olimpia Milano) poeni više od 4,5 @1,92
+
+Tiket 10 (kvota oko 51.4):
+  Filip Petrusev (Dubai) poeni više od 7,5 @1,92
+  Ethan Thompson (Partizan) poeni više od 7,5 @1,92
+  DJ Stewart JR (Baskonia) poeni više od 9,5 @1,92
+  Marko Guduric (Olimpia Milano) poeni više od 6,5 @1,92
+  Tyson Ward (Olympiacos) poeni više od 10,5 @1,97
+  Jason Burnell (Olimpia Milano) poeni više od 4,5 @1,92

@@ -1,0 +1,1 @@
+{"sel": "/home/claude/r9/sel.json", "sizes": [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8], "gcaps": {"8": {"MAD-ULK": 4, "RED-MUN": 4, "TEL-PRS": 4}}, "tcap": 2, "maxu": 9, "pmax": 9, "k": 10, "seed": 5, "secs": 120, "out": "/home/claude/r9/plan_20.json", "lowu": 1.7, "lowmax": 1}

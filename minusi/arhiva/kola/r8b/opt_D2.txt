@@ -1,0 +1,4 @@
+iters 3076260 est {'p1': 0.462, 'ew': 1.065, 'bys': {8: np.float64(1.065)}, 'ref': 4.76} market {'p1': 0.125, 'ew': 0.176, 'bys': {8: np.float64(0.176)}, 'ref': 1.33}
+player tickets [('Scottie Wilbekin', 14), ('Jaylen Nowell', 14), ('Marcus Carr', 14), ('Dario Saric', 14), ('Hugo Besson', 14), ('Wendell Moore Jr.', 14), ('Elijah Bryant', 14), ('Carsen Edwards', 14), ('Aliou Diarra', 14), ('Tomas Satoransky', 14), ('Jonas Valanciunas', 14), ('Derrick Alston Jr', 14), ('Azuolas Tubelis', 14), ('Carlik Jones', 13), ('Patty Mills', 12), ('Joel Bolomboy', 12), ('Vasilije Micic', 12), ('Ante Zizic', 12), ('Marius Grigonis', 12), ('Tremont Waters', 12), ('Zach LeDay', 11), ('Both Tut Gach', 10), ('Amir Coffey', 9), ('Sterling Brown', 7), ('Trent Frazier', 7), ('Ercan Osmani', 3), ('Lamar Stevens', 3), ('Eugene Omoruyi', 1), ('Saben Lee', 1), ('Edgaras Ulanovas', 1)]
+pairs used 47 max pair 12 players used 30
+avg shared players share 0.295

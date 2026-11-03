@@ -1,0 +1,1 @@
+{"sel": "/home/claude/r9b/selO2.json", "sizes": [6, 6, 6, 6, 6, 6, 6, 6, 6, 6], "gcaps": {"6": {"ASV-BAS": 3, "BAR-PAM": 3, "DUB-HTA": 3, "IST-PAN": 3, "OLY-MIL": 3, "VIR-BES": 3, "ZAL-PAR": 3}}, "tcap": 2, "maxu": 6, "pmax": 6, "k": 6, "seed": 12, "secs": 40, "out": "/home/claude/r9b/pO2.json"}

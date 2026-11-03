@@ -1,0 +1,6 @@
+player use [('T.J. Shorts', np.int64(18)), ('Talen Horton-Tucker', np.int64(18)), ('Kameron Taylor', np.int64(18)), ('Carsen Edwards', np.int64(18)), ('Wade Baldwin', np.int64(18)), ('Patty Mills', np.int64(18)), ('Shavon Shields', np.int64(18)), ('Azuolas Tubelis', np.int64(18)), ('Jonas Valanciunas', np.int64(18)), ('Will Clyburn', np.int64(18)), ('Hugo Besson', np.int64(18)), ('Sterling Brown', np.int64(18)), ('Braxton Key', np.int64(18)), ('Joel Bolomboy', np.int64(18)), ('Trent Forrest', np.int64(18)), ('Arnas Butkevicius', np.int64(18)), ('Armoni Brooks', np.int64(17)), ('Saben Lee', np.int64(16)), ('Marcus Bingham', np.int64(16)), ('Jae Crowder', np.int64(16)), ('Marius Grigonis', np.int64(16)), ('Nicolo Melli', np.int64(15)), ('Tremont Waters', np.int64(14)), ('Both Tut Gach', np.int64(13)), ('Nikola Mirotic', np.int64(7)), ('Josep Puerto', np.int64(5)), ('Dylan Osetkowski', np.int64(5))]
+Traceback (most recent call last):
+  File "/home/claude/r7d3b/optg3.py", line 75, in <module>
+    assert tk,'no construct'
+           ^^
+AssertionError: no construct
