@@ -15,6 +15,13 @@ Korisnik je Nikola. Piše na srpskom i očekuje odgovore na srpskom (latinica).
 - `baza/skripte/build.py` pravi `rows.json` (igrač po utakmici), `ctx2.py <izlaz>` pravi kontekst (odbrana po poziciji `of`, tempo `lgp`/`tm`, igrači `pl`, dozvoljeno po timu `ta`).
 - Ponude: `baza/ponude/<kladionica>/<datum>_<snimak>.json`. Soccerbet je dostupan direktno (`https://www.soccerbet.rs/restapi/offer/sr/...`, odgovor je gzip); igrači Evrolige su liga „Evroliga Igrači“ u sportu B, kače se na dan utakmice. Admiral i MaxBet dolaze preko pomoćnika (bookmarklet) koje Nikola pokreće; Mozzart i MaxBet nisu dostupni iz radnog okruženja (403).
 
+## Rad u dva razgovora
+
+- Minusi se rade u jednom razgovoru, procene u drugom. Oba rade na ovom repozitorijumu.
+- Razgovor za minuse posle svakog kola ažurira `baza/` (zapisnici, raspored, rows, ctx2, Admiral ponude) i `minusi/`, pa šalje na GitHub.
+- Razgovor za procene na početku rada uradi `git pull`, čita `baza/`, a piše samo u `procene/` i u `baza/ponude/mozzart/` i `baza/ponude/soccerbet/`. Ne menja ostatak `baza/` i nikad ne dira `minusi/`.
+- Pre svakog slanja: `git pull --rebase`, pa `git push`.
+
 ## Minusi
 
 - Aplikacija je artefakt na claude.ai (`https://claude.ai/artifact/AgLfxisKjdPWbAZM1Dr5cL`). Stanje je JSON u `<script type="application/json" id="state">`, kod u `<script id="app">` (izvor `minusi/aplikacija/app.js`).
