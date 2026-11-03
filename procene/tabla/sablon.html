@@ -132,7 +132,7 @@ th.sort[aria-sort]{color:var(--fg)}
     <label class="pol">Sortiraj <select id="fSort">
       <option value="min">minuti</option><option value="P">očekivano poeni</option><option value="S">očekivano skokovi</option><option value="A">očekivano asistencije</option>
       <option value="rP">raspon poeni</option><option value="rS">raspon skokovi</option><option value="rA">raspon asistencije</option>
-      <option value="pred">predlozi (najjači prvo)</option><option value="vreme">vreme utakmice</option><option value="ime">ime</option>
+      <option value="predU">najjači MINUS</option><option value="predO">najjači PLUS</option><option value="vreme">vreme utakmice</option><option value="ime">ime</option>
     </select></label>
     <button class="smer-btn" id="fSmer" aria-label="Promeni smer sortiranja">opadajuće ↓</button>
     <span class="meta" id="fBroj"></span>
@@ -140,7 +140,7 @@ th.sort[aria-sort]{color:var(--fg)}
   <main id="sadrzaj" class="utak"></main>
   <footer class="legenda">
     <span><b>Minuti</b> su prosek igrača u ovoj sezoni. Pozicija: bek, krilo ili centar. Plamen pored imena: igrač je u formi u izabranoj stavci (poslednje 3 utakmice bar 30% iznad ranijeg proseka); detalji na prelaz mišem ili dodir. <b>Očekivano</b> je procena modela za datu stavku. <b>Raspon</b>: tanka linija je 10. do 90. percentil, deblja 25. do 75., crta je sredina.</span>
-    <span><b>Svi igrači u kolu</b>: jedna tabela za celo kolo sa poenima, skokovima i asistencijama (očekivano, raspon 10. do 90. percentil i sredina), filterima po timu, poziciji, minutima i formi, i sortiranjem (klik na naslov kolone ili izbor „Sortiraj“).</span>
+    <span><b>Svi igrači u kolu</b>: jedna tabela za celo kolo sa poenima, skokovima i asistencijama (očekivano, raspon 10. do 90. percentil i sredina), filterima po timu, poziciji, minutima i formi, i sortiranjem (klik na naslov kolone ili izbor „Sortiraj“). Predlozi se sortiraju posebno za MINUS (po prednosti) i za PLUS (po tome koliko model vidi više od kvota), jer se dve strane mere različito; igrači bez predloga te strane idu na kraj.</span>
     <span><b>Smer</b> pokazuje predlog za tu stavku ako ga ima: <b>▲ PLUS</b> (preko) ili <b>▼ MINUS</b> (ispod), po istim pravilima kao javna stranica. Kod kladionice koja daje taj predlog polje je obojeno i označeno.</span>
     <span>Kod svake kladionice: granica, kvote ispod i preko, spojena verovatnoća za preko (model i kvote, podešeno prema ishodima ranijih granica; u zagradi sam model).</span>
     <span>Oznaka protivnika: koliko protivnik dozvoljava igračima te pozicije u toj stavci u odnosu na prosek lige (prikazano od ±12%). Žuto „granica 5,5 → 4,5“: glavna granica se pomerila od prvog snimka tog dana. Razilaženje: preko na nižoj granici kod jedne i ispod na višoj kod druge kladionice; navedena je verovatnoća da prođu obe.</span>
@@ -206,17 +206,19 @@ function crtajSve(){
     if(stanje.samo&&!imaLin)continue;
     if(stanje.pred&&!pred.length)continue;
     if(stanje.forma&&!vat)continue;
-    const jacina=pred.length?Math.max(...pred.map(p=>p.smer==='u'?(p.z.evu||0):(p.z.raz||0))):-1;
-    red.push({u,st,ig,per,pred,jacina});
+    // jačina predloga po strani: MINUS = prednost (verovatnoća × kvota − 1), PLUS = koliko model vidi više od kvota
+    const jU=Math.max(-1,...pred.filter(p=>p.smer==='u').map(p=>p.z.evu||0));
+    const jO=Math.max(-1,...pred.filter(p=>p.smer==='o').map(p=>p.z.raz||0));
+    red.push({u,st,ig,per,pred,jU,jO});
   }
   const key=r=>{const k=stanje.sort, x=r.ig.s;
-    if(k==='min')return r.ig.min; if(k==='ime')return r.ig.ime; if(k==='vreme')return r.u.vreme; if(k==='pred')return r.jacina;
+    if(k==='min')return r.ig.min; if(k==='ime')return r.ig.ime; if(k==='vreme')return r.u.vreme; if(k==='predU')return r.jU; if(k==='predO')return r.jO;
     if(k[0]==='r'){const q=x[k.slice(1)].q;return q[4]-q[0]} return x[k].mu};
   red.sort((a,b)=>{const A=key(a),B=key(b); const c=(typeof A==='string')?A.localeCompare(B,'sr'):A-B; return stanje.opad?-c:c});
   document.getElementById('fBroj').textContent=red.length+' igrača';
   const kol=['P','S','A'];
   const th=(k,t)=>`<th class="sort" data-k="${k}"${stanje.sort===k?` aria-sort="${stanje.opad?'descending':'ascending'}"`:''}>${t}${stanje.sort===k?(stanje.opad?' ↓':' ↑'):''}</th>`;
-  const glava=`<tr>${th('ime','Igrač')}${th('vreme','Utakmica')}${th('min','Minuti')}${kol.map(s=>th(s,SKR[s])).join('')}${th('pred','Predlozi')}</tr>`;
+  const glava=`<tr>${th('ime','Igrač')}${th('vreme','Utakmica')}${th('min','Minuti')}${kol.map(s=>th(s,SKR[s])).join('')}${th('predU','Predlozi')}</tr>`;
   const telo=red.map(({u,st,ig,per,pred})=>{
     const chips=[];
     if(ig.ne_igra)chips.push(`<span class="chip w">${ig.razlog==='nije u sastavu'?'nije u sastavu':'ne igra'}</span>`);
@@ -231,7 +233,7 @@ function crtajSve(){
       if(p&&p.sm)lin=`<span class="mini ${p.sm.s}">${p.sm.s==='o'?'▲ PLUS':'▼ MINUS'} ${zarez(p.sm.z.l)}</span>`;
       else if(p&&p.L.length){const g=p.L.find(z=>z.m)||p.L[0]; lin=`<span class="mini n">granica ${zarez(g.l)}</span>`}
       return `<td><div class="st"><b>${zarez(x.mu)}</b><span class="r">${x.q[0]}–${x.q[4]} · sred. ${x.q[2]}</span>${lin}</div></td>`}).join('');
-    const cp=pred.length?`<td><div class="chips">${pred.map(p=>`<span class="mini ${p.smer}">${p.smer==='o'?'▲ PLUS':'▼ MINUS'} ${({P:'poeni',S:'skokovi',A:'asist.'})[p.stat]} ${zarez(p.z.l)} · ${IME[p.z.kl]}</span>`).join('')}</div></td>`:'<td class="prazno">—</td>';
+    const cp=pred.length?`<td><div class="chips">${pred.sort((a,b)=>(a.smer===b.smer?0:a.smer==='u'?-1:1)).map(p=>`<span class="mini ${p.smer}" title="${p.smer==='u'?'prednost (verovatnoća × kvota − 1)':'model iznad kvota'}">${p.smer==='o'?'▲ PLUS':'▼ MINUS'} ${({P:'poeni',S:'skokovi',A:'asist.'})[p.stat]} ${zarez(p.z.l)} · ${IME[p.z.kl]} · ${p.smer==='u'?'+'+Math.round(p.z.evu*100)+'%':'+'+Math.round(p.z.raz*100)+' p.p.'}</span>`).join('')}</div></td>`:'<td class="prazno">—</td>';
     return `<tr class="${ig.ne_igra?'ne-igra':''}">${c1}${c2}${c3}${cs}${cp}</tr>`;
   }).join('');
   document.getElementById('sadrzaj').innerHTML=`<section class="tim"><div class="tim-zag"><h3>Svi igrači, ${D.kolo}. kolo</h3><span class="meta">raspon je 10. do 90. percentil; klik na naslov kolone sortira</span></div><div class="skrol"><table>${glava}${telo||`<tr><td colspan="7" class="prazno">nema igrača za ovaj izbor</td></tr>`}</table></div></section>`;
