@@ -63,6 +63,22 @@ def rosteri():
     return out
 
 
+VATRA_MIN = {'P': 4, 'S': 2, 'A': 1.5}
+
+
+def vatra(g, s):
+    """Igrač u formi u stavci s: poslednje 3 utakmice bar 30% i bar VATRA_MIN iznad proseka ranijih utakmica,
+    i bar 2 od 3 iznad tog proseka; samo za igrače sa bar 15 minuta u proseku. Samo informacija: u oktobru nije sama predviđala ishod granica."""
+    if len(g) < 4:
+        return None
+    l3, pre = g[-3:], g[:-3]
+    a3 = sum(r[s] for r in l3) / 3
+    ap = sum(r[s] for r in pre) / len(pre)
+    if a3 >= 1.3 * ap and a3 - ap >= VATRA_MIN[s] and sum(r[s] > ap for r in l3) >= 2:
+        return dict(l3=[r[s] for r in l3], a3=round(a3, 1), ap=round(ap, 1), pct=round((a3 / ap - 1) * 100) if ap else None)
+    return None
+
+
 def lepo_ime(n):
     if ',' in n:
         a, b = n.split(',', 1)
@@ -127,7 +143,8 @@ def main():
                     # za stranicu: učinak po minutu sa kontekstom i rasipanje, da bi se minuti menjali na stranici
                     c_eff = P['C'][s] * (1 + P['CV'] * e['min_cv'])
                     st[s] = dict(mu=x['mu'], var=x['var'], q=q, rpm=round(x['mu'] / e['min'], 4) if e['min'] else 0,
-                                 A=P['A'][s], C=round(c_eff, 4), of=x['of'], pros=x['pros'], posl=x['poslednje'], linije=[])
+                                 A=P['A'][s], C=round(c_eff, 4), of=x['of'], pros=x['pros'], posl=x['poslednje'], linije=[],
+                                 vatra=vatra([r for r in g if r['dan'] < u['dan']], s) if e['min'] >= 15 else None)
                 igraci.append(dict(k=k, ime=ime, pos=e['pos'], n=e['n'], min=e['min'], min_cv=e['min_cv'],
                                    posl_min=e['poslednji_min'], prosla=e['prosla'], odsutan=odsutan,
                                    ne_igra=(rm == 0), rucno_min=rm if rm not in (None, 0) else None, s=st))

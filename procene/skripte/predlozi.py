@@ -34,7 +34,7 @@ def izaberi(tabla, w):
                         p = spajanje.preko(w, s, z['pm'], z['tr'])
                         osn = dict(id=(u['g'], i['k']), g=u['g'], dan=u['dan'], vreme=u['vreme'], k=i['k'], ime=i['ime'],
                                    tim=st['tim'], prot=st['prot'], s=s, l=z['l'], kl=z['kl'], pm=z['pm'], tr=z['tr'],
-                                   mu=i['s'][s]['mu'], min=i['min'])
+                                   mu=i['s'][s]['mu'], min=i['min'], vatra=i['s'][s].get('vatra'))
                         kand.append(dict(osn, strana='o', pp=p, ev=p * z['o'] - 1, k_=z['o'], raz=z['pm'] - z['tr']))
                         kand.append(dict(osn, strana='u', pp=1 - p, ev=(1 - p) * z['u'] - 1, k_=z['u'], raz=z['tr'] - z['pm']))
     for c in kand:
