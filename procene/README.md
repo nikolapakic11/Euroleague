@@ -18,3 +18,23 @@ Procene igrača Evrolige zasnovane na statistici i kontekstu, bez tipova i bez t
 4. Do kraja sezone samo za Nikolu; javno tek ako procene drže i ima interesovanja.
 
 Ovaj folder koristi samo `baza/`. Ništa iz `minusi/`.
+
+## Kako se radi
+
+Sve skripte se pokreću iz korena repozitorijuma.
+
+| Korak | Komanda | Šta radi |
+|---|---|---|
+| Soccerbet ponuda | `python3 procene/skripte/soccerbet.py` | Snimak igrača Evrolige u `baza/ponude/soccerbet/<datum>_<slovo>.json` (format v2, sve granice, `m=1` je glavna). Pokreće se na dan utakmice. |
+| Mozzart ponuda | pomoćnik u pregledaču | Vidi `procene/pomocnici/README.md`. Izvezeni fajl ide u `baza/ponude/mozzart/`. |
+| Prošla sezona | `python3 procene/skripte/prosla_sezona.py <folder>` | Polazne procene igrača iz E2025 u `procene/podaci/e2025_igraci.json` (već urađeno). |
+| Podešavanje modela | `python3 procene/skripte/podesi.py --do-kola 6` | Parametri u `procene/model_parametri.json`, podešeni na učinke, ne na ponude. |
+| Provera | `python3 procene/skripte/provera.py` | `procene/provera/izvestaj.md`: model naspram kvota na svim ponudama od oktobra, preko i ispod. |
+| Tabla | `python3 procene/skripte/tabla.py --kolo 11 --dnevnik` | `procene/tabla/kolo11.json` i `.html` (objavljuje se kao artefakt) i dnevnik procena. |
+| Ishodi | `python3 procene/skripte/dnevnik.py --kolo 11` | Upisuje stvarne učinke u dnevnik i ispisuje tačnost. |
+
+Ručni minuti i „ne igra“ za kolo: `procene/minuti.json`, npr. `{"11": {"nikola milutinov": 0}}` (ključ je ime malim slovima, bez kvačica).
+
+Tabla za kolo 11: https://claude.ai/artifact/P3awRXNbkBvDErZ8Jug9vZ
+
+Model ukratko: očekivani minuti × učinak po minutu (ova sezona, skupljena ka prošloj sezoni, pa ka proseku pozicije) × odbrana protivnika prema poziciji × tempo; raspodela je negativna binomna. Detalji u `procene/skripte/model.py`.
