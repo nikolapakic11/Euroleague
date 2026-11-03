@@ -1,7 +1,11 @@
 /* Pomoćnik za Mozzart: igrači Evrolige (poeni, skokovi, asistencije).
  *
- * Pokreće se kao bookmarklet na mozzartbet.com, na stranici sa ponudom igrača Evrolige.
- * 1) Od trenutka pokretanja hvata JSON odgovore koje stranica učitava (fetch i XHR).
+ * Pokreće se kao bookmarklet na mozzartbet.com, na stranici Klađenje → Izdvojena ponuda → Igrači.
+ * 0) Glavni način (proveren 3.11.2026): pomoćnik sam traži ponudu igrača od Mozzarta, istim zahtevom
+ *    kao stranica (POST /betting/matches, zaglavlje Medium), za sve košarkaške takmičenja u ponudi „Igrači“.
+ *    Igra se zove npr. „Broj poena E.Tubutis“ (stavka i igrač sa inicijalom), podigra „manje“/„više“,
+ *    granica je specialOddValue, kvota value. Tim igrača se ne navodi, pa je t = „domaćin | gost“.
+ * 1) Rezerva: od trenutka pokretanja hvata JSON odgovore koje stranica učitava (fetch i XHR).
  * 2) Ponovo učitava već učitane GET adrese ponude (iz performance liste), da uhvati i ono što je stiglo pre pokretanja.
  * 3) Dugme „Izvezi“ pravi snimak u formatu v2 (isti kao Admiral i MaxBet) i preuzima ga kao fajl.
  * 4) Dugme „Sirovo“ preuzima uhvaćene odgovore i tekst stranice, da bi se čitač prilagodio ako Mozzart promeni format.
@@ -151,6 +155,8 @@
     return null;
   }
   function citaj() {
+    var mz = citajMozzart();
+    if (mz.length) return oznaciGlavne(mz);
     var nadjeno = {};   // kljuc igrač|stavka|granica -> {p,t,s,l,u,o,c,time}
     function obidji(o, lanac, d) {
       if (d > 30 || !o || typeof o !== 'object') return;
@@ -181,15 +187,88 @@
       var r = nadjeno[k];
       if (r.u && r.o) picks.push({ c: r.c, p: r.p, t: r.t, s: r.s, l: r.l, u: r.u, o: r.o, time: r.time });
     });
+    return oznaciGlavne(picks);
+  }
+  function oznaciGlavne(picks) {
     // glavna granica po igraču i stavci: kvote najbliže jedna drugoj
     var grupe = {};
-    picks.forEach(function (x) { (grupe[x.p + '|' + x.s] = grupe[x.p + '|' + x.s] || []).push(x); });
+    picks.forEach(function (x) { var g = x.p + '|' + x.s + '|' + (x.t || ''); (grupe[g] = grupe[g] || []).push(x); });
     Object.keys(grupe).forEach(function (g) {
       var lst = grupe[g], best = lst.reduce(function (a, b) { return Math.abs(b.u - b.o) < Math.abs(a.u - a.o) ? b : a; });
       lst.forEach(function (x) { x.m = x === best ? 1 : 0; });
     });
     picks.sort(function (a, b) { return (a.t || '').localeCompare(b.t || '') || a.p.localeCompare(b.p) || a.s.localeCompare(b.s) || a.l - b.l; });
     return picks;
+  }
+
+
+  // ---------- glavni način: zahtev ka Mozzartu ----------
+  var aktivno = { n: 0, greska: null, takmicenja: {} };
+  function mzStore() {
+    try { var el = document.getElementById('spa'); return el && el.__vue__ && el.__vue__.$store && el.__vue__.$store.state.BettingNew; } catch (e) { return null; }
+  }
+  function preuzmiAktivno() {
+    var st = mzStore();
+    if (!st || !st.payloadFilter) { aktivno.greska = 'Otvori Klađenje → Izdvojena ponuda → Igrači, pa pokreni ponovo.'; osvezi(); return Promise.resolve(); }
+    var osnova = {};
+    for (var k in st.payloadFilter) osnova[k] = st.payloadFilter[k];
+    delete osnova.competitionIds;                    // sva takmičenja iz ponude „Igrači“
+    osnova.loadPriorityTemplateGamesOnly = false; osnova.loadAllTemplateGames = true; osnova.packAllGroups = true;
+    osnova.pageSize = 50;
+    var medium = st.medium || 'PREMATCH_WEB';
+    function zahtev(f) {
+      return stariFetch('/betting/matches', { method: 'POST', credentials: 'include',
+        headers: { 'Content-Type': 'application/json', 'Medium': medium }, body: JSON.stringify(f) })
+        .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); });
+    }
+    function kopija(dod) { var f = {}; for (var k in osnova) f[k] = osnova[k]; for (var k2 in dod) f[k2] = dod[k2]; return f; }
+    // 1) spisak utakmica u ponudi „Igrači“ (bez takmičenja) da se nađu košarkaška takmičenja;
+    // 2) ponuda po takmičenju (bez competitionIds Mozzart vraća pogrešne igre za košarku)
+    function takmicenje(id, n) {
+      return zahtev(kopija({ competitionIds: [id], currentPage: n })).then(function (d) {
+        var items = (d.items || []).filter(function (it) { return !it.sport || it.sport.id === 2; });
+        items.forEach(function (it) { var c = it.competition && it.competition.name; if (c) aktivno.takmicenja[c] = (aktivno.takmicenja[c] || 0) + 1; });
+        uhvaceno.push({ url: 'aktivno:/betting/matches#' + id + '/' + n, metod: 'POST', vreme: new Date().toISOString(), podaci: ocisti({ items: items }) });
+        aktivno.n += items.length;
+        if ((d.items || []).length >= 50 && n < 9) return takmicenje(id, n + 1);
+      });
+    }
+    aktivno.greska = null; aktivno.takmicenja = {};
+    return zahtev(kopija({ currentPage: 0 })).then(function (d) {
+      var ids = [];
+      (d.items || []).forEach(function (it) {
+        if (it.sport && it.sport.id === 2 && it.competition && ids.indexOf(it.competition.id) < 0) ids.push(it.competition.id);
+      });
+      if (!ids.length && st.payloadFilter.competitionIds) ids = st.payloadFilter.competitionIds.slice();
+      return ids.reduce(function (pr, id) { return pr.then(function () { return takmicenje(id, 0); }); }, Promise.resolve());
+    }).catch(function (e) { aktivno.greska = 'Mozzart nije vratio ponudu (' + e.message + ').'; }).then(osvezi);
+  }
+  var ST_MZ = { poena: 'P', poeni: 'P', skokova: 'S', skokovi: 'S', asistencija: 'A', asistencije: 'A' };
+  function citajMozzart() {
+    var out = {};
+    uhvaceno.forEach(function (u) {
+      (((u.podaci || {}).items) || []).forEach(function (it) {
+        if (!it || !it.oddsGroup) return;
+        var t = ((it.home && it.home.name) || '') + ' | ' + ((it.visitor && it.visitor.name) || '');
+        it.oddsGroup.forEach(function (g) {
+          (g.odds || []).forEach(function (o) {
+            var gm = (o.game && o.game.name) || '';
+            // npr. „Broj poena E.Tubutis“; za skokove i asistencije očekuje se isti oblik
+            var m = gm.match(/(poena|poeni|skokova|skokovi|asistencija|asistencije)\s+(.+)$/i);
+            if (!m || /\+|ukupno .* i /i.test(gm)) return;
+            var sub = ((o.subgame && o.subgame.name) || '').toLowerCase();
+            var st = /manje/.test(sub) ? 'u' : /vi[sš]e/.test(sub) ? 'o' : null;
+            var l = brojIliNista(o.specialOddValue), kv = brojIliNista(o.value);
+            if (!st || l === null || kv === null || kv <= 1) return;
+            var s = ST_MZ[m[1].toLowerCase()], p = m[2].trim(), kl = p + '|' + s + '|' + l + '|' + t;
+            var r = out[kl] || (out[kl] = { c: String(it.matchNumber || it.id || ''), p: p, t: t, s: s, l: l,
+              time: it.startTime ? new Date(it.startTime).toISOString() : null, liga: it.competition && it.competition.name });
+            r[st] = kv;
+          });
+        });
+      });
+    });
+    return Object.keys(out).map(function (k) { return out[k]; }).filter(function (r) { return r.u && r.o; });
   }
 
   // ---------- izvoz ----------
@@ -226,14 +305,17 @@
   function poruka(t) { panel.querySelector('[data-msg]').textContent = t; }
   function osvezi() {
     var picks = citaj();
-    panel.querySelector('[data-st]').textContent = 'Uhvaćeno odgovora: ' + uhvaceno.length + ' · granica: ' + picks.length +
-      ' · igrača: ' + new Set(picks.map(function (x) { return x.p; })).size;
+    var tak = Object.keys(aktivno.takmicenja).map(function (k) { return k + ' ' + aktivno.takmicenja[k]; }).join(', ');
+    panel.querySelector('[data-st]').textContent = 'Granica: ' + picks.length + ' · igrača: ' + new Set(picks.map(function (x) { return x.p + x.t; })).size +
+      (tak ? ' · utakmice: ' + tak : '') + (aktivno.greska ? ' · ' + aktivno.greska : '');
+    var ev = picks.filter(function (x) { return /evroliga|euroleague/i.test(x.liga || ''); }).length;
+    if (picks.length && !ev && Object.keys(aktivno.takmicenja).length) poruka('U ponudi „Igrači“ trenutno nema Evrolige; izvoz će sadržati ostala takmičenja.');
   }
   panel.querySelector('[data-x]').onclick = function () { panel.style.display = 'none'; };
-  panel.querySelector('[data-iz]').onclick = izvezi;
+  panel.querySelector('[data-iz]').onclick = function () { preuzmiAktivno().then(izvezi); };
   panel.querySelector('[data-sir]').onclick = sirovo;
   window.__mzPomocnik = { prikazi: function () { panel.style.display = 'block'; osvezi(); }, citaj: citaj, uhvaceno: uhvaceno };
   osvezi();
-  poruka('Otvori Evroliga igrači i proklikni utakmice/igrače da se ponuda učita, pa Izvezi.');
-  dohvatiRanije();
+  poruka('Učitavam ponudu igrača sa Mozzarta…');
+  preuzmiAktivno().then(function () { if (!aktivno.greska) poruka('Spremno. Klikni Izvezi.'); else poruka(aktivno.greska); });
 })();

@@ -105,6 +105,21 @@ class Baza:
                 return kand[0]
         return None
 
+    def nadji_u_utakmici(self, ime, t, tk=None):
+        """Ključ igrača i kod tima kad kladionica daje tim (tk ili t) ili samo utakmicu („domaćin | gost“, Mozzart)."""
+        from zajedno import tim as tim_kod
+        if tk or (t and ' | ' not in t):
+            kt = tk or tim_kod(t)
+            return self.nadji(ime, kt), kt
+        for deo in (t or '').split(' | '):
+            kt = tim_kod(deo)
+            if not kt:
+                continue
+            k = self.nadji(ime, kt)
+            if k and any(r['team'] == kt for r in self.byk[k][-3:]):
+                return k, kt
+        return None, None
+
     def pozicija(self, k):
         c = collections.Counter(r['pos'] for r in self.byk.get(k, []) if r['pos'] in 'GFC')
         return c.most_common(1)[0][0] if c else 'F'

@@ -174,10 +174,9 @@ def main():
             for p in picks:
                 if p.get('s') not in ('P', 'S', 'A') or not p.get('u') or not p.get('o'):
                     continue
-                kt = p.get('tk') or tim(p.get('t'))
+                k, kt = B.nadji_u_utakmici(p['p'], p.get('t'), p.get('tk'))
                 if kt not in (u['dom'], u['gost']):
                     continue
-                k = B.nadji(p['p'], kt)
                 if k not in po_kljucu:
                     nepoznati[p['p']] += 1
                     continue

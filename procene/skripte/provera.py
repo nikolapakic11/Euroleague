@@ -58,7 +58,7 @@ def ponude():
                     continue
                 if 'm' in p and not p['m'] and kl != 'soccerbet':
                     continue
-                out.append(dict(izvor=kl, dan=dan_iz_vremena(p.get('time'), d), p=p['p'], tk=p.get('tk') or tim(p.get('t')),
+                out.append(dict(izvor=kl, dan=dan_iz_vremena(p.get('time'), d), p=p['p'], tk=p.get('tk') or (None if ' | ' in (p.get('t') or '') else tim(p.get('t'))), t=p.get('t'),
                                 s=p['s'], l=p['l'], u=p['u'], o=p['o'], glavna=p.get('m', 1)))
     # duplikati (isti izvor, dan, igrač, stavka, granica)
     vid, cist = set(), []
@@ -80,7 +80,7 @@ def main():
     kolo_dana = {r['dan']: r['r'] for r in B.rows}
     rez, nema_igraca, nije_igrao = [], collections.Counter(), 0
     for x in ponude():
-        k = B.nadji(x['p'], x['tk'])
+        k, _ = B.nadji_u_utakmici(x['p'], x.get('t'), x['tk'])
         if not k:
             nema_igraca[x['p']] += 1
             continue
