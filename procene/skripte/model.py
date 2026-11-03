@@ -6,7 +6,8 @@ raspon (10/25/50/75/90. percentil) i verovatnoću za preko i ispod bilo koje gra
 Sve se računa samo iz utakmica pre dana utakmice (bez curenja budućnosti), iz baza/rows.json.
 
 Sastojci:
-  minuti   = ponderisani prosek prethodnih minuta (novije utakmice teže, faktor DM po utakmici)
+  minuti   = prosek minuta u ovoj sezoni (MINUTI='sezona', podrazumevano);
+             ili ponderisani prosek, novije utakmice teže (MINUTI='ponder')
   učinak   = ponderisani učinak po minutu, skupljen ka polaznoj proceni (K pseudo-minuta);
              polazna procena je učinak iz prošle sezone skupljen ka proseku pozicije (K2),
              a za igrače bez prošle sezone prosek pozicije
@@ -36,6 +37,7 @@ PAR = {
     'K2': 150.0,         # pseudo-minuti kojima se prošla sezona skuplja ka proseku pozicije
     'MW': 1.0,           # težina minuta iz prošle sezone, u utakmicama
     'PRIOR': 1,          # 1 = polazna procena iz prošle sezone (procene/podaci/e2025_igraci.json)
+    'MINUTI': 'sezona',  # 'sezona' = prosek minuta u ovoj sezoni (fiksno); 'ponder' = novije utakmice teže (DM, MW)
     'KAL': {'P': [0.0, 1.0], 'S': [0.0, 1.0], 'A': [0.0, 1.0]},   # doterivanje: logit p' = a + b*logit p
 }
 
@@ -169,6 +171,8 @@ class Baza:
         pr = self.prosla.get(k) if P.get('PRIOR') else None
         if pr and pr['n'] >= 3 and P['MW'] > 0:
             em = (sum(a * b for a, b in zip(w, mins)) + P['MW'] * pr['min'] / pr['n']) / (sum(w) + P['MW'])
+        if P.get('MINUTI', 'sezona') == 'sezona':
+            em = sum(mins) / n
         m_ocek = minuti if minuti is not None else em
         # tempo
         ta = L['tm'].get(tim); to = L['tm'].get(protivnik)

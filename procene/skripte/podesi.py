@@ -29,9 +29,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--od-kola', type=int, default=3)
     ap.add_argument('--do-kola', type=int, default=6)
-    a = ap.parse_args()
+    arg = ap.parse_args()
     B = Baza()
-    mete = [r for r in B.rows if a.od_kola <= r['r'] <= a.do_kola
+    mete = [r for r in B.rows if arg.od_kola <= r['r'] <= arg.do_kola
             and len([x for x in B.byk[r['k']] if x['dan'] < r['dan']]) >= 2]
     print('meta učinaka', len(mete))
     par = copy.deepcopy(PAR)
@@ -85,7 +85,7 @@ def main():
             a += (h11 * g0 - h01 * g1) / det; b += (h00 * g1 - h01 * g0) / det
         par['KAL'][s] = [round(a, 4), round(b, 4)]
         print('doterivanje', s, par['KAL'][s], 'tačaka', len(X))
-    par['_podeseno'] = f'kola {a.od_kola}-{a.do_kola}, {len(mete)} učinaka, log ver {round(najbolje, 1)}'
+    par['_podeseno'] = f'kola {arg.od_kola}-{arg.do_kola}, {len(mete)} učinaka, log ver {round(najbolje, 1)}'
     sacuvaj(os.path.join(PROCENE, 'model_parametri.json'), par)
     print(json.dumps(par, ensure_ascii=False))
 

@@ -1,14 +1,13 @@
-"""Javni predlozi po kolu: preko i ispod, poeni, skokovi i asistencije.
+"""Javni predlozi po kolu: PLUS (preko) i MINUS (ispod), poeni, skokovi i asistencije.
 
   python3 procene/skripte/predlozi.py --kolo 11      (posle tabla.py --kolo 11)
   python3 procene/skripte/predlozi.py                 (samo osvežava ishode i stranicu)
 
-Pravilo (procene/skripte/spajanje.py):
-  - za svaku granicu spojena verovatnoća (model + kvote, podešeno prema ishodima), ista za obe strane
-  - strana ulazi ako je spojena verovatnoća najmanje P_MIN, prednost (verovatnoća × kvota − 1) najmanje EV_MIN
-    i kvota najmanje KVOTA_MIN
-  - igrač sa bar 3 utakmice ove sezone, odigrao sve 3 poslednje utakmice svog tima, nije označen da ne igra
-  - jedan predlog po igraču: najizglednija strana i granica (pa veća prednost)
+Pravila (procene/skripte/spajanje.py), kvota najmanje 1,50:
+  - MINUS: spojena verovatnoća (model + kvote, podešeno prema ishodima) za ispod najmanje 55% i prednost najmanje 20%
+  - PLUS: model vidi preko 5 do 15 procentnih poena više od kvota (bez marže)
+  - igrač sa bar 3 utakmice ove sezone, odigrao sve 3 poslednje utakmice svog tima
+  - najviše jedan MINUS i jedan PLUS po igraču, PLUS ne ide na stavku koja već ima MINUS
 Predlozi za utakmicu se zaključavaju kad utakmica počne. Ishodi se upisuju iz baza/rows.json.
 Izlaz: procene/predlozi/kolo<N>.json i procene/javno/predlozi.html (iz procene/javno/sablon.html).
 """
@@ -36,14 +35,14 @@ def izaberi(tabla, w):
                         osn = dict(id=(u['g'], i['k']), g=u['g'], dan=u['dan'], vreme=u['vreme'], k=i['k'], ime=i['ime'],
                                    tim=st['tim'], prot=st['prot'], s=s, l=z['l'], kl=z['kl'], pm=z['pm'], tr=z['tr'],
                                    mu=i['s'][s]['mu'], min=i['min'])
-                        kand.append(dict(osn, strana='o', pp=p, ev=p * z['o'] - 1, k_=z['o']))
-                        kand.append(dict(osn, strana='u', pp=1 - p, ev=(1 - p) * z['u'] - 1, k_=z['u']))
+                        kand.append(dict(osn, strana='o', pp=p, ev=p * z['o'] - 1, k_=z['o'], raz=z['pm'] - z['tr']))
+                        kand.append(dict(osn, strana='u', pp=1 - p, ev=(1 - p) * z['u'] - 1, k_=z['u'], raz=z['tr'] - z['pm']))
     for c in kand:
         c['k'], c['igrac'] = c['k_'], c['k']          # izbor() gleda kvotu u 'k'
     out = []
     for c in spajanje.izbor(kand):
         c['kvota'] = c.pop('k'); c['k'] = c.pop('igrac'); c.pop('k_'); c.pop('id')
-        c['pp'] = round(c['pp'], 3); c['ev'] = round(c['ev'], 3)
+        c['pp'] = round(c['pp'], 3); c['ev'] = round(c['ev'], 3); c['raz'] = round(c['raz'], 3)
         out.append(c)
     return out
 
@@ -70,8 +69,8 @@ def main():
         st['utakmice'] = [dict(g=u['g'], dom=u['dom'], gost=u['gost'], vreme=u['vreme'], dan=u['dan'],
                                ponude=sorted(u['snimci'].keys())) for u in tabla['utakmice']]
         sacuvaj(put, st)
-        print(f'kolo {a.kolo}: predloga {len(st["predlozi"])} (zaključanih {len(zadrzi)}, novih {len(novi)}, '
-              f'preko {sum(p["strana"] == "o" for p in novi)})')
+        print(f'kolo {a.kolo}: predloga {len(st["predlozi"])} (zaključanih {len(zadrzi)}, novih {len(novi)}: '
+              f'plus {sum(p["strana"] == "o" for p in novi)}, minus {sum(p["strana"] == "u" for p in novi)})')
 
     # ishodi za sva kola
     B = Baza()

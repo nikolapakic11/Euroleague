@@ -32,12 +32,12 @@ Sve skripte se pokreću iz korena repozitorijuma.
 | Provera | `python3 procene/skripte/provera.py` | `procene/provera/izvestaj.md`: model naspram kvota na svim ponudama od oktobra, preko i ispod. |
 | Tabla | `python3 procene/skripte/tabla.py --kolo 11 --dnevnik` | `procene/tabla/kolo11.json` i `.html` (objavljuje se kao artefakt) i dnevnik procena. |
 | Spajanje | `python3 procene/skripte/spajanje.py` | Posle provere: spaja model i kvote u jednu verovatnoću podešenu prema ishodima (`procene/spajanje.json`), sa testom na kolima 7 do 9. |
-| Javni predlozi | `python3 procene/skripte/predlozi.py --kolo 11` | Posle table: preko ili ispod, sve tri stavke; strana ulazi ako je spojena verovatnoća ≥ 55%, prednost ≥ 10%, kvota ≥ 1,40; jedan predlog po igraču (najizgledniji). Zaključava na početku utakmice, upisuje ishode, pravi `procene/javno/predlozi.html`. |
+| Javni predlozi | `python3 procene/skripte/predlozi.py --kolo 11` | Posle table. MINUS: spojena verovatnoća za ispod ≥ 55% i prednost ≥ 20%. PLUS: model vidi preko 5 do 15 poena više od kvota. Kvota ≥ 1,50 za obe strane; najviše jedan PLUS i jedan MINUS po igraču. Zaključava na početku utakmice, upisuje ishode, pravi `procene/javno/predlozi.html`. |
 | Ishodi | `python3 procene/skripte/dnevnik.py --kolo 11` | Upisuje stvarne učinke u dnevnik i ispisuje tačnost. |
 
-Ručni minuti i „ne igra“ za kolo: `procene/minuti.json`, npr. `{"11": {"nikola milutinov": 0}}` (ključ je ime malim slovima, bez kvačica).
+Minuti su prosek igrača u ovoj sezoni (fiksno). Izuzetak za povredu ili „ne igra“ samo kroz `procene/minuti.json`, npr. `{"11": {"nikola milutinov": 0}}` (ključ je ime malim slovima, bez kvačica).
 
 Tabla za kolo 11: https://claude.ai/artifact/P3awRXNbkBvDErZ8Jug9vZ
 Javna stranica sa predlozima: https://claude.ai/artifact/HUT71aS4AnLVknR6pKgpDv (javna kad se uključi deljenje u meniju Share)
 
-Model ukratko: očekivani minuti × učinak po minutu (ova sezona, skupljena ka prošloj sezoni, pa ka proseku pozicije) × odbrana protivnika prema poziciji × tempo; raspodela je negativna binomna. Detalji u `procene/skripte/model.py`.
+Model ukratko: prosek minuta u sezoni × učinak po minutu (ova sezona, skupljena ka prošloj sezoni, pa ka proseku pozicije) × odbrana protivnika prema poziciji × tempo; raspodela je negativna binomna. Detalji u `procene/skripte/model.py`.

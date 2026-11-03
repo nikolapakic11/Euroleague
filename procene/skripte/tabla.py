@@ -5,7 +5,7 @@
 Za svaku utakmicu kola i svakog igrača koji je igrao ove sezone:
   očekivano i raspon za P, S, A; ponude svih kladionica za dan utakmice (poslednji snimak),
   verovatnoća za preko i ispod na svakoj granici, najbolja cena i razilaženja granica.
-Ručne izmene minuta i „ne igra“: procene/minuti.json, npr.
+Minuti su prosek ove sezone (model.PAR['MINUTI']). Izuzeci (povreda, „ne igra“) samo kroz procene/minuti.json, npr.
   {"11": {"nikola milutinov": 0, "facundo campazzo": 22}}
 Izlaz: procene/tabla/kolo<N>.json (podaci) i procene/tabla/kolo<N>.html (stranica table, iz sablon.html).
 --dnevnik: upisuje procene za utakmice koje još nisu počele u procene/dnevnik/kolo<N>.json;
@@ -88,7 +88,8 @@ def main():
     if os.path.exists(rp):
         rucno = ucitaj(rp).get(str(a.kolo), {})
     sp_put = os.path.join(PROCENE, 'spajanje.json')
-    sp_w = ucitaj(sp_put)['w'] if os.path.exists(sp_put) else None
+    sp_j = ucitaj(sp_put) if os.path.exists(sp_put) else {}
+    sp_w = sp_j.get('w')
     dani = {u['dan'] for u in kolo}
     pon = ponude_za_dane(dani)
     poslednji_dan = max(r['dan'] for r in B.rows)
@@ -176,7 +177,7 @@ def main():
                          dom=u['dom'], gost=u['gost'], pocela=u['utc'] <= sada, strane=stranice, raz=raz,
                          snimci={IME_KL[k]: v for k, v in snimci.items()}, nepoznati=dict(nepoznati)))
     out = dict(kolo=a.kolo, napravljeno=sada.astimezone(BG).strftime('%d.%m.%Y. %H:%M'),
-               podaci_do=poslednji_dan, parametri=P.get('_podeseno', ''), kal=P.get('KAL', {}), sp_w=sp_w, utakmice=utak,
+               podaci_do=poslednji_dan, parametri=P.get('_podeseno', ''), kal=P.get('KAL', {}), sp_w=sp_w, pravilo=sp_j.get('pravilo'), utakmice=utak,
                kladionice=[IME_KL[k] for k in KLADIONICE])
     put = os.path.join(PROCENE, 'tabla', f'kolo{a.kolo}.json')
     sacuvaj(put, out, kompaktno=True)
