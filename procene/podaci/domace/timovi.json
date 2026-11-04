@@ -1,0 +1,122 @@
+{
+ "BES": {
+  "id": "hE4Gkj9l",
+  "slug": "besiktas",
+  "ime": "Besiktas",
+  "skr": "BES"
+ },
+ "OLY": {
+  "id": "ptNXXDf6",
+  "slug": "olympiacos-piraeus",
+  "ime": "Olympiacos",
+  "skr": "OLY"
+ },
+ "HTA": {
+  "id": "x0WjVzjP",
+  "slug": "hapoel-tel-aviv",
+  "ime": "Hapoel Tel Aviv",
+  "skr": "HTA"
+ },
+ "IST": {
+  "id": "ny4KlAOf",
+  "slug": "anadolu-efes",
+  "ime": "Anadolu Efes",
+  "skr": "EFE"
+ },
+ "ASV": {
+  "id": "KrXB5aC1",
+  "slug": "lyon-villeurbanne",
+  "ime": "Lyon-Villeurbanne",
+  "skr": "LYO"
+ },
+ "PAR": {
+  "id": "GAiz1YL6",
+  "slug": "partizan-mozzart-bet",
+  "ime": "Partizan Mozzart Bet",
+  "skr": "PTZ"
+ },
+ "VIR": {
+  "id": "YwDFycYd",
+  "slug": "virtus-bologna",
+  "ime": "Virtus Bologna",
+  "skr": "VIR"
+ },
+ "ZAL": {
+  "id": "6JbDYvUs",
+  "slug": "zalgiris-kaunas",
+  "ime": "Zalgiris Kaunas",
+  "skr": "ZAL"
+ },
+ "RED": {
+  "id": "6uAuZ6Pt",
+  "slug": "crvena-zvezda-meridianbet",
+  "ime": "Crvena Zvezda Meridianbet",
+  "skr": "CRV"
+ },
+ "MUN": {
+  "id": "6LstMRPo",
+  "slug": "bayern",
+  "ime": "Bayern",
+  "skr": "BAY"
+ },
+ "TEL": {
+  "id": "nLuro05B",
+  "slug": "maccabi-tel-aviv",
+  "ime": "Maccabi Tel Aviv",
+  "skr": "MAC"
+ },
+ "PRS": {
+  "id": "CdCP6AWf",
+  "slug": "paris",
+  "ime": "Paris",
+  "skr": "PAR"
+ },
+ "MAD": {
+  "id": "MP6gLUO7",
+  "slug": "real-madrid",
+  "ime": "Real Madrid",
+  "skr": "REA"
+ },
+ "DUB": {
+  "id": "b7EUA43e",
+  "slug": "dubai",
+  "ime": "Dubai",
+  "skr": "DUB"
+ },
+ "PAN": {
+  "id": "bqRyXX9C",
+  "slug": "panathinaikos",
+  "ime": "Panathinaikos",
+  "skr": "PAT"
+ },
+ "BAS": {
+  "id": "8zQPdU9R",
+  "slug": "saski-baskonia",
+  "ime": "Baskonia",
+  "skr": "BAS"
+ },
+ "MIL": {
+  "id": "tUT82gR9",
+  "slug": "milan",
+  "ime": "Olimpia Milano",
+  "skr": "OLI"
+ },
+ "BAR": {
+  "id": "EDQLcAfL",
+  "slug": "barcelona",
+  "ime": "Barcelona",
+  "skr": "BAR"
+ },
+ "ULK": {
+  "id": "rDhoZR1l",
+  "slug": "fenerbahce",
+  "ime": "Fenerbahce",
+  "skr": "FEN"
+ },
+ "PAM": {
+  "id": "6w8lqYGE",
+  "slug": "valencia",
+  "ime": "Valencia",
+  "skr": "VAL"
+ }
+}

@@ -184,7 +184,7 @@ def main():
                                  A=P['A'][s], C=round(c_eff, 4), of=x['of'], pros=x['pros'], posl=x['poslednje'], linije=[],
                                  vatra=vatra([r for r in g if r['dan'] < u['dan']], s) if e['min'] >= 15 else None)
                 igraci.append(dict(k=k, ime=ime, pos=e['pos'], n=e['n'], min=e['min'], min_cv=e['min_cv'],
-                                   posl_min=e['poslednji_min'], prosla=e['prosla'], odsutan=odsutan,
+                                   posl_min=e['poslednji_min'], prosla=e['prosla'], odsutan=odsutan, tempo=e.get('tempo'),
                                    ne_igra=(rm == 0) or bool(sastav and k not in sastav),
                                    razlog=('nije u sastavu' if sastav and k not in sastav else 'ručno' if rm == 0 else None),
                                    rucno_min=rm if rm not in (None, 0) else None, s=st))

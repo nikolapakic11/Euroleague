@@ -1,0 +1,1002 @@
+{
+ "ASV": [
+  [
+   1794079800,
+   "FRANCE: LNB",
+   "Pau-Orthez",
+   true
+  ],
+  [
+   1794765600,
+   "FRANCE: LNB",
+   "Le Mans",
+   false
+  ],
+  [
+   1795370400,
+   "FRANCE: LNB",
+   "JL Bourg",
+   true
+  ],
+  [
+   1796571000,
+   "FRANCE: LNB",
+   "Strasbourg",
+   false
+  ],
+  [
+   1797184800,
+   "FRANCE: LNB",
+   "Paris",
+   true
+  ],
+  [
+   1797780600,
+   "FRANCE: LNB",
+   "Nanterre",
+   true
+  ],
+  [
+   1798398000,
+   "FRANCE: LNB",
+   "Dijon",
+   true
+  ],
+  [
+   1798479000,
+   "FRANCE: LNB",
+   "Chalon/Saone",
+   false
+  ]
+ ],
+ "BAR": [
+  [
+   1794135600,
+   "SPAIN: ACB",
+   "Breogan",
+   true
+  ],
+  [
+   1794758400,
+   "SPAIN: ACB",
+   "Obradoiro CAB",
+   true
+  ],
+  [
+   1795366800,
+   "SPAIN: ACB",
+   "Tenerife",
+   false
+  ],
+  [
+   1796554800,
+   "SPAIN: ACB",
+   "Basquet Girona",
+   false
+  ],
+  [
+   1796727600,
+   "SPAIN: ACB",
+   "Forca Lleida",
+   true
+  ],
+  [
+   1797184800,
+   "SPAIN: ACB",
+   "San Pablo Burgos",
+   false
+  ],
+  [
+   1797782400,
+   "SPAIN: ACB",
+   "Bilbao",
+   false
+  ],
+  [
+   1798401600,
+   "SPAIN: ACB",
+   "Real Madrid",
+   true
+  ]
+ ],
+ "BAS": [
+  [
+   1794081600,
+   "SPAIN: ACB",
+   "Forca Lleida",
+   false
+  ],
+  [
+   1794765600,
+   "SPAIN: ACB",
+   "Real Madrid",
+   true
+  ],
+  [
+   1795345200,
+   "SPAIN: ACB",
+   "Bilbao",
+   false
+  ],
+  [
+   1796576400,
+   "SPAIN: ACB",
+   "Murcia",
+   true
+  ],
+  [
+   1796727600,
+   "SPAIN: ACB",
+   "Obradoiro CAB",
+   true
+  ],
+  [
+   1797177600,
+   "SPAIN: ACB",
+   "Leyma Coruna",
+   false
+  ],
+  [
+   1797786000,
+   "SPAIN: ACB",
+   "MoraBanc Andorra",
+   true
+  ],
+  [
+   1798369200,
+   "SPAIN: ACB",
+   "Breogan",
+   true
+  ]
+ ],
+ "BES": [
+  [
+   1794240000,
+   "TURKEY: Super Lig",
+   "Karsiyaka",
+   false
+  ],
+  [
+   1794754800,
+   "TURKEY: Super Lig",
+   "Bursaspor",
+   true
+  ],
+  [
+   1795368600,
+   "TURKEY: Super Lig",
+   "Fenerbahce",
+   true
+  ],
+  [
+   1796659200,
+   "TURKEY: Super Lig",
+   "Bordo Bandirma",
+   false
+  ],
+  [
+   1797174000,
+   "TURKEY: Super Lig",
+   "Denizli Basket",
+   true
+  ],
+  [
+   1797787800,
+   "TURKEY: Super Lig",
+   "Esenler Erokspor",
+   false
+  ],
+  [
+   1798214400,
+   "TURKEY: Super Lig",
+   "Korfez Basket",
+   true
+  ],
+  [
+   1798819200,
+   "TURKEY: Super Lig",
+   "Petkim Spor",
+   false
+  ]
+ ],
+ "DUB": [
+  [
+   1794250800,
+   "EUROPE: AdmiralBet ABA League",
+   "Mega Basket",
+   false
+  ],
+  [
+   1794733200,
+   "EUROPE: AdmiralBet ABA League",
+   "Spartak Subotica",
+   true
+  ],
+  [
+   1795366800,
+   "EUROPE: AdmiralBet ABA League",
+   "Partizan Mozzart Bet",
+   false
+  ],
+  [
+   1796576400,
+   "EUROPE: AdmiralBet ABA League",
+   "Spartak Subotica",
+   false
+  ],
+  [
+   1797181200,
+   "EUROPE: AdmiralBet ABA League",
+   "Perspektiva Ilirija",
+   true
+  ],
+  [
+   1797696000,
+   "EUROPE: AdmiralBet ABA League",
+   "Vienna Basket",
+   false
+  ],
+  [
+   1798218000,
+   "EUROPE: AdmiralBet ABA League",
+   "KK Bosna",
+   true
+  ],
+  [
+   1799082000,
+   "EUROPE: AdmiralBet ABA League",
+   "Cluj-Napoca",
+   true
+  ]
+ ],
+ "HTA": [
+  [
+   1794250500,
+   "ISRAEL: League Cup - Play Offs",
+   "Maccabi Tel Aviv",
+   false
+  ],
+  [
+   1794673800,
+   "ISRAEL: Super League",
+   "Bnei Herzliya",
+   true
+  ],
+  [
+   1795278600,
+   "ISRAEL: Super League",
+   "Ironi Kiryat Ata",
+   true
+  ],
+  [
+   1796576400,
+   "ISRAEL: Super League",
+   "Nes Ziona",
+   false
+  ],
+  [
+   1796662800,
+   "ISRAEL: Super League",
+   "Ironi Eilat",
+   false
+  ],
+  [
+   1797181200,
+   "ISRAEL: Super League",
+   "Hapoel HaEmek",
+   false
+  ],
+  [
+   1797786000,
+   "ISRAEL: Super League",
+   "Maccabi Rishon",
+   false
+  ],
+  [
+   1798390800,
+   "ISRAEL: Super League",
+   "Galil Elyon",
+   true
+  ]
+ ],
+ "IST": [
+  [
+   1794141000,
+   "TURKEY: Super Lig",
+   "Tofas",
+   true
+  ],
+  [
+   1794763800,
+   "TURKEY: Super Lig",
+   "Fenerbahce",
+   false
+  ],
+  [
+   1795350600,
+   "TURKEY: Super Lig",
+   "Trabzonspor",
+   false
+  ],
+  [
+   1796560200,
+   "TURKEY: Super Lig",
+   "Turk Telekom",
+   true
+  ],
+  [
+   1797096600,
+   "TURKEY: Super Lig",
+   "Galatasaray",
+   false
+  ],
+  [
+   1797778800,
+   "TURKEY: Super Lig",
+   "Bahcesehir Kol.",
+   true
+  ],
+  [
+   1798214400,
+   "TURKEY: Super Lig",
+   "Cayirova",
+   false
+  ],
+  [
+   1798819200,
+   "TURKEY: Super Lig",
+   "Karsiyaka",
+   true
+  ]
+ ],
+ "MAD": [
+  [
+   1794160800,
+   "SPAIN: ACB",
+   "Murcia",
+   true
+  ],
+  [
+   1794765600,
+   "SPAIN: ACB",
+   "Baskonia",
+   false
+  ],
+  [
+   1795370400,
+   "SPAIN: ACB",
+   "Joventut Badalona",
+   true
+  ],
+  [
+   1796556600,
+   "SPAIN: ACB",
+   "MoraBanc Andorra",
+   true
+  ],
+  [
+   1796745600,
+   "SPAIN: ACB",
+   "Leyma Coruna",
+   false
+  ],
+  [
+   1797105600,
+   "SPAIN: ACB",
+   "Breogan",
+   false
+  ],
+  [
+   1797789600,
+   "SPAIN: ACB",
+   "Basket Zaragoza",
+   false
+  ],
+  [
+   1798401600,
+   "SPAIN: ACB",
+   "Barcelona",
+   false
+  ]
+ ],
+ "MIL": [
+  [
+   1794153600,
+   "ITALY: Lega A",
+   "Trento",
+   true
+  ],
+  [
+   1794762900,
+   "ITALY: Lega A",
+   "Udine",
+   false
+  ],
+  [
+   1795359600,
+   "ITALY: Lega A",
+   "Tortona",
+   false
+  ],
+  [
+   1796574600,
+   "ITALY: Lega A",
+   "Scafati",
+   true
+  ],
+  [
+   1797159600,
+   "ITALY: Lega A",
+   "Reggiana",
+   true
+  ],
+  [
+   1797778800,
+   "ITALY: Lega A",
+   "Venezia",
+   false
+  ],
+  [
+   1798383600,
+   "ITALY: Lega A",
+   "Maxima Roma",
+   true
+  ],
+  [
+   1799002800,
+   "ITALY: Lega A",
+   "Varese",
+   true
+  ]
+ ],
+ "MUN": [
+  [
+   1794157200,
+   "GERMANY: BBL",
+   "Wurzburg",
+   false
+  ],
+  [
+   1794756600,
+   "GERMANY: BBL",
+   "Syntainics MBC",
+   true
+  ],
+  [
+   1795366800,
+   "GERMANY: BBL",
+   "Alba Berlin",
+   false
+  ],
+  [
+   1796576400,
+   "GERMANY: BBL",
+   "Bonn",
+   true
+  ],
+  [
+   1797102000,
+   "GERMANY: German Cup",
+   "Wurzburg",
+   false
+  ],
+  [
+   1797775200,
+   "GERMANY: BBL",
+   "Jena",
+   false
+  ],
+  [
+   1798293600,
+   "GERMANY: BBL",
+   "Phoenix Hagen",
+   false
+  ],
+  [
+   1798484400,
+   "GERMANY: BBL",
+   "Ludwigsburg",
+   true
+  ]
+ ],
+ "OLY": [
+  [
+   1794151800,
+   "GREECE: Basket League",
+   "Maroussi",
+   false
+  ],
+  [
+   1794756600,
+   "GREECE: Basket League",
+   "Aris",
+   false
+  ],
+  [
+   1795352400,
+   "GREECE: Basket League",
+   "AS Karditsas",
+   false
+  ],
+  [
+   1796571000,
+   "GREECE: Basket League",
+   "Lefkadas",
+   false
+  ],
+  [
+   1797159600,
+   "GREECE: Basket League",
+   "PAOK",
+   true
+  ],
+  [
+   1797764400,
+   "GREECE: Basket League",
+   "AEK Athens",
+   false
+  ],
+  [
+   1798369200,
+   "GREECE: Basket League",
+   "Mykonos",
+   true
+  ],
+  [
+   1799002800,
+   "GREECE: Basket League",
+   "Panathinaikos",
+   false
+  ]
+ ],
+ "PAM": [
+  [
+   1794137400,
+   "SPAIN: ACB",
+   "San Pablo Burgos",
+   false
+  ],
+  [
+   1794740400,
+   "SPAIN: ACB",
+   "Leyma Coruna",
+   true
+  ],
+  [
+   1795363200,
+   "SPAIN: ACB",
+   "Breogan",
+   true
+  ],
+  [
+   1796580000,
+   "SPAIN: ACB",
+   "Unicaja",
+   false
+  ],
+  [
+   1796752800,
+   "SPAIN: ACB",
+   "Joventut Badalona",
+   false
+  ],
+  [
+   1797181200,
+   "SPAIN: ACB",
+   "Manresa",
+   false
+  ],
+  [
+   1797766200,
+   "SPAIN: ACB",
+   "Tenerife",
+   true
+  ],
+  [
+   1798394400,
+   "SPAIN: ACB",
+   "Basquet Girona",
+   false
+  ]
+ ],
+ "PAN": [
+  [
+   1794135600,
+   "GREECE: Basket League",
+   "AEK Athens",
+   false
+  ],
+  [
+   1794740400,
+   "GREECE: Basket League",
+   "Kolossos Rhodes",
+   true
+  ],
+  [
+   1795275000,
+   "GREECE: Basket League",
+   "Maroussi",
+   true
+  ],
+  [
+   1796562000,
+   "GREECE: Basket League",
+   "Mykonos",
+   false
+  ],
+  [
+   1797170400,
+   "GREECE: Basket League",
+   "Iraklis",
+   true
+  ],
+  [
+   1797789600,
+   "GREECE: Basket League",
+   "Lefkadas",
+   true
+  ],
+  [
+   1798385400,
+   "GREECE: Basket League",
+   "PAOK",
+   false
+  ],
+  [
+   1799002800,
+   "GREECE: Basket League",
+   "Olympiacos",
+   true
+  ]
+ ],
+ "PAR": [
+  [
+   1794139200,
+   "EUROPE: AdmiralBet ABA League",
+   "Studentski Centar",
+   true
+  ],
+  [
+   1794677400,
+   "EUROPE: AdmiralBet ABA League",
+   "Zadar",
+   false
+  ],
+  [
+   1795366800,
+   "EUROPE: AdmiralBet ABA League",
+   "Dubai",
+   true
+  ],
+  [
+   1796662800,
+   "EUROPE: AdmiralBet ABA League",
+   "Perspektiva Ilirija",
+   false
+  ],
+  [
+   1797181200,
+   "EUROPE: AdmiralBet ABA League",
+   "Spartak Subotica",
+   true
+  ],
+  [
+   1797786000,
+   "EUROPE: AdmiralBet ABA League",
+   "Mega Basket",
+   false
+  ],
+  [
+   1798304400,
+   "EUROPE: AdmiralBet ABA League",
+   "Cluj-Napoca",
+   false
+  ],
+  [
+   1798995600,
+   "EUROPE: AdmiralBet ABA League",
+   "Studentski Centar",
+   false
+  ]
+ ],
+ "PRS": [
+  [
+   1794151800,
+   "FRANCE: LNB",
+   "JL Bourg",
+   true
+  ],
+  [
+   1794684600,
+   "FRANCE: LNB",
+   "Limoges",
+   false
+  ],
+  [
+   1795361400,
+   "FRANCE: LNB",
+   "Gravelines-Dunkerque",
+   true
+  ],
+  [
+   1796580000,
+   "FRANCE: LNB",
+   "Pau-Orthez",
+   false
+  ],
+  [
+   1797184800,
+   "FRANCE: LNB",
+   "Lyon-Villeurbanne",
+   false
+  ],
+  [
+   1797789600,
+   "FRANCE: LNB",
+   "Dijon",
+   true
+  ],
+  [
+   1798306200,
+   "FRANCE: LNB",
+   "Saint Quentin",
+   true
+  ],
+  [
+   1799521200,
+   "FRANCE: LNB",
+   "Nanterre",
+   false
+  ]
+ ],
+ "RED": [
+  [
+   1794243600,
+   "EUROPE: AdmiralBet ABA League",
+   "Slovan Bratislava",
+   true
+  ],
+  [
+   1794763800,
+   "EUROPE: AdmiralBet ABA League",
+   "Cedevita Olimpija",
+   true
+  ],
+  [
+   1795366800,
+   "EUROPE: AdmiralBet ABA League",
+   "Cibona",
+   true
+  ],
+  [
+   1796576400,
+   "EUROPE: AdmiralBet ABA League",
+   "Cedevita Olimpija",
+   false
+  ],
+  [
+   1797181200,
+   "EUROPE: AdmiralBet ABA League",
+   "Borac Mozzart",
+   true
+  ],
+  [
+   1797786000,
+   "EUROPE: AdmiralBet ABA League",
+   "FMP Beograd",
+   true
+  ],
+  [
+   1798390800,
+   "EUROPE: AdmiralBet ABA League",
+   "Slovan Bratislava",
+   false
+  ],
+  [
+   1798992000,
+   "EUROPE: AdmiralBet ABA League",
+   "Cibona",
+   false
+  ]
+ ],
+ "TEL": [
+  [
+   1794250500,
+   "ISRAEL: League Cup - Play Offs",
+   "Hapoel Tel Aviv",
+   true
+  ],
+  [
+   1794682500,
+   "ISRAEL: Super League",
+   "Hapoel Jerusalem",
+   true
+  ],
+  [
+   1795287300,
+   "ISRAEL: Super League",
+   "Hapoel Holon",
+   true
+  ],
+  [
+   1796576400,
+   "ISRAEL: Super League",
+   "Maccabi Ashdod",
+   false
+  ],
+  [
+   1797181200,
+   "ISRAEL: Super League",
+   "Maccabi Ironi Ramat Gan",
+   false
+  ],
+  [
+   1797786000,
+   "ISRAEL: Super League",
+   "Hapoel HaEmek",
+   false
+  ],
+  [
+   1798390800,
+   "ISRAEL: Super League",
+   "Nes Ziona",
+   true
+  ],
+  [
+   1798909200,
+   "ISRAEL: Super League",
+   "Hapoel Beer Sheva",
+   false
+  ]
+ ],
+ "ULK": [
+  [
+   1794072600,
+   "TURKEY: Super Lig",
+   "Bursaspor",
+   false
+  ],
+  [
+   1794763800,
+   "TURKEY: Super Lig",
+   "Anadolu Efes",
+   true
+  ],
+  [
+   1795368600,
+   "TURKEY: Super Lig",
+   "Besiktas",
+   false
+  ],
+  [
+   1796551200,
+   "TURKEY: Super Lig",
+   "Trabzonspor",
+   true
+  ],
+  [
+   1797069600,
+   "TURKEY: Super Lig",
+   "Bordo Bandirma",
+   false
+  ],
+  [
+   1797769800,
+   "TURKEY: Super Lig",
+   "Turk Telekom",
+   true
+  ],
+  [
+   1798214400,
+   "TURKEY: Super Lig",
+   "Denizli Basket",
+   false
+  ],
+  [
+   1798819200,
+   "TURKEY: Super Lig",
+   "Galatasaray",
+   true
+  ]
+ ],
+ "VIR": [
+  [
+   1794250800,
+   "ITALY: Lega A",
+   "Verona",
+   true
+  ],
+  [
+   1794765600,
+   "ITALY: Lega A",
+   "Trento",
+   false
+  ],
+  [
+   1795366800,
+   "ITALY: Lega A",
+   "BC Roma",
+   true
+  ],
+  [
+   1796670000,
+   "ITALY: Lega A",
+   "Treviso",
+   false
+  ],
+  [
+   1797182100,
+   "ITALY: Lega A",
+   "Udine",
+   true
+  ],
+  [
+   1797791400,
+   "ITALY: Lega A",
+   "Reggiana",
+   false
+  ],
+  [
+   1798311600,
+   "ITALY: Lega A",
+   "Tortona",
+   true
+  ],
+  [
+   1799002800,
+   "ITALY: Lega A",
+   "Basket Napoli",
+   false
+  ]
+ ],
+ "ZAL": [
+  [
+   1794149400,
+   "LITHUANIA: LKL",
+   "Juventus",
+   false
+  ],
+  [
+   1794754200,
+   "LITHUANIA: LKL",
+   "Neptunas",
+   true
+  ],
+  [
+   1795359000,
+   "LITHUANIA: LKL",
+   "Lietkabelis",
+   false
+  ],
+  [
+   1796568600,
+   "LITHUANIA: LKL",
+   "Rytas",
+   true
+  ],
+  [
+   1797087600,
+   "LITHUANIA: LKL",
+   "Taurage",
+   false
+  ],
+  [
+   1797778200,
+   "LITHUANIA: LKL",
+   "Nevezis",
+   true
+  ],
+  [
+   1798296600,
+   "LITHUANIA: LKL",
+   "Jonava",
+   false
+  ],
+  [
+   1800198000,
+   "LITHUANIA: LKL",
+   "Siauliai",
+   false
+  ]
+ ]
+}
