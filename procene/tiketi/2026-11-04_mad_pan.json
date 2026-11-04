@@ -1,0 +1,1493 @@
+{
+ "v": 1,
+ "round": "10",
+ "tickets": [
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85693",
+     "p": "Kendrick Nunn",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.75
+    },
+    {
+     "c": "85679",
+     "p": "Alberto Abalde",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85690",
+     "p": "Sylvain Francisco",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    },
+    {
+     "c": "85683",
+     "p": "Andres Feliz",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "85688",
+     "p": "Juancho Hernangomez",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.85
+    },
+    {
+     "c": "85687",
+     "p": "Brancou Badio",
+     "t": "Panathinaikos",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85689",
+     "p": "Mathias Lessort",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 7.5,
+     "u": 1.7
+    },
+    {
+     "c": "85684",
+     "p": "Timothe Luwawu-Cabarrot",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 14.5,
+     "u": 1.92,
+     "d": "O"
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85690",
+     "p": "Sylvain Francisco",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    },
+    {
+     "c": "85680",
+     "p": "Damian Jones",
+     "t": "Real Madrid",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.72,
+     "d": "O"
+    },
+    {
+     "c": "85679",
+     "p": "Alberto Abalde",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85693",
+     "p": "Kendrick Nunn",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.75
+    },
+    {
+     "c": "85685",
+     "p": "Isaac Bonga",
+     "t": "Panathinaikos",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85688",
+     "p": "Juancho Hernangomez",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.85
+    },
+    {
+     "c": "85676",
+     "p": "Gabriele Procida",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85683",
+     "p": "Andres Feliz",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.81,
+     "d": "O"
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85688",
+     "p": "Juancho Hernangomez",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.85
+    },
+    {
+     "c": "85679",
+     "p": "Alberto Abalde",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85690",
+     "p": "Sylvain Francisco",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    },
+    {
+     "c": "85693",
+     "p": "Kendrick Nunn",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.75
+    },
+    {
+     "c": "85683",
+     "p": "Andres Feliz",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "85684",
+     "p": "Timothe Luwawu-Cabarrot",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 14.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85689",
+     "p": "Mathias Lessort",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 7.5,
+     "u": 1.7
+    },
+    {
+     "c": "85685",
+     "p": "Isaac Bonga",
+     "t": "Panathinaikos",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85690",
+     "p": "Sylvain Francisco",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    },
+    {
+     "c": "85693",
+     "p": "Kendrick Nunn",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.75
+    },
+    {
+     "c": "85684",
+     "p": "Timothe Luwawu-Cabarrot",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 14.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85680",
+     "p": "Damian Jones",
+     "t": "Real Madrid",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.72,
+     "d": "O"
+    },
+    {
+     "c": "85688",
+     "p": "Juancho Hernangomez",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.85
+    },
+    {
+     "c": "85683",
+     "p": "Andres Feliz",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "85679",
+     "p": "Alberto Abalde",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85677",
+     "p": "Jaime Pradilla",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85693",
+     "p": "Kendrick Nunn",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.75
+    },
+    {
+     "c": "85690",
+     "p": "Sylvain Francisco",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    },
+    {
+     "c": "85688",
+     "p": "Juancho Hernangomez",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.85
+    },
+    {
+     "c": "85676",
+     "p": "Gabriele Procida",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85683",
+     "p": "Andres Feliz",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "85687",
+     "p": "Brancou Badio",
+     "t": "Panathinaikos",
+     "s": "A",
+     "l": 1.5,
+     "u": 1.58,
+     "d": "O"
+    },
+    {
+     "c": "85689",
+     "p": "Mathias Lessort",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 7.5,
+     "u": 1.7
+    },
+    {
+     "c": "85685",
+     "p": "Isaac Bonga",
+     "t": "Panathinaikos",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85690",
+     "p": "Sylvain Francisco",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    },
+    {
+     "c": "85687",
+     "p": "Brancou Badio",
+     "t": "Panathinaikos",
+     "s": "A",
+     "l": 1.5,
+     "u": 1.58,
+     "d": "O"
+    },
+    {
+     "c": "85685",
+     "p": "Isaac Bonga",
+     "t": "Panathinaikos",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85682",
+     "p": "Walter Tavares",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 11.5,
+     "u": 1.97,
+     "d": "O"
+    },
+    {
+     "c": "85679",
+     "p": "Alberto Abalde",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85683",
+     "p": "Andres Feliz",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "85688",
+     "p": "Juancho Hernangomez",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.85
+    },
+    {
+     "c": "85676",
+     "p": "Gabriele Procida",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85690",
+     "p": "Sylvain Francisco",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    },
+    {
+     "c": "85688",
+     "p": "Juancho Hernangomez",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.85
+    },
+    {
+     "c": "85679",
+     "p": "Alberto Abalde",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85680",
+     "p": "Damian Jones",
+     "t": "Real Madrid",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.72,
+     "d": "O"
+    },
+    {
+     "c": "85683",
+     "p": "Andres Feliz",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "85676",
+     "p": "Gabriele Procida",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85677",
+     "p": "Jaime Pradilla",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85687",
+     "p": "Brancou Badio",
+     "t": "Panathinaikos",
+     "s": "A",
+     "l": 1.5,
+     "u": 1.58,
+     "d": "O"
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85679",
+     "p": "Alberto Abalde",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85676",
+     "p": "Gabriele Procida",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85686",
+     "p": "Guerschon Yabusele",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.97
+    },
+    {
+     "c": "85687",
+     "p": "Brancou Badio",
+     "t": "Panathinaikos",
+     "s": "A",
+     "l": 1.5,
+     "u": 1.58,
+     "d": "O"
+    },
+    {
+     "c": "85693",
+     "p": "Kendrick Nunn",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.75
+    },
+    {
+     "c": "85683",
+     "p": "Andres Feliz",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "85685",
+     "p": "Isaac Bonga",
+     "t": "Panathinaikos",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85690",
+     "p": "Sylvain Francisco",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85690",
+     "p": "Sylvain Francisco",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    },
+    {
+     "c": "85679",
+     "p": "Alberto Abalde",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85683",
+     "p": "Andres Feliz",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "85682",
+     "p": "Walter Tavares",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 11.5,
+     "u": 1.97,
+     "d": "O"
+    },
+    {
+     "c": "85684",
+     "p": "Timothe Luwawu-Cabarrot",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 14.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85693",
+     "p": "Kendrick Nunn",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.75
+    },
+    {
+     "c": "85676",
+     "p": "Gabriele Procida",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85689",
+     "p": "Mathias Lessort",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 7.5,
+     "u": 1.7
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85688",
+     "p": "Juancho Hernangomez",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.85
+    },
+    {
+     "c": "85693",
+     "p": "Kendrick Nunn",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.75
+    },
+    {
+     "c": "85676",
+     "p": "Gabriele Procida",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85679",
+     "p": "Alberto Abalde",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85687",
+     "p": "Brancou Badio",
+     "t": "Panathinaikos",
+     "s": "A",
+     "l": 1.5,
+     "u": 1.58,
+     "d": "O"
+    },
+    {
+     "c": "85690",
+     "p": "Sylvain Francisco",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    },
+    {
+     "c": "85678",
+     "p": "Chuma Okeke",
+     "t": "Real Madrid",
+     "s": "S",
+     "l": 3.5,
+     "u": 1.85,
+     "d": "O"
+    },
+    {
+     "c": "85682",
+     "p": "Walter Tavares",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 11.5,
+     "u": 1.97,
+     "d": "O"
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85690",
+     "p": "Sylvain Francisco",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    },
+    {
+     "c": "85693",
+     "p": "Kendrick Nunn",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.75
+    },
+    {
+     "c": "85689",
+     "p": "Mathias Lessort",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 7.5,
+     "u": 1.7
+    },
+    {
+     "c": "85684",
+     "p": "Timothe Luwawu-Cabarrot",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 14.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85679",
+     "p": "Alberto Abalde",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85678",
+     "p": "Chuma Okeke",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 7.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85677",
+     "p": "Jaime Pradilla",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85688",
+     "p": "Juancho Hernangomez",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.85
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85688",
+     "p": "Juancho Hernangomez",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.85
+    },
+    {
+     "c": "85679",
+     "p": "Alberto Abalde",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85684",
+     "p": "Timothe Luwawu-Cabarrot",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 14.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85693",
+     "p": "Kendrick Nunn",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.75
+    },
+    {
+     "c": "85676",
+     "p": "Gabriele Procida",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85677",
+     "p": "Jaime Pradilla",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85683",
+     "p": "Andres Feliz",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "85687",
+     "p": "Brancou Badio",
+     "t": "Panathinaikos",
+     "s": "A",
+     "l": 1.5,
+     "u": 1.58,
+     "d": "O"
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85690",
+     "p": "Sylvain Francisco",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    },
+    {
+     "c": "85693",
+     "p": "Kendrick Nunn",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.75
+    },
+    {
+     "c": "85683",
+     "p": "Andres Feliz",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "85682",
+     "p": "Walter Tavares",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 11.5,
+     "u": 1.97,
+     "d": "O"
+    },
+    {
+     "c": "85686",
+     "p": "Guerschon Yabusele",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.97
+    },
+    {
+     "c": "85684",
+     "p": "Timothe Luwawu-Cabarrot",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 14.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85680",
+     "p": "Damian Jones",
+     "t": "Real Madrid",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.72,
+     "d": "O"
+    },
+    {
+     "c": "85689",
+     "p": "Mathias Lessort",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 7.5,
+     "u": 1.7
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85690",
+     "p": "Sylvain Francisco",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    },
+    {
+     "c": "85683",
+     "p": "Andres Feliz",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "85685",
+     "p": "Isaac Bonga",
+     "t": "Panathinaikos",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85686",
+     "p": "Guerschon Yabusele",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.97
+    },
+    {
+     "c": "85689",
+     "p": "Mathias Lessort",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 7.5,
+     "u": 1.7
+    },
+    {
+     "c": "85680",
+     "p": "Damian Jones",
+     "t": "Real Madrid",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.72,
+     "d": "O"
+    },
+    {
+     "c": "85687",
+     "p": "Brancou Badio",
+     "t": "Panathinaikos",
+     "s": "A",
+     "l": 1.5,
+     "u": 1.58,
+     "d": "O"
+    },
+    {
+     "c": "85684",
+     "p": "Timothe Luwawu-Cabarrot",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 14.5,
+     "u": 1.92,
+     "d": "O"
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85690",
+     "p": "Sylvain Francisco",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    },
+    {
+     "c": "85679",
+     "p": "Alberto Abalde",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85689",
+     "p": "Mathias Lessort",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 7.5,
+     "u": 1.7
+    },
+    {
+     "c": "85687",
+     "p": "Brancou Badio",
+     "t": "Panathinaikos",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85685",
+     "p": "Isaac Bonga",
+     "t": "Panathinaikos",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85676",
+     "p": "Gabriele Procida",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85677",
+     "p": "Jaime Pradilla",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85693",
+     "p": "Kendrick Nunn",
+     "t": "Panathinaikos",
+     "s": "A",
+     "l": 3.5,
+     "u": 1.93
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85693",
+     "p": "Kendrick Nunn",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.75
+    },
+    {
+     "c": "85680",
+     "p": "Damian Jones",
+     "t": "Real Madrid",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.72,
+     "d": "O"
+    },
+    {
+     "c": "85683",
+     "p": "Andres Feliz",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "85689",
+     "p": "Mathias Lessort",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 7.5,
+     "u": 1.7
+    },
+    {
+     "c": "85688",
+     "p": "Juancho Hernangomez",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.85
+    },
+    {
+     "c": "85682",
+     "p": "Walter Tavares",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 11.5,
+     "u": 1.97,
+     "d": "O"
+    },
+    {
+     "c": "85685",
+     "p": "Isaac Bonga",
+     "t": "Panathinaikos",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85687",
+     "p": "Brancou Badio",
+     "t": "Panathinaikos",
+     "s": "A",
+     "l": 1.5,
+     "u": 1.58,
+     "d": "O"
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85683",
+     "p": "Andres Feliz",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "85687",
+     "p": "Brancou Badio",
+     "t": "Panathinaikos",
+     "s": "A",
+     "l": 1.5,
+     "u": 1.58,
+     "d": "O"
+    },
+    {
+     "c": "85684",
+     "p": "Timothe Luwawu-Cabarrot",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 14.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85688",
+     "p": "Juancho Hernangomez",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.85
+    },
+    {
+     "c": "85677",
+     "p": "Jaime Pradilla",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85679",
+     "p": "Alberto Abalde",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85682",
+     "p": "Walter Tavares",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 11.5,
+     "u": 1.97,
+     "d": "O"
+    },
+    {
+     "c": "85680",
+     "p": "Damian Jones",
+     "t": "Real Madrid",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.72,
+     "d": "O"
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85687",
+     "p": "Brancou Badio",
+     "t": "Panathinaikos",
+     "s": "A",
+     "l": 1.5,
+     "u": 1.58,
+     "d": "O"
+    },
+    {
+     "c": "85683",
+     "p": "Andres Feliz",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "85682",
+     "p": "Walter Tavares",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 11.5,
+     "u": 1.97,
+     "d": "O"
+    },
+    {
+     "c": "85686",
+     "p": "Guerschon Yabusele",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.97
+    },
+    {
+     "c": "85685",
+     "p": "Isaac Bonga",
+     "t": "Panathinaikos",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85688",
+     "p": "Juancho Hernangomez",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.85
+    },
+    {
+     "c": "85684",
+     "p": "Timothe Luwawu-Cabarrot",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 14.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85679",
+     "p": "Alberto Abalde",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85680",
+     "p": "Damian Jones",
+     "t": "Real Madrid",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.72,
+     "d": "O"
+    },
+    {
+     "c": "85693",
+     "p": "Kendrick Nunn",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.75
+    },
+    {
+     "c": "85677",
+     "p": "Jaime Pradilla",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85676",
+     "p": "Gabriele Procida",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85686",
+     "p": "Guerschon Yabusele",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.97
+    },
+    {
+     "c": "85688",
+     "p": "Juancho Hernangomez",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.85
+    },
+    {
+     "c": "85679",
+     "p": "Alberto Abalde",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85684",
+     "p": "Timothe Luwawu-Cabarrot",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 14.5,
+     "u": 1.92,
+     "d": "O"
+    }
+   ]
+  },
+  {
+   "stake": 50,
+   "legs": [
+    {
+     "c": "85690",
+     "p": "Sylvain Francisco",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    },
+    {
+     "c": "85676",
+     "p": "Gabriele Procida",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85687",
+     "p": "Brancou Badio",
+     "t": "Panathinaikos",
+     "s": "A",
+     "l": 1.5,
+     "u": 1.58,
+     "d": "O"
+    },
+    {
+     "c": "85686",
+     "p": "Guerschon Yabusele",
+     "t": "Panathinaikos",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.97
+    },
+    {
+     "c": "85682",
+     "p": "Walter Tavares",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 11.5,
+     "u": 1.97,
+     "d": "O"
+    },
+    {
+     "c": "85678",
+     "p": "Chuma Okeke",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 7.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85685",
+     "p": "Isaac Bonga",
+     "t": "Panathinaikos",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "85677",
+     "p": "Jaime Pradilla",
+     "t": "Real Madrid",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.92,
+     "d": "O"
+    }
+   ]
+  }
+ ],
+ "odigrano": "2026-11-04 17:32",
+ "utakmica": "MAD–PAN 20:45 (kolo 10)",
+ "kladionica": "admiral",
+ "ulog_ukupno": 1000,
+ "napomena": "20 tiketa po 50 din, po 8 parova, iz procena (predlozi i naginjanja sa kartice Igrači). d=O je plus (preko), bez d je minus."
+}
