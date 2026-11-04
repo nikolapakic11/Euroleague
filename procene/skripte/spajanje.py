@@ -6,26 +6,34 @@ Model sam je previše samouveren (kad kaže 67%, prolazi oko 58%), a kvote siste
 Zato se verovatnoća za preko računa kao
   logit p = a + b·logit(model) + c·logit(kvote bez marže) + d_S·[skokovi] + d_A·[asistencije]
 sa koeficijentima iz logističke regresije na granicama iz procene/provera/granice.json.
-Ista formula važi za obe strane (ispod = 1 − p), pa preko i ispod imaju jednake uslove.
+Ista formula važi za obe strane (ispod = 1 − p). Na njoj se zasniva izbor 4 do 6 predloga po utakmici (izbor_utakmice).
 
 Izlaz procene/spajanje.json:
   w      koeficijenti podešeni na svim granicama (za predloge i tablu)
-  test   isto pravilo za predloge, podešeno na kolima 4–6 i provereno na kolima 7–9 (van podešavanja)
+  test   pravilo predloga na ranijim ponudama: kola 7–9 van podešavanja, kola 4–6 u periodu podešavanja
 """
 import json, math, os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from zajedno import PROCENE, ucitaj, sacuvaj
 
-# pravila za predloge (koristi ih i predlozi.py)
+# pravila za predloge (koriste ih tabla.py i predlozi.py)
 KVOTA_MIN = 1.50
-# MINUS (ispod): spojena verovatnoća i prednost
-P_MIN = 0.55        # spojena verovatnoća za ispod
-EV_MIN = 0.20       # spojena verovatnoća × kvota − 1
-# PLUS (preko): kvote za preko su u oktobru bile preskupe, pa spojena verovatnoća skoro nikad ne pređe 55%.
-# Preko zato ima svoje pravilo: model vidi preko za RAZ_MIN do RAZ_MAX više od kvota (bez marže).
-# Veća razlika od toga je u proveri bila lošija (najčešće greška modela, npr. promena uloge igrača).
-RAZ_MIN = 0.05
-RAZ_MAX = 0.15
+# Po utakmici 4 do 6 predloga, rangirano po spojenoj verovatnoći izabrane strane.
+# Strana ulazi ako joj je spojena verovatnoća bar PRAG (PLUS ima niži prag jer kvote sistematski precenjuju preko,
+# pa spojena verovatnoća za preko retko pređe 55%). Ako ih je manje od MIN_UT, dopunjava se najboljim ispod praga („slab“).
+PRAG = {'u': 0.53, 'o': 0.50}
+MIN_UT, MAX_UT = 4, 6
+PLUS_MIN = 2            # do 2 PLUS po utakmici dobijaju mesto unapred, ako prolaze prag
+NIVOI = ((0.60, 'jak'), (0.55, 'solidan'))      # ispod 0,55 a iznad praga: „nagoveštaj“
+
+
+def nivo(pp, slab=False):
+    if slab:
+        return 'slab'
+    for granica, ime in NIVOI:
+        if pp >= granica:
+            return ime
+    return 'nagoveštaj'
 
 
 def lg(p):
@@ -70,37 +78,61 @@ def podesi(R, l2=1.0):
     return [round(a, 4) for a in w]
 
 
-def prolazi(c):
-    if c['k'] < KVOTA_MIN:
-        return False
-    if c['strana'] == 'u':
-        return c['pp'] >= P_MIN and c['ev'] >= EV_MIN
-    return RAZ_MIN <= c['raz'] < RAZ_MAX
-
-
-def izbor(kandidati):
-    """kandidati: dict(id igrača, strana, s, pp, ev, k, raz). Najviše jedan MINUS i jedan PLUS po igraču
-    (MINUS: najizgledniji; PLUS: najveća razlika model − kvote), a PLUS ne ide na stavku koja već ima MINUS."""
-    best = {}
-    for c in kandidati:
-        if not prolazi(c):
+def izbor_utakmice(kand):
+    """kand: dict(igr, s, strana, pp, ev, k) za jednu utakmicu (k = kvota). Vraća 4 do 6 predloga, najviše jedan po igraču,
+    sa poljima nivo i rang. Po igraču se uzima stavka i strana sa najvećim viškom verovatnoće iznad praga."""
+    po_stavci = {}
+    for c in kand:
+        if c['k'] < KVOTA_MIN:
             continue
-        kl = (c['id'], c['strana'])
-        kljuc = (c['pp'], c['ev']) if c['strana'] == 'u' else (c['raz'], c['ev'])
-        if kl not in best or kljuc > best[kl][0]:
-            best[kl] = (kljuc, c)
-    out = [c for _, c in best.values()]
-    minus = {(c['id'], c['s']) for c in out if c['strana'] == 'u'}
-    return [c for c in out if not (c['strana'] == 'o' and (c['id'], c['s']) in minus)]
+        kl = (c['igr'], c['s'], c['strana'])
+        if kl not in po_stavci or c['ev'] > po_stavci[kl]['ev']:      # najbolja cena za istu stavku i stranu
+            po_stavci[kl] = c
+    po_igracu = {}
+    for c in po_stavci.values():
+        c['sk'] = c['pp'] - PRAG[c['strana']]
+        if c['igr'] not in po_igracu or (c['sk'], c['ev']) > (po_igracu[c['igr']]['sk'], po_igracu[c['igr']]['ev']):
+            po_igracu[c['igr']] = c
+    L = sorted(po_igracu.values(), key=lambda c: (-c['sk'], -c['ev']))
+    ok = [c for c in L if c['sk'] >= 0]
+    out = [c for c in ok if c['strana'] == 'o'][:PLUS_MIN]
+    for c in ok:
+        if len(out) >= MAX_UT:
+            break
+        if c not in out:
+            out.append(c)
+    slabi = []
+    for c in L:
+        if len(out) + len(slabi) >= MIN_UT:
+            break
+        if c not in out:
+            slabi.append(c)
+    rez = []
+    for c in sorted(out, key=lambda c: -c['pp']):
+        rez.append(dict(c, nivo=nivo(c['pp'])))
+    for c in slabi:
+        rez.append(dict(c, nivo=nivo(c['pp'], slab=True)))
+    for r, c in enumerate(rez, 1):
+        c['rang'] = r
+        c.pop('sk', None)
+    return rez
 
 
-def predlozi_unazad(w, R):
-    kand = []
+def predlozi_unazad(w, R, g_od):
+    """R: granice iz provere; g_od(r) -> šifra utakmice. Isto pravilo po utakmici."""
+    po_g = {}
     for r in R:
+        g = g_od(r)
+        if g is None:
+            continue
         p = preko(w, r['s'], r['pm'], r['tr'])
-        kand.append(dict(id=(r['dan'], r['k']), strana='o', pp=p, ev=p * r['o'] - 1, k=r['o'], raz=r['pm'] - r['tr'], prosao=r['preko'] == 1, kolo=r['kolo'], s=r['s']))
-        kand.append(dict(id=(r['dan'], r['k']), strana='u', pp=1 - p, ev=(1 - p) * r['u'] - 1, k=r['u'], raz=r['tr'] - r['pm'], prosao=r['preko'] == 0, kolo=r['kolo'], s=r['s']))
-    return izbor(kand)
+        for strana, pp, k, prosao in (('o', p, r['o'], r['preko'] == 1), ('u', 1 - p, r['u'], r['preko'] == 0)):
+            po_g.setdefault(g, []).append(dict(igr=r['k'], s=r['s'], strana=strana, pp=pp, ev=pp * k - 1, k=k,
+                                                prosao=prosao, kolo=r['kolo']))
+    out = []
+    for g, C in po_g.items():
+        out += izbor_utakmice(C)
+    return out, len(po_g)
 
 
 def main():
@@ -109,26 +141,35 @@ def main():
     tr = [r for r in R if r['kolo'] <= 6]
     te = [r for r in R if r['kolo'] >= 7]
     w_tr = podesi(tr)
-    P = predlozi_unazad(w_tr, te)
-    def zbir(X):
-        po_kolu = {}
+    from model import Baza
+    B = Baza()
+    g_idx = {(x['k'], x['dan']): x['g'] for x in B.rows}
+    g_od = lambda r: g_idx.get((r['k'], r['dan']))
+
+    def zbir(X, kljuc):
+        grupe = {}
         for x in X:
-            a = po_kolu.setdefault(x['kolo'], dict(kolo=x['kolo'], n=0, prosao=0, dobit=0.0, P=0, S=0, A=0))
-            a['n'] += 1; a['prosao'] += x['prosao']; a['dobit'] += (x['k'] - 1) if x['prosao'] else -1; a[x['s']] += 1
-        kola = [dict(v, dobit=round(v['dobit'], 2)) for _, v in sorted(po_kolu.items())]
-        return dict(kola=kola, n=len(X), prosao=sum(x['prosao'] for x in X),
-                    dobit=round(sum((x['k'] - 1) if x['prosao'] else -1 for x in X), 2))
-    po_strani = {'minus': zbir([x for x in P if x['strana'] == 'u']), 'plus': zbir([x for x in P if x['strana'] == 'o'])}
-    # PLUS i na kolima 4–6 (pravilo za preko ne zavisi od spajanja, pa se može pokazati i tu)
-    P46 = [x for x in predlozi_unazad(w_tr, tr) if x['strana'] == 'o']
-    po_strani['plus_4_6'] = zbir(P46)
+            a = grupe.setdefault(kljuc(x), dict(n=0, prosao=0, dobit=0.0, pp=0.0))
+            a['n'] += 1; a['prosao'] += x['prosao']; a['dobit'] += (x['k'] - 1) if x['prosao'] else -1; a['pp'] += x['pp']
+        return {k: dict(n=v['n'], prosao=v['prosao'], dobit=round(v['dobit'], 2), pp=round(v['pp'] / v['n'], 3))
+                for k, v in sorted(grupe.items())}
+
+    test = {}
+    for ime, X in (('kola_7_9', te), ('kola_4_6', tr)):
+        P, n_ut = predlozi_unazad(w_tr, X, g_od)
+        test[ime] = dict(utakmica=n_ut, predloga=len(P),
+                         ukupno=zbir(P, lambda x: 'sve')['sve'],
+                         po_strani=zbir(P, lambda x: 'plus' if x['strana'] == 'o' else 'minus'),
+                         po_nivou=zbir(P, lambda x: x['nivo']),
+                         po_kolu=zbir(P, lambda x: x['kolo']))
+    test['opis'] = ('koeficijenti spajanja iz kola 4–6; kola 7–9 su van podešavanja, kola 4–6 su u periodu podešavanja. '
+                    'Admiral i MaxBet, jedna kladionica po danu, samo glavne granice')
     ll = lambda p, y: -(y * math.log(p) + (1 - y) * math.log(1 - p))
-    test = dict(opis='koeficijenti iz kola 4–6, predlozi na kolima 7–9 (van podešavanja); Admiral i MaxBet, jedna kladionica po danu',
-                po_strani=po_strani,
-                ll_spojeno=round(sum(ll(preko(w_tr, r['s'], r['pm'], r['tr']), r['preko']) for r in te) / len(te), 4),
+    test.update(ll_spojeno=round(sum(ll(preko(w_tr, r['s'], r['pm'], r['tr']), r['preko']) for r in te) / len(te), 4),
                 ll_kvote=round(sum(ll(min(max(r['tr'], 1e-4), 1 - 1e-4), r['preko']) for r in te) / len(te), 4),
                 ll_model=round(sum(ll(min(max(r['pm'], 1e-4), 1 - 1e-4), r['preko']) for r in te) / len(te), 4))
-    out = dict(w=w_sve, w_kola_4_6=w_tr, n_granica=len(R), pravilo=dict(p_min=P_MIN, ev_min=EV_MIN, kvota_min=KVOTA_MIN, raz_min=RAZ_MIN, raz_max=RAZ_MAX), test=test)
+    out = dict(w=w_sve, w_kola_4_6=w_tr, n_granica=len(R), pravilo=dict(kvota_min=KVOTA_MIN, prag_minus=PRAG['u'], prag_plus=PRAG['o'], min_ut=MIN_UT, max_ut=MAX_UT, plus_min=PLUS_MIN,
+                                                               nivoi=[[g, n] for g, n in NIVOI]), test=test)
     sacuvaj(os.path.join(PROCENE, 'spajanje.json'), out)
     print(json.dumps(out, ensure_ascii=False, indent=1))
 

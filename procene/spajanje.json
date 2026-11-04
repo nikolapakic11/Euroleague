@@ -15,118 +15,153 @@
  ],
  "n_granica": 1907,
  "pravilo": {
-  "p_min": 0.55,
-  "ev_min": 0.2,
   "kvota_min": 1.5,
-  "raz_min": 0.05,
-  "raz_max": 0.15
+  "prag_minus": 0.53,
+  "prag_plus": 0.5,
+  "min_ut": 4,
+  "max_ut": 6,
+  "plus_min": 2,
+  "nivoi": [
+   [
+    0.6,
+    "jak"
+   ],
+   [
+    0.55,
+    "solidan"
+   ]
+  ]
  },
  "test": {
-  "opis": "koeficijenti iz kola 4–6, predlozi na kolima 7–9 (van podešavanja); Admiral i MaxBet, jedna kladionica po danu",
-  "po_strani": {
-   "minus": {
-    "kola": [
-     {
-      "kolo": 7,
-      "n": 45,
-      "prosao": 29,
-      "dobit": 13.6,
-      "P": 13,
-      "S": 19,
-      "A": 13
-     },
-     {
-      "kolo": 8,
-      "n": 47,
-      "prosao": 22,
-      "dobit": -1.6,
-      "P": 5,
-      "S": 29,
-      "A": 13
-     },
-     {
-      "kolo": 9,
-      "n": 42,
-      "prosao": 30,
-      "dobit": 20.48,
-      "P": 3,
-      "S": 22,
-      "A": 17
-     }
-    ],
-    "n": 134,
-    "prosao": 81,
-    "dobit": 32.48
+  "kola_7_9": {
+   "utakmica": 29,
+   "predloga": 174,
+   "ukupno": {
+    "n": 174,
+    "prosao": 112,
+    "dobit": 21.81,
+    "pp": 0.646
    },
-   "plus": {
-    "kola": [
-     {
-      "kolo": 7,
-      "n": 26,
-      "prosao": 16,
-      "dobit": 4.01,
-      "P": 12,
-      "S": 5,
-      "A": 9
-     },
-     {
-      "kolo": 8,
-      "n": 22,
-      "prosao": 10,
-      "dobit": -3.73,
-      "P": 12,
-      "S": 3,
-      "A": 7
-     },
-     {
-      "kolo": 9,
-      "n": 19,
-      "prosao": 10,
-      "dobit": -0.53,
-      "P": 5,
-      "S": 10,
-      "A": 4
-     }
-    ],
-    "n": 67,
-    "prosao": 36,
-    "dobit": -0.25
+   "po_strani": {
+    "minus": {
+     "n": 152,
+     "prosao": 98,
+     "dobit": 20.39,
+     "pp": 0.661
+    },
+    "plus": {
+     "n": 22,
+     "prosao": 14,
+     "dobit": 1.42,
+     "pp": 0.539
+    }
    },
-   "plus_4_6": {
-    "kola": [
-     {
-      "kolo": 4,
-      "n": 22,
-      "prosao": 10,
-      "dobit": -2.57,
-      "P": 9,
-      "S": 8,
-      "A": 5
-     },
-     {
-      "kolo": 5,
-      "n": 22,
-      "prosao": 8,
-      "dobit": -5.61,
-      "P": 8,
-      "S": 7,
-      "A": 7
-     },
-     {
-      "kolo": 6,
-      "n": 17,
-      "prosao": 11,
-      "dobit": 4.08,
-      "P": 7,
-      "S": 8,
-      "A": 2
-     }
-    ],
-    "n": 61,
-    "prosao": 29,
-    "dobit": -4.1
+   "po_nivou": {
+    "jak": {
+     "n": 148,
+     "prosao": 96,
+     "dobit": 20.55,
+     "pp": 0.663
+    },
+    "nagoveštaj": {
+     "n": 15,
+     "prosao": 9,
+     "dobit": 0.3,
+     "pp": 0.523
+    },
+    "solidan": {
+     "n": 11,
+     "prosao": 7,
+     "dobit": 0.96,
+     "pp": 0.578
+    }
+   },
+   "po_kolu": {
+    "7": {
+     "n": 54,
+     "prosao": 38,
+     "dobit": 13.21,
+     "pp": 0.647
+    },
+    "8": {
+     "n": 60,
+     "prosao": 34,
+     "dobit": -0.4,
+     "pp": 0.637
+    },
+    "9": {
+     "n": 60,
+     "prosao": 40,
+     "dobit": 9.0,
+     "pp": 0.654
+    }
    }
   },
+  "kola_4_6": {
+   "utakmica": 29,
+   "predloga": 173,
+   "ukupno": {
+    "n": 173,
+    "prosao": 108,
+    "dobit": 19.46,
+    "pp": 0.636
+   },
+   "po_strani": {
+    "minus": {
+     "n": 154,
+     "prosao": 101,
+     "dobit": 26.16,
+     "pp": 0.649
+    },
+    "plus": {
+     "n": 19,
+     "prosao": 7,
+     "dobit": -6.7,
+     "pp": 0.53
+    }
+   },
+   "po_nivou": {
+    "jak": {
+     "n": 149,
+     "prosao": 98,
+     "dobit": 25.64,
+     "pp": 0.651
+    },
+    "nagoveštaj": {
+     "n": 17,
+     "prosao": 6,
+     "dobit": -6.02,
+     "pp": 0.522
+    },
+    "solidan": {
+     "n": 7,
+     "prosao": 4,
+     "dobit": -0.16,
+     "pp": 0.582
+    }
+   },
+   "po_kolu": {
+    "4": {
+     "n": 54,
+     "prosao": 34,
+     "dobit": 5.55,
+     "pp": 0.643
+    },
+    "5": {
+     "n": 60,
+     "prosao": 42,
+     "dobit": 15.14,
+     "pp": 0.64
+    },
+    "6": {
+     "n": 59,
+     "prosao": 32,
+     "dobit": -1.23,
+     "pp": 0.625
+    }
+   }
+  },
+  "opis": "koeficijenti spajanja iz kola 4–6; kola 7–9 su van podešavanja, kola 4–6 su u periodu podešavanja. Admiral i MaxBet, jedna kladionica po danu, samo glavne granice",
   "ll_spojeno": 0.6912,
   "ll_kvote": 0.6887,
   "ll_model": 0.706

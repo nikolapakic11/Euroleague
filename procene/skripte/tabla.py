@@ -51,7 +51,39 @@ def ponude_za_dane(dani):
                 if d in dani:
                     prvi = out[(kl, d)][2] if (kl, d) in out else lst
                     out[(kl, d)] = (j.get('at'), lst, prvi)
+            # lestvice „N+“ (Soccerbet): [igrač, tim, stavka, N, kvota], važe za dan snimka
+            if j.get('x') and ime[:10] in dani:
+                LESTVICE[(kl, ime[:10])] = j['x']
     return out
+
+
+LESTVICE = {}
+
+
+def soft_spot(i, s, strana, pred, sp_w):
+    """Sve ponuđene granice za stranu predloga (glavne, alternativne, lestvice) sa verovatnoćom i najboljom kvotom,
+    i „soft spot“: granica sa najvećim očekivanim povraćajem (verovatnoća × kvota − 1) među onima sa bar 50%."""
+    x = i['s'][s]
+    tacke = {}
+    for z in x['linije']:
+        kv = z['o'] if strana == 'o' else z['u']
+        p = z['pc'] if strana == 'o' else 1 - z['pc']
+        t = tacke.get(z['l'])
+        if not t or kv > t['k']:
+            tacke[z['l']] = dict(l=z['l'], k=kv, kl=z['kl'], p=round(p, 3), vrsta='granica')
+    if strana == 'o':
+        for z in x.get('lest', []):
+            l = z['n'] - 0.5
+            t = tacke.get(l)
+            if not t or z['k'] > t['k']:
+                tacke[l] = dict(l=l, k=z['k'], kl=z['kl'], p=round(z['pc'], 3), vrsta='lestvica', n=z['n'])
+    T = sorted(tacke.values(), key=lambda t: t['l'])
+    kand = [t for t in T if t['p'] >= 0.5 and t['k'] >= 1.2]
+    soft = max(kand, key=lambda t: t['p'] * t['k']) if kand else None
+    if soft:
+        soft = dict(soft, ev=round(soft['p'] * soft['k'] - 1, 3),
+                    isti=(soft['l'] == pred['l'] and soft['k'] <= pred['kvota'] + 1e-9))
+    return T, soft
 
 
 def rosteri():
@@ -191,6 +223,47 @@ def main():
                 if p.get('m', 1) and l0 is not None and l0 != p['l']:
                     lin['l0'] = l0                     # granica se pomerila od prvog snimka dana
                 x['linije'].append(lin)
+        # lestvice „N+“ (samo preko): procena modela, a kvote bez marže približno (marža lestvica ~8%)
+        for (kl, d), X in LESTVICE.items():
+            if d != u['dan']:
+                continue
+            for igr, tm_ime, s_, n_, kv in X:
+                if s_ not in ('P', 'S', 'A') or not kv or kv <= 1:
+                    continue
+                k, kt = B.nadji_u_utakmici(igr, tm_ime, None)
+                if k not in po_kljucu or kt not in (u['dom'], u['gost']):
+                    continue
+                _, i = po_kljucu[k]
+                x = i['s'][s_]
+                pm = verovatnoca_preko(s_, x['mu'], x['var'], n_ - 0.5)
+                tr_est = min(0.97, (1 / kv) / 1.08)
+                pc = spajanje.preko(sp_w, s_, pm, tr_est) if sp_w else pm
+                x.setdefault('lest', []).append(dict(kl=kl, n=n_, k=kv, pm=round(pm, 4), pc=round(pc, 4)))
+        # predlozi za utakmicu: 4 do 6, po pravilu iz spajanje.izbor_utakmice (samo glavne granice)
+        kand = []
+        for st_i in stranice:
+            for i in st_i['igraci']:
+                if i['ne_igra'] or i['odsutan'] > 0 or i['n'] < 3:
+                    continue
+                for s in 'PSA':
+                    for z in i['s'][s]['linije']:
+                        if not z.get('m', 1):
+                            continue
+                        pc = z['pc']
+                        for strana, pp, kv in (('o', pc, z['o']), ('u', 1 - pc, z['u'])):
+                            kand.append(dict(igr=i['k'], s=s, strana=strana, pp=pp, ev=pp * kv - 1, k=kv, l=z['l'], kl=z['kl']))
+        for c in (spajanje.izbor_utakmice(kand) if sp_w else []):
+            _, i = po_kljucu[c['igr']]
+            pred = dict(strana=c['strana'], pp=round(c['pp'], 3), ev=round(c['ev'], 3), kvota=c['k'], l=c['l'], kl=c['kl'],
+                        nivo=c['nivo'], rang=c['rang'])
+            # iste granice i strane kod ostalih kladionica
+            pred['ostale'] = sorted([dict(kl=z['kl'], k=(z['o'] if c['strana'] == 'o' else z['u']))
+                                     for z in i['s'][c['s']]['linije'] if z['l'] == c['l'] and z['kl'] != c['kl'] and z.get('m', 1)],
+                                    key=lambda t: -t['k'])
+            T, soft = soft_spot(i, c['s'], c['strana'], pred, sp_w)
+            pred['opseg'] = T
+            pred['soft'] = soft
+            i['s'][c['s']]['pred'] = pred
         # razilaženja: preko na nižoj granici kod jedne, ispod na višoj kod druge
         raz = []
         for st_i in stranice:

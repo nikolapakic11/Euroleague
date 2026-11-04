@@ -3,11 +3,11 @@
   python3 procene/skripte/predlozi.py --kolo 11      (posle tabla.py --kolo 11)
   python3 procene/skripte/predlozi.py                 (samo osvežava ishode i stranicu)
 
-Pravila (procene/skripte/spajanje.py), kvota najmanje 1,50:
-  - MINUS: spojena verovatnoća (model + kvote, podešeno prema ishodima) za ispod najmanje 55% i prednost najmanje 20%
-  - PLUS: model vidi preko 5 do 15 procentnih poena više od kvota (bez marže)
-  - igrač sa bar 3 utakmice ove sezone, odigrao sve 3 poslednje utakmice svog tima
-  - najviše jedan MINUS i jedan PLUS po igraču, PLUS ne ide na stavku koja već ima MINUS
+Pravilo (procene/skripte/spajanje.py, izbor_utakmice), izbor se pravi u tabli (tabla.py):
+  - 4 do 6 predloga po utakmici, najviše jedan po igraču, rangirano po spojenoj verovatnoći izabrane strane
+  - strana ulazi sa spojenom verovatnoćom bar 53% (MINUS) odnosno 50% (PLUS), kvota bar 1,50; do 2 PLUS imaju mesto unapred
+  - nivoi: jak (bar 60%), solidan (55–60%), nagoveštaj (ispod 55%), slab (dopuna do 4, ispod praga)
+  - uz svaki predlog: ostale kladionice sa istom granicom, opseg ponuđenih granica i „soft spot“
 Predlozi za utakmicu se zaključavaju kad utakmica počne. Ishodi se upisuju iz baza/rows.json.
 Izlaz: procene/predlozi/kolo<N>.json i procene/javno/predlozi.html (iz procene/javno/sablon.html).
 """
@@ -20,31 +20,25 @@ import spajanje
 IME_KL = {'admiral': 'Admiral', 'maxbet': 'MaxBet', 'mozzart': 'Mozzart', 'soccerbet': 'Soccerbet'}
 
 
-def izaberi(tabla, w):
-    kand = []
+def izaberi(tabla, w=None):
+    """Predlozi su već izabrani u tabli (tabla.py, pravilo spajanje.izbor_utakmice); ovde se samo prepisuju."""
+    out = []
     for u in tabla['utakmice']:
         if u['pocela']:
             continue
         for st in u['strane']:
             for i in st['igraci']:
-                if i['ne_igra'] or i['odsutan'] > 0 or i['n'] < 3:
-                    continue
                 for s in 'PSA':
-                    for z in i['s'][s]['linije']:
-                        p = spajanje.preko(w, s, z['pm'], z['tr'])
-                        osn = dict(id=(u['g'], i['k']), g=u['g'], dan=u['dan'], vreme=u['vreme'], k=i['k'], ime=i['ime'],
-                                   tim=st['tim'], prot=st['prot'], s=s, l=z['l'], kl=z['kl'], pm=z['pm'], tr=z['tr'],
-                                   mu=i['s'][s]['mu'], min=i['min'], vatra=i['s'][s].get('vatra'),
-                                   pos=i['pos'], of=i['s'][s]['of'], l0=z.get('l0'))
-                        kand.append(dict(osn, strana='o', pp=p, ev=p * z['o'] - 1, k_=z['o'], raz=z['pm'] - z['tr']))
-                        kand.append(dict(osn, strana='u', pp=1 - p, ev=(1 - p) * z['u'] - 1, k_=z['u'], raz=z['tr'] - z['pm']))
-    for c in kand:
-        c['k'], c['igrac'] = c['k_'], c['k']          # izbor() gleda kvotu u 'k'
-    out = []
-    for c in spajanje.izbor(kand):
-        c['kvota'] = c.pop('k'); c['k'] = c.pop('igrac'); c.pop('k_'); c.pop('id')
-        c['pp'] = round(c['pp'], 3); c['ev'] = round(c['ev'], 3); c['raz'] = round(c['raz'], 3)
-        out.append(c)
+                    pr = i['s'][s].get('pred')
+                    if not pr:
+                        continue
+                    z = next((z for z in i['s'][s]['linije'] if z['kl'] == pr['kl'] and z['l'] == pr['l']), {})
+                    out.append(dict(g=u['g'], dan=u['dan'], vreme=u['vreme'], k=i['k'], ime=i['ime'], tim=st['tim'], prot=st['prot'],
+                                    s=s, strana=pr['strana'], l=pr['l'], kl=pr['kl'], kvota=pr['kvota'], pp=pr['pp'], ev=pr['ev'],
+                                    nivo=pr['nivo'], rang=pr['rang'], ostale=pr.get('ostale', []), soft=pr.get('soft'),
+                                    opseg=pr.get('opseg', []), q=i['s'][s]['q'], mu=i['s'][s]['mu'], min=i['min'],
+                                    pm=z.get('pm'), tr=z.get('tr'), l0=z.get('l0'), vatra=i['s'][s].get('vatra'),
+                                    pos=i['pos'], of=i['s'][s]['of']))
     return out
 
 
@@ -62,7 +56,7 @@ def main():
         st = ucitaj(put) if os.path.exists(put) else {'kolo': a.kolo, 'predlozi': []}
         pocele = {u['g'] for u in tabla['utakmice'] if u['pocela']}
         zadrzi = [p for p in st['predlozi'] if p['g'] in pocele]          # zaključani
-        novi = izaberi(tabla, sp['w'])
+        novi = izaberi(tabla)
         for p in novi:
             p['upisano'] = sada
         st['predlozi'] = zadrzi + novi
@@ -70,8 +64,10 @@ def main():
         st['utakmice'] = [dict(g=u['g'], dom=u['dom'], gost=u['gost'], vreme=u['vreme'], dan=u['dan'],
                                ponude=sorted(u['snimci'].keys())) for u in tabla['utakmice']]
         sacuvaj(put, st)
+        import collections
         print(f'kolo {a.kolo}: predloga {len(st["predlozi"])} (zaključanih {len(zadrzi)}, novih {len(novi)}: '
-              f'plus {sum(p["strana"] == "o" for p in novi)}, minus {sum(p["strana"] == "u" for p in novi)})')
+              f'plus {sum(p["strana"] == "o" for p in novi)}, minus {sum(p["strana"] == "u" for p in novi)}; '
+              f'nivoi {dict(collections.Counter(p["nivo"] for p in novi))})')
 
     # ishodi za sva kola
     B = Baza()
