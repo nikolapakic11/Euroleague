@@ -253,9 +253,12 @@ def razlozi(i, s, l, u, moja, tudja, K):
     if ned:
         T.append(dict(p=1, d=1, t=f"Kod {gen(tim)} ne {'igraju' if len(ned) > 1 else 'igra'} {spisak([j['ime'] for j in ned[:3]])}, pa ostaje više minuta i lopti za ostale.",
                       kr=f"bez {'njih' if len(ned) > 1 else 'njega'} ostaje više prostora"))
+    # odsutni protivnici na istoj poziciji: bitno za poene (slabija odbrana na toj poziciji) i za skok krila i centara;
+    # za asistencije i za skok bekova nije
     ned2 = [j for j in tudja.get('nedostaju', []) if j['pos'] == poz]
-    if ned2:
-        T.append(dict(p=6, d=1, t=f"Kod {gen(prot)} na njegovoj poziciji ne {'igraju' if len(ned2) > 1 else 'igra'} {spisak([j['ime'] for j in ned2[:2]])}.", kr=''))
+    if ned2 and (s == 'P' or (s == 'S' and poz in ('F', 'C'))):
+        sta = 'manje je onih koji ga čuvaju' if s == 'P' else 'manje je visokih koji se bore za skok'
+        T.append(dict(p=6, d=1, t=f"Kod {gen(prot)} na njegovoj poziciji ne {'igraju' if len(ned2) > 1 else 'igra'} {spisak([j['ime'] for j in ned2[:2]])}, pa {sta}.", kr=''))
     pv = i.get('povratak')
     if pv and abs(pv['sa'][s] - pv['bez'][s]) >= max(0.5, 0.15 * pv['bez'][s]):
         manje = pv['sa'][s] < pv['bez'][s]

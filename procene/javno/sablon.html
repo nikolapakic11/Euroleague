@@ -66,7 +66,7 @@ p{margin:0;max-width:68ch}
 .knj tr.ne td.gr::before{content:"✗ ";font-size:12px}
 .an{grid-column:3 / -1;margin:2px 0 0;padding:10px 14px;border-radius:10px;background:var(--bg);font-size:14px;line-height:1.45}
 .an summary{cursor:pointer;font:600 13px var(--f-disp);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
-.an ul{margin:6px 0 0;padding-left:18px;columns:2 300px;column-gap:28px}
+.an ul{margin:6px 0 0;padding-left:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:3px 34px}
 .an .zak,.zst .zak{margin:6px 0 0;font-weight:600;max-width:none}
 .zst ul{margin:4px 0 0;padding-left:18px}
 .an li{break-inside:avoid;margin-bottom:3px}
