@@ -11,7 +11,7 @@ Pravilo (procene/skripte/spajanje.py, izbor_utakmice), izbor se pravi u tabli (t
 Predlozi za utakmicu se zaključavaju kad utakmica počne. Ishodi se upisuju iz baza/rows.json.
 Izlaz: procene/predlozi/kolo<N>.json i procene/javno/predlozi.html (iz procene/javno/sablon.html).
 """
-import argparse, datetime as dt, glob, json, os, sys
+import argparse, collections, datetime as dt, glob, json, os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from model import Baza
 from zajedno import PROCENE, BG, ucitaj, sacuvaj
@@ -31,76 +31,83 @@ def zr(x, d=1):
     return s[:-2] if d == 1 and s.endswith(',0') else s
 
 
-def analiza(i, s, pr, u, moja, tudja, B, domacin):
-    """Kratke tačke zašto očekujemo to što očekujemo: minuti, sezona, forma, protivnik, ko je na poziciji, odsutni."""
+def broj_tacaka(pp):
+    """Koliko tačaka analize: jači izgledi, više obrazloženja."""
+    return 6 if pp >= 0.60 else 4 if pp >= 0.55 else 2
+
+
+def analiza(i, s, pr, u, moja, tudja, B, domacin, najvise=6):
+    """Kratke tačke koje idu u prilog izabranoj strani (pr['strana'] na granici pr['l']), poređane po važnosti.
+    Ono što govori protiv se ne navodi. Poslednja tačka je razlika granice i očekivanja, ako ide u prilog."""
     x = i['s'][s]
     g = [r for r in B.byk.get(i['k'], []) if r['dan'] < u['dan']]
     o = pr['strana'] == 'o'
     l = pr['l']
-    out = []
-    # minuti
-    pm = i.get('posl_min') or []
-    m3 = sum(pm[-3:]) / len(pm[-3:]) if pm else None
-    t = f"Minuti: {zr(i['min'])} u proseku"
-    if pm:
-        t += f", poslednje 3 utakmice {', '.join(str(m) for m in pm[-3:])}"
-    if m3 is not None and m3 - i['min'] >= 3:
-        t += '; u poslednje vreme igra više'
-    elif m3 is not None and i['min'] - m3 >= 3:
-        t += '; u poslednje vreme igra manje'
-    out.append(t + '.')
-    # sezona i granica
+    za = lambda v: v > 0 if o else v < 0          # da li razlika (više minus manje) ide u prilog strani
+    T = []                                        # (prioritet, tekst)
     if g:
         n = len(g)
-        prolaz = sum((r[s] > l) if o else (r[s] < l) for r in g)
-        out.append(f"Sezona: {zr(sum(r[s] for r in g) / n)} {SNA[s]} u {n} utakmica; {'preko' if o else 'ispod'} {zr(l)} u {prolaz} od {n}.")
-        l3 = [r[s] for r in g[-3:]]
-        a3 = sum(l3) / len(l3)
         pros = sum(r[s] for r in g) / n
+        prolaz = sum((r[s] > l) if o else (r[s] < l) for r in g)
+        if prolaz * 2 > n or za(pros - l):
+            T.append((1, f"Sezona: {'preko' if o else 'ispod'} {zr(l)} u {prolaz} od {n} utakmica, prosek {zr(pros)} {SNA[s]}."))
         if n >= 4:
-            ocena = 'iznad proseka' if a3 >= pros * 1.15 and a3 - pros >= 1 else 'ispod proseka' if a3 <= pros * 0.85 and pros - a3 >= 1 else 'blizu proseka'
-            out.append(f"Forma: poslednje 3 utakmice {', '.join(str(v) for v in l3)}, {ocena}.")
-        # dom i gost
+            l3 = [r[s] for r in g[-3:]]
+            a3 = sum(l3) / 3
+            if abs(a3 - pros) >= max(1.0, 0.15 * pros) and za(a3 - pros):
+                T.append((3, f"Forma: poslednje 3 utakmice {', '.join(str(v) for v in l3)}, {'iznad' if a3 > pros else 'ispod'} proseka."))
+        je_kuca = u['dom'] == moja['tim']
         kuca = [r[s] for r in g if domacin.get(r['g']) == r['team']]
         gost = [r[s] for r in g if domacin.get(r['g']) and domacin.get(r['g']) != r['team']]
         if len(kuca) >= 2 and len(gost) >= 2:
             ak, ag = sum(kuca) / len(kuca), sum(gost) / len(gost)
-            if abs(ak - ag) >= max(1.0, 0.2 * max(ak, ag)):
-                je_kuca = u['dom'] == moja['tim']
-                out.append(f"Kod kuće {zr(ak)}, u gostima {zr(ag)}; ova utakmica je {'kod kuće' if je_kuca else 'u gostima'}.")
+            ova, druga = (ak, ag) if je_kuca else (ag, ak)
+            if abs(ak - ag) >= max(1.0, 0.2 * max(ak, ag)) and za(ova - druga):
+                gde, gde2 = ('Kod kuće', 'u gostima') if je_kuca else ('U gostima', 'kod kuće')
+                T.append((5, f"{gde} ima {'više' if ova > druga else 'manje'}: {zr(ova)} naspram {zr(druga)} {gde2}; ova utakmica je {gde.lower()}."))
         isti = [r for r in g if r['opp'] == moja['prot']]
-        if isti:
-            out.append(f"Protiv {moja['prot']} ove sezone: " + ', '.join(f"{r[s]} ({r['dan'][8:10]}.{r['dan'][5:7]}.)" for r in isti[-2:]) + '.')
-    # protivnik
+        if isti and all((r[s] > l) if o else (r[s] < l) for r in isti):
+            T.append((6, f"Protiv {moja['prot']} ove sezone: " + ', '.join(f"{r[s]} ({r['dan'][8:10]}.{r['dan'][5:7]}.)" for r in isti[-2:]) + '.'))
+    pm = i.get('posl_min') or []
+    if len(pm) >= 3:
+        m3 = sum(pm[-3:]) / 3
+        if abs(m3 - i['min']) >= 3 and za(m3 - i['min']):
+            T.append((4, f"Minuti: u poslednje vreme igra {'više' if m3 > i['min'] else 'manje'} ({', '.join(str(m) for m in pm[-3:])} min, prosek {zr(i['min'])})."))
     of = x.get('of')
     if of is not None:
         p = round((of - 1) * 100)
-        kome = POZM.get(i['pos'], 'igračima na ovoj poziciji')
-        if abs(p) >= 5:
-            out.append(f"Odbrana: {moja['prot']} dozvoljava {kome} {abs(p)}% {'više' if p > 0 else 'manje'} {SNA[s]} od proseka lige.")
-        else:
-            out.append(f"Odbrana: {moja['prot']} dozvoljava {kome} prosečan broj {SNA[s]}.")
+        if abs(p) >= 5 and za(p):
+            na_poz = sorted([j for j in tudja['igraci'] if j['pos'] == i['pos'] and not j['ne_igra'] and not j['odsutan'] and j['min'] >= 12],
+                            key=lambda j: -j['min'])[:2]
+            dod = f"; na poziciji {'su' if len(na_poz) > 1 else 'je'} {' i '.join(j['ime'] for j in na_poz)}" if na_poz else ''
+            T.append((2, f"Odbrana: {moja['prot']} dozvoljava {POZM.get(i['pos'], 'igračima na ovoj poziciji')} {abs(p)}% {'više' if p > 0 else 'manje'} {SNA[s]} od proseka lige{dod}."))
     tp = i.get('tempo')
-    if tp and abs(tp - 1) >= 0.03:
-        out.append(f"Tempo: očekuje se {'brža' if tp > 1 else 'sporija'} utakmica od proseka lige ({'+' if tp > 1 else '−'}{abs(round((tp - 1) * 100))}% poseda).")
-    # ko je na poziciji kod protivnika
-    na_poz = [j for j in tudja['igraci'] if j['pos'] == i['pos'] and not j['ne_igra'] and not j['odsutan'] and j['min'] >= 12]
-    na_poz.sort(key=lambda j: -j['min'])
-    if na_poz:
-        out.append(f"Na poziciji kod {moja['prot']}: " + ', '.join(f"{j['ime']} ({zr(j['min'])} min)" for j in na_poz[:2]) + '.')
-    # odsutni: van sastava (potvrđeno) ili nisu igrali bar 2 od poslednje 3 utakmice
-    def odsutni(st_):
-        return [j['ime'] + (' (van sastava)' if j['ne_igra'] else '') for j in st_['igraci']
-                if j['k'] != i['k'] and j['min'] >= 12 and (j['ne_igra'] or j['odsutan'] >= 2)][:2]
-    d = [f"{x['tim']} {', '.join(L)}" for x in (moja, tudja) for L in [odsutni(x)] if L]
-    if d:
-        out.append('Nedostaju: ' + '; '.join(d) + '.')
-    # zaključak
-    mu = x['mu']
-    raz = l - mu
-    if abs(raz) >= 0.3:
-        out.append(f"Granica {zr(l)} je {zr(abs(raz))} {'iznad' if raz > 0 else 'ispod'} našeg očekivanja ({zr(mu)}).")
+    if tp and abs(tp - 1) >= 0.03 and za(tp - 1):
+        T.append((8, f"Tempo: očekuje se {'brža' if tp > 1 else 'sporija'} utakmica od proseka lige ({'+' if tp > 1 else '−'}{abs(round((tp - 1) * 100))}% poseda)."))
+    if o:     # odsutni saigrači ostavljaju više lopti i minuta; odsutni protivnici na istoj poziciji slabe odbranu
+        sv = [j['ime'] for j in moja['igraci'] if j['k'] != i['k'] and j['min'] >= 15 and (j['ne_igra'] or j['odsutan'] >= 2)][:2]
+        pr_ = [j['ime'] for j in tudja['igraci'] if j['pos'] == i['pos'] and j['min'] >= 15 and (j['ne_igra'] or j['odsutan'] >= 2)][:2]
+        if sv or pr_:
+            ne = lambda L: f"ne igra{'ju' if len(L) > 1 else ''} {' i '.join(L)}"
+            d = ([f"kod {moja['tim']} {ne(sv)}"] if sv else []) + ([f"kod {tudja['tim']} na njegovoj poziciji {ne(pr_)}"] if pr_ else [])
+            T.append((7, 'Više prostora: ' + '; '.join(d) + '.'))
+    T.sort()
+    out = [t for _, t in T[:max(1, najvise - 1)]]
+    raz = l - x['mu']
+    if abs(raz) >= 0.3 and (raz > 0) != o:
+        out.append(f"Granica {zr(l)} je {zr(abs(raz))} {'iznad' if raz > 0 else 'ispod'} našeg očekivanja ({zr(x['mu'])}).")
     return out
+
+
+def naginje(x):
+    """Strana na koju naginje igrač u stavci, na najčešćoj glavnoj granici: dict(strana, l, pp, knjige) ili None."""
+    L = [z for z in x['linije'] if z.get('m', 1)]
+    if not L:
+        return None
+    c = collections.Counter(z['l'] for z in L)
+    l = sorted(c, key=lambda v: (-c[v], v))[0]
+    pc = sum(z['pc'] for z in L if z['l'] == l) / c[l]
+    return dict(strana='o' if pc >= 0.5 else 'u', l=l, pp=round(max(pc, 1 - pc), 3))
 
 
 def izaberi(tabla, B=None, domacin=None):
@@ -117,7 +124,7 @@ def izaberi(tabla, B=None, domacin=None):
                     if not pr:
                         continue
                     z = next((z for z in i['s'][s]['linije'] if z['kl'] == pr['kl'] and z['l'] == pr['l']), {})
-                    an = analiza(i, s, pr, u, st, tudja, B, domacin or {}) if B else []
+                    an = analiza(i, s, pr, u, st, tudja, B, domacin or {}, broj_tacaka(pr['pp'])) if B else []
                     out.append(dict(g=u['g'], dan=u['dan'], vreme=u['vreme'], k=i['k'], ime=i['ime'], tim=st['tim'], prot=st['prot'],
                                     s=s, strana=pr['strana'], l=pr['l'], kl=pr['kl'], kvota=pr['kvota'], pp=pr['pp'], ev=pr['ev'],
                                     nivo=pr['nivo'], rang=pr['rang'], ostale=pr.get('ostale', []), knjige=pr.get('knjige', []), soft=pr.get('soft'),
@@ -134,16 +141,22 @@ def igraci_kola(kolo):
         return None
     t = ucitaj(put)
     B = Baza()
+    from zajedno import utakmice as sve_ut
+    domacin = {x['g']: x['dom'] for x in sve_ut()}
     ut, out = [], []
     for u in t['utakmice']:
         ut.append(dict(g=u['g'], dom=u['dom'], gost=u['gost'], vreme=u['vreme']))
         for st in u['strane']:
+            tudja = next(x for x in u['strane'] if x is not st)
             for i in st['igraci']:
                 s_ = {}
                 for s in 'PSA':
                     x = i['s'][s]
                     pr = x.get('pred')
-                    s_[s] = dict(mu=x['mu'], q=x['q'], pros=x['pros'], posl=x['posl'], of=x['of'], vatra=x.get('vatra'),
+                    ng = None if i['ne_igra'] else naginje(x)
+                    if ng:
+                        ng['zasto'] = analiza(i, s, ng, u, st, tudja, B, domacin, broj_tacaka(ng['pp']))
+                    s_[s] = dict(ng=ng, mu=x['mu'], q=x['q'], pros=x['pros'], posl=x['posl'], of=x['of'], vatra=x.get('vatra'),
                                  lin=[[z['kl'], z['l'], z['u'], z['o'], round(z['pc'], 3)] for z in x['linije'] if z.get('m', 1)],
                                  pred=(dict(strana=pr['strana'], l=pr['l'], kl=pr['kl'], nivo=pr['nivo'], pp=pr['pp']) if pr else None))
                 zad = [[r['dan'][8:10] + '.' + r['dan'][5:7] + '.', r['opp'], round(r['min']), r['P'], r['S'], r['A']]
@@ -231,7 +244,8 @@ def main():
     # na javnu stranicu ne idu provera unazad ni pragovi po strani (to je interna statistika)
     pr = sp['pravilo']
     javno_pr = dict(kvota_min=pr['kvota_min'], min_ut=pr['min_ut'], max_ut=pr['max_ut'], nivoi=pr['nivoi'])
-    stranica = dict(osvezeno=sada, pravilo=javno_pr, kladionice=IME_KL, kola=kola, tekuce=tekuce,
+    # zaključavanje delova stranice po paketu (za sada je sve otvoreno)
+    stranica = dict(zakljucano=dict(napredno=False), osvezeno=sada, pravilo=javno_pr, kladionice=IME_KL, kola=kola, tekuce=tekuce,
                     igraci=igraci_kola(tekuce))
     sab = open(os.path.join(PROCENE, 'javno', 'sablon.html'), encoding='utf-8').read()
     js = json.dumps(stranica, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
