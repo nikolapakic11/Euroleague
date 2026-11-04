@@ -141,9 +141,14 @@ def main():
     sp_put = os.path.join(PROCENE, 'spajanje.json')
     sp_j = ucitaj(sp_put) if os.path.exists(sp_put) else {}
     sp_w = sp_j.get('w')
+    sp_kal = sp_j.get('kal')
     dani = {u['dan'] for u in kolo}
     pon = ponude_za_dane(dani)
     poslednji_dan = max(r['dan'] for r in B.rows)
+    # zvanični izveštaj o povredama (povrede.py): van igre, upitan, igra
+    p_pov = os.path.join(PROCENE, 'podaci', 'povrede.json')
+    pov = ucitaj(p_pov) if os.path.exists(p_pov) else {}
+    pov_ig = pov.get('igraci', {}) if pov.get('kolo') == a.kolo else {}
     sp_sast = os.path.join(PROCENE, 'podaci', 'sastavi.json')
     sastavi = ucitaj(sp_sast) if os.path.exists(sp_sast) else {}
     sada = dt.datetime.now(dt.timezone.utc)
@@ -188,6 +193,15 @@ def main():
                                    ne_igra=(rm == 0) or bool(sastav and k not in sastav),
                                    razlog=('nije u sastavu' if sastav and k not in sastav else 'ručno' if rm == 0 else None),
                                    rucno_min=rm if rm not in (None, 0) else None, s=st))
+            for i in igraci:
+                pv = pov_ig.get(i['k'])
+                if not pv:
+                    continue
+                i['izvestaj'] = pv['stanje']
+                if pv['stanje'] == 'van' and not i['ne_igra']:
+                    i['ne_igra'], i['razlog'] = True, 'van igre'
+                elif pv['stanje'] == 'upitan':
+                    i['upitan'] = True
             igraci.sort(key=lambda x: -x['min'])
             stranice.append(dict(tim=kod, prot=prot, igraci=igraci))
         # ponude
@@ -223,6 +237,20 @@ def main():
                 if p.get('m', 1) and l0 is not None and l0 != p['l']:
                     lin['l0'] = l0                     # granica se pomerila od prvog snimka dana
                 x['linije'].append(lin)
+        # verovatnoća za preko na granici: model + kvote bez marže, gde su kvote prosek svih kladionica sa tom granicom
+        # (konsenzus je pouzdaniji od jedne kladionice, a cena za predlog ostaje najbolja ponuđena).
+        # ps: nekalibrisana spojena verovatnoća (za izbor predloga, kao na proveri); pc: kalibrisana (za prikaz i vrednost)
+        if sp_w:
+            for st_i in stranice:
+                for i in st_i['igraci']:
+                    for s in 'PSA':
+                        L = i['s'][s]['linije']
+                        for z in L:
+                            ista = [y['tr'] for y in L if y['l'] == z['l'] and y.get('m', 1) == z.get('m', 1)]
+                            z['trk'] = round(sum(ista) / len(ista), 4)
+                            ps = spajanje.preko(sp_w, s, z['pm'], z['trk'])
+                            z['ps'] = round(ps, 4)
+                            z['pc'] = round(spajanje.kalibrisi(ps, sp_kal, s), 4)
         # lestvice „N+“ (samo preko): procena modela, a kvote bez marže približno (marža lestvica ~8%)
         for (kl, d), X in LESTVICE.items():
             if d != u['dan']:
@@ -237,7 +265,7 @@ def main():
                 x = i['s'][s_]
                 pm = verovatnoca_preko(s_, x['mu'], x['var'], n_ - 0.5)
                 tr_est = min(0.97, (1 / kv) / 1.08)
-                pc = spajanje.preko(sp_w, s_, pm, tr_est) if sp_w else pm
+                pc = spajanje.preko_kal(sp_w, sp_kal, s_, pm, tr_est) if sp_w else pm
                 x.setdefault('lest', []).append(dict(kl=kl, n=n_, k=kv, pm=round(pm, 4), pc=round(pc, 4)))
         # verovatno odsutni rotacioni igrači: nisu u sastavu, ili ih nema ni kod jedne kladionice dok je utakmica u ponudi.
         # Model računa sa prosekom minuta iz sezone i ne zna da saigrači dobijaju minute odsutnog igrača; na ranijim
@@ -248,30 +276,33 @@ def main():
         for st_i in stranice:
             n_tim = len(tim_g[st_i['tim']])
             st_i['nedostaju'] = [dict(k=i['k'], ime=i['ime'], min=i['min'], pos=i['pos'],
-                                      zasto='nije u sastavu' if i['ne_igra'] else 'nije u ponudi kladionica')
+                                      zasto=(i['razlog'] or 'ne igra') if i['ne_igra'] else 'nije u ponudi kladionica')
                                  for i in st_i['igraci']
                                  if i['min'] >= 15 and n_tim and i['n'] >= 0.5 * n_tim and i['odsutan'] < 3
+                                 and i.get('izvestaj') != 'igra'
                                  and (i['ne_igra'] or (u_ponudi and not any(z.get('m', 1) for s in 'PSA' for z in i['s'][s]['linije'])))]
         # predlozi za utakmicu: 4 do 6, po pravilu iz spajanje.izbor_utakmice (samo glavne granice)
         kand = []
         for st_i in stranice:
             bez_minusa = bool(st_i['nedostaju'])
             for i in st_i['igraci']:
-                if i['ne_igra'] or i['odsutan'] > 0 or i['n'] < 3:
+                if i['ne_igra'] or i.get('upitan') or i['odsutan'] > 0 or i['n'] < 3:
                     continue
                 for s in 'PSA':
                     for z in i['s'][s]['linije']:
                         if not z.get('m', 1):
                             continue
-                        pc = z['pc']
-                        for strana, pp, kv in (('o', pc, z['o']), ('u', 1 - pc, z['u'])):
+                        ps = z.get('ps', z['pc'])
+                        for strana, pp, kv in (('o', ps, z['o']), ('u', 1 - ps, z['u'])):
                             if strana == 'u' and bez_minusa:
                                 continue
                             kand.append(dict(igr=i['k'], s=s, strana=strana, pp=pp, ev=pp * kv - 1, k=kv, l=z['l'], kl=z['kl']))
         for c in (spajanje.izbor_utakmice(kand) if sp_w else []):
             _, i = po_kljucu[c['igr']]
-            pred = dict(strana=c['strana'], pp=round(c['pp'], 3), ev=round(c['ev'], 3), kvota=c['k'], l=c['l'], kl=c['kl'],
-                        nivo=c['nivo'], rang=c['rang'])
+            z = next(z for z in i['s'][c['s']]['linije'] if z['kl'] == c['kl'] and z['l'] == c['l'] and z.get('m', 1))
+            pk = z['pc'] if c['strana'] == 'o' else 1 - z['pc']          # kalibrisana, za prikaz
+            pred = dict(strana=c['strana'], pp=round(pk, 3), ps=round(c['pp'], 3), ev=round(pk * c['k'] - 1, 3), kvota=c['k'],
+                        l=c['l'], kl=c['kl'], nivo=spajanje.nivo(pk), rang=c['rang'])
             # iste granice i strane kod ostalih kladionica
             pred['ostale'] = sorted([dict(kl=z['kl'], k=(z['o'] if c['strana'] == 'o' else z['u']))
                                      for z in i['s'][c['s']]['linije'] if z['l'] == c['l'] and z['kl'] != c['kl'] and z.get('m', 1)],

@@ -18,13 +18,16 @@ from zajedno import PROCENE, ucitaj, sacuvaj
 
 # pravila za predloge (koriste ih tabla.py i predlozi.py)
 KVOTA_MIN = 1.50
-# Po utakmici 4 do 6 predloga, rangirano po spojenoj verovatnoći izabrane strane.
-# Strana ulazi ako joj je spojena verovatnoća bar PRAG (PLUS ima niži prag jer kvote sistematski precenjuju preko,
-# pa spojena verovatnoća za preko retko pređe 55%). Ako ih je manje od MIN_UT, dopunjava se najboljim ispod praga („slab“).
-PRAG = {'u': 0.53, 'o': 0.50}
-MIN_UT, MAX_UT = 4, 6
-PLUS_MIN = 2            # do 2 PLUS po utakmici dobijaju mesto unapred, ako prolaze prag
-NIVOI = ((0.60, 'jak'), (0.55, 'solidan'))      # ispod 0,55 a iznad praga: „nagoveštaj“
+# Po utakmici do 6 predloga, najviše jedan po igraču, rangirano po spojenoj verovatnoći izabrane strane (nekalibrisanoj).
+# Ulazi strana sa spojenom verovatnoćom bar PRAG, isto pravilo za PLUS i MINUS. Nema obaveznih PLUS predloga ni dopune
+# do 4, a tim bez rotacionog igrača ne dobija MINUS (tabla.py). Na proveri po kolima 5 do 9 (spajanje podešeno samo na
+# ranijim kolima): staro pravilo +10%, ovo +16% (procene/provera/izbor_2026-11-04.md). Donja granica vrednosti (EV)
+# i izbor po kalibrisanoj verovatnoći su tamo bili lošiji, pa se ne koriste.
+# Za prikaz se verovatnoća kalibriše (kal, Platt po stavci), jer je spojena previše samouverena.
+PRAG = {'u': 0.53, 'o': 0.53}
+MIN_UT, MAX_UT = 0, 6
+PLUS_MIN = 0
+NIVOI = ((0.62, 'jak'), (0.56, 'solidan'))      # na kalibrisanoj verovatnoći; ispod 0,56: „nagoveštaj“
 
 
 def nivo(pp, slab=False):
@@ -48,6 +51,18 @@ def x_vek(s, pm, tr):
 def preko(w, s, pm, tr):
     z = sum(a * b for a, b in zip(w, x_vek(s, pm, tr)))
     return 1 / (1 + math.exp(-z))
+
+
+def kalibrisi(p, kal, s):
+    """Platt po stavci: logit p' = a + b·logit p (kal = {s: [a, b]}); bez kal vraća p."""
+    if not kal or s not in kal:
+        return p
+    a, b = kal[s]
+    return 1 / (1 + math.exp(-(a + b * lg(p))))
+
+
+def preko_kal(w, kal, s, pm, tr):
+    return kalibrisi(preko(w, s, pm, tr), kal, s)
 
 
 def podesi(R, l2=1.0):
@@ -79,46 +94,39 @@ def podesi(R, l2=1.0):
 
 
 def izbor_utakmice(kand):
-    """kand: dict(igr, s, strana, pp, ev, k) za jednu utakmicu (k = kvota). Vraća 4 do 6 predloga, najviše jedan po igraču,
-    sa poljima nivo i rang. Po igraču se uzima stavka i strana sa najvećim viškom verovatnoće iznad praga."""
+    """kand: dict(igr, s, strana, pp, ev, k) za jednu utakmicu; pp je nekalibrisana spojena verovatnoća (za izbor).
+    Vraća do MAX_UT predloga, najviše jedan po igraču, sa poljem rang. Ulazi strana sa pp ≥ PRAG i kvotom ≥ KVOTA_MIN;
+    po igraču se uzima stavka i strana sa najvećom verovatnoćom, za istu stavku i stranu najbolja cena (vrednost).
+    Nivo se dodeljuje posle, na kalibrisanoj verovatnoći (tabla.py)."""
     po_stavci = {}
     for c in kand:
-        if c['k'] < KVOTA_MIN:
+        if c['k'] < KVOTA_MIN or c['pp'] < PRAG[c['strana']]:
             continue
         kl = (c['igr'], c['s'], c['strana'])
         if kl not in po_stavci or c['ev'] > po_stavci[kl]['ev']:      # najbolja cena za istu stavku i stranu
             po_stavci[kl] = c
     po_igracu = {}
     for c in po_stavci.values():
-        c['sk'] = c['pp'] - PRAG[c['strana']]
-        if c['igr'] not in po_igracu or (c['sk'], c['ev']) > (po_igracu[c['igr']]['sk'], po_igracu[c['igr']]['ev']):
+        if c['igr'] not in po_igracu or (c['pp'], c['ev']) > (po_igracu[c['igr']]['pp'], po_igracu[c['igr']]['ev']):
             po_igracu[c['igr']] = c
-    L = sorted(po_igracu.values(), key=lambda c: (-c['sk'], -c['ev']))
-    ok = [c for c in L if c['sk'] >= 0]
-    out = [c for c in ok if c['strana'] == 'o'][:PLUS_MIN]
-    for c in ok:
-        if len(out) >= MAX_UT:
-            break
-        if c not in out:
-            out.append(c)
-    slabi = []
-    for c in L:
-        if len(out) + len(slabi) >= MIN_UT:
-            break
-        if c not in out:
-            slabi.append(c)
-    rez = []
-    for c in sorted(out, key=lambda c: -c['pp']):
-        rez.append(dict(c, nivo=nivo(c['pp'])))
-    for c in slabi:
-        rez.append(dict(c, nivo=nivo(c['pp'], slab=True)))
-    for r, c in enumerate(rez, 1):
-        c['rang'] = r
-        c.pop('sk', None)
-    return rez
+    L = sorted(po_igracu.values(), key=lambda c: (-c['pp'], -c['ev']))[:MAX_UT]
+    return [dict(c, nivo=nivo(c['pp']), rang=r) for r, c in enumerate(L, 1)]
 
 
-def predlozi_unazad(w, R, g_od):
+def platt(X, l2=20.0):
+    """X: dict(p, y). Vraća [a, b] za logit p' = a + b·logit p; L2 kazna ka a=0, b=1."""
+    a, b = 0.0, 1.0
+    for _ in range(50):
+        ga = -l2 * a; gb = -l2 * (b - 1); haa = l2; hbb = l2; hab = 0.0
+        for x in X:
+            z0 = lg(x['p']); p = 1 / (1 + math.exp(-(a + b * z0))); e = x['y'] - p; v = p * (1 - p)
+            ga += e; gb += e * z0; haa += v; hab += v * z0; hbb += v * z0 * z0
+        det = haa * hbb - hab * hab
+        a += (hbb * ga - hab * gb) / det; b += (haa * gb - hab * ga) / det
+    return [round(a, 4), round(b, 4)]
+
+
+def predlozi_unazad(w, R, g_od, kal=None):
     """R: granice iz provere; g_od(r) -> šifra utakmice. Isto pravilo po utakmici."""
     po_g = {}
     for r in R:
@@ -154,6 +162,18 @@ def main():
         return {k: dict(n=v['n'], prosao=v['prosao'], dobit=round(v['dobit'], 2), pp=round(v['pp'] / v['n'], 3))
                 for k, v in sorted(grupe.items())}
 
+    # kalibracija: walk-forward predviđanja (spajanje podešeno samo na ranijim kolima), pa Platt po stavci,
+    # skupljen ka (0, 1) da mala stavka ne ode u krajnost
+    kola = sorted({r['kolo'] for r in R})
+    wf = []
+    for k in kola:
+        ranije = [r for r in R if r['kolo'] < k]
+        if len(ranije) < 300:
+            continue
+        w_k = podesi(ranije)
+        wf += [dict(s=r['s'], p=preko(w_k, r['s'], r['pm'], r['tr']), y=r['preko']) for r in R if r['kolo'] == k]
+    kal = {s: platt([x for x in wf if x['s'] == s]) for s in 'PSA'}
+
     test = {}
     for ime, X in (('kola_7_9', te), ('kola_4_6', tr)):
         P, n_ut = predlozi_unazad(w_tr, X, g_od)
@@ -168,7 +188,7 @@ def main():
     test.update(ll_spojeno=round(sum(ll(preko(w_tr, r['s'], r['pm'], r['tr']), r['preko']) for r in te) / len(te), 4),
                 ll_kvote=round(sum(ll(min(max(r['tr'], 1e-4), 1 - 1e-4), r['preko']) for r in te) / len(te), 4),
                 ll_model=round(sum(ll(min(max(r['pm'], 1e-4), 1 - 1e-4), r['preko']) for r in te) / len(te), 4))
-    out = dict(w=w_sve, w_kola_4_6=w_tr, n_granica=len(R), pravilo=dict(kvota_min=KVOTA_MIN, prag_minus=PRAG['u'], prag_plus=PRAG['o'], min_ut=MIN_UT, max_ut=MAX_UT, plus_min=PLUS_MIN,
+    out = dict(w=w_sve, kal=kal, n_wf=len(wf), w_kola_4_6=w_tr, n_granica=len(R), pravilo=dict(kvota_min=KVOTA_MIN, prag_minus=PRAG['u'], prag_plus=PRAG['o'], min_ut=MIN_UT, max_ut=MAX_UT, plus_min=PLUS_MIN,
                                                                nivoi=[[g, n] for g, n in NIVOI]), test=test)
     sacuvaj(os.path.join(PROCENE, 'spajanje.json'), out)
     print(json.dumps(out, ensure_ascii=False, indent=1))

@@ -4,7 +4,7 @@
 
 Redom:
   1. dopuna.py      završene utakmice koje još nisu u baza/rows.json
-  2. sastavi.py     objavljeni sastavi za utakmice u narednih 6 sati
+  2. sastavi.py     objavljeni sastavi za utakmice u narednih 6 sati; povrede.py zvanični izveštaj o povredama
   3. soccerbet.py   snimak ponude, ako danas ima utakmica koje nisu počele
   4. --jutro: provera.py i spajanje.py (koeficijenti se osvežavaju sa novim ishodima) i domace.py (u pozadini, bez prikaza)
   5. tabla.py --dnevnik i predlozi.py za tekuće kolo (i kolo današnjih utakmica, ako je drugo)
@@ -47,6 +47,8 @@ def main():
 
     pokreni('dopuna.py')
     pokreni('sastavi.py', '--sati', '6')
+    ok, iz = pokreni('povrede.py')
+    pregled.append('Povrede: ' + (iz[-1] if iz else 'bez izlaza'))
     if nepocete_danas:
         ok, iz = pokreni('soccerbet.py')
         pregled.append('Soccerbet: ' + (iz[0] if iz else 'bez izlaza'))

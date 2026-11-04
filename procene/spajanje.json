@@ -6,6 +6,21 @@
   -0.2467,
   -0.2028
  ],
+ "kal": {
+  "P": [
+   0.1634,
+   0.8067
+  ],
+  "S": [
+   0.1478,
+   0.9617
+  ],
+  "A": [
+   0.1624,
+   0.9298
+  ]
+ },
+ "n_wf": 1343,
  "w_kola_4_6": [
   -0.1049,
   0.4382,
@@ -17,17 +32,17 @@
  "pravilo": {
   "kvota_min": 1.5,
   "prag_minus": 0.53,
-  "prag_plus": 0.5,
-  "min_ut": 4,
+  "prag_plus": 0.53,
+  "min_ut": 0,
   "max_ut": 6,
-  "plus_min": 2,
+  "plus_min": 0,
   "nivoi": [
    [
-    0.6,
+    0.62,
     "jak"
    ],
    [
-    0.55,
+    0.56,
     "solidan"
    ]
   ]
@@ -38,62 +53,50 @@
    "predloga": 174,
    "ukupno": {
     "n": 174,
-    "prosao": 112,
-    "dobit": 21.81,
-    "pp": 0.646
+    "prosao": 110,
+    "dobit": 21.35,
+    "pp": 0.656
    },
    "po_strani": {
     "minus": {
-     "n": 152,
-     "prosao": 98,
-     "dobit": 20.39,
-     "pp": 0.661
-    },
-    "plus": {
-     "n": 22,
-     "prosao": 14,
-     "dobit": 1.42,
-     "pp": 0.539
+     "n": 174,
+     "prosao": 110,
+     "dobit": 21.35,
+     "pp": 0.656
     }
    },
    "po_nivou": {
     "jak": {
-     "n": 148,
-     "prosao": 96,
-     "dobit": 20.55,
-     "pp": 0.663
-    },
-    "nagoveštaj": {
-     "n": 15,
-     "prosao": 9,
-     "dobit": 0.3,
-     "pp": 0.523
+     "n": 142,
+     "prosao": 88,
+     "dobit": 11.8,
+     "pp": 0.667
     },
     "solidan": {
-     "n": 11,
-     "prosao": 7,
-     "dobit": 0.96,
-     "pp": 0.578
+     "n": 32,
+     "prosao": 22,
+     "dobit": 9.55,
+     "pp": 0.603
     }
    },
    "po_kolu": {
     "7": {
      "n": 54,
-     "prosao": 38,
-     "dobit": 13.21,
-     "pp": 0.647
+     "prosao": 39,
+     "dobit": 16.09,
+     "pp": 0.657
     },
     "8": {
      "n": 60,
      "prosao": 34,
-     "dobit": -0.4,
-     "pp": 0.637
+     "dobit": 0.75,
+     "pp": 0.648
     },
     "9": {
      "n": 60,
-     "prosao": 40,
-     "dobit": 9.0,
-     "pp": 0.654
+     "prosao": 37,
+     "dobit": 4.51,
+     "pp": 0.663
     }
    }
   },
@@ -102,62 +105,62 @@
    "predloga": 173,
    "ukupno": {
     "n": 173,
-    "prosao": 108,
-    "dobit": 19.46,
-    "pp": 0.636
+    "prosao": 112,
+    "dobit": 26.43,
+    "pp": 0.644
    },
    "po_strani": {
     "minus": {
-     "n": 154,
-     "prosao": 101,
-     "dobit": 26.16,
-     "pp": 0.649
+     "n": 171,
+     "prosao": 111,
+     "dobit": 26.83,
+     "pp": 0.645
     },
     "plus": {
-     "n": 19,
-     "prosao": 7,
-     "dobit": -6.7,
-     "pp": 0.53
+     "n": 2,
+     "prosao": 1,
+     "dobit": -0.4,
+     "pp": 0.595
     }
    },
    "po_nivou": {
     "jak": {
-     "n": 149,
-     "prosao": 98,
-     "dobit": 25.64,
-     "pp": 0.651
+     "n": 127,
+     "prosao": 82,
+     "dobit": 16.93,
+     "pp": 0.66
     },
     "nagoveštaj": {
-     "n": 17,
-     "prosao": 6,
-     "dobit": -6.02,
-     "pp": 0.522
+     "n": 1,
+     "prosao": 1,
+     "dobit": 0.83,
+     "pp": 0.545
     },
     "solidan": {
-     "n": 7,
-     "prosao": 4,
-     "dobit": -0.16,
-     "pp": 0.582
+     "n": 45,
+     "prosao": 29,
+     "dobit": 8.67,
+     "pp": 0.603
     }
    },
    "po_kolu": {
     "4": {
      "n": 54,
-     "prosao": 34,
-     "dobit": 5.55,
-     "pp": 0.643
+     "prosao": 36,
+     "dobit": 9.19,
+     "pp": 0.653
     },
     "5": {
      "n": 60,
-     "prosao": 42,
-     "dobit": 15.14,
-     "pp": 0.64
+     "prosao": 43,
+     "dobit": 16.77,
+     "pp": 0.645
     },
     "6": {
      "n": 59,
-     "prosao": 32,
-     "dobit": -1.23,
-     "pp": 0.625
+     "prosao": 33,
+     "dobit": 0.47,
+     "pp": 0.636
     }
    }
   },

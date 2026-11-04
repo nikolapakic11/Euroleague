@@ -5,99 +5,75 @@
    "g": 91,
    "dan": "2026-11-04",
    "vreme": "04.11. 20:45",
-   "k": "chuma okeke",
-   "ime": "Chuma Okeke",
-   "tim": "MAD",
-   "prot": "PAN",
+   "k": "nigel hayes davis",
+   "ime": "Nigel Hayes-Davis",
+   "tim": "PAN",
+   "prot": "MAD",
    "s": "S",
-   "strana": "o",
-   "l": 2.5,
-   "kl": "mozzart",
-   "kvota": 1.6,
-   "pp": 0.534,
-   "ev": -0.146,
+   "strana": "u",
+   "l": 3.5,
+   "kl": "admiral",
+   "kvota": 1.85,
+   "pp": 0.53,
+   "ev": -0.02,
    "nivo": "nagoveštaj",
    "rang": 6,
    "ostale": [
     {
-     "kl": "admiral",
-     "k": 1.57
+     "kl": "maxbet",
+     "k": 1.85
     },
     {
-     "kl": "maxbet",
-     "k": 1.57
+     "kl": "mozzart",
+     "k": 1.85
     },
     {
      "kl": "soccerbet",
-     "k": 1.57
+     "k": 1.85
     }
    ],
    "knjige": [
     {
      "kl": "admiral",
-     "l": 2.5,
-     "u": 2.25,
-     "o": 1.57
+     "l": 3.5,
+     "u": 1.85,
+     "o": 1.85
     },
     {
      "kl": "maxbet",
-     "l": 2.5,
-     "u": 2.25,
-     "o": 1.57
+     "l": 3.5,
+     "u": 1.85,
+     "o": 1.85
     },
     {
      "kl": "mozzart",
-     "l": 2.5,
-     "u": 2.2,
-     "o": 1.6
+     "l": 3.5,
+     "u": 1.85,
+     "o": 1.85
     },
     {
      "kl": "soccerbet",
-     "l": 2.5,
-     "u": 2.25,
-     "o": 1.57
+     "l": 3.5,
+     "u": 1.85,
+     "o": 1.85
     }
    ],
    "soft": {
-    "l": 2.5,
-    "k": 1.6,
-    "kl": "mozzart",
-    "p": 0.534,
+    "l": 3.5,
+    "k": 1.85,
+    "kl": "admiral",
+    "p": 0.53,
     "vrsta": "granica",
-    "ev": -0.146,
+    "ev": -0.019,
     "isti": true
    },
    "opseg": [
     {
-     "l": 2.5,
-     "k": 1.6,
-     "kl": "mozzart",
-     "p": 0.534,
+     "l": 3.5,
+     "k": 1.85,
+     "kl": "admiral",
+     "p": 0.53,
      "vrsta": "granica"
-    },
-    {
-     "l": 4.5,
-     "k": 4.15,
-     "kl": "soccerbet",
-     "p": 0.207,
-     "vrsta": "lestvica",
-     "n": 5
-    },
-    {
-     "l": 6.5,
-     "k": 12,
-     "kl": "soccerbet",
-     "p": 0.073,
-     "vrsta": "lestvica",
-     "n": 7
-    },
-    {
-     "l": 9.5,
-     "k": 40,
-     "kl": "soccerbet",
-     "p": 0.019,
-     "vrsta": "lestvica",
-     "n": 10
     }
    ],
    "q": [
@@ -107,32 +83,20 @@
     5,
     7
    ],
-   "mu": 3.71,
-   "min": 17.1,
-   "pm": 0.6403,
-   "tr": 0.5789,
+   "mu": 3.68,
+   "min": 26.5,
+   "pm": 0.4828,
+   "tr": 0.5,
    "l0": null,
-   "vatra": {
-    "l3": [
-     3,
-     2,
-     7
-    ],
-    "a3": 4.0,
-    "ap": 2.0,
-    "pct": 100
-   },
-   "pos": "C",
-   "of": 0.941,
-   "analiza": [
-    "Nedostaju: kod MAD verovatno ne igraju Theo Maledon (23,2 min), Facundo Campazzo (19,9 min), Mikael Jantunen (17,5 min) (nisu u ponudi kladionica); ostaje više minuta i lopti, a model računa sa prosekom sezone.",
-    "Granica 2,5 je 1,2 ispod našeg očekivanja (3,7)."
-   ],
-   "upisano": "04.11.2026. 12:26",
-   "prvi_put": "04.11.2026. 12:26",
+   "vatra": null,
+   "pos": "F",
+   "of": 0.943,
+   "analiza": [],
+   "upisano": "04.11.2026. 12:45",
+   "prvi_put": "04.11.2026. 12:43",
    "promena": "novo",
    "ranije": null,
-   "promena_u": "04.11.2026. 12:26"
+   "promena_u": "04.11.2026. 12:43"
   },
   {
    "g": 91,
@@ -147,9 +111,9 @@
    "l": 2.5,
    "kl": "mozzart",
    "kvota": 1.55,
-   "pp": 0.655,
-   "ev": 0.014,
-   "nivo": "jak",
+   "pp": 0.617,
+   "ev": -0.044,
+   "nivo": "solidan",
    "rang": 1,
    "ostale": [
     {
@@ -195,9 +159,9 @@
     "l": 2.5,
     "k": 1.55,
     "kl": "mozzart",
-    "p": 0.655,
+    "p": 0.617,
     "vrsta": "granica",
-    "ev": 0.015,
+    "ev": -0.044,
     "isti": true
    },
    "opseg": [
@@ -205,7 +169,7 @@
      "l": 2.5,
      "k": 1.55,
      "kl": "mozzart",
-     "p": 0.655,
+     "p": 0.617,
      "vrsta": "granica"
     }
    ],
@@ -227,8 +191,107 @@
    "analiza": [
     "Sezona: ispod 2,5 u 5 od 9 utakmica, prosek 2,2 skokova."
    ],
-   "upisano": "04.11.2026. 12:26",
+   "upisano": "04.11.2026. 12:45",
    "prvi_put": "04.11.2026. 10:32"
+  },
+  {
+   "g": 91,
+   "dan": "2026-11-04",
+   "vreme": "04.11. 20:45",
+   "k": "guerschon yabusele",
+   "ime": "Guerschon Yabusele",
+   "tim": "PAN",
+   "prot": "MAD",
+   "s": "S",
+   "strana": "u",
+   "l": 4.5,
+   "kl": "admiral",
+   "kvota": 1.97,
+   "pp": 0.539,
+   "ev": 0.062,
+   "nivo": "nagoveštaj",
+   "rang": 5,
+   "ostale": [
+    {
+     "kl": "maxbet",
+     "k": 1.97
+    },
+    {
+     "kl": "soccerbet",
+     "k": 1.97
+    },
+    {
+     "kl": "mozzart",
+     "k": 1.95
+    }
+   ],
+   "knjige": [
+    {
+     "kl": "admiral",
+     "l": 4.5,
+     "u": 1.97,
+     "o": 1.75
+    },
+    {
+     "kl": "maxbet",
+     "l": 4.5,
+     "u": 1.97,
+     "o": 1.75
+    },
+    {
+     "kl": "mozzart",
+     "l": 4.5,
+     "u": 1.95,
+     "o": 1.75
+    },
+    {
+     "kl": "soccerbet",
+     "l": 4.5,
+     "u": 1.97,
+     "o": 1.75
+    }
+   ],
+   "soft": {
+    "l": 4.5,
+    "k": 1.97,
+    "kl": "admiral",
+    "p": 0.539,
+    "vrsta": "granica",
+    "ev": 0.062,
+    "isti": true
+   },
+   "opseg": [
+    {
+     "l": 4.5,
+     "k": 1.97,
+     "kl": "admiral",
+     "p": 0.539,
+     "vrsta": "granica"
+    }
+   ],
+   "q": [
+    1,
+    2,
+    4,
+    5,
+    7
+   ],
+   "mu": 4.07,
+   "min": 22.9,
+   "pm": 0.3849,
+   "tr": 0.5296,
+   "l0": null,
+   "vatra": null,
+   "pos": "F",
+   "of": 0.943,
+   "analiza": [
+    "Granica 4,5 je 0,4 iznad našeg očekivanja (4,1)."
+   ],
+   "upisano": "04.11.2026. 12:45",
+   "prvi_put": "04.11.2026. 12:43",
+   "promena": "novo",
+   "ranije": null,
+   "promena_u": "04.11.2026. 12:43"
   },
   {
    "g": 91,
@@ -243,9 +306,9 @@
    "l": 2.5,
    "kl": "admiral",
    "kvota": 1.75,
-   "pp": 0.622,
-   "ev": 0.089,
-   "nivo": "jak",
+   "pp": 0.582,
+   "ev": 0.019,
+   "nivo": "solidan",
    "rang": 2,
    "ostale": [
     {
@@ -291,9 +354,9 @@
     "l": 2.5,
     "k": 1.75,
     "kl": "admiral",
-    "p": 0.622,
+    "p": 0.582,
     "vrsta": "granica",
-    "ev": 0.089,
+    "ev": 0.018,
     "isti": true
    },
    "opseg": [
@@ -301,7 +364,7 @@
      "l": 2.5,
      "k": 1.75,
      "kl": "admiral",
-     "p": 0.622,
+     "p": 0.582,
      "vrsta": "granica"
     }
    ],
@@ -324,7 +387,7 @@
     "Sezona: ispod 2,5 u 2 od 3 utakmica, prosek 2 skokova.",
     "Granica 2,5 je 0,4 iznad našeg očekivanja (2,1)."
    ],
-   "upisano": "04.11.2026. 12:26",
+   "upisano": "04.11.2026. 12:45",
    "prvi_put": "04.11.2026. 12:26",
    "promena": "novo",
    "ranije": null,
@@ -343,9 +406,9 @@
    "l": 7.5,
    "kl": "mozzart",
    "kvota": 1.9,
-   "pp": 0.607,
-   "ev": 0.153,
-   "nivo": "jak",
+   "pp": 0.569,
+   "ev": 0.08,
+   "nivo": "solidan",
    "rang": 3,
    "ostale": [
     {
@@ -391,9 +454,9 @@
     "l": 7.5,
     "k": 1.9,
     "kl": "mozzart",
-    "p": 0.607,
+    "p": 0.569,
     "vrsta": "granica",
-    "ev": 0.153,
+    "ev": 0.081,
     "isti": true
    },
    "opseg": [
@@ -401,7 +464,7 @@
      "l": 7.5,
      "k": 1.9,
      "kl": "mozzart",
-     "p": 0.607,
+     "p": 0.569,
      "vrsta": "granica"
     }
    ],
@@ -432,134 +495,11 @@
    "analiza": [
     "Granica 7,5 je 1,2 iznad našeg očekivanja (6,3)."
    ],
-   "upisano": "04.11.2026. 12:26",
+   "upisano": "04.11.2026. 12:45",
    "prvi_put": "04.11.2026. 12:26",
    "promena": "novo",
    "ranije": null,
    "promena_u": "04.11.2026. 12:26"
-  },
-  {
-   "g": 91,
-   "dan": "2026-11-04",
-   "vreme": "04.11. 20:45",
-   "k": "brancou badio",
-   "ime": "Brancou Badio",
-   "tim": "PAN",
-   "prot": "MAD",
-   "s": "P",
-   "strana": "o",
-   "l": 4.5,
-   "kl": "admiral",
-   "kvota": 1.92,
-   "pp": 0.561,
-   "ev": 0.077,
-   "nivo": "solidan",
-   "rang": 5,
-   "ostale": [
-    {
-     "kl": "maxbet",
-     "k": 1.9
-    },
-    {
-     "kl": "mozzart",
-     "k": 1.9
-    },
-    {
-     "kl": "soccerbet",
-     "k": 1.9
-    }
-   ],
-   "knjige": [
-    {
-     "kl": "admiral",
-     "l": 4.5,
-     "u": 1.92,
-     "o": 1.92
-    },
-    {
-     "kl": "maxbet",
-     "l": 4.5,
-     "u": 1.9,
-     "o": 1.9
-    },
-    {
-     "kl": "mozzart",
-     "l": 4.5,
-     "u": 1.9,
-     "o": 1.9
-    },
-    {
-     "kl": "soccerbet",
-     "l": 4.5,
-     "u": 1.9,
-     "o": 1.9
-    }
-   ],
-   "soft": {
-    "l": 4.5,
-    "k": 1.92,
-    "kl": "admiral",
-    "p": 0.561,
-    "vrsta": "granica",
-    "ev": 0.077,
-    "isti": true
-   },
-   "opseg": [
-    {
-     "l": 4.5,
-     "k": 1.92,
-     "kl": "admiral",
-     "p": 0.561,
-     "vrsta": "granica"
-    },
-    {
-     "l": 9.5,
-     "k": 5.8,
-     "kl": "soccerbet",
-     "p": 0.204,
-     "vrsta": "lestvica",
-     "n": 10
-    },
-    {
-     "l": 14.5,
-     "k": 17,
-     "kl": "soccerbet",
-     "p": 0.073,
-     "vrsta": "lestvica",
-     "n": 15
-    },
-    {
-     "l": 19.5,
-     "k": 50,
-     "kl": "soccerbet",
-     "p": 0.026,
-     "vrsta": "lestvica",
-     "n": 20
-    }
-   ],
-   "q": [
-    2,
-    4,
-    7,
-    11,
-    17
-   ],
-   "mu": 8.33,
-   "min": 19.3,
-   "pm": 0.7033,
-   "tr": 0.5,
-   "l0": null,
-   "vatra": null,
-   "pos": "G",
-   "of": 1.065,
-   "analiza": [
-    "Sezona: preko 4,5 u 5 od 9 utakmica, prosek 5,1 poena.",
-    "Odbrana: MAD dozvoljava bekovima 6% više poena od proseka lige; na poziciji je Andres Feliz.",
-    "U gostima ima više: 7 naspram 4,6 kod kuće; ova utakmica je u gostima.",
-    "Granica 4,5 je 3,8 ispod našeg očekivanja (8,3)."
-   ],
-   "upisano": "04.11.2026. 12:26",
-   "prvi_put": "04.11.2026. 10:32"
   },
   {
    "g": 91,
@@ -574,9 +514,9 @@
    "l": 4.5,
    "kl": "admiral",
    "kvota": 1.85,
-   "pp": 0.597,
-   "ev": 0.105,
-   "nivo": "solidan",
+   "pp": 0.557,
+   "ev": 0.031,
+   "nivo": "nagoveštaj",
    "rang": 4,
    "ostale": [
     {
@@ -622,9 +562,9 @@
     "l": 4.5,
     "k": 1.85,
     "kl": "admiral",
-    "p": 0.597,
+    "p": 0.557,
     "vrsta": "granica",
-    "ev": 0.104,
+    "ev": 0.03,
     "isti": true
    },
    "opseg": [
@@ -632,7 +572,7 @@
      "l": 4.5,
      "k": 1.85,
      "kl": "admiral",
-     "p": 0.597,
+     "p": 0.557,
      "vrsta": "granica"
     }
    ],
@@ -655,14 +595,14 @@
     "Sezona: ispod 4,5 u 3 od 6 utakmica, prosek 4,2 skokova.",
     "Granica 4,5 je 0,4 iznad našeg očekivanja (4,1)."
    ],
-   "upisano": "04.11.2026. 12:26",
+   "upisano": "04.11.2026. 12:45",
    "prvi_put": "04.11.2026. 12:26",
    "promena": "novo",
    "ranije": null,
    "promena_u": "04.11.2026. 12:26"
   }
  ],
- "osvezeno": "04.11.2026. 12:26",
+ "osvezeno": "04.11.2026. 12:45",
  "utakmice": [
   {
    "g": 91,
@@ -807,6 +747,23 @@
    "tim": "PAN",
    "opis": "poeni preko 4.5 · 1.92 Admiral",
    "u": "04.11.2026. 12:26"
+  },
+  {
+   "g": 91,
+   "k": "chuma okeke",
+   "ime": "Chuma Okeke",
+   "tim": "MAD",
+   "opis": "skokovi preko 2.5 · 1.60 Mozzart",
+   "u": "04.11.2026. 12:43"
+  },
+  {
+   "g": 91,
+   "k": "brancou badio",
+   "ime": "Brancou Badio",
+   "tim": "PAN",
+   "opis": "poeni preko 4.5 · 1.92 Admiral",
+   "u": "04.11.2026. 12:43"
   }
- ]
+ ],
+ "konacno": {}
 }
