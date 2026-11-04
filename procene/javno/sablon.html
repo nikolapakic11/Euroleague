@@ -117,6 +117,16 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{ou
 .tac.pr{background:var(--panel);border:1px solid var(--line);color:var(--fg)}
 .tac.ss{background:var(--dobro-soft);color:var(--dobro);font-weight:600}
 .soft{font-size:13.5px} .soft b{color:var(--dobro)}
+.oc{display:flex;flex-direction:column;gap:6px;max-width:440px;margin-top:2px}
+.oc .rec{font-size:15px} .oc .rec b{font-weight:700}
+.tr{display:flex;height:30px;border-radius:7px;overflow:hidden;font:600 13.5px var(--f-body)}
+.tr span{display:flex;align-items:center;padding:0 9px;white-space:nowrap;min-width:0;overflow:hidden}
+.tr .u{background:var(--minus-soft);color:var(--minus)} .tr .o{background:var(--plus-soft);color:var(--plus);justify-content:flex-end}
+.tr .u.akt{background:var(--minus);color:#fff} .tr .o.akt{background:var(--plus);color:#fff}
+.oc svg{width:100%;height:auto;display:block}
+.dr{font-size:13px;color:var(--muted)}
+.tema{margin-left:auto;font:600 13px var(--f-disp);border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:8px;padding:6px 10px;cursor:pointer}
+.glava{display:flex;align-items:flex-start;gap:12px}
 .vat{position:relative;display:inline-flex;align-items:center;vertical-align:-2px;margin-left:5px;cursor:help;border-radius:4px}
 .vat svg{width:15px;height:17px;display:block}
 .vat .tt{position:absolute;left:50%;bottom:calc(100% + 6px);transform:translateX(-50%);width:max-content;max-width:240px;background:var(--fg);color:var(--bg);font:12.5px/1.35 var(--f-body);padding:6px 9px;border-radius:6px;white-space:normal;text-align:left;z-index:5;pointer-events:none;opacity:0;visibility:hidden}
@@ -153,7 +163,7 @@ td.num,th.num{text-align:right}
 
 <div class="wrap">
   <header class="uvod">
-    <span class="lbl">Evroliga 2026/27 · igrači</span>
+    <div class="glava"><span class="lbl">Evroliga 2026/27 · igrači</span><button class="tema" id="tema" aria-label="Promeni svetli ili tamni režim">Režim: sistem</button></div>
     <h1>Evroliga <span class="p">plus</span> i <span class="m">minus</span></h1>
     <p>Predlozi za poene, skokove i asistencije igrača Evrolige, iz statističkog modela i kvota četiri kladionice. PLUS je preko granice, MINUS je ispod. Svaki predlog ostaje zabeležen sa ishodom.</p>
     <span class="meta" id="osvezeno"></span>
@@ -174,6 +184,9 @@ td.num,th.num{text-align:right}
     </div>
     <div class="seg" id="strana" role="group" aria-label="Strana">
       <button data-f="" aria-pressed="true">Sve</button><button data-f="o" aria-pressed="false">Plus</button><button data-f="u" aria-pressed="false">Minus</button>
+    </div>
+    <div class="seg" id="prikaz" role="group" aria-label="Prikaz očekivanja">
+      <button data-v="a" aria-pressed="true">Traka</button><button data-v="c" aria-pressed="false">Prava</button>
     </div>
   </div>
 
@@ -198,9 +211,12 @@ const strana=p=>p.strana||'u';
 const IMEKL=k=>esc((D.kladionice&&D.kladionice[k])||k);
 const POZ={G:'bek',F:'krilo',C:'centar'};
 const NIVO_OPIS={jak:'verovatnoća bar 60%',solidan:'verovatnoća 55 do 60%','nagoveštaj':'ispod 55%: verovatnije od suprotnog, ali tesno',slab:'dopuna do 4 po utakmici, ispod praga'};
-let st={tab:'predlozi',stavke:{P:true,S:true,A:true},f:'',kolo:null,sort:'min',opad:true,tim:'',poz:'',minMin:0,q:'',samoPred:false};
-try{const s=JSON.parse(localStorage.getItem('ev-pm-filteri')||'null');if(s&&s.stavke)st.stavke=s.stavke}catch(e){}
-function sacuvaj(){try{localStorage.setItem('ev-pm-filteri',JSON.stringify({stavke:st.stavke}))}catch(e){}}
+let st={prikaz:'a',tab:'predlozi',stavke:{P:true,S:true,A:true},f:'',kolo:null,sort:'min',opad:true,tim:'',poz:'',minMin:0,q:'',samoPred:false};
+let tema='';
+try{const s=JSON.parse(localStorage.getItem('ev-pm-filteri')||'null');if(s&&s.stavke)st.stavke=s.stavke;if(s&&s.prikaz)st.prikaz=s.prikaz;if(s&&s.tema)tema=s.tema}catch(e){}
+function sacuvaj(){try{localStorage.setItem('ev-pm-filteri',JSON.stringify({stavke:st.stavke,prikaz:st.prikaz,tema}))}catch(e){}}
+function primeniTemu(){const r=document.documentElement;if(tema)r.setAttribute('data-theme',tema);else r.removeAttribute('data-theme');
+  const b=document.getElementById('tema');if(b)b.textContent='Režim: '+(tema==='light'?'svetli':tema==='dark'?'tamni':'sistem')}
 const ok=p=>st.stavke[p.s]&&(!st.f||strana(p)===st.f);
 
 const SNAZ={P:'poena',S:'skokova',A:'asistencija'};
@@ -238,6 +254,26 @@ function klizac(p){
   if(ss&&!ss.isti)s=`<span class="soft"><b>Soft spot:</b> ${o?'preko':'ispod'} ${z(ss.l)}${ss.vrsta==='lestvica'?' ('+ss.n+'+)':''} · ${z(ss.k,2)} kod ${IMEKL(ss.kl)} · ${Math.round(ss.p*100)}% po našoj proceni</span>`;
   return `<div class="sl"><svg viewBox="0 0 320 50" role="img" aria-label="Raspon procene i ponuđene granice">${g}</svg>${tacke}${s}</div>`;
 }
+const SNA={P:'poena',S:'skokova',A:'asistencija'};
+function drugePonude(p){const o=strana(p)==='o';const T=(p.opseg||[]).filter(t=>t.l!==p.l&&t.k>=1.2);
+  if(!T.length)return '';
+  return `<div class="dr">Druge ponude: ${T.map(t=>`${t.vrsta==='lestvica'?t.n+'+ '+SNA[p.s]:(o?'preko ':'ispod ')+z(t.l)} ${z(t.k,2)} (${Math.round(t.p*100)}%)`).join(' · ')}</div>`}
+function ocekivanje(p){
+  const o=strana(p)==='o', q=p.q||[0,0,0,0,0], pp=Math.round((p.pp??p.pu)*100), pu=o?100-pp:pp, po=100-pu;
+  const opseg=q[1]===q[3]?`najčešće ${q[1]}`:`u polovini utakmica između ${q[1]} i ${q[3]}`;
+  if(st.prikaz==='c'){
+    const lo=0, hi=Math.max(q[4]+1,p.l+2,p.mu+2), X=v=>14+292*(v-lo)/(hi-lo), b=o?'var(--plus)':'var(--minus)';
+    const g=`<line x1="${X(lo)}" x2="${X(hi)}" y1="32" y2="32" stroke="var(--line)" stroke-width="2"/>
+     <text x="${X(lo)}" y="54" font-size="10.5" fill="var(--muted)">${lo}</text><text x="${X(hi)}" y="54" text-anchor="end" font-size="10.5" fill="var(--muted)">${Math.round(hi)}</text>
+     <rect x="${X(q[1])}" y="26" width="${Math.max(4,X(q[3])-X(q[1]))}" height="12" rx="6" fill="var(--bar)"/>
+     <text x="${(X(q[1])+X(q[3]))/2}" y="54" text-anchor="middle" font-size="11" fill="var(--muted)">obično ${q[1]} do ${q[3]}</text>
+     <circle cx="${X(p.mu)}" cy="32" r="6.5" fill="var(--fg)"/><text x="${Math.min(300,Math.max(30,X(p.mu)))}" y="15" text-anchor="middle" font-size="12" font-weight="600" fill="var(--fg)">očekivano ${z(p.mu)}</text>
+     <line x1="${X(p.l)}" x2="${X(p.l)}" y1="19" y2="45" stroke="${b}" stroke-width="3.5"/><text x="${Math.min(296,Math.max(34,X(p.l)))}" y="70" text-anchor="middle" font-size="12" font-weight="600" fill="${b}">granica ${z(p.l)}</text>`;
+    return `<div class="oc"><svg viewBox="0 0 320 76" role="img" aria-label="Očekivano ${z(p.mu)}, granica ${z(p.l)}">${g}</svg><div class="rec">Verovatnoća da prođe ${o?'preko':'ispod'}: <b>${pp}%</b></div>${drugePonude(p)}</div>`;
+  }
+  return `<div class="oc"><div class="rec">Očekujemo <b>${z(p.mu)} ${SNA[p.s]}</b>, ${opseg}.</div>
+    <div class="tr" role="img" aria-label="Ispod ${z(p.l)}: ${pu}%, preko: ${po}%"><span class="u${o?'':' akt'}" style="width:${pu}%">ispod ${z(p.l)} · ${pu}%</span><span class="o${o?' akt':''}" style="width:${po}%">${po}% · preko</span></div>${drugePonude(p)}</div>`;
+}
 function kartica(p,rb,k){
   const o=strana(p)==='o', nv=p.nivo||'jak', pp=Math.round((p.pp??p.pu)*100), u=utak(k,p.g);
   const ost='';
@@ -245,8 +281,8 @@ function kartica(p,rb,k){
    <div class="ko"><b>${esc(p.ime)}${vatraIkona(p.vatra,p.s)}</b><span class="t">${p.tim} protiv ${p.prot} · ${esc(u.vreme||p.vreme||'')}</span>
    <span class="tip">${S[p.s]} <span class="${o?'o':'u'}">${o?'preko':'ispod'} ${z(p.l)}</span> · ${z(p.kvota,2)} <span class="ost">${IMEKL(p.kl)}</span>${ost}</span>
    <span class="niv ${o?'o':'u'} ${nv}" title="${esc(NIVO_OPIS[nv]||'')}">${nv} <b>${pp}%</b></span>
-   <span class="brojke"><span>očekivano <b>${z(p.mu)}</b></span>${p.ev>=0.05?`<span>prednost <b>+${Math.round(p.ev*100)}%</b></span>`:''}${pomeraj(p)}</span>${matchup(p.of,p.pos,p.s)}
-   ${klizac(p)}</div>${kladionice(p)}${status(p)}</div>`;
+   <span class="brojke">${p.ev>=0.05?`<span>prednost <b>+${Math.round(p.ev*100)}%</b></span>`:''}${pomeraj(p)}</span>${matchup(p.of,p.pos,p.s)}
+   ${ocekivanje(p)}</div>${kladionice(p)}${status(p)}</div>`;
 }
 const SVE_KL=['admiral','maxbet','mozzart','soccerbet'];
 function kladionice(p){
@@ -337,7 +373,7 @@ function crtajKako(){
    'Verovatnoća spaja procenu modela i kvote kladionica i podešena je prema stvarnim ishodima ranijih granica. MINUS ulazi sa bar '+Math.round((pr.prag_minus||.53)*100)+'%, PLUS sa bar '+Math.round((pr.prag_plus||.5)*100)+'%, jer kladionice u granicama za preko traže više nego što ishodi opravdavaju; do '+(pr.plus_min||2)+' PLUS predloga po utakmici dobija mesto unapred kad ih ima.',
    'Nivo: <b>jak</b> (bar 60%), <b>solidan</b> (55 do 60%), <b>nagoveštaj</b> (ispod 55%, verovatnije nego suprotno, ali tesno), <b>slab</b> (dopuna do 4 po utakmici, ispod praga; samo u istoriji).',
    'Kvota najmanje '+z(pr.kvota_min||1.5,2)+'. Navedena je kladionica sa najboljom kvotom i ostale sa istom granicom.',
-   'Klizač: siva traka je naša procena (10. do 90. percentil, tamniji deo 25. do 75., crta je sredina), tačke su granice koje kladionice nude za tu stranu (glavne, alternativne i lestvice „N+“). <b>Soft spot</b> je granica sa najboljim odnosom verovatnoće i kvote među onima koje prelaze 50%.',
+   'Uz svaki predlog: koliko očekujemo i u kom opsegu se igrač najčešće kreće, i verovatnoća za ispod i preko granice (prikaz „Traka“). Prikaz „Prava“ pokazuje očekivanje i granicu na brojnoj pravoj. „Druge ponude“ su alternativne granice i lestvice (npr. 10+ poena) sa kvotom i našom verovatnoćom.',
    'Model: prosek minuta igrača u ovoj sezoni, učinak po minutu u ovoj i prošloj sezoni, odbrana protivnika prema poziciji i tempo. Igrač mora imati bar 3 utakmice ove sezone i da je igrao sve 3 poslednje utakmice svog tima.',
    'Plamen pored imena: igrač je u formi u toj stavci (poslednje 3 utakmice bar 30% iznad ranijeg proseka). Samo informacija, forma je već u proceni.',
    'Predlozi za utakmicu se zaključavaju kad utakmica počne i posle toga se ne menjaju.'
@@ -355,6 +391,7 @@ function crtajKako(){
 function crtaj(){
   document.querySelectorAll('.tabovi button').forEach(b=>b.setAttribute('aria-selected',b.dataset.t===st.tab));
   document.getElementById('kontrole').hidden=st.tab==='kako';
+  document.getElementById('prikaz').hidden=st.tab!=='predlozi';
   const m=document.getElementById('sadrzaj');
   m.innerHTML='<div style="display:flex;flex-direction:column;gap:14px">'+(st.tab==='istorija'?crtajIstoriju():st.tab==='igraci'?crtajIgrace():st.tab==='kako'?crtajKako():crtajPredloge())+'</div>';
   m.querySelectorAll('.kola-izbor button').forEach(b=>b.onclick=()=>{st.kolo=b.dataset.k==='sve'?'sve':+b.dataset.k;crtaj()});
@@ -371,6 +408,9 @@ document.querySelectorAll('.tg').forEach(b=>{b.setAttribute('aria-pressed',!!st.
   const s=b.dataset.s; st.stavke[s]=!st.stavke[s]; if(!st.stavke.P&&!st.stavke.S&&!st.stavke.A)st.stavke[s]=true;
   document.querySelectorAll('.tg').forEach(x=>x.setAttribute('aria-pressed',!!st.stavke[x.dataset.s])); sacuvaj(); crtaj()}});
 document.querySelectorAll('#strana button').forEach(b=>b.onclick=()=>{st.f=b.dataset.f;document.querySelectorAll('#strana button').forEach(x=>x.setAttribute('aria-pressed',x===b));crtaj()});
+document.querySelectorAll('#prikaz button').forEach(b=>{b.setAttribute('aria-pressed',b.dataset.v===st.prikaz);b.onclick=()=>{st.prikaz=b.dataset.v;document.querySelectorAll('#prikaz button').forEach(x=>x.setAttribute('aria-pressed',x===b));sacuvaj();crtaj()}});
+document.getElementById('tema').onclick=()=>{tema=tema===''?'light':tema==='light'?'dark':'';primeniTemu();sacuvaj()};
+primeniTemu();
 const TABOVI=['predlozi','istorija','igraci','kako'];
 document.querySelectorAll('.tabovi button').forEach(b=>b.onclick=()=>{st.tab=b.dataset.t;try{history.replaceState(null,'','#'+st.tab)}catch(e){location.hash=st.tab}crtaj()});
 function izHasha(){const h=location.hash.slice(1);st.tab=TABOVI.includes(h)?h:'predlozi';crtaj()}
