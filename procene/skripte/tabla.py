@@ -196,7 +196,7 @@ def main():
         for st_i in stranice:
             for i in st_i['igraci']:
                 for s in 'PSA':
-                    L = i['s'][s]['linije']
+                    L = [z for z in i['s'][s]['linije'] if z.get('m', 1)]   # samo glavne granice (Soccerbet nudi i ±2)
                     if len(L) < 2:
                         continue
                     nize = min(L, key=lambda z: (z['l'], -z['o']))

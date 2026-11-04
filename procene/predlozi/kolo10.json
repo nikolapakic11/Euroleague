@@ -1,7 +1,69 @@
 {
  "kolo": 10,
- "predlozi": [],
- "osvezeno": "03.11.2026. 19:45",
+ "predlozi": [
+  {
+   "g": 91,
+   "dan": "2026-11-04",
+   "vreme": "04.11. 20:45",
+   "ime": "Andres Feliz",
+   "tim": "MAD",
+   "prot": "PAN",
+   "s": "A",
+   "l": 4.5,
+   "kl": "admiral",
+   "pm": 0.1474,
+   "tr": 0.5,
+   "mu": 2.63,
+   "min": 20.3,
+   "vatra": null,
+   "pos": "G",
+   "of": 0.975,
+   "l0": null,
+   "strana": "u",
+   "pp": 0.676,
+   "ev": 0.251,
+   "raz": 0.353,
+   "kvota": 1.85,
+   "k": "andres feliz",
+   "upisano": "04.11.2026. 09:40"
+  },
+  {
+   "g": 91,
+   "dan": "2026-11-04",
+   "vreme": "04.11. 20:45",
+   "ime": "Chuma Okeke",
+   "tim": "MAD",
+   "prot": "PAN",
+   "s": "S",
+   "l": 2.5,
+   "kl": "mozzart",
+   "pm": 0.6403,
+   "tr": 0.5789,
+   "mu": 3.71,
+   "min": 17.1,
+   "vatra": {
+    "l3": [
+     3,
+     2,
+     7
+    ],
+    "a3": 4.0,
+    "ap": 2.0,
+    "pct": 100
+   },
+   "pos": "C",
+   "of": 0.941,
+   "l0": null,
+   "strana": "o",
+   "pp": 0.534,
+   "ev": -0.146,
+   "raz": 0.061,
+   "kvota": 1.6,
+   "k": "chuma okeke",
+   "upisano": "04.11.2026. 09:40"
+  }
+ ],
+ "osvezeno": "04.11.2026. 09:40",
  "utakmice": [
   {
    "g": 91,
@@ -9,7 +71,12 @@
    "gost": "PAN",
    "vreme": "04.11. 20:45",
    "dan": "2026-11-04",
-   "ponude": []
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Mozzart",
+    "Soccerbet"
+   ]
   },
   {
    "g": 95,
