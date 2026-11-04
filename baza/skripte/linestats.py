@@ -17,7 +17,7 @@ def find(name,day):
 items=[]
 D=json.load(open('/home/claude/form/ds_all.json'))
 for d in D: items.append(dict(day=d['day'],s=d['s'],l=d['l'],u=d['u'],fair=d['fair'],hit=d['hit']))
-for day,f in (('2026-10-27','/home/claude/r8/offer3_raw.json'),('2026-10-28','/home/claude/r8b/offer2_raw.json'),('2026-10-29','/home/claude/r9/offer_raw.json')):
+for day,f in (('2026-10-27','/home/claude/r8/offer3_raw.json'),('2026-10-28','/home/claude/r8b/offer2_raw.json'),('2026-10-29','/home/claude/r9/offer_raw.json'),('2026-10-30','/home/claude/r9b/offer2_raw.json'),('2026-11-04','/home/claude/euroleague/baza/ponude/admiral/2026-11-04_c.json')):
     seen=set()
     for p in json.load(open(f))['picks']:
         k=(nk(p['p']),p['s'])
@@ -36,4 +36,4 @@ for s in 'ASP':
         be=sum(1/i['u'] for i in I)/len(I)
         out[s+str(l)]=[len(I),h,round(f,3),round(u,2),round(roi,3),round(be,3)]
         if s!='P': print(s,l,'n',len(I),'proslo',h,round(h/len(I),3),'kvote kazu',round(f,3),'prosecna kvota',round(u,2),'ROI',round(roi,3))
-json.dump({'at':'2026-10-29','n':len(items),'src':'cela ponuda AdmiralBeta, minusi, 8.10. do 29.10.','t':out},open('/home/claude/lines/linestats.json','w'))
+json.dump({'at':'2026-11-04','n':len(items),'src':'svi minusi iz ponude AdmiralBeta od 8.10. do 4.11. ('+format(len(items),',').replace(',','.')+').','t':out},open('/home/claude/lines/linestats.json','w'))
