@@ -13,6 +13,7 @@ Izlaz: procene/predlozi/kolo<N>.json i procene/javno/predlozi.html (iz procene/j
 """
 import argparse, collections, datetime as dt, glob, json, os, sys
 sys.path.insert(0, os.path.dirname(__file__))
+import model
 from model import Baza
 from zajedno import PROCENE, BG, ucitaj, sacuvaj
 import spajanje
@@ -73,30 +74,29 @@ def stavke_analize(i, s, l, u, moja, tudja, B, domacin):
         if abs(m3 - i['min']) >= 3:
             T.append((5, sg(m3 - i['min']), f"Minuti: u poslednje vreme igra {'više' if m3 > i['min'] else 'manje'} ({', '.join(str(m) for m in pm[-3:])} min, prosek {zr(i['min'])})."))
     of = x.get('of')
-    if of is not None:
+    b_of = model.PAR.get('B_OF', {}).get(s, 0.5)
+    if of is not None and b_of > 0:                 # za stavku za koju model ne koristi odbranu protivnika, ne navodi se
         p = round((of - 1) * 100)
         if abs(p) >= 5:
-            na_poz = sorted([j for j in tudja['igraci'] if j['pos'] == i['pos'] and not j['ne_igra'] and not j['odsutan'] and j['min'] >= 12],
+            van = {j['k'] for j in tudja.get('nedostaju', [])}
+            na_poz = sorted([j for j in tudja['igraci'] if j['pos'] == i['pos'] and not j['ne_igra'] and not j['odsutan'] and j['min'] >= 12 and j['k'] not in van],
                             key=lambda j: -j['min'])[:2]
             dod = f"; na poziciji {'su' if len(na_poz) > 1 else 'je'} {' i '.join(j['ime'] for j in na_poz)}" if na_poz else ''
             T.append((2, sg(p), f"Odbrana: {moja['prot']} dozvoljava {POZM.get(i['pos'], 'igračima na ovoj poziciji')} {abs(p)}% {'više' if p > 0 else 'manje'} {SNA[s]} od proseka lige{dod}."))
     tp = i.get('tempo')
-    if tp and abs(tp - 1) >= 0.03:
+    if tp and abs(tp ** model.PAR.get('B_TEMPO', {}).get(s, 0.5) - 1) >= 0.02:
         T.append((8, sg(tp - 1), f"Tempo: očekuje se {'brža' if tp > 1 else 'sporija'} utakmica od proseka lige ({'+' if tp > 1 else '−'}{abs(round((tp - 1) * 100))}% poseda)."))
-    # odsutni saigrači ostavljaju više lopti i minuta; odsutni protivnici na istoj poziciji slabe odbranu
-    ne = lambda L: f"ne igra{'ju' if len(L) > 1 else ''} {' i '.join(L)}"
-    sv = [j['ime'] for j in moja['igraci'] if j['k'] != i['k'] and j['min'] >= 15 and (j['ne_igra'] or j['odsutan'] >= 2)][:2]
-    pr_ = [j['ime'] for j in tudja['igraci'] if j['pos'] == i['pos'] and j['min'] >= 15 and (j['ne_igra'] or j['odsutan'] >= 2)][:2]
-    if sv or pr_:
-        d = ([f"kod {moja['tim']} {ne(sv)}"] if sv else []) + ([f"kod {tudja['tim']} na njegovoj poziciji {ne(pr_)}"] if pr_ else [])
-        T.append((3, 1, 'Više prostora: ' + '; '.join(d) + '.'))
-    # saigrač sa dosta minuta koga nema ni kod jedne kladionice, a utakmica je u ponudi: možda ne igra
-    if any(z.get('m', 1) for j in moja['igraci'] + tudja['igraci'] for st_ in j['s'].values() for z in st_['linije']):
-        bez = [j for j in moja['igraci'] if j['k'] != i['k'] and j['min'] >= 15 and not j['ne_igra'] and j['odsutan'] < 2
-               and not any(st_['linije'] for st_ in j['s'].values())][:2]
-        if bez:
-            T.append((3, 1, f"Nema u ponudi kladionica: {' i '.join(f'{j['ime']} ({zr(j['min'])} min)' for j in bez)}; "
-                            f"možda ne {'igraju' if len(bez) > 1 else 'igra'}, pa ostaje više minuta i lopti."))
+    # verovatno odsutni rotacioni saigrači (tabla.py: nisu u sastavu ili ih nema ni kod jedne kladionice):
+    # model to ne vidi, pa ostaje više minuta i lopti za ostale; za MINUS je to razlog protiv, za PLUS razlog za
+    ned = [j for j in moja.get('nedostaju', []) if j['k'] != i['k']]
+    if ned:
+        T.append((2, 1, f"Nedostaju: kod {moja['tim']} verovatno ne {'igraju' if len(ned) > 1 else 'igra'} "
+                        + ', '.join(f"{j['ime']} ({zr(j['min'])} min)" for j in ned[:3])
+                        + ' (' + ('nisu u ponudi kladionica' if all(j['zasto'] != 'nije u sastavu' for j in ned) else 'van sastava ili van ponude') + ')'
+                        + '; ostaje više minuta i lopti, a model računa sa prosekom sezone.'))
+    ned2 = [j for j in tudja.get('nedostaju', []) if j['pos'] == i['pos']]
+    if ned2:
+        T.append((7, 1, f"Kod {tudja['tim']} na njegovoj poziciji verovatno ne {'igraju' if len(ned2) > 1 else 'igra'} {' i '.join(j['ime'] for j in ned2[:2])}."))
     raz = x['mu'] - l
     if abs(raz) >= 0.3:
         T.append((99, sg(raz), f"Granica {zr(l)} je {zr(abs(raz))} {'ispod' if raz > 0 else 'iznad'} našeg očekivanja ({zr(x['mu'])})."))
@@ -189,6 +189,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--kolo', type=int)
     a = ap.parse_args()
+    model.ucitaj_parametre()
     sp = ucitaj(os.path.join(PROCENE, 'spajanje.json'))
     folder = os.path.join(PROCENE, 'predlozi')
     os.makedirs(folder, exist_ok=True)

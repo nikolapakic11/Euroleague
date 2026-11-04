@@ -239,9 +239,23 @@ def main():
                 tr_est = min(0.97, (1 / kv) / 1.08)
                 pc = spajanje.preko(sp_w, s_, pm, tr_est) if sp_w else pm
                 x.setdefault('lest', []).append(dict(kl=kl, n=n_, k=kv, pm=round(pm, 4), pc=round(pc, 4)))
+        # verovatno odsutni rotacioni igrači: nisu u sastavu, ili ih nema ni kod jedne kladionice dok je utakmica u ponudi.
+        # Model računa sa prosekom minuta iz sezone i ne zna da saigrači dobijaju minute odsutnog igrača; na ranijim
+        # ponudama su minusi igrača čiji tim je bez takvog saigrača prolazili znatno lošije (procene/README.md), pa se
+        # za taj tim ne daju MINUS predlozi. Gleda se samo igrač koji je bio deo rotacije: bar 15 min, odigrao bar
+        # polovinu utakmica tima i bar jednu od poslednje 3 (dugo odsutni su već u prosecima saigrača).
+        u_ponudi = any(z.get('m', 1) for st_i in stranice for i in st_i['igraci'] for s in 'PSA' for z in i['s'][s]['linije'])
+        for st_i in stranice:
+            n_tim = len(tim_g[st_i['tim']])
+            st_i['nedostaju'] = [dict(k=i['k'], ime=i['ime'], min=i['min'], pos=i['pos'],
+                                      zasto='nije u sastavu' if i['ne_igra'] else 'nije u ponudi kladionica')
+                                 for i in st_i['igraci']
+                                 if i['min'] >= 15 and n_tim and i['n'] >= 0.5 * n_tim and i['odsutan'] < 3
+                                 and (i['ne_igra'] or (u_ponudi and not any(z.get('m', 1) for s in 'PSA' for z in i['s'][s]['linije'])))]
         # predlozi za utakmicu: 4 do 6, po pravilu iz spajanje.izbor_utakmice (samo glavne granice)
         kand = []
         for st_i in stranice:
+            bez_minusa = bool(st_i['nedostaju'])
             for i in st_i['igraci']:
                 if i['ne_igra'] or i['odsutan'] > 0 or i['n'] < 3:
                     continue
@@ -251,6 +265,8 @@ def main():
                             continue
                         pc = z['pc']
                         for strana, pp, kv in (('o', pc, z['o']), ('u', 1 - pc, z['u'])):
+                            if strana == 'u' and bez_minusa:
+                                continue
                             kand.append(dict(igr=i['k'], s=s, strana=strana, pp=pp, ev=pp * kv - 1, k=kv, l=z['l'], kl=z['kl']))
         for c in (spajanje.izbor_utakmice(kand) if sp_w else []):
             _, i = po_kljucu[c['igr']]

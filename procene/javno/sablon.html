@@ -504,6 +504,7 @@ function crtajKako(){
    'Model: prosek minuta igrača u ovoj sezoni, učinak po minutu u ovoj i prošloj sezoni, odbrana protivnika prema poziciji i tempo. Igrač mora imati bar 3 utakmice ove sezone i da je igrao sve 3 poslednje utakmice svog tima.',
    'Plamen pored imena: igrač je u formi u toj stavci (poslednje 3 utakmice bar 30% iznad ranijeg proseka). Samo informacija, forma je već u proceni.',
    'Stranica se osvežava na dan utakmice oko 9:45, 13:45 i svakog sata od 16:45 do 19:45, a ishodi se upisuju iste večeri oko 23:50. Ako se predlog promeni posle nove ponude, dobija oznaku „izmenjeno“ ili „novo“; povučeni predlozi su navedeni ispod liste.',
+   'Odsutni saigrači: ako tim verovatno ostaje bez igrača iz rotacije (nije u sastavu, ili ga nema ni kod jedne kladionice dok je utakmica u ponudi), za igrače tog tima se ne daju MINUS predlozi. Model računa sa prosekom minuta iz sezone, a ostali tada igraju više.',
    'Predlozi za utakmicu se zaključavaju kad utakmica počne i posle toga se ne menjaju.'
   ].map(t=>'<li>'+t+'</li>').join('')}</ul></div>`;
   return h;
