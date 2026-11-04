@@ -497,7 +497,7 @@ function crtajIgrace(){
   const gDan=new Set(I.utakmice.filter(u=>st.dan==='sve'||u.dan===st.dan).map(u=>u.g));
   const uPonudi=i=>['P','S','A'].some(s=>(i.s[s].lin||[]).length);
   let h=`<div class="kontrole"><button class="prek" id="fNap" role="switch" aria-checked="${N}"${ZAKLJ?' disabled title="Dostupno u paketu sa naprednom statistikom"':''}><span class="sw" aria-hidden="true"></span>${ZAKLJ?'🔒 ':''}Napredna statistika i očekivanja</button>
-   ${N?`<label class="pol">Poređaj po <select id="fSortS"><option value="oc"${st.sortS==='oc'?' selected':''}>očekivanju</option><option value="sansa"${st.sortS==='sansa'?' selected':''}>najjačoj šansi</option></select></label>`:''}</div>
+   <label class="pol">Poređaj po <select id="fSortS">${[['min','minutima']].concat(akt.map(s=>[s,N?'očekivanim '+{P:'poenima',S:'skokovima',A:'asistencijama'}[s]:'proseku '+SNAZ[s]])).concat(N?[['sansa','najjačoj šansi']]:[]).concat([['ime','imenu']]).map(([v,n])=>`<option value="${v}"${st.sort===v?' selected':''}>${n}</option>`).join('')}</select></label></div>
    <details class="filt"${MALI()?'':' open'}><summary>Filteri</summary><div class="kontrole"><label class="pol">Dan <select id="fDan">${dani.map(d=>`<option value="${d}"${st.dan===d?' selected':''}>${DAN(d)}</option>`).join('')}<option value="sve"${st.dan==='sve'?' selected':''}>celo kolo</option></select></label>
    <label class="pol"><input type="checkbox" id="fPon"${st.samoPon?' checked':''}> samo igrači u ponudi</label>
    <label class="pol">Tim <select id="fTim"><option value="">svi</option>${timovi.map(t=>`<option${st.tim===t?' selected':''}>${t}</option>`).join('')}</select></label>
@@ -512,7 +512,8 @@ function crtajIgrace(){
   if(N&&st.samoPred)R=R.filter(i=>akt.some(s=>i.s[s].pred));
   const sansa=i=>Math.max(0,...akt.map(s=>i.s[s].ng?i.s[s].ng.pp:0));
   const key=i=>{const k=st.sort;if(k==='min')return i.min;if(k==='ime')return i.ime;if(k==='g')return i.g;
-    if(N&&st.sortS==='sansa'&&'PSA'.includes(k))return sansa(i);
+    if(k==='sansa')return N?sansa(i):i.min;
+    if(!'PSA'.includes(k)||!st.stavke[k])return i.min;
     return N?i.s[k].mu:i.s[k].pros};
   R.sort((a,b)=>{const A=key(a),B=key(b);const c=typeof A==='string'?A.localeCompare(B,'sr'):A-B;return st.opad?-c:c});
   const th=(k,t,cl='')=>`<th class="sort ${cl}" data-k="${k}"${st.sort===k?` aria-sort="${st.opad?'descending':'ascending'}"`:''}>${t}${st.sort===k?(st.opad?' ↓':' ↑'):''}</th>`;
@@ -633,7 +634,7 @@ function crtaj(){
   on('fPred','onchange',e=>{st.samoPred=e.target.checked;crtaj()});
   on('fQ','onchange',e=>{st.q=e.target.value.trim();crtaj()});
   on('fNap','onclick',()=>{if(ZAKLJ)return;st.napredno=!st.napredno;sacuvaj();crtaj()});
-  on('fSortS','onchange',e=>{st.sortS=e.target.value;crtaj()});
+  on('fSortS','onchange',e=>{st.sort=e.target.value;st.opad=st.sort!=='ime';crtaj()});
   on('fDan','onchange',e=>{st.dan=e.target.value;crtaj()});
   on('fPon','onchange',e=>{st.samoPon=e.target.checked;crtaj()});
   m.querySelectorAll('#grupa button').forEach(b=>b.onclick=()=>{st.grupa=b.dataset.v;sacuvaj();crtaj()});
