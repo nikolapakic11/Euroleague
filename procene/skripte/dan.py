@@ -14,7 +14,7 @@ Na kraju ispisuje pregled: šta je urađeno, koje ponude postoje za danas i šta
 """
 import argparse, datetime as dt, glob, os, shutil, subprocess, sys
 sys.path.insert(0, os.path.dirname(__file__))
-from zajedno import BAZA, PROCENE, BG, KOREN, utakmice, ucitaj, kljuc_snimka
+from zajedno import BAZA, PROCENE, BG, KOREN, utakmice, ucitaj, kljuc_snimka, rokovi
 
 SK = os.path.dirname(os.path.abspath(__file__))
 
@@ -79,8 +79,12 @@ def main():
             n = len(glob.glob(os.path.join(BAZA, 'ponude', kl, f'*{danas}*.json')))
             ima.append(f'{kl} {n}')
         pregled.append('Snimci ponude za danas: ' + ', '.join(ima))
-        # ručne kladionice: za konačne predloge (16:30) treba snimak posle 14:00
+        # ručne kladionice: za konačne predloge (rok iz zajedno.rokovi) treba snimak posle 14:00
         sad_bg = sada.astimezone(BG)
+        R = rokovi(sve)
+        objava, rok = R[danasnje[0]['g']]
+        pregled.append(f'Objava od {objava.strftime("%H:%M")}, konačni predlozi u {rok.strftime("%H:%M")}'
+                       + (' (još nije objava: predlozi za danas se ne prikazuju)' if sad_bg < objava else ''))
         rucno, stari = [], []
         for kl in ('admiral', 'maxbet', 'mozzart'):
             F = sorted(glob.glob(os.path.join(BAZA, 'ponude', kl, f'*{danas}*.json')), key=kljuc_snimka)
@@ -90,12 +94,12 @@ def main():
                 at = dt.datetime.fromisoformat(ucitaj(F[-1]).get('at', '').replace('Z', '+00:00')).astimezone(BG)
             except Exception:
                 continue
-            if sad_bg.strftime('%H:%M') < '16:30' and at.strftime('%H:%M') < '14:00':
+            if sad_bg < rok and at.strftime('%H:%M') < '14:00':
                 stari.append(f'{kl} ({at.strftime("%H:%M")})')
         if (rucno or stari) and nepocete_danas:
             prva = min(u['utc'] for u in nepocete_danas).astimezone(BG).strftime('%H:%M')
             delovi = ([f'nema snimka za {", ".join(rucno)}'] if rucno else []) + ([f'osveži posle 14:00: {", ".join(stari)}'] if stari else [])
-            pregled.append(f'RUČNO: {"; ".join(delovi)}; konačni predlozi u 16:43, prva utakmica u {prva}.')
+            pregled.append(f'RUČNO: {"; ".join(delovi)}; konačni predlozi u {rok.strftime("%H:%M")}, prva utakmica u {prva}.')
     print('\n=== PREGLED ===')
     print('\n'.join(pregled))
 

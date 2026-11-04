@@ -19,7 +19,6 @@ from model import Baza
 from zajedno import PROCENE, BG, ucitaj, sacuvaj
 import spajanje
 
-KONACNO = os.environ.get('PROCENE_KONACNO', '16:30')      # od ovog vremena na dan utakmice osvežavanje daje konačne predloge
 IME_KL = {'admiral': 'Admiral', 'maxbet': 'MaxBet', 'mozzart': 'Mozzart', 'soccerbet': 'Soccerbet'}
 
 
@@ -74,6 +73,37 @@ def izaberi(tabla, K=None):
     return out
 
 
+def ponuda_dana(tabla, K):
+    """Za svaku utakmicu koja nije počela: svi igrači u ponudi, po stavci, na najčešćoj glavnoj granici:
+    očekivanje, očekivani minuti, prosek sezone i poslednjih 5, strana na koju naginje (kalibrisano), najbolje kvote
+    i do 3 razloga za tu stranu i 2 protiv. Ishod se dopisuje posle utakmice."""
+    out = {}
+    for u in tabla['utakmice']:
+        if u['pocela']:
+            continue
+        L = []
+        for st in u['strane']:
+            tudja = next(x for x in u['strane'] if x is not st)
+            for i in st['igraci']:
+                if i['ne_igra']:
+                    continue
+                for s in 'PSA':
+                    x = i['s'][s]
+                    ng = naginje(x)
+                    if not ng:
+                        continue
+                    na = [z for z in x['linije'] if z.get('m', 1) and z['l'] == ng['l']]
+                    za, protiv = OB.analiza(i, s, ng, u, st, tudja, K, 3, protiv=2) if K else ([], [])
+                    p5 = (x.get('posl') or [])[-5:]
+                    pr = x.get('pred')
+                    L.append(dict(k=i['k'], ime=i['ime'], tim=st['tim'], pos=i['pos'], s=s, l=ng['l'], strana=ng['strana'], pp=ng['pp'],
+                                  mu=x['mu'], q=x['q'], min=i['min'], pros=x['pros'], p5=round(sum(p5) / len(p5), 1) if p5 else None,
+                                  u=max(z['u'] for z in na), o=max(z['o'] for z in na), knjiga=len(na),
+                                  pred=(pr['strana'] if pr else None), za=za, protiv=protiv))
+        out[u['g']] = L
+    return out
+
+
 def igraci_kola(kolo):
     """Svi igrači tekućeg kola za karticu „Igrači“ (sažeto iz table): očekivano, raspon, forma, protivnik, glavne granice."""
     put = os.path.join(PROCENE, 'tabla', f'kolo{kolo}.json') if kolo else None
@@ -84,15 +114,25 @@ def igraci_kola(kolo):
     from zajedno import utakmice as sve_ut
     domacin = {x['g']: x['dom'] for x in sve_ut()}
     K = OB.Kontekst(B, domacin)
+    from zajedno import rokovi
+    R = rokovi()
+    sad_bg = dt.datetime.now(dt.timezone.utc).astimezone(BG)
     ut, out = [], []
     for u in t['utakmice']:
-        ut.append(dict(g=u['g'], dom=u['dom'], gost=u['gost'], vreme=u['vreme'], dan=u['dan']))
+        # pre objave (12:00 na dan utakmice) nema procena: samo prosek, poslednje utakmice i granice kladionica
+        skr = u['g'] in R and sad_bg < R[u['g']][0]
+        ut.append(dict(g=u['g'], dom=u['dom'], gost=u['gost'], vreme=u['vreme'], dan=u['dan'],
+                       objava=R[u['g']][0].isoformat() if u['g'] in R else None, skriveno=skr))
         for st in u['strane']:
             tudja = next(x for x in u['strane'] if x is not st)
             for i in st['igraci']:
                 s_ = {}
                 for s in 'PSA':
                     x = i['s'][s]
+                    if skr:
+                        s_[s] = dict(ng=None, mu=None, q=None, pros=x['pros'], posl=x['posl'], of=x['of'], vatra=x.get('vatra'),
+                                     lin=[[z['kl'], z['l'], z['u'], z['o']] for z in x['linije'] if z.get('m', 1)], pred=None)
+                        continue
                     pr = x.get('pred')
                     ng = None if i['ne_igra'] else naginje(x)
                     if ng:
@@ -106,8 +146,9 @@ def igraci_kola(kolo):
                 n_ = len(gs)
                 sez = dict(n=n_, min=round(sum(r['min'] for r in gs) / n_, 1), **{s: round(sum(r[s] for r in gs) / n_, 1) for s in 'PSA'},
                            mx={s: max(r[s] for r in gs) for s in 'PSA'}, mn={s: min(r[s] for r in gs) for s in 'PSA'}) if n_ else None
-                out.append(dict(k=i['k'], zadnje=zad, sez=sez, ime=i['ime'], tim=st['tim'], prot=st['prot'], g=u['g'], pos=i['pos'], min=i['min'], n=i['n'],
-                                posl_min=i['posl_min'], odsutan=i['odsutan'], ne_igra=i['ne_igra'], razlog=i.get('razlog'), upitan=i.get('upitan'), s=s_))
+                out.append(dict(k=i['k'], zadnje=zad, sez=sez, ime=i['ime'], tim=st['tim'], prot=st['prot'], g=u['g'], pos=i['pos'], min=(sez['min'] if skr and sez else i['min']), n=i['n'],
+                                posl_min=i['posl_min'], odsutan=i['odsutan'], ne_igra=i['ne_igra'], razlog=i.get('razlog'), upitan=i.get('upitan'), s=s_,
+                                skriveno=skr or None))
     return dict(kolo=kolo, napravljeno=t['napravljeno'], podaci_do=t['podaci_do'], utakmice=ut, igraci=out)
 
 
@@ -124,22 +165,31 @@ def main():
         tabla = ucitaj(os.path.join(PROCENE, 'tabla', f'kolo{a.kolo}.json'))
         put = os.path.join(folder, f'kolo{a.kolo}.json')
         st = ucitaj(put) if os.path.exists(put) else {'kolo': a.kolo, 'predlozi': []}
-        # Konačni predlozi: na dan utakmice od KONACNO (16:30) prvo osvežavanje daje konačne predloge (poslednja ponuda
-        # i vesti o povredama); posle toga se za tu utakmicu ništa ne menja. Pre toga su predlozi preliminarni.
-        # Utakmica koja počne pre konačnog osvežavanja zaključava se sa poslednjim predlozima.
+        # Objava i konačni predlozi (zajedno.rokovi): za utakmicu nema javnih procena pre 12:00 na dan utakmice.
+        # Konačni predlozi su oni koji su objavljeni u trenutku roka (sat ili sat i po pre prve utakmice dana);
+        # prvo osvežavanje posle roka ih samo zaključa. Ako do roka ništa nije objavljeno, prvo osvežavanje posle roka
+        # daje konačne predloge. Utakmica koja počne bez konačnih predloga zaključava se sa poslednjim predlozima.
+        from zajedno import utakmice as sve_ut, rokovi
+        R = rokovi()
         sad_bg = dt.datetime.now(dt.timezone.utc).astimezone(BG)
+        fmt = lambda x: x.strftime('%d.%m.%Y. %H:%M')
         konacno = st.setdefault('konacno', {})
         pocele = {u['g'] for u in tabla['utakmice'] if u['pocela']}
+        objavljive = {u['g'] for u in tabla['utakmice'] if u['g'] in R and sad_bg >= R[u['g']][0]}
+        for u in tabla['utakmice']:
+            g = u['g']
+            if str(g) not in konacno and g not in pocele and g in R and sad_bg >= R[g][1] and any(p['g'] == g for p in st['predlozi']):
+                konacno[str(g)] = fmt(R[g][1])
         zamrznute = pocele | {int(g) for g in konacno}
         zadrzi = [p for p in st['predlozi'] if p['g'] in zamrznute]          # zaključani
-        from zajedno import utakmice as sve_ut
-        novi = [p for p in izaberi(tabla, OB.Kontekst(Baza(), {x['g']: x['dom'] for x in sve_ut()})) if p['g'] not in zamrznute]
-        sada_konacno = [u['g'] for u in tabla['utakmice'] if u['g'] not in zamrznute and u['dan'] == sad_bg.date().isoformat()
-                        and sad_bg.strftime('%H:%M') >= KONACNO and u['snimci']]
+        K_ob = OB.Kontekst(Baza(), {x['g']: x['dom'] for x in sve_ut()})
+        novi = [p for p in izaberi(tabla, K_ob) if p['g'] not in zamrznute and p['g'] in objavljive]
+        sada_konacno = [u['g'] for u in tabla['utakmice'] if u['g'] not in zamrznute and u['g'] in objavljive
+                        and sad_bg >= R[u['g']][1] and u['snimci']]
         # promene u odnosu na prethodno osvežavanje (važe do početka utakmice)
         pre = {(p['g'], p['k']): p for p in st['predlozi'] if p['g'] not in zamrznute}
         g_pre = {p['g'] for p in pre.values()}
-        opis = lambda p: f"{ {'P': 'poeni', 'S': 'skokovi', 'A': 'asist.'}[p['s']]} {'preko' if p['strana'] == 'o' else 'ispod'} {p['l']:g} · {p['kvota']:.2f} {IME_KL.get(p['kl'], p['kl'])}"
+        opis = lambda p: f"{ {'P': 'poeni', 'S': 'skokovi', 'A': 'asist.'}[p['s']]} {'preko' if p['strana'] == 'o' else 'ispod'} {zr(p['l'])} · {zr(p['kvota'], 2)} {IME_KL.get(p['kl'], p['kl'])}"
         for p in novi:
             p['upisano'] = sada
             q = pre.get((p['g'], p['k']))
@@ -153,19 +203,38 @@ def main():
                 p['prvi_put'] = sada
                 if p['g'] in g_pre:
                     p['promena'], p['promena_u'] = 'novo', sada
-        nove_k = {(p['g'], p['k']) for p in novi}
-        uklonjeni = [x for x in st.get('uklonjeni', []) if x['g'] in zamrznute or (x['g'], x['k']) not in nove_k]
+        # povučeni i izmenjeni predlozi (istorija u toku dana): ceo predlog, kada je objavljen i kada povučen;
+        # ishod se upisuje kao i za predloge, ali se ne računa u učinak
+        isti = lambda x: (x['g'], x['k'], x['s'], x['strana'], x['l'])
+        nove_isti = {isti(p) for p in novi}
+        uklonjeni = [x for x in st.get('uklonjeni', []) if x['g'] in zamrznute or ('s' in x and isti(x) not in nove_isti)
+                     or ('s' not in x and (x['g'], x['k']) not in {(p['g'], p['k']) for p in novi})]
+        nove_po_k = {(p['g'], p['k']): p for p in novi}
         for kk, q in pre.items():
-            if kk not in nove_k and not any((x['g'], x['k']) == kk for x in uklonjeni):
-                uklonjeni.append(dict(g=q['g'], k=q['k'], ime=q['ime'], tim=q['tim'], opis=opis(q), u=sada))
+            n = nove_po_k.get(kk)
+            if n and isti(n) == isti(q):
+                continue
+            uklonjeni = [x for x in uklonjeni if not ('s' in x and isti(x) == isti(q))]
+            uklonjeni.append(dict(g=q['g'], k=q['k'], ime=q['ime'], tim=q['tim'], prot=q.get('prot'), s=q['s'], strana=q['strana'],
+                                  l=q['l'], kl=q['kl'], kvota=q['kvota'], pp=q.get('pp'), nivo=q.get('nivo'), mu=q.get('mu'),
+                                  opis=opis(q), od=q.get('prvi_put') or q.get('upisano'), u=sada,
+                                  vrsta='izmenjen' if n else 'povučen', zamena=opis(n) if n else None))
         st['uklonjeni'] = uklonjeni
         st['predlozi'] = zadrzi + novi
         for g in sada_konacno:
             konacno[str(g)] = sada
+        # cela ponuda dana (arhiva za Istoriju): svi igrači u ponudi sa očekivanjem, stranom na koju naginju i razlozima;
+        # osvežava se dok utakmica nije zaključana (isti trenutak kao konačni predlozi)
+        ponuda = st.setdefault('ponuda', {})
+        for g, L in ponuda_dana(tabla, K_ob).items():
+            if g in objavljive and (g not in zamrznute or (str(g) not in ponuda and g not in pocele) or g in sada_konacno):
+                ponuda[str(g)] = L
         st['osvezeno'] = sada
         pocetak = {x['g']: x['utc'].isoformat() for x in sve_ut()}
         st['utakmice'] = [dict(g=u['g'], dom=u['dom'], gost=u['gost'], vreme=u['vreme'], dan=u['dan'], pocela=u['pocela'],
                                pocetak=pocetak.get(u['g']), sastav=u.get('sastav'),
+                               objava=R[u['g']][0].isoformat() if u['g'] in R else None,
+                               rok=R[u['g']][1].isoformat() if u['g'] in R else None,
                                ponude=sorted(u['snimci'].keys()), snimci=u['snimci']) for u in tabla['utakmice']]
         # zatvaranje kvota (interno, za CLV): dok utakmica ne počne, za svaki predlog se pamti poslednja kvota iste
         # kladionice na istoj granici; posle početka ostaje kvota iz poslednjeg snimka pre utakmice
@@ -207,6 +276,23 @@ def main():
                 p['prosao'] = (y > p['l']) if p.get('strana') == 'o' else (y < p['l'])
             elif p['g'] in igrane:
                 p['ishod'] = None; p['prosao'] = None; p['nije_igrao'] = True   # ulog se vraća
+        for x in st.get('uklonjeni', []):
+            if 's' not in x:
+                continue
+            r = ish.get((x['g'], x['k']))
+            if r:
+                x['ishod'] = r[x['s']]
+                x['prosao'] = (r[x['s']] > x['l']) if x['strana'] == 'o' else (r[x['s']] < x['l'])
+            elif x['g'] in igrane:
+                x['ishod'] = None; x['prosao'] = None; x['nije_igrao'] = True
+        for g, L in st.get('ponuda', {}).items():
+            for x in L:
+                r = ish.get((int(g), x['k']))
+                if r:
+                    x['ishod'], x['min_st'] = r[x['s']], round(r['min'])
+                    x['prosao'] = (r[x['s']] > x['l']) if x['strana'] == 'o' else (r[x['s']] < x['l'])
+                elif int(g) in igrane:
+                    x['ishod'] = None; x['prosao'] = None; x['nije_igrao'] = True
         sacuvaj(f, st)
         kola.append(st)
 
@@ -221,8 +307,16 @@ def main():
     # na javnu stranicu idu samo polja koja stranica koristi (bez internih verovatnoća, CLV i sl.)
     JAVNO = ('g', 'dan', 'vreme', 'k', 'ime', 'tim', 'prot', 's', 'strana', 'l', 'kl', 'kvota', 'pp', 'ev', 'nivo', 'rang', 'knjige', 'opseg',
              'q', 'mu', 'min', 'l0', 'vatra', 'pos', 'of', 'analiza', 'promena', 'ranije', 'promena_u', 'prvi_put', 'ishod', 'prosao', 'nije_igrao')
+    # cela ponuda: razlozi samo za tekuće i prethodno kolo (veličina stranice); brojke za sva kola
+    JAVNO_PON = ('k', 'ime', 'tim', 'pos', 's', 'l', 'strana', 'pp', 'mu', 'q', 'min', 'pros', 'p5', 'u', 'o', 'pred',
+                 'ishod', 'min_st', 'prosao', 'nije_igrao')
+    sa_razlozima = {k['kolo'] for k in kola if tekuce and k['kolo'] >= tekuce - 1}
+    def pon_j(k):
+        T = JAVNO_PON + (('za', 'protiv') if k['kolo'] in sa_razlozima else ())
+        return {g: [{x: e[x] for x in T if x in e} for e in L] for g, L in k.get('ponuda', {}).items()}
     kola_j = [dict(kolo=k['kolo'], osvezeno=k.get('osvezeno'), konacno=k.get('konacno', {}), utakmice=k.get('utakmice', []),
-                   uklonjeni=k.get('uklonjeni', []), predlozi=[{x: p[x] for x in JAVNO if x in p} for p in k['predlozi']]) for k in kola]
+                   uklonjeni=k.get('uklonjeni', []), ponuda=pon_j(k),
+                   predlozi=[{x: p[x] for x in JAVNO if x in p} for p in k['predlozi']]) for k in kola]
     # CLV (interno): prosečna razlika naše kvote i zatvaranja
     for k in kola:
         Z = [p for p in k['predlozi'] if p.get('zatv') and p['g'] in {u['g'] for u in k.get('utakmice', []) if u.get('pocela')}]

@@ -93,6 +93,29 @@ def utakmice():
     return out
 
 
+OBJAVA_SAT = 12          # predlozi za utakmicu se objavljuju od 12:00 na dan utakmice (Beograd)
+
+
+def rokovi(lista=None):
+    """g -> (objava, konacno), oba kao vreme u Beogradu.
+    objava: 12:00 na dan utakmice; pre toga za tu utakmicu nema javnih procena.
+    konacno: zavisi od prve utakmice tog dana: sat pre nje ako počinje pre 18:00 (npr. Dubai u 17:00 -> 16:00),
+    inače sat i po pre nje (prva u 20:45 -> 19:15). Važi za sve utakmice tog dana; nikad pre objave."""
+    lista = lista or utakmice()
+    prva = {}
+    for u in lista:
+        t = u['utc'].astimezone(BG)
+        prva[t.date()] = min(prva.get(t.date(), t), t)
+    out = {}
+    for u in lista:
+        t = u['utc'].astimezone(BG)
+        ob = t.replace(hour=OBJAVA_SAT, minute=0, second=0, microsecond=0)
+        p = prva[t.date()]
+        ko = p - dt.timedelta(minutes=60 if p.hour < 18 else 90)
+        out[u['g']] = (ob, max(ko, ob))
+    return out
+
+
 def nadji_utakmicu(kod_tima, utc, lista=None):
     """Utakmica tima najbliža datom trenutku (do 18 sati razlike)."""
     lista = lista or utakmice()
