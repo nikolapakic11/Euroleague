@@ -80,6 +80,8 @@ p{margin:0;max-width:68ch}
 .ng .cap{font-size:12px;color:var(--muted)} .ng .cap b{font-weight:700} .ng .cap .o{color:var(--plus)} .ng .cap .u{color:var(--minus)}
 .det .zst{margin:6px 0 0;padding-left:18px;font-size:13.5px} .det .zst li{margin-bottom:2px}
 .det .oc{max-width:none}
+.zz{border-left:3px solid var(--dobro);padding:2px 0 2px 10px} .zz.ne{border-left-color:var(--lose)} .zz .zst{margin-top:3px}
+.zz.da .lbl{color:var(--dobro)} .zz.ne .lbl{color:var(--lose)}
 .det .dg{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))!important}
 .det .dst{display:flex;flex-direction:column;gap:6px}
 .det .dst table th,.det .dst table td{padding:5px 6px}
@@ -250,7 +252,7 @@ const strana=p=>p.strana||'u';
 const IMEKL=k=>esc((D.kladionice&&D.kladionice[k])||k);
 const POZ={G:'bek',F:'krilo',C:'centar'};
 const NIVO_OPIS={jak:'verovatnoća bar 60%',solidan:'verovatnoća 55 do 60%','nagoveštaj':'ispod 55%: verovatnije od suprotnog, ali tesno',slab:'dopuna do 4 po utakmici, ispod praga'};
-let st={napredno:false,sortS:'oc',prikaz:'a',tab:'predlozi',stavke:{P:true,S:true,A:true},kolo:null,sort:'min',opad:true,tim:'',poz:'',minMin:0,q:'',samoPred:false};
+let st={dan:null,samoPon:true,napredno:false,sortS:'oc',prikaz:'a',tab:'predlozi',stavke:{P:true,S:true,A:true},kolo:null,sort:'min',opad:true,tim:'',poz:'',minMin:0,q:'',samoPred:false};
 let tema='';
 try{const s=JSON.parse(localStorage.getItem('ev-pm-filteri')||'null');if(s&&s.stavke)st.stavke=s.stavke;if(s&&s.prikaz)st.prikaz=s.prikaz;if(s&&s.napredno)st.napredno=true;if(s&&s.tema)tema=s.tema}catch(e){}
 function sacuvaj(){try{localStorage.setItem('ev-pm-filteri',JSON.stringify({stavke:st.stavke,prikaz:st.prikaz,napredno:st.napredno,tema}))}catch(e){}}
@@ -424,7 +426,7 @@ function linIzvod(x){if(!x.lin||!x.lin.length)return '';const ls=[...new Set(x.l
 const OTV=new Set();
 const ZAKLJ=!!(D.zakljucano&&D.zakljucano.napredno);
 const napredno=()=>st.napredno&&!ZAKLJ;
-const pIgr=(i,s)=>{const x=i.s[s],n=x.ng;return n?{s,strana:n.strana,l:n.l,pp:n.pp,q:x.q,mu:x.mu,opseg:[],analiza:n.zasto}:null};
+const pIgr=(i,s)=>{const x=i.s[s],n=x.ng;return n?{s,strana:n.strana,l:n.l,pp:n.pp,q:x.q,mu:x.mu,opseg:[],analiza:n.zasto,protiv:n.protiv||[]}:null};
 function malaSansa(p){
   const o=p.strana==='o',pp=Math.round(p.pp*100),pu=o?100-pp:pp,po=100-pu;
   const cap=`<span class="cap">naginje <b class="${o?'o':'u'}">${o?'▲ preko':'▼ ispod'} ${z(p.l)}</b> · ${pp}%</span>`;
@@ -436,8 +438,9 @@ function detalj(i,akt){
   const s=i.sez;const sez=s?`<div><h4>Prosek ove sezone (${s.n} utak.)</h4><div class="sez"><span>Minuti <b>${z(s.min)}</b></span>${['P','S','A'].map(k=>`<span>${S[k]} <b>${z(s[k])}</b> <span class="sm">${s.mn[k]}–${s.mx[k]}</span></span>`).join('')}</div></div>`:'';
   const zad=(i.zadnje||[]).length?`<div><h4>Poslednje utakmice</h4><table><tr><th>Datum</th><th>Protiv</th><th class="num">Min</th><th class="num">P</th><th class="num">S</th><th class="num">A</th></tr>${i.zadnje.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td class="num">${r[2]}</td><td class="num">${r[3]}</td><td class="num">${r[4]}</td><td class="num">${r[5]}</td></tr>`).join('')}</table></div>`:'';
   const tabK=s=>{const L=i.s[s].lin||[];if(!L.length)return '';return `<table><tr><th>Kladionica</th><th class="num">Granica</th><th class="num">Ispod</th><th class="num">Preko</th>${N?'<th class="num">Naša preko</th>':''}</tr>${L.map(l=>`<tr><td>${IMEKL(l[0])}</td><td class="num">${z(l[1])}</td><td class="num">${z(l[2],2)}</td><td class="num">${z(l[3],2)}</td>${N?`<td class="num">${Math.round(l[4]*100)}%</td>`:''}</tr>`).join('')}</table>`};
-  const po=akt.map(s=>{const p=N?pIgr(i,s):null,tk=tabK(s);if(!p&&!tk)return '';const A=p?(p.analiza||[]):[];
-    return `<div class="dst"><h4>${S[s]}${p?`: naginje ${p.strana==='o'?'preko':'ispod'} ${z(p.l)}`:': granice kladionica'}</h4>${p?ocekivanje(p):''}${A.length?`<ul class="zst">${A.map(a=>'<li>'+esc(a)+'</li>').join('')}</ul>`:''}${tk}</div>`}).join('');
+  const lista=(nas,A,kl)=>A.length?`<div class="zz ${kl}"><span class="lbl">${nas}</span><ul class="zst">${A.map(a=>'<li>'+esc(a)+'</li>').join('')}</ul></div>`:'';
+  const po=akt.map(s=>{const p=N?pIgr(i,s):null,tk=tabK(s);if(!p&&!tk)return '';const sm=p&&p.strana==='o'?'preko':'ispod';
+    return `<div class="dst"><h4>${S[s]}${p?`: naginje ${sm} ${z(p.l)}`:': granice kladionica'}</h4>${p?ocekivanje(p):''}${p?lista('Zašto '+sm,p.analiza||[],'da')+lista('Šta govori protiv',p.protiv,'ne'):''}${tk}</div>`}).join('');
   return `<div class="dg">${sez}${zad}</div>${po?`<div class="dg" style="margin-top:14px">${po}</div>`:'<p class="meta" style="margin-top:10px">Kladionice još nemaju granice za ovog igrača.</p>'}`;
 }
 function crtajIgrace(){
@@ -445,14 +448,23 @@ function crtajIgrace(){
   const N=napredno();
   const akt=['P','S','A'].filter(s=>st.stavke[s]);
   const timovi=[...new Set(I.igraci.map(i=>i.tim))].sort();
+  const dani=[...new Set(I.utakmice.map(u=>u.dan))].sort();
+  if(st.dan===null){const d=new Date(),danas=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;st.dan=dani.find(x=>x>=danas)||'sve'}
+  const gDan=new Set(I.utakmice.filter(u=>st.dan==='sve'||u.dan===st.dan).map(u=>u.g));
+  const uPonudi=i=>['P','S','A'].some(s=>(i.s[s].lin||[]).length);
   let h=`<div class="kontrole"><button class="prek" id="fNap" role="switch" aria-checked="${N}"${ZAKLJ?' disabled title="Dostupno u paketu sa naprednom statistikom"':''}><span class="sw" aria-hidden="true"></span>${ZAKLJ?'🔒 ':''}Napredna statistika i očekivanja</button>
    ${N?`<label class="pol">Poređaj po <select id="fSortS"><option value="oc"${st.sortS==='oc'?' selected':''}>očekivanju</option><option value="sansa"${st.sortS==='sansa'?' selected':''}>najjačoj šansi</option></select></label>`:''}</div>
-   <div class="kontrole"><label class="pol">Tim <select id="fTim"><option value="">svi</option>${timovi.map(t=>`<option${st.tim===t?' selected':''}>${t}</option>`).join('')}</select></label>
+   <div class="kontrole"><label class="pol">Dan <select id="fDan">${dani.map(d=>`<option value="${d}"${st.dan===d?' selected':''}>${DAN(d)}</option>`).join('')}<option value="sve"${st.dan==='sve'?' selected':''}>celo kolo</option></select></label>
+   <label class="pol"><input type="checkbox" id="fPon"${st.samoPon?' checked':''}> samo igrači u ponudi</label>
+   <label class="pol">Tim <select id="fTim"><option value="">svi</option>${timovi.map(t=>`<option${st.tim===t?' selected':''}>${t}</option>`).join('')}</select></label>
    <label class="pol">Pozicija <select id="fPoz"><option value="">sve</option>${['G','F','C'].map(p=>`<option value="${p}"${st.poz===p?' selected':''}>${POZ[p]}</option>`).join('')}</select></label>
    <label class="pol">Najmanje minuta <input type="number" id="fMin" min="0" max="40" value="${st.minMin}"></label>
    ${N?`<label class="pol"><input type="checkbox" id="fPred"${st.samoPred?' checked':''}> samo sa predlogom</label>`:''}
    <label class="pol"><input type="search" id="fQ" placeholder="Igrač" value="${esc(st.q)}" aria-label="Traži igrača"></label></div>`;
-  let R=I.igraci.filter(i=>(!st.tim||i.tim===st.tim)&&(!st.poz||i.pos===st.poz)&&i.min>=st.minMin&&(!st.q||i.ime.toLowerCase().includes(st.q.toLowerCase())));
+  let R=I.igraci.filter(i=>gDan.has(i.g));
+  let napPon='';
+  if(st.samoPon){const P=R.filter(uPonudi);if(P.length)R=P;else napPon=' Kladionice za ovaj dan još nisu okačile igrače, pa su prikazani svi.'}
+  R=R.filter(i=>(!st.tim||i.tim===st.tim)&&(!st.poz||i.pos===st.poz)&&i.min>=st.minMin&&(!st.q||i.ime.toLowerCase().includes(st.q.toLowerCase())));
   if(N&&st.samoPred)R=R.filter(i=>akt.some(s=>i.s[s].pred));
   const sansa=i=>Math.max(0,...akt.map(s=>i.s[s].ng?i.s[s].ng.pp:0));
   const key=i=>{const k=st.sort;if(k==='min')return i.min;if(k==='ime')return i.ime;if(k==='g')return i.g;
@@ -460,7 +472,7 @@ function crtajIgrace(){
     return N?i.s[k].mu:i.s[k].pros};
   R.sort((a,b)=>{const A=key(a),B=key(b);const c=typeof A==='string'?A.localeCompare(B,'sr'):A-B;return st.opad?-c:c});
   const th=(k,t,cl='')=>`<th class="sort ${cl}" data-k="${k}"${st.sort===k?` aria-sort="${st.opad?'descending':'ascending'}"`:''}>${t}${st.sort===k?(st.opad?' ↓':' ↑'):''}</th>`;
-  h+=`<p class="meta">${R.length} igrača ${I.kolo}. kola. ${N?'Očekivano i raspon (10. do 90. percentil) iz modela, i na koju stranu igrač naginje na najčešćoj granici kladionica. ':'Prosek sezone i poslednje 3 utakmice. '}Klik na ime otvara detalje, klik na naslov kolone sortira.</p>`;
+  h+=`<p class="meta">${R.length} igrača ${st.dan==='sve'?I.kolo+'. kola.':'· '+DAN(st.dan)}${napPon} ${N?'Očekivano i raspon (10. do 90. percentil) iz modela, i na koju stranu igrač naginje na najčešćoj granici kladionica. ':'Prosek sezone i poslednje 3 utakmice. '}Klik na ime otvara detalje, klik na naslov kolone sortira.</p>`;
   h+=`<div class="lista"><div class="skrol"><table><tr>${th('ime','Igrač')}${th('g','Utakmica')}${th('min','Minuti','num')}${akt.map(s=>th(s,S[s])).join('')}</tr>`+
     R.map(i=>{const u=I.utakmice.find(x=>x.g===i.g)||{};
       const zn=[];if(i.ne_igra)zn.push(`<span class="mini u">${i.razlog==='nije u sastavu'?'nije u sastavu':'ne igra'}</span>`);if(i.odsutan)zn.push(`<span class="sm">nije igrao ${i.odsutan} od posl. 3</span>`);
@@ -487,7 +499,7 @@ function crtajKako(){
    'Kvota najmanje '+z(pr.kvota_min||1.5,2)+'. Navedena je kladionica sa najboljom kvotom i ostale sa istom granicom.',
    'Uz svaki predlog: koliko očekujemo i u kom opsegu se igrač najčešće kreće. Prikaz šansi „Procenti“ daje verovatnoću za ispod i preko granice, a „Skala“ pokazuje očekivanje, uobičajeni raspon i granicu na istoj skali. „Druge ponude“ su alternativne granice i lestvice (npr. 10+ poena) sa kvotom i našom verovatnoćom.',
    'Ispod svakog predloga je kratko obrazloženje sa tačkama koje idu u prilog predlogu: učinak u sezoni na toj granici, odbrana protivnika na poziciji, forma, minuti, dom i gost, tempo, ko nedostaje. Jači predlog ima više tačaka.',
-   'Kartica Igrači: osnovni prikaz daje proseke i granice kladionica. Uz „Naprednu statistiku i očekivanja“ dobija se očekivanje iz modela, raspon, na koju stranu igrač naginje na najčešćoj granici sa procentom (ili na skali) i kratko obrazloženje u detalju igrača.',
+   'Kartica Igrači: podrazumevano prikazuje igrače današnjih utakmica koji su u ponudi bar jedne kladionice (može i ceo dan ili celo kolo). Osnovni prikaz daje proseke i granice kladionica. Uz „Naprednu statistiku i očekivanja“ dobija se očekivanje iz modela, raspon, na koju stranu igrač naginje na najčešćoj granici sa procentom (ili na skali), a u detalju šta ide u prilog i šta govori protiv. Saigrač sa dosta minuta koga nema u ponudi kladionica je znak da možda ne igra.',
    'Posle utakmice tabela kladionica pokazuje ishod za svaku granicu posebno (zeleno prošao, crveno pao), jer granice nisu svuda iste. Učinak se računa po granici i kvoti iz predloga.',
    'Model: prosek minuta igrača u ovoj sezoni, učinak po minutu u ovoj i prošloj sezoni, odbrana protivnika prema poziciji i tempo. Igrač mora imati bar 3 utakmice ove sezone i da je igrao sve 3 poslednje utakmice svog tima.',
    'Plamen pored imena: igrač je u formi u toj stavci (poslednje 3 utakmice bar 30% iznad ranijeg proseka). Samo informacija, forma je već u proceni.',
@@ -516,6 +528,8 @@ function crtaj(){
   on('fQ','onchange',e=>{st.q=e.target.value.trim();crtaj()});
   on('fNap','onclick',()=>{if(ZAKLJ)return;st.napredno=!st.napredno;sacuvaj();crtaj()});
   on('fSortS','onchange',e=>{st.sortS=e.target.value;crtaj()});
+  on('fDan','onchange',e=>{st.dan=e.target.value;crtaj()});
+  on('fPon','onchange',e=>{st.samoPon=e.target.checked;crtaj()});
 }
 document.getElementById('osvezeno').textContent='Osveženo '+D.osvezeno;
 document.querySelectorAll('.tg').forEach(b=>{b.setAttribute('aria-pressed',!!st.stavke[b.dataset.s]);b.onclick=()=>{
