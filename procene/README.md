@@ -17,6 +17,8 @@ Procene igrača Evrolige zasnovane na statistici i kontekstu, bez tipova i bez t
 3. Probna tabla za kolo 11 (11. do 13.11.2026) i dnevnik procena od tog kola.
 4. Javna stranica sa predlozima po kolu od kola 11 (odluka 3.11.2026), sa svim ishodima.
 
+Provera mehanizma izbora i razlozi za trenutno pravilo: `procene/provera/izbor_2026-11-04.md`.
+
 U pozadini (odluka 4.11.2026): prikupljaju se domaće utakmice ekipa između kola Evrolige i minuti igrača u njima (`domace.py`). Posle nekoliko kola proveriti obrazac: da li domaća utakmica dan ili dva pre kola, ili mnogo minuta u njoj, menja minute i učinak u Evroligi, i da li to vredi uneti u model. Do tada se ništa od toga ne prikazuje.
 
 Ovaj folder koristi samo `baza/`. Ništa iz `minusi/`.
@@ -35,7 +37,9 @@ Sve skripte se pokreću iz korena repozitorijuma. Ceo dnevni posao radi jedna ko
 | Provera | `python3 procene/skripte/provera.py` | `procene/provera/izvestaj.md`: model naspram kvota na svim ponudama od oktobra, preko i ispod. |
 | Tabla | `python3 procene/skripte/tabla.py --kolo 11 --dnevnik` | `procene/tabla/kolo11.json` i `.html` (objavljuje se kao artefakt) i dnevnik procena. |
 | Spajanje | `python3 procene/skripte/spajanje.py` | Posle provere: spaja model i kvote u jednu verovatnoću podešenu prema ishodima (`procene/spajanje.json`), sa testom na kolima 7 do 9. |
-| Javni predlozi | `python3 procene/skripte/predlozi.py --kolo 11` | Posle table. 4 do 6 predloga po utakmici (izbor u tabli, `spajanje.izbor_utakmice`): rang po spojenoj verovatnoći, MINUS od 53%, PLUS od 50% (do 2 PLUS unapred), kvota ≥ 1,50, jedan po igraču; nivoi jak/solidan/nagoveštaj/slab; uz predlog opseg ponuđenih granica (i Soccerbet lestvice „N+“), soft spot i kratka analiza (minuti, sezona, forma, odbrana, tempo, igrači na poziciji, odsutni). Na javnu stranicu ne idu provera unazad ni pragovi po strani. Zaključava na početku utakmice, upisuje ishode, pravi `procene/javno/predlozi.html`. |
+| Javni predlozi | `python3 procene/skripte/predlozi.py --kolo 11` | Posle table. Do 6 predloga po utakmici (izbor u tabli, `spajanje.izbor_utakmice`): rang po spojenoj verovatnoći (verovatnoća modela i konsenzusa četiri kladionice), prag 53% za obe strane, kvota ≥ 1,50, jedan po igraču, bez obaveznih PLUS i bez dopune; tim bez rotacionog igrača (izveštaj o povredama, sastav, nema ga ni kod jedne kladionice) ne dobija MINUS. Prikazana verovatnoća je kalibrisana (Platt po stavci, `spajanje.json` → `kal`); nivoi jak ≥ 62%, solidan ≥ 56%. Preliminarno do 16:30 na dan utakmice, tada konačno (posle se ne menja); učinak samo za konačne. Uz predlog obrazloženje ljudskim jezikom (`obrazlozenje.py`), opseg granica i soft spot. Pamti zatvaranje kvota (CLV, interno). Na javnu stranicu idu samo javna polja. |
+| Povrede | `python3 procene/skripte/povrede.py` | Zvanični izveštaj Evrolige o povredama za kolo (Eurohoops prenos): van igre, upitan, igra → `procene/podaci/povrede.json`; koristi ga tabla. |
+| Statistika | `python3 procene/skripte/statistika.py` | Timovi i igrači ove sezone iz zapisnika (`baza/zapisnici` i `procene/podaci/zapisnici` iz dopune) → `procene/podaci/statistika.json`; kartica Statistika i obrazloženja. |
 | Dopuna | `python3 procene/skripte/dopuna.py` | Završene utakmice koje još nisu u `baza/rows.json`, direktno iz Evrolige, u `procene/podaci/dopuna.json`. |
 | Sastavi | `python3 procene/skripte/sastavi.py` | 12 prijavljenih igrača kad ih Evroliga objavi; ko nije u sastavu, ne igra. |
 | Sajt | `python3 procene/skripte/sajt.py <folder>` | Javna stranica kao samostalan `index.html` za javni repozitorijum `nikolapakic11/evroliga-plus-minus` (GitHub Pages); u njega ide samo stranica. |
