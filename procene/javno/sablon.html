@@ -71,7 +71,23 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{ou
 /* lista predloga */
 .lista{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .prazno{padding:14px 16px;color:var(--muted);font-size:14.5px}
-.pred{display:grid;grid-template-columns:auto auto minmax(0,1fr) auto;gap:6px 14px;padding:12px 16px 12px 0;border-top:1px solid var(--line);align-items:center}
+.pred{display:grid;grid-template-columns:auto auto minmax(0,1fr) minmax(250px,300px) auto;gap:8px 16px;padding:14px 16px 14px 0;border-top:1px solid var(--line);align-items:center}
+.knj{border:1px solid var(--line);border-radius:10px;overflow:hidden;font-variant-numeric:tabular-nums;align-self:center}
+.knj table{font-size:15px}
+.knj th{font-size:11px;padding:6px 8px;background:var(--sivo-soft)}
+.knj td{padding:6px 8px}
+.knj td.kn{font:600 14px var(--f-disp);white-space:nowrap}
+.knj td.gr,.knj td.kv{text-align:right;font:600 16px var(--f-disp)}
+.knj th.kv,.knj th.gr{text-align:right}
+.knj th.str.o{color:var(--plus)} .knj th.str.u{color:var(--minus)}
+.knj td.izb{color:var(--fg)}
+.knj td.izb.o{background:var(--plus-soft)} .knj td.izb.u{background:var(--minus-soft)}
+.knj td.naj{font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.knj td.dr{color:var(--warn)}
+.knj td.dr::after{content:attr(data-d);font:700 11px var(--f-body);margin-left:3px}
+.knj td.ne{color:var(--muted);font-weight:400}
+.knj tr.ova td.kn::before{content:"● ";color:var(--fg)}
+.knj .nap{font-size:12px;color:var(--warn);padding:5px 8px;border-top:1px solid var(--line)}
 .pred:first-child{border-top:0}
 .rb{align-self:center;font:700 15px var(--f-disp);color:var(--muted);width:22px;text-align:right}
 .znak{align-self:stretch;width:80px;display:flex;flex-direction:column;align-items:center;justify-content:center;font:800 14px var(--f-disp);letter-spacing:.06em;color:#fff;border-radius:8px}
@@ -131,7 +147,8 @@ td.num,th.num{text-align:right}
 .kola-izbor button{flex:0 0 auto;font:600 14px var(--f-disp);border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:8px;padding:6px 12px;cursor:pointer}
 .kola-izbor button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
 .napomena{font-size:13.5px;color:var(--muted);display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:14px}
-@media (max-width:640px){h1{font-size:30px}.ucinak{grid-template-columns:minmax(0,1fr)}.pred{grid-template-columns:auto minmax(0,1fr);padding-left:12px}.rb{display:none}.znak{width:62px;grid-row:span 2}.status{grid-column:2;justify-self:start}}
+@media (max-width:900px){.pred{grid-template-columns:auto auto minmax(0,1fr) auto}.knj{grid-column:3 / 4}}
+@media (max-width:640px){h1{font-size:30px}.ucinak{grid-template-columns:minmax(0,1fr)}.pred{grid-template-columns:auto minmax(0,1fr);padding-left:12px}.rb{display:none}.znak{width:62px;grid-row:span 3}.knj{grid-column:2}.status{grid-column:2;justify-self:start}}
 </style>
 
 <div class="wrap">
@@ -223,13 +240,29 @@ function klizac(p){
 }
 function kartica(p,rb,k){
   const o=strana(p)==='o', nv=p.nivo||'jak', pp=Math.round((p.pp??p.pu)*100), u=utak(k,p.g);
-  const ost=(p.ostale||[]).length?` <span class="ost">· isto: ${p.ostale.map(t=>IMEKL(t.kl)+' '+z(t.k,2)).join(', ')}</span>`:'';
+  const ost='';
   return `<div class="pred"><span class="rb">${rb}</span><div class="znak ${o?'o':'u'}"><span>${o?'▲':'▼'}</span>${o?'PLUS':'MINUS'}</div>
    <div class="ko"><b>${esc(p.ime)}${vatraIkona(p.vatra,p.s)}</b><span class="t">${p.tim} protiv ${p.prot} · ${esc(u.vreme||p.vreme||'')}</span>
    <span class="tip">${S[p.s]} <span class="${o?'o':'u'}">${o?'preko':'ispod'} ${z(p.l)}</span> · ${z(p.kvota,2)} <span class="ost">${IMEKL(p.kl)}</span>${ost}</span>
    <span class="niv ${o?'o':'u'} ${nv}" title="${esc(NIVO_OPIS[nv]||'')}">${nv} <b>${pp}%</b></span>
    <span class="brojke"><span>očekivano <b>${z(p.mu)}</b></span>${p.ev>=0.05?`<span>prednost <b>+${Math.round(p.ev*100)}%</b></span>`:''}${pomeraj(p)}</span>${matchup(p.of,p.pos,p.s)}
-   ${klizac(p)}</div>${status(p)}</div>`;
+   ${klizac(p)}</div>${kladionice(p)}${status(p)}</div>`;
+}
+const SVE_KL=['admiral','maxbet','mozzart','soccerbet'];
+function kladionice(p){
+  const o=strana(p)==='o', K=p.knjige||[];
+  if(!K.length)return '<div></div>';
+  const ista=K.filter(t=>t.l===p.l), naj=Math.max(...ista.map(t=>o?t.o:t.u));
+  const razl=K.some(t=>t.l!==p.l);
+  const red=SVE_KL.map(kl=>{const t=K.find(x=>x.kl===kl);
+    if(!t)return `<tr><td class="kn">${IMEKL(kl)}</td><td class="gr ne" colspan="3">nema u ponudi</td></tr>`;
+    const dr=t.l!==p.l, kv=o?t.o:t.u, druga=o?t.u:t.o;
+    const izb=`kv izb ${o?'o':'u'}${!dr&&kv===naj?' naj':''}`;
+    const smer=dr?(t.l<p.l?' ↓':' ↑'):'';
+    const cU=o?`<td class="kv ne">${z(druga,2)}</td>`:`<td class="${izb}">${z(kv,2)}</td>`;
+    const cO=o?`<td class="${izb}">${z(kv,2)}</td>`:`<td class="kv ne">${z(druga,2)}</td>`;
+    return `<tr class="${t.kl===p.kl?'ova':''}"><td class="kn">${IMEKL(kl)}</td><td class="gr${dr?' dr':''}" data-d="${smer}">${z(t.l)}</td>${cU}${cO}</tr>`}).join('');
+  return `<div class="knj"><table><tr><th>Kladionica</th><th class="gr">Granica</th><th class="kv str ${o?'':'u'}">Ispod</th><th class="kv str ${o?'o':''}">Preko</th></tr>${red}</table>${razl?`<div class="nap">Granice se razlikuju: žuto je granica drugačija od predloga (${z(p.l)}).</div>`:''}</div>`;
 }
 
 // ---------- Predlozi (naslovna) ----------

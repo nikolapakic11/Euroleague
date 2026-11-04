@@ -260,6 +260,10 @@ def main():
             pred['ostale'] = sorted([dict(kl=z['kl'], k=(z['o'] if c['strana'] == 'o' else z['u']))
                                      for z in i['s'][c['s']]['linije'] if z['l'] == c['l'] and z['kl'] != c['kl'] and z.get('m', 1)],
                                     key=lambda t: -t['k'])
+            # sve kladionice: glavna granica i kvote za tu stavku (za poređenje na kartici predloga)
+            red_kl = {k: n for n, k in enumerate(KLADIONICE)}
+            pred['knjige'] = sorted([dict(kl=z['kl'], l=z['l'], u=z['u'], o=z['o']) for z in i['s'][c['s']]['linije'] if z.get('m', 1)],
+                                    key=lambda t: red_kl.get(t['kl'], 9))
             T, soft = soft_spot(i, c['s'], c['strana'], pred, sp_w)
             pred['opseg'] = T
             pred['soft'] = soft
