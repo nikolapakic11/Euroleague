@@ -190,6 +190,56 @@ def povratak_saigraca(igraci, B, kod, dan):
         i['povratak'] = info
 
 
+ODS_BLIZINA = {('G', 'G'): 1.0, ('F', 'F'): 1.0, ('C', 'C'): 1.0, ('G', 'F'): 0.6, ('F', 'G'): 0.6,
+               ('F', 'C'): 0.6, ('C', 'F'): 0.6, ('G', 'C'): 0.2, ('C', 'G'): 0.2}
+ODS_UDEO = 0.85         # deo minuta odsutnih koji ide igračima iz rotacije (ostatak mladima i igračima van rotacije)
+ODS_MAX_MIN = 32.0      # najviše očekivanih minuta posle raspodele
+
+
+def odsustvo_saigraca(igraci, n_tim):
+    """Odsutni igrači iz rotacije (ne igraju danas, a igrali su bar polovinu utakmica tima i bar jednu od poslednje 3,
+    pa su njihovi minuti još u prosecima saigrača): njihovi minuti se dele ostalima iz rotacije, srazmerno dosadašnjim
+    minutima i blizini pozicije (ista 1, bek-krilo i krilo-centar 0,6, bek-centar 0,2), ukupno ODS_UDEO minuta odsutnih,
+    do ODS_MAX_MIN po igraču. Učinak po minutu ostaje isti, pa očekivanje raste sa minutima; raspon se računa ponovo."""
+    van = [j for j in igraci if j['ne_igra'] and j['min'] >= 12 and n_tim and j['n'] >= 0.5 * n_tim and j['odsutan'] < 3]
+    akt = [i for i in igraci if not i['ne_igra'] and i['min'] >= 8]
+    if not van or not akt:
+        return
+    dod = {i['k']: 0.0 for i in akt}
+    for j in van:
+        tez = {i['k']: i['min'] * ODS_BLIZINA.get((i['pos'], j['pos']), 0.6) for i in akt}
+        zbir = sum(tez.values())
+        for i in akt:
+            dod[i['k']] += j['min'] * ODS_UDEO * tez[i['k']] / zbir
+    # granica minuta: višak ide ostalima srazmerno minutima
+    for _ in range(5):
+        visak = 0.0
+        for i in akt:
+            if i['min'] + dod[i['k']] > ODS_MAX_MIN:
+                visak += i['min'] + dod[i['k']] - ODS_MAX_MIN
+                dod[i['k']] = max(0.0, ODS_MAX_MIN - i['min'])
+        slobodni = [i for i in akt if i['min'] + dod[i['k']] < ODS_MAX_MIN - 0.01]
+        if visak < 0.05 or not slobodni:
+            break
+        zbir = sum(i['min'] for i in slobodni)
+        for i in slobodni:
+            dod[i['k']] += visak * i['min'] / zbir
+    ko = [j['ime'] for j in van]
+    for i in akt:
+        if i.get('rucno_min') or dod[i['k']] < 0.3:
+            continue
+        m_staro, m_novo = i['min'], i['min'] + dod[i['k']]
+        f = m_novo / m_staro
+        for s in 'PSA':
+            x = i['s'][s]
+            mu = max(0.05, x['mu'] * f)
+            x['mu'] = round(mu, 2)
+            x['var'] = round(x['A'] * mu + x['C'] * mu * mu, 2)
+            x['q'] = percentili(x['mu'], x['var'])
+        i['min'] = round(m_novo, 1)
+        i['odsustvo'] = dict(ko=ko, min_staro=round(m_staro, 1))
+
+
 def lepo_ime(n):
     if ',' in n:
         a, b = n.split(',', 1)
@@ -279,6 +329,7 @@ def main():
                 elif pv['stanje'] == 'upitan':
                     i['upitan'] = True
             povratak_saigraca(igraci, B, kod, u['dan'])
+            odsustvo_saigraca(igraci, len(tim_g[kod]))
             igraci.sort(key=lambda x: -x['min'])
             stranice.append(dict(tim=kod, prot=prot, igraci=igraci))
         # ponude
