@@ -203,15 +203,21 @@ def razlozi(i, s, l, u, moja, tudja, K):
                 T.append(dict(p=3, d=-1, t=f"Nije među prvim opcijama u napadu; više šuteva dobijaju {spisak([prezime(y['ime']) for y in st])}.",
                               kr='nije među prvim opcijama u napadu'))
         # minuti i uloga
-        if sti['st'] / sti['n'] < 0.4 and i['min'] < 22:
-            T.append(dict(p=4, d=-1, t=f"Dolazi sa klupe i igra {oko(i['min'], 'min')}.", kr='dolazi sa klupe'))
-        elif i['min'] >= 28:
-            T.append(dict(p=4, d=1, t=f"Igra velike minute, {oko(i['min'], 'min')} po utakmici.", kr='igra velike minute'))
+        ods = i.get('odsustvo')
+        m_sez = ods['min_staro'] if ods else i['min']
+        if ods and i['min'] - m_sez >= 3:
+            T.append(dict(p=2, d=1, t=f"Bez odsutnih saigrača trebalo bi da igra {oko(i['min'], 'min')}, a inače igra {oko(m_sez, 'min')}.",
+                          kr='dobiće više minuta nego inače'))
+        elif sti['st'] / sti['n'] < 0.4 and m_sez < 22:
+            T.append(dict(p=4, d=-1, t=f"Dolazi sa klupe i igra {oko(m_sez, 'min')}.", kr='dolazi sa klupe'))
+        elif m_sez >= 28:
+            T.append(dict(p=4, d=1, t=f"Igra velike minute, {oko(m_sez, 'min')} po utakmici.", kr='igra velike minute'))
     pm = i.get('posl_min') or []
     if len(pm) >= 3:
         m3 = sum(pm[-3:]) / 3
-        if abs(m3 - i['min']) >= 3:
-            vise = m3 > i['min']
+        m_baza = (i.get('odsustvo') or {}).get('min_staro', i['min'])
+        if abs(m3 - m_baza) >= 3 and not i.get('odsustvo'):
+            vise = m3 > m_baza
             T.append(dict(p=4, d=1 if vise else -1, t=f"U poslednjim utakmicama igra {'više' if vise else 'manje'} nego ranije ({spisak([str(m) for m in pm[-3:]])} minuta).",
                           kr=f"u poslednje vreme igra {'više' if vise else 'manje'}"))
     if i.get('min_cv', 0) >= 0.35:
