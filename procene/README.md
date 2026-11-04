@@ -36,6 +36,7 @@ Sve skripte se pokreću iz korena repozitorijuma. Ceo dnevni posao radi jedna ko
 | Javni predlozi | `python3 procene/skripte/predlozi.py --kolo 11` | Posle table. 4 do 6 predloga po utakmici (izbor u tabli, `spajanje.izbor_utakmice`): rang po spojenoj verovatnoći, MINUS od 53%, PLUS od 50% (do 2 PLUS unapred), kvota ≥ 1,50, jedan po igraču; nivoi jak/solidan/nagoveštaj/slab; uz predlog opseg ponuđenih granica (i Soccerbet lestvice „N+“) i soft spot. Zaključava na početku utakmice, upisuje ishode, pravi `procene/javno/predlozi.html`. |
 | Dopuna | `python3 procene/skripte/dopuna.py` | Završene utakmice koje još nisu u `baza/rows.json`, direktno iz Evrolige, u `procene/podaci/dopuna.json`. |
 | Sastavi | `python3 procene/skripte/sastavi.py` | 12 prijavljenih igrača kad ih Evroliga objavi; ko nije u sastavu, ne igra. |
+| Sajt | `python3 procene/skripte/sajt.py <folder>` | Javna stranica kao samostalan `index.html` za javni repozitorijum `nikolapakic11/evroliga-plus-minus` (GitHub Pages); u njega ide samo stranica. |
 | Ishodi | `python3 procene/skripte/dnevnik.py --kolo 11` | Upisuje stvarne učinke u dnevnik i ispisuje tačnost. |
 
 Minuti su prosek igrača u ovoj sezoni (fiksno). Izuzetak za povredu ili „ne igra“ samo kroz `procene/minuti.json`, npr. `{"11": {"nikola milutinov": 0}}` (ključ je ime malim slovima, bez kvačica).
