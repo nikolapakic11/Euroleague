@@ -48,6 +48,7 @@ def igraci_kola(kolo):
     if not put or not os.path.exists(put):
         return None
     t = ucitaj(put)
+    B = Baza()
     ut, out = [], []
     for u in t['utakmice']:
         ut.append(dict(g=u['g'], dom=u['dom'], gost=u['gost'], vreme=u['vreme']))
@@ -60,7 +61,9 @@ def igraci_kola(kolo):
                     s_[s] = dict(mu=x['mu'], q=x['q'], pros=x['pros'], posl=x['posl'], of=x['of'], vatra=x.get('vatra'),
                                  lin=[[z['kl'], z['l'], z['u'], z['o'], round(z['pc'], 3)] for z in x['linije'] if z.get('m', 1)],
                                  pred=(dict(strana=pr['strana'], l=pr['l'], kl=pr['kl'], nivo=pr['nivo'], pp=pr['pp']) if pr else None))
-                out.append(dict(ime=i['ime'], tim=st['tim'], prot=st['prot'], g=u['g'], pos=i['pos'], min=i['min'], n=i['n'],
+                zad = [[r['dan'][8:10] + '.' + r['dan'][5:7] + '.', r['opp'], round(r['min']), r['P'], r['S'], r['A']]
+                       for r in B.byk.get(i['k'], []) if r['dan'] < u['dan']][-5:][::-1]
+                out.append(dict(k=i['k'], zadnje=zad, ime=i['ime'], tim=st['tim'], prot=st['prot'], g=u['g'], pos=i['pos'], min=i['min'], n=i['n'],
                                 posl_min=i['posl_min'], odsutan=i['odsutan'], ne_igra=i['ne_igra'], razlog=i.get('razlog'), s=s_))
     return dict(kolo=kolo, napravljeno=t['napravljeno'], podaci_do=t['podaci_do'], utakmice=ut, igraci=out)
 
@@ -80,12 +83,33 @@ def main():
         pocele = {u['g'] for u in tabla['utakmice'] if u['pocela']}
         zadrzi = [p for p in st['predlozi'] if p['g'] in pocele]          # zaključani
         novi = izaberi(tabla)
+        # promene u odnosu na prethodno osvežavanje (važe do početka utakmice)
+        pre = {(p['g'], p['k']): p for p in st['predlozi'] if p['g'] not in pocele}
+        g_pre = {p['g'] for p in pre.values()}
+        opis = lambda p: f"{ {'P': 'poeni', 'S': 'skokovi', 'A': 'asist.'}[p['s']]} {'preko' if p['strana'] == 'o' else 'ispod'} {p['l']:g} · {p['kvota']:.2f} {IME_KL.get(p['kl'], p['kl'])}"
         for p in novi:
             p['upisano'] = sada
+            q = pre.get((p['g'], p['k']))
+            if q:
+                p['prvi_put'] = q.get('prvi_put') or q.get('upisano')
+                if (q['s'], q['strana'], q['l']) != (p['s'], p['strana'], p['l']) or abs(q['kvota'] - p['kvota']) > 0.035:
+                    p['promena'], p['ranije'], p['promena_u'] = 'izmenjeno', opis(q), sada
+                elif q.get('promena'):
+                    p['promena'], p['ranije'], p['promena_u'] = q['promena'], q.get('ranije'), q.get('promena_u')
+            else:
+                p['prvi_put'] = sada
+                if p['g'] in g_pre:
+                    p['promena'], p['promena_u'] = 'novo', sada
+        nove_k = {(p['g'], p['k']) for p in novi}
+        uklonjeni = [x for x in st.get('uklonjeni', []) if x['g'] not in pocele and (x['g'], x['k']) not in nove_k]
+        for kk, q in pre.items():
+            if kk not in nove_k and not any((x['g'], x['k']) == kk for x in uklonjeni):
+                uklonjeni.append(dict(g=q['g'], k=q['k'], ime=q['ime'], tim=q['tim'], opis=opis(q), u=sada))
+        st['uklonjeni'] = uklonjeni
         st['predlozi'] = zadrzi + novi
         st['osvezeno'] = sada
-        st['utakmice'] = [dict(g=u['g'], dom=u['dom'], gost=u['gost'], vreme=u['vreme'], dan=u['dan'],
-                               ponude=sorted(u['snimci'].keys())) for u in tabla['utakmice']]
+        st['utakmice'] = [dict(g=u['g'], dom=u['dom'], gost=u['gost'], vreme=u['vreme'], dan=u['dan'], pocela=u['pocela'],
+                               ponude=sorted(u['snimci'].keys()), snimci=u['snimci']) for u in tabla['utakmice']]
         sacuvaj(put, st)
         import collections
         print(f'kolo {a.kolo}: predloga {len(st["predlozi"])} (zaključanih {len(zadrzi)}, novih {len(novi)}: '

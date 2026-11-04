@@ -91,7 +91,8 @@
    "vatra": null,
    "pos": "G",
    "of": 0.902,
-   "upisano": "04.11.2026. 10:32"
+   "upisano": "04.11.2026. 10:46",
+   "prvi_put": "04.11.2026. 10:32"
   },
   {
    "g": 91,
@@ -183,7 +184,8 @@
    "vatra": null,
    "pos": "F",
    "of": 1.04,
-   "upisano": "04.11.2026. 10:32"
+   "upisano": "04.11.2026. 10:46",
+   "prvi_put": "04.11.2026. 10:32"
   },
   {
    "g": 91,
@@ -275,7 +277,8 @@
    "vatra": null,
    "pos": "F",
    "of": 1.04,
-   "upisano": "04.11.2026. 10:32"
+   "upisano": "04.11.2026. 10:46",
+   "prvi_put": "04.11.2026. 10:32"
   },
   {
    "g": 91,
@@ -367,7 +370,8 @@
    "vatra": null,
    "pos": "G",
    "of": 1.05,
-   "upisano": "04.11.2026. 10:32"
+   "upisano": "04.11.2026. 10:46",
+   "prvi_put": "04.11.2026. 10:32"
   },
   {
    "g": 91,
@@ -483,7 +487,8 @@
    "vatra": null,
    "pos": "G",
    "of": 1.065,
-   "upisano": "04.11.2026. 10:32"
+   "upisano": "04.11.2026. 10:46",
+   "prvi_put": "04.11.2026. 10:32"
   },
   {
    "g": 91,
@@ -599,10 +604,11 @@
    "vatra": null,
    "pos": "F",
    "of": 0.947,
-   "upisano": "04.11.2026. 10:32"
+   "upisano": "04.11.2026. 10:46",
+   "prvi_put": "04.11.2026. 10:32"
   }
  ],
- "osvezeno": "04.11.2026. 10:32",
+ "osvezeno": "04.11.2026. 10:46",
  "utakmice": [
   {
    "g": 91,
@@ -610,12 +616,19 @@
    "gost": "PAN",
    "vreme": "04.11. 20:45",
    "dan": "2026-11-04",
+   "pocela": false,
    "ponude": [
     "Admiral",
     "MaxBet",
     "Mozzart",
     "Soccerbet"
-   ]
+   ],
+   "snimci": {
+    "Admiral": "2026-11-04T08:35:10.329Z",
+    "MaxBet": "2026-11-04T08:35:35.757Z",
+    "Mozzart": "2026-11-04T08:36:39.058Z",
+    "Soccerbet": "2026-11-04T08:44:31+00:00"
+   }
   },
   {
    "g": 95,
@@ -623,7 +636,9 @@
    "gost": "PRS",
    "vreme": "05.11. 18:15",
    "dan": "2026-11-05",
-   "ponude": []
+   "pocela": false,
+   "ponude": [],
+   "snimci": {}
   },
   {
    "g": 92,
@@ -631,7 +646,9 @@
    "gost": "BAS",
    "vreme": "05.11. 19:00",
    "dan": "2026-11-05",
-   "ponude": []
+   "pocela": false,
+   "ponude": [],
+   "snimci": {}
   },
   {
    "g": 93,
@@ -639,7 +656,9 @@
    "gost": "BAR",
    "vreme": "05.11. 19:45",
    "dan": "2026-11-05",
-   "ponude": []
+   "pocela": false,
+   "ponude": [],
+   "snimci": {}
   },
   {
    "g": 94,
@@ -647,7 +666,9 @@
    "gost": "MUN",
    "vreme": "05.11. 20:00",
    "dan": "2026-11-05",
-   "ponude": []
+   "pocela": false,
+   "ponude": [],
+   "snimci": {}
   },
   {
    "g": 96,
@@ -655,7 +676,9 @@
    "gost": "PAM",
    "vreme": "05.11. 20:30",
    "dan": "2026-11-05",
-   "ponude": []
+   "pocela": false,
+   "ponude": [],
+   "snimci": {}
   },
   {
    "g": 97,
@@ -663,7 +686,9 @@
    "gost": "ZAL",
    "vreme": "06.11. 18:00",
    "dan": "2026-11-06",
-   "ponude": []
+   "pocela": false,
+   "ponude": [],
+   "snimci": {}
   },
   {
    "g": 100,
@@ -671,7 +696,9 @@
    "gost": "RED",
    "vreme": "06.11. 20:15",
    "dan": "2026-11-06",
-   "ponude": []
+   "pocela": false,
+   "ponude": [],
+   "snimci": {}
   },
   {
    "g": 98,
@@ -679,7 +706,9 @@
    "gost": "DUB",
    "vreme": "06.11. 20:30",
    "dan": "2026-11-06",
-   "ponude": []
+   "pocela": false,
+   "ponude": [],
+   "snimci": {}
   },
   {
    "g": 99,
@@ -687,7 +716,10 @@
    "gost": "TEL",
    "vreme": "06.11. 20:45",
    "dan": "2026-11-06",
-   "ponude": []
+   "pocela": false,
+   "ponude": [],
+   "snimci": {}
   }
- ]
+ ],
+ "uklonjeni": []
 }
