@@ -3,7 +3,7 @@
   python3 procene/skripte/dan.py [--jutro]
 
 Redom:
-  1. dopuna.py      završene utakmice koje još nisu u baza/rows.json
+  1. dopuna.py      završene utakmice koje još nisu u baza/rows.json; statistika.py statistika timova i igrača
   2. sastavi.py     objavljeni sastavi za utakmice u narednih 6 sati; povrede.py zvanični izveštaj o povredama
   3. soccerbet.py   snimak ponude, ako danas ima utakmica koje nisu počele
   4. --jutro: provera.py i spajanje.py (koeficijenti se osvežavaju sa novim ishodima) i domace.py (u pozadini, bez prikaza)
@@ -46,6 +46,7 @@ def main():
     pregled = [f'Dan {danas}: utakmica danas {len(danasnje)} (nije počelo {len(nepocete_danas)}), tekuće kolo {tekuce}']
 
     pokreni('dopuna.py')
+    pokreni('statistika.py')
     pokreni('sastavi.py', '--sati', '6')
     ok, iz = pokreni('povrede.py')
     pregled.append('Povrede: ' + (iz[-1] if iz else 'bez izlaza'))

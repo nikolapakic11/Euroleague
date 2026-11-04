@@ -76,6 +76,9 @@ def main():
         r = redovi(u['g'], d, u, POS)
         if len({x['team'] for x in r}) == 2:
             dop += r; novo += 1
+            # ceo zapisnik (za statistiku timova i igrača, procene/skripte/statistika.py)
+            os.makedirs(os.path.join(PROCENE, 'podaci', 'zapisnici'), exist_ok=True)
+            sacuvaj(os.path.join(PROCENE, 'podaci', 'zapisnici', f"{u['g']}.json"), d, kompaktno=True)
         time.sleep(0.3)
     sacuvaj(put, dop, kompaktno=True)
     print(f'dopuna: novih utakmica {novo}, ukupno u dopuni {len({r["g"] for r in dop})}')

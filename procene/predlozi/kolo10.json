@@ -91,12 +91,17 @@
    "vatra": null,
    "pos": "F",
    "of": 0.943,
-   "analiza": [],
-   "upisano": "04.11.2026. 12:45",
+   "analiza": [
+    "Glavni skakač Panatinaikosa je Lessort, pa za njega ostaje manje odbijenih lopti.",
+    "Real dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
+   ],
+   "upisano": "04.11.2026. 12:56",
    "prvi_put": "04.11.2026. 12:43",
    "promena": "novo",
    "ranije": null,
-   "promena_u": "04.11.2026. 12:43"
+   "promena_u": "04.11.2026. 12:43",
+   "zatv": 1.85,
+   "zatv_fer": 1.887
   },
   {
    "g": 91,
@@ -189,109 +194,15 @@
    "pos": "G",
    "of": 1.05,
    "analiza": [
-    "Sezona: ispod 2,5 u 5 od 9 utakmica, prosek 2,2 skokova."
+    "Ove sezone daje oko dva skoka po utakmici; ispod 2,5 je ostao u 5 od 9 utakmica.",
+    "Kao bek retko ide u skok; odbijene lopte kod Panatinaikosa uglavnom hvataju Lessort i Yabusele.",
+    "Na raspolaganju je ponovo i Kostas Sloukas, pa minuti na njegovoj poziciji mogu da budu podeljeni.",
+    "Real dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
    ],
-   "upisano": "04.11.2026. 12:45",
-   "prvi_put": "04.11.2026. 10:32"
-  },
-  {
-   "g": 91,
-   "dan": "2026-11-04",
-   "vreme": "04.11. 20:45",
-   "k": "guerschon yabusele",
-   "ime": "Guerschon Yabusele",
-   "tim": "PAN",
-   "prot": "MAD",
-   "s": "S",
-   "strana": "u",
-   "l": 4.5,
-   "kl": "admiral",
-   "kvota": 1.97,
-   "pp": 0.539,
-   "ev": 0.062,
-   "nivo": "nagoveštaj",
-   "rang": 5,
-   "ostale": [
-    {
-     "kl": "maxbet",
-     "k": 1.97
-    },
-    {
-     "kl": "soccerbet",
-     "k": 1.97
-    },
-    {
-     "kl": "mozzart",
-     "k": 1.95
-    }
-   ],
-   "knjige": [
-    {
-     "kl": "admiral",
-     "l": 4.5,
-     "u": 1.97,
-     "o": 1.75
-    },
-    {
-     "kl": "maxbet",
-     "l": 4.5,
-     "u": 1.97,
-     "o": 1.75
-    },
-    {
-     "kl": "mozzart",
-     "l": 4.5,
-     "u": 1.95,
-     "o": 1.75
-    },
-    {
-     "kl": "soccerbet",
-     "l": 4.5,
-     "u": 1.97,
-     "o": 1.75
-    }
-   ],
-   "soft": {
-    "l": 4.5,
-    "k": 1.97,
-    "kl": "admiral",
-    "p": 0.539,
-    "vrsta": "granica",
-    "ev": 0.062,
-    "isti": true
-   },
-   "opseg": [
-    {
-     "l": 4.5,
-     "k": 1.97,
-     "kl": "admiral",
-     "p": 0.539,
-     "vrsta": "granica"
-    }
-   ],
-   "q": [
-    1,
-    2,
-    4,
-    5,
-    7
-   ],
-   "mu": 4.07,
-   "min": 22.9,
-   "pm": 0.3849,
-   "tr": 0.5296,
-   "l0": null,
-   "vatra": null,
-   "pos": "F",
-   "of": 0.943,
-   "analiza": [
-    "Granica 4,5 je 0,4 iznad našeg očekivanja (4,1)."
-   ],
-   "upisano": "04.11.2026. 12:45",
-   "prvi_put": "04.11.2026. 12:43",
-   "promena": "novo",
-   "ranije": null,
-   "promena_u": "04.11.2026. 12:43"
+   "upisano": "04.11.2026. 12:56",
+   "prvi_put": "04.11.2026. 10:32",
+   "zatv": 1.55,
+   "zatv_fer": 1.621
   },
   {
    "g": 91,
@@ -384,14 +295,122 @@
    "pos": "G",
    "of": 1.05,
    "analiza": [
-    "Sezona: ispod 2,5 u 2 od 3 utakmica, prosek 2 skokova.",
-    "Granica 2,5 je 0,4 iznad našeg očekivanja (2,1)."
+    "Granica od 2,5 je viša od onoga što realno očekujemo, a to je oko dva skoka, iz ovih razloga:",
+    "Ove sezone daje oko dva skoka po utakmici; ispod 2,5 je ostao u 2 od 3 utakmice.",
+    "Kao bek retko ide u skok; odbijene lopte kod Panatinaikosa uglavnom hvataju Lessort i Yabusele.",
+    "Na raspolaganju je ponovo i Kostas Sloukas, pa minuti na njegovoj poziciji mogu da budu podeljeni.",
+    "Real dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
    ],
-   "upisano": "04.11.2026. 12:45",
+   "upisano": "04.11.2026. 12:56",
    "prvi_put": "04.11.2026. 12:26",
    "promena": "novo",
    "ranije": null,
-   "promena_u": "04.11.2026. 12:26"
+   "promena_u": "04.11.2026. 12:26",
+   "zatv": 1.75,
+   "zatv_fer": 1.718
+  },
+  {
+   "g": 91,
+   "dan": "2026-11-04",
+   "vreme": "04.11. 20:45",
+   "k": "guerschon yabusele",
+   "ime": "Guerschon Yabusele",
+   "tim": "PAN",
+   "prot": "MAD",
+   "s": "S",
+   "strana": "u",
+   "l": 4.5,
+   "kl": "admiral",
+   "kvota": 1.97,
+   "pp": 0.539,
+   "ev": 0.062,
+   "nivo": "nagoveštaj",
+   "rang": 5,
+   "ostale": [
+    {
+     "kl": "maxbet",
+     "k": 1.97
+    },
+    {
+     "kl": "soccerbet",
+     "k": 1.97
+    },
+    {
+     "kl": "mozzart",
+     "k": 1.95
+    }
+   ],
+   "knjige": [
+    {
+     "kl": "admiral",
+     "l": 4.5,
+     "u": 1.97,
+     "o": 1.75
+    },
+    {
+     "kl": "maxbet",
+     "l": 4.5,
+     "u": 1.97,
+     "o": 1.75
+    },
+    {
+     "kl": "mozzart",
+     "l": 4.5,
+     "u": 1.95,
+     "o": 1.75
+    },
+    {
+     "kl": "soccerbet",
+     "l": 4.5,
+     "u": 1.97,
+     "o": 1.75
+    }
+   ],
+   "soft": {
+    "l": 4.5,
+    "k": 1.97,
+    "kl": "admiral",
+    "p": 0.539,
+    "vrsta": "granica",
+    "ev": 0.062,
+    "isti": true
+   },
+   "opseg": [
+    {
+     "l": 4.5,
+     "k": 1.97,
+     "kl": "admiral",
+     "p": 0.539,
+     "vrsta": "granica"
+    }
+   ],
+   "q": [
+    1,
+    2,
+    4,
+    5,
+    7
+   ],
+   "mu": 4.07,
+   "min": 22.9,
+   "pm": 0.3849,
+   "tr": 0.5296,
+   "l0": null,
+   "vatra": null,
+   "pos": "F",
+   "of": 0.943,
+   "analiza": [
+    "Granica od 4,5 je viša od onoga što realno očekujemo, a to je oko četiri skoka, iz ovih razloga:",
+    "Glavni skakač Panatinaikosa je Lessort, pa za njega ostaje manje odbijenih lopti.",
+    "Real dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
+   ],
+   "upisano": "04.11.2026. 12:56",
+   "prvi_put": "04.11.2026. 12:43",
+   "promena": "novo",
+   "ranije": null,
+   "promena_u": "04.11.2026. 12:43",
+   "zatv": 1.97,
+   "zatv_fer": 1.855
   },
   {
    "g": 91,
@@ -493,13 +512,15 @@
    "pos": "C",
    "of": 0.963,
    "analiza": [
-    "Granica 7,5 je 1,2 iznad našeg očekivanja (6,3)."
+    "Granica od 7,5 je viša od onoga što realno očekujemo, a to je šest do sedam skokova: Real dobro zatvara skok."
    ],
-   "upisano": "04.11.2026. 12:45",
+   "upisano": "04.11.2026. 12:56",
    "prvi_put": "04.11.2026. 12:26",
    "promena": "novo",
    "ranije": null,
-   "promena_u": "04.11.2026. 12:26"
+   "promena_u": "04.11.2026. 12:26",
+   "zatv": 1.9,
+   "zatv_fer": 1.759
   },
   {
    "g": 91,
@@ -592,17 +613,20 @@
    "pos": "F",
    "of": 0.943,
    "analiza": [
-    "Sezona: ispod 4,5 u 3 od 6 utakmica, prosek 4,2 skokova.",
-    "Granica 4,5 je 0,4 iznad našeg očekivanja (4,1)."
+    "Granica od 4,5 je viša od onoga što realno očekujemo, a to je oko četiri skoka, iz ovih razloga:",
+    "Ove sezone daje oko četiri skoka po utakmici; ispod 4,5 je ostao u 3 od 6 utakmica.",
+    "Glavni skakač Panatinaikosa je Lessort, pa za njega ostaje manje odbijenih lopti."
    ],
-   "upisano": "04.11.2026. 12:45",
+   "upisano": "04.11.2026. 12:56",
    "prvi_put": "04.11.2026. 12:26",
    "promena": "novo",
    "ranije": null,
-   "promena_u": "04.11.2026. 12:26"
+   "promena_u": "04.11.2026. 12:26",
+   "zatv": 1.85,
+   "zatv_fer": 1.794
   }
  ],
- "osvezeno": "04.11.2026. 12:45",
+ "osvezeno": "04.11.2026. 12:56",
  "utakmice": [
   {
    "g": 91,
@@ -611,6 +635,8 @@
    "vreme": "04.11. 20:45",
    "dan": "2026-11-04",
    "pocela": false,
+   "pocetak": "2026-11-04T19:45:00+00:00",
+   "sastav": null,
    "ponude": [
     "Admiral",
     "MaxBet",
@@ -621,7 +647,7 @@
     "Admiral": "2026-11-04T08:35:10.329Z",
     "MaxBet": "2026-11-04T08:35:35.757Z",
     "Mozzart": "2026-11-04T08:36:39.058Z",
-    "Soccerbet": "2026-11-04T08:44:31+00:00"
+    "Soccerbet": "2026-11-04T11:56:43+00:00"
    }
   },
   {
@@ -631,6 +657,8 @@
    "vreme": "05.11. 18:15",
    "dan": "2026-11-05",
    "pocela": false,
+   "pocetak": "2026-11-05T17:15:00+00:00",
+   "sastav": null,
    "ponude": [],
    "snimci": {}
   },
@@ -641,6 +669,8 @@
    "vreme": "05.11. 19:00",
    "dan": "2026-11-05",
    "pocela": false,
+   "pocetak": "2026-11-05T18:00:00+00:00",
+   "sastav": null,
    "ponude": [],
    "snimci": {}
   },
@@ -651,6 +681,8 @@
    "vreme": "05.11. 19:45",
    "dan": "2026-11-05",
    "pocela": false,
+   "pocetak": "2026-11-05T18:45:00+00:00",
+   "sastav": null,
    "ponude": [],
    "snimci": {}
   },
@@ -661,6 +693,8 @@
    "vreme": "05.11. 20:00",
    "dan": "2026-11-05",
    "pocela": false,
+   "pocetak": "2026-11-05T19:00:00+00:00",
+   "sastav": null,
    "ponude": [],
    "snimci": {}
   },
@@ -671,6 +705,8 @@
    "vreme": "05.11. 20:30",
    "dan": "2026-11-05",
    "pocela": false,
+   "pocetak": "2026-11-05T19:30:00+00:00",
+   "sastav": null,
    "ponude": [],
    "snimci": {}
   },
@@ -681,6 +717,8 @@
    "vreme": "06.11. 18:00",
    "dan": "2026-11-06",
    "pocela": false,
+   "pocetak": "2026-11-06T17:00:00+00:00",
+   "sastav": null,
    "ponude": [],
    "snimci": {}
   },
@@ -691,6 +729,8 @@
    "vreme": "06.11. 20:15",
    "dan": "2026-11-06",
    "pocela": false,
+   "pocetak": "2026-11-06T19:15:00+00:00",
+   "sastav": null,
    "ponude": [],
    "snimci": {}
   },
@@ -701,6 +741,8 @@
    "vreme": "06.11. 20:30",
    "dan": "2026-11-06",
    "pocela": false,
+   "pocetak": "2026-11-06T19:30:00+00:00",
+   "sastav": null,
    "ponude": [],
    "snimci": {}
   },
@@ -711,6 +753,8 @@
    "vreme": "06.11. 20:45",
    "dan": "2026-11-06",
    "pocela": false,
+   "pocetak": "2026-11-06T19:45:00+00:00",
+   "sastav": null,
    "ponude": [],
    "snimci": {}
   }
