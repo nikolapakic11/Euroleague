@@ -1,6 +1,6 @@
 {
  "kolo": 10,
- "at": "04.11.2026. 19:43",
+ "at": "04.11.2026. 23:02",
  "izvori": [
   "https://www.eurohoops.net/en/euroleague/2030518/euroleague-round-10-injury-report-satoransky-out-powell-and-konchar-could-debut/"
  ],
@@ -22,7 +22,7 @@
   },
   "nick smith": {
    "tim": "MAD",
-   "stanje": "van",
+   "stanje": "upitan",
    "tekst": "Nick Smith last played in Round 7"
   },
   "gabriel deck": {
@@ -32,12 +32,12 @@
   },
   "olivier sarr": {
    "tim": "MAD",
-   "stanje": "van",
+   "stanje": "upitan",
    "tekst": "Ahead of Round 4, coach Pedro Martinez said: “The injury is more serious than we thought.” Olivier Sarr has not featured since Round 1, although he has been playing in the Spanish League"
   },
   "sergio llull": {
    "tim": "MAD",
-   "stanje": "van",
+   "stanje": "upitan",
    "tekst": "Sergio Llull has yet to play in the EuroLeague this season but has featured in the Spanish League"
   },
   "usman garuba": {
@@ -87,7 +87,7 @@
   },
   "tj warren": {
    "tim": "PRS",
-   "stanje": "van",
+   "stanje": "upitan",
    "tekst": "TJ Warren last played in Round 5."
   },
   "johnny juzang": {
@@ -102,27 +102,27 @@
   },
   "tadas sedekerskis": {
    "tim": "BAS",
-   "stanje": "van",
+   "stanje": "upitan",
    "tekst": "Tadas Sedekerskis last played in Round 7"
   },
   "rodions kurucs": {
    "tim": "BAS",
-   "stanje": "van",
+   "stanje": "upitan",
    "tekst": "Rodions Kurucs last played in Round 7"
   },
   "chris duarte": {
    "tim": "BAS",
-   "stanje": "van",
+   "stanje": "upitan",
    "tekst": "Chris Duarte last played in Round 6."
   },
   "myles cale": {
    "tim": "ASV",
-   "stanje": "van",
+   "stanje": "upitan",
    "tekst": "Myles Cale last played in Round 7 and did not feature in the French League this past weekend"
   },
   "juhann begarin": {
    "tim": "ASV",
-   "stanje": "van",
+   "stanje": "upitan",
    "tekst": "Juhann Begarin, who joined on a short-term deal on October 7, has yet to play for ASVEL in the EuroLeague"
   },
   "mathis dossou yovo": {
@@ -132,7 +132,7 @@
   },
   "kamar baldwin": {
    "tim": "MUN",
-   "stanje": "van",
+   "stanje": "upitan",
    "tekst": "Kamar Baldwin last played in Round 7 but featured in the German League this past weekend."
   },
   "alec peters": {
@@ -149,6 +149,11 @@
    "tim": "BES",
    "stanje": "igra",
    "tekst": "Lonnie Walker returned in Round 9 after missing Round 8"
+  },
+  "furkan korkmaz": {
+   "tim": "BES",
+   "stanje": "upitan",
+   "tekst": "Furkan Korkmaz missed Rounds 8 and 9 but played in the Turkish League this past weekend"
   },
   "devon dotson": {
    "tim": "BES",
@@ -172,7 +177,7 @@
   },
   "evan fournier": {
    "tim": "OLY",
-   "stanje": "van",
+   "stanje": "upitan",
    "tekst": "Evan Fournier last played in Round 6"
   },
   "tyler dorsey": {
@@ -192,7 +197,7 @@
   },
   "patrick baldwin": {
    "tim": "RED",
-   "stanje": "van",
+   "stanje": "upitan",
    "tekst": "Patrick Baldwin was not on the roster in Rounds 8 or 9."
   },
   "tommaso baldasso": {
@@ -202,7 +207,7 @@
   },
   "thomas walkup": {
    "tim": "DUB",
-   "stanje": "van",
+   "stanje": "upitan",
    "tekst": "Thomas Walkup was not on the roster in Rounds 8 or 9"
   },
   "justin anderson": {
@@ -212,7 +217,7 @@
   },
   "tonye jekiri": {
    "tim": "PAR",
-   "stanje": "van",
+   "stanje": "upitan",
    "tekst": "Tonye Jekiri last played in Round 6"
   },
   "vanja marinkovic": {

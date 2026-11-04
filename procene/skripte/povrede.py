@@ -6,8 +6,9 @@
 Eurohoops za svako kolo objavi izveštaj (i dopune pred drugi dan kola). Skripta nađe te članke na
 https://www.eurohoops.net/en/euroleague/ (naslov sadrži „injury report“ i „round N“), pročita ih po utakmicama i timovima
 i za svakog pomenutog igrača odredi stanje iz rečenice:
-  van     van igre (povreda, „out“, „ruled out“, „last played“, „yet to play“, „absentee“ ...)
-  upitan  neizvestan („questionable“, „game-time decision“, „doubtful“ ...)
+  van     van igre (povreda, „out“, „ruled out“, ili „last played“ i sl. uz povredu)
+  upitan  neizvestan („questionable“, „game-time decision“, „doubtful“ ...), i samo „last played“, „yet to play“,
+          „has not featured“ bez pomena povrede, ili kad piše da igra u domaćem prvenstvu
   igra    dostupan („available“, „cleared“, „returns“ ...); i ceo tim kad piše „full roster available“
 Kasniji članak menja stanje iz ranijeg. Izlaz: procene/podaci/povrede.json
   {kolo, at, izvori: [url], igraci: {ključ: {tim, stanje, tekst}}, timovi: {kod: {pun_sastav, bez_izvestaja}}}
@@ -24,9 +25,11 @@ ZAG = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64)'}
 R_IGRA = re.compile(r'\b(available|cleared|will play|returns?|returned|returning|is back|back in action|expected to play|ready to play|good to go)\b', re.I)
 R_NIJE = re.compile(r'\b(unavailable|not available|not be available|won.t be available)\b', re.I)
 R_UPITAN = re.compile(r'\b(questionable|game.time decision|gtd|doubtful|uncertain|day.to.day|in doubt|50.50|probable)\b', re.I)
-R_VAN = re.compile(r'\b(out|ruled out|will miss|misses|miss|sidelined|injur\w*|sprain\w*|ruptur\w*|tear|torn|surgery|fractur\w*|strain\w*|'
-                   r'last played|has not featured|hasn.t featured|has not played|yet to play|not on the \w* ?roster|absentee|suspend\w*|'
-                   r'concussion|illness|sick|knee|ankle|hamstring|calf|shoulder|foot|back pain)\b', re.I)
+R_POVREDA = re.compile(r'\b(out|ruled out|will miss|misses|miss|sidelined|injur\w*|sprain\w*|ruptur\w*|tear|torn|surgery|fractur\w*|strain\w*|'
+                       r'suspend\w*|concussion|illness|sick|knee|ankle|hamstring|calf|shoulder|foot|back pain|achilles)\b', re.I)
+# samo opis da igrač nije igrao (bez povrede): nije potvrda da je van igre (4.11.: Llull, Smith i Sarr su igrali)
+R_ODSUSTVO = re.compile(r'\b(last played|has not featured|hasn.t featured|has not played|yet to play|not on the \w* ?roster|absentee)\b', re.I)
+R_IPAK = re.compile(r'\b(although he has been play\w*|but has (featured|played)|has been playing|has featured in the \w+ league|played in the \w+ league)\b', re.I)
 
 
 def get(url):
@@ -50,9 +53,11 @@ def stanje(recenica):
         return 'van'
     if R_IGRA.search(recenica):
         return 'igra'
-    if R_UPITAN.search(recenica):
+    if R_UPITAN.search(recenica) or R_IPAK.search(recenica):
         return 'upitan'
-    if R_VAN.search(recenica):
+    if R_ODSUSTVO.search(recenica) and not R_POVREDA.search(recenica):
+        return 'upitan'
+    if R_POVREDA.search(recenica) or R_ODSUSTVO.search(recenica):
         return 'van'
     return None
 

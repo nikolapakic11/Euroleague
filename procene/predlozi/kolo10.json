@@ -152,7 +152,9 @@
    "ranije": null,
    "promena_u": "04.11.2026. 16:39",
    "zatv": 1.92,
-   "zatv_fer": 1.714
+   "zatv_fer": 1.714,
+   "ishod": 23,
+   "prosao": true
   },
   {
    "g": 91,
@@ -288,7 +290,9 @@
    "ranije": null,
    "promena_u": "04.11.2026. 15:16",
    "zatv": 1.6,
-   "zatv_fer": 1.635
+   "zatv_fer": 1.635,
+   "ishod": 5,
+   "prosao": true
   },
   {
    "g": 91,
@@ -405,7 +409,9 @@
    "ranije": null,
    "promena_u": "04.11.2026. 15:20",
    "zatv": 1.97,
-   "zatv_fer": 1.988
+   "zatv_fer": 1.988,
+   "ishod": 0,
+   "prosao": true
   },
   {
    "g": 91,
@@ -507,7 +513,9 @@
    "upisano": "04.11.2026. 16:40",
    "prvi_put": "04.11.2026. 10:32",
    "zatv": 1.55,
-   "zatv_fer": 1.568
+   "zatv_fer": 1.568,
+   "ishod": 3,
+   "prosao": false
   },
   {
    "g": 91,
@@ -612,7 +620,9 @@
    "ranije": null,
    "promena_u": "04.11.2026. 12:26",
    "zatv": 1.75,
-   "zatv_fer": 1.718
+   "zatv_fer": 1.718,
+   "ishod": 1,
+   "prosao": true
   },
   {
    "g": 91,
@@ -718,10 +728,12 @@
    "ranije": "skokovi ispod 4,5 · 1,85 Admiral",
    "promena_u": "04.11.2026. 15:16",
    "zatv": 1.79,
-   "zatv_fer": 1.914
+   "zatv_fer": 1.914,
+   "ishod": 3,
+   "prosao": true
   }
  ],
- "osvezeno": "04.11.2026. 20:00",
+ "osvezeno": "04.11.2026. 23:02",
  "utakmice": [
   {
    "g": 91,
@@ -729,7 +741,7 @@
    "gost": "PAN",
    "vreme": "04.11. 20:45",
    "dan": "2026-11-04",
-   "pocela": false,
+   "pocela": true,
    "pocetak": "2026-11-04T19:45:00+00:00",
    "sastav": null,
    "objava": "2026-11-04T12:00:00+01:00",
@@ -893,7 +905,9 @@
    "od": "04.11.2026. 09:44",
    "u": "04.11.2026. 09:54",
    "vrsta": "izmenjen",
-   "zamena": "skokovi ispod 3,5 · 1,55 Mozzart"
+   "zamena": "skokovi ispod 3,5 · 1,55 Mozzart",
+   "ishod": 6,
+   "prosao": false
   },
   {
    "g": 91,
@@ -913,7 +927,9 @@
    "od": "04.11.2026. 10:32",
    "u": "04.11.2026. 12:26",
    "vrsta": "povučen",
-   "zamena": null
+   "zamena": null,
+   "ishod": 2,
+   "prosao": true
   },
   {
    "g": 91,
@@ -933,7 +949,9 @@
    "od": "04.11.2026. 10:32",
    "u": "04.11.2026. 12:26",
    "vrsta": "povučen",
-   "zamena": null
+   "zamena": null,
+   "ishod": 2,
+   "prosao": true
   },
   {
    "g": 91,
@@ -953,7 +971,9 @@
    "od": "04.11.2026. 10:32",
    "u": "04.11.2026. 12:26",
    "vrsta": "povučen",
-   "zamena": null
+   "zamena": null,
+   "ishod": 0,
+   "prosao": true
   },
   {
    "g": 91,
@@ -973,7 +993,9 @@
    "od": "04.11.2026. 10:32",
    "u": "04.11.2026. 12:26",
    "vrsta": "povučen",
-   "zamena": null
+   "zamena": null,
+   "ishod": 10,
+   "prosao": true
   },
   {
    "g": 91,
@@ -993,7 +1015,9 @@
    "od": "04.11.2026. 10:32",
    "u": "04.11.2026. 12:45",
    "vrsta": "povučen",
-   "zamena": null
+   "zamena": null,
+   "ishod": 7,
+   "prosao": true
   },
   {
    "g": 91,
@@ -1013,7 +1037,9 @@
    "od": "04.11.2026. 12:43",
    "u": "04.11.2026. 15:16",
    "vrsta": "povučen",
-   "zamena": null
+   "zamena": null,
+   "ishod": 4,
+   "prosao": false
   },
   {
    "g": 91,
@@ -1033,7 +1059,9 @@
    "od": "04.11.2026. 12:43",
    "u": "04.11.2026. 15:16",
    "vrsta": "povučen",
-   "zamena": null
+   "zamena": null,
+   "ishod": 4,
+   "prosao": true
   },
   {
    "g": 91,
@@ -1053,7 +1081,9 @@
    "od": "04.11.2026. 12:26",
    "u": "04.11.2026. 15:16",
    "vrsta": "povučen",
-   "zamena": null
+   "zamena": null,
+   "ishod": 9,
+   "prosao": false
   },
   {
    "g": 91,
@@ -1073,7 +1103,9 @@
    "od": "04.11.2026. 12:26",
    "u": "04.11.2026. 15:16",
    "vrsta": "izmenjen",
-   "zamena": "poeni ispod 5,5 · 1,79 Admiral"
+   "zamena": "poeni ispod 5,5 · 1,79 Admiral",
+   "ishod": 6,
+   "prosao": false
   },
   {
    "g": 91,
@@ -1093,7 +1125,9 @@
    "od": "04.11.2026. 15:16",
    "u": "04.11.2026. 16:39",
    "vrsta": "povučen",
-   "zamena": null
+   "zamena": null,
+   "ishod": 5,
+   "prosao": true
   }
  ],
  "konacno": {
@@ -1133,7 +1167,10 @@
     "protiv": [
      "Ove sezone daje oko 12 poena po utakmici; ispod 12,5 je ostao u 6 od 9 utakmica.",
      "Panatinaikos dobro brani bekove; to je i jedna od najboljih odbrana u ligi."
-    ]
+    ],
+    "ishod": 27,
+    "min_st": 34,
+    "prosao": true
    },
    {
     "k": "andres feliz",
@@ -1167,7 +1204,10 @@
     "protiv": [
      "Granica od 3,5 je niža od onoga što realno očekujemo, a to je četiri do pet skokova.",
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 34,
+    "prosao": true
    },
    {
     "k": "andres feliz",
@@ -1199,7 +1239,10 @@
     "protiv": [
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "Bez odsutnih saigrača trebalo bi da igra oko 32 minuta, a inače igra 20 do 21 minut."
-    ]
+    ],
+    "ishod": 6,
+    "min_st": 34,
+    "prosao": false
    },
    {
     "k": "timothe luwawu cabarrot",
@@ -1233,7 +1276,10 @@
     "protiv": [
      "Ove sezone daje oko devet poena po utakmici; ispod 14,5 je ostao u 7 od 9 utakmica.",
      "Panatinaikos dobro brani krila; to je i jedna od najboljih odbrana u ligi."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 21,
+    "prosao": false
    },
    {
     "k": "alberto abalde",
@@ -1267,7 +1313,10 @@
     "protiv": [
      "Ove sezone daje oko šest poena po utakmici; ispod 6,5 je ostao u 6 od 9 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Feliz i Tavares."
-    ]
+    ],
+    "ishod": 23,
+    "min_st": 26,
+    "prosao": true
    },
    {
     "k": "alberto abalde",
@@ -1301,7 +1350,10 @@
     "protiv": [
      "Granica od 2,5 je niža od onoga što realno očekujemo, a to je tri do četiri skoka.",
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 26,
+    "prosao": true
    },
    {
     "k": "alberto abalde",
@@ -1335,7 +1387,10 @@
     "protiv": [
      "Ove sezone daje jedna do dve asistencije po utakmici; ispod 1,5 je ostao u 6 od 9 utakmica.",
      "Nije glavni organizator; loptu kod Reala uglavnom vode Feliz i Pradilla."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 26,
+    "prosao": true
    },
    {
     "k": "walter tavares",
@@ -1369,7 +1424,10 @@
     "protiv": [
      "Ove sezone daje oko deset poena po utakmici; ispod 10,5 je ostao u 6 od 9 utakmica.",
      "Panatinaikos dobro brani centre; to je i jedna od najboljih odbrana u ligi."
-    ]
+    ],
+    "ishod": 13,
+    "min_st": 22,
+    "prosao": true
    },
    {
     "k": "walter tavares",
@@ -1403,7 +1461,10 @@
     "protiv": [
      "Granica od 7,5 je niža od onoga što realno očekujemo, a to je osam do devet skokova.",
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale."
-    ]
+    ],
+    "ishod": 6,
+    "min_st": 22,
+    "prosao": true
    },
    {
     "k": "chuma okeke",
@@ -1436,7 +1497,10 @@
     "protiv": [
      "Ove sezone daje oko sedam poena po utakmici; ispod 7,5 je ostao u 5 od 8 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Feliz i Tavares."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 27,
+    "prosao": false
    },
    {
     "k": "chuma okeke",
@@ -1470,7 +1534,10 @@
     "protiv": [
      "Ove sezone daje oko tri skoka po utakmici; ispod 2,5 je ostao u 5 od 8 utakmica.",
      "Glavni skakač Reala je Tavares, pa za njega ostaje manje odbijenih lopti."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 27,
+    "prosao": true
    },
    {
     "k": "jaime pradilla",
@@ -1504,7 +1571,10 @@
     "protiv": [
      "Ove sezone daje oko pet poena po utakmici; ispod 6,5 je ostao u 6 od 9 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Feliz i Tavares."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 18,
+    "prosao": false
    },
    {
     "k": "jaime pradilla",
@@ -1538,7 +1608,10 @@
     "protiv": [
      "Granica od 3,5 je niža od onoga što realno očekujemo, a to je četiri do pet skokova.",
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale."
-    ]
+    ],
+    "ishod": 0,
+    "min_st": 18,
+    "prosao": true
    },
    {
     "k": "gabriele procida",
@@ -1572,7 +1645,10 @@
     "protiv": [
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Feliz i Tavares.",
      "Panatinaikos dobro brani krila; to je i jedna od najboljih odbrana u ligi."
-    ]
+    ],
+    "ishod": 8,
+    "min_st": 24,
+    "prosao": true
    },
    {
     "k": "damian jones",
@@ -1605,7 +1681,10 @@
     "protiv": [
      "Granica od 7,5 je viša od onoga što realno očekujemo, a to je oko sedam poena.",
      "Ove sezone daje oko sedam poena po utakmici; ispod 7,5 je ostao u 6 od 9 utakmica."
-    ]
+    ],
+    "ishod": 15,
+    "min_st": 20,
+    "prosao": true
    },
    {
     "k": "damian jones",
@@ -1639,7 +1718,10 @@
     "protiv": [
      "Ove sezone daje dva do tri skoka po utakmici; ispod 2,5 je ostao u 6 od 9 utakmica.",
      "Glavni skakač Reala je Tavares, pa za njega ostaje manje odbijenih lopti."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 20,
+    "prosao": false
    },
    {
     "k": "nigel hayes davis",
@@ -1673,7 +1755,10 @@
     "protiv": [
      "Jedna je od prvih opcija u napadu Panatinaikosa.",
      "Kod Reala na njegovoj poziciji ne igra Mikael Jantunen, pa manje je onih koji ga čuvaju."
-    ]
+    ],
+    "ishod": 0,
+    "min_st": 31,
+    "prosao": true
    },
    {
     "k": "nigel hayes davis",
@@ -1707,7 +1792,10 @@
     "protiv": [
      "Glavni skakač Panatinaikosa je Lessort, pa za njega ostaje manje odbijenih lopti.",
      "Real dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 31,
+    "prosao": true
    },
    {
     "k": "guerschon yabusele",
@@ -1741,7 +1829,10 @@
     "protiv": [
      "Ove sezone daje oko devet poena po utakmici i granicu od 8,5 prebacio je u 5 od 9 utakmica.",
      "Kod Reala na njegovoj poziciji ne igra Mikael Jantunen, pa manje je onih koji ga čuvaju."
-    ]
+    ],
+    "ishod": 6,
+    "min_st": 22,
+    "prosao": true
    },
    {
     "k": "guerschon yabusele",
@@ -1774,7 +1865,10 @@
     "protiv": [
      "Ove sezone daje četiri do pet skokova po utakmici i granicu od 4,5 prebacio je u 6 od 9 utakmica.",
      "Kod Reala na njegovoj poziciji ne igra Mikael Jantunen, pa manje je visokih koji se bore za skok."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 22,
+    "prosao": true
    },
    {
     "k": "mathias lessort",
@@ -1806,7 +1900,10 @@
     "protiv": [
      "Granica od 10,5 je viša od onoga što realno očekujemo, a to je oko deset poena.",
      "U gostima postiže manje poena nego kod kuće (četiri do pet poena naspram oko 14 poena), a sada igra u gostima."
-    ]
+    ],
+    "ishod": 20,
+    "min_st": 31,
+    "prosao": true
    },
    {
     "k": "mathias lessort",
@@ -1838,7 +1935,10 @@
     "protiv": [
      "Otkad se vratio Nunn (3 utakmice), igra oko 25 minuta i daje 9,3 skokova po utakmici, naspram 6,5 ranije; procena to uzima u obzir.",
      "Ove sezone daje sedam do osam skokova po utakmici i granicu od 7,5 prebacio je u 6 od 9 utakmica."
-    ]
+    ],
+    "ishod": 9,
+    "min_st": 31,
+    "prosao": false
    },
    {
     "k": "kendrick nunn",
@@ -1872,7 +1972,10 @@
     "protiv": [
      "Jedna je od prvih opcija u napadu Panatinaikosa.",
      "Protiv Reala bekovi postižu više nego protiv većine ekipa."
-    ]
+    ],
+    "ishod": 33,
+    "min_st": 24,
+    "prosao": false
    },
    {
     "k": "kendrick nunn",
@@ -1903,7 +2006,10 @@
      "Ove sezone daje oko dva skoka po utakmici; ispod 2,5 je ostao u 2 od 3 utakmice.",
      "Kao bek retko ide u skok; odbijene lopte kod Panatinaikosa uglavnom hvataju Lessort i Yabusele."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 1,
+    "min_st": 24,
+    "prosao": true
    },
    {
     "k": "kendrick nunn",
@@ -1934,7 +2040,10 @@
     ],
     "protiv": [
      "Ove sezone daje oko četiri asistencije po utakmici i granicu od 3,5 prebacio je u 2 od 3 utakmice."
-    ]
+    ],
+    "ishod": 1,
+    "min_st": 24,
+    "prosao": true
    },
    {
     "k": "sylvain francisco",
@@ -1968,7 +2077,10 @@
     "protiv": [
      "Protiv Reala bekovi postižu više nego protiv većine ekipa.",
      "Kod Reala na njegovoj poziciji ne igraju Theo Maledon i Facundo Campazzo, pa manje je onih koji ga čuvaju."
-    ]
+    ],
+    "ishod": 19,
+    "min_st": 28,
+    "prosao": false
    },
    {
     "k": "sylvain francisco",
@@ -1999,7 +2111,10 @@
      "Otkad se vratio Nunn (3 utakmice), igra oko 23 minuta i daje 1,7 skoka po utakmici, naspram 2,5 ranije; procena to uzima u obzir.",
      "Ove sezone daje oko dva skoka po utakmici; ispod 2,5 je ostao u 5 od 9 utakmica."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 3,
+    "min_st": 28,
+    "prosao": false
    },
    {
     "k": "sylvain francisco",
@@ -2032,7 +2147,10 @@
     "protiv": [
      "Granica od 4,5 je niža od onoga što realno očekujemo, a to je oko pet asistencija.",
      "Otkad se vratio Nunn (3 utakmice), igra oko 23 minuta i daje 5,3 asistencija po utakmici, naspram 4,5 ranije; procena to uzima u obzir."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 28,
+    "prosao": true
    },
    {
     "k": "isaac bonga",
@@ -2065,7 +2183,10 @@
     "protiv": [
      "Ove sezone daje oko četiri poena po utakmici; ispod 4,5 je ostao u 4 od 7 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Nunn i Francisco."
-    ]
+    ],
+    "ishod": 10,
+    "min_st": 18,
+    "prosao": true
    },
    {
     "k": "brancou badio",
@@ -2099,7 +2220,10 @@
     "protiv": [
      "Otkad se vratio Nunn (3 utakmice), igra oko 15 minuta i daje 3 poena po utakmici, naspram 6,2 ranije; procena to uzima u obzir.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Nunn i Francisco."
-    ]
+    ],
+    "ishod": 7,
+    "min_st": 18,
+    "prosao": true
    },
    {
     "k": "brancou badio",
@@ -2131,7 +2255,10 @@
     "protiv": [
      "Nije glavni organizator; loptu kod Panatinaikosa uglavnom vode Francisco i Nunn.",
      "Dolazi sa klupe i igra 16 do 17 minuta."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 18,
+    "prosao": true
    },
    {
     "k": "juancho hernangomez",
@@ -2164,7 +2291,10 @@
     ],
     "protiv": [
      "Kod Reala na njegovoj poziciji ne igra Mikael Jantunen, pa manje je onih koji ga čuvaju."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 24,
+    "prosao": true
    },
    {
     "k": "juancho hernangomez",
@@ -2198,7 +2328,10 @@
     "protiv": [
      "Kod Reala na njegovoj poziciji ne igra Mikael Jantunen, pa manje je visokih koji se bore za skok.",
      "U gostima hvata više skokova nego kod kuće (oko pet skokova naspram oko četiri skoka), a sada igra u gostima."
-    ]
+    ],
+    "ishod": 6,
+    "min_st": 24,
+    "prosao": false
    }
   ]
  }
