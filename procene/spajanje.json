@@ -35,7 +35,7 @@
   "prag_plus": 0.53,
   "min_ut": 0,
   "max_ut": 6,
-  "plus_min": 0,
+  "plus_min": 2,
   "nivoi": [
    [
     0.62,
@@ -45,7 +45,10 @@
     0.56,
     "solidan"
    ]
-  ]
+  ],
+  "plus_pod": 0.45,
+  "max_ista": 2,
+  "max_tim": 4
  },
  "test": {
   "kola_7_9": {

@@ -5,39 +5,35 @@
    "g": 91,
    "dan": "2026-11-04",
    "vreme": "04.11. 20:45",
-   "k": "nigel hayes davis",
-   "ime": "Nigel Hayes-Davis",
-   "tim": "PAN",
-   "prot": "MAD",
+   "k": "chuma okeke",
+   "ime": "Chuma Okeke",
+   "tim": "MAD",
+   "prot": "PAN",
    "s": "S",
-   "strana": "u",
-   "l": 3.5,
-   "kl": "admiral",
-   "kvota": 1.85,
-   "pp": 0.53,
-   "ev": -0.02,
-   "nivo": "nagoveštaj",
-   "rang": 6,
+   "strana": "o",
+   "l": 2.5,
+   "kl": "mozzart",
+   "kvota": 1.6,
+   "pp": 0.575,
+   "ev": -0.081,
+   "nivo": "solidan",
+   "rang": 4,
    "ostale": [
     {
-     "kl": "maxbet",
-     "k": 1.85
-    },
-    {
-     "kl": "mozzart",
-     "k": 1.85
+     "kl": "admiral",
+     "k": 1.57
     },
     {
      "kl": "soccerbet",
-     "k": 1.85
+     "k": 1.55
     }
    ],
    "knjige": [
     {
      "kl": "admiral",
-     "l": 3.5,
-     "u": 1.85,
-     "o": 1.85
+     "l": 2.5,
+     "u": 2.25,
+     "o": 1.57
     },
     {
      "kl": "maxbet",
@@ -47,33 +43,64 @@
     },
     {
      "kl": "mozzart",
-     "l": 3.5,
-     "u": 1.85,
-     "o": 1.85
+     "l": 2.5,
+     "u": 2.2,
+     "o": 1.6
     },
     {
      "kl": "soccerbet",
-     "l": 3.5,
-     "u": 1.85,
-     "o": 1.85
+     "l": 2.5,
+     "u": 2.25,
+     "o": 1.55
     }
    ],
    "soft": {
-    "l": 3.5,
-    "k": 1.85,
-    "kl": "admiral",
-    "p": 0.53,
+    "l": 2.5,
+    "k": 1.6,
+    "kl": "mozzart",
+    "p": 0.575,
     "vrsta": "granica",
-    "ev": -0.019,
+    "ev": -0.08,
     "isti": true
    },
    "opseg": [
     {
+     "l": 2.5,
+     "k": 1.6,
+     "kl": "mozzart",
+     "p": 0.575,
+     "vrsta": "granica"
+    },
+    {
      "l": 3.5,
      "k": 1.85,
-     "kl": "admiral",
-     "p": 0.53,
+     "kl": "maxbet",
+     "p": 0.467,
      "vrsta": "granica"
+    },
+    {
+     "l": 4.5,
+     "k": 4.15,
+     "kl": "soccerbet",
+     "p": 0.242,
+     "vrsta": "lestvica",
+     "n": 5
+    },
+    {
+     "l": 6.5,
+     "k": 12,
+     "kl": "soccerbet",
+     "p": 0.092,
+     "vrsta": "lestvica",
+     "n": 7
+    },
+    {
+     "l": 9.5,
+     "k": 40,
+     "kl": "soccerbet",
+     "p": 0.026,
+     "vrsta": "lestvica",
+     "n": 10
     }
    ],
    "q": [
@@ -83,25 +110,35 @@
     5,
     7
    ],
-   "mu": 3.68,
-   "min": 26.5,
-   "pm": 0.4828,
-   "tr": 0.5,
+   "mu": 3.71,
+   "min": 17.1,
+   "pm": 0.6403,
+   "tr": 0.5789,
    "l0": null,
-   "vatra": null,
-   "pos": "F",
-   "of": 0.943,
+   "vatra": {
+    "l3": [
+     3,
+     2,
+     7
+    ],
+    "a3": 4.0,
+    "ap": 2.0,
+    "pct": 100
+   },
+   "pos": "C",
+   "of": 0.941,
    "analiza": [
-    "Glavni skakač Panatinaikosa je Lessort, pa za njega ostaje manje odbijenih lopti.",
-    "Real dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
+    "Granica od 2,5 je niža od onoga što realno očekujemo, a to je tri do četiri skoka, iz ovih razloga:",
+    "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
+    "U poslednje tri utakmice: 3, 2 i 7 skokova, više nego inače."
    ],
-   "upisano": "04.11.2026. 14:35",
-   "prvi_put": "04.11.2026. 12:43",
+   "upisano": "04.11.2026. 15:16",
+   "prvi_put": "04.11.2026. 15:16",
    "promena": "novo",
    "ranije": null,
-   "promena_u": "04.11.2026. 12:43",
-   "zatv": 1.85,
-   "zatv_fer": 1.887
+   "promena_u": "04.11.2026. 15:16",
+   "zatv": 1.6,
+   "zatv_fer": 1.741
   },
   {
    "g": 91,
@@ -116,9 +153,9 @@
    "l": 2.5,
    "kl": "mozzart",
    "kvota": 1.55,
-   "pp": 0.617,
-   "ev": -0.044,
-   "nivo": "solidan",
+   "pp": 0.638,
+   "ev": -0.011,
+   "nivo": "jak",
    "rang": 1,
    "ostale": [
     {
@@ -164,9 +201,9 @@
     "l": 2.5,
     "k": 1.55,
     "kl": "mozzart",
-    "p": 0.617,
+    "p": 0.638,
     "vrsta": "granica",
-    "ev": -0.044,
+    "ev": -0.011,
     "isti": true
    },
    "opseg": [
@@ -174,7 +211,7 @@
      "l": 2.5,
      "k": 1.55,
      "kl": "mozzart",
-     "p": 0.617,
+     "p": 0.638,
      "vrsta": "granica"
     }
    ],
@@ -183,26 +220,27 @@
     1,
     2,
     3,
-    5
+    4
    ],
-   "mu": 2.36,
-   "min": 23.0,
-   "pm": 0.4124,
+   "mu": 2.04,
+   "min": 22.9,
+   "pm": 0.339,
    "tr": 0.4026,
    "l0": null,
    "vatra": null,
    "pos": "G",
    "of": 1.05,
    "analiza": [
+    "Granica od 2,5 je viša od onoga što realno očekujemo, a to je oko dva skoka, iz ovih razloga:",
+    "Otkad se vratio Nunn (3 utakmice), igra oko 23 minuta i daje 1,7 skoka po utakmici, naspram 2,5 ranije; procena to uzima u obzir.",
     "Ove sezone daje oko dva skoka po utakmici; ispod 2,5 je ostao u 5 od 9 utakmica.",
     "Kao bek retko ide u skok; odbijene lopte kod Panatinaikosa uglavnom hvataju Lessort i Yabusele.",
-    "Na raspolaganju je ponovo i Kostas Sloukas, pa minuti na njegovoj poziciji mogu da budu podeljeni.",
     "Real dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
    ],
-   "upisano": "04.11.2026. 14:35",
+   "upisano": "04.11.2026. 15:16",
    "prvi_put": "04.11.2026. 10:32",
    "zatv": 1.55,
-   "zatv_fer": 1.621
+   "zatv_fer": 1.568
   },
   {
    "g": 91,
@@ -301,7 +339,7 @@
     "Na raspolaganju je ponovo i Kostas Sloukas, pa minuti na njegovoj poziciji mogu da budu podeljeni.",
     "Real dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
    ],
-   "upisano": "04.11.2026. 14:35",
+   "upisano": "04.11.2026. 15:16",
    "prvi_put": "04.11.2026. 12:26",
    "promena": "novo",
    "ranije": null,
@@ -313,214 +351,118 @@
    "g": 91,
    "dan": "2026-11-04",
    "vreme": "04.11. 20:45",
-   "k": "guerschon yabusele",
-   "ime": "Guerschon Yabusele",
+   "k": "brancou badio",
+   "ime": "Brancou Badio",
    "tim": "PAN",
    "prot": "MAD",
-   "s": "S",
-   "strana": "u",
-   "l": 4.5,
+   "s": "A",
+   "strana": "o",
+   "l": 1.5,
    "kl": "admiral",
-   "kvota": 1.97,
-   "pp": 0.539,
-   "ev": 0.062,
-   "nivo": "nagoveštaj",
+   "kvota": 1.58,
+   "pp": 0.567,
+   "ev": -0.104,
+   "nivo": "solidan",
    "rang": 5,
    "ostale": [
     {
      "kl": "maxbet",
-     "k": 1.97
+     "k": 1.58
     },
     {
      "kl": "soccerbet",
-     "k": 1.97
-    },
-    {
-     "kl": "mozzart",
-     "k": 1.95
+     "k": 1.58
     }
    ],
    "knjige": [
     {
      "kl": "admiral",
-     "l": 4.5,
-     "u": 1.97,
-     "o": 1.75
+     "l": 1.5,
+     "u": 2.2,
+     "o": 1.58
     },
     {
      "kl": "maxbet",
-     "l": 4.5,
-     "u": 1.97,
-     "o": 1.75
-    },
-    {
-     "kl": "mozzart",
-     "l": 4.5,
-     "u": 1.95,
-     "o": 1.75
+     "l": 1.5,
+     "u": 2.2,
+     "o": 1.58
     },
     {
      "kl": "soccerbet",
-     "l": 4.5,
-     "u": 1.97,
-     "o": 1.75
+     "l": 1.5,
+     "u": 2.2,
+     "o": 1.58
     }
    ],
    "soft": {
-    "l": 4.5,
-    "k": 1.97,
+    "l": 1.5,
+    "k": 1.58,
     "kl": "admiral",
-    "p": 0.539,
+    "p": 0.567,
     "vrsta": "granica",
-    "ev": 0.062,
+    "ev": -0.104,
     "isti": true
    },
    "opseg": [
     {
-     "l": 4.5,
-     "k": 1.97,
+     "l": 1.5,
+     "k": 1.58,
      "kl": "admiral",
-     "p": 0.539,
+     "p": 0.567,
      "vrsta": "granica"
+    },
+    {
+     "l": 2.5,
+     "k": 2.7,
+     "kl": "soccerbet",
+     "p": 0.347,
+     "vrsta": "lestvica",
+     "n": 3
+    },
+    {
+     "l": 4.5,
+     "k": 12,
+     "kl": "soccerbet",
+     "p": 0.092,
+     "vrsta": "lestvica",
+     "n": 5
+    },
+    {
+     "l": 6.5,
+     "k": 50,
+     "kl": "soccerbet",
+     "p": 0.024,
+     "vrsta": "lestvica",
+     "n": 7
     }
    ],
    "q": [
+    0,
     1,
     2,
-    4,
-    5,
-    7
+    3,
+    4
    ],
-   "mu": 4.07,
-   "min": 22.9,
-   "pm": 0.3849,
-   "tr": 0.5296,
+   "mu": 2.09,
+   "min": 16.4,
+   "pm": 0.5831,
+   "tr": 0.582,
    "l0": null,
    "vatra": null,
-   "pos": "F",
+   "pos": "G",
    "of": 0.943,
    "analiza": [
-    "Granica od 4,5 je viša od onoga što realno očekujemo, a to je oko četiri skoka, iz ovih razloga:",
-    "Glavni skakač Panatinaikosa je Lessort, pa za njega ostaje manje odbijenih lopti.",
-    "Real dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
+    "Granica od 1,5 je niža od onoga što realno očekujemo, a to je oko dve asistencije, iz ovih razloga:",
+    "Ove sezone daje oko dve asistencije po utakmici i granicu od 1,5 prebacio je u 8 od 9 utakmica.",
+    "Kod Reala na njegovoj poziciji ne igraju Theo Maledon i Facundo Campazzo."
    ],
-   "upisano": "04.11.2026. 14:35",
-   "prvi_put": "04.11.2026. 12:43",
+   "upisano": "04.11.2026. 15:16",
+   "prvi_put": "04.11.2026. 15:16",
    "promena": "novo",
    "ranije": null,
-   "promena_u": "04.11.2026. 12:43",
-   "zatv": 1.97,
-   "zatv_fer": 1.855
-  },
-  {
-   "g": 91,
-   "dan": "2026-11-04",
-   "vreme": "04.11. 20:45",
-   "k": "mathias lessort",
-   "ime": "Mathias Lessort",
-   "tim": "PAN",
-   "prot": "MAD",
-   "s": "S",
-   "strana": "u",
-   "l": 7.5,
-   "kl": "mozzart",
-   "kvota": 1.9,
-   "pp": 0.569,
-   "ev": 0.08,
-   "nivo": "solidan",
-   "rang": 3,
-   "ostale": [
-    {
-     "kl": "admiral",
-     "k": 1.88
-    },
-    {
-     "kl": "maxbet",
-     "k": 1.88
-    },
-    {
-     "kl": "soccerbet",
-     "k": 1.88
-    }
-   ],
-   "knjige": [
-    {
-     "kl": "admiral",
-     "l": 7.5,
-     "u": 1.88,
-     "o": 1.8
-    },
-    {
-     "kl": "maxbet",
-     "l": 7.5,
-     "u": 1.88,
-     "o": 1.8
-    },
-    {
-     "kl": "mozzart",
-     "l": 7.5,
-     "u": 1.9,
-     "o": 1.8
-    },
-    {
-     "kl": "soccerbet",
-     "l": 7.5,
-     "u": 1.88,
-     "o": 1.8
-    }
-   ],
-   "soft": {
-    "l": 7.5,
-    "k": 1.9,
-    "kl": "mozzart",
-    "p": 0.569,
-    "vrsta": "granica",
-    "ev": 0.081,
-    "isti": true
-   },
-   "opseg": [
-    {
-     "l": 7.5,
-     "k": 1.9,
-     "kl": "mozzart",
-     "p": 0.569,
-     "vrsta": "granica"
-    }
-   ],
-   "q": [
-    3,
-    4,
-    6,
-    8,
-    10
-   ],
-   "mu": 6.34,
-   "min": 22.5,
-   "pm": 0.3268,
-   "tr": 0.5135,
-   "l0": null,
-   "vatra": {
-    "l3": [
-     6,
-     11,
-     11
-    ],
-    "a3": 9.3,
-    "ap": 6.5,
-    "pct": 44
-   },
-   "pos": "C",
-   "of": 0.963,
-   "analiza": [
-    "Granica od 7,5 je viša od onoga što realno očekujemo, a to je šest do sedam skokova: Real dobro zatvara skok."
-   ],
-   "upisano": "04.11.2026. 14:35",
-   "prvi_put": "04.11.2026. 12:26",
-   "promena": "novo",
-   "ranije": null,
-   "promena_u": "04.11.2026. 12:26",
-   "zatv": 1.9,
-   "zatv_fer": 1.759
+   "promena_u": "04.11.2026. 15:16",
+   "zatv": 1.58,
+   "zatv_fer": 1.762
   },
   {
    "g": 91,
@@ -530,103 +472,106 @@
    "ime": "Juancho Hernangomez",
    "tim": "PAN",
    "prot": "MAD",
-   "s": "S",
+   "s": "P",
    "strana": "u",
-   "l": 4.5,
+   "l": 5.5,
    "kl": "admiral",
-   "kvota": 1.85,
-   "pp": 0.557,
-   "ev": 0.031,
+   "kvota": 1.79,
+   "pp": 0.523,
+   "ev": -0.065,
    "nivo": "nagoveštaj",
-   "rang": 4,
+   "rang": 3,
    "ostale": [
     {
      "kl": "maxbet",
-     "k": 1.85
-    },
-    {
-     "kl": "mozzart",
-     "k": 1.85
+     "k": 1.77
     },
     {
      "kl": "soccerbet",
-     "k": 1.85
+     "k": 1.77
     }
    ],
    "knjige": [
     {
      "kl": "admiral",
-     "l": 4.5,
-     "u": 1.85,
-     "o": 1.85
+     "l": 5.5,
+     "u": 1.79,
+     "o": 2.04
     },
     {
      "kl": "maxbet",
-     "l": 4.5,
-     "u": 1.85,
-     "o": 1.85
+     "l": 5.5,
+     "u": 1.77,
+     "o": 2.02
     },
     {
      "kl": "mozzart",
      "l": 4.5,
-     "u": 1.85,
-     "o": 1.85
+     "u": 2.0,
+     "o": 1.8
     },
     {
      "kl": "soccerbet",
-     "l": 4.5,
-     "u": 1.85,
-     "o": 1.85
+     "l": 5.5,
+     "u": 1.77,
+     "o": 2.02
     }
    ],
    "soft": {
-    "l": 4.5,
-    "k": 1.85,
+    "l": 5.5,
+    "k": 1.79,
     "kl": "admiral",
-    "p": 0.557,
+    "p": 0.523,
     "vrsta": "granica",
-    "ev": 0.03,
+    "ev": -0.064,
     "isti": true
    },
    "opseg": [
     {
      "l": 4.5,
-     "k": 1.85,
+     "k": 2.0,
+     "kl": "mozzart",
+     "p": 0.466,
+     "vrsta": "granica"
+    },
+    {
+     "l": 5.5,
+     "k": 1.79,
      "kl": "admiral",
-     "p": 0.557,
+     "p": 0.523,
      "vrsta": "granica"
     }
    ],
    "q": [
-    1,
+    0,
     2,
     4,
-    6,
-    7
+    7,
+    10
    ],
-   "mu": 4.1,
-   "min": 16.4,
-   "pm": 0.3878,
-   "tr": 0.5,
+   "mu": 4.68,
+   "min": 15.3,
+   "pm": 0.3293,
+   "tr": 0.4674,
    "l0": null,
    "vatra": null,
    "pos": "F",
-   "of": 0.943,
+   "of": 0.947,
    "analiza": [
-    "Granica od 4,5 je viša od onoga što realno očekujemo, a to je oko četiri skoka, iz ovih razloga:",
-    "Ove sezone daje oko četiri skoka po utakmici; ispod 4,5 je ostao u 3 od 6 utakmica.",
-    "Glavni skakač Panatinaikosa je Lessort, pa za njega ostaje manje odbijenih lopti."
+    "Granica od 5,5 je viša od onoga što realno očekujemo, a to je četiri do pet poena, iz ovih razloga:",
+    "Otkad se vratio Nunn (3 utakmice), igra oko 15 minuta i daje 4,3 poena po utakmici, naspram 6,3 ranije; procena to uzima u obzir.",
+    "Ove sezone daje pet do šest poena po utakmici; ispod 5,5 je ostao u 4 od 6 utakmica."
    ],
-   "upisano": "04.11.2026. 14:35",
+   "upisano": "04.11.2026. 15:16",
    "prvi_put": "04.11.2026. 12:26",
-   "promena": "novo",
-   "ranije": null,
-   "promena_u": "04.11.2026. 12:26",
-   "zatv": 1.85,
-   "zatv_fer": 1.794
+   "promena": "izmenjeno",
+   "ranije": "skokovi ispod 4.5 · 1.85 Admiral",
+   "promena_u": "04.11.2026. 15:16",
+   "zatv": 1.79,
+   "zatv_fer": 1.914
   }
  ],
- "osvezeno": "04.11.2026. 14:35",
+ "osvezeno": "04.11.2026. 15:16",
  "utakmice": [
   {
    "g": 91,
@@ -647,7 +592,7 @@
     "Admiral": "2026-11-04T13:32:17.999Z",
     "MaxBet": "2026-11-04T13:32:33.397Z",
     "Mozzart": "2026-11-04T13:33:05.584Z",
-    "Soccerbet": "2026-11-04T13:35:44+00:00"
+    "Soccerbet": "2026-11-04T14:16:39+00:00"
    }
   },
   {
@@ -794,19 +739,27 @@
   },
   {
    "g": 91,
-   "k": "chuma okeke",
-   "ime": "Chuma Okeke",
-   "tim": "MAD",
-   "opis": "skokovi preko 2.5 · 1.60 Mozzart",
-   "u": "04.11.2026. 12:43"
+   "k": "nigel hayes davis",
+   "ime": "Nigel Hayes-Davis",
+   "tim": "PAN",
+   "opis": "skokovi ispod 3.5 · 1.85 Admiral",
+   "u": "04.11.2026. 15:16"
   },
   {
    "g": 91,
-   "k": "brancou badio",
-   "ime": "Brancou Badio",
+   "k": "guerschon yabusele",
+   "ime": "Guerschon Yabusele",
    "tim": "PAN",
-   "opis": "poeni preko 4.5 · 1.92 Admiral",
-   "u": "04.11.2026. 12:43"
+   "opis": "skokovi ispod 4.5 · 1.97 Admiral",
+   "u": "04.11.2026. 15:16"
+  },
+  {
+   "g": 91,
+   "k": "mathias lessort",
+   "ime": "Mathias Lessort",
+   "tim": "PAN",
+   "opis": "skokovi ispod 7.5 · 1.90 Mozzart",
+   "u": "04.11.2026. 15:16"
   }
  ],
  "konacno": {}

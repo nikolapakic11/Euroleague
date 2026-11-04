@@ -12,7 +12,7 @@ Izlaz procene/spajanje.json:
   w      koeficijenti podešeni na svim granicama (za predloge i tablu)
   test   pravilo predloga na ranijim ponudama: kola 7–9 van podešavanja, kola 4–6 u periodu podešavanja
 """
-import json, math, os, sys
+import collections, json, math, os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from zajedno import PROCENE, ucitaj, sacuvaj
 
@@ -26,7 +26,10 @@ KVOTA_MIN = 1.50
 # Za prikaz se verovatnoća kalibriše (kal, Platt po stavci), jer je spojena previše samouverena.
 PRAG = {'u': 0.53, 'o': 0.53}
 MIN_UT, MAX_UT = 0, 6
-PLUS_MIN = 0
+PLUS_MIN = 2          # odluka 4.11.2026: bar 2 PLUS po utakmici (stranica je za ljude, ne samo minusi)
+PLUS_POD = 0.45       # obavezni PLUS ne ide ispod ove spojene verovatnoće
+MAX_ISTA = 2          # najviše 2 predloga iste stavke i strane po utakmici (raznovrsnost)
+MAX_TIM = 4           # najviše 4 predloga iz istog tima po utakmici
 NIVOI = ((0.62, 'jak'), (0.56, 'solidan'))      # na kalibrisanoj verovatnoći; ispod 0,56: „nagoveštaj“
 
 
@@ -94,22 +97,45 @@ def podesi(R, l2=1.0):
 
 
 def izbor_utakmice(kand):
-    """kand: dict(igr, s, strana, pp, ev, k) za jednu utakmicu; pp je nekalibrisana spojena verovatnoća (za izbor).
-    Vraća do MAX_UT predloga, najviše jedan po igraču, sa poljem rang. Ulazi strana sa pp ≥ PRAG i kvotom ≥ KVOTA_MIN;
-    po igraču se uzima stavka i strana sa najvećom verovatnoćom, za istu stavku i stranu najbolja cena (vrednost).
+    """kand: dict(igr, s, strana, pp, ev, k, tim) za jednu utakmicu; pp je nekalibrisana spojena verovatnoća (za izbor).
+    Vraća do MAX_UT predloga, najviše jedan po igraču, sa poljem rang. Po igraču i strani se uzima stavka sa najvećom
+    verovatnoćom (za istu stavku i stranu najbolja cena). Pravilo od 4.11.2026 (Nikola): stranica je za ljude, pa
+    moraju da budu i PLUS predlozi i raznovrsnost:
+      - bar PLUS_MIN najboljih PLUS (po verovatnoći), i kad su ispod praga i kad su MINUS predlozi jači; donja
+        granica za takav PLUS je PLUS_POD;
+      - ostala mesta MINUS i PLUS sa verovatnoćom ≥ PRAG, po verovatnoći;
+      - najviše MAX_ISTA predloga iste stavke i strane (npr. skokovi MINUS) i najviše MAX_TIM iz istog tima.
     Nivo se dodeljuje posle, na kalibrisanoj verovatnoći (tabla.py)."""
     po_stavci = {}
     for c in kand:
-        if c['k'] < KVOTA_MIN or c['pp'] < PRAG[c['strana']]:
+        if c['k'] < KVOTA_MIN:
             continue
         kl = (c['igr'], c['s'], c['strana'])
         if kl not in po_stavci or c['ev'] > po_stavci[kl]['ev']:      # najbolja cena za istu stavku i stranu
             po_stavci[kl] = c
-    po_igracu = {}
-    for c in po_stavci.values():
-        if c['igr'] not in po_igracu or (c['pp'], c['ev']) > (po_igracu[c['igr']]['pp'], po_igracu[c['igr']]['ev']):
-            po_igracu[c['igr']] = c
-    L = sorted(po_igracu.values(), key=lambda c: (-c['pp'], -c['ev']))[:MAX_UT]
+    red = sorted(po_stavci.values(), key=lambda c: (-c['pp'], -c['ev']))
+    izabrani, igraci, ista, timovi = [], set(), collections.Counter(), collections.Counter()
+
+    def moze(c):
+        return (c['igr'] not in igraci and ista[(c['s'], c['strana'])] < MAX_ISTA
+                and (not c.get('tim') or timovi[c['tim']] < MAX_TIM))
+
+    def uzmi(c):
+        izabrani.append(c); igraci.add(c['igr']); ista[(c['s'], c['strana'])] += 1
+        if c.get('tim'):
+            timovi[c['tim']] += 1
+
+    for c in red:                                      # obavezni PLUS
+        if sum(1 for x in izabrani if x['strana'] == 'o') >= PLUS_MIN:
+            break
+        if c['strana'] == 'o' and c['pp'] >= PLUS_POD and moze(c):
+            uzmi(c)
+    for c in red:                                      # ostala mesta
+        if len(izabrani) >= MAX_UT:
+            break
+        if c['pp'] >= PRAG[c['strana']] and moze(c):
+            uzmi(c)
+    L = sorted(izabrani, key=lambda c: (-c['pp'], -c['ev']))
     return [dict(c, nivo=nivo(c['pp']), rang=r) for r, c in enumerate(L, 1)]
 
 

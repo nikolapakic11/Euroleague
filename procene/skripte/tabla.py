@@ -114,6 +114,82 @@ def vatra(g, s):
     return None
 
 
+# Povratak važnog saigrača (odluka 4.11.2026): kad se vrati igrač koji nosi tim (bar POV_MIN minuta u proseku), a
+# propustio je bar 2 utakmice, uloga ostalih se menja (npr. Francisco posle povratka Nunna: isti minuti, poeni sa
+# 16 na 8). Prosek sezone to sporo hvata, pa se minuti i učinak po minutu ostalih igrača tog tima mešaju sa
+# utakmicama u kojima su povratnici igrali: težina n/(n+POV_K) (3 utakmice → 0,67). Odnos učinka po minutu se
+# skuplja ka 1 (pseudo-brojevi POV_C) i ograničava na 0,5 do 1,5.
+POV_MIN, POV_K, POV_MAX_POSLE = 20.0, 1.5, 5
+POV_C = {'P': 3.0, 'S': 1.5, 'A': 1.5}
+
+
+def povratak_saigraca(igraci, B, kod, dan):
+    tg = []
+    for r in B.rows:
+        if r['team'] == kod and r['dan'] < dan and r['g'] not in tg:
+            tg.append(r['g'])
+    if len(tg) < 4:
+        return
+    igrao = {i['k']: {r['g']: r for r in B.byk.get(i['k'], []) if r['dan'] < dan and r['team'] == kod} for i in igraci}
+    povr = []
+    for j in igraci:
+        G = igrao[j['k']]
+        if j['ne_igra'] or not G:
+            continue
+        mins = [r['min'] for r in G.values()]
+        if sum(mins) / len(mins) < POV_MIN:
+            continue
+        posle = 0
+        for gg in reversed(tg):
+            if gg in G:
+                posle += 1
+            else:
+                break
+        propustio = sum(1 for gg in tg if gg not in G)
+        if 1 <= posle <= POV_MAX_POSLE and propustio >= 2 and propustio > posle - 1:
+            povr.append((j, set(tg[len(tg) - posle:])))
+    if not povr:
+        return
+    sa_g = set.intersection(*[s for _, s in povr])
+    ko = [j['ime'] for j, _ in povr]
+    kljucevi_povr = {j['k'] for j, _ in povr}
+    for i in igraci:
+        if i['k'] in kljucevi_povr or i['ne_igra']:
+            continue
+        G = igrao[i['k']]
+        sa = [G[gg] for gg in G if gg in sa_g]
+        bez = [G[gg] for gg in G if gg not in sa_g]
+        if not sa or len(bez) < 2:
+            continue
+        w = len(sa) / (len(sa) + POV_K)
+        sv = lambda L, s: sum(r[s] for r in L)
+        m_sa = sv(sa, 'min') / len(sa)
+        m_bez = sv(bez, 'min') / len(bez)
+        m_sve = (sv(sa, 'min') + sv(bez, 'min'))
+        m_staro = i['min']
+        m_novo = m_staro if i.get('rucno_min') else (1 - w) * m_staro + w * m_sa
+        info = dict(ko=ko, n=len(sa), w=round(w, 2), min_sa=round(m_sa, 1), min_bez=round(m_bez, 1), sa={}, bez={}, odnos={})
+        for s in 'PSA':
+            x = i['s'][s]
+            r_sve = (sv(sa, s) + sv(bez, s)) / m_sve if m_sve else 0
+            if r_sve > 0 and sv(sa, 'min') > 0:
+                odnos = (sv(sa, s) + POV_C[s]) / (r_sve * sv(sa, 'min') + POV_C[s])
+            else:
+                odnos = 1.0
+            odnos = min(1.5, max(0.5, odnos))
+            mnoz = ((1 - w) + w * odnos) * (m_novo / m_staro if m_staro else 1)
+            mu = max(0.05, x['mu'] * mnoz)
+            x['mu'] = round(mu, 2)
+            x['var'] = round(x['A'] * mu + x['C'] * mu * mu, 2)
+            x['q'] = percentili(x['mu'], x['var'])
+            x['rpm'] = round(mu / m_novo, 4) if m_novo else 0
+            info['sa'][s] = round(sv(sa, s) / len(sa), 1)
+            info['bez'][s] = round(sv(bez, s) / len(bez), 1)
+            info['odnos'][s] = round(odnos, 2)
+        i['min'] = round(m_novo, 1)
+        i['povratak'] = info
+
+
 def lepo_ime(n):
     if ',' in n:
         a, b = n.split(',', 1)
@@ -202,6 +278,7 @@ def main():
                     i['ne_igra'], i['razlog'] = True, 'van igre'
                 elif pv['stanje'] == 'upitan':
                     i['upitan'] = True
+            povratak_saigraca(igraci, B, kod, u['dan'])
             igraci.sort(key=lambda x: -x['min'])
             stranice.append(dict(tim=kod, prot=prot, igraci=igraci))
         # ponude
@@ -296,7 +373,7 @@ def main():
                         for strana, pp, kv in (('o', ps, z['o']), ('u', 1 - ps, z['u'])):
                             if strana == 'u' and bez_minusa:
                                 continue
-                            kand.append(dict(igr=i['k'], s=s, strana=strana, pp=pp, ev=pp * kv - 1, k=kv, l=z['l'], kl=z['kl']))
+                            kand.append(dict(igr=i['k'], tim=st_i['tim'], s=s, strana=strana, pp=pp, ev=pp * kv - 1, k=kv, l=z['l'], kl=z['kl']))
         for c in (spajanje.izbor_utakmice(kand) if sp_w else []):
             _, i = po_kljucu[c['igr']]
             z = next(z for z in i['s'][c['s']]['linije'] if z['kl'] == c['kl'] and z['l'] == c['l'] and z.get('m', 1))

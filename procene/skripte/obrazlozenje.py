@@ -256,8 +256,17 @@ def razlozi(i, s, l, u, moja, tudja, K):
     ned2 = [j for j in tudja.get('nedostaju', []) if j['pos'] == poz]
     if ned2:
         T.append(dict(p=6, d=1, t=f"Kod {gen(prot)} na njegovoj poziciji ne {'igraju' if len(ned2) > 1 else 'igra'} {spisak([j['ime'] for j in ned2[:2]])}.", kr=''))
+    pv = i.get('povratak')
+    if pv and abs(pv['sa'][s] - pv['bez'][s]) >= max(0.5, 0.15 * pv['bez'][s]):
+        manje = pv['sa'][s] < pv['bez'][s]
+        ko = spisak([prezime(x) for x in pv['ko']])
+        vs, vb = pv['sa'][s], pv['bez'][s]
+        T.append(dict(p=1, d=-1 if manje else 1,
+                      t=f"Otkad se vratio {ko} ({pv['n']} {utak(pv['n'])}), igra oko {round(pv['min_sa'])} minuta i daje {zr(vs)} {imenica(round(vs), s)} po utakmici, "
+                        f"naspram {zr(vb)} ranije; procena to uzima u obzir.",
+                      kr=f"otkad se vratio {ko}, {'manje' if manje else 'više'} učestvuje"))
     vraca = [j for j in moja['igraci'] if j['k'] != i['k'] and j.get('izvestaj') == 'igra' and j['odsutan'] >= 1 and j['pos'] == poz and j['min'] >= 12]
-    if vraca:
+    if vraca and not pv:
         T.append(dict(p=3, d=-1, t=f"Na raspolaganju je ponovo i {spisak([j['ime'] for j in vraca[:2]])}, pa minuti na njegovoj poziciji mogu da budu podeljeni.",
                       kr='minuti na njegovoj poziciji mogu da budu podeljeni'))
     # 6) raspored: domaća utakmica pre dva-tri dana sa velikom minutažom
