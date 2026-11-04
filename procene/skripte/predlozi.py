@@ -19,7 +19,7 @@ from model import Baza
 from zajedno import PROCENE, BG, ucitaj, sacuvaj
 import spajanje
 
-KONACNO = '16:30'      # od ovog vremena na dan utakmice osvežavanje daje konačne predloge
+KONACNO = os.environ.get('PROCENE_KONACNO', '16:30')      # od ovog vremena na dan utakmice osvežavanje daje konačne predloge
 IME_KL = {'admiral': 'Admiral', 'maxbet': 'MaxBet', 'mozzart': 'Mozzart', 'soccerbet': 'Soccerbet'}
 
 
