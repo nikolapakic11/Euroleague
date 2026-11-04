@@ -379,7 +379,7 @@ def main():
             z = next(z for z in i['s'][c['s']]['linije'] if z['kl'] == c['kl'] and z['l'] == c['l'] and z.get('m', 1))
             pk = z['pc'] if c['strana'] == 'o' else 1 - z['pc']          # kalibrisana, za prikaz
             pred = dict(strana=c['strana'], pp=round(pk, 3), ps=round(c['pp'], 3), ev=round(pk * c['k'] - 1, 3), kvota=c['k'],
-                        l=c['l'], kl=c['kl'], nivo=spajanje.nivo(pk), rang=c['rang'])
+                        l=c['l'], kl=c['kl'], nivo=spajanje.nivo(pk, slab=(c['nivo'] == 'slab')), rang=c['rang'])
             # iste granice i strane kod ostalih kladionica
             pred['ostale'] = sorted([dict(kl=z['kl'], k=(z['o'] if c['strana'] == 'o' else z['u']))
                                      for z in i['s'][c['s']]['linije'] if z['l'] == c['l'] and z['kl'] != c['kl'] and z.get('m', 1)],

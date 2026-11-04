@@ -33,7 +33,7 @@
   "kvota_min": 1.5,
   "prag_minus": 0.53,
   "prag_plus": 0.53,
-  "min_ut": 0,
+  "min_ut": 6,
   "max_ut": 6,
   "plus_min": 2,
   "nivoi": [

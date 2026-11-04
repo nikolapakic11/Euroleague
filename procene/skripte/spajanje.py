@@ -25,7 +25,7 @@ KVOTA_MIN = 1.50
 # i izbor po kalibrisanoj verovatnoći su tamo bili lošiji, pa se ne koriste.
 # Za prikaz se verovatnoća kalibriše (kal, Platt po stavci), jer je spojena previše samouverena.
 PRAG = {'u': 0.53, 'o': 0.53}
-MIN_UT, MAX_UT = 0, 6
+MIN_UT, MAX_UT = 6, 6   # odluka 4.11.2026: 6 predloga po utakmici je minimum (dopuna, izbor_utakmice)
 PLUS_MIN = 2          # odluka 4.11.2026: bar 2 PLUS po utakmici (stranica je za ljude, ne samo minusi)
 PLUS_POD = 0.45       # obavezni PLUS ne ide ispod ove spojene verovatnoće
 MAX_ISTA = 2          # najviše 2 predloga iste stavke i strane po utakmici (raznovrsnost)
@@ -135,8 +135,26 @@ def izbor_utakmice(kand):
             break
         if c['pp'] >= PRAG[c['strana']] and moze(c):
             uzmi(c)
+    # MIN_UT je najmanji broj predloga (odluka 4.11.2026: 6). Ako ih nema dovoljno, ograničenja se popuštaju redom:
+    # najpre broj iz istog tima (npr. kad se igra samo jedna utakmica, a jedan tim je bez MINUS), pa broj iste stavke
+    # i strane, i na kraju prag (dopuna najboljim preostalim, ne ispod PLUS_POD; takav predlog dobija nivo „slab“).
+    for korak in ('tim', 'ista', 'prag'):
+        for c in red:
+            if len(izabrani) >= MIN_UT:
+                break
+            if c['igr'] in igraci:
+                continue
+            if korak != 'prag' and c['pp'] < PRAG[c['strana']]:
+                continue
+            if korak == 'prag' and c['pp'] < PLUS_POD:
+                continue
+            if korak == 'tim' and ista[(c['s'], c['strana'])] >= MAX_ISTA:
+                continue
+            uzmi(c)
+            if korak == 'prag' or c['pp'] < PRAG[c['strana']]:
+                c['slab'] = True
     L = sorted(izabrani, key=lambda c: (-c['pp'], -c['ev']))
-    return [dict(c, nivo=nivo(c['pp']), rang=r) for r, c in enumerate(L, 1)]
+    return [dict(c, nivo=nivo(c['pp'], slab=c.get('slab', False)), rang=r) for r, c in enumerate(L, 1)]
 
 
 def platt(X, l2=20.0):
