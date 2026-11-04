@@ -42,6 +42,29 @@ def izaberi(tabla, w=None):
     return out
 
 
+def igraci_kola(kolo):
+    """Svi igrači tekućeg kola za karticu „Igrači“ (sažeto iz table): očekivano, raspon, forma, protivnik, glavne granice."""
+    put = os.path.join(PROCENE, 'tabla', f'kolo{kolo}.json') if kolo else None
+    if not put or not os.path.exists(put):
+        return None
+    t = ucitaj(put)
+    ut, out = [], []
+    for u in t['utakmice']:
+        ut.append(dict(g=u['g'], dom=u['dom'], gost=u['gost'], vreme=u['vreme']))
+        for st in u['strane']:
+            for i in st['igraci']:
+                s_ = {}
+                for s in 'PSA':
+                    x = i['s'][s]
+                    pr = x.get('pred')
+                    s_[s] = dict(mu=x['mu'], q=x['q'], pros=x['pros'], posl=x['posl'], of=x['of'], vatra=x.get('vatra'),
+                                 lin=[[z['kl'], z['l'], z['u'], z['o'], round(z['pc'], 3)] for z in x['linije'] if z.get('m', 1)],
+                                 pred=(dict(strana=pr['strana'], l=pr['l'], kl=pr['kl'], nivo=pr['nivo'], pp=pr['pp']) if pr else None))
+                out.append(dict(ime=i['ime'], tim=st['tim'], prot=st['prot'], g=u['g'], pos=i['pos'], min=i['min'], n=i['n'],
+                                posl_min=i['posl_min'], odsutan=i['odsutan'], ne_igra=i['ne_igra'], razlog=i.get('razlog'), s=s_))
+    return dict(kolo=kolo, napravljeno=t['napravljeno'], podaci_do=t['podaci_do'], utakmice=ut, igraci=out)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--kolo', type=int)
@@ -91,7 +114,8 @@ def main():
     sad = dt.datetime.now(dt.timezone.utc)
     buduce = sorted([u for u in utakmice() if u['utc'] > sad - dt.timedelta(hours=3)], key=lambda u: u['utc'])
     tekuce = buduce[0]['r'] if buduce else None
-    stranica = dict(osvezeno=sada, pravilo=sp['pravilo'], kladionice=IME_KL, kola=kola, unazad=sp['test'], tekuce=tekuce)
+    stranica = dict(osvezeno=sada, pravilo=sp['pravilo'], kladionice=IME_KL, kola=kola, unazad=sp['test'], tekuce=tekuce,
+                    igraci=igraci_kola(tekuce))
     sab = open(os.path.join(PROCENE, 'javno', 'sablon.html'), encoding='utf-8').read()
     js = json.dumps(stranica, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
     with open(os.path.join(PROCENE, 'javno', 'predlozi.html'), 'w', encoding='utf-8') as f:

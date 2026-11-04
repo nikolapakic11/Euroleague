@@ -3,144 +3,168 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap">
 <style>
-/* Raspored: naslov, učinak po strani, izbor kola i strane, predlozi po utakmici sa velikom oznakom PLUS/MINUS, pravila, provera unazad */
+/* Raspored: naslov, kartice (Predlozi, Istorija, Igrači, Kako radi), zajednički prekidači stavki i strane, sadržaj kartice */
 :root{
   --bg:#f3f5f7; --panel:#ffffff; --fg:#16202a; --muted:#5b6977; --line:#d9e0e7;
   --plus:#1d5aa8; --plus-soft:#e2ebf7; --minus:#c4501f; --minus-soft:#f8e6dc;
-  --dobro:#1f7a55; --dobro-soft:#e0f1e8; --lose:#b3302f; --lose-soft:#f8e1e0; --sivo-soft:#eceff3; --vatra:#e0531f; --vatra-in:#f6b13a; --warn:#9a6a00; --mat-lako:#1f7a55; --mat-lako-soft:#e0f1e8; --mat-tesko:#7a4b9a; --mat-tesko-soft:#efe6f6; --bar:#c9d3de; --bar-in:#8fa3b8;
+  --dobro:#1f7a55; --dobro-soft:#e0f1e8; --lose:#b3302f; --lose-soft:#f8e1e0; --sivo-soft:#eceff3;
+  --vatra:#e0531f; --vatra-in:#f6b13a; --warn:#9a6a00;
+  --mat-lako:#1f7a55; --mat-lako-soft:#e0f1e8; --mat-tesko:#7a4b9a; --mat-tesko-soft:#efe6f6;
+  --bar:#c9d3de; --bar-in:#8fa3b8;
   --f-disp:"Barlow Semi Condensed","Arial Narrow",system-ui,sans-serif;
   --f-body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#0e141a; --panel:#161d25; --fg:#e6ebf0; --muted:#95a3b0; --line:#29343f;
   --plus:#77a9ee; --plus-soft:#1a2a3f; --minus:#f08a55; --minus-soft:#3a2216;
-  --dobro:#5ec997; --dobro-soft:#14302a; --lose:#f07c7a; --lose-soft:#3a1c1c; --sivo-soft:#202a34; --vatra:#ff7a3d; --vatra-in:#ffc75a; --warn:#e3b54a; --mat-lako:#5ec997; --mat-lako-soft:#14302a; --mat-tesko:#c39be3; --mat-tesko-soft:#2c2138; --bar:#33414f; --bar-in:#5f7489; color-scheme:dark}}
+  --dobro:#5ec997; --dobro-soft:#14302a; --lose:#f07c7a; --lose-soft:#3a1c1c; --sivo-soft:#202a34;
+  --vatra:#ff7a3d; --vatra-in:#ffc75a; --warn:#e3b54a;
+  --mat-lako:#5ec997; --mat-lako-soft:#14302a; --mat-tesko:#c39be3; --mat-tesko-soft:#2c2138;
+  --bar:#33414f; --bar-in:#5f7489; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0e141a; --panel:#161d25; --fg:#e6ebf0; --muted:#95a3b0; --line:#29343f;
   --plus:#77a9ee; --plus-soft:#1a2a3f; --minus:#f08a55; --minus-soft:#3a2216;
-  --dobro:#5ec997; --dobro-soft:#14302a; --lose:#f07c7a; --lose-soft:#3a1c1c; --sivo-soft:#202a34; --vatra:#ff7a3d; --vatra-in:#ffc75a; --warn:#e3b54a; --mat-lako:#5ec997; --mat-lako-soft:#14302a; --mat-tesko:#c39be3; --mat-tesko-soft:#2c2138; --bar:#33414f; --bar-in:#5f7489; color-scheme:dark}
+  --dobro:#5ec997; --dobro-soft:#14302a; --lose:#f07c7a; --lose-soft:#3a1c1c; --sivo-soft:#202a34;
+  --vatra:#ff7a3d; --vatra-in:#ffc75a; --warn:#e3b54a;
+  --mat-lako:#5ec997; --mat-lako-soft:#14302a; --mat-tesko:#c39be3; --mat-tesko-soft:#2c2138;
+  --bar:#33414f; --bar-in:#5f7489; color-scheme:dark}
 body{background:var(--bg);color:var(--fg);font:16px/1.5 var(--f-body)}
-.wrap{max-width:880px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 56px;display:flex;flex-direction:column;gap:22px}
+.wrap{max-width:960px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 56px;display:flex;flex-direction:column;gap:18px}
 h1,h2,h3{font-family:var(--f-disp);margin:0;text-wrap:balance}
-h1{font-size:40px;font-weight:800;line-height:1.05}
+h1{font-size:38px;font-weight:800;line-height:1.05}
 h1 .p{color:var(--plus)} h1 .m{color:var(--minus)}
 h2{font-size:24px;font-weight:700}
 h3{font-size:18px;font-weight:600}
 p{margin:0;max-width:68ch}
 .lbl{font:600 12px var(--f-disp);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
-.uvod{display:flex;flex-direction:column;gap:10px}
+.uvod{display:flex;flex-direction:column;gap:8px}
 .uvod p{color:var(--muted)}
 .meta{color:var(--muted);font-size:14px}
-.ucinak{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-.uc{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:2px;border-top:4px solid var(--line)}
-.uc.plus{border-top-color:var(--plus)} .uc.minus{border-top-color:var(--minus)}
-.uc b{font:700 26px var(--f-disp);font-variant-numeric:tabular-nums}
-.uc small{color:var(--muted);font-size:13px}
-.kontrole{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between}
-.kola{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;min-width:0}
-.kola a{flex:0 0 auto;font:600 15px var(--f-disp);text-decoration:none;color:var(--fg);border:1px solid var(--line);background:var(--panel);border-radius:8px;padding:7px 14px}
-.kola a[aria-current="page"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+/* kartice */
+.tabovi{display:flex;gap:4px;border-bottom:1px solid var(--line);overflow-x:auto}
+.tabovi button{flex:0 0 auto;font:600 16px var(--f-disp);border:0;background:none;color:var(--muted);padding:10px 14px;border-bottom:3px solid transparent;cursor:pointer}
+.tabovi button[aria-selected="true"]{color:var(--fg);border-bottom-color:var(--fg)}
+/* prekidači */
+.kontrole{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.tg{font:600 14px var(--f-disp);border:1.5px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;padding:5px 12px;cursor:pointer}
+.tg[aria-pressed="true"]{border-color:var(--fg);color:var(--fg);background:var(--sivo-soft)}
+.tg[aria-pressed="true"]::before{content:"✓ "}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.seg button{font:600 15px var(--f-disp);border:0;background:var(--panel);color:var(--fg);padding:7px 14px;cursor:pointer}
+.seg button{font:600 14px var(--f-disp);border:0;background:var(--panel);color:var(--fg);padding:6px 12px;cursor:pointer}
 .seg button+button{border-left:1px solid var(--line)}
 .seg button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
 .seg button[data-f="o"][aria-pressed="true"]{background:var(--plus);color:#fff}
 .seg button[data-f="u"][aria-pressed="true"]{background:var(--minus);color:#fff}
-button:focus-visible,a:focus-visible{outline:2px solid var(--plus);outline-offset:2px}
-.kolo{display:flex;flex-direction:column;gap:14px}
-.kolo-zag{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 14px}
-.utak{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
-.utak-zag{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 12px;padding:11px 16px;border-bottom:1px solid var(--line)}
-.utak-zag h3 span{color:var(--muted);font-weight:500}
-.prazno{padding:12px 16px;color:var(--muted);font-size:14.5px}
-.pred{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:6px 14px;padding:12px 16px 12px 0;border-top:1px solid var(--line);align-items:center}
-.pred:first-of-type{border-top:0}
-.znak{align-self:stretch;width:86px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;font:800 15px var(--f-disp);letter-spacing:.06em;color:#fff;border-radius:0 8px 8px 0}
-.znak span{font-size:20px;line-height:1}
+.pol{display:inline-flex;align-items:center;gap:6px;font-size:14px}
+.pol select,.pol input{font:14px var(--f-body);padding:5px 8px;border:1px solid var(--line);border-radius:7px;background:var(--panel);color:var(--fg)}
+.pol input[type=number]{width:60px}
+.pol input[type=search]{width:160px}
+button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--plus);outline-offset:2px}
+/* učinak */
+.ucinak{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.uc{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px;display:flex;flex-direction:column;gap:2px;border-top:4px solid var(--line)}
+.uc.plus{border-top-color:var(--plus)} .uc.minus{border-top-color:var(--minus)}
+.uc b{font:700 24px var(--f-disp);font-variant-numeric:tabular-nums}
+.uc small{color:var(--muted);font-size:13px}
+.pl{color:var(--dobro)} .mi{color:var(--lose)}
+/* lista predloga */
+.lista{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.prazno{padding:14px 16px;color:var(--muted);font-size:14.5px}
+.pred{display:grid;grid-template-columns:auto auto minmax(0,1fr) auto;gap:6px 14px;padding:12px 16px 12px 0;border-top:1px solid var(--line);align-items:center}
+.pred:first-child{border-top:0}
+.rb{align-self:center;font:700 15px var(--f-disp);color:var(--muted);width:22px;text-align:right}
+.znak{align-self:stretch;width:80px;display:flex;flex-direction:column;align-items:center;justify-content:center;font:800 14px var(--f-disp);letter-spacing:.06em;color:#fff;border-radius:8px}
+.znak span{font-size:19px;line-height:1}
 .znak.o{background:var(--plus)} .znak.u{background:var(--minus)}
-.ko{display:flex;flex-direction:column;gap:2px;min-width:0}
+.ko{display:flex;flex-direction:column;gap:3px;min-width:0}
 .ko b{font-weight:600}
 .ko .t{font-size:13.5px;color:var(--muted)}
 .tip{font:700 19px var(--f-disp);font-variant-numeric:tabular-nums}
 .tip .o{color:var(--plus)} .tip .u{color:var(--minus)}
+.ost{font-size:13px;color:var(--muted);font-family:var(--f-body);font-weight:400}
 .brojke{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13.5px;color:var(--muted);font-variant-numeric:tabular-nums}
 .brojke b{color:var(--fg);font-weight:600}
 .status{justify-self:end;font:600 14px var(--f-disp);padding:5px 10px;border-radius:7px;white-space:nowrap;background:var(--sivo-soft);color:var(--muted);text-align:center}
 .status.da{background:var(--dobro-soft);color:var(--dobro)}
 .status.ne{background:var(--lose-soft);color:var(--lose)}
-.blok{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:10px}
-.blok ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
-.skrol{overflow-x:auto}
-table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;font-size:14.5px}
-th{font:600 12px var(--f-disp);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:right;padding:6px 10px;border-bottom:1px solid var(--line)}
-th:first-child,td:first-child{text-align:left}
-td{text-align:right;padding:6px 10px;border-bottom:1px solid var(--line)}
-tr:last-child td{border-bottom:0}
-.pl{color:var(--dobro)} .mi{color:var(--lose)}
-.vat{position:relative;display:inline-flex;align-items:center;vertical-align:-2px;margin-left:5px;cursor:help;border-radius:4px}
-.vat svg{width:15px;height:17px;display:block}
-.vat .tt{position:absolute;left:50%;bottom:calc(100% + 6px);transform:translateX(-50%);width:max-content;max-width:240px;background:var(--fg);color:var(--bg);font:12.5px/1.35 var(--f-body);padding:6px 9px;border-radius:6px;white-space:normal;text-align:left;z-index:5;pointer-events:none;opacity:0;visibility:hidden}
-.vat:hover .tt,.vat:focus .tt,.vat:focus-within .tt{opacity:1;visibility:visible}
-.vat:focus-visible{outline:2px solid var(--vatra);outline-offset:2px}
-.mat{display:inline-block;font:12px/1.3 var(--f-body);padding:2px 6px;border-radius:5px;margin-top:3px}
-.mat.lako{background:var(--mat-lako-soft);color:var(--mat-lako)}
-.mat.tesko{background:var(--mat-tesko-soft);color:var(--mat-tesko)}
-.pom{display:inline;font-size:11.5px;color:var(--warn);font-weight:600}
-.niv{display:inline-flex;align-items:baseline;gap:6px;font:700 13px var(--f-disp);letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:6px;width:max-content;border:1.5px solid currentColor}
-.niv b{font:800 17px var(--f-disp);letter-spacing:0}
+.niv{display:inline-flex;align-items:baseline;gap:6px;font:700 13px var(--f-disp);letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:6px;width:max-content;border:1.5px solid currentColor}
+.niv b{font:800 16px var(--f-disp);letter-spacing:0}
 .niv.o{color:var(--plus)} .niv.u{color:var(--minus)}
 .niv.o.jak{background:var(--plus);color:#fff;border-color:var(--plus)} .niv.u.jak{background:var(--minus);color:#fff;border-color:var(--minus)}
 .niv.o.solidan{background:var(--plus-soft)} .niv.u.solidan{background:var(--minus-soft)}
 .niv.slab{color:var(--muted);border-style:dashed}
-.ost{font-size:13px;color:var(--muted)}
-.sl{display:flex;flex-direction:column;gap:4px;margin-top:4px;max-width:420px}
-.sl svg{width:100%;height:48px;display:block}
+.sl{display:flex;flex-direction:column;gap:4px;margin-top:2px;max-width:420px}
+.sl svg{width:100%;height:46px;display:block}
 .tacke{display:flex;flex-wrap:wrap;gap:4px}
 .tac{font:12.5px/1.2 var(--f-body);padding:3px 6px;border-radius:5px;background:var(--sivo-soft);color:var(--muted);font-variant-numeric:tabular-nums}
 .tac.pr{background:var(--panel);border:1px solid var(--line);color:var(--fg)}
 .tac.ss{background:var(--dobro-soft);color:var(--dobro);font-weight:600}
-.soft{font-size:13.5px}
-.soft b{color:var(--dobro)}
-.napomena{font-size:13.5px;color:var(--muted);display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:16px}
-@media (max-width:600px){h1{font-size:32px}.ucinak{grid-template-columns:minmax(0,1fr)}.pred{grid-template-columns:auto minmax(0,1fr)}.status{grid-column:2;justify-self:start}.znak{width:64px;grid-row:span 2}}
+.soft{font-size:13.5px} .soft b{color:var(--dobro)}
+.vat{position:relative;display:inline-flex;align-items:center;vertical-align:-2px;margin-left:5px;cursor:help;border-radius:4px}
+.vat svg{width:15px;height:17px;display:block}
+.vat .tt{position:absolute;left:50%;bottom:calc(100% + 6px);transform:translateX(-50%);width:max-content;max-width:240px;background:var(--fg);color:var(--bg);font:12.5px/1.35 var(--f-body);padding:6px 9px;border-radius:6px;white-space:normal;text-align:left;z-index:5;pointer-events:none;opacity:0;visibility:hidden}
+.vat:hover .tt,.vat:focus .tt,.vat:focus-within .tt{opacity:1;visibility:visible}
+.mat{display:inline-block;font:12px/1.3 var(--f-body);padding:2px 6px;border-radius:5px;max-width:100%}
+td .mat{max-width:190px}
+.mat.lako{background:var(--mat-lako-soft);color:var(--mat-lako)}
+.mat.tesko{background:var(--mat-tesko-soft);color:var(--mat-tesko)}
+.pom{display:inline;font-size:11.5px;color:var(--warn);font-weight:600}
+/* tabele */
+.blok{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.blok ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.skrol{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;font-size:14px}
+th{font:600 12px var(--f-disp);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:left;padding:7px 9px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:7px 9px;border-bottom:1px solid var(--line);vertical-align:middle}
+tr:last-child td{border-bottom:0}
+th.sort{cursor:pointer;user-select:none}
+th.sort[aria-sort]{color:var(--fg)}
+td.num,th.num{text-align:right}
+.sm{font-size:12.5px;color:var(--muted)}
+.mini{display:inline-flex;gap:3px;align-items:center;font:800 11.5px var(--f-disp);letter-spacing:.04em;padding:2px 6px;border-radius:5px;width:max-content;white-space:nowrap}
+.mini.o{background:var(--plus-soft);color:var(--plus)} .mini.u{background:var(--minus-soft);color:var(--minus)}
+.ig{display:flex;flex-direction:column;gap:2px;min-width:140px}
+.st{display:flex;flex-direction:column;gap:2px;min-width:96px}
+.st b{font:700 17px var(--f-disp)}
+.kola-izbor{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}
+.kola-izbor button{flex:0 0 auto;font:600 14px var(--f-disp);border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:8px;padding:6px 12px;cursor:pointer}
+.kola-izbor button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.napomena{font-size:13.5px;color:var(--muted);display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:14px}
+@media (max-width:640px){h1{font-size:30px}.ucinak{grid-template-columns:minmax(0,1fr)}.pred{grid-template-columns:auto minmax(0,1fr);padding-left:12px}.rb{display:none}.znak{width:62px;grid-row:span 2}.status{grid-column:2;justify-self:start}}
 </style>
 
 <div class="wrap">
   <header class="uvod">
     <span class="lbl">Evroliga 2026/27 · igrači</span>
     <h1>Evroliga <span class="p">plus</span> i <span class="m">minus</span></h1>
-    <p>Predlozi po kolu za poene, skokove i asistencije igrača Evrolige, iz statističkog modela i kvota četiri kladionice: 4 do 6 po utakmici, sa verovatnoćom, nivoom sigurnosti i najboljom granicom u ponuđenom opsegu. PLUS je preko granice, MINUS je ispod. Svaki predlog ostaje zabeležen sa ishodom.</p>
+    <p>Predlozi za poene, skokove i asistencije igrača Evrolige, iz statističkog modela i kvota četiri kladionice. PLUS je preko granice, MINUS je ispod. Svaki predlog ostaje zabeležen sa ishodom.</p>
     <span class="meta" id="osvezeno"></span>
   </header>
 
-  <section style="display:flex;flex-direction:column;gap:8px" aria-labelledby="uc-n">
-    <span class="lbl" id="uc-n">Učinak od početka objavljivanja</span>
-    <div class="ucinak" id="ucinak"></div>
-  </section>
+  <nav class="tabovi" role="tablist" aria-label="Delovi stranice">
+    <button role="tab" data-t="predlozi" aria-selected="true">Predlozi</button>
+    <button role="tab" data-t="istorija" aria-selected="false">Istorija</button>
+    <button role="tab" data-t="igraci" aria-selected="false">Igrači</button>
+    <button role="tab" data-t="kako" aria-selected="false">Kako radi</button>
+  </nav>
 
-  <div class="kontrole">
-    <nav class="kola" id="kola" aria-label="Kola"></nav>
-    <div class="seg" id="filter" role="group" aria-label="Strana">
+  <div class="kontrole" id="kontrole">
+    <div class="chips" role="group" aria-label="Stavke">
+      <button class="tg" data-s="P" aria-pressed="true">Poeni</button>
+      <button class="tg" data-s="S" aria-pressed="true">Skokovi</button>
+      <button class="tg" data-s="A" aria-pressed="true">Asistencije</button>
+    </div>
+    <div class="seg" id="strana" role="group" aria-label="Strana">
       <button data-f="" aria-pressed="true">Sve</button><button data-f="o" aria-pressed="false">Plus</button><button data-f="u" aria-pressed="false">Minus</button>
     </div>
   </div>
-  <main id="kolo" class="kolo"></main>
 
-  <section class="blok">
-    <h2>Pravila</h2>
-    <ul id="pravilo"></ul>
-    <p class="meta">Model: prosek minuta igrača u ovoj sezoni, učinak po minutu u ovoj i prošloj sezoni, odbrana protivnika prema poziciji i tempo. Predlozi za utakmicu se zaključavaju kad utakmica počne.</p>
-  </section>
-
-  <section class="blok" id="unazad-blok" hidden>
-    <h2>Provera unazad</h2>
-    <p class="meta" id="unazad-opis"></p>
-    <div class="skrol"><table id="unazad"></table></div>
-  </section>
+  <main id="sadrzaj"></main>
 
   <footer class="napomena">
     <span>Samo za punoletne. Ovo nisu saveti za klađenje ni garancija ishoda; kvote i granice se menjaju posle objavljivanja. Igre na sreću mogu izazvati zavisnost: igrajte odgovorno i samo novcem koji možete da izgubite.</span>
-    <span>Povraćaj je računat na ravan ulog od jedne jedinice po predlogu, po kvoti iz trenutka objavljivanja. Igrač koji ne uđe u igru: predlog se ne računa.</span>
+    <span>Učinak je računat na ravan ulog od jedne jedinice po predlogu, po kvoti iz trenutka objavljivanja. Igrač koji ne uđe u igru: predlog se ne računa.</span>
   </footer>
 </div>
 
@@ -148,53 +172,42 @@ tr:last-child td{border-bottom:0}
 <script>
 (function(){
 const D=JSON.parse(document.getElementById('podaci').textContent);
-const S={S:'Skokovi',A:'Asistencije',P:'Poeni'};
+const S={P:'Poeni',S:'Skokovi',A:'Asistencije'}, SM={P:'poeni',S:'skokovi',A:'asist.'};
 const z=(x,d=1)=>Number(x).toLocaleString('sr-RS',{minimumFractionDigits:d,maximumFractionDigits:d});
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const zarez=z;
-const SNAZ={P:'poena',S:'skokova',A:'asistencija'};
-function vatraIkona(v,s){if(!v)return '';const t=`U formi: poslednje 3 utakmice ${v.l3.join(', ')} ${SNAZ[s]} (prosek ${zarez(v.a3)}), a ranije ${zarez(v.ap)}${v.pct!=null?' (+'+v.pct+'%)':''}. Samo informacija: forma je već u proceni, a u proveri nije sama predviđala ishod.`;
- return `<span class="vat" tabindex="0" role="img" aria-label="${esc(t)}">${'<svg viewBox="0 0 16 18" aria-hidden="true"><path d="M8.6 1c.4 2.6-1 3.9-2.3 5.3C5 7.7 3.5 9.2 3.5 11.7 3.5 14.8 5.6 17 8.3 17c2.9 0 4.9-2.2 4.9-5.2 0-2.2-1-3.8-2.1-5.1-.3 1.2-.9 2-1.8 2.4.6-2.9-.1-5.6-.7-8.1z" fill="var(--vatra)"/><path d="M8.4 9.3c.2 1.4-.6 2-1.2 2.7-.5.5-.9 1.1-.9 1.9 0 1.3.9 2.2 2 2.2 1.2 0 2.1-.9 2.1-2.2 0-1.6-1-2.9-2-4.6z" fill="var(--vatra-in)"/></svg>'}<span class="tt">${esc(t)}</span></span>`}
-const POZM={G:'bekovima',F:'krilima',C:'centrima'}, SNM={P:'poena',S:'skokova',A:'asistencija'};
-function matchup(of,pos,s){if(of==null||Math.abs(of-1)<0.12)return '';const p=Math.round((of-1)*100);
- return `<span class="mat ${p>0?'lako':'tesko'}" title="Koliko ovaj protivnik dozvoljava ${POZM[pos]||'igračima na ovoj poziciji'} u ${SNM[s]}, u odnosu na prosek lige">protivnik ${p>0?'dozvoljava':'brani'} ${POZM[pos]||''} ${p>0?'+':'−'}${Math.abs(p)}% ${SNM[s]}</span>`}
-function pomeraj(z){if(z.l0==null)return '';const g=z.l>z.l0;return `<span class="pom" title="Glavna granica se pomerila od prvog snimka tog dana">granica ${zarez(z.l0)} → ${zarez(z.l)} ${g?'↑':'↓'}</span>`}
 const jed=x=>(x>=0?'+':'−')+z(Math.abs(x),2);
 const proc=(d,n)=>n?((d>=0?'+':'−')+Math.abs(Math.round(d/n*1000)/10).toLocaleString('sr-RS')+'%'):'';
 const strana=p=>p.strana||'u';
-let filt='';
+const IMEKL=k=>esc((D.kladionice&&D.kladionice[k])||k);
+const POZ={G:'bek',F:'krilo',C:'centar'};
+const NIVO_OPIS={jak:'verovatnoća bar 60%',solidan:'verovatnoća 55 do 60%','nagoveštaj':'ispod 55%: verovatnije od suprotnog, ali tesno',slab:'dopuna do 4 po utakmici, ispod praga'};
+let st={tab:'predlozi',stavke:{P:true,S:true,A:true},f:'',kolo:null,sort:'min',opad:true,tim:'',poz:'',minMin:0,q:'',samoPred:false};
+try{const s=JSON.parse(localStorage.getItem('ev-pm-filteri')||'null');if(s&&s.stavke)st.stavke=s.stavke}catch(e){}
+function sacuvaj(){try{localStorage.setItem('ev-pm-filteri',JSON.stringify({stavke:st.stavke}))}catch(e){}}
+const ok=p=>st.stavke[p.s]&&(!st.f||strana(p)===st.f);
 
-document.getElementById('osvezeno').textContent='Osveženo '+D.osvezeno;
-const pr=D.pravilo;
-document.getElementById('pravilo').innerHTML=[
- 'Za svaku utakmicu 4 do 6 predloga, najviše jedan po igraču, poređanih po verovatnoći. Verovatnoća spaja procenu modela i kvote kladionica i podešena je prema stvarnim ishodima ranijih granica.',
- '<b>MINUS</b> (ispod) ulazi sa verovatnoćom bar '+Math.round(pr.prag_minus*100)+'%, <b>PLUS</b> (preko) sa bar '+Math.round(pr.prag_plus*100)+'%. PLUS ima niži prag jer kladionice u granicama za preko traže više nego što ishodi opravdavaju; zato do '+pr.plus_min+' PLUS predloga po utakmici dobija mesto unapred kad ih ima.',
- 'Nivo pokazuje koliko je predlog siguran: <b>jak</b> (bar 60%), <b>solidan</b> (55 do 60%), <b>nagoveštaj</b> (ispod 55%, verovatnije nego suprotno, ali tesno) i <b>slab</b> (dopuna do 4 po utakmici, ispod praga).',
- 'Kvota najmanje '+z(pr.kvota_min,2)+'. Navedena je kladionica sa najboljom kvotom i ostale sa istom granicom.',
- 'Klizač ispod predloga: siva traka je naša procena (10. do 90. percentil, tamniji deo 25. do 75., crta je sredina), tačke su granice koje kladionice nude za tu stranu (glavne, alternativne i lestvice „N+“). <b>Soft spot</b> je granica sa najboljim odnosom verovatnoće i kvote među onima koje prelaze 50%.',
- 'Igrač mora imati bar 3 utakmice ove sezone i da je igrao sve 3 poslednje utakmice svog tima. Plamen pored imena znači da je u formi u toj stavci (samo informacija, forma je već u proceni).'
-].map(t=>'<li>'+t+'</li>').join('');
-
-function zbir(P){const g=P.filter(p=>p.prosao===true||p.prosao===false);const d=g.reduce((a,p)=>a+(p.prosao?p.kvota-1:-1),0);return {n:g.length,pr:g.filter(p=>p.prosao).length,d}}
-const sve=D.kola.flatMap(k=>k.predlozi);
-const tile=(kl,ime,P)=>{const s=zbir(P);return `<div class="uc ${kl}"><span class="lbl">${ime}</span>${s.n?`<b class="${s.d>=0?'pl':'mi'}">${jed(s.d)} jed.</b><small>${s.pr} od ${s.n} prošlo · ${proc(s.d,s.n)}</small>`:`<b>—</b><small>još nema ishoda</small>`}</div>`};
-document.getElementById('ucinak').innerHTML=tile('plus','Plus',sve.filter(p=>strana(p)==='o'))+tile('minus','Minus',sve.filter(p=>strana(p)==='u'))+tile('','Ukupno',sve);
-
+const SNAZ={P:'poena',S:'skokova',A:'asistencija'};
+function vatraIkona(v,s){if(!v)return '';const t=`U formi: poslednje 3 utakmice ${v.l3.join(', ')} ${SNAZ[s]} (prosek ${z(v.a3)}), a ranije ${z(v.ap)}${v.pct!=null?' (+'+v.pct+'%)':''}. Samo informacija: forma je već u proceni.`;
+ return `<span class="vat" tabindex="0" role="img" aria-label="${esc(t)}"><svg viewBox="0 0 16 18" aria-hidden="true"><path d="M8.6 1c.4 2.6-1 3.9-2.3 5.3C5 7.7 3.5 9.2 3.5 11.7 3.5 14.8 5.6 17 8.3 17c2.9 0 4.9-2.2 4.9-5.2 0-2.2-1-3.8-2.1-5.1-.3 1.2-.9 2-1.8 2.4.6-2.9-.1-5.6-.7-8.1z" fill="var(--vatra)"/><path d="M8.4 9.3c.2 1.4-.6 2-1.2 2.7-.5.5-.9 1.1-.9 1.9 0 1.3.9 2.2 2 2.2 1.2 0 2.1-.9 2.1-2.2 0-1.6-1-2.9-2-4.6z" fill="var(--vatra-in)"/></svg><span class="tt">${esc(t)}</span></span>`}
+const POZM={G:'bekovima',F:'krilima',C:'centrima'};
+function matchup(of,pos,s){if(of==null||Math.abs(of-1)<0.12)return '';const p=Math.round((of-1)*100);
+ return `<span class="mat ${p>0?'lako':'tesko'}" title="Koliko ovaj protivnik dozvoljava ${POZM[pos]||'igračima na ovoj poziciji'} u ${SNAZ[s]}, u odnosu na prosek lige">protivnik ${p>0?'dozvoljava':'brani'} ${POZM[pos]||''} ${p>0?'+':'−'}${Math.abs(p)}% ${SNAZ[s]}</span>`}
+function pomeraj(x){if(x.l0==null)return '';return `<span class="pom" title="Glavna granica se pomerila od prvog snimka tog dana">granica ${z(x.l0)} → ${z(x.l)} ${x.l>x.l0?'↑':'↓'}</span>`}
 function status(p){
   if(p.nije_igrao)return '<span class="status">nije igrao</span>';
   if(p.prosao===true)return `<span class="status da">prošao · ${p.ishod}</span>`;
   if(p.prosao===false)return `<span class="status ne">pao · ${p.ishod}</span>`;
   return '<span class="status">čeka</span>';
 }
-const IMEKL=k=>esc((D.kladionice&&D.kladionice[k])||k);
-const NIVO_OPIS={jak:'verovatnoća bar 60%',solidan:'verovatnoća 55 do 60%','nagoveštaj':'manje sigurno, ali verovatnije od suprotnog',slab:'dopuna do 4 po utakmici, ispod praga'};
+function zbir(P){const g=P.filter(p=>p.prosao===true||p.prosao===false);const d=g.reduce((a,p)=>a+(p.prosao?p.kvota-1:-1),0);return {n:g.length,pr:g.filter(p=>p.prosao).length,d}}
+const tile=(kl,ime,P)=>{const s=zbir(P);return `<div class="uc ${kl}"><span class="lbl">${ime}</span>${s.n?`<b class="${s.d>=0?'pl':'mi'}">${jed(s.d)} jed.</b><small>${s.pr} od ${s.n} prošlo · ${proc(s.d,s.n)}</small>`:`<b>—</b><small>još nema ishoda</small>`}</div>`};
+const utak=(k,g)=>(k.utakmice||[]).find(u=>u.g===g)||{};
+
 function klizac(p){
-  const o=strana(p)==='o', T=(p.opseg||[]).filter(t=>t.k>=1.2), q=p.q||[0,0,0,0,0];
+  const o=strana(p)==='o', T=(p.opseg||[]).filter(t=>t.k>=1.2), q=p.q;
   if(!q||!T.length)return '';
   let lo=Math.min(q[0],...T.map(t=>t.l)), hi=Math.max(q[4],...T.map(t=>t.l)); lo=Math.max(0,Math.floor(lo-1)); hi=Math.ceil(hi+1);
-  const X=v=>10+300*(v-lo)/Math.max(1,hi-lo);
-  const boja=o?'var(--plus)':'var(--minus)';
-  const ss=p.soft;
+  const X=v=>10+300*(v-lo)/Math.max(1,hi-lo), boja=o?'var(--plus)':'var(--minus)', ss=p.soft;
   let g=`<line x1="10" x2="310" y1="30" y2="30" stroke="var(--line)" stroke-width="2"/>
    <rect x="${X(q[0])}" y="25" width="${Math.max(2,X(q[4])-X(q[0]))}" height="10" rx="5" fill="var(--bar)"/>
    <rect x="${X(q[1])}" y="25" width="${Math.max(2,X(q[3])-X(q[1]))}" height="10" rx="5" fill="var(--bar-in)"/>
@@ -202,55 +215,132 @@ function klizac(p){
   for(const t of T){const jeP=t.l===p.l, jeS=ss&&t.l===ss.l;
     g+=`<circle cx="${X(t.l)}" cy="30" r="${jeS?7:jeP?6:4}" fill="${t.p>=0.5?boja:'var(--panel)'}" stroke="${t.p>=0.5?boja:'var(--muted)'}" stroke-width="${jeS?3:1.5}"${jeS?' stroke-opacity=".45"':''}><title>${o?'preko':'ispod'} ${z(t.l)} · ${z(t.k,2)} ${IMEKL(t.kl)} · ${Math.round(t.p*100)}%</title></circle>`;}
   if(ss)g+=`<text x="${Math.min(300,Math.max(20,X(ss.l)))}" y="12" text-anchor="middle" font-size="11" font-weight="600" fill="var(--dobro)">soft spot ${z(ss.l)}</text>`;
-  g+=`<text x="10" y="48" font-size="10.5" fill="var(--muted)">${lo}</text><text x="310" y="48" font-size="10.5" text-anchor="end" fill="var(--muted)">${hi}</text>`;
-  const tacke=T.map(t=>`<span class="tac${ss&&t.l===ss.l?' ss':t.l===p.l?' pr':''}">${o?'+':'−'} ${z(t.l)}${t.vrsta==='lestvica'?' ('+t.n+'+)':''} · ${z(t.k,2)} · ${Math.round(t.p*100)}%</span>`).join('');
-  let st='';
-  if(ss)st=ss.isti?`<span class="soft">Granica predloga je i <b>soft spot</b> u ponuđenom opsegu.</span>`
-    :`<span class="soft"><b>Soft spot:</b> ${o?'preko':'ispod'} ${z(ss.l)}${ss.vrsta==='lestvica'?' ('+ss.n+'+)':''} · ${z(ss.k,2)} kod ${IMEKL(ss.kl)} · ${Math.round(ss.p*100)}% po našoj proceni</span>`;
-  return `<div class="sl"><svg viewBox="0 0 320 52" role="img" aria-label="Raspon procene i ponuđene granice">${g}</svg><div class="tacke">${tacke}</div>${st}</div>`;
+  g+=`<text x="10" y="46" font-size="10.5" fill="var(--muted)">${lo}</text><text x="310" y="46" font-size="10.5" text-anchor="end" fill="var(--muted)">${hi}</text>`;
+  const tacke=T.length>1?`<div class="tacke">${T.map(t=>`<span class="tac${ss&&t.l===ss.l?' ss':t.l===p.l?' pr':''}">${o?'+':'−'} ${z(t.l)}${t.vrsta==='lestvica'?' ('+t.n+'+)':''} · ${z(t.k,2)} · ${Math.round(t.p*100)}%</span>`).join('')}</div>`:'';
+  let s='';
+  if(ss&&!ss.isti)s=`<span class="soft"><b>Soft spot:</b> ${o?'preko':'ispod'} ${z(ss.l)}${ss.vrsta==='lestvica'?' ('+ss.n+'+)':''} · ${z(ss.k,2)} kod ${IMEKL(ss.kl)} · ${Math.round(ss.p*100)}% po našoj proceni</span>`;
+  return `<div class="sl"><svg viewBox="0 0 320 50" role="img" aria-label="Raspon procene i ponuđene granice">${g}</svg>${tacke}${s}</div>`;
 }
-function kartica(p){
-  const o=strana(p)==='o', nv=p.nivo||'jak', pp=Math.round((p.pp??p.pu)*100);
-  const ost=(p.ostale||[]).length?`<span class="ost">ista granica: ${p.ostale.map(t=>IMEKL(t.kl)+' '+z(t.k,2)).join(', ')}</span>`:'';
-  const prednost=p.ev>=0.05?`<span>prednost <b>+${Math.round(p.ev*100)}%</b></span>`:'';
-  return `<div class="pred"><div class="znak ${o?'o':'u'}"><span>${o?'▲':'▼'}</span>${o?'PLUS':'MINUS'}</div>
-   <div class="ko"><b>${esc(p.ime)}${vatraIkona(p.vatra,p.s)}</b><span class="t">${p.tim} protiv ${p.prot}</span>
-   <span class="tip">${S[p.s]} <span class="${o?'o':'u'}">${o?'preko':'ispod'} ${z(p.l)}</span> · ${z(p.kvota,2)} <span class="ost">${IMEKL(p.kl)}</span></span>
+function kartica(p,rb,k){
+  const o=strana(p)==='o', nv=p.nivo||'jak', pp=Math.round((p.pp??p.pu)*100), u=utak(k,p.g);
+  const ost=(p.ostale||[]).length?` <span class="ost">· isto: ${p.ostale.map(t=>IMEKL(t.kl)+' '+z(t.k,2)).join(', ')}</span>`:'';
+  return `<div class="pred"><span class="rb">${rb}</span><div class="znak ${o?'o':'u'}"><span>${o?'▲':'▼'}</span>${o?'PLUS':'MINUS'}</div>
+   <div class="ko"><b>${esc(p.ime)}${vatraIkona(p.vatra,p.s)}</b><span class="t">${p.tim} protiv ${p.prot} · ${esc(u.vreme||p.vreme||'')}</span>
+   <span class="tip">${S[p.s]} <span class="${o?'o':'u'}">${o?'preko':'ispod'} ${z(p.l)}</span> · ${z(p.kvota,2)} <span class="ost">${IMEKL(p.kl)}</span>${ost}</span>
    <span class="niv ${o?'o':'u'} ${nv}" title="${esc(NIVO_OPIS[nv]||'')}">${nv} <b>${pp}%</b></span>
-   ${ost}
-   <span class="brojke"><span>očekivano <b>${z(p.mu)}</b></span>${prednost}${pomeraj(p)}</span>${matchup(p.of,p.pos,p.s)}
+   <span class="brojke"><span>očekivano <b>${z(p.mu)}</b></span>${p.ev>=0.05?`<span>prednost <b>+${Math.round(p.ev*100)}%</b></span>`:''}${pomeraj(p)}</span>${matchup(p.of,p.pos,p.s)}
    ${klizac(p)}</div>${status(p)}</div>`;
 }
-let tekuce=null;
-function crtajKolo(n){
-  const k=D.kola.find(x=>x.kolo===n)||D.kola[D.kola.length-1]; if(!k){document.getElementById('kolo').innerHTML='<p class="meta">Još nema objavljenih kola.</p>';return}
-  tekuce=k.kolo;
-  document.querySelectorAll('#kola a').forEach(a=>a.setAttribute('aria-current',+a.dataset.k===k.kolo?'page':'false'));
-  const P=k.predlozi.filter(p=>!filt||strana(p)===filt);
-  const np=k.predlozi.filter(p=>strana(p)==='o').length, nm=k.predlozi.length-np;
-  const nj=k.predlozi.filter(p=>p.nivo==='jak').length;
-  let h=`<div class="kolo-zag"><h2>${k.kolo}. kolo</h2><span class="meta">${np} plus · ${nm} minus · ${nj} jakih · osveženo ${esc(k.osvezeno||'')}</span></div>`;
-  for(const u of (k.utakmice||[])){
-    const pp=P.filter(p=>p.g===u.g).sort((a,b)=>(a.rang||99)-(b.rang||99)||(b.pp-a.pp));
-    h+=`<section class="utak"><div class="utak-zag"><h3>${u.dom} <span>–</span> ${u.gost}</h3><span class="meta">${esc(u.vreme)}</span></div>`;
-    if(!pp.length)h+=`<div class="prazno">${u.ponude&&u.ponude.length?(filt?'Nema predloga za ovu stranu.':'Nijedna granica ne prolazi pravila.'):'Ponude se kače na dan utakmice; predlozi stižu tada.'}</div>`;
-    h+=pp.map(kartica).join('')+'</section>';
-  }
-  document.getElementById('kolo').innerHTML=h;
-}
-document.getElementById('kola').innerHTML=D.kola.map(k=>`<a href="#kolo-${k.kolo}" data-k="${k.kolo}">${k.kolo}. kolo</a>`).join('');
-document.querySelectorAll('#filter button').forEach(b=>b.onclick=()=>{filt=b.dataset.f;document.querySelectorAll('#filter button').forEach(x=>x.setAttribute('aria-pressed',x===b));crtajKolo(tekuce)});
-function izHasha(){const m=location.hash.match(/^#kolo-(\d+)$/);crtajKolo(m?+m[1]:(D.tekuce&&D.kola.some(k=>k.kolo===D.tekuce)?D.tekuce:(D.kola.length?D.kola[D.kola.length-1].kolo:0)))}
-window.addEventListener('hashchange',izHasha); izHasha();
 
-const U=D.unazad;
-if(U&&U.kola_7_9){
-  document.getElementById('unazad-blok').hidden=false;
-  document.getElementById('unazad-opis').textContent='Isto pravilo na ranijim ponudama (Admiral i MaxBet, jedna kladionica po danu, samo glavne granice): '+U.kola_7_9.utakmica+' utakmica u kolima 7 do 9, koje podešavanje nije videlo, i '+U.kola_4_6.utakmica+' u kolima 4 do 6, na kojima je spajanje podešeno. Pravila su birana gledajući ove podatke, pa su brojke gornja granica; pravi test su kola od objavljivanja.';
-  const A=U.kola_7_9, B2=U.kola_4_6;
-  const cel=x=>x&&x.n?`${x.n} · ${x.prosao} (${Math.round(x.prosao/x.n*100)}%) · <span class="${x.dobit>=0?'pl':'mi'}">${jed(x.dobit)} (${proc(x.dobit,x.n)})</span>`:'—';
-  const redovi=[['Ukupno',A.ukupno,B2.ukupno],['Minus',A.po_strani.minus,B2.po_strani.minus],['Plus',A.po_strani.plus,B2.po_strani.plus],['Jak',A.po_nivou['jak'],B2.po_nivou['jak']],['Solidan',A.po_nivou['solidan'],B2.po_nivou['solidan']],['Nagoveštaj',A.po_nivou['nagoveštaj'],B2.po_nivou['nagoveštaj']]];
-  document.getElementById('unazad').innerHTML='<tr><th>Skup</th><th>Kola 7 do 9: predloga · prošlo · jedinica</th><th>Kola 4 do 6</th></tr>'+redovi.map(r=>`<tr><td>${r[0]}</td><td>${cel(r[1])}</td><td>${cel(r[2])}</td></tr>`).join('');
+// ---------- Predlozi (naslovna) ----------
+function tekuceKolo(){return D.kola.find(k=>k.kolo===D.tekuce)||D.kola[D.kola.length-1]}
+function crtajPredloge(){
+  const k=tekuceKolo(); if(!k)return '<p class="prazno">Još nema objavljenih kola.</p>';
+  const sve=D.kola.flatMap(x=>x.predlozi);
+  const P=k.predlozi.filter(p=>p.nivo!=='slab'&&ok(p)).sort((a,b)=>(b.pp??0)-(a.pp??0));
+  const slabih=k.predlozi.filter(p=>p.nivo==='slab').length;
+  const bezPonude=(k.utakmice||[]).filter(u=>!(u.ponude||[]).length).length;
+  let h=`<section style="display:flex;flex-direction:column;gap:8px"><span class="lbl">Učinak od početka objavljivanja</span><div class="ucinak">${tile('plus','Plus',sve.filter(p=>strana(p)==='o'))}${tile('minus','Minus',sve.filter(p=>strana(p)==='u'))}${tile('','Ukupno',sve)}</div></section>`;
+  h+=`<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 12px;margin-top:6px"><h2>${k.kolo}. kolo · najbolji predlozi</h2><span class="meta">${P.length} prikazano, od najboljeg ka najslabijem${bezPonude?` · ${bezPonude} utakmica još čeka ponude`:''}</span></div>`;
+  h+=`<div class="lista">${P.length?P.map((p,i)=>kartica(p,i+1,k)).join(''):`<div class="prazno">${k.predlozi.length?'Nema predloga za izabrane stavke i stranu.':'Ponude se kače na dan utakmice; predlozi stižu tada.'}</div>`}</div>`;
+  if(slabih)h+=`<p class="meta">Još ${slabih} slabijih predloga (dopuna do 4 po utakmici) nije prikazano ovde; vide se u kartici Istorija.</p>`;
+  return h;
 }
+
+// ---------- Istorija ----------
+function crtajIstoriju(){
+  const kola=D.kola.filter(k=>k.predlozi.length).sort((a,b)=>b.kolo-a.kolo);
+  if(!kola.length)return '<p class="prazno">Još nema zabeleženih predloga.</p>';
+  if(st.kolo!=='sve'&&!kola.some(k=>k.kolo===st.kolo))st.kolo=kola[0].kolo;
+  let h=`<div class="kola-izbor" role="group" aria-label="Kolo">${kola.map(k=>`<button data-k="${k.kolo}" aria-pressed="${st.kolo===k.kolo}">${k.kolo}. kolo</button>`).join('')}<button data-k="sve" aria-pressed="${st.kolo==='sve'}">Sva kola</button></div>`;
+  // pregled po kolu
+  h+=`<div class="blok"><h3>Pregled po kolima</h3><div class="skrol"><table><tr><th>Kolo</th><th class="num">Predloga</th><th class="num">Plus</th><th class="num">Minus</th><th class="num">Jaki</th><th class="num">Ukupno</th></tr>`+
+    kola.map(k=>{const P=k.predlozi.filter(ok);const c=(X)=>{const s=zbir(X);return s.n?`${s.pr}/${s.n} · <span class="${s.d>=0?'pl':'mi'}">${jed(s.d)}</span>`:'<span class="sm">čeka</span>'};
+      return `<tr><td>${k.kolo}.</td><td class="num">${P.length}</td><td class="num">${c(P.filter(p=>strana(p)==='o'))}</td><td class="num">${c(P.filter(p=>strana(p)==='u'))}</td><td class="num">${c(P.filter(p=>p.nivo==='jak'))}</td><td class="num">${c(P)}</td></tr>`}).join('')+`</table></div></div>`;
+  const izabrana=st.kolo==='sve'?kola:kola.filter(k=>k.kolo===st.kolo);
+  for(const k of izabrana){
+    const P=k.predlozi.filter(ok).sort((a,b)=>(a.g-b.g)||((b.pp??0)-(a.pp??0)));
+    h+=`<div class="blok"><h3>${k.kolo}. kolo · ${P.length} predloga</h3><div class="skrol"><table><tr><th>Utakmica</th><th>Igrač</th><th>Predlog</th><th class="num">Kvota</th><th>Nivo</th><th>Ishod</th></tr>`+
+      P.map(p=>{const u=utak(k,p.g),o=strana(p)==='o';return `<tr><td><span class="sm">${u.dom||''}–${u.gost||''}<br>${esc(u.vreme||'')}</span></td><td>${esc(p.ime)}<br><span class="sm">${p.tim}</span></td><td><span class="mini ${o?'o':'u'}">${o?'▲ PLUS':'▼ MINUS'}</span> ${SM[p.s]} ${o?'preko':'ispod'} ${z(p.l)}</td><td class="num">${z(p.kvota,2)}<br><span class="sm">${IMEKL(p.kl)}</span></td><td>${p.nivo||''} ${p.pp!=null?Math.round(p.pp*100)+'%':''}</td><td>${status(p)}</td></tr>`}).join('')+
+      `</table></div></div>`;
+  }
+  return h;
+}
+
+// ---------- Igrači ----------
+function linIzvod(x){if(!x.lin||!x.lin.length)return '';const ls=[...new Set(x.lin.map(l=>l[1]))].sort((a,b)=>a-b);return `<span class="sm">granica ${ls.map(l=>z(l)).join(' / ')}</span>`}
+function crtajIgrace(){
+  const I=D.igraci; if(!I)return '<p class="prazno">Podaci o igračima tekućeg kola još nisu spremni.</p>';
+  const akt=['P','S','A'].filter(s=>st.stavke[s]);
+  const timovi=[...new Set(I.igraci.map(i=>i.tim))].sort();
+  let h=`<div class="kontrole"><label class="pol">Tim <select id="fTim"><option value="">svi</option>${timovi.map(t=>`<option${st.tim===t?' selected':''}>${t}</option>`).join('')}</select></label>
+   <label class="pol">Pozicija <select id="fPoz"><option value="">sve</option>${['G','F','C'].map(p=>`<option value="${p}"${st.poz===p?' selected':''}>${POZ[p]}</option>`).join('')}</select></label>
+   <label class="pol">Najmanje minuta <input type="number" id="fMin" min="0" max="40" value="${st.minMin}"></label>
+   <label class="pol"><input type="checkbox" id="fPred"${st.samoPred?' checked':''}> samo sa predlogom</label>
+   <label class="pol"><input type="search" id="fQ" placeholder="Igrač" value="${esc(st.q)}" aria-label="Traži igrača"></label></div>`;
+  let R=I.igraci.filter(i=>(!st.tim||i.tim===st.tim)&&(!st.poz||i.pos===st.poz)&&i.min>=st.minMin&&(!st.q||i.ime.toLowerCase().includes(st.q.toLowerCase())));
+  if(st.samoPred)R=R.filter(i=>akt.some(s=>i.s[s].pred&&(!st.f||i.s[s].pred.strana===st.f)));
+  const key=i=>{const k=st.sort;if(k==='min')return i.min;if(k==='ime')return i.ime;if(k==='g')return i.g;
+    if(k[0]==='r'){const q=i.s[k.slice(1)].q;return q[4]-q[0]} return i.s[k].mu};
+  R.sort((a,b)=>{const A=key(a),B=key(b);const c=typeof A==='string'?A.localeCompare(B,'sr'):A-B;return st.opad?-c:c});
+  const th=(k,t,cl='')=>`<th class="sort ${cl}" data-k="${k}"${st.sort===k?` aria-sort="${st.opad?'descending':'ascending'}"`:''}>${t}${st.sort===k?(st.opad?' ↓':' ↑'):''}</th>`;
+  h+=`<p class="meta">${R.length} igrača ${I.kolo}. kola. Očekivano i raspon (10. do 90. percentil) iz modela; klik na naslov kolone sortira, drugi klik menja smer.</p>`;
+  h+=`<div class="lista"><div class="skrol"><table><tr>${th('ime','Igrač')}${th('g','Utakmica')}${th('min','Minuti','num')}${akt.map(s=>th(s,S[s])).join('')}</tr>`+
+    R.map(i=>{const u=I.utakmice.find(x=>x.g===i.g)||{};
+      const zn=[];if(i.ne_igra)zn.push(`<span class="mini u">${i.razlog==='nije u sastavu'?'nije u sastavu':'ne igra'}</span>`);if(i.odsutan)zn.push(`<span class="sm">nije igrao ${i.odsutan} od posl. 3</span>`);
+      const cels=akt.map(s=>{const x=i.s[s];if(i.ne_igra)return '<td class="sm">—</td>';
+        const pr=x.pred&&(!st.f||x.pred.strana===st.f)?`<span class="mini ${x.pred.strana}">${x.pred.strana==='o'?'▲ PLUS':'▼ MINUS'} ${z(x.pred.l)} · ${Math.round(x.pred.pp*100)}%</span>`:'';
+        return `<td><div class="st"><b>${z(x.mu)}${vatraIkona(x.vatra,s)}</b><span class="sm">${x.q[0]}–${x.q[4]} · prosek ${z(x.pros)}</span>${linIzvod(x)}${pr}${matchup(x.of,i.pos,s)}</div></td>`}).join('');
+      return `<tr><td><div class="ig"><b>${esc(i.ime)}</b><span class="sm">${i.tim} · ${POZ[i.pos]||i.pos}</span>${zn.join(' ')}</div></td><td><span class="sm">${u.dom||''}–${u.gost||''}<br>${esc(u.vreme||'')}</span></td><td class="num"><b>${z(i.min)}</b><br><span class="sm">${i.n} utak.</span></td>${cels}</tr>`}).join('')+
+    `</table></div></div>`;
+  return h;
+}
+
+// ---------- Kako radi ----------
+function crtajKako(){
+  const pr=D.pravilo||{};
+  let h=`<div class="blok"><h2>Pravila</h2><ul>${[
+   'Za svaku utakmicu 4 do 6 predloga, najviše jedan po igraču. Na naslovnoj su prikazani svi osim slabih, poređani od najboljeg ka najslabijem.',
+   'Verovatnoća spaja procenu modela i kvote kladionica i podešena je prema stvarnim ishodima ranijih granica. MINUS ulazi sa bar '+Math.round((pr.prag_minus||.53)*100)+'%, PLUS sa bar '+Math.round((pr.prag_plus||.5)*100)+'%, jer kladionice u granicama za preko traže više nego što ishodi opravdavaju; do '+(pr.plus_min||2)+' PLUS predloga po utakmici dobija mesto unapred kad ih ima.',
+   'Nivo: <b>jak</b> (bar 60%), <b>solidan</b> (55 do 60%), <b>nagoveštaj</b> (ispod 55%, verovatnije nego suprotno, ali tesno), <b>slab</b> (dopuna do 4 po utakmici, ispod praga; samo u istoriji).',
+   'Kvota najmanje '+z(pr.kvota_min||1.5,2)+'. Navedena je kladionica sa najboljom kvotom i ostale sa istom granicom.',
+   'Klizač: siva traka je naša procena (10. do 90. percentil, tamniji deo 25. do 75., crta je sredina), tačke su granice koje kladionice nude za tu stranu (glavne, alternativne i lestvice „N+“). <b>Soft spot</b> je granica sa najboljim odnosom verovatnoće i kvote među onima koje prelaze 50%.',
+   'Model: prosek minuta igrača u ovoj sezoni, učinak po minutu u ovoj i prošloj sezoni, odbrana protivnika prema poziciji i tempo. Igrač mora imati bar 3 utakmice ove sezone i da je igrao sve 3 poslednje utakmice svog tima.',
+   'Plamen pored imena: igrač je u formi u toj stavci (poslednje 3 utakmice bar 30% iznad ranijeg proseka). Samo informacija, forma je već u proceni.',
+   'Predlozi za utakmicu se zaključavaju kad utakmica počne i posle toga se ne menjaju.'
+  ].map(t=>'<li>'+t+'</li>').join('')}</ul></div>`;
+  const U=D.unazad;
+  if(U&&U.kola_7_9){const A=U.kola_7_9,B=U.kola_4_6;
+    const cel=x=>x&&x.n?`${x.n} · ${x.prosao} (${Math.round(x.prosao/x.n*100)}%) · <span class="${x.dobit>=0?'pl':'mi'}">${jed(x.dobit)} (${proc(x.dobit,x.n)})</span>`:'—';
+    const red=[['Ukupno',A.ukupno,B.ukupno],['Minus',A.po_strani.minus,B.po_strani.minus],['Plus',A.po_strani.plus,B.po_strani.plus],['Jak',A.po_nivou['jak'],B.po_nivou['jak']],['Solidan',A.po_nivou['solidan'],B.po_nivou['solidan']],['Nagoveštaj',A.po_nivou['nagoveštaj'],B.po_nivou['nagoveštaj']]];
+    h+=`<div class="blok"><h2>Provera unazad</h2><p class="meta">Isto pravilo na ranijim ponudama (Admiral i MaxBet, jedna kladionica po danu, samo glavne granice): ${A.utakmica} utakmica u kolima 7 do 9, koje podešavanje nije videlo, i ${B.utakmica} u kolima 4 do 6, na kojima je spajanje podešeno. Pravila su birana gledajući ove podatke, pa su brojke gornja granica; pravi test su kola od objavljivanja.</p>
+     <div class="skrol"><table><tr><th>Skup</th><th>Kola 7 do 9: predloga · prošlo · jedinica</th><th>Kola 4 do 6</th></tr>${red.map(r=>`<tr><td>${r[0]}</td><td>${cel(r[1])}</td><td>${cel(r[2])}</td></tr>`).join('')}</table></div></div>`;}
+  return h;
+}
+
+// ---------- okvir ----------
+function crtaj(){
+  document.querySelectorAll('.tabovi button').forEach(b=>b.setAttribute('aria-selected',b.dataset.t===st.tab));
+  document.getElementById('kontrole').hidden=st.tab==='kako';
+  const m=document.getElementById('sadrzaj');
+  m.innerHTML='<div style="display:flex;flex-direction:column;gap:14px">'+(st.tab==='istorija'?crtajIstoriju():st.tab==='igraci'?crtajIgrace():st.tab==='kako'?crtajKako():crtajPredloge())+'</div>';
+  m.querySelectorAll('.kola-izbor button').forEach(b=>b.onclick=()=>{st.kolo=b.dataset.k==='sve'?'sve':+b.dataset.k;crtaj()});
+  m.querySelectorAll('th.sort').forEach(h=>h.onclick=()=>{const k=h.dataset.k;if(st.sort===k)st.opad=!st.opad;else{st.sort=k;st.opad=!(k==='ime'||k==='g')}crtaj()});
+  const on=(id,ev,fn)=>{const e=document.getElementById(id);if(e)e[ev]=fn};
+  on('fTim','onchange',e=>{st.tim=e.target.value;crtaj()});
+  on('fPoz','onchange',e=>{st.poz=e.target.value;crtaj()});
+  on('fMin','onchange',e=>{st.minMin=Number(e.target.value)||0;crtaj()});
+  on('fPred','onchange',e=>{st.samoPred=e.target.checked;crtaj()});
+  on('fQ','onchange',e=>{st.q=e.target.value.trim();crtaj()});
+}
+document.getElementById('osvezeno').textContent='Osveženo '+D.osvezeno;
+document.querySelectorAll('.tg').forEach(b=>{b.setAttribute('aria-pressed',!!st.stavke[b.dataset.s]);b.onclick=()=>{
+  const s=b.dataset.s; st.stavke[s]=!st.stavke[s]; if(!st.stavke.P&&!st.stavke.S&&!st.stavke.A)st.stavke[s]=true;
+  document.querySelectorAll('.tg').forEach(x=>x.setAttribute('aria-pressed',!!st.stavke[x.dataset.s])); sacuvaj(); crtaj()}});
+document.querySelectorAll('#strana button').forEach(b=>b.onclick=()=>{st.f=b.dataset.f;document.querySelectorAll('#strana button').forEach(x=>x.setAttribute('aria-pressed',x===b));crtaj()});
+const TABOVI=['predlozi','istorija','igraci','kako'];
+document.querySelectorAll('.tabovi button').forEach(b=>b.onclick=()=>{st.tab=b.dataset.t;try{history.replaceState(null,'','#'+st.tab)}catch(e){location.hash=st.tab}crtaj()});
+function izHasha(){const h=location.hash.slice(1);st.tab=TABOVI.includes(h)?h:'predlozi';crtaj()}
+window.addEventListener('hashchange',izHasha); izHasha();
 })();
 </script>
