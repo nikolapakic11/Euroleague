@@ -66,6 +66,13 @@ Zakazani zadaci su isključeni (odluka 5.11.2026): ništa se ne pokreće samo. S
 
 ## Otvoreno
 
+- Senka (odluka 5.11.2026): od kola 11 `senka.py` uporedo beleži predloge po varijanti „skupljanje samo nadole“
+  (model ispod proseka igrača: 0,7·model + 0,3·prosek) u `procene/senka/`, bez prikaza. Posle 3 kola sa ishodima
+  (otprilike posle kola 13) PREGLED u `dan.py` ispisuje PODSETNIK: tada Nikoli pokaži poređenje i predloži odluku.
+  Razlozi: `procene/provera/provera_2026-11-05.md`. Obavezni PLUS ostaje; filter poena za igrače sa malo minuta odbačen.
+- Kad god rezultati nekog dela (PLUS, stavka, nivo) dugo odstupaju od provere, ili se nakupi novih ishoda za ponovnu
+  proveru, predloži Nikoli analizu (on to traži, 5.11.2026).
+
 - Minuti tima: svođenje na 200 se NE uvodi (provera u `procene/provera/minuti_tima.md`); prati se pravilo „tim sa
   pretrpanom rotacijom (zbir preko 225) bez MINUS-a“, pa pitati Nikolu jednostavnim rečima.
 - Presek tiketa i predloga posle utakmica: ishodi se upisuju sa `dopuna.py` + `predlozi.py` (radi i dok je utakmica završena a zapisnik još „uživo“).

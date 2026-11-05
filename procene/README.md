@@ -46,6 +46,7 @@ Sve skripte se pokreću iz korena repozitorijuma. Ceo dnevni posao radi jedna ko
 | Sastavi | `python3 procene/skripte/sastavi.py` | 12 prijavljenih igrača kad ih Evroliga objavi; ko nije u sastavu, ne igra. |
 | Sajt | `python3 procene/skripte/sajt.py <folder>` | Javna stranica kao samostalan `index.html` za javni repozitorijum `nikolapakic11/evroliga-plus-minus` (GitHub Pages); u njega ide samo stranica. |
 | Domaće utakmice | `python3 procene/skripte/domace.py` (`--pregled`) | U pozadini, bez prikaza: utakmice ekipa Evrolige u domaćim ligama i kupovima (Flashscore) sa minutima, poenima, skokovima i asistencijama igrača, i raspored narednih. `procene/podaci/domace/`. Pokreće se u jutarnjem radu. |
+| Senka | `python3 procene/skripte/senka.py --kolo 11` (`--pregled`) | Uporedni predlozi po varijanti „skupljanje nadole“, bez prikaza (od kola 11, odluka 5.11.2026); `procene/senka/`. Poziva ga `dan.py`. |
 | Ishodi | `python3 procene/skripte/dnevnik.py --kolo 11` | Upisuje stvarne učinke u dnevnik i ispisuje tačnost. |
 
 Minuti su prosek igrača u ovoj sezoni. Izuzetak (odluka 4.11.2026): kad se vrati važan igrač (bar 20 min u proseku, propustio bar 2 utakmice, vratio se u poslednjih 5), minuti i učinak po minutu saigrača mešaju se sa utakmicama od njegovog povratka, težina n/(n+1,5) (`tabla.povratak_saigraca`); npr. Francisco posle povratka Nunna. Izuzetak za povredu ili „ne igra“ samo kroz `procene/minuti.json`, npr. `{"11": {"nikola milutinov": 0}}` (ključ je ime malim slovima, bez kvačica).
