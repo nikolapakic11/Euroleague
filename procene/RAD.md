@@ -1,0 +1,67 @@
+# Procene: dnevni rad i dogovorena pravila (za nastavak u novom razgovoru ili nalogu)
+
+Pročitaj prvo `CLAUDE.md` (korisnik, jezik, granice projekata) i `procene/README.md` (skripte i model).
+Ovaj fajl je sažetak kako se radi iz dana u dan i šta je dogovoreno sa Nikolom (stanje 5.11.2026).
+
+## Granice
+
+- Pišeš samo u `procene/` i u `baza/ponude/<kladionica>/` kad Nikola pošalje ponudu ili je ti povučeš.
+- `minusi/` je Nikolina lična igra: ne koristi se i ne menja (izuzetak: pomoćnici za tikete, samo za čitanje, kad on traži).
+- Javni sajt: repozitorijum `nikolapakic11/evroliga-plus-minus` (GitHub Pages), pravi ga `procene/skripte/sajt.py`.
+- Pre svakog slanja: `git pull --rebase`, pa `git push`. Na kraju commit poruke atribucija koju sesija traži.
+
+## Dan utakmice
+
+1. Nikola pošalje ponude Admirala i MaxBeta (JSON iz njegovih pomoćnika, `{"v":2,"src":...,"picks":[...]}`).
+   Sačuvaj ih kao `baza/ponude/admiral/<dan>_<slovo>.json` i `baza/ponude/maxbet/<dan>_<slovo>.json` (slova a, b, c po redu).
+   Ako pošalje plan tiketa (`{"v":1,"tickets":...}`), to nije ponuda.
+2. Mozzart: odbija pristup iz radnog okruženja, čita se preko Chrome-a (alat Claude in Chrome):
+   `procene/alati/mozzart_citac.js` (uputstvo u fajlu), pa `python3 procene/skripte/mozzart_unos.py <fajl>`.
+   Bolji su pojedinačni mečevi (`/match/<ID>?mtid=2`) nego zbirna stranica.
+3. Soccerbet ide sam (`soccerbet.py`, poziva ga `dan.py`).
+4. `python3 procene/skripte/dan.py` (pre 12h sa `--jutro`): dopuna ishoda, statistika, sastavi, povrede, Soccerbet, tabla, predlozi.
+   Na kraju ispiše PREGLED (i red RUČNO ako fale ponude).
+5. Commit i push, `python3 procene/skripte/sajt.py /home/claude/evroliga-plus-minus`, commit i push sajta.
+   (Privatna kopija stranice je bila artifact na starom nalogu; na novom napravi novu ako treba.)
+
+## Pravila objave (dogovoreno)
+
+- Ništa pre 12h na dan utakmice. Ranija objava samo kad Nikola traži: `procene/podaci/objava.json` `{"<dan>": "HH:MM"}`.
+- Konačni predlozi: sat pre prve utakmice dana ako počinje pre 18h, inače sat i po pre (zajedno.rokovi).
+  Konačno je ono što je objavljeno u tom trenutku; posle se ne menja. Učinak se računa samo za konačne.
+- Dan sa više utakmica: 8 najboljih za dan (`predlozi.izbor_dana`), raznovrsno (bar 2 MINUS, bar 3 PLUS ako ih ima),
+  najviše 4 iz utakmice i 2 iz tima; jaki (62%+) mogu preko 8 do 12. Dan sa jednom utakmicom: predlozi te utakmice.
+- Forma: predlog ulazi samo ako je igrač u bar polovini poslednjih 7 utakmica bio na toj strani granice.
+- Već objavljen predlog ostaje dok ga novi ne nadmaši za 2 poena procenta (da lista ne skače).
+- Povučeni i izmenjeni predlozi ostaju u Istoriji sa vremenom i ishodom; ne ulaze u učinak.
+
+## Povrede i odsutni (samo potvrđeno)
+
+- Izvori: zvanični izveštaj Evrolige preko Eurohoops i dnevni izveštaj BasketNews-a
+  (https://basketnews.com/leagues/25-euroleague/injured.html, ima prednost). `povrede.py` čita oba.
+- Igrač kojeg nema u ponudi kladionica NIJE odsutan (kladionice izbacuju igrače sa malim granicama). Nikola to traži izričito.
+- Ručne potvrde (npr. Nikola kaže da igrač igra): `procene/podaci/povrede_rucno.json`.
+- Potvrđeno odsutan igrač iz rotacije: njegov tim ne dobija MINUS, a model deli njegove minute saigračima.
+- Nova pojačanja koja mogu da debituju (izveštaj „New signing ... registered“): bez PLUS za igrače iste pozicije u tom timu.
+- U obrazloženjima nikad ne tvrditi da neko ne igra ako nije potvrđeno.
+
+## Sajt
+
+- Kartice: Predlozi, Istorija (po utakmici: predlozi, povučeni, cela ponuda dana sa očekivanjem i stvarnim učinkom),
+  Igrači (napredno: očekivanja), Statistika, Kako radi.
+- Timovi sa zvaničnim skraćenicama Evrolige (tvCode: EFS, RMB, PAO, FBT, KBA, PBB, BAY, VBC, CZV, MTA, BJK ...).
+- Učinak: po danu broj predloga i koliko je prošlo (npr. 5/6 · 83%), bez jedinica i nivoa.
+- Obrazloženja ljudskim jezikom, bez procenata i matematike.
+
+## Tiketi (Nikolina igra, odvojeno od sajta)
+
+- Planovi se čuvaju u `procene/tiketi/`. Admiral pomoćnik: `{"v":1,"round":"","tickets":[{"stake":..,"legs":[{c,p,t,s,l,u,d}]}]}`,
+  `"d":"O"` je plus (preko), bez `d` minus. MaxBet pomoćnik v3 (čita i pluseve): `procene/alati/maxbet_pomocnik_v3_obelezivac.txt`
+  (izvor `maxbet_pomocnik_v3.js`); na MaxBetu: plus poeni „Igrač postiže više poena“, skokovi/asistencije SK+/AS+.
+- Sistemski tiketi na Admiralu se ne isplate (ogroman ulog za 7/10 i slično).
+
+## Otvoreno
+
+- Minuti tima: svođenje na 200 se NE uvodi (provera u `procene/provera/minuti_tima.md`); prati se pravilo „tim sa
+  pretrpanom rotacijom (zbir preko 225) bez MINUS-a“, pa pitati Nikolu jednostavnim rečima.
+- Presek tiketa i predloga posle utakmica: ishodi se upisuju sa `dopuna.py` + `predlozi.py` (radi i dok je utakmica završena a zapisnik još „uživo“).

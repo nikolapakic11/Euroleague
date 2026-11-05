@@ -1,5 +1,7 @@
 # Procene
 
+> Dnevni rad, dogovorena pravila i alati (Mozzart čitač, MaxBet pomoćnik v3): `procene/RAD.md` i `procene/alati/`.
+
 Procene igrača Evrolige zasnovane na statistici i kontekstu, bez tipova i bez tiketa.
 
 ## Šta treba da daje
