@@ -1,0 +1,2810 @@
+{
+ "ll": {
+  "1.0": {
+   "model": 0.7014,
+   "spojeno": 0.6873,
+   "kvote": 0.6883,
+   "n": 2033
+  },
+  "0.85": {
+   "model": 0.7004,
+   "spojeno": 0.6879,
+   "kvote": 0.6883,
+   "n": 2033
+  },
+  "0.7": {
+   "model": 0.7006,
+   "spojeno": 0.6885,
+   "kvote": 0.6883,
+   "n": 2033
+  },
+  "0.5": {
+   "model": 0.7029,
+   "spojeno": 0.6891,
+   "kvote": 0.6883,
+   "n": 2033
+  },
+  "dole_0.7": {
+   "model": 0.6987,
+   "spojeno": 0.6882,
+   "kvote": 0.6883,
+   "n": 2033
+  },
+  "dole_0.5": {
+   "model": 0.6988,
+   "spojeno": 0.6887,
+   "kvote": 0.6883,
+   "n": 2033
+  }
+ },
+ "izbor": {
+  "1.0": {
+   "sada: bar 2 PLUS, najmanje 6": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 193,
+     "pogodak": 0.619,
+     "dobit": 23.67,
+     "povracaj": 0.076,
+     "kvota": 1.74
+    },
+    "plus": {
+     "n": 95,
+     "prosao": 56,
+     "pogodak": 0.589,
+     "dobit": 0.24,
+     "povracaj": 0.003,
+     "kvota": 1.72
+    },
+    "minus": {
+     "n": 217,
+     "prosao": 137,
+     "pogodak": 0.631,
+     "dobit": 23.43,
+     "povracaj": 0.108,
+     "kvota": 1.75
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 38,
+      "pogodak": 0.633,
+      "dobit": 5.2,
+      "povracaj": 0.087,
+      "kvota": 1.72
+     },
+     "6": {
+      "n": 60,
+      "prosao": 33,
+      "pogodak": 0.55,
+      "dobit": -0.4,
+      "povracaj": -0.007,
+      "kvota": 1.79
+     },
+     "7": {
+      "n": 54,
+      "prosao": 38,
+      "pogodak": 0.704,
+      "dobit": 14.62,
+      "povracaj": 0.271,
+      "kvota": 1.81
+     },
+     "8": {
+      "n": 60,
+      "prosao": 35,
+      "pogodak": 0.583,
+      "dobit": 0.3,
+      "povracaj": 0.005,
+      "kvota": 1.73
+     },
+     "9": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": -0.97,
+      "povracaj": -0.016,
+      "kvota": 1.67
+     },
+     "10": {
+      "n": 18,
+      "prosao": 13,
+      "pogodak": 0.722,
+      "dobit": 4.92,
+      "povracaj": 0.273,
+      "kvota": 1.75
+     }
+    }
+   },
+   "bar 1 PLUS, najmanje 6": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 196,
+     "pogodak": 0.628,
+     "dobit": 33.31,
+     "povracaj": 0.107,
+     "kvota": 1.76
+    },
+    "plus": {
+     "n": 49,
+     "prosao": 27,
+     "pogodak": 0.551,
+     "dobit": -4.39,
+     "povracaj": -0.09,
+     "kvota": 1.71
+    },
+    "minus": {
+     "n": 263,
+     "prosao": 169,
+     "pogodak": 0.643,
+     "dobit": 37.7,
+     "povracaj": 0.143,
+     "kvota": 1.77
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 41,
+      "pogodak": 0.683,
+      "dobit": 11.26,
+      "povracaj": 0.188,
+      "kvota": 1.75
+     },
+     "6": {
+      "n": 60,
+      "prosao": 34,
+      "pogodak": 0.567,
+      "dobit": 1.99,
+      "povracaj": 0.033,
+      "kvota": 1.8
+     },
+     "7": {
+      "n": 54,
+      "prosao": 38,
+      "pogodak": 0.704,
+      "dobit": 15.03,
+      "povracaj": 0.278,
+      "kvota": 1.81
+     },
+     "8": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": 2.9,
+      "povracaj": 0.048,
+      "kvota": 1.76
+     },
+     "9": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": 0.53,
+      "povracaj": 0.009,
+      "kvota": 1.7
+     },
+     "10": {
+      "n": 18,
+      "prosao": 11,
+      "pogodak": 0.611,
+      "dobit": 1.6,
+      "povracaj": 0.089,
+      "kvota": 1.77
+     }
+    }
+   },
+   "bez obaveznog PLUS, najmanje 6": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 192,
+     "pogodak": 0.615,
+     "dobit": 30.92,
+     "povracaj": 0.099,
+     "kvota": 1.79
+    },
+    "plus": {
+     "n": 5,
+     "prosao": 4,
+     "pogodak": 0.8,
+     "dobit": 1.1,
+     "povracaj": 0.22,
+     "kvota": 1.53
+    },
+    "minus": {
+     "n": 307,
+     "prosao": 188,
+     "pogodak": 0.612,
+     "dobit": 29.82,
+     "povracaj": 0.097,
+     "kvota": 1.79
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 42,
+      "pogodak": 0.7,
+      "dobit": 15.14,
+      "povracaj": 0.252,
+      "kvota": 1.8
+     },
+     "6": {
+      "n": 60,
+      "prosao": 34,
+      "pogodak": 0.567,
+      "dobit": 2.27,
+      "povracaj": 0.038,
+      "kvota": 1.82
+     },
+     "7": {
+      "n": 54,
+      "prosao": 36,
+      "pogodak": 0.667,
+      "dobit": 11.05,
+      "povracaj": 0.205,
+      "kvota": 1.8
+     },
+     "8": {
+      "n": 60,
+      "prosao": 35,
+      "pogodak": 0.583,
+      "dobit": 2.54,
+      "povracaj": 0.042,
+      "kvota": 1.78
+     },
+     "9": {
+      "n": 60,
+      "prosao": 34,
+      "pogodak": 0.567,
+      "dobit": -1.75,
+      "povracaj": -0.029,
+      "kvota": 1.73
+     },
+     "10": {
+      "n": 18,
+      "prosao": 11,
+      "pogodak": 0.611,
+      "dobit": 1.67,
+      "povracaj": 0.093,
+      "kvota": 1.77
+     }
+    }
+   },
+   "bar 2 PLUS, bez dopune do 6": {
+    "ukupno": {
+     "n": 310,
+     "prosao": 191,
+     "pogodak": 0.616,
+     "dobit": 22.01,
+     "povracaj": 0.071,
+     "kvota": 1.74
+    },
+    "plus": {
+     "n": 95,
+     "prosao": 56,
+     "pogodak": 0.589,
+     "dobit": 0.24,
+     "povracaj": 0.003,
+     "kvota": 1.72
+    },
+    "minus": {
+     "n": 215,
+     "prosao": 135,
+     "pogodak": 0.628,
+     "dobit": 21.77,
+     "povracaj": 0.101,
+     "kvota": 1.75
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 38,
+      "pogodak": 0.633,
+      "dobit": 5.2,
+      "povracaj": 0.087,
+      "kvota": 1.72
+     },
+     "6": {
+      "n": 58,
+      "prosao": 31,
+      "pogodak": 0.534,
+      "dobit": -2.06,
+      "povracaj": -0.036,
+      "kvota": 1.79
+     },
+     "7": {
+      "n": 54,
+      "prosao": 38,
+      "pogodak": 0.704,
+      "dobit": 14.62,
+      "povracaj": 0.271,
+      "kvota": 1.81
+     },
+     "8": {
+      "n": 60,
+      "prosao": 35,
+      "pogodak": 0.583,
+      "dobit": 0.3,
+      "povracaj": 0.005,
+      "kvota": 1.73
+     },
+     "9": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": -0.97,
+      "povracaj": -0.016,
+      "kvota": 1.67
+     },
+     "10": {
+      "n": 18,
+      "prosao": 13,
+      "pogodak": 0.722,
+      "dobit": 4.92,
+      "povracaj": 0.273,
+      "kvota": 1.75
+     }
+    }
+   },
+   "bez obaveznog PLUS, bez dopune": {
+    "ukupno": {
+     "n": 310,
+     "prosao": 190,
+     "pogodak": 0.613,
+     "dobit": 29.26,
+     "povracaj": 0.094,
+     "kvota": 1.79
+    },
+    "plus": {
+     "n": 5,
+     "prosao": 4,
+     "pogodak": 0.8,
+     "dobit": 1.1,
+     "povracaj": 0.22,
+     "kvota": 1.53
+    },
+    "minus": {
+     "n": 305,
+     "prosao": 186,
+     "pogodak": 0.61,
+     "dobit": 28.16,
+     "povracaj": 0.092,
+     "kvota": 1.79
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 42,
+      "pogodak": 0.7,
+      "dobit": 15.14,
+      "povracaj": 0.252,
+      "kvota": 1.8
+     },
+     "6": {
+      "n": 58,
+      "prosao": 32,
+      "pogodak": 0.552,
+      "dobit": 0.61,
+      "povracaj": 0.011,
+      "kvota": 1.82
+     },
+     "7": {
+      "n": 54,
+      "prosao": 36,
+      "pogodak": 0.667,
+      "dobit": 11.05,
+      "povracaj": 0.205,
+      "kvota": 1.8
+     },
+     "8": {
+      "n": 60,
+      "prosao": 35,
+      "pogodak": 0.583,
+      "dobit": 2.54,
+      "povracaj": 0.042,
+      "kvota": 1.78
+     },
+     "9": {
+      "n": 60,
+      "prosao": 34,
+      "pogodak": 0.567,
+      "dobit": -1.75,
+      "povracaj": -0.029,
+      "kvota": 1.73
+     },
+     "10": {
+      "n": 18,
+      "prosao": 11,
+      "pogodak": 0.611,
+      "dobit": 1.67,
+      "povracaj": 0.093,
+      "kvota": 1.77
+     }
+    }
+   },
+   "sada + filter poena (malo minuta, nula)": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 191,
+     "pogodak": 0.612,
+     "dobit": 19.13,
+     "povracaj": 0.061,
+     "kvota": 1.74
+    },
+    "plus": {
+     "n": 95,
+     "prosao": 53,
+     "pogodak": 0.558,
+     "dobit": -6.22,
+     "povracaj": -0.065,
+     "kvota": 1.7
+    },
+    "minus": {
+     "n": 217,
+     "prosao": 138,
+     "pogodak": 0.636,
+     "dobit": 25.35,
+     "povracaj": 0.117,
+     "kvota": 1.75
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 38,
+      "pogodak": 0.633,
+      "dobit": 5.2,
+      "povracaj": 0.087,
+      "kvota": 1.72
+     },
+     "6": {
+      "n": 60,
+      "prosao": 32,
+      "pogodak": 0.533,
+      "dobit": -2.32,
+      "povracaj": -0.039,
+      "kvota": 1.79
+     },
+     "7": {
+      "n": 54,
+      "prosao": 37,
+      "pogodak": 0.685,
+      "dobit": 12.68,
+      "povracaj": 0.235,
+      "kvota": 1.8
+     },
+     "8": {
+      "n": 60,
+      "prosao": 35,
+      "pogodak": 0.583,
+      "dobit": -0.14,
+      "povracaj": -0.002,
+      "kvota": 1.72
+     },
+     "9": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": -0.87,
+      "povracaj": -0.014,
+      "kvota": 1.67
+     },
+     "10": {
+      "n": 18,
+      "prosao": 13,
+      "pogodak": 0.722,
+      "dobit": 4.58,
+      "povracaj": 0.254,
+      "kvota": 1.72
+     }
+    }
+   }
+  },
+  "0.85": {
+   "sada: bar 2 PLUS, najmanje 6": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 193,
+     "pogodak": 0.619,
+     "dobit": 20.05,
+     "povracaj": 0.064,
+     "kvota": 1.73
+    },
+    "plus": {
+     "n": 94,
+     "prosao": 58,
+     "pogodak": 0.617,
+     "dobit": 3.72,
+     "povracaj": 0.04,
+     "kvota": 1.7
+    },
+    "minus": {
+     "n": 218,
+     "prosao": 135,
+     "pogodak": 0.619,
+     "dobit": 16.33,
+     "povracaj": 0.075,
+     "kvota": 1.74
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 39,
+      "pogodak": 0.65,
+      "dobit": 6.27,
+      "povracaj": 0.105,
+      "kvota": 1.7
+     },
+     "6": {
+      "n": 60,
+      "prosao": 29,
+      "pogodak": 0.483,
+      "dobit": -8.53,
+      "povracaj": -0.142,
+      "kvota": 1.77
+     },
+     "7": {
+      "n": 54,
+      "prosao": 38,
+      "pogodak": 0.704,
+      "dobit": 13.6,
+      "povracaj": 0.252,
+      "kvota": 1.78
+     },
+     "8": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 3.58,
+      "povracaj": 0.06,
+      "kvota": 1.73
+     },
+     "9": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 0.53,
+      "povracaj": 0.009,
+      "kvota": 1.66
+     },
+     "10": {
+      "n": 18,
+      "prosao": 13,
+      "pogodak": 0.722,
+      "dobit": 4.6,
+      "povracaj": 0.256,
+      "kvota": 1.74
+     }
+    }
+   },
+   "bar 1 PLUS, najmanje 6": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 193,
+     "pogodak": 0.619,
+     "dobit": 24.96,
+     "povracaj": 0.08,
+     "kvota": 1.75
+    },
+    "plus": {
+     "n": 48,
+     "prosao": 29,
+     "pogodak": 0.604,
+     "dobit": -0.27,
+     "povracaj": -0.006,
+     "kvota": 1.68
+    },
+    "minus": {
+     "n": 264,
+     "prosao": 164,
+     "pogodak": 0.621,
+     "dobit": 25.23,
+     "povracaj": 0.096,
+     "kvota": 1.76
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 40,
+      "pogodak": 0.667,
+      "dobit": 9.01,
+      "povracaj": 0.15,
+      "kvota": 1.74
+     },
+     "6": {
+      "n": 60,
+      "prosao": 28,
+      "pogodak": 0.467,
+      "dobit": -9.66,
+      "povracaj": -0.161,
+      "kvota": 1.79
+     },
+     "7": {
+      "n": 54,
+      "prosao": 38,
+      "pogodak": 0.704,
+      "dobit": 14.16,
+      "povracaj": 0.262,
+      "kvota": 1.79
+     },
+     "8": {
+      "n": 60,
+      "prosao": 38,
+      "pogodak": 0.633,
+      "dobit": 6.27,
+      "povracaj": 0.105,
+      "kvota": 1.75
+     },
+     "9": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 2.08,
+      "povracaj": 0.035,
+      "kvota": 1.7
+     },
+     "10": {
+      "n": 18,
+      "prosao": 12,
+      "pogodak": 0.667,
+      "dobit": 3.1,
+      "povracaj": 0.172,
+      "kvota": 1.75
+     }
+    }
+   },
+   "bez obaveznog PLUS, najmanje 6": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 191,
+     "pogodak": 0.612,
+     "dobit": 27.86,
+     "povracaj": 0.089,
+     "kvota": 1.78
+    },
+    "plus": {
+     "n": 1,
+     "prosao": 1,
+     "pogodak": 1.0,
+     "dobit": 0.5,
+     "povracaj": 0.5,
+     "kvota": 1.5
+    },
+    "minus": {
+     "n": 311,
+     "prosao": 190,
+     "pogodak": 0.611,
+     "dobit": 27.36,
+     "povracaj": 0.088,
+     "kvota": 1.78
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 43,
+      "pogodak": 0.717,
+      "dobit": 16.82,
+      "povracaj": 0.28,
+      "kvota": 1.8
+     },
+     "6": {
+      "n": 60,
+      "prosao": 30,
+      "pogodak": 0.5,
+      "dobit": -6.14,
+      "povracaj": -0.102,
+      "kvota": 1.79
+     },
+     "7": {
+      "n": 54,
+      "prosao": 38,
+      "pogodak": 0.704,
+      "dobit": 14.56,
+      "povracaj": 0.27,
+      "kvota": 1.81
+     },
+     "8": {
+      "n": 60,
+      "prosao": 35,
+      "pogodak": 0.583,
+      "dobit": 2.41,
+      "povracaj": 0.04,
+      "kvota": 1.78
+     },
+     "9": {
+      "n": 60,
+      "prosao": 33,
+      "pogodak": 0.55,
+      "dobit": -3.01,
+      "povracaj": -0.05,
+      "kvota": 1.74
+     },
+     "10": {
+      "n": 18,
+      "prosao": 12,
+      "pogodak": 0.667,
+      "dobit": 3.22,
+      "povracaj": 0.179,
+      "kvota": 1.76
+     }
+    }
+   },
+   "bar 2 PLUS, bez dopune do 6": {
+    "ukupno": {
+     "n": 310,
+     "prosao": 191,
+     "pogodak": 0.616,
+     "dobit": 18.39,
+     "povracaj": 0.059,
+     "kvota": 1.73
+    },
+    "plus": {
+     "n": 94,
+     "prosao": 58,
+     "pogodak": 0.617,
+     "dobit": 3.72,
+     "povracaj": 0.04,
+     "kvota": 1.7
+    },
+    "minus": {
+     "n": 216,
+     "prosao": 133,
+     "pogodak": 0.616,
+     "dobit": 14.67,
+     "povracaj": 0.068,
+     "kvota": 1.74
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 39,
+      "pogodak": 0.65,
+      "dobit": 6.27,
+      "povracaj": 0.105,
+      "kvota": 1.7
+     },
+     "6": {
+      "n": 58,
+      "prosao": 27,
+      "pogodak": 0.466,
+      "dobit": -10.19,
+      "povracaj": -0.176,
+      "kvota": 1.77
+     },
+     "7": {
+      "n": 54,
+      "prosao": 38,
+      "pogodak": 0.704,
+      "dobit": 13.6,
+      "povracaj": 0.252,
+      "kvota": 1.78
+     },
+     "8": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 3.58,
+      "povracaj": 0.06,
+      "kvota": 1.73
+     },
+     "9": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 0.53,
+      "povracaj": 0.009,
+      "kvota": 1.66
+     },
+     "10": {
+      "n": 18,
+      "prosao": 13,
+      "pogodak": 0.722,
+      "dobit": 4.6,
+      "povracaj": 0.256,
+      "kvota": 1.74
+     }
+    }
+   },
+   "bez obaveznog PLUS, bez dopune": {
+    "ukupno": {
+     "n": 310,
+     "prosao": 189,
+     "pogodak": 0.61,
+     "dobit": 26.2,
+     "povracaj": 0.085,
+     "kvota": 1.78
+    },
+    "plus": {
+     "n": 1,
+     "prosao": 1,
+     "pogodak": 1.0,
+     "dobit": 0.5,
+     "povracaj": 0.5,
+     "kvota": 1.5
+    },
+    "minus": {
+     "n": 309,
+     "prosao": 188,
+     "pogodak": 0.608,
+     "dobit": 25.7,
+     "povracaj": 0.083,
+     "kvota": 1.78
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 43,
+      "pogodak": 0.717,
+      "dobit": 16.82,
+      "povracaj": 0.28,
+      "kvota": 1.8
+     },
+     "6": {
+      "n": 58,
+      "prosao": 28,
+      "pogodak": 0.483,
+      "dobit": -7.8,
+      "povracaj": -0.134,
+      "kvota": 1.79
+     },
+     "7": {
+      "n": 54,
+      "prosao": 38,
+      "pogodak": 0.704,
+      "dobit": 14.56,
+      "povracaj": 0.27,
+      "kvota": 1.81
+     },
+     "8": {
+      "n": 60,
+      "prosao": 35,
+      "pogodak": 0.583,
+      "dobit": 2.41,
+      "povracaj": 0.04,
+      "kvota": 1.78
+     },
+     "9": {
+      "n": 60,
+      "prosao": 33,
+      "pogodak": 0.55,
+      "dobit": -3.01,
+      "povracaj": -0.05,
+      "kvota": 1.74
+     },
+     "10": {
+      "n": 18,
+      "prosao": 12,
+      "pogodak": 0.667,
+      "dobit": 3.22,
+      "povracaj": 0.179,
+      "kvota": 1.76
+     }
+    }
+   },
+   "sada + filter poena (malo minuta, nula)": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 192,
+     "pogodak": 0.615,
+     "dobit": 17.41,
+     "povracaj": 0.056,
+     "kvota": 1.72
+    },
+    "plus": {
+     "n": 93,
+     "prosao": 55,
+     "pogodak": 0.591,
+     "dobit": -1.47,
+     "povracaj": -0.016,
+     "kvota": 1.69
+    },
+    "minus": {
+     "n": 219,
+     "prosao": 137,
+     "pogodak": 0.626,
+     "dobit": 18.88,
+     "povracaj": 0.086,
+     "kvota": 1.74
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 39,
+      "pogodak": 0.65,
+      "dobit": 6.27,
+      "povracaj": 0.105,
+      "kvota": 1.7
+     },
+     "6": {
+      "n": 60,
+      "prosao": 28,
+      "pogodak": 0.467,
+      "dobit": -10.45,
+      "povracaj": -0.174,
+      "kvota": 1.77
+     },
+     "7": {
+      "n": 54,
+      "prosao": 38,
+      "pogodak": 0.704,
+      "dobit": 13.29,
+      "povracaj": 0.246,
+      "kvota": 1.77
+     },
+     "8": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": 1.66,
+      "povracaj": 0.028,
+      "kvota": 1.72
+     },
+     "9": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 0.46,
+      "povracaj": 0.008,
+      "kvota": 1.66
+     },
+     "10": {
+      "n": 18,
+      "prosao": 14,
+      "pogodak": 0.778,
+      "dobit": 6.18,
+      "povracaj": 0.343,
+      "kvota": 1.73
+     }
+    }
+   }
+  },
+  "0.7": {
+   "sada: bar 2 PLUS, najmanje 6": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 187,
+     "pogodak": 0.599,
+     "dobit": 6.54,
+     "povracaj": 0.021,
+     "kvota": 1.72
+    },
+    "plus": {
+     "n": 84,
+     "prosao": 51,
+     "pogodak": 0.607,
+     "dobit": -0.02,
+     "povracaj": -0.0,
+     "kvota": 1.67
+    },
+    "minus": {
+     "n": 228,
+     "prosao": 136,
+     "pogodak": 0.596,
+     "dobit": 6.56,
+     "povracaj": 0.029,
+     "kvota": 1.73
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 41,
+      "pogodak": 0.683,
+      "dobit": 9.37,
+      "povracaj": 0.156,
+      "kvota": 1.69
+     },
+     "6": {
+      "n": 60,
+      "prosao": 25,
+      "pogodak": 0.417,
+      "dobit": -15.86,
+      "povracaj": -0.264,
+      "kvota": 1.77
+     },
+     "7": {
+      "n": 54,
+      "prosao": 39,
+      "pogodak": 0.722,
+      "dobit": 14.7,
+      "povracaj": 0.272,
+      "kvota": 1.76
+     },
+     "8": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": 0.72,
+      "povracaj": 0.012,
+      "kvota": 1.69
+     },
+     "9": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 0.35,
+      "povracaj": 0.006,
+      "kvota": 1.64
+     },
+     "10": {
+      "n": 18,
+      "prosao": 9,
+      "pogodak": 0.5,
+      "dobit": -2.74,
+      "povracaj": -0.152,
+      "kvota": 1.74
+     }
+    }
+   },
+   "bar 1 PLUS, najmanje 6": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 184,
+     "pogodak": 0.59,
+     "dobit": 4.18,
+     "povracaj": 0.013,
+     "kvota": 1.73
+    },
+    "plus": {
+     "n": 44,
+     "prosao": 26,
+     "pogodak": 0.591,
+     "dobit": -2.61,
+     "povracaj": -0.059,
+     "kvota": 1.63
+    },
+    "minus": {
+     "n": 268,
+     "prosao": 158,
+     "pogodak": 0.59,
+     "dobit": 6.79,
+     "povracaj": 0.025,
+     "kvota": 1.75
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 41,
+      "pogodak": 0.683,
+      "dobit": 10.78,
+      "povracaj": 0.18,
+      "kvota": 1.73
+     },
+     "6": {
+      "n": 60,
+      "prosao": 26,
+      "pogodak": 0.433,
+      "dobit": -14.21,
+      "povracaj": -0.237,
+      "kvota": 1.77
+     },
+     "7": {
+      "n": 54,
+      "prosao": 35,
+      "pogodak": 0.648,
+      "dobit": 7.5,
+      "povracaj": 0.139,
+      "kvota": 1.77
+     },
+     "8": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 3.54,
+      "povracaj": 0.059,
+      "kvota": 1.73
+     },
+     "9": {
+      "n": 60,
+      "prosao": 34,
+      "pogodak": 0.567,
+      "dobit": -4.08,
+      "povracaj": -0.068,
+      "kvota": 1.67
+     },
+     "10": {
+      "n": 18,
+      "prosao": 11,
+      "pogodak": 0.611,
+      "dobit": 0.65,
+      "povracaj": 0.036,
+      "kvota": 1.71
+     }
+    }
+   },
+   "bez obaveznog PLUS, najmanje 6": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 188,
+     "pogodak": 0.603,
+     "dobit": 19.51,
+     "povracaj": 0.063,
+     "kvota": 1.77
+    },
+    "plus": {
+     "n": 1,
+     "prosao": 1,
+     "pogodak": 1.0,
+     "dobit": 0.5,
+     "povracaj": 0.5,
+     "kvota": 1.5
+    },
+    "minus": {
+     "n": 311,
+     "prosao": 187,
+     "pogodak": 0.601,
+     "dobit": 19.01,
+     "povracaj": 0.061,
+     "kvota": 1.77
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 41,
+      "pogodak": 0.683,
+      "dobit": 12.38,
+      "povracaj": 0.206,
+      "kvota": 1.78
+     },
+     "6": {
+      "n": 60,
+      "prosao": 28,
+      "pogodak": 0.467,
+      "dobit": -9.94,
+      "povracaj": -0.166,
+      "kvota": 1.78
+     },
+     "7": {
+      "n": 54,
+      "prosao": 37,
+      "pogodak": 0.685,
+      "dobit": 11.7,
+      "povracaj": 0.217,
+      "kvota": 1.79
+     },
+     "8": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 6.4,
+      "povracaj": 0.107,
+      "kvota": 1.79
+     },
+     "9": {
+      "n": 60,
+      "prosao": 34,
+      "pogodak": 0.567,
+      "dobit": -2.12,
+      "povracaj": -0.035,
+      "kvota": 1.72
+     },
+     "10": {
+      "n": 18,
+      "prosao": 11,
+      "pogodak": 0.611,
+      "dobit": 1.09,
+      "povracaj": 0.061,
+      "kvota": 1.74
+     }
+    }
+   },
+   "bar 2 PLUS, bez dopune do 6": {
+    "ukupno": {
+     "n": 310,
+     "prosao": 185,
+     "pogodak": 0.597,
+     "dobit": 4.88,
+     "povracaj": 0.016,
+     "kvota": 1.71
+    },
+    "plus": {
+     "n": 84,
+     "prosao": 51,
+     "pogodak": 0.607,
+     "dobit": -0.02,
+     "povracaj": -0.0,
+     "kvota": 1.67
+    },
+    "minus": {
+     "n": 226,
+     "prosao": 134,
+     "pogodak": 0.593,
+     "dobit": 4.9,
+     "povracaj": 0.022,
+     "kvota": 1.73
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 41,
+      "pogodak": 0.683,
+      "dobit": 9.37,
+      "povracaj": 0.156,
+      "kvota": 1.69
+     },
+     "6": {
+      "n": 58,
+      "prosao": 23,
+      "pogodak": 0.397,
+      "dobit": -17.52,
+      "povracaj": -0.302,
+      "kvota": 1.77
+     },
+     "7": {
+      "n": 54,
+      "prosao": 39,
+      "pogodak": 0.722,
+      "dobit": 14.7,
+      "povracaj": 0.272,
+      "kvota": 1.76
+     },
+     "8": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": 0.72,
+      "povracaj": 0.012,
+      "kvota": 1.69
+     },
+     "9": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 0.35,
+      "povracaj": 0.006,
+      "kvota": 1.64
+     },
+     "10": {
+      "n": 18,
+      "prosao": 9,
+      "pogodak": 0.5,
+      "dobit": -2.74,
+      "povracaj": -0.152,
+      "kvota": 1.74
+     }
+    }
+   },
+   "bez obaveznog PLUS, bez dopune": {
+    "ukupno": {
+     "n": 310,
+     "prosao": 186,
+     "pogodak": 0.6,
+     "dobit": 17.85,
+     "povracaj": 0.058,
+     "kvota": 1.77
+    },
+    "plus": {
+     "n": 1,
+     "prosao": 1,
+     "pogodak": 1.0,
+     "dobit": 0.5,
+     "povracaj": 0.5,
+     "kvota": 1.5
+    },
+    "minus": {
+     "n": 309,
+     "prosao": 185,
+     "pogodak": 0.599,
+     "dobit": 17.35,
+     "povracaj": 0.056,
+     "kvota": 1.77
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 41,
+      "pogodak": 0.683,
+      "dobit": 12.38,
+      "povracaj": 0.206,
+      "kvota": 1.78
+     },
+     "6": {
+      "n": 58,
+      "prosao": 26,
+      "pogodak": 0.448,
+      "dobit": -11.6,
+      "povracaj": -0.2,
+      "kvota": 1.78
+     },
+     "7": {
+      "n": 54,
+      "prosao": 37,
+      "pogodak": 0.685,
+      "dobit": 11.7,
+      "povracaj": 0.217,
+      "kvota": 1.79
+     },
+     "8": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 6.4,
+      "povracaj": 0.107,
+      "kvota": 1.79
+     },
+     "9": {
+      "n": 60,
+      "prosao": 34,
+      "pogodak": 0.567,
+      "dobit": -2.12,
+      "povracaj": -0.035,
+      "kvota": 1.72
+     },
+     "10": {
+      "n": 18,
+      "prosao": 11,
+      "pogodak": 0.611,
+      "dobit": 1.09,
+      "povracaj": 0.061,
+      "kvota": 1.74
+     }
+    }
+   },
+   "sada + filter poena (malo minuta, nula)": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 183,
+     "pogodak": 0.587,
+     "dobit": -1.15,
+     "povracaj": -0.004,
+     "kvota": 1.71
+    },
+    "plus": {
+     "n": 84,
+     "prosao": 49,
+     "pogodak": 0.583,
+     "dobit": -4.41,
+     "povracaj": -0.052,
+     "kvota": 1.65
+    },
+    "minus": {
+     "n": 228,
+     "prosao": 134,
+     "pogodak": 0.588,
+     "dobit": 3.26,
+     "povracaj": 0.014,
+     "kvota": 1.74
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 41,
+      "pogodak": 0.683,
+      "dobit": 9.37,
+      "povracaj": 0.156,
+      "kvota": 1.69
+     },
+     "6": {
+      "n": 60,
+      "prosao": 25,
+      "pogodak": 0.417,
+      "dobit": -15.86,
+      "povracaj": -0.264,
+      "kvota": 1.77
+     },
+     "7": {
+      "n": 54,
+      "prosao": 36,
+      "pogodak": 0.667,
+      "dobit": 9.02,
+      "povracaj": 0.167,
+      "kvota": 1.76
+     },
+     "8": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": 0.72,
+      "povracaj": 0.012,
+      "kvota": 1.69
+     },
+     "9": {
+      "n": 60,
+      "prosao": 35,
+      "pogodak": 0.583,
+      "dobit": -3.26,
+      "povracaj": -0.054,
+      "kvota": 1.64
+     },
+     "10": {
+      "n": 18,
+      "prosao": 10,
+      "pogodak": 0.556,
+      "dobit": -1.14,
+      "povracaj": -0.063,
+      "kvota": 1.73
+     }
+    }
+   }
+  },
+  "0.5": {
+   "sada: bar 2 PLUS, najmanje 6": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 182,
+     "pogodak": 0.583,
+     "dobit": -3.38,
+     "povracaj": -0.011,
+     "kvota": 1.7
+    },
+    "plus": {
+     "n": 75,
+     "prosao": 44,
+     "pogodak": 0.587,
+     "dobit": -4.53,
+     "povracaj": -0.06,
+     "kvota": 1.6
+    },
+    "minus": {
+     "n": 237,
+     "prosao": 138,
+     "pogodak": 0.582,
+     "dobit": 1.15,
+     "povracaj": 0.005,
+     "kvota": 1.73
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 3.46,
+      "povracaj": 0.058,
+      "kvota": 1.71
+     },
+     "6": {
+      "n": 60,
+      "prosao": 28,
+      "pogodak": 0.467,
+      "dobit": -10.47,
+      "povracaj": -0.174,
+      "kvota": 1.76
+     },
+     "7": {
+      "n": 54,
+      "prosao": 33,
+      "pogodak": 0.611,
+      "dobit": 1.98,
+      "povracaj": 0.037,
+      "kvota": 1.71
+     },
+     "8": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": 0.59,
+      "povracaj": 0.01,
+      "kvota": 1.67
+     },
+     "9": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 0.1,
+      "povracaj": 0.002,
+      "kvota": 1.63
+     },
+     "10": {
+      "n": 18,
+      "prosao": 11,
+      "pogodak": 0.611,
+      "dobit": 0.96,
+      "povracaj": 0.053,
+      "kvota": 1.75
+     }
+    }
+   },
+   "bar 1 PLUS, najmanje 6": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 183,
+     "pogodak": 0.587,
+     "dobit": 3.48,
+     "povracaj": 0.011,
+     "kvota": 1.72
+    },
+    "plus": {
+     "n": 40,
+     "prosao": 22,
+     "pogodak": 0.55,
+     "dobit": -4.59,
+     "povracaj": -0.115,
+     "kvota": 1.59
+    },
+    "minus": {
+     "n": 272,
+     "prosao": 161,
+     "pogodak": 0.592,
+     "dobit": 8.07,
+     "povracaj": 0.03,
+     "kvota": 1.74
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 41,
+      "pogodak": 0.683,
+      "dobit": 11.74,
+      "povracaj": 0.196,
+      "kvota": 1.74
+     },
+     "6": {
+      "n": 60,
+      "prosao": 28,
+      "pogodak": 0.467,
+      "dobit": -10.47,
+      "povracaj": -0.174,
+      "kvota": 1.76
+     },
+     "7": {
+      "n": 54,
+      "prosao": 34,
+      "pogodak": 0.63,
+      "dobit": 4.16,
+      "povracaj": 0.077,
+      "kvota": 1.73
+     },
+     "8": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": 2.23,
+      "povracaj": 0.037,
+      "kvota": 1.71
+     },
+     "9": {
+      "n": 60,
+      "prosao": 33,
+      "pogodak": 0.55,
+      "dobit": -5.41,
+      "povracaj": -0.09,
+      "kvota": 1.66
+     },
+     "10": {
+      "n": 18,
+      "prosao": 11,
+      "pogodak": 0.611,
+      "dobit": 1.23,
+      "povracaj": 0.068,
+      "kvota": 1.76
+     }
+    }
+   },
+   "bez obaveznog PLUS, najmanje 6": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 186,
+     "pogodak": 0.596,
+     "dobit": 15.53,
+     "povracaj": 0.05,
+     "kvota": 1.76
+    },
+    "plus": {
+     "n": 0
+    },
+    "minus": {
+     "n": 312,
+     "prosao": 186,
+     "pogodak": 0.596,
+     "dobit": 15.53,
+     "povracaj": 0.05,
+     "kvota": 1.76
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 43,
+      "pogodak": 0.717,
+      "dobit": 17.29,
+      "povracaj": 0.288,
+      "kvota": 1.79
+     },
+     "6": {
+      "n": 60,
+      "prosao": 27,
+      "pogodak": 0.45,
+      "dobit": -11.97,
+      "povracaj": -0.199,
+      "kvota": 1.77
+     },
+     "7": {
+      "n": 54,
+      "prosao": 37,
+      "pogodak": 0.685,
+      "dobit": 10.45,
+      "povracaj": 0.194,
+      "kvota": 1.75
+     },
+     "8": {
+      "n": 60,
+      "prosao": 38,
+      "pogodak": 0.633,
+      "dobit": 8.21,
+      "povracaj": 0.137,
+      "kvota": 1.77
+     },
+     "9": {
+      "n": 60,
+      "prosao": 32,
+      "pogodak": 0.533,
+      "dobit": -5.62,
+      "povracaj": -0.094,
+      "kvota": 1.72
+     },
+     "10": {
+      "n": 18,
+      "prosao": 9,
+      "pogodak": 0.5,
+      "dobit": -2.83,
+      "povracaj": -0.157,
+      "kvota": 1.73
+     }
+    }
+   },
+   "bar 2 PLUS, bez dopune do 6": {
+    "ukupno": {
+     "n": 310,
+     "prosao": 181,
+     "pogodak": 0.584,
+     "dobit": -3.21,
+     "povracaj": -0.01,
+     "kvota": 1.7
+    },
+    "plus": {
+     "n": 75,
+     "prosao": 44,
+     "pogodak": 0.587,
+     "dobit": -4.53,
+     "povracaj": -0.06,
+     "kvota": 1.6
+    },
+    "minus": {
+     "n": 235,
+     "prosao": 137,
+     "pogodak": 0.583,
+     "dobit": 1.32,
+     "povracaj": 0.006,
+     "kvota": 1.73
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 3.46,
+      "povracaj": 0.058,
+      "kvota": 1.71
+     },
+     "6": {
+      "n": 58,
+      "prosao": 27,
+      "pogodak": 0.466,
+      "dobit": -10.3,
+      "povracaj": -0.178,
+      "kvota": 1.76
+     },
+     "7": {
+      "n": 54,
+      "prosao": 33,
+      "pogodak": 0.611,
+      "dobit": 1.98,
+      "povracaj": 0.037,
+      "kvota": 1.71
+     },
+     "8": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": 0.59,
+      "povracaj": 0.01,
+      "kvota": 1.67
+     },
+     "9": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 0.1,
+      "povracaj": 0.002,
+      "kvota": 1.63
+     },
+     "10": {
+      "n": 18,
+      "prosao": 11,
+      "pogodak": 0.611,
+      "dobit": 0.96,
+      "povracaj": 0.053,
+      "kvota": 1.75
+     }
+    }
+   },
+   "bez obaveznog PLUS, bez dopune": {
+    "ukupno": {
+     "n": 307,
+     "prosao": 184,
+     "pogodak": 0.599,
+     "dobit": 17.0,
+     "povracaj": 0.055,
+     "kvota": 1.76
+    },
+    "plus": {
+     "n": 0
+    },
+    "minus": {
+     "n": 307,
+     "prosao": 184,
+     "pogodak": 0.599,
+     "dobit": 17.0,
+     "povracaj": 0.055,
+     "kvota": 1.76
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 43,
+      "pogodak": 0.717,
+      "dobit": 17.29,
+      "povracaj": 0.288,
+      "kvota": 1.79
+     },
+     "6": {
+      "n": 58,
+      "prosao": 26,
+      "pogodak": 0.448,
+      "dobit": -11.8,
+      "povracaj": -0.203,
+      "kvota": 1.77
+     },
+     "7": {
+      "n": 54,
+      "prosao": 37,
+      "pogodak": 0.685,
+      "dobit": 10.45,
+      "povracaj": 0.194,
+      "kvota": 1.75
+     },
+     "8": {
+      "n": 60,
+      "prosao": 38,
+      "pogodak": 0.633,
+      "dobit": 8.21,
+      "povracaj": 0.137,
+      "kvota": 1.77
+     },
+     "9": {
+      "n": 60,
+      "prosao": 32,
+      "pogodak": 0.533,
+      "dobit": -5.62,
+      "povracaj": -0.094,
+      "kvota": 1.72
+     },
+     "10": {
+      "n": 15,
+      "prosao": 8,
+      "pogodak": 0.533,
+      "dobit": -1.53,
+      "povracaj": -0.102,
+      "kvota": 1.72
+     }
+    }
+   },
+   "sada + filter poena (malo minuta, nula)": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 180,
+     "pogodak": 0.577,
+     "dobit": -7.23,
+     "povracaj": -0.023,
+     "kvota": 1.7
+    },
+    "plus": {
+     "n": 75,
+     "prosao": 44,
+     "pogodak": 0.587,
+     "dobit": -4.86,
+     "povracaj": -0.065,
+     "kvota": 1.6
+    },
+    "minus": {
+     "n": 237,
+     "prosao": 136,
+     "pogodak": 0.574,
+     "dobit": -2.37,
+     "povracaj": -0.01,
+     "kvota": 1.73
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 3.46,
+      "povracaj": 0.058,
+      "kvota": 1.71
+     },
+     "6": {
+      "n": 60,
+      "prosao": 28,
+      "pogodak": 0.467,
+      "dobit": -10.47,
+      "povracaj": -0.174,
+      "kvota": 1.76
+     },
+     "7": {
+      "n": 54,
+      "prosao": 33,
+      "pogodak": 0.611,
+      "dobit": 2.19,
+      "povracaj": 0.041,
+      "kvota": 1.72
+     },
+     "8": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": 0.59,
+      "povracaj": 0.01,
+      "kvota": 1.67
+     },
+     "9": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": -2.2,
+      "povracaj": -0.037,
+      "kvota": 1.62
+     },
+     "10": {
+      "n": 18,
+      "prosao": 10,
+      "pogodak": 0.556,
+      "dobit": -0.8,
+      "povracaj": -0.044,
+      "kvota": 1.75
+     }
+    }
+   }
+  },
+  "dole_0.7": {
+   "sada: bar 2 PLUS, najmanje 6": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 197,
+     "pogodak": 0.631,
+     "dobit": 27.54,
+     "povracaj": 0.088,
+     "kvota": 1.73
+    },
+    "plus": {
+     "n": 91,
+     "prosao": 58,
+     "pogodak": 0.637,
+     "dobit": 6.89,
+     "povracaj": 0.076,
+     "kvota": 1.71
+    },
+    "minus": {
+     "n": 221,
+     "prosao": 139,
+     "pogodak": 0.629,
+     "dobit": 20.65,
+     "povracaj": 0.093,
+     "kvota": 1.74
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 41,
+      "pogodak": 0.683,
+      "dobit": 10.45,
+      "povracaj": 0.174,
+      "kvota": 1.73
+     },
+     "6": {
+      "n": 60,
+      "prosao": 30,
+      "pogodak": 0.5,
+      "dobit": -7.01,
+      "povracaj": -0.117,
+      "kvota": 1.77
+     },
+     "7": {
+      "n": 54,
+      "prosao": 40,
+      "pogodak": 0.741,
+      "dobit": 17.51,
+      "povracaj": 0.324,
+      "kvota": 1.78
+     },
+     "8": {
+      "n": 60,
+      "prosao": 35,
+      "pogodak": 0.583,
+      "dobit": 0.08,
+      "povracaj": 0.001,
+      "kvota": 1.73
+     },
+     "9": {
+      "n": 60,
+      "prosao": 38,
+      "pogodak": 0.633,
+      "dobit": 2.11,
+      "povracaj": 0.035,
+      "kvota": 1.66
+     },
+     "10": {
+      "n": 18,
+      "prosao": 13,
+      "pogodak": 0.722,
+      "dobit": 4.4,
+      "povracaj": 0.244,
+      "kvota": 1.73
+     }
+    }
+   },
+   "bar 1 PLUS, najmanje 6": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 194,
+     "pogodak": 0.622,
+     "dobit": 25.91,
+     "povracaj": 0.083,
+     "kvota": 1.75
+    },
+    "plus": {
+     "n": 48,
+     "prosao": 28,
+     "pogodak": 0.583,
+     "dobit": -2.01,
+     "povracaj": -0.042,
+     "kvota": 1.7
+    },
+    "minus": {
+     "n": 264,
+     "prosao": 166,
+     "pogodak": 0.629,
+     "dobit": 27.92,
+     "povracaj": 0.106,
+     "kvota": 1.76
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 43,
+      "pogodak": 0.717,
+      "dobit": 14.5,
+      "povracaj": 0.242,
+      "kvota": 1.75
+     },
+     "6": {
+      "n": 60,
+      "prosao": 29,
+      "pogodak": 0.483,
+      "dobit": -8.14,
+      "povracaj": -0.136,
+      "kvota": 1.78
+     },
+     "7": {
+      "n": 54,
+      "prosao": 36,
+      "pogodak": 0.667,
+      "dobit": 10.02,
+      "povracaj": 0.186,
+      "kvota": 1.79
+     },
+     "8": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": 2.77,
+      "povracaj": 0.046,
+      "kvota": 1.76
+     },
+     "9": {
+      "n": 60,
+      "prosao": 38,
+      "pogodak": 0.633,
+      "dobit": 3.66,
+      "povracaj": 0.061,
+      "kvota": 1.7
+     },
+     "10": {
+      "n": 18,
+      "prosao": 12,
+      "pogodak": 0.667,
+      "dobit": 3.1,
+      "povracaj": 0.172,
+      "kvota": 1.75
+     }
+    }
+   },
+   "bez obaveznog PLUS, najmanje 6": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 194,
+     "pogodak": 0.622,
+     "dobit": 33.27,
+     "povracaj": 0.107,
+     "kvota": 1.78
+    },
+    "plus": {
+     "n": 1,
+     "prosao": 1,
+     "pogodak": 1.0,
+     "dobit": 0.5,
+     "povracaj": 0.5,
+     "kvota": 1.5
+    },
+    "minus": {
+     "n": 311,
+     "prosao": 193,
+     "pogodak": 0.621,
+     "dobit": 32.77,
+     "povracaj": 0.105,
+     "kvota": 1.78
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 43,
+      "pogodak": 0.717,
+      "dobit": 16.89,
+      "povracaj": 0.282,
+      "kvota": 1.8
+     },
+     "6": {
+      "n": 60,
+      "prosao": 30,
+      "pogodak": 0.5,
+      "dobit": -6.15,
+      "povracaj": -0.102,
+      "kvota": 1.79
+     },
+     "7": {
+      "n": 54,
+      "prosao": 39,
+      "pogodak": 0.722,
+      "dobit": 16.41,
+      "povracaj": 0.304,
+      "kvota": 1.8
+     },
+     "8": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": 4.33,
+      "povracaj": 0.072,
+      "kvota": 1.78
+     },
+     "9": {
+      "n": 60,
+      "prosao": 34,
+      "pogodak": 0.567,
+      "dobit": -1.43,
+      "povracaj": -0.024,
+      "kvota": 1.73
+     },
+     "10": {
+      "n": 18,
+      "prosao": 12,
+      "pogodak": 0.667,
+      "dobit": 3.22,
+      "povracaj": 0.179,
+      "kvota": 1.76
+     }
+    }
+   },
+   "bar 2 PLUS, bez dopune do 6": {
+    "ukupno": {
+     "n": 310,
+     "prosao": 196,
+     "pogodak": 0.632,
+     "dobit": 27.71,
+     "povracaj": 0.089,
+     "kvota": 1.73
+    },
+    "plus": {
+     "n": 91,
+     "prosao": 58,
+     "pogodak": 0.637,
+     "dobit": 6.89,
+     "povracaj": 0.076,
+     "kvota": 1.71
+    },
+    "minus": {
+     "n": 219,
+     "prosao": 138,
+     "pogodak": 0.63,
+     "dobit": 20.82,
+     "povracaj": 0.095,
+     "kvota": 1.74
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 41,
+      "pogodak": 0.683,
+      "dobit": 10.45,
+      "povracaj": 0.174,
+      "kvota": 1.73
+     },
+     "6": {
+      "n": 58,
+      "prosao": 29,
+      "pogodak": 0.5,
+      "dobit": -6.84,
+      "povracaj": -0.118,
+      "kvota": 1.76
+     },
+     "7": {
+      "n": 54,
+      "prosao": 40,
+      "pogodak": 0.741,
+      "dobit": 17.51,
+      "povracaj": 0.324,
+      "kvota": 1.78
+     },
+     "8": {
+      "n": 60,
+      "prosao": 35,
+      "pogodak": 0.583,
+      "dobit": 0.08,
+      "povracaj": 0.001,
+      "kvota": 1.73
+     },
+     "9": {
+      "n": 60,
+      "prosao": 38,
+      "pogodak": 0.633,
+      "dobit": 2.11,
+      "povracaj": 0.035,
+      "kvota": 1.66
+     },
+     "10": {
+      "n": 18,
+      "prosao": 13,
+      "pogodak": 0.722,
+      "dobit": 4.4,
+      "povracaj": 0.244,
+      "kvota": 1.73
+     }
+    }
+   },
+   "bez obaveznog PLUS, bez dopune": {
+    "ukupno": {
+     "n": 310,
+     "prosao": 192,
+     "pogodak": 0.619,
+     "dobit": 31.61,
+     "povracaj": 0.102,
+     "kvota": 1.78
+    },
+    "plus": {
+     "n": 1,
+     "prosao": 1,
+     "pogodak": 1.0,
+     "dobit": 0.5,
+     "povracaj": 0.5,
+     "kvota": 1.5
+    },
+    "minus": {
+     "n": 309,
+     "prosao": 191,
+     "pogodak": 0.618,
+     "dobit": 31.11,
+     "povracaj": 0.101,
+     "kvota": 1.78
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 43,
+      "pogodak": 0.717,
+      "dobit": 16.89,
+      "povracaj": 0.282,
+      "kvota": 1.8
+     },
+     "6": {
+      "n": 58,
+      "prosao": 28,
+      "pogodak": 0.483,
+      "dobit": -7.81,
+      "povracaj": -0.135,
+      "kvota": 1.79
+     },
+     "7": {
+      "n": 54,
+      "prosao": 39,
+      "pogodak": 0.722,
+      "dobit": 16.41,
+      "povracaj": 0.304,
+      "kvota": 1.8
+     },
+     "8": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": 4.33,
+      "povracaj": 0.072,
+      "kvota": 1.78
+     },
+     "9": {
+      "n": 60,
+      "prosao": 34,
+      "pogodak": 0.567,
+      "dobit": -1.43,
+      "povracaj": -0.024,
+      "kvota": 1.73
+     },
+     "10": {
+      "n": 18,
+      "prosao": 12,
+      "pogodak": 0.667,
+      "dobit": 3.22,
+      "povracaj": 0.179,
+      "kvota": 1.76
+     }
+    }
+   },
+   "sada + filter poena (malo minuta, nula)": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 194,
+     "pogodak": 0.622,
+     "dobit": 21.94,
+     "povracaj": 0.07,
+     "kvota": 1.73
+    },
+    "plus": {
+     "n": 90,
+     "prosao": 55,
+     "pogodak": 0.611,
+     "dobit": 1.78,
+     "povracaj": 0.02,
+     "kvota": 1.69
+    },
+    "minus": {
+     "n": 222,
+     "prosao": 139,
+     "pogodak": 0.626,
+     "dobit": 20.16,
+     "povracaj": 0.091,
+     "kvota": 1.75
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 41,
+      "pogodak": 0.683,
+      "dobit": 10.45,
+      "povracaj": 0.174,
+      "kvota": 1.73
+     },
+     "6": {
+      "n": 60,
+      "prosao": 30,
+      "pogodak": 0.5,
+      "dobit": -6.94,
+      "povracaj": -0.116,
+      "kvota": 1.77
+     },
+     "7": {
+      "n": 54,
+      "prosao": 38,
+      "pogodak": 0.704,
+      "dobit": 13.87,
+      "povracaj": 0.257,
+      "kvota": 1.79
+     },
+     "8": {
+      "n": 60,
+      "prosao": 33,
+      "pogodak": 0.55,
+      "dobit": -3.46,
+      "povracaj": -0.058,
+      "kvota": 1.72
+     },
+     "9": {
+      "n": 60,
+      "prosao": 38,
+      "pogodak": 0.633,
+      "dobit": 2.04,
+      "povracaj": 0.034,
+      "kvota": 1.65
+     },
+     "10": {
+      "n": 18,
+      "prosao": 14,
+      "pogodak": 0.778,
+      "dobit": 5.98,
+      "povracaj": 0.332,
+      "kvota": 1.71
+     }
+    }
+   }
+  },
+  "dole_0.5": {
+   "sada: bar 2 PLUS, najmanje 6": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 187,
+     "pogodak": 0.599,
+     "dobit": 6.66,
+     "povracaj": 0.021,
+     "kvota": 1.72
+    },
+    "plus": {
+     "n": 88,
+     "prosao": 54,
+     "pogodak": 0.614,
+     "dobit": 1.6,
+     "povracaj": 0.018,
+     "kvota": 1.68
+    },
+    "minus": {
+     "n": 224,
+     "prosao": 133,
+     "pogodak": 0.594,
+     "dobit": 5.06,
+     "povracaj": 0.023,
+     "kvota": 1.73
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 39,
+      "pogodak": 0.65,
+      "dobit": 5.88,
+      "povracaj": 0.098,
+      "kvota": 1.7
+     },
+     "6": {
+      "n": 60,
+      "prosao": 25,
+      "pogodak": 0.417,
+      "dobit": -16.19,
+      "povracaj": -0.27,
+      "kvota": 1.76
+     },
+     "7": {
+      "n": 54,
+      "prosao": 38,
+      "pogodak": 0.704,
+      "dobit": 13.4,
+      "povracaj": 0.248,
+      "kvota": 1.77
+     },
+     "8": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": 0.87,
+      "povracaj": 0.015,
+      "kvota": 1.7
+     },
+     "9": {
+      "n": 60,
+      "prosao": 39,
+      "pogodak": 0.65,
+      "dobit": 3.5,
+      "povracaj": 0.058,
+      "kvota": 1.64
+     },
+     "10": {
+      "n": 18,
+      "prosao": 10,
+      "pogodak": 0.556,
+      "dobit": -0.8,
+      "povracaj": -0.044,
+      "kvota": 1.75
+     }
+    }
+   },
+   "bar 1 PLUS, najmanje 6": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 189,
+     "pogodak": 0.606,
+     "dobit": 13.76,
+     "povracaj": 0.044,
+     "kvota": 1.74
+    },
+    "plus": {
+     "n": 47,
+     "prosao": 28,
+     "pogodak": 0.596,
+     "dobit": -1.96,
+     "povracaj": -0.042,
+     "kvota": 1.65
+    },
+    "minus": {
+     "n": 265,
+     "prosao": 161,
+     "pogodak": 0.608,
+     "dobit": 15.72,
+     "povracaj": 0.059,
+     "kvota": 1.75
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 42,
+      "pogodak": 0.7,
+      "dobit": 12.88,
+      "povracaj": 0.215,
+      "kvota": 1.74
+     },
+     "6": {
+      "n": 60,
+      "prosao": 27,
+      "pogodak": 0.45,
+      "dobit": -12.36,
+      "povracaj": -0.206,
+      "kvota": 1.77
+     },
+     "7": {
+      "n": 54,
+      "prosao": 35,
+      "pogodak": 0.648,
+      "dobit": 7.54,
+      "povracaj": 0.14,
+      "kvota": 1.77
+     },
+     "8": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 3.54,
+      "povracaj": 0.059,
+      "kvota": 1.73
+     },
+     "9": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": -0.64,
+      "povracaj": -0.011,
+      "kvota": 1.67
+     },
+     "10": {
+      "n": 18,
+      "prosao": 12,
+      "pogodak": 0.667,
+      "dobit": 2.8,
+      "povracaj": 0.156,
+      "kvota": 1.73
+     }
+    }
+   },
+   "bez obaveznog PLUS, najmanje 6": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 192,
+     "pogodak": 0.615,
+     "dobit": 27.29,
+     "povracaj": 0.087,
+     "kvota": 1.77
+    },
+    "plus": {
+     "n": 1,
+     "prosao": 1,
+     "pogodak": 1.0,
+     "dobit": 0.5,
+     "povracaj": 0.5,
+     "kvota": 1.5
+    },
+    "minus": {
+     "n": 311,
+     "prosao": 191,
+     "pogodak": 0.614,
+     "dobit": 26.79,
+     "povracaj": 0.086,
+     "kvota": 1.77
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 42,
+      "pogodak": 0.7,
+      "dobit": 14.72,
+      "povracaj": 0.245,
+      "kvota": 1.78
+     },
+     "6": {
+      "n": 60,
+      "prosao": 29,
+      "pogodak": 0.483,
+      "dobit": -8.15,
+      "povracaj": -0.136,
+      "kvota": 1.78
+     },
+     "7": {
+      "n": 54,
+      "prosao": 38,
+      "pogodak": 0.704,
+      "dobit": 13.62,
+      "povracaj": 0.252,
+      "kvota": 1.78
+     },
+     "8": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 6.48,
+      "povracaj": 0.108,
+      "kvota": 1.79
+     },
+     "9": {
+      "n": 60,
+      "prosao": 35,
+      "pogodak": 0.583,
+      "dobit": -0.47,
+      "povracaj": -0.008,
+      "kvota": 1.72
+     },
+     "10": {
+      "n": 18,
+      "prosao": 11,
+      "pogodak": 0.611,
+      "dobit": 1.09,
+      "povracaj": 0.061,
+      "kvota": 1.74
+     }
+    }
+   },
+   "bar 2 PLUS, bez dopune do 6": {
+    "ukupno": {
+     "n": 310,
+     "prosao": 186,
+     "pogodak": 0.6,
+     "dobit": 6.83,
+     "povracaj": 0.022,
+     "kvota": 1.72
+    },
+    "plus": {
+     "n": 88,
+     "prosao": 54,
+     "pogodak": 0.614,
+     "dobit": 1.6,
+     "povracaj": 0.018,
+     "kvota": 1.68
+    },
+    "minus": {
+     "n": 222,
+     "prosao": 132,
+     "pogodak": 0.595,
+     "dobit": 5.23,
+     "povracaj": 0.024,
+     "kvota": 1.73
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 39,
+      "pogodak": 0.65,
+      "dobit": 5.88,
+      "povracaj": 0.098,
+      "kvota": 1.7
+     },
+     "6": {
+      "n": 58,
+      "prosao": 24,
+      "pogodak": 0.414,
+      "dobit": -16.02,
+      "povracaj": -0.276,
+      "kvota": 1.76
+     },
+     "7": {
+      "n": 54,
+      "prosao": 38,
+      "pogodak": 0.704,
+      "dobit": 13.4,
+      "povracaj": 0.248,
+      "kvota": 1.77
+     },
+     "8": {
+      "n": 60,
+      "prosao": 36,
+      "pogodak": 0.6,
+      "dobit": 0.87,
+      "povracaj": 0.015,
+      "kvota": 1.7
+     },
+     "9": {
+      "n": 60,
+      "prosao": 39,
+      "pogodak": 0.65,
+      "dobit": 3.5,
+      "povracaj": 0.058,
+      "kvota": 1.64
+     },
+     "10": {
+      "n": 18,
+      "prosao": 10,
+      "pogodak": 0.556,
+      "dobit": -0.8,
+      "povracaj": -0.044,
+      "kvota": 1.75
+     }
+    }
+   },
+   "bez obaveznog PLUS, bez dopune": {
+    "ukupno": {
+     "n": 310,
+     "prosao": 190,
+     "pogodak": 0.613,
+     "dobit": 25.63,
+     "povracaj": 0.083,
+     "kvota": 1.77
+    },
+    "plus": {
+     "n": 1,
+     "prosao": 1,
+     "pogodak": 1.0,
+     "dobit": 0.5,
+     "povracaj": 0.5,
+     "kvota": 1.5
+    },
+    "minus": {
+     "n": 309,
+     "prosao": 189,
+     "pogodak": 0.612,
+     "dobit": 25.13,
+     "povracaj": 0.081,
+     "kvota": 1.77
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 42,
+      "pogodak": 0.7,
+      "dobit": 14.72,
+      "povracaj": 0.245,
+      "kvota": 1.78
+     },
+     "6": {
+      "n": 58,
+      "prosao": 27,
+      "pogodak": 0.466,
+      "dobit": -9.81,
+      "povracaj": -0.169,
+      "kvota": 1.78
+     },
+     "7": {
+      "n": 54,
+      "prosao": 38,
+      "pogodak": 0.704,
+      "dobit": 13.62,
+      "povracaj": 0.252,
+      "kvota": 1.78
+     },
+     "8": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 6.48,
+      "povracaj": 0.108,
+      "kvota": 1.79
+     },
+     "9": {
+      "n": 60,
+      "prosao": 35,
+      "pogodak": 0.583,
+      "dobit": -0.47,
+      "povracaj": -0.008,
+      "kvota": 1.72
+     },
+     "10": {
+      "n": 18,
+      "prosao": 11,
+      "pogodak": 0.611,
+      "dobit": 1.09,
+      "povracaj": 0.061,
+      "kvota": 1.74
+     }
+    }
+   },
+   "sada + filter poena (malo minuta, nula)": {
+    "ukupno": {
+     "n": 312,
+     "prosao": 186,
+     "pogodak": 0.596,
+     "dobit": 3.98,
+     "povracaj": 0.013,
+     "kvota": 1.71
+    },
+    "plus": {
+     "n": 88,
+     "prosao": 54,
+     "pogodak": 0.614,
+     "dobit": 0.54,
+     "povracaj": 0.006,
+     "kvota": 1.66
+    },
+    "minus": {
+     "n": 224,
+     "prosao": 132,
+     "pogodak": 0.589,
+     "dobit": 3.44,
+     "povracaj": 0.015,
+     "kvota": 1.73
+    },
+    "po_kolu": {
+     "5": {
+      "n": 60,
+      "prosao": 39,
+      "pogodak": 0.65,
+      "dobit": 5.88,
+      "povracaj": 0.098,
+      "kvota": 1.7
+     },
+     "6": {
+      "n": 60,
+      "prosao": 25,
+      "pogodak": 0.417,
+      "dobit": -16.19,
+      "povracaj": -0.27,
+      "kvota": 1.76
+     },
+     "7": {
+      "n": 54,
+      "prosao": 36,
+      "pogodak": 0.667,
+      "dobit": 9.76,
+      "povracaj": 0.181,
+      "kvota": 1.78
+     },
+     "8": {
+      "n": 60,
+      "prosao": 37,
+      "pogodak": 0.617,
+      "dobit": 2.79,
+      "povracaj": 0.047,
+      "kvota": 1.7
+     },
+     "9": {
+      "n": 60,
+      "prosao": 38,
+      "pogodak": 0.633,
+      "dobit": 1.3,
+      "povracaj": 0.022,
+      "kvota": 1.63
+     },
+     "10": {
+      "n": 18,
+      "prosao": 11,
+      "pogodak": 0.611,
+      "dobit": 0.44,
+      "povracaj": 0.024,
+      "kvota": 1.72
+     }
+    }
+   }
+  }
+ },
+ "odstupanje": [
+  {
+   "raspon": "0–0.85",
+   "n": 512,
+   "model": 5.47,
+   "prosek": 7.02,
+   "stvarno": 6.26
+  },
+  {
+   "raspon": "0.85–1.15",
+   "n": 1377,
+   "model": 6.78,
+   "prosek": 6.95,
+   "stvarno": 7.02
+  },
+  {
+   "raspon": "1.15–1.3",
+   "n": 213,
+   "model": 5.61,
+   "prosek": 4.63,
+   "stvarno": 5.67
+  },
+  {
+   "raspon": "1.3–99",
+   "n": 179,
+   "model": 4.94,
+   "prosek": 3.26,
+   "stvarno": 4.59
+  }
+ ]
+}
