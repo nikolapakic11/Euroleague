@@ -1,6 +1,6 @@
 {
  "kolo": 10,
- "at": "05.11.2026. 13:51",
+ "at": "05.11.2026. 16:35",
  "izvori": [
   "https://www.eurohoops.net/en/euroleague/2030518/euroleague-round-10-injury-report-satoransky-out-powell-and-konchar-could-debut/"
  ],
@@ -565,28 +565,22 @@
    "tekst": "Uncertain: Not included in 12-man roster in Round 9.(coach's decision). Played in the domestic league (11.02) Zalgiris Kaunas",
    "izvor": "basketnews"
   },
-  "kaodirichi akobundu ehiogu": {
-   "tim": "ZAL",
-   "stanje": "igra",
-   "tekst": "Ready: Played in Rounds 8-9 after DNP in Rounds 1-7 (coach's decision)",
-   "izvor": "basketnews"
-  },
   "marek blazevic": {
    "tim": "ZAL",
-   "stanje": "upitan",
-   "tekst": "Uncertain: Not included in 12-man roster in Rounds 8-9 (coach's decision)",
+   "stanje": "van",
+   "tekst": "Out: Didn't travel for Round 10 after DNP in Rounds 8-9 (coach's decision)",
    "izvor": "basketnews"
   },
   "dovydas giedraitis": {
    "tim": "ZAL",
-   "stanje": "upitan",
-   "tekst": "Uncertain: Not included in 12-man roster in Rounds 8-9 (coach's decision)",
+   "stanje": "van",
+   "tekst": "Out: Didn't travel for Round 10 after DNP in Rounds 8-9 (coach's decision)",
    "izvor": "basketnews"
   },
   "deividas sirvydis": {
    "tim": "ZAL",
-   "stanje": "upitan",
-   "tekst": "Uncertain: Not included in 12-man roster in Rounds 8-9 (coach's decision)",
+   "stanje": "van",
+   "tekst": "Out: Didn't travel for Round 10 after DNP in Rounds 8-9 (coach's decision)",
    "izvor": "basketnews"
   }
  },

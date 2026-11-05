@@ -745,15 +745,11 @@
    "l": 5.5,
    "kl": "mozzart",
    "kvota": 1.85,
-   "pp": 0.636,
-   "ev": 0.177,
+   "pp": 0.637,
+   "ev": 0.179,
    "nivo": "jak",
    "rang": 4,
    "ostale": [
-    {
-     "kl": "admiral",
-     "k": 1.82
-    },
     {
      "kl": "maxbet",
      "k": 1.81
@@ -761,14 +757,18 @@
     {
      "kl": "soccerbet",
      "k": 1.81
+    },
+    {
+     "kl": "admiral",
+     "k": 1.79
     }
    ],
    "knjige": [
     {
      "kl": "admiral",
      "l": 5.5,
-     "u": 2.01,
-     "o": 1.82
+     "u": 2.04,
+     "o": 1.79
     },
     {
      "kl": "maxbet",
@@ -793,9 +793,9 @@
     "l": 5.5,
     "k": 1.85,
     "kl": "mozzart",
-    "p": 0.636,
+    "p": 0.637,
     "vrsta": "granica",
-    "ev": 0.177,
+    "ev": 0.178,
     "isti": true
    },
    "opseg": [
@@ -811,7 +811,7 @@
      "l": 5.5,
      "k": 1.85,
      "kl": "mozzart",
-     "p": 0.636,
+     "p": 0.637,
      "vrsta": "granica"
     },
     {
@@ -876,10 +876,10 @@
     7
    ],
    "rang_dan": 1,
-   "upisano": "05.11.2026. 13:51",
+   "upisano": "05.11.2026. 16:36",
    "prvi_put": "05.11.2026. 10:26",
    "zatv": 1.85,
-   "zatv_fer": 1.572
+   "zatv_fer": 1.569
   },
   {
    "g": 94,
@@ -981,13 +981,146 @@
     7
    ],
    "rang_dan": 2,
-   "upisano": "05.11.2026. 13:51",
+   "upisano": "05.11.2026. 16:36",
    "prvi_put": "05.11.2026. 13:40",
    "promena": "novo",
    "ranije": null,
    "promena_u": "05.11.2026. 13:40",
    "zatv": 1.85,
    "zatv_fer": 1.584
+  },
+  {
+   "g": 93,
+   "dan": "2026-11-05",
+   "vreme": "05.11. 19:45",
+   "k": "amir coffey",
+   "ime": "Amir Coffey",
+   "tim": "HTA",
+   "prot": "BAR",
+   "s": "P",
+   "strana": "o",
+   "l": 5.5,
+   "kl": "mozzart",
+   "kvota": 1.9,
+   "pp": 0.614,
+   "ev": 0.167,
+   "nivo": "solidan",
+   "rang": 1,
+   "ostale": [],
+   "knjige": [
+    {
+     "kl": "admiral",
+     "l": 6.5,
+     "u": 1.86,
+     "o": 1.98
+    },
+    {
+     "kl": "maxbet",
+     "l": 6.5,
+     "u": 1.9,
+     "o": 1.9
+    },
+    {
+     "kl": "mozzart",
+     "l": 5.5,
+     "u": 1.9,
+     "o": 1.9
+    },
+    {
+     "kl": "soccerbet",
+     "l": 6.5,
+     "u": 1.9,
+     "o": 1.9
+    }
+   ],
+   "soft": {
+    "l": 5.5,
+    "k": 1.9,
+    "kl": "mozzart",
+    "p": 0.614,
+    "vrsta": "granica",
+    "ev": 0.167,
+    "isti": true
+   },
+   "opseg": [
+    {
+     "l": 4.5,
+     "k": 1.4,
+     "kl": "soccerbet",
+     "p": 0.726,
+     "vrsta": "lestvica",
+     "n": 5
+    },
+    {
+     "l": 5.5,
+     "k": 1.9,
+     "kl": "mozzart",
+     "p": 0.614,
+     "vrsta": "granica"
+    },
+    {
+     "l": 6.5,
+     "k": 1.98,
+     "kl": "admiral",
+     "p": 0.589,
+     "vrsta": "granica"
+    },
+    {
+     "l": 9.5,
+     "k": 3.55,
+     "kl": "soccerbet",
+     "p": 0.381,
+     "vrsta": "lestvica",
+     "n": 10
+    },
+    {
+     "l": 14.5,
+     "k": 12,
+     "kl": "soccerbet",
+     "p": 0.158,
+     "vrsta": "lestvica",
+     "n": 15
+    },
+    {
+     "l": 19.5,
+     "k": 33,
+     "kl": "soccerbet",
+     "p": 0.068,
+     "vrsta": "lestvica",
+     "n": 20
+    }
+   ],
+   "q": [
+    2,
+    4,
+    8,
+    12,
+    17
+   ],
+   "mu": 8.84,
+   "min": 24.3,
+   "pm": 0.6739,
+   "tr": 0.5,
+   "l0": null,
+   "vatra": null,
+   "pos": "G",
+   "of": 1.024,
+   "analiza": [
+    "Granica od 5,5 je niža od onoga što realno očekujemo, a to je oko devet poena, iz ovih razloga:",
+    "Kod Hapoela ne igra Tomas Satoransky, pa ostaje više minuta i lopti za ostale.",
+    "Ove sezone daje oko šest poena po utakmici i granicu od 5,5 prebacio je u 3 od 5 utakmica.",
+    "Kod Barselone na njegovoj poziciji ne igra Umoja Gibson, pa manje je onih koji ga čuvaju.",
+    "Kod kuće postiže više poena nego u gostima (oko osam poena naspram tri do četiri poena), a sada igra kod kuće."
+   ],
+   "forma": [
+    3,
+    5
+   ],
+   "rang_dan": 3,
+   "upisano": "05.11.2026. 16:36",
+   "prvi_put": "05.11.2026. 10:26",
+   "zatv": 1.9,
+   "zatv_fer": 1.628
   },
   {
    "g": 95,
@@ -1000,13 +1133,17 @@
    "s": "P",
    "strana": "o",
    "l": 8.5,
-   "kl": "mozzart",
+   "kl": "maxbet",
    "kvota": 1.85,
-   "pp": 0.615,
-   "ev": 0.137,
+   "pp": 0.613,
+   "ev": 0.134,
    "nivo": "solidan",
    "rang": 5,
    "ostale": [
+    {
+     "kl": "mozzart",
+     "k": 1.85
+    },
     {
      "kl": "admiral",
      "k": 1.8
@@ -1025,9 +1162,9 @@
     },
     {
      "kl": "maxbet",
-     "l": 9.5,
-     "u": 1.77,
-     "o": 2.02
+     "l": 8.5,
+     "u": 1.95,
+     "o": 1.85
     },
     {
      "kl": "mozzart",
@@ -1064,8 +1201,8 @@
     {
      "l": 8.5,
      "k": 1.85,
-     "kl": "mozzart",
-     "p": 0.615,
+     "kl": "maxbet",
+     "p": 0.613,
      "vrsta": "granica"
     },
     {
@@ -1112,7 +1249,7 @@
    "min": 20.4,
    "pm": 0.6269,
    "tr": 0.5132,
-   "l0": null,
+   "l0": 9.5,
    "vatra": null,
    "pos": "G",
    "of": 1.069,
@@ -1127,150 +1264,11 @@
     5,
     7
    ],
-   "rang_dan": 3,
-   "upisano": "05.11.2026. 13:51",
+   "rang_dan": 4,
+   "upisano": "05.11.2026. 16:36",
    "prvi_put": "05.11.2026. 10:26",
    "zatv": 1.85,
-   "zatv_fer": 1.627
-  },
-  {
-   "g": 93,
-   "dan": "2026-11-05",
-   "vreme": "05.11. 19:45",
-   "k": "amir coffey",
-   "ime": "Amir Coffey",
-   "tim": "HTA",
-   "prot": "BAR",
-   "s": "P",
-   "strana": "o",
-   "l": 5.5,
-   "kl": "admiral",
-   "kvota": 1.92,
-   "pp": 0.614,
-   "ev": 0.179,
-   "nivo": "solidan",
-   "rang": 1,
-   "ostale": [
-    {
-     "kl": "maxbet",
-     "k": 1.9
-    },
-    {
-     "kl": "mozzart",
-     "k": 1.9
-    },
-    {
-     "kl": "soccerbet",
-     "k": 1.9
-    }
-   ],
-   "knjige": [
-    {
-     "kl": "admiral",
-     "l": 5.5,
-     "u": 1.92,
-     "o": 1.92
-    },
-    {
-     "kl": "maxbet",
-     "l": 5.5,
-     "u": 1.9,
-     "o": 1.9
-    },
-    {
-     "kl": "mozzart",
-     "l": 5.5,
-     "u": 1.9,
-     "o": 1.9
-    },
-    {
-     "kl": "soccerbet",
-     "l": 5.5,
-     "u": 1.9,
-     "o": 1.9
-    }
-   ],
-   "soft": {
-    "l": 5.5,
-    "k": 1.92,
-    "kl": "admiral",
-    "p": 0.614,
-    "vrsta": "granica",
-    "ev": 0.179,
-    "isti": true
-   },
-   "opseg": [
-    {
-     "l": 4.5,
-     "k": 1.55,
-     "kl": "soccerbet",
-     "p": 0.691,
-     "vrsta": "lestvica",
-     "n": 5
-    },
-    {
-     "l": 5.5,
-     "k": 1.92,
-     "kl": "admiral",
-     "p": 0.614,
-     "vrsta": "granica"
-    },
-    {
-     "l": 9.5,
-     "k": 4.45,
-     "kl": "soccerbet",
-     "p": 0.34,
-     "vrsta": "lestvica",
-     "n": 10
-    },
-    {
-     "l": 14.5,
-     "k": 16,
-     "kl": "soccerbet",
-     "p": 0.135,
-     "vrsta": "lestvica",
-     "n": 15
-    },
-    {
-     "l": 19.5,
-     "k": 40,
-     "kl": "soccerbet",
-     "p": 0.061,
-     "vrsta": "lestvica",
-     "n": 20
-    }
-   ],
-   "q": [
-    2,
-    4,
-    8,
-    12,
-    17
-   ],
-   "mu": 8.84,
-   "min": 24.3,
-   "pm": 0.6739,
-   "tr": 0.5,
-   "l0": null,
-   "vatra": null,
-   "pos": "G",
-   "of": 1.024,
-   "analiza": [
-    "Granica od 5,5 je niža od onoga što realno očekujemo, a to je oko devet poena, iz ovih razloga:",
-    "Kod Hapoela ne igra Tomas Satoransky, pa ostaje više minuta i lopti za ostale.",
-    "Ove sezone daje oko šest poena po utakmici i granicu od 5,5 prebacio je u 3 od 5 utakmica.",
-    "Kod Barselone na njegovoj poziciji ne igra Umoja Gibson, pa manje je onih koji ga čuvaju.",
-    "Kod kuće postiže više poena nego u gostima (oko osam poena naspram tri do četiri poena), a sada igra kod kuće."
-   ],
-   "forma": [
-    3,
-    5
-   ],
-   "rang_dan": 4,
-   "upisano": "05.11.2026. 13:51",
-   "prvi_put": "05.11.2026. 10:26",
-   "zatv": 1.92,
-   "zatv_fer": 1.628
+   "zatv_fer": 1.631
   },
   {
    "g": 92,
@@ -1397,9 +1395,10 @@
     7
    ],
    "rang_dan": 5,
-   "upisano": "05.11.2026. 13:51",
+   "upisano": "05.11.2026. 16:36",
    "prvi_put": "05.11.2026. 13:51",
    "promena": "novo",
+   "ranije": null,
    "promena_u": "05.11.2026. 13:51",
    "zatv": 1.75,
    "zatv_fer": 1.666
@@ -1519,9 +1518,10 @@
     7
    ],
    "rang_dan": 6,
-   "upisano": "05.11.2026. 13:51",
+   "upisano": "05.11.2026. 16:36",
    "prvi_put": "05.11.2026. 13:51",
    "promena": "novo",
+   "ranije": null,
    "promena_u": "05.11.2026. 13:51",
    "zatv": 2.02,
    "zatv_fer": 1.673
@@ -1624,7 +1624,7 @@
     7
    ],
    "rang_dan": 7,
-   "upisano": "05.11.2026. 13:51",
+   "upisano": "05.11.2026. 16:36",
    "prvi_put": "05.11.2026. 10:26",
    "zatv": 1.85,
    "zatv_fer": 1.71
@@ -1738,7 +1738,7 @@
     7
    ],
    "rang_dan": 8,
-   "upisano": "05.11.2026. 13:51",
+   "upisano": "05.11.2026. 16:36",
    "prvi_put": "05.11.2026. 13:40",
    "promena": "novo",
    "ranije": null,
@@ -1747,7 +1747,7 @@
    "zatv_fer": 1.747
   }
  ],
- "osvezeno": "05.11.2026. 13:51",
+ "osvezeno": "05.11.2026. 16:36",
  "utakmice": [
   {
    "g": 91,
@@ -1791,10 +1791,10 @@
     "Soccerbet"
    ],
    "snimci": {
-    "Admiral": "2026-11-05T09:06:27.325Z",
-    "MaxBet": "2026-11-05T12:32:31.965Z",
+    "Admiral": "2026-11-05T15:33:42.772Z",
+    "MaxBet": "2026-11-05T15:34:05.400Z",
     "Mozzart": "2026-11-05T12:37:35Z",
-    "Soccerbet": "2026-11-05T12:39:43+00:00"
+    "Soccerbet": "2026-11-05T15:36:42+00:00"
    }
   },
   {
@@ -1815,10 +1815,10 @@
     "Soccerbet"
    ],
    "snimci": {
-    "Admiral": "2026-11-05T09:06:27.325Z",
-    "MaxBet": "2026-11-05T12:32:31.965Z",
+    "Admiral": "2026-11-05T15:33:42.772Z",
+    "MaxBet": "2026-11-05T15:34:05.400Z",
     "Mozzart": "2026-11-05T12:37:35Z",
-    "Soccerbet": "2026-11-05T12:39:43+00:00"
+    "Soccerbet": "2026-11-05T15:36:42+00:00"
    }
   },
   {
@@ -1839,10 +1839,10 @@
     "Soccerbet"
    ],
    "snimci": {
-    "Admiral": "2026-11-05T09:06:27.325Z",
-    "MaxBet": "2026-11-05T12:32:31.965Z",
+    "Admiral": "2026-11-05T15:33:42.772Z",
+    "MaxBet": "2026-11-05T15:34:05.400Z",
     "Mozzart": "2026-11-05T12:37:35Z",
-    "Soccerbet": "2026-11-05T12:39:43+00:00"
+    "Soccerbet": "2026-11-05T15:36:42+00:00"
    }
   },
   {
@@ -1863,10 +1863,10 @@
     "Soccerbet"
    ],
    "snimci": {
-    "Admiral": "2026-11-05T09:06:27.325Z",
-    "MaxBet": "2026-11-05T12:32:31.965Z",
+    "Admiral": "2026-11-05T15:33:42.772Z",
+    "MaxBet": "2026-11-05T15:34:05.400Z",
     "Mozzart": "2026-11-05T12:37:35Z",
-    "Soccerbet": "2026-11-05T12:39:43+00:00"
+    "Soccerbet": "2026-11-05T15:36:42+00:00"
    }
   },
   {
@@ -1887,10 +1887,10 @@
     "Soccerbet"
    ],
    "snimci": {
-    "Admiral": "2026-11-05T09:06:27.325Z",
-    "MaxBet": "2026-11-05T12:32:31.965Z",
+    "Admiral": "2026-11-05T15:33:42.772Z",
+    "MaxBet": "2026-11-05T15:34:05.400Z",
     "Mozzart": "2026-11-05T12:37:35Z",
-    "Soccerbet": "2026-11-05T12:39:43+00:00"
+    "Soccerbet": "2026-11-05T15:36:42+00:00"
    }
   },
   {
@@ -3573,7 +3573,7 @@
     "s": "P",
     "l": 9.5,
     "strana": "o",
-    "pp": 0.55,
+    "pp": 0.559,
     "mu": 9.54,
     "q": [
      3,
@@ -3585,9 +3585,9 @@
     "min": 25.2,
     "pros": 9.44,
     "p5": 13.4,
-    "u": 1.95,
-    "o": 1.92,
-    "knjiga": 4,
+    "u": 1.98,
+    "o": 1.85,
+    "knjiga": 2,
     "pred": null,
     "za": [
      "Protiv Pariza krila postižu više nego protiv većine ekipa.",
@@ -3607,7 +3607,7 @@
     "s": "S",
     "l": 4.5,
     "strana": "u",
-    "pp": 0.562,
+    "pp": 0.534,
     "mu": 4.01,
     "q": [
      1,
@@ -3619,7 +3619,7 @@
     "min": 25.2,
     "pros": 4.0,
     "p5": 5.6,
-    "u": 1.85,
+    "u": 2.2,
     "o": 1.85,
     "knjiga": 4,
     "pred": null,
@@ -3639,7 +3639,7 @@
     "s": "P",
     "l": 11.5,
     "strana": "o",
-    "pp": 0.534,
+    "pp": 0.533,
     "mu": 11.08,
     "q": [
      3,
@@ -3652,7 +3652,7 @@
     "pros": 9.56,
     "p5": 9.0,
     "u": 1.92,
-    "o": 1.97,
+    "o": 1.98,
     "knjiga": 3,
     "pred": null,
     "za": [
@@ -3772,8 +3772,8 @@
     "pos": "G",
     "s": "A",
     "l": 4.5,
-    "strana": "u",
-    "pp": 0.501,
+    "strana": "o",
+    "pp": 0.504,
     "mu": 4.25,
     "q": [
      1,
@@ -3785,16 +3785,17 @@
     "min": 22.7,
     "pros": 4.0,
     "p5": 5.6,
-    "u": 2,
+    "u": 2.1,
     "o": 1.75,
     "knjiga": 4,
     "pred": "u",
     "za": [
-     "Ove sezone daje oko četiri asistencije po utakmici; ispod 4,5 je ostao u 5 od 9 utakmica."
+     "Prvi je organizator igre Efesa: lopta je najčešće u njegovim rukama.",
+     "Protiv Pariza lopta dobro kruži; dozvoljavaju dosta asistencija.",
+     "U poslednje tri utakmice: 6, 5 i 6 asistencija, više nego inače."
     ],
     "protiv": [
-     "Prvi je organizator igre Efesa: lopta je najčešće u njegovim rukama.",
-     "Protiv Pariza lopta dobro kruži; dozvoljavaju dosta asistencija."
+     "Ove sezone daje oko četiri asistencije po utakmici; ispod 4,5 je ostao u 5 od 9 utakmica."
     ]
    },
    {
@@ -3870,7 +3871,7 @@
     "s": "P",
     "l": 7.5,
     "strana": "o",
-    "pp": 0.571,
+    "pp": 0.575,
     "mu": 8.38,
     "q": [
      2,
@@ -3882,8 +3883,8 @@
     "min": 19.2,
     "pros": 6.78,
     "p5": 8.6,
-    "u": 1.99,
-    "o": 1.92,
+    "u": 2,
+    "o": 1.85,
     "knjiga": 4,
     "pred": null,
     "za": [
@@ -3904,7 +3905,7 @@
     "s": "S",
     "l": 5.5,
     "strana": "u",
-    "pp": 0.507,
+    "pp": 0.509,
     "mu": 4.96,
     "q": [
      2,
@@ -3972,7 +3973,7 @@
     "s": "P",
     "l": 19.5,
     "strana": "o",
-    "pp": 0.563,
+    "pp": 0.566,
     "mu": 21.61,
     "q": [
      9,
@@ -3984,8 +3985,8 @@
     "min": 24.8,
     "pros": 21.17,
     "p5": 23.2,
-    "u": 1.86,
-    "o": 1.98,
+    "u": 1.92,
+    "o": 1.97,
     "knjiga": 3,
     "pred": null,
     "za": [
@@ -4005,7 +4006,7 @@
     "s": "A",
     "l": 2.5,
     "strana": "o",
-    "pp": 0.586,
+    "pp": 0.595,
     "mu": 3.54,
     "q": [
      1,
@@ -4017,7 +4018,7 @@
     "min": 24.8,
     "pros": 2.67,
     "p5": 2.8,
-    "u": 2.1,
+    "u": 2.25,
     "o": 1.65,
     "knjiga": 4,
     "pred": null,
@@ -4135,7 +4136,7 @@
     "s": "P",
     "l": 8.5,
     "strana": "o",
-    "pp": 0.615,
+    "pp": 0.613,
     "mu": 11.53,
     "q": [
      4,
@@ -4149,7 +4150,7 @@
     "p5": 12.2,
     "u": 2.02,
     "o": 1.85,
-    "knjiga": 3,
+    "knjiga": 4,
     "pred": "o",
     "za": [
      "Granica od 8,5 je niža od onoga što realno očekujemo, a to je 11 do 12 poena, iz ovih razloga:",
@@ -4200,7 +4201,7 @@
     "s": "P",
     "l": 5.5,
     "strana": "o",
-    "pp": 0.636,
+    "pp": 0.637,
     "mu": 9.29,
     "q": [
      3,
@@ -4212,7 +4213,7 @@
     "min": 19.3,
     "pros": 6.0,
     "p5": 8.4,
-    "u": 2.01,
+    "u": 2.04,
     "o": 1.85,
     "knjiga": 4,
     "pred": "o",
@@ -4535,7 +4536,7 @@
     "s": "P",
     "l": 12.5,
     "strana": "o",
-    "pp": 0.543,
+    "pp": 0.534,
     "mu": 12.05,
     "q": [
      4,
@@ -4547,9 +4548,9 @@
     "min": 23.9,
     "pros": 11.67,
     "p5": 11.4,
-    "u": 1.92,
-    "o": 1.92,
-    "knjiga": 4,
+    "u": 1.9,
+    "o": 1.98,
+    "knjiga": 3,
     "pred": null,
     "za": [
      "Jedna je od prvih opcija u napadu Fenerbahčea.",
@@ -5235,7 +5236,7 @@
     "s": "P",
     "l": 8.5,
     "strana": "o",
-    "pp": 0.587,
+    "pp": 0.586,
     "mu": 10.04,
     "q": [
      3,
@@ -5249,7 +5250,7 @@
     "p5": 9.2,
     "u": 2,
     "o": 1.92,
-    "knjiga": 4,
+    "knjiga": 3,
     "pred": null,
     "za": [
      "Granica od 8,5 je niža od onoga što realno očekujemo, a to je oko deset poena, iz ovih razloga:",
@@ -5371,7 +5372,7 @@
     "s": "A",
     "l": 4.5,
     "strana": "u",
-    "pp": 0.514,
+    "pp": 0.532,
     "mu": 3.73,
     "q": [
      1,
@@ -5405,7 +5406,7 @@
     "s": "P",
     "l": 4.5,
     "strana": "o",
-    "pp": 0.557,
+    "pp": 0.566,
     "mu": 5.67,
     "q": [
      1,
@@ -5417,9 +5418,9 @@
     "min": 17.0,
     "pros": 4.89,
     "p5": 5.8,
-    "u": 1.84,
-    "o": 1.99,
-    "knjiga": 3,
+    "u": 1.88,
+    "o": 1.92,
+    "knjiga": 2,
     "pred": null,
     "za": [
      "Granica od 4,5 je niža od onoga što realno očekujemo, a to je pet do šest poena, iz ovih razloga:",
@@ -5509,7 +5510,7 @@
     "s": "S",
     "l": 4.5,
     "strana": "o",
-    "pp": 0.548,
+    "pp": 0.559,
     "mu": 5.25,
     "q": [
      2,
@@ -5521,7 +5522,7 @@
     "min": 32.0,
     "pros": 5.67,
     "p5": 3.4,
-    "u": 2.2,
+    "u": 2.3,
     "o": 1.6,
     "knjiga": 4,
     "pred": null,
@@ -5543,7 +5544,7 @@
     "s": "A",
     "l": 4.5,
     "strana": "u",
-    "pp": 0.544,
+    "pp": 0.52,
     "mu": 4.56,
     "q": [
      1,
@@ -5555,7 +5556,7 @@
     "min": 32.0,
     "pros": 4.22,
     "p5": 4.2,
-    "u": 1.65,
+    "u": 1.85,
     "o": 2.1,
     "knjiga": 4,
     "pred": null,
@@ -5609,7 +5610,7 @@
     "s": "S",
     "l": 2.5,
     "strana": "o",
-    "pp": 0.536,
+    "pp": 0.548,
     "mu": 3.43,
     "q": [
      1,
@@ -5621,7 +5622,7 @@
     "min": 29.8,
     "pros": 2.62,
     "p5": 2.6,
-    "u": 2,
+    "u": 2.35,
     "o": 1.75,
     "knjiga": 4,
     "pred": null,
@@ -5741,9 +5742,9 @@
     "tim": "HTA",
     "pos": "G",
     "s": "P",
-    "l": 5.5,
+    "l": 6.5,
     "strana": "o",
-    "pp": 0.614,
+    "pp": 0.589,
     "mu": 8.84,
     "q": [
      2,
@@ -5755,14 +5756,14 @@
     "min": 24.3,
     "pros": 6.2,
     "p5": 6.2,
-    "u": 1.92,
-    "o": 1.92,
-    "knjiga": 4,
+    "u": 1.9,
+    "o": 1.98,
+    "knjiga": 3,
     "pred": "o",
     "za": [
-     "Granica od 5,5 je niža od onoga što realno očekujemo, a to je oko devet poena, iz ovih razloga:",
+     "Granica od 6,5 je niža od onoga što realno očekujemo, a to je oko devet poena, iz ovih razloga:",
      "Kod Hapoela ne igra Tomas Satoransky, pa ostaje više minuta i lopti za ostale.",
-     "Ove sezone daje oko šest poena po utakmici i granicu od 5,5 prebacio je u 3 od 5 utakmica."
+     "Ove sezone daje oko šest poena po utakmici i granicu od 6,5 prebacio je u 3 od 5 utakmica."
     ],
     "protiv": [
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Blakeney i Bryant.",
@@ -5972,6 +5973,106 @@
     ]
    },
    {
+    "k": "kevin punter",
+    "ime": "Kevin Punter",
+    "tim": "BAR",
+    "pos": "G",
+    "s": "P",
+    "l": 16.5,
+    "strana": "o",
+    "pp": 0.561,
+    "mu": 16.14,
+    "q": [
+     6,
+     10,
+     15,
+     21,
+     27
+    ],
+    "min": 26.4,
+    "pros": 16.67,
+    "p5": 16.2,
+    "u": 2.01,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Kod Barselone ne igra Umoja Gibson, pa ostaje više minuta i lopti za ostale.",
+     "Ove sezone daje 16 do 17 poena po utakmici i granicu od 16,5 prebacio je u 6 od 9 utakmica.",
+     "Jedna je od prvih opcija u napadu Barselone."
+    ],
+    "protiv": [
+     "Granica od 16,5 je viša od onoga što realno očekujemo, a to je oko 16 poena."
+    ]
+   },
+   {
+    "k": "kevin punter",
+    "ime": "Kevin Punter",
+    "tim": "BAR",
+    "pos": "G",
+    "s": "S",
+    "l": 1.5,
+    "strana": "o",
+    "pp": 0.533,
+    "mu": 2.01,
+    "q": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "min": 26.4,
+    "pros": 2.0,
+    "p5": 2.0,
+    "u": 2.05,
+    "o": 1.67,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 1,5 je niža od onoga što realno očekujemo, a to je oko dva skoka, iz ovih razloga:",
+     "Kod Barselone ne igra Umoja Gibson, pa ostaje više minuta i lopti za ostale.",
+     "Ove sezone daje oko dva skoka po utakmici i granicu od 1,5 prebacio je u 7 od 9 utakmica."
+    ],
+    "protiv": [
+     "Kao bek retko ide u skok; odbijene lopte kod Barselone uglavnom hvataju Nebo i Martin.",
+     "Hapoel dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
+    ]
+   },
+   {
+    "k": "kevin punter",
+    "ime": "Kevin Punter",
+    "tim": "BAR",
+    "pos": "G",
+    "s": "A",
+    "l": 2.5,
+    "strana": "o",
+    "pp": 0.526,
+    "mu": 2.85,
+    "q": [
+     1,
+     1,
+     3,
+     4,
+     5
+    ],
+    "min": 26.4,
+    "pros": 2.33,
+    "p5": 2.8,
+    "u": 1.95,
+    "o": 1.77,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 2,5 je niža od onoga što realno očekujemo, a to je oko tri asistencije, iz ovih razloga:",
+     "Kod Barselone ne igra Umoja Gibson, pa ostaje više minuta i lopti za ostale.",
+     "Ove sezone daje dve do tri asistencije po utakmici i granicu od 2,5 prebacio je u 5 od 9 utakmica."
+    ],
+    "protiv": [
+     "Nije glavni organizator; loptu kod Barselone uglavnom vode Robinson i Brizuela."
+    ]
+   },
+   {
     "k": "joel parra",
     "ime": "Joel Parra",
     "tim": "BAR",
@@ -6039,106 +6140,6 @@
     ]
    },
    {
-    "k": "kevin punter",
-    "ime": "Kevin Punter",
-    "tim": "BAR",
-    "pos": "G",
-    "s": "P",
-    "l": 17.5,
-    "strana": "o",
-    "pp": 0.525,
-    "mu": 16.14,
-    "q": [
-     6,
-     10,
-     15,
-     21,
-     27
-    ],
-    "min": 26.4,
-    "pros": 16.67,
-    "p5": 16.2,
-    "u": 1.86,
-    "o": 1.98,
-    "knjiga": 3,
-    "pred": null,
-    "za": [
-     "Kod Barselone ne igra Umoja Gibson, pa ostaje više minuta i lopti za ostale.",
-     "Ove sezone daje 16 do 17 poena po utakmici i granicu od 17,5 prebacio je u 5 od 9 utakmica.",
-     "Jedna je od prvih opcija u napadu Barselone."
-    ],
-    "protiv": [
-     "Granica od 17,5 je viša od onoga što realno očekujemo, a to je oko 16 poena."
-    ]
-   },
-   {
-    "k": "kevin punter",
-    "ime": "Kevin Punter",
-    "tim": "BAR",
-    "pos": "G",
-    "s": "S",
-    "l": 1.5,
-    "strana": "o",
-    "pp": 0.533,
-    "mu": 2.01,
-    "q": [
-     0,
-     1,
-     2,
-     3,
-     4
-    ],
-    "min": 26.4,
-    "pros": 2.0,
-    "p5": 2.0,
-    "u": 2.05,
-    "o": 1.67,
-    "knjiga": 3,
-    "pred": null,
-    "za": [
-     "Granica od 1,5 je niža od onoga što realno očekujemo, a to je oko dva skoka, iz ovih razloga:",
-     "Kod Barselone ne igra Umoja Gibson, pa ostaje više minuta i lopti za ostale.",
-     "Ove sezone daje oko dva skoka po utakmici i granicu od 1,5 prebacio je u 7 od 9 utakmica."
-    ],
-    "protiv": [
-     "Kao bek retko ide u skok; odbijene lopte kod Barselone uglavnom hvataju Nebo i Martin.",
-     "Hapoel dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
-    ]
-   },
-   {
-    "k": "kevin punter",
-    "ime": "Kevin Punter",
-    "tim": "BAR",
-    "pos": "G",
-    "s": "A",
-    "l": 2.5,
-    "strana": "o",
-    "pp": 0.527,
-    "mu": 2.85,
-    "q": [
-     1,
-     1,
-     3,
-     4,
-     5
-    ],
-    "min": 26.4,
-    "pros": 2.33,
-    "p5": 2.8,
-    "u": 1.95,
-    "o": 1.75,
-    "knjiga": 4,
-    "pred": null,
-    "za": [
-     "Granica od 2,5 je niža od onoga što realno očekujemo, a to je oko tri asistencije, iz ovih razloga:",
-     "Kod Barselone ne igra Umoja Gibson, pa ostaje više minuta i lopti za ostale.",
-     "Ove sezone daje dve do tri asistencije po utakmici i granicu od 2,5 prebacio je u 5 od 9 utakmica."
-    ],
-    "protiv": [
-     "Nije glavni organizator; loptu kod Barselone uglavnom vode Robinson i Brizuela."
-    ]
-   },
-   {
     "k": "tyrese martin",
     "ime": "Tyrese Martin",
     "tim": "BAR",
@@ -6146,7 +6147,7 @@
     "s": "P",
     "l": 8.5,
     "strana": "o",
-    "pp": 0.548,
+    "pp": 0.547,
     "mu": 9.58,
     "q": [
      3,
@@ -6259,8 +6260,8 @@
     "min": 22.4,
     "pros": 13.0,
     "p5": 14.2,
-    "u": 1.98,
-    "o": 1.92,
+    "u": 1.97,
+    "o": 1.91,
     "knjiga": 4,
     "pred": "o",
     "za": [
@@ -6414,9 +6415,9 @@
     "tim": "BAR",
     "pos": "G",
     "s": "P",
-    "l": 7.5,
+    "l": 8.5,
     "strana": "o",
-    "pp": 0.596,
+    "pp": 0.577,
     "mu": 10.24,
     "q": [
      3,
@@ -6428,18 +6429,18 @@
     "min": 20.4,
     "pros": 8.12,
     "p5": 7.4,
-    "u": 2.0,
-    "o": 2.01,
-    "knjiga": 2,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 3,
     "pred": null,
     "za": [
-     "Granica od 7,5 je niža od onoga što realno očekujemo, a to je oko deset poena, iz ovih razloga:",
+     "Granica od 8,5 je niža od onoga što realno očekujemo, a to je oko deset poena, iz ovih razloga:",
      "Kod Barselone ne igra Umoja Gibson, pa ostaje više minuta i lopti za ostale.",
-     "Ove sezone daje oko osam poena po utakmici i granicu od 7,5 prebacio je u 4 od 8 utakmica."
+     "U poslednje tri utakmice: 13, 1 i 15 poena, više nego inače."
     ],
     "protiv": [
-     "Nije među prvim opcijama u napadu; više šuteva dobijaju Punter i Robinson.",
-     "Dolazi sa klupe i igra 18 do 19 minuta."
+     "Ove sezone daje oko osam poena po utakmici; ispod 8,5 je ostao u 5 od 8 utakmica.",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Punter i Robinson."
     ]
    },
    {
@@ -7139,7 +7140,7 @@
     "s": "A",
     "l": 2.5,
     "strana": "o",
-    "pp": 0.529,
+    "pp": 0.53,
     "mu": 2.52,
     "q": [
      0,
@@ -7151,7 +7152,7 @@
     "min": 24.3,
     "pros": 2.44,
     "p5": 3.4,
-    "u": 2.1,
+    "u": 2.15,
     "o": 1.65,
     "knjiga": 4,
     "pred": null,
@@ -7600,7 +7601,7 @@
     "s": "P",
     "l": 9.5,
     "strana": "o",
-    "pp": 0.549,
+    "pp": 0.55,
     "mu": 9.6,
     "q": [
      3,
@@ -7697,9 +7698,9 @@
     "tim": "MIL",
     "pos": "C",
     "s": "P",
-    "l": 14.5,
+    "l": 13.5,
     "strana": "o",
-    "pp": 0.527,
+    "pp": 0.559,
     "mu": 13.86,
     "q": [
      5,
@@ -7711,18 +7712,18 @@
     "min": 26.5,
     "pros": 12.78,
     "p5": 11.6,
-    "u": 1.82,
-    "o": 2.01,
-    "knjiga": 3,
+    "u": 1.95,
+    "o": 1.9,
+    "knjiga": 2,
     "pred": null,
     "za": [
+     "Granica od 13,5 je niža od onoga što realno očekujemo, a to je oko 14 poena, iz ovih razloga:",
      "Kod Milana ne igra Devin Booker, pa ostaje više minuta i lopti za ostale.",
-     "Bez odsutnih saigrača trebalo bi da igra 26 do 27 minuta, a inače igra 22 do 23 minuta.",
-     "Jedna je od prvih opcija u napadu Milana."
+     "Bez odsutnih saigrača trebalo bi da igra 26 do 27 minuta, a inače igra 22 do 23 minuta."
     ],
     "protiv": [
-     "Granica od 14,5 je viša od onoga što realno očekujemo, a to je oko 14 poena.",
-     "Ove sezone daje oko 13 poena po utakmici; ispod 14,5 je ostao u 5 od 9 utakmica."
+     "Ove sezone daje oko 13 poena po utakmici; ispod 13,5 je ostao u 5 od 9 utakmica.",
+     "Valensija dobro brani centre."
     ]
    },
    {
@@ -7882,7 +7883,7 @@
     "u": 2.35,
     "o": 1.55,
     "knjiga": 4,
-    "pred": null,
+    "pred": "o",
     "za": [
      "Granica od 2,5 je niža od onoga što realno očekujemo, a to je oko tri skoka, iz ovih razloga:",
      "Kod Milana ne igra Devin Booker, pa ostaje više minuta i lopti za ostale.",
@@ -7901,7 +7902,7 @@
     "s": "A",
     "l": 2.5,
     "strana": "o",
-    "pp": 0.563,
+    "pp": 0.562,
     "mu": 3.04,
     "q": [
      1,
@@ -7933,7 +7934,7 @@
     "s": "P",
     "l": 7.5,
     "strana": "o",
-    "pp": 0.555,
+    "pp": 0.554,
     "mu": 8.89,
     "q": [
      2,
@@ -7945,10 +7946,10 @@
     "min": 19.8,
     "pros": 8.25,
     "p5": 6.0,
-    "u": 1.83,
-    "o": 2,
+    "u": 1.82,
+    "o": 2.01,
     "knjiga": 3,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 7,5 je niža od onoga što realno očekujemo, a to je oko devet poena, iz ovih razloga:",
      "Kod Milana ne igra Devin Booker, pa ostaje više minuta i lopti za ostale.",
@@ -8000,7 +8001,7 @@
     "s": "P",
     "l": 9.5,
     "strana": "o",
-    "pp": 0.555,
+    "pp": 0.568,
     "mu": 9.63,
     "q": [
      3,
@@ -8012,9 +8013,9 @@
     "min": 19.5,
     "pros": 9.33,
     "p5": 11.4,
-    "u": 2,
-    "o": 1.92,
-    "knjiga": 3,
+    "u": 2.02,
+    "o": 1.78,
+    "knjiga": 2,
     "pred": null,
     "za": [
      "Kod Milana ne igra Devin Booker, pa ostaje više minuta i lopti za ostale.",
@@ -8234,9 +8235,9 @@
     "tim": "PAM",
     "pos": "G",
     "s": "P",
-    "l": 17.5,
+    "l": 16.5,
     "strana": "o",
-    "pp": 0.528,
+    "pp": 0.543,
     "mu": 15.63,
     "q": [
      6,
@@ -8249,8 +8250,8 @@
     "pros": 17.11,
     "p5": 16.8,
     "u": 1.92,
-    "o": 1.92,
-    "knjiga": 4,
+    "o": 1.89,
+    "knjiga": 2,
     "pred": null,
     "za": [
      "Kod Valensije ne igraju Nikola Mirotic i Nathan Reuvers, pa ostaje više minuta i lopti za ostale.",
@@ -8258,8 +8259,8 @@
      "U gostima postiže više poena nego kod kuće (oko 20 poena naspram oko 15 poena), a sada igra u gostima."
     ],
     "protiv": [
-     "Granica od 17,5 je viša od onoga što realno očekujemo, a to je 15 do 16 poena.",
-     "Ove sezone daje oko 17 poena po utakmici; ispod 17,5 je ostao u 6 od 9 utakmica."
+     "Granica od 16,5 je viša od onoga što realno očekujemo, a to je 15 do 16 poena.",
+     "Ove sezone daje oko 17 poena po utakmici; ispod 16,5 je ostao u 5 od 9 utakmica."
     ]
    },
    {
@@ -8270,7 +8271,7 @@
     "s": "A",
     "l": 5.5,
     "strana": "o",
-    "pp": 0.504,
+    "pp": 0.505,
     "mu": 5.39,
     "q": [
      2,
@@ -8282,7 +8283,7 @@
     "min": 26.2,
     "pros": 5.67,
     "p5": 5.2,
-    "u": 1.97,
+    "u": 1.98,
     "o": 1.75,
     "knjiga": 4,
     "pred": null,
@@ -8314,7 +8315,7 @@
     "min": 24.4,
     "pros": 6.44,
     "p5": 5.2,
-    "u": 1.97,
+    "u": 1.98,
     "o": 1.9,
     "knjiga": 4,
     "pred": "o",
@@ -8404,7 +8405,7 @@
     "s": "S",
     "l": 3.5,
     "strana": "u",
-    "pp": 0.592,
+    "pp": 0.591,
     "mu": 3.83,
     "q": [
      1,
@@ -8417,7 +8418,7 @@
     "pros": 3.89,
     "p5": 4.2,
     "u": 1.55,
-    "o": 2.35,
+    "o": 2.3,
     "knjiga": 4,
     "pred": null,
     "za": [
@@ -8435,9 +8436,9 @@
     "tim": "PAM",
     "pos": "F",
     "s": "P",
-    "l": 6.5,
+    "l": 7.5,
     "strana": "o",
-    "pp": 0.598,
+    "pp": 0.552,
     "mu": 8.23,
     "q": [
      2,
@@ -8449,17 +8450,17 @@
     "min": 17.9,
     "pros": 6.44,
     "p5": 4.8,
-    "u": 2.02,
-    "o": 1.8,
+    "u": 2,
+    "o": 2.02,
     "knjiga": 3,
-    "pred": "o",
+    "pred": null,
     "za": [
-     "Granica od 6,5 je niža od onoga što realno očekujemo, a to je oko osam poena, iz ovih razloga:",
+     "Granica od 7,5 je niža od onoga što realno očekujemo, a to je oko osam poena, iz ovih razloga:",
      "Kod Valensije ne igraju Nikola Mirotic i Nathan Reuvers, pa ostaje više minuta i lopti za ostale.",
      "Protiv Milana krila postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi."
     ],
     "protiv": [
-     "Ove sezone daje šest do sedam poena po utakmici; ispod 6,5 je ostao u 5 od 9 utakmica.",
+     "Ove sezone daje šest do sedam poena po utakmici; ispod 7,5 je ostao u 5 od 9 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Shorts i Brooks."
     ]
    },
@@ -8505,7 +8506,7 @@
     "s": "S",
     "l": 6.5,
     "strana": "u",
-    "pp": 0.52,
+    "pp": 0.519,
     "mu": 5.66,
     "q": [
      2,
@@ -8554,7 +8555,7 @@
     "u": 1.92,
     "o": 1.92,
     "knjiga": 3,
-    "pred": null,
+    "pred": "o",
     "za": [
      "Kod Valensije ne igraju Nikola Mirotic i Nathan Reuvers, pa ostaje više minuta i lopti za ostale.",
      "Ove sezone daje oko šest poena po utakmici i granicu od 5,5 prebacio je u 5 od 9 utakmica."
