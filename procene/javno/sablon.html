@@ -397,7 +397,8 @@ function tekuceKolo(){return D.kola.find(k=>k.kolo===D.tekuce)||D.kola[D.kola.le
 function crtajPredloge(){
   const k=tekuceKolo(); if(!k)return '<p class="prazno">Još nema objavljenih kola.</p>';
   const sve=D.kola.flatMap(x=>x.predlozi);
-  const P=k.predlozi.filter(p=>p.nivo!=='slab'&&ok(p)).sort((a,b)=>(b.pp??0)-(a.pp??0));
+  // na naslovnoj samo predlozi za utakmice koje još nisu završene (završene su u Istoriji)
+  const P=k.predlozi.filter(p=>p.nivo!=='slab'&&ok(p)&&p.prosao==null&&!p.nije_igrao).sort((a,b)=>(b.pp??0)-(a.pp??0));
   const slabih=k.predlozi.filter(p=>p.nivo==='slab').length;
   const bezPonude=(k.utakmice||[]).filter(u=>!(u.ponude||[]).length).length;
   const imaIshoda=sve.some(p=>p.prosao===true||p.prosao===false);
@@ -435,7 +436,6 @@ function crtajIstoriju(){
   if(!kola.length)return '<p class="prazno">Još nema zabeleženih predloga.</p>';
   if(st.kolo!=='sve'&&!kola.some(k=>k.kolo===st.kolo))st.kolo=kola[0].kolo;
   let h=`<div class="kola-izbor" role="group" aria-label="Kolo">${kola.map(k=>`<button data-k="${k.kolo}" aria-pressed="${st.kolo===k.kolo}">${k.kolo}. kolo</button>`).join('')}<button data-k="sve" aria-pressed="${st.kolo==='sve'}">Sva kola</button></div>`;
-  h+=grafikUcinka();
   // pregled po kolu
   h+=`<div class="blok"><h3>Pregled po kolima</h3><div class="skrol"><table><tr><th>Kolo</th><th class="num">Predloga</th><th class="num">Jaki</th><th class="num">Solidni</th><th class="num">Ukupno</th></tr>`+
     kola.map(k=>{const P=k.predlozi.filter(ok);const c=(X)=>{const s=zbir(X);return s.n?`${s.pr}/${s.n} · <span class="${s.d>=0?'pl':'mi'}">${jed(s.d)}</span>`:'<span class="sm">čeka</span>'};

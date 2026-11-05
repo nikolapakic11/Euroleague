@@ -255,16 +255,26 @@ def razlozi(i, s, l, u, moja, tudja, K):
             elif sr >= 15:
                 T.append(dict(p=7, d=-1, t='Obe ekipe igraju sporo, pa će napada biti manje nego obično.', kr='obe ekipe igraju sporo'))
     # 5) saigrači: odsutni i povratak
+    # odsutni saigrači: potvrđeno (izveštaj o povredama, sastav) ili samo pretpostavka (nema ih ni kod jedne kladionice)
     ned = [j for j in moja.get('nedostaju', []) if j['k'] != i['k']]
-    if ned:
-        T.append(dict(p=1, d=1, t=f"Kod {gen(tim)} ne {'igraju' if len(ned) > 1 else 'igra'} {spisak([j['ime'] for j in ned[:3]])}, pa ostaje više minuta i lopti za ostale.",
-                      kr=f"bez {'njih' if len(ned) > 1 else 'njega'} ostaje više prostora"))
+    pot = [j for j in ned if j.get('zasto') != 'nije u ponudi kladionica']
+    pre = [j for j in ned if j.get('zasto') == 'nije u ponudi kladionica']
+    if pot:
+        T.append(dict(p=1, d=1, t=f"Kod {gen(tim)} ne {'igraju' if len(pot) > 1 else 'igra'} {spisak([j['ime'] for j in pot[:3]])}, pa ostaje više minuta i lopti za ostale.",
+                      kr=f"bez {'njih' if len(pot) > 1 else 'njega'} ostaje više prostora"))
+    if pre:
+        T.append(dict(p=2 if pot else 1, d=1,
+                      t=f"Kod {gen(tim)} kladionice nemaju u ponudi {spisak([j['ime'] for j in pre[:3]])}, što obično znači da {'neće igrati' if len(pre) > 1 else 'neće igrati'}; "
+                        f"tada ostaje više minuta i lopti za ostale.",
+                      kr='verovatno ostaje više prostora'))
     # odsutni protivnici na istoj poziciji: bitno za poene (slabija odbrana na toj poziciji) i za skok krila i centara;
     # za asistencije i za skok bekova nije
     ned2 = [j for j in tudja.get('nedostaju', []) if j['pos'] == poz]
     if ned2 and (s == 'P' or (s == 'S' and poz in ('F', 'C'))):
         sta = 'manje je onih koji ga čuvaju' if s == 'P' else 'manje je visokih koji se bore za skok'
-        T.append(dict(p=6, d=1, t=f"Kod {gen(prot)} na njegovoj poziciji ne {'igraju' if len(ned2) > 1 else 'igra'} {spisak([j['ime'] for j in ned2[:2]])}, pa {sta}.", kr=''))
+        sig = all(j.get('zasto') != 'nije u ponudi kladionica' for j in ned2[:2])
+        T.append(dict(p=6, d=1, t=f"Kod {gen(prot)} na njegovoj poziciji {'ne ' + ('igraju' if len(ned2) > 1 else 'igra') if sig else 'verovatno ne ' + ('igraju' if len(ned2) > 1 else 'igra')} "
+                                  f"{spisak([j['ime'] for j in ned2[:2]])}, pa {sta}.", kr=''))
     pv = i.get('povratak')
     if pv and abs(pv['sa'][s] - pv['bez'][s]) >= max(0.5, 0.15 * pv['bez'][s]):
         manje = pv['sa'][s] < pv['bez'][s]

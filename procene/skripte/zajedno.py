@@ -100,8 +100,12 @@ def rokovi(lista=None):
     """g -> (objava, konacno), oba kao vreme u Beogradu.
     objava: 12:00 na dan utakmice; pre toga za tu utakmicu nema javnih procena.
     konacno: zavisi od prve utakmice tog dana: sat pre nje ako počinje pre 18:00 (npr. Dubai u 17:00 -> 16:00),
-    inače sat i po pre nje (prva u 20:45 -> 19:15). Važi za sve utakmice tog dana; nikad pre objave."""
+    inače sat i po pre nje (prva u 20:45 -> 19:15). Važi za sve utakmice tog dana; nikad pre objave.
+    Objava može ručno ranije za određeni dan (procene/podaci/objava.json)."""
     lista = lista or utakmice()
+    # ručna objava pre 12h za neki dan (Nikola traži): procene/podaci/objava.json {"2026-11-05": "10:30"}
+    pr = os.path.join(PROCENE, 'podaci', 'objava.json')
+    rucno = ucitaj(pr) if os.path.exists(pr) else {}
     prva = {}
     for u in lista:
         t = u['utc'].astimezone(BG)
@@ -110,6 +114,9 @@ def rokovi(lista=None):
     for u in lista:
         t = u['utc'].astimezone(BG)
         ob = t.replace(hour=OBJAVA_SAT, minute=0, second=0, microsecond=0)
+        if t.date().isoformat() in rucno:
+            h, m = map(int, rucno[t.date().isoformat()].split(':'))
+            ob = min(ob, t.replace(hour=h, minute=m, second=0, microsecond=0))
         p = prva[t.date()]
         ko = p - dt.timedelta(minutes=60 if p.hour < 18 else 90)
         out[u['g']] = (ob, max(ko, ob))

@@ -28,7 +28,9 @@ R_UPITAN = re.compile(r'\b(questionable|game.time decision|gtd|doubtful|uncertai
 R_POVREDA = re.compile(r'\b(out|ruled out|will miss|misses|miss|sidelined|injur\w*|sprain\w*|ruptur\w*|tear|torn|surgery|fractur\w*|strain\w*|'
                        r'suspend\w*|concussion|illness|sick|knee|ankle|hamstring|calf|shoulder|foot|back pain|achilles)\b', re.I)
 # samo opis da igrač nije igrao (bez povrede): nije potvrda da je van igre (4.11.: Llull, Smith i Sarr su igrali)
-R_ODSUSTVO = re.compile(r'\b(last played|has not featured|hasn.t featured|has not played|yet to play|not on the \w* ?roster|absentee)\b', re.I)
+R_ODSUSTVO = re.compile(r'\b(last played|has not featured|hasn.t featured|has not played|yet to play|not on the (\w+ ){0,3}roster|'
+                        r'did not make the (\w+ )?roster|missed|did not play|did not feature|absentee)\b', re.I)
+R_POTVRDA = re.compile(r'\b(confirmed .{0,40}absentee|confirmed .{0,30}(will|is set to) miss|will not play|ruled out for (this|tonight|thursday|friday|wednesday|tuesday))', re.I)
 R_IPAK = re.compile(r'\b(although he has been play\w*|but has (featured|played)|has been playing|has featured in the \w+ league|played in the \w+ league)\b', re.I)
 
 
@@ -48,8 +50,22 @@ def tekst_linije(h):
     return [re.sub(r'\s+', ' ', x).strip() for x in h.split('\n') if x.strip()]
 
 
+def tim_iz(naziv):
+    """Tim iz punog naziva sa sponzorom („Hapoel IBI Tel Aviv“): ceo naziv, pa kraći delovi."""
+    r = tim(naziv)
+    if r:
+        return r
+    w = naziv.split()
+    for n in range(len(w) - 1, 0, -1):
+        for i in range(0, len(w) - n + 1):
+            r = tim(' '.join(w[i:i + n]))
+            if r:
+                return r
+    return None
+
+
 def stanje(recenica):
-    if R_NIJE.search(recenica):
+    if R_NIJE.search(recenica) or R_POTVRDA.search(recenica):
         return 'van'
     if R_IGRA.search(recenica):
         return 'igra'
@@ -108,7 +124,8 @@ def procitaj(url, igraci_po_timu, out, timovi):
         if not tim_sad or not pasus:
             return
         x = ' '.join(pasus)
-        if re.search(r'full roster', x, re.I):
+        # „ceo sastav“ samo kad se odnosi na ovu utakmicu (ne „had his full roster available ahead of Round 9“)
+        if re.search(r'full roster', x, re.I) and not re.search(r'full roster available (in|ahead of|for) round', x, re.I):
             timovi.setdefault(tim_sad, {})['pun_sastav'] = True
         if re.search(r'not (yet )?(sent|submitted) an injury report', x, re.I):
             timovi.setdefault(tim_sad, {})['bez_izvestaja'] = True
@@ -123,7 +140,7 @@ def procitaj(url, igraci_po_timu, out, timovi):
         m = re.match(r'^(.+?) vs\.? (.+?) \(\d{1,2}:\d{2} CET\)$', x)
         if m:
             zavrsi()
-            par, tim_sad, pasus = [tim(m.group(1)), tim(m.group(2))], None, []
+            par, tim_sad, pasus = [tim_iz(m.group(1)), tim_iz(m.group(2))], None, []
             continue
         if not par:
             continue

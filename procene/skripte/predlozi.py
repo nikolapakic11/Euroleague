@@ -73,6 +73,47 @@ def izaberi(tabla, K=None):
     return out
 
 
+# Dan sa više utakmica: umesto svih predloga po utakmici, najboljih DAN_N za ceo dan (Nikola, 5.11.), raznovrsno
+DAN_N, DAN_MAX, DAN_JAK = 8, 12, 0.62          # 8 najboljih, plus jaki (bar 62%) do 12
+DAN_PO_UT, DAN_PO_TIMU, DAN_PO_STAVCI = 4, 2, 6   # najviše 4 iz iste utakmice, 2 iz istog tima, 6 iste stavke i strane
+DAN_MIN_PLUS, DAN_MIN_MINUS, DAN_PRAG_KVOTE = 3, 2, 0.55   # bar 3 PLUS i 2 MINUS među prvih 8 ako ih ima sa bar 55%
+
+
+def izbor_dana(P):
+    """P: predlozi jednog dana (više utakmica). Vraća najbolje za dan, poređane po verovatnoći, uz rang_dan."""
+    P = sorted([p for p in P if p.get('nivo') != 'slab'], key=lambda p: -p['pp'])
+    def moze(p, izab):
+        return (sum(q['g'] == p['g'] for q in izab) < DAN_PO_UT and sum(q['tim'] == p['tim'] for q in izab) < DAN_PO_TIMU
+                and sum((q['s'], q['strana']) == (p['s'], p['strana']) for q in izab) < DAN_PO_STAVCI)
+    izab = []
+    for p in P:
+        if len(izab) < DAN_N and moze(p, izab):
+            izab.append(p)
+    # raznovrsnost: zameni najslabije sa preobilne strane najboljim sa strane koje fali
+    for strana, treba in (('o', DAN_MIN_PLUS), ('u', DAN_MIN_MINUS)):
+        while sum(q['strana'] == strana for q in izab) < treba:
+            kand = [p for p in P if p not in izab and p['strana'] == strana and p['pp'] >= DAN_PRAG_KVOTE]
+            druga = [q for q in izab if q['strana'] != strana]
+            if not kand or len(druga) <= (DAN_MIN_PLUS if strana == 'u' else DAN_MIN_MINUS):
+                break
+            izlazi = min(druga, key=lambda q: q['pp'])
+            ostali = [q for q in izab if q is not izlazi]
+            ulazi = next((p for p in kand if moze(p, ostali)), None)
+            if not ulazi:
+                break
+            izab = ostali + [ulazi]
+    # jaki preko osam
+    for p in P:
+        if len(izab) >= DAN_MAX:
+            break
+        if p not in izab and p['pp'] >= DAN_JAK and moze(p, izab):
+            izab.append(p)
+    izab.sort(key=lambda p: -p['pp'])
+    for i, p in enumerate(izab, 1):
+        p['rang_dan'] = i
+    return izab
+
+
 def ponuda_dana(tabla, K):
     """Za svaku utakmicu koja nije počela: svi igrači u ponudi, po stavci, na najčešćoj glavnoj granici:
     očekivanje, očekivani minuti, prosek sezone i poslednjih 5, strana na koju naginje (kalibrisano), najbolje kvote
@@ -184,6 +225,12 @@ def main():
         zadrzi = [p for p in st['predlozi'] if p['g'] in zamrznute]          # zaključani
         K_ob = OB.Kontekst(Baza(), {x['g']: x['dom'] for x in sve_ut()})
         novi = [p for p in izaberi(tabla, K_ob) if p['g'] not in zamrznute and p['g'] in objavljive]
+        # dan sa više utakmica: najbolji za ceo dan (izbor_dana); dan sa jednom utakmicom: svi predlozi te utakmice
+        ut_dana = collections.Counter(u['dan'] for u in tabla['utakmice'])
+        po_danu = collections.defaultdict(list)
+        for p in novi:
+            po_danu[p['dan']].append(p)
+        novi = [q for d, L in po_danu.items() for q in (izbor_dana(L) if ut_dana[d] > 1 else L)]
         sada_konacno = [u['g'] for u in tabla['utakmice'] if u['g'] not in zamrznute and u['g'] in objavljive
                         and sad_bg >= R[u['g']][1] and u['snimci']]
         # promene u odnosu na prethodno osvežavanje (važe do početka utakmice)
@@ -254,7 +301,7 @@ def main():
                 p['zatv'] = z['o'] if p['strana'] == 'o' else z['u']
                 p['zatv_fer'] = round(1 / (z['pc'] if p['strana'] == 'o' else 1 - z['pc']), 3)
         sacuvaj(put, st)
-        import collections
+        pass  # collections je uvezen na vrhu
         if sada_konacno:
             print(f'kolo {a.kolo}: KONAČNI predlozi za utakmice {sada_konacno}')
         print(f'kolo {a.kolo}: predloga {len(st["predlozi"])} (zaključanih {len(zadrzi)}, novih {len(novi)}: '
@@ -305,7 +352,7 @@ def main():
     javno_pr = dict(kvota_min=pr['kvota_min'], min_ut=pr['min_ut'], max_ut=pr['max_ut'], nivoi=pr['nivoi'])
     # zaključavanje delova stranice po paketu (za sada je sve otvoreno)
     # na javnu stranicu idu samo polja koja stranica koristi (bez internih verovatnoća, CLV i sl.)
-    JAVNO = ('g', 'dan', 'vreme', 'k', 'ime', 'tim', 'prot', 's', 'strana', 'l', 'kl', 'kvota', 'pp', 'ev', 'nivo', 'rang', 'knjige', 'opseg',
+    JAVNO = ('g', 'dan', 'vreme', 'k', 'ime', 'tim', 'prot', 's', 'strana', 'l', 'kl', 'kvota', 'pp', 'ev', 'nivo', 'rang', 'rang_dan', 'knjige', 'opseg',
              'q', 'mu', 'min', 'l0', 'vatra', 'pos', 'of', 'analiza', 'promena', 'ranije', 'promena_u', 'prvi_put', 'ishod', 'prosao', 'nije_igrao')
     # cela ponuda: razlozi samo za tekuće i prethodno kolo (veličina stranice); brojke za sva kola
     JAVNO_PON = ('k', 'ime', 'tim', 'pos', 's', 'l', 'strana', 'pp', 'mu', 'q', 'min', 'pros', 'p5', 'u', 'o', 'pred',

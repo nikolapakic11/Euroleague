@@ -1,6 +1,6 @@
 {
  "kolo": 10,
- "at": "05.11.2026. 10:11",
+ "at": "05.11.2026. 10:23",
  "izvori": [
   "https://www.eurohoops.net/en/euroleague/2030518/euroleague-round-10-injury-report-satoransky-out-powell-and-konchar-could-debut/"
  ],
@@ -70,6 +70,11 @@
    "stanje": "van",
    "tekst": "Isaia Cordinier remains sidelined following surgery in May."
   },
+  "jared rhoden": {
+   "tim": "PRS",
+   "stanje": "upitan",
+   "tekst": "Jared Rhoden missed Round 9 and did not play in the French League this past weekend"
+  },
   "daulton hommes": {
    "tim": "PRS",
    "stanje": "van",
@@ -92,12 +97,12 @@
   },
   "johnny juzang": {
    "tim": "ULK",
-   "stanje": "igra",
+   "stanje": "upitan",
    "tekst": "Johnny Juzang last played in Round 6"
   },
   "onuralp bitim": {
    "tim": "ULK",
-   "stanje": "igra",
+   "stanje": "upitan",
    "tekst": "Onuralp Bitim has yet to play in the EuroLeague this season but has featured in the Turkish League."
   },
   "tadas sedekerskis": {
@@ -115,6 +120,26 @@
    "stanje": "upitan",
    "tekst": "Chris Duarte last played in Round 6."
   },
+  "tomas satoransky": {
+   "tim": "HTA",
+   "stanje": "van",
+   "tekst": "Tomas Satoransky suffered a head injury following a hard fall in Round 9"
+  },
+  "umoja gibson": {
+   "tim": "BAR",
+   "stanje": "upitan",
+   "tekst": "Umoja Gibson was questionable for Round 9 and did not make the gameday roster"
+  },
+  "juan nunez": {
+   "tim": "BAR",
+   "stanje": "van",
+   "tekst": "Juan Nunez was ruled out for Round 9"
+  },
+  "yoan makoundou": {
+   "tim": "BAR",
+   "stanje": "van",
+   "tekst": "Yoan Makoundou has not played this season as he recovers from a knee injury."
+  },
   "myles cale": {
    "tim": "ASV",
    "stanje": "upitan",
@@ -130,6 +155,16 @@
    "stanje": "van",
    "tekst": "Mathis Dossou-Yovo (groin) has been sidelined since the start of the season."
   },
+  "marjon beauchamp": {
+   "tim": "MUN",
+   "stanje": "upitan",
+   "tekst": "MarJon Beauchamp was not on the Round 9 roster and did not play in the German League this past weekend"
+  },
+  "justinian jessup": {
+   "tim": "MUN",
+   "stanje": "upitan",
+   "tekst": "Justinian Jessup was not on the Round 9 roster and did not play in the German League this past weekend"
+  },
   "kamar baldwin": {
    "tim": "MUN",
    "stanje": "upitan",
@@ -144,6 +179,11 @@
    "tim": "PAM",
    "stanje": "van",
    "tekst": "Nate Reuvers (foot) missed Rounds 8 and 9 and did not play in the Spanish League this past weekend"
+  },
+  "nikola mirotic": {
+   "tim": "PAM",
+   "stanje": "upitan",
+   "tekst": "Nikola Mirotic was not on the Round 9 roster and did not play in the Spanish League this past weekend."
   },
   "lonnie walker": {
    "tim": "BES",
@@ -194,6 +234,11 @@
    "tim": "RED",
    "stanje": "igra",
    "tekst": "Johnathan Motley (thigh) returned to EuroLeague action in Round 9"
+  },
+  "ebuka izundu": {
+   "tim": "RED",
+   "stanje": "upitan",
+   "tekst": "Ebuka Izundu was not on the Round 9 roster"
   },
   "patrick baldwin": {
    "tim": "RED",
@@ -252,10 +297,12 @@
    "bez_izvestaja": true
   },
   "ULK": {
-   "pun_sastav": true,
    "bez_izvestaja": true
   },
   "BAS": {
+   "bez_izvestaja": true
+  },
+  "BAR": {
    "bez_izvestaja": true
   },
   "ASV": {
