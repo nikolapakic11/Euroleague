@@ -1,0 +1,282 @@
+{
+ "v": 1,
+ "round": "10",
+ "kladionica": "admiral",
+ "vrsta": "sistemski",
+ "odigrano": null,
+ "napomena": "30 parova iz cele ponude 5.11. bez 8 predloga sa sajta; sistem bira Nikola na Admiralu",
+ "tickets": [
+  {
+   "stake": 100,
+   "legs": [
+    {
+     "c": "86050",
+     "p": "Mouhamed Faye",
+     "t": "Paris",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.79,
+     "d": "O"
+    },
+    {
+     "c": "86101",
+     "p": "Aleksander Balcerowski",
+     "t": "Barcelona",
+     "s": "P",
+     "l": 4.5,
+     "u": 2.02,
+     "d": "O"
+    },
+    {
+     "c": "86051",
+     "p": "Alize Johnson",
+     "t": "Paris",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86084",
+     "p": "Damion Baugh",
+     "t": "Baskonia",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.83,
+     "d": "O"
+    },
+    {
+     "c": "86137",
+     "p": "Vladimir Lucic",
+     "t": "Bayern",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86075",
+     "p": "Will Clyburn",
+     "t": "Fenerbahce",
+     "s": "P",
+     "l": 9.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86128",
+     "p": "Hugo Besson",
+     "t": "Lyon-Villeurbanne",
+     "s": "P",
+     "l": 9.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86145",
+     "p": "Jason Burnell",
+     "t": "Olimpia Milano",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86141",
+     "p": "Leandro Bolmaro",
+     "t": "Olimpia Milano",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.5,
+     "d": "O"
+    },
+    {
+     "c": "86095",
+     "p": "Justin Robinson",
+     "t": "Barcelona",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86091",
+     "p": "Daniel Oturu",
+     "t": "Hapoel Tel-Aviv",
+     "s": "S",
+     "l": 5.5,
+     "u": 1.9
+    },
+    {
+     "c": "86149",
+     "p": "Armoni Brooks",
+     "t": "Valencia",
+     "s": "P",
+     "l": 14.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86148",
+     "p": "Kameron Taylor",
+     "t": "Valencia",
+     "s": "A",
+     "l": 2.5,
+     "u": 1.6
+    },
+    {
+     "c": "86042",
+     "p": "Bruno Fernando",
+     "t": "Anadolu Efes",
+     "s": "P",
+     "l": 7.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86150",
+     "p": "Dylan Osetkowski",
+     "t": "Valencia",
+     "s": "S",
+     "l": 3.5,
+     "u": 1.85
+    },
+    {
+     "c": "86131",
+     "p": "Duane Washington",
+     "t": "Bayern",
+     "s": "A",
+     "l": 2.5,
+     "u": 1.55,
+     "d": "O"
+    },
+    {
+     "c": "86080",
+     "p": "AJ Lawson",
+     "t": "Baskonia",
+     "s": "A",
+     "l": 1.5,
+     "u": 1.58,
+     "d": "O"
+    },
+    {
+     "c": "86088",
+     "p": "Elijah Bryant",
+     "t": "Hapoel Tel-Aviv",
+     "s": "P",
+     "l": 14.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86124",
+     "p": "Patty Mills",
+     "t": "Lyon-Villeurbanne",
+     "s": "P",
+     "l": 13.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86092",
+     "p": "Zach LeDay",
+     "t": "Hapoel Tel-Aviv",
+     "s": "P",
+     "l": 11.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86043",
+     "p": "Collin Malcolm",
+     "t": "Anadolu Efes",
+     "s": "P",
+     "l": 9.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86103",
+     "p": "Ish Wainright",
+     "t": "Hapoel Tel-Aviv",
+     "s": "P",
+     "l": 4.5,
+     "u": 2.02,
+     "d": "O"
+    },
+    {
+     "c": "86096",
+     "p": "Tyrese Martin",
+     "t": "Barcelona",
+     "s": "A",
+     "l": 1.5,
+     "u": 1.58,
+     "d": "O"
+    },
+    {
+     "c": "86129",
+     "p": "Both Tut Gach",
+     "t": "Lyon-Villeurbanne",
+     "s": "P",
+     "l": 7.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86144",
+     "p": "Marko Guduric",
+     "t": "Olimpia Milano",
+     "s": "P",
+     "l": 7.5,
+     "u": 2,
+     "d": "O"
+    },
+    {
+     "c": "86040",
+     "p": "Matthew Strazel",
+     "t": "Anadolu Efes",
+     "s": "P",
+     "l": 11.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "86100",
+     "p": "Tosan Evbuomwan",
+     "t": "Barcelona",
+     "s": "P",
+     "l": 4.5,
+     "u": 2.02,
+     "d": "O"
+    },
+    {
+     "c": "86143",
+     "p": "RJ Cole",
+     "t": "Olimpia Milano",
+     "s": "P",
+     "l": 9.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86086",
+     "p": "Matteo Spagnolo",
+     "t": "Baskonia",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.99,
+     "d": "O"
+    },
+    {
+     "c": "86126",
+     "p": "Jae Crowder",
+     "t": "Lyon-Villeurbanne",
+     "s": "P",
+     "l": 10.5,
+     "u": 1.91,
+     "d": "O"
+    }
+   ]
+  }
+ ]
+}
