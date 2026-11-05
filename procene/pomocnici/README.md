@@ -13,7 +13,7 @@ Upotreba:
 2. Klikni obeleživač. Dole desno se pojavi panel i sam preuzme ponudu igrača za sva košarkaška takmičenja iz „Igrači“ (traje par sekundi).
 3. Panel pokaže broj granica, igrača i utakmica po takmičenju.
 4. „Izvezi“ preuzima `<datum>_mozzart_<vreme>.json` u formatu v2.
-5. Okači fajl na GitHub u `baza/ponude/mozzart/` (u aplikaciji ili na sajtu: Add file → Upload files), ili ga pošalji u razgovor za procene. Sledeće zakazano pokretanje ga uzima automatski.
+5. Okači fajl na GitHub u `baza/ponude/mozzart/` (u aplikaciji ili na sajtu: Add file → Upload files), ili ga pošalji u razgovor za procene. Uzima se pri sledećem ručnom pokretanju (`dan.py`).
 
 Isto važi za Admiral i MaxBet: fajl iz njihovih pomoćnika ide u `baza/ponude/admiral/` odnosno `baza/ponude/maxbet/`; ime može biti bilo koje dok sadrži datum (npr. `2026-11-04_a.json`).
 

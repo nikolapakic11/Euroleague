@@ -12,6 +12,9 @@ Ovaj fajl je sažetak kako se radi iz dana u dan i šta je dogovoreno sa Nikolom
 
 ## Dan utakmice
 
+Zakazani zadaci su isključeni (odluka 5.11.2026): ništa se ne pokreće samo. Svaki korak ispod radi se ručno, kad Nikola pošalje ponude ili zatraži u razgovoru. Ne praviti nove zakazane zadatke bez njegovog izričitog zahteva.
+
+
 1. Nikola pošalje ponude Admirala i MaxBeta (JSON iz njegovih pomoćnika, `{"v":2,"src":...,"picks":[...]}`).
    Sačuvaj ih kao `baza/ponude/admiral/<dan>_<slovo>.json` i `baza/ponude/maxbet/<dan>_<slovo>.json` (slova a, b, c po redu).
    Ako pošalje plan tiketa (`{"v":1,"tickets":...}`), to nije ponuda.

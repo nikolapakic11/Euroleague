@@ -28,7 +28,7 @@ Ovaj folder koristi samo `baza/`. Ništa iz `minusi/`.
 ## Kako se radi
 
 Sve skripte se pokreću iz korena repozitorijuma. Ceo dnevni posao radi jedna komanda:
-`python3 procene/skripte/dan.py` (ujutru sa `--jutro`). Nju pokreću zakazani zadaci (Ut–Pet), pa šalju na GitHub i objavljuju obe stranice.
+`python3 procene/skripte/dan.py` (ujutru sa `--jutro`). Od 5.11.2026 nema zakazanih zadataka: sve se pokreće ručno, kad Nikola traži u razgovoru (pa slanje na GitHub i objava sajta).
 
 | Korak | Komanda | Šta radi |
 |---|---|---|

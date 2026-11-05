@@ -1,4 +1,4 @@
-"""Ceo dnevni posao za procene, jednom komandom (koriste ga i zakazani zadaci).
+"""Ceo dnevni posao za procene, jednom komandom (pokreće se ručno; zakazani zadaci su isključeni od 5.11.2026).
 
   python3 procene/skripte/dan.py [--jutro]
 
