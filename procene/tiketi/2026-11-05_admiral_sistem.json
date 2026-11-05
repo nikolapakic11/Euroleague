@@ -4,20 +4,11 @@
  "kladionica": "admiral",
  "vrsta": "sistemski",
  "odigrano": null,
- "napomena": "30 parova iz cele ponude 5.11. bez 8 predloga sa sajta; sistem bira Nikola na Admiralu",
+ "napomena": "30 parova iz cele ponude 5.11. bez 8 predloga sa sajta, u 3 tiketa po 10 (sistem 7/10 na Admiralu)",
  "tickets": [
   {
    "stake": 100,
    "legs": [
-    {
-     "c": "86050",
-     "p": "Mouhamed Faye",
-     "t": "Paris",
-     "s": "P",
-     "l": 5.5,
-     "u": 1.79,
-     "d": "O"
-    },
     {
      "c": "86101",
      "p": "Aleksander Balcerowski",
@@ -28,57 +19,21 @@
      "d": "O"
     },
     {
-     "c": "86051",
-     "p": "Alize Johnson",
-     "t": "Paris",
+     "c": "86103",
+     "p": "Ish Wainright",
+     "t": "Hapoel Tel-Aviv",
      "s": "P",
      "l": 4.5,
-     "u": 1.92,
+     "u": 2.02,
      "d": "O"
     },
     {
-     "c": "86084",
-     "p": "Damion Baugh",
-     "t": "Baskonia",
+     "c": "86100",
+     "p": "Tosan Evbuomwan",
+     "t": "Barcelona",
      "s": "P",
-     "l": 6.5,
-     "u": 1.83,
-     "d": "O"
-    },
-    {
-     "c": "86137",
-     "p": "Vladimir Lucic",
-     "t": "Bayern",
-     "s": "P",
-     "l": 5.5,
-     "u": 1.92,
-     "d": "O"
-    },
-    {
-     "c": "86075",
-     "p": "Will Clyburn",
-     "t": "Fenerbahce",
-     "s": "P",
-     "l": 9.5,
-     "u": 1.92,
-     "d": "O"
-    },
-    {
-     "c": "86128",
-     "p": "Hugo Besson",
-     "t": "Lyon-Villeurbanne",
-     "s": "P",
-     "l": 9.5,
-     "u": 1.92,
-     "d": "O"
-    },
-    {
-     "c": "86145",
-     "p": "Jason Burnell",
-     "t": "Olimpia Milano",
-     "s": "P",
-     "l": 5.5,
-     "u": 1.92,
+     "l": 4.5,
+     "u": 2.02,
      "d": "O"
     },
     {
@@ -88,49 +43,6 @@
      "s": "S",
      "l": 2.5,
      "u": 1.5,
-     "d": "O"
-    },
-    {
-     "c": "86095",
-     "p": "Justin Robinson",
-     "t": "Barcelona",
-     "s": "P",
-     "l": 12.5,
-     "u": 1.92,
-     "d": "O"
-    },
-    {
-     "c": "86091",
-     "p": "Daniel Oturu",
-     "t": "Hapoel Tel-Aviv",
-     "s": "S",
-     "l": 5.5,
-     "u": 1.9
-    },
-    {
-     "c": "86149",
-     "p": "Armoni Brooks",
-     "t": "Valencia",
-     "s": "P",
-     "l": 14.5,
-     "u": 1.92,
-     "d": "O"
-    },
-    {
-     "c": "86148",
-     "p": "Kameron Taylor",
-     "t": "Valencia",
-     "s": "A",
-     "l": 2.5,
-     "u": 1.6
-    },
-    {
-     "c": "86042",
-     "p": "Bruno Fernando",
-     "t": "Anadolu Efes",
-     "s": "P",
-     "l": 7.5,
-     "u": 1.92,
      "d": "O"
     },
     {
@@ -151,24 +63,6 @@
      "d": "O"
     },
     {
-     "c": "86080",
-     "p": "AJ Lawson",
-     "t": "Baskonia",
-     "s": "A",
-     "l": 1.5,
-     "u": 1.58,
-     "d": "O"
-    },
-    {
-     "c": "86088",
-     "p": "Elijah Bryant",
-     "t": "Hapoel Tel-Aviv",
-     "s": "P",
-     "l": 14.5,
-     "u": 1.92,
-     "d": "O"
-    },
-    {
      "c": "86124",
      "p": "Patty Mills",
      "t": "Lyon-Villeurbanne",
@@ -178,11 +72,11 @@
      "d": "O"
     },
     {
-     "c": "86092",
-     "p": "Zach LeDay",
-     "t": "Hapoel Tel-Aviv",
+     "c": "86042",
+     "p": "Bruno Fernando",
+     "t": "Anadolu Efes",
      "s": "P",
-     "l": 11.5,
+     "l": 7.5,
      "u": 1.92,
      "d": "O"
     },
@@ -196,12 +90,35 @@
      "d": "O"
     },
     {
-     "c": "86103",
-     "p": "Ish Wainright",
+     "c": "86080",
+     "p": "AJ Lawson",
+     "t": "Baskonia",
+     "s": "A",
+     "l": 1.5,
+     "u": 1.58,
+     "d": "O"
+    }
+   ]
+  },
+  {
+   "stake": 100,
+   "legs": [
+    {
+     "c": "86095",
+     "p": "Justin Robinson",
+     "t": "Barcelona",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86092",
+     "p": "Zach LeDay",
      "t": "Hapoel Tel-Aviv",
      "s": "P",
-     "l": 4.5,
-     "u": 2.02,
+     "l": 11.5,
+     "u": 1.92,
      "d": "O"
     },
     {
@@ -214,11 +131,11 @@
      "d": "O"
     },
     {
-     "c": "86129",
-     "p": "Both Tut Gach",
-     "t": "Lyon-Villeurbanne",
+     "c": "86149",
+     "p": "Armoni Brooks",
+     "t": "Valencia",
      "s": "P",
-     "l": 7.5,
+     "l": 14.5,
      "u": 1.92,
      "d": "O"
     },
@@ -232,6 +149,33 @@
      "d": "O"
     },
     {
+     "c": "86128",
+     "p": "Hugo Besson",
+     "t": "Lyon-Villeurbanne",
+     "s": "P",
+     "l": 9.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86129",
+     "p": "Both Tut Gach",
+     "t": "Lyon-Villeurbanne",
+     "s": "P",
+     "l": 7.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86051",
+     "p": "Alize Johnson",
+     "t": "Paris",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
      "c": "86040",
      "p": "Matthew Strazel",
      "t": "Anadolu Efes",
@@ -241,12 +185,51 @@
      "d": "O"
     },
     {
-     "c": "86100",
-     "p": "Tosan Evbuomwan",
-     "t": "Barcelona",
+     "c": "86086",
+     "p": "Matteo Spagnolo",
+     "t": "Baskonia",
      "s": "P",
      "l": 4.5,
-     "u": 2.02,
+     "u": 1.99,
+     "d": "O"
+    }
+   ]
+  },
+  {
+   "stake": 100,
+   "legs": [
+    {
+     "c": "86088",
+     "p": "Elijah Bryant",
+     "t": "Hapoel Tel-Aviv",
+     "s": "P",
+     "l": 14.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86091",
+     "p": "Daniel Oturu",
+     "t": "Hapoel Tel-Aviv",
+     "s": "S",
+     "l": 5.5,
+     "u": 1.9
+    },
+    {
+     "c": "86148",
+     "p": "Kameron Taylor",
+     "t": "Valencia",
+     "s": "A",
+     "l": 2.5,
+     "u": 1.6
+    },
+    {
+     "c": "86145",
+     "p": "Jason Burnell",
+     "t": "Olimpia Milano",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.92,
      "d": "O"
     },
     {
@@ -259,12 +242,12 @@
      "d": "O"
     },
     {
-     "c": "86086",
-     "p": "Matteo Spagnolo",
-     "t": "Baskonia",
+     "c": "86137",
+     "p": "Vladimir Lucic",
+     "t": "Bayern",
      "s": "P",
-     "l": 4.5,
-     "u": 1.99,
+     "l": 5.5,
+     "u": 1.92,
      "d": "O"
     },
     {
@@ -274,6 +257,33 @@
      "s": "P",
      "l": 10.5,
      "u": 1.91,
+     "d": "O"
+    },
+    {
+     "c": "86050",
+     "p": "Mouhamed Faye",
+     "t": "Paris",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.79,
+     "d": "O"
+    },
+    {
+     "c": "86075",
+     "p": "Will Clyburn",
+     "t": "Fenerbahce",
+     "s": "P",
+     "l": 9.5,
+     "u": 1.92,
+     "d": "O"
+    },
+    {
+     "c": "86084",
+     "p": "Damion Baugh",
+     "t": "Baskonia",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.83,
      "d": "O"
     }
    ]
