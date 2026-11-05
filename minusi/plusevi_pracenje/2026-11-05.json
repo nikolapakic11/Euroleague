@@ -1,0 +1,65 @@
+{
+ "date": "2026-11-05",
+ "picks": [
+  {
+   "p": "Matteo Spagnolo",
+   "t": "Baskonia",
+   "s": "P",
+   "l": 4.5,
+   "o": 1.99,
+   "pover": 0.635,
+   "cur": "4,9 poena 9 ut., 15 min",
+   "zasto": "malo tiketa | rezervista (15 min), nestabilni minuti 5–23, tim bez više igrača, očekivano +12% minuta | Kontekst: protivnik dobro brani bekove za poene (−10%), "
+  },
+  {
+   "p": "Vladimir Lucic",
+   "t": "Bayern",
+   "s": "P",
+   "l": 5.5,
+   "o": 1.92,
+   "pover": 0.627,
+   "cur": "5,9 poena 9 ut., 17 min",
+   "zasto": "malo tiketa | rezervista (19 min), nestabilni minuti 11–26, oslabljena pozicija (ne igra Marjon Beauchamp), očekivano +10% minuta | Kontekst: protivnik slabo br"
+  },
+  {
+   "p": "Tai Odiase",
+   "t": "Hapoel Tel-Aviv",
+   "s": "P",
+   "l": 5.5,
+   "o": 1.92,
+   "pover": 0.624,
+   "cur": "6,2 poena 8 ut., 14 min",
+   "zasto": "malo tiketa | rezervista (14 min), nestabilni minuti 6–27, saigrači odsutni, +7% minuta | Kontekst: brz meč, tim očekuje mnogo poena, tesan meč, vruća forma u p"
+  },
+  {
+   "p": "Miles Norris",
+   "t": "Bayern",
+   "s": "P",
+   "l": 7.5,
+   "o": 1.92,
+   "pover": 0.622,
+   "cur": "7,3 poena 7 ut., 18 min",
+   "zasto": "malo tiketa | rezervista (17 min), minuti 12–24, oslabljena pozicija (ne igra Marjon Beauchamp), očekivano +10% minuta | Kontekst: protivnik slabo brani krila z"
+  },
+  {
+   "p": "Damion Baugh",
+   "t": "Baskonia",
+   "s": "P",
+   "l": 6.5,
+   "o": 1.83,
+   "pover": 0.57,
+   "cur": "7,1 poena 9 ut., 20 min",
+   "zasto": "malo tiketa | rezervista (20 min), minuti 13–31, tim bez više igrača, očekivano +12% minuta | Kontekst: protivnik dobro brani bekove za poene (−10%), spor meč, "
+  },
+  {
+   "p": "AJ Lawson",
+   "t": "Baskonia",
+   "s": "S",
+   "l": 2.5,
+   "o": 1.7,
+   "pover": 0.566,
+   "cur": "2,9 skokova 9 ut., 24 min",
+   "zasto": "malo tiketa | rotacija (24 min), stabilni minuti 18–30, oslabljena pozicija (ne igra Chris Duarte, Tadas Sedekerskis), očekivano +21% minuta | Kontekst: spor me"
+  }
+ ]
+}
