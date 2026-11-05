@@ -25,7 +25,8 @@ Zakazani zadaci su isključeni (odluka 5.11.2026): ništa se ne pokreće samo. S
 4. `python3 procene/skripte/dan.py` (pre 12h sa `--jutro`): dopuna ishoda, statistika, sastavi, povrede, Soccerbet, tabla, predlozi.
    Na kraju ispiše PREGLED (i red RUČNO ako fale ponude).
 5. Commit i push, `python3 procene/skripte/sajt.py /home/claude/evroliga-plus-minus`, commit i push sajta.
-   (Privatna kopija stranice je bila artifact na starom nalogu; na novom napravi novu ako treba.)
+   Zatim objavi `procene/javno/predlozi.html` na artefakt https://claude.ai/artifact/HUT71aS4AnLVknR6pKgpDv
+   (napravljen na starom nalogu, podeljen sa novim uz pravo uređivanja; objava na isti URL).
 
 ## Pravila objave (dogovoreno)
 
