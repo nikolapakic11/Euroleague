@@ -1,0 +1,609 @@
+{
+ "v": 1,
+ "round": "10",
+ "kladionica": "maxbet",
+ "odigrano": null,
+ "utakmice": "5.11. EFS–PBB, FBT–KBA, HTA–BAR, ASV–BAY",
+ "ulog_ukupno": 1000,
+ "napomena": "10 tiketa po 100 din, po 6 parova, od 8 predloga sa sajta 5.11. (MaxBet granice i kvote 10:06); d=O je plus (preko), bez d je minus",
+ "tickets": [
+  {
+   "stake": 100,
+   "legs": [
+    {
+     "c": "10307",
+     "p": "Allan Dokossi",
+     "t": "Paris",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "10311",
+     "p": "Sebastian Herrera",
+     "t": "Paris",
+     "s": "P",
+     "l": 9.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10245",
+     "p": "Trent Forrest",
+     "t": "Fenerbahce",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "10262",
+     "p": "Amir Coffey",
+     "t": "Hapoel T.A.",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10263",
+     "p": "Antonio Blakeney",
+     "t": "Hapoel T.A.",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10323",
+     "p": "Joel Bolomboy",
+     "t": "Lyon-Villeurb.",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.99,
+     "d": "O"
+    }
+   ],
+   "kvota": 44.22,
+   "sansa": 0.0497
+  },
+  {
+   "stake": 100,
+   "legs": [
+    {
+     "c": "10307",
+     "p": "Allan Dokossi",
+     "t": "Paris",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "10314",
+     "p": "Cameron Payne",
+     "t": "Anadolu Efes",
+     "s": "A",
+     "l": 4.5,
+     "u": 1.72
+    },
+    {
+     "c": "10245",
+     "p": "Trent Forrest",
+     "t": "Fenerbahce",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "10262",
+     "p": "Amir Coffey",
+     "t": "Hapoel T.A.",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10263",
+     "p": "Antonio Blakeney",
+     "t": "Hapoel T.A.",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10323",
+     "p": "Joel Bolomboy",
+     "t": "Lyon-Villeurb.",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.99,
+     "d": "O"
+    }
+   ],
+   "kvota": 40.03,
+   "sansa": 0.0479
+  },
+  {
+   "stake": 100,
+   "legs": [
+    {
+     "c": "10307",
+     "p": "Allan Dokossi",
+     "t": "Paris",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "10316",
+     "p": "Dario Saric",
+     "t": "Anadolu Efes",
+     "s": "S",
+     "l": 6.5,
+     "u": 1.85
+    },
+    {
+     "c": "10245",
+     "p": "Trent Forrest",
+     "t": "Fenerbahce",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "10262",
+     "p": "Amir Coffey",
+     "t": "Hapoel T.A.",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10263",
+     "p": "Antonio Blakeney",
+     "t": "Hapoel T.A.",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10323",
+     "p": "Joel Bolomboy",
+     "t": "Lyon-Villeurb.",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.99,
+     "d": "O"
+    }
+   ],
+   "kvota": 43.06,
+   "sansa": 0.0492
+  },
+  {
+   "stake": 100,
+   "legs": [
+    {
+     "c": "10311",
+     "p": "Sebastian Herrera",
+     "t": "Paris",
+     "s": "P",
+     "l": 9.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10316",
+     "p": "Dario Saric",
+     "t": "Anadolu Efes",
+     "s": "S",
+     "l": 6.5,
+     "u": 1.85
+    },
+    {
+     "c": "10314",
+     "p": "Cameron Payne",
+     "t": "Anadolu Efes",
+     "s": "A",
+     "l": 4.5,
+     "u": 1.72
+    },
+    {
+     "c": "10245",
+     "p": "Trent Forrest",
+     "t": "Fenerbahce",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "10263",
+     "p": "Antonio Blakeney",
+     "t": "Hapoel T.A.",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10323",
+     "p": "Joel Bolomboy",
+     "t": "Lyon-Villeurb.",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.99,
+     "d": "O"
+    }
+   ],
+   "kvota": 41.15,
+   "sansa": 0.0419
+  },
+  {
+   "stake": 100,
+   "legs": [
+    {
+     "c": "10311",
+     "p": "Sebastian Herrera",
+     "t": "Paris",
+     "s": "P",
+     "l": 9.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10316",
+     "p": "Dario Saric",
+     "t": "Anadolu Efes",
+     "s": "S",
+     "l": 6.5,
+     "u": 1.85
+    },
+    {
+     "c": "10314",
+     "p": "Cameron Payne",
+     "t": "Anadolu Efes",
+     "s": "A",
+     "l": 4.5,
+     "u": 1.72
+    },
+    {
+     "c": "10245",
+     "p": "Trent Forrest",
+     "t": "Fenerbahce",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "10262",
+     "p": "Amir Coffey",
+     "t": "Hapoel T.A.",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10263",
+     "p": "Antonio Blakeney",
+     "t": "Hapoel T.A.",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.9,
+     "d": "O"
+    }
+   ],
+   "kvota": 39.29,
+   "sansa": 0.0445
+  },
+  {
+   "stake": 100,
+   "legs": [
+    {
+     "c": "10307",
+     "p": "Allan Dokossi",
+     "t": "Paris",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "10316",
+     "p": "Dario Saric",
+     "t": "Anadolu Efes",
+     "s": "S",
+     "l": 6.5,
+     "u": 1.85
+    },
+    {
+     "c": "10314",
+     "p": "Cameron Payne",
+     "t": "Anadolu Efes",
+     "s": "A",
+     "l": 4.5,
+     "u": 1.72
+    },
+    {
+     "c": "10245",
+     "p": "Trent Forrest",
+     "t": "Fenerbahce",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "10262",
+     "p": "Amir Coffey",
+     "t": "Hapoel T.A.",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10323",
+     "p": "Joel Bolomboy",
+     "t": "Lyon-Villeurb.",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.99,
+     "d": "O"
+    }
+   ],
+   "kvota": 38.98,
+   "sansa": 0.0466
+  },
+  {
+   "stake": 100,
+   "legs": [
+    {
+     "c": "10307",
+     "p": "Allan Dokossi",
+     "t": "Paris",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "10311",
+     "p": "Sebastian Herrera",
+     "t": "Paris",
+     "s": "P",
+     "l": 9.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10314",
+     "p": "Cameron Payne",
+     "t": "Anadolu Efes",
+     "s": "A",
+     "l": 4.5,
+     "u": 1.72
+    },
+    {
+     "c": "10262",
+     "p": "Amir Coffey",
+     "t": "Hapoel T.A.",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10263",
+     "p": "Antonio Blakeney",
+     "t": "Hapoel T.A.",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10323",
+     "p": "Joel Bolomboy",
+     "t": "Lyon-Villeurb.",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.99,
+     "d": "O"
+    }
+   ],
+   "kvota": 42.26,
+   "sansa": 0.0463
+  },
+  {
+   "stake": 100,
+   "legs": [
+    {
+     "c": "10307",
+     "p": "Allan Dokossi",
+     "t": "Paris",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "10311",
+     "p": "Sebastian Herrera",
+     "t": "Paris",
+     "s": "P",
+     "l": 9.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10314",
+     "p": "Cameron Payne",
+     "t": "Anadolu Efes",
+     "s": "A",
+     "l": 4.5,
+     "u": 1.72
+    },
+    {
+     "c": "10245",
+     "p": "Trent Forrest",
+     "t": "Fenerbahce",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "10262",
+     "p": "Amir Coffey",
+     "t": "Hapoel T.A.",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10263",
+     "p": "Antonio Blakeney",
+     "t": "Hapoel T.A.",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.9,
+     "d": "O"
+    }
+   ],
+   "kvota": 38.22,
+   "sansa": 0.049
+  },
+  {
+   "stake": 100,
+   "legs": [
+    {
+     "c": "10307",
+     "p": "Allan Dokossi",
+     "t": "Paris",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "10311",
+     "p": "Sebastian Herrera",
+     "t": "Paris",
+     "s": "P",
+     "l": 9.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10316",
+     "p": "Dario Saric",
+     "t": "Anadolu Efes",
+     "s": "S",
+     "l": 6.5,
+     "u": 1.85
+    },
+    {
+     "c": "10245",
+     "p": "Trent Forrest",
+     "t": "Fenerbahce",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "10263",
+     "p": "Antonio Blakeney",
+     "t": "Hapoel T.A.",
+     "s": "P",
+     "l": 12.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10323",
+     "p": "Joel Bolomboy",
+     "t": "Lyon-Villeurb.",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.99,
+     "d": "O"
+    }
+   ],
+   "kvota": 43.06,
+   "sansa": 0.0473
+  },
+  {
+   "stake": 100,
+   "legs": [
+    {
+     "c": "10307",
+     "p": "Allan Dokossi",
+     "t": "Paris",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "10311",
+     "p": "Sebastian Herrera",
+     "t": "Paris",
+     "s": "P",
+     "l": 9.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10316",
+     "p": "Dario Saric",
+     "t": "Anadolu Efes",
+     "s": "S",
+     "l": 6.5,
+     "u": 1.85
+    },
+    {
+     "c": "10245",
+     "p": "Trent Forrest",
+     "t": "Fenerbahce",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "10262",
+     "p": "Amir Coffey",
+     "t": "Hapoel T.A.",
+     "s": "P",
+     "l": 5.5,
+     "u": 1.9,
+     "d": "O"
+    },
+    {
+     "c": "10323",
+     "p": "Joel Bolomboy",
+     "t": "Lyon-Villeurb.",
+     "s": "P",
+     "l": 6.5,
+     "u": 1.99,
+     "d": "O"
+    }
+   ],
+   "kvota": 43.06,
+   "sansa": 0.0484
+  }
+ ]
+}
