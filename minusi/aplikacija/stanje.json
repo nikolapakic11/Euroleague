@@ -1,6 +1,6 @@
 {
 "v": 1,
-"savedAt": 1793875612601,
+"savedAt": 1793876110374,
 "tickets": [
 {
 "id": "adm7579167865",
@@ -71119,6 +71119,3071 @@
 "team": "Olimpia Milano",
 "stat": "P",
 "line": 8.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d2-01",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Jared Rhoden",
+"team": "Paris",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Dario Saric",
+"team": "Anadolu Efes",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Shavon Shields",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 13.5,
+"odds": 1.92
+},
+{
+"p": "Kevin Punter",
+"team": "Barcelona",
+"stat": "P",
+"line": 17.5,
+"odds": 1.86
+},
+{
+"p": "Tremont Waters",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 10.5,
+"odds": 1.8
+},
+{
+"p": "Jae Crowder",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Devon Hall",
+"team": "Olimpia Milano",
+"stat": "A",
+"line": 3.5,
+"odds": 1.85
+},
+{
+"p": "Leandro Bolmaro",
+"team": "Olimpia Milano",
+"stat": "P",
+"line": 8.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d2-02",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Tyrese Martin",
+"team": "Barcelona",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Dario Brizuela",
+"team": "Barcelona",
+"stat": "P",
+"line": 7.5,
+"odds": 1.82
+},
+{
+"p": "Both Tut Gach",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "Duane Washington",
+"team": "Bayern",
+"stat": "P",
+"line": 16.5,
+"odds": 1.92
+},
+{
+"p": "Joel Bolomboy",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Neal Sako",
+"team": "Valencia",
+"stat": "S",
+"line": 6.5,
+"odds": 2.15
+},
+{
+"p": "Alec Peters",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Armoni Brooks",
+"team": "Valencia",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d2-03",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Nadir Hifi",
+"team": "Paris",
+"stat": "A",
+"line": 2.5,
+"odds": 2.1
+},
+{
+"p": "Justin Robinson",
+"team": "Barcelona",
+"stat": "A",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Tyrese Martin",
+"team": "Barcelona",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Tremont Waters",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 10.5,
+"odds": 1.8
+},
+{
+"p": "Jae Crowder",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Kameron Taylor",
+"team": "Valencia",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Moses Wright",
+"team": "Olimpia Milano",
+"stat": "P",
+"line": 14.5,
+"odds": 1.82
+},
+{
+"p": "T.J. Shorts",
+"team": "Valencia",
+"stat": "P",
+"line": 17.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d2-04",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Nadir Hifi",
+"team": "Paris",
+"stat": "P",
+"line": 19.5,
+"odds": 1.86
+},
+{
+"p": "Jared Rhoden",
+"team": "Paris",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Kobi Simmons",
+"team": "Baskonia",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Shavon Shields",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 13.5,
+"odds": 1.92
+},
+{
+"p": "Justin Robinson",
+"team": "Barcelona",
+"stat": "A",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "T.J. Shorts",
+"team": "Valencia",
+"stat": "P",
+"line": 17.5,
+"odds": 1.92
+},
+{
+"p": "Alec Peters",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Leandro Bolmaro",
+"team": "Olimpia Milano",
+"stat": "A",
+"line": 2.5,
+"odds": 2.15
+}
+]
+},
+{
+"id": "r10d2-05",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Dario Saric",
+"team": "Anadolu Efes",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Jared Rhoden",
+"team": "Paris",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Tyrese Martin",
+"team": "Barcelona",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Justin Robinson",
+"team": "Barcelona",
+"stat": "A",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Jae Crowder",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 10.5,
+"odds": 1.93
+},
+{
+"p": "Alec Peters",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "T.J. Shorts",
+"team": "Valencia",
+"stat": "P",
+"line": 17.5,
+"odds": 1.92
+},
+{
+"p": "Moses Wright",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 6.5,
+"odds": 1.75
+}
+]
+},
+{
+"id": "r10d2-06",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Shavon Shields",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 13.5,
+"odds": 1.92
+},
+{
+"p": "Nicolo Melli",
+"team": "Fenerbahce",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Joel Parra",
+"team": "Barcelona",
+"stat": "P",
+"line": 9.5,
+"odds": 1.92
+},
+{
+"p": "Kevin Punter",
+"team": "Barcelona",
+"stat": "P",
+"line": 17.5,
+"odds": 1.86
+},
+{
+"p": "Both Tut Gach",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "Jae Crowder",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Moses Wright",
+"team": "Olimpia Milano",
+"stat": "P",
+"line": 14.5,
+"odds": 1.82
+},
+{
+"p": "Alec Peters",
+"team": "Olimpia Milano",
+"stat": "P",
+"line": 10.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d2-07",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Nadir Hifi",
+"team": "Paris",
+"stat": "A",
+"line": 2.5,
+"odds": 2.1
+},
+{
+"p": "Wade Baldwin",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+},
+{
+"p": "Elijah Bryant",
+"team": "Hapoel Tel-Aviv",
+"stat": "A",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Joel Parra",
+"team": "Barcelona",
+"stat": "P",
+"line": 9.5,
+"odds": 1.92
+},
+{
+"p": "Dario Brizuela",
+"team": "Barcelona",
+"stat": "P",
+"line": 7.5,
+"odds": 1.82
+},
+{
+"p": "Kameron Taylor",
+"team": "Valencia",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Neal Sako",
+"team": "Valencia",
+"stat": "S",
+"line": 6.5,
+"odds": 2.15
+},
+{
+"p": "Leandro Bolmaro",
+"team": "Olimpia Milano",
+"stat": "A",
+"line": 2.5,
+"odds": 2.15
+}
+]
+},
+{
+"id": "r10d2-08",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Dario Saric",
+"team": "Anadolu Efes",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Nadir Hifi",
+"team": "Paris",
+"stat": "P",
+"line": 19.5,
+"odds": 1.86
+},
+{
+"p": "Kevin Punter",
+"team": "Barcelona",
+"stat": "P",
+"line": 17.5,
+"odds": 1.86
+},
+{
+"p": "Joel Parra",
+"team": "Barcelona",
+"stat": "S",
+"line": 4.5,
+"odds": 1.85
+},
+{
+"p": "Duane Washington",
+"team": "Bayern",
+"stat": "P",
+"line": 16.5,
+"odds": 1.92
+},
+{
+"p": "Devon Hall",
+"team": "Olimpia Milano",
+"stat": "A",
+"line": 3.5,
+"odds": 1.85
+},
+{
+"p": "Alec Peters",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "T.J. Shorts",
+"team": "Valencia",
+"stat": "P",
+"line": 17.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d2-09",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Shavon Shields",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 13.5,
+"odds": 1.92
+},
+{
+"p": "Will Clyburn",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 9.5,
+"odds": 1.92
+},
+{
+"p": "Justin Robinson",
+"team": "Barcelona",
+"stat": "A",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Dario Brizuela",
+"team": "Barcelona",
+"stat": "P",
+"line": 7.5,
+"odds": 1.82
+},
+{
+"p": "Vasilije Micic",
+"team": "Hapoel Tel-Aviv",
+"stat": "A",
+"line": 5.5,
+"odds": 1.68
+},
+{
+"p": "Tremont Waters",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 10.5,
+"odds": 1.8
+},
+{
+"p": "Leandro Bolmaro",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 2.5,
+"odds": 2.35
+},
+{
+"p": "Neal Sako",
+"team": "Valencia",
+"stat": "S",
+"line": 6.5,
+"odds": 2.15
+}
+]
+},
+{
+"id": "r10d2-10",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Shavon Shields",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 13.5,
+"odds": 1.92
+},
+{
+"p": "Nicolo Melli",
+"team": "Fenerbahce",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Tyrese Martin",
+"team": "Barcelona",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Justin Robinson",
+"team": "Barcelona",
+"stat": "A",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Vasilije Micic",
+"team": "Hapoel Tel-Aviv",
+"stat": "A",
+"line": 5.5,
+"odds": 1.68
+},
+{
+"p": "Duane Washington",
+"team": "Bayern",
+"stat": "P",
+"line": 16.5,
+"odds": 1.92
+},
+{
+"p": "Armoni Brooks",
+"team": "Valencia",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Kameron Taylor",
+"team": "Valencia",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+}
+]
+},
+{
+"id": "r10d2-11",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Shavon Shields",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 13.5,
+"odds": 1.92
+},
+{
+"p": "Wade Baldwin",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+},
+{
+"p": "Joel Parra",
+"team": "Barcelona",
+"stat": "P",
+"line": 9.5,
+"odds": 1.92
+},
+{
+"p": "Vasilije Micic",
+"team": "Hapoel Tel-Aviv",
+"stat": "A",
+"line": 5.5,
+"odds": 1.68
+},
+{
+"p": "Jae Crowder",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 10.5,
+"odds": 1.93
+},
+{
+"p": "Both Tut Gach",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "Duane Washington",
+"team": "Bayern",
+"stat": "P",
+"line": 16.5,
+"odds": 1.92
+},
+{
+"p": "T.J. Shorts",
+"team": "Valencia",
+"stat": "P",
+"line": 17.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d2-12",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Dario Saric",
+"team": "Anadolu Efes",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Kobi Simmons",
+"team": "Baskonia",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Kevin Punter",
+"team": "Barcelona",
+"stat": "P",
+"line": 17.5,
+"odds": 1.86
+},
+{
+"p": "Josh Nebo",
+"team": "Barcelona",
+"stat": "P",
+"line": 9.5,
+"odds": 1.8
+},
+{
+"p": "Joel Bolomboy",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Jae Crowder",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 10.5,
+"odds": 1.93
+},
+{
+"p": "Alec Peters",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Kameron Taylor",
+"team": "Valencia",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+}
+]
+},
+{
+"id": "r10d2-13",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Wade Baldwin",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+},
+{
+"p": "Kevin Punter",
+"team": "Barcelona",
+"stat": "P",
+"line": 17.5,
+"odds": 1.86
+},
+{
+"p": "Tyrese Martin",
+"team": "Barcelona",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Tremont Waters",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 10.5,
+"odds": 1.8
+},
+{
+"p": "Andreas Obst",
+"team": "Bayern",
+"stat": "P",
+"line": 12.5,
+"odds": 1.81
+},
+{
+"p": "Armoni Brooks",
+"team": "Valencia",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Neal Sako",
+"team": "Valencia",
+"stat": "S",
+"line": 6.5,
+"odds": 2.15
+},
+{
+"p": "Devon Hall",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 2.5,
+"odds": 2.2
+}
+]
+},
+{
+"id": "r10d2-14",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Wade Baldwin",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+},
+{
+"p": "Justin Robinson",
+"team": "Barcelona",
+"stat": "A",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Vasilije Micic",
+"team": "Hapoel Tel-Aviv",
+"stat": "A",
+"line": 5.5,
+"odds": 1.68
+},
+{
+"p": "Kevin Punter",
+"team": "Barcelona",
+"stat": "P",
+"line": 17.5,
+"odds": 1.86
+},
+{
+"p": "Andreas Obst",
+"team": "Bayern",
+"stat": "P",
+"line": 12.5,
+"odds": 1.81
+},
+{
+"p": "Tremont Waters",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 10.5,
+"odds": 1.8
+},
+{
+"p": "Leandro Bolmaro",
+"team": "Olimpia Milano",
+"stat": "A",
+"line": 2.5,
+"odds": 2.15
+},
+{
+"p": "Moses Wright",
+"team": "Olimpia Milano",
+"stat": "P",
+"line": 14.5,
+"odds": 1.82
+}
+]
+},
+{
+"id": "r10d2-15",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Dario Saric",
+"team": "Anadolu Efes",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Nadir Hifi",
+"team": "Paris",
+"stat": "A",
+"line": 2.5,
+"odds": 2.1
+},
+{
+"p": "Will Clyburn",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 9.5,
+"odds": 1.92
+},
+{
+"p": "Kobi Simmons",
+"team": "Baskonia",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Andreas Obst",
+"team": "Bayern",
+"stat": "P",
+"line": 12.5,
+"odds": 1.81
+},
+{
+"p": "Leandro Bolmaro",
+"team": "Olimpia Milano",
+"stat": "A",
+"line": 2.5,
+"odds": 2.15
+},
+{
+"p": "Neal Sako",
+"team": "Valencia",
+"stat": "S",
+"line": 6.5,
+"odds": 2.15
+},
+{
+"p": "Armoni Brooks",
+"team": "Valencia",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d2-16",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Will Clyburn",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 9.5,
+"odds": 1.92
+},
+{
+"p": "Joel Parra",
+"team": "Barcelona",
+"stat": "S",
+"line": 4.5,
+"odds": 1.85
+},
+{
+"p": "Kevin Punter",
+"team": "Barcelona",
+"stat": "P",
+"line": 17.5,
+"odds": 1.86
+},
+{
+"p": "Vasilije Micic",
+"team": "Hapoel Tel-Aviv",
+"stat": "A",
+"line": 5.5,
+"odds": 1.68
+},
+{
+"p": "Both Tut Gach",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "Joel Bolomboy",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Neal Sako",
+"team": "Valencia",
+"stat": "S",
+"line": 6.5,
+"odds": 2.15
+},
+{
+"p": "Armoni Brooks",
+"team": "Valencia",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d2-17",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Nadir Hifi",
+"team": "Paris",
+"stat": "A",
+"line": 2.5,
+"odds": 2.1
+},
+{
+"p": "Kobi Simmons",
+"team": "Baskonia",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Joel Parra",
+"team": "Barcelona",
+"stat": "S",
+"line": 4.5,
+"odds": 1.85
+},
+{
+"p": "Tyrese Martin",
+"team": "Barcelona",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Jae Crowder",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Armoni Brooks",
+"team": "Valencia",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Alec Peters",
+"team": "Olimpia Milano",
+"stat": "P",
+"line": 10.5,
+"odds": 1.92
+},
+{
+"p": "Devon Hall",
+"team": "Olimpia Milano",
+"stat": "A",
+"line": 3.5,
+"odds": 1.85
+}
+]
+},
+{
+"id": "r10d2-18",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Joel Parra",
+"team": "Barcelona",
+"stat": "S",
+"line": 4.5,
+"odds": 1.85
+},
+{
+"p": "Justin Robinson",
+"team": "Barcelona",
+"stat": "A",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Joel Bolomboy",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Andreas Obst",
+"team": "Bayern",
+"stat": "P",
+"line": 12.5,
+"odds": 1.81
+},
+{
+"p": "Jae Crowder",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Moses Wright",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 6.5,
+"odds": 1.75
+},
+{
+"p": "Leandro Bolmaro",
+"team": "Olimpia Milano",
+"stat": "A",
+"line": 2.5,
+"odds": 2.15
+},
+{
+"p": "Armoni Brooks",
+"team": "Valencia",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d2-19",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Jared Rhoden",
+"team": "Paris",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Nicolo Melli",
+"team": "Fenerbahce",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Kevin Punter",
+"team": "Barcelona",
+"stat": "P",
+"line": 17.5,
+"odds": 1.86
+},
+{
+"p": "Tyrese Martin",
+"team": "Barcelona",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Andreas Obst",
+"team": "Bayern",
+"stat": "P",
+"line": 12.5,
+"odds": 1.81
+},
+{
+"p": "Kameron Taylor",
+"team": "Valencia",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Alec Peters",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Moses Wright",
+"team": "Olimpia Milano",
+"stat": "P",
+"line": 14.5,
+"odds": 1.82
+}
+]
+},
+{
+"id": "r10d2-20",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Nicolo Melli",
+"team": "Fenerbahce",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Wade Baldwin",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+},
+{
+"p": "Vasilije Micic",
+"team": "Hapoel Tel-Aviv",
+"stat": "A",
+"line": 5.5,
+"odds": 1.68
+},
+{
+"p": "Dario Brizuela",
+"team": "Barcelona",
+"stat": "P",
+"line": 7.5,
+"odds": 1.82
+},
+{
+"p": "Justin Robinson",
+"team": "Barcelona",
+"stat": "A",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Both Tut Gach",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "Kameron Taylor",
+"team": "Valencia",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Devon Hall",
+"team": "Olimpia Milano",
+"stat": "A",
+"line": 3.5,
+"odds": 1.85
+}
+]
+},
+{
+"id": "r10d2-21",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Nadir Hifi",
+"team": "Paris",
+"stat": "P",
+"line": 19.5,
+"odds": 1.86
+},
+{
+"p": "Kevin Punter",
+"team": "Barcelona",
+"stat": "P",
+"line": 17.5,
+"odds": 1.86
+},
+{
+"p": "Dario Brizuela",
+"team": "Barcelona",
+"stat": "P",
+"line": 7.5,
+"odds": 1.82
+},
+{
+"p": "Jae Crowder",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Andreas Obst",
+"team": "Bayern",
+"stat": "P",
+"line": 12.5,
+"odds": 1.81
+},
+{
+"p": "Both Tut Gach",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "T.J. Shorts",
+"team": "Valencia",
+"stat": "P",
+"line": 17.5,
+"odds": 1.92
+},
+{
+"p": "Devon Hall",
+"team": "Olimpia Milano",
+"stat": "A",
+"line": 3.5,
+"odds": 1.85
+}
+]
+},
+{
+"id": "r10d2-22",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Nadir Hifi",
+"team": "Paris",
+"stat": "A",
+"line": 2.5,
+"odds": 2.1
+},
+{
+"p": "Kobi Simmons",
+"team": "Baskonia",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Wade Baldwin",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+},
+{
+"p": "Shavon Shields",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 13.5,
+"odds": 1.92
+},
+{
+"p": "Vasilije Micic",
+"team": "Hapoel Tel-Aviv",
+"stat": "A",
+"line": 5.5,
+"odds": 1.68
+},
+{
+"p": "Andreas Obst",
+"team": "Bayern",
+"stat": "P",
+"line": 12.5,
+"odds": 1.81
+},
+{
+"p": "Leandro Bolmaro",
+"team": "Olimpia Milano",
+"stat": "P",
+"line": 8.5,
+"odds": 1.92
+},
+{
+"p": "T.J. Shorts",
+"team": "Valencia",
+"stat": "P",
+"line": 17.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d2-23",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Jared Rhoden",
+"team": "Paris",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Vasilije Micic",
+"team": "Hapoel Tel-Aviv",
+"stat": "A",
+"line": 5.5,
+"odds": 1.68
+},
+{
+"p": "Josh Nebo",
+"team": "Barcelona",
+"stat": "P",
+"line": 9.5,
+"odds": 1.8
+},
+{
+"p": "Tyrese Martin",
+"team": "Barcelona",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Andreas Obst",
+"team": "Bayern",
+"stat": "P",
+"line": 12.5,
+"odds": 1.81
+},
+{
+"p": "Duane Washington",
+"team": "Bayern",
+"stat": "P",
+"line": 16.5,
+"odds": 1.92
+},
+{
+"p": "Joel Bolomboy",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "T.J. Shorts",
+"team": "Valencia",
+"stat": "A",
+"line": 5.5,
+"odds": 1.95
+}
+]
+},
+{
+"id": "r10d2-24",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Wade Baldwin",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+},
+{
+"p": "Kobi Simmons",
+"team": "Baskonia",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Will Clyburn",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 9.5,
+"odds": 1.92
+},
+{
+"p": "Tyrese Martin",
+"team": "Barcelona",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Joel Parra",
+"team": "Barcelona",
+"stat": "S",
+"line": 4.5,
+"odds": 1.85
+},
+{
+"p": "Moses Wright",
+"team": "Olimpia Milano",
+"stat": "P",
+"line": 14.5,
+"odds": 1.82
+},
+{
+"p": "Alec Peters",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "T.J. Shorts",
+"team": "Valencia",
+"stat": "P",
+"line": 17.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d2-25",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Dario Saric",
+"team": "Anadolu Efes",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Shavon Shields",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 13.5,
+"odds": 1.92
+},
+{
+"p": "Wade Baldwin",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+},
+{
+"p": "Tyrese Martin",
+"team": "Barcelona",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Duane Washington",
+"team": "Bayern",
+"stat": "P",
+"line": 16.5,
+"odds": 1.92
+},
+{
+"p": "Joel Bolomboy",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Jae Crowder",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Devon Hall",
+"team": "Olimpia Milano",
+"stat": "A",
+"line": 3.5,
+"odds": 1.85
+}
+]
+},
+{
+"id": "r10d2-26",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Jared Rhoden",
+"team": "Paris",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Kobi Simmons",
+"team": "Baskonia",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Nicolo Melli",
+"team": "Fenerbahce",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Will Clyburn",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 9.5,
+"odds": 1.92
+},
+{
+"p": "Elijah Bryant",
+"team": "Hapoel Tel-Aviv",
+"stat": "A",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Dario Brizuela",
+"team": "Barcelona",
+"stat": "P",
+"line": 7.5,
+"odds": 1.82
+},
+{
+"p": "Armoni Brooks",
+"team": "Valencia",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Neal Sako",
+"team": "Valencia",
+"stat": "S",
+"line": 6.5,
+"odds": 2.15
+}
+]
+},
+{
+"id": "r10d2-27",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Jared Rhoden",
+"team": "Paris",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Shavon Shields",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 13.5,
+"odds": 1.92
+},
+{
+"p": "Dario Brizuela",
+"team": "Barcelona",
+"stat": "P",
+"line": 7.5,
+"odds": 1.82
+},
+{
+"p": "Justin Robinson",
+"team": "Barcelona",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+},
+{
+"p": "Joel Bolomboy",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Armoni Brooks",
+"team": "Valencia",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Leandro Bolmaro",
+"team": "Olimpia Milano",
+"stat": "P",
+"line": 8.5,
+"odds": 1.92
+},
+{
+"p": "Kameron Taylor",
+"team": "Valencia",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+}
+]
+},
+{
+"id": "r10d2-28",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Nadir Hifi",
+"team": "Paris",
+"stat": "A",
+"line": 2.5,
+"odds": 2.1
+},
+{
+"p": "Dario Saric",
+"team": "Anadolu Efes",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Jared Rhoden",
+"team": "Paris",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Justin Robinson",
+"team": "Barcelona",
+"stat": "A",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Joel Parra",
+"team": "Barcelona",
+"stat": "S",
+"line": 4.5,
+"odds": 1.85
+},
+{
+"p": "Elijah Bryant",
+"team": "Hapoel Tel-Aviv",
+"stat": "A",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "T.J. Shorts",
+"team": "Valencia",
+"stat": "P",
+"line": 17.5,
+"odds": 1.92
+},
+{
+"p": "Leandro Bolmaro",
+"team": "Olimpia Milano",
+"stat": "A",
+"line": 2.5,
+"odds": 2.15
+}
+]
+},
+{
+"id": "r10d2-29",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Dario Saric",
+"team": "Anadolu Efes",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Nadir Hifi",
+"team": "Paris",
+"stat": "P",
+"line": 19.5,
+"odds": 1.86
+},
+{
+"p": "Jared Rhoden",
+"team": "Paris",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Nicolo Melli",
+"team": "Fenerbahce",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Dario Brizuela",
+"team": "Barcelona",
+"stat": "P",
+"line": 7.5,
+"odds": 1.82
+},
+{
+"p": "Joel Bolomboy",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Devon Hall",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 2.5,
+"odds": 2.2
+},
+{
+"p": "Neal Sako",
+"team": "Valencia",
+"stat": "S",
+"line": 6.5,
+"odds": 2.15
+}
+]
+},
+{
+"id": "r10d2-30",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Wade Baldwin",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+},
+{
+"p": "Kobi Simmons",
+"team": "Baskonia",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Will Clyburn",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 9.5,
+"odds": 1.92
+},
+{
+"p": "Dario Brizuela",
+"team": "Barcelona",
+"stat": "P",
+"line": 7.5,
+"odds": 1.82
+},
+{
+"p": "Both Tut Gach",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "Tremont Waters",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 10.5,
+"odds": 1.8
+},
+{
+"p": "Devon Hall",
+"team": "Olimpia Milano",
+"stat": "P",
+"line": 9.5,
+"odds": 1.92
+},
+{
+"p": "Alec Peters",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+}
+]
+},
+{
+"id": "r10d2-31",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Dario Saric",
+"team": "Anadolu Efes",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Kobi Simmons",
+"team": "Baskonia",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Nicolo Melli",
+"team": "Fenerbahce",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Joel Parra",
+"team": "Barcelona",
+"stat": "P",
+"line": 9.5,
+"odds": 1.92
+},
+{
+"p": "Dario Brizuela",
+"team": "Barcelona",
+"stat": "P",
+"line": 7.5,
+"odds": 1.82
+},
+{
+"p": "Vasilije Micic",
+"team": "Hapoel Tel-Aviv",
+"stat": "A",
+"line": 5.5,
+"odds": 1.68
+},
+{
+"p": "Joel Bolomboy",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Andreas Obst",
+"team": "Bayern",
+"stat": "P",
+"line": 12.5,
+"odds": 1.81
+}
+]
+},
+{
+"id": "r10d2-32",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Justin Robinson",
+"team": "Barcelona",
+"stat": "A",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Kevin Punter",
+"team": "Barcelona",
+"stat": "P",
+"line": 17.5,
+"odds": 1.86
+},
+{
+"p": "Vasilije Micic",
+"team": "Hapoel Tel-Aviv",
+"stat": "A",
+"line": 5.5,
+"odds": 1.68
+},
+{
+"p": "Andreas Obst",
+"team": "Bayern",
+"stat": "P",
+"line": 12.5,
+"odds": 1.81
+},
+{
+"p": "Duane Washington",
+"team": "Bayern",
+"stat": "P",
+"line": 16.5,
+"odds": 1.92
+},
+{
+"p": "Both Tut Gach",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "Moses Wright",
+"team": "Olimpia Milano",
+"stat": "P",
+"line": 14.5,
+"odds": 1.82
+},
+{
+"p": "Devon Hall",
+"team": "Olimpia Milano",
+"stat": "A",
+"line": 3.5,
+"odds": 1.85
+}
+]
+},
+{
+"id": "r10d2-33",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Kevin Punter",
+"team": "Barcelona",
+"stat": "A",
+"line": 2.5,
+"odds": 1.95
+},
+{
+"p": "Tyrese Martin",
+"team": "Barcelona",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Duane Washington",
+"team": "Bayern",
+"stat": "P",
+"line": 16.5,
+"odds": 1.92
+},
+{
+"p": "Jae Crowder",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Both Tut Gach",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "Leandro Bolmaro",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 2.5,
+"odds": 2.35
+},
+{
+"p": "Moses Wright",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 6.5,
+"odds": 1.75
+},
+{
+"p": "T.J. Shorts",
+"team": "Valencia",
+"stat": "P",
+"line": 17.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d2-34",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Nadir Hifi",
+"team": "Paris",
+"stat": "A",
+"line": 2.5,
+"odds": 2.1
+},
+{
+"p": "Jared Rhoden",
+"team": "Paris",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Dario Saric",
+"team": "Anadolu Efes",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Both Tut Gach",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "Duane Washington",
+"team": "Bayern",
+"stat": "P",
+"line": 16.5,
+"odds": 1.92
+},
+{
+"p": "Alec Peters",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Moses Wright",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 6.5,
+"odds": 1.75
+},
+{
+"p": "Kameron Taylor",
+"team": "Valencia",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+}
+]
+},
+{
+"id": "r10d2-35",
+"date": "2026-11-05",
+"round": "10",
+"stake": 100,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Kobi Simmons",
+"team": "Baskonia",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Nicolo Melli",
+"team": "Fenerbahce",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Shavon Shields",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 13.5,
+"odds": 1.92
+},
+{
+"p": "Josh Nebo",
+"team": "Barcelona",
+"stat": "P",
+"line": 9.5,
+"odds": 1.8
+},
+{
+"p": "Joel Parra",
+"team": "Barcelona",
+"stat": "P",
+"line": 9.5,
+"odds": 1.92
+},
+{
+"p": "Moses Wright",
+"team": "Olimpia Milano",
+"stat": "P",
+"line": 14.5,
+"odds": 1.82
+},
+{
+"p": "Armoni Brooks",
+"team": "Valencia",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Devon Hall",
+"team": "Olimpia Milano",
+"stat": "A",
+"line": 3.5,
+"odds": 1.85
+}
+]
+},
+{
+"id": "r10d2-36",
+"date": "2026-11-05",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Dario Saric",
+"team": "Anadolu Efes",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Will Clyburn",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 9.5,
+"odds": 1.92
+},
+{
+"p": "Josh Nebo",
+"team": "Barcelona",
+"stat": "P",
+"line": 9.5,
+"odds": 1.8
+},
+{
+"p": "Vasilije Micic",
+"team": "Hapoel Tel-Aviv",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Dario Brizuela",
+"team": "Barcelona",
+"stat": "P",
+"line": 7.5,
+"odds": 1.82
+},
+{
+"p": "Austin Wiley",
+"team": "Bayern",
+"stat": "S",
+"line": 6.5,
+"odds": 1.85
+},
+{
+"p": "Patty Mills",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 13.5,
+"odds": 1.92
+},
+{
+"p": "Alec Peters",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Kameron Taylor",
+"team": "Valencia",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Leandro Bolmaro",
+"team": "Olimpia Milano",
+"stat": "A",
+"line": 2.5,
+"odds": 2.15
+}
+]
+},
+{
+"id": "r10d2-37",
+"date": "2026-11-05",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Nicolo Melli",
+"team": "Fenerbahce",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Wade Baldwin",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+},
+{
+"p": "Elijah Bryant",
+"team": "Hapoel Tel-Aviv",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Joel Parra",
+"team": "Barcelona",
+"stat": "S",
+"line": 4.5,
+"odds": 1.85
+},
+{
+"p": "Kevin Punter",
+"team": "Barcelona",
+"stat": "A",
+"line": 2.5,
+"odds": 1.95
+},
+{
+"p": "Joel Bolomboy",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Tremont Waters",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 10.5,
+"odds": 1.8
+},
+{
+"p": "RJ Cole",
+"team": "Olimpia Milano",
+"stat": "A",
+"line": 3.5,
+"odds": 1.85
+},
+{
+"p": "Josep Puerto",
+"team": "Valencia",
+"stat": "P",
+"line": 5.5,
+"odds": 1.92
+},
+{
+"p": "Alec Peters",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+}
+]
+},
+{
+"id": "r10d2-38",
+"date": "2026-11-05",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Will Clyburn",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 9.5,
+"odds": 1.92
+},
+{
+"p": "Kobi Simmons",
+"team": "Baskonia",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Wade Baldwin",
+"team": "Fenerbahce",
+"stat": "S",
+"line": 2.5,
+"odds": 2
+},
+{
+"p": "Elijah Bryant",
+"team": "Hapoel Tel-Aviv",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Tyrese Martin",
+"team": "Barcelona",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Patty Mills",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 13.5,
+"odds": 1.92
+},
+{
+"p": "Both Tut Gach",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "Neal Sako",
+"team": "Valencia",
+"stat": "S",
+"line": 6.5,
+"odds": 2.15
+},
+{
+"p": "Moses Wright",
+"team": "Olimpia Milano",
+"stat": "P",
+"line": 14.5,
+"odds": 1.82
+},
+{
+"p": "Josep Puerto",
+"team": "Valencia",
+"stat": "P",
+"line": 5.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d2-39",
+"date": "2026-11-05",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Dario Saric",
+"team": "Anadolu Efes",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Wade Baldwin",
+"team": "Fenerbahce",
+"stat": "S",
+"line": 2.5,
+"odds": 2
+},
+{
+"p": "Josh Nebo",
+"team": "Barcelona",
+"stat": "P",
+"line": 9.5,
+"odds": 1.8
+},
+{
+"p": "Vasilije Micic",
+"team": "Hapoel Tel-Aviv",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Justin Robinson",
+"team": "Barcelona",
+"stat": "A",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Jae Crowder",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 10.5,
+"odds": 1.93
+},
+{
+"p": "Austin Wiley",
+"team": "Bayern",
+"stat": "S",
+"line": 6.5,
+"odds": 1.85
+},
+{
+"p": "Patty Mills",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 13.5,
+"odds": 1.92
+},
+{
+"p": "Alec Peters",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Armoni Brooks",
+"team": "Valencia",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d2-40",
+"date": "2026-11-05",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Nicolo Melli",
+"team": "Fenerbahce",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Wade Baldwin",
+"team": "Fenerbahce",
+"stat": "S",
+"line": 2.5,
+"odds": 2
+},
+{
+"p": "Josh Nebo",
+"team": "Barcelona",
+"stat": "P",
+"line": 9.5,
+"odds": 1.8
+},
+{
+"p": "Elijah Bryant",
+"team": "Hapoel Tel-Aviv",
+"stat": "A",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Duane Washington",
+"team": "Bayern",
+"stat": "P",
+"line": 16.5,
+"odds": 1.92
+},
+{
+"p": "Tremont Waters",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 10.5,
+"odds": 1.8
+},
+{
+"p": "Joel Bolomboy",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Josep Puerto",
+"team": "Valencia",
+"stat": "P",
+"line": 5.5,
+"odds": 1.92
+},
+{
+"p": "Devon Hall",
+"team": "Olimpia Milano",
+"stat": "P",
+"line": 9.5,
+"odds": 1.92
+},
+{
+"p": "Kameron Taylor",
+"team": "Valencia",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+}
+]
+},
+{
+"id": "r10d2-41",
+"date": "2026-11-05",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Jared Rhoden",
+"team": "Paris",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Nadir Hifi",
+"team": "Paris",
+"stat": "P",
+"line": 19.5,
+"odds": 1.86
+},
+{
+"p": "Justin Robinson",
+"team": "Barcelona",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+},
+{
+"p": "Kevin Punter",
+"team": "Barcelona",
+"stat": "A",
+"line": 2.5,
+"odds": 1.95
+},
+{
+"p": "Vasilije Micic",
+"team": "Hapoel Tel-Aviv",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Jae Crowder",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Joel Bolomboy",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Devon Hall",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 2.5,
+"odds": 2.2
+},
+{
+"p": "Neal Sako",
+"team": "Valencia",
+"stat": "S",
+"line": 6.5,
+"odds": 2.15
+},
+{
+"p": "Moses Wright",
+"team": "Olimpia Milano",
+"stat": "P",
+"line": 14.5,
+"odds": 1.82
+}
+]
+},
+{
+"id": "r10d2-42",
+"date": "2026-11-05",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Nicolo Melli",
+"team": "Fenerbahce",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Will Clyburn",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 9.5,
+"odds": 1.92
+},
+{
+"p": "Josh Nebo",
+"team": "Barcelona",
+"stat": "P",
+"line": 9.5,
+"odds": 1.8
+},
+{
+"p": "Joel Parra",
+"team": "Barcelona",
+"stat": "S",
+"line": 4.5,
+"odds": 1.85
+},
+{
+"p": "Vasilije Micic",
+"team": "Hapoel Tel-Aviv",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Duane Washington",
+"team": "Bayern",
+"stat": "P",
+"line": 16.5,
+"odds": 1.92
+},
+{
+"p": "Austin Wiley",
+"team": "Bayern",
+"stat": "S",
+"line": 6.5,
+"odds": 1.85
+},
+{
+"p": "Tremont Waters",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 10.5,
+"odds": 1.8
+},
+{
+"p": "Kameron Taylor",
+"team": "Valencia",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "T.J. Shorts",
+"team": "Valencia",
+"stat": "P",
+"line": 17.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d2-43",
+"date": "2026-11-05",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Jared Rhoden",
+"team": "Paris",
+"stat": "P",
+"line": 12.5,
+"odds": 1.83
+},
+{
+"p": "Nadir Hifi",
+"team": "Paris",
+"stat": "A",
+"line": 2.5,
+"odds": 2.1
+},
+{
+"p": "Kobi Simmons",
+"team": "Baskonia",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Shavon Shields",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 13.5,
+"odds": 1.92
+},
+{
+"p": "Justin Robinson",
+"team": "Barcelona",
+"stat": "A",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Tyrese Martin",
+"team": "Barcelona",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Andreas Obst",
+"team": "Bayern",
+"stat": "P",
+"line": 12.5,
+"odds": 1.81
+},
+{
+"p": "Kameron Taylor",
+"team": "Valencia",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Leandro Bolmaro",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 2.5,
+"odds": 2.35
+},
+{
+"p": "Devon Hall",
+"team": "Olimpia Milano",
+"stat": "A",
+"line": 3.5,
+"odds": 1.85
+}
+]
+},
+{
+"id": "r10d2-44",
+"date": "2026-11-05",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Nadir Hifi",
+"team": "Paris",
+"stat": "P",
+"line": 19.5,
+"odds": 1.86
+},
+{
+"p": "Tyrese Martin",
+"team": "Barcelona",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Dario Brizuela",
+"team": "Barcelona",
+"stat": "P",
+"line": 7.5,
+"odds": 1.82
+},
+{
+"p": "Elijah Bryant",
+"team": "Hapoel Tel-Aviv",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Austin Wiley",
+"team": "Bayern",
+"stat": "S",
+"line": 6.5,
+"odds": 1.85
+},
+{
+"p": "Tremont Waters",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 10.5,
+"odds": 1.8
+},
+{
+"p": "Duane Washington",
+"team": "Bayern",
+"stat": "P",
+"line": 16.5,
+"odds": 1.92
+},
+{
+"p": "T.J. Shorts",
+"team": "Valencia",
+"stat": "A",
+"line": 5.5,
+"odds": 1.95
+},
+{
+"p": "RJ Cole",
+"team": "Olimpia Milano",
+"stat": "A",
+"line": 3.5,
+"odds": 1.85
+},
+{
+"p": "Leandro Bolmaro",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 2.5,
+"odds": 2.35
+}
+]
+},
+{
+"id": "r10d2-45",
+"date": "2026-11-05",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Nicolo Melli",
+"team": "Fenerbahce",
+"stat": "S",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Shavon Shields",
+"team": "Fenerbahce",
+"stat": "P",
+"line": 13.5,
+"odds": 1.92
+},
+{
+"p": "Joel Parra",
+"team": "Barcelona",
+"stat": "P",
+"line": 9.5,
+"odds": 1.92
+},
+{
+"p": "Kevin Punter",
+"team": "Barcelona",
+"stat": "A",
+"line": 2.5,
+"odds": 1.95
+},
+{
+"p": "Andreas Obst",
+"team": "Bayern",
+"stat": "P",
+"line": 12.5,
+"odds": 1.81
+},
+{
+"p": "Both Tut Gach",
+"team": "Lyon-Villeurbanne",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "Jae Crowder",
+"team": "Lyon-Villeurbanne",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Armoni Brooks",
+"team": "Valencia",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Moses Wright",
+"team": "Olimpia Milano",
+"stat": "S",
+"line": 6.5,
+"odds": 1.75
+},
+{
+"p": "T.J. Shorts",
+"team": "Valencia",
+"stat": "P",
+"line": 17.5,
 "odds": 1.92
 }
 ]
@@ -152997,7 +156062,8 @@
 "30.10.2026: U Analiza → Linije i kvote dodata tabela „Tačna granica: asistencije i skokovi“ (tvoji minusi uživo + cela ponuda 8.10–29.10, 1.511 minusa). Ponuda: A1,5 48% (treba 53%), A2,5 58%, A4,5 69%; S1,5 47% (treba 46%), S5,5 65%, S6,5 48%.",
 "30.10.2026: Na zahtev korisnika kolona i oznaka „Treba za nulu“ uklonjena iz cele analize (zaglavlje, tabele, saveti, panel „Tvoj procenat naspram kladionice“). Ocena „Prolazi / Oko nule / Igraj manje“ i dalje se računa u odnosu na kvote.",
 "Kolo 9, 30.10.2026: 90 minus tiketa (7.000 svežeg novca, plan cp-r9d2-90) + 10 tiketa r9d2-g (500, plusevi greškom uplaćeni kao minusi). Dobitna jedna osmica r9d2-22 (kvota 130,5, isplata sa bonusom 16% oko 15.138). Nijedan tiket sa tačno jednim promašajem, pa bez povraćaja (čeka potvrdu). Svi g tiketi pali; da su uplaćeni kao plusevi, ni jedan ne bi prošao (najbolji 5 od 6). Jedinstveni parovi na tiketima 41 od 81 (51%), Balcerowski P nije igrao. Tikete oborili Okobo S (3, 24 tiketa), Carsen Edwards A (4, 24), Osetkowski A1,5 (2, 24), Micić P (15, 24), Diarra S (7, 24), Frazier P (15, 24), Moore P (13, 24), Valančiunas P (16, 19), Punter P (18, 18), Lesor S (11, 16), Santos S (5, 16). Lista 15 minusa 9 od 15; lista 10 pluseva 5 od 10; 12 plus predloga 7 od 12. Free bet mix i dve mix osmice pale. Rezultati: Dubai – Hapoel 97:83, ASVEL – Baskonija 94:79, Žalgiris – Partizan 87:80, Barselona – Valensija 98:94, Efes – Panatinaikos 83:68, Virtus – Bešiktaš 101:103, Olimpijakos – Milano 84:78. minLog i ctx2 osveženi sa utakmicama 84 do 90.",
-"Kolo 10, 4.11.2026: odigrana samo utakmica Real – Panatinaikos 112:115 posle produžetka; Nikola nije igrao minuse. Cela Admiralova ponuda za tu utakmicu: minusi 15 od 33 (poeni 6 od 16, skokovi 7 od 12, asistencije 2 od 5), visok rezultat zbog produžetka (Nunn 33, Feliz 27, Abalde 23). Zapisnik 91 ubačen u bazu; minLog, ctx2 i tabela tačnih granica (sada 1.770 minusa iz ponude, 8.10. do 4.11.) osveženi."
+"Kolo 10, 4.11.2026: odigrana samo utakmica Real – Panatinaikos 112:115 posle produžetka; Nikola nije igrao minuse. Cela Admiralova ponuda za tu utakmicu: minusi 15 od 33 (poeni 6 od 16, skokovi 7 od 12, asistencije 2 od 5), visok rezultat zbog produžetka (Nunn 33, Feliz 27, Abalde 23). Zapisnik 91 ubačen u bazu; minLog, ctx2 i tabela tačnih granica (sada 1.770 minusa iz ponude, 8.10. do 4.11.) osveženi.",
+"Kolo 10, 5.11.2026: uplaćeno 45 tiketa po planu cp-r10d2-45 (35 osmica po 100, 10 desetki po 50, ukupno 4.000), upisano kao igrano iz dobitka jer svež uplata nije pomenuta."
 ]
 },
 "offerSnaps": [
