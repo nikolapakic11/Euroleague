@@ -114,6 +114,32 @@ def izbor_dana(P):
     return izab
 
 
+def javni_kodovi(x):
+    """Na javnoj stranici timovi nose zvanične skraćenice Evrolige (tvCode iz rasporeda: IST -> EFS, MAD -> RMB, ...).
+    Menjaju se vrednosti polja tim, prot, dom, gost, team, opp, protivnik iz zadnjih utakmica i ključevi tabele timova."""
+    from zajedno import BAZA
+    g = ucitaj(os.path.join(BAZA, 'games.json'))
+    M = {}
+    for u in (g['data'] if isinstance(g, dict) else g):
+        for s in ('local', 'road'):
+            c = u[s]['club']
+            M[c['code']] = c.get('tvCode') or c['code']
+    POLJA = {'tim', 'prot', 'dom', 'gost', 'team', 'opp'}
+    def tr(v, roditelj=None):
+        if isinstance(v, dict):
+            out = {}
+            for k, w in v.items():
+                k2 = M.get(k, k) if roditelj == 'timovi' else k
+                out[k2] = M.get(w, w) if (k in POLJA and isinstance(w, str)) else tr(w, k)
+            return out
+        if isinstance(v, list):
+            if roditelj == 'zadnje':
+                return [[r[0], M.get(r[1], r[1])] + r[2:] if isinstance(r, list) and len(r) > 1 else r for r in v]
+            return [tr(w, roditelj) for w in v]
+        return v
+    return tr(x)
+
+
 def ponuda_dana(tabla, K):
     """Za svaku utakmicu koja nije počela: svi igrači u ponudi, po stavci, na najčešćoj glavnoj granici:
     očekivanje, očekivani minuti, prosek sezone i poslednjih 5, strana na koju naginje (kalibrisano), najbolje kvote
@@ -373,6 +399,7 @@ def main():
     stat_p = os.path.join(PROCENE, 'podaci', 'statistika.json')
     stranica = dict(zakljucano=dict(napredno=False), osvezeno=sada, pravilo=javno_pr, kladionice=IME_KL, kola=kola_j, tekuce=tekuce,
                     igraci=igraci_kola(tekuce), statistika=ucitaj(stat_p) if os.path.exists(stat_p) else None)
+    stranica = javni_kodovi(stranica)
     sab = open(os.path.join(PROCENE, 'javno', 'sablon.html'), encoding='utf-8').read()
     js = json.dumps(stranica, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
     with open(os.path.join(PROCENE, 'javno', 'predlozi.html'), 'w', encoding='utf-8') as f:

@@ -270,7 +270,7 @@ td.num,th.num{text-align:right}
 
   <footer class="napomena">
     <span>Samo za punoletne. Ovo nisu saveti za klađenje ni garancija ishoda; kvote i granice se menjaju posle objavljivanja. Igre na sreću mogu izazvati zavisnost: igrajte odgovorno i samo novcem koji možete da izgubite.</span>
-    <span>Učinak je računat na ravan ulog od jedne jedinice po predlogu, po kvoti iz trenutka objavljivanja. Igrač koji ne uđe u igru: predlog se ne računa.</span>
+    <span>Učinak pokazuje koliko je konačnih predloga prošlo, na granici iz predloga. Igrač koji ne uđe u igru: predlog se ne računa.</span>
   </footer>
 </div>
 
@@ -402,8 +402,8 @@ function crtajPredloge(){
   const slabih=k.predlozi.filter(p=>p.nivo==='slab').length;
   const bezPonude=(k.utakmice||[]).filter(u=>!(u.ponude||[]).length).length;
   const imaIshoda=sve.some(p=>p.prosao===true||p.prosao===false);
-  let h=!imaIshoda?'':`<section style="display:flex;flex-direction:column;gap:8px"><span class="lbl">Učinak od početka objavljivanja · ulog 1 po predlogu</span><div class="ucinak">${tile('','Ukupno',sve)}${tile('','Jaki predlozi',sve.filter(p=>p.nivo==='jak'))}${tile('','Solidni i nagoveštaji',sve.filter(p=>p.nivo==='solidan'||p.nivo==='nagoveštaj'))}</div></section>`;
-  h+=`<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 12px;margin-top:6px"><h2>${k.kolo}. kolo · najbolji predlozi</h2><span class="meta">${P.length} prikazano, od najboljeg ka najslabijem${bezPonude?` · ${bezPonude} utakmica još čeka ponude`:''}</span></div>${vremeKvota(k)}`;
+  let h=imaIshoda?ucinakPoDanu():'';
+  h+=`<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 12px;margin-top:6px"><h2>${k.kolo}. kolo · najbolji predlozi</h2><span class="meta">${P.length} prikazano, od najboljeg ka najslabijem${bezPonude?` · ${bezPonude} ${bezPonude%10===1&&bezPonude%100!==11?'utakmica čeka':bezPonude%10>=2&&bezPonude%10<=4&&(bezPonude%100<12||bezPonude%100>14)?'utakmice čekaju':'utakmica čeka'} ponude`:''}</span></div>${vremeKvota(k)}`;
   const prel=(k.utakmice||[]).filter(u=>!u.pocela&&!konacnoU(k,u)&&k.predlozi.some(p=>p.g===u.g));
   if(prel.length){const r=prel.map(u=>u.rok).filter(Boolean).sort()[0];
     h+=`<p class="obav"><b>Preliminarni predlozi.</b> Konačni predlozi stižu ${r?'u <b>'+HM(r)+'</b>':'pred prvu utakmicu dana'}, posle poslednje ponude i vesti o povredama i odsutnim igračima. Do tada predlozi mogu da se promene ili povuku.</p>`}
@@ -421,6 +421,16 @@ function crtajPredloge(){
     h+=`<div class="blok"><h3>Sledeće utakmice</h3><p class="meta">Predlozi se objavljuju od 12h na dan utakmice, kad kladionice okače igrače. Konačni predlozi su sat pre prve utakmice tog dana ako ona počinje pre 18h, inače sat i po pre nje.</p><div class="rasp">${Object.keys(po).sort().map(d=>`<div class="dan"><b>${DAN(d)}${po[d][0].rok?' · konačni u '+HM(po[d][0].rok):''}</b>${po[d].map(u=>`<span>${u.dom}–${u.gost} ${esc(u.vreme.split(' ')[1]||'')}</span>`).join('')}</div>`).join('')}</div></div>`;}
   return h;
 }
+// učinak: po danu broj predloga i koliko je prošlo (bez jedinica i nivoa)
+function ucinakPoDanu(){
+  const S=D.kola.flatMap(k=>k.predlozi.filter(p=>ok(p)&&(p.prosao===true||p.prosao===false)).map(p=>({p,u:utak(k,p.g)})));
+  if(!S.length)return '';
+  const po={};S.forEach(x=>(po[x.p.dan]=po[x.p.dan]||[]).push(x));
+  const pct=(a,n)=>Math.round(100*a/n)+'%';
+  const red=Object.keys(po).sort().reverse().map(d=>{const X=po[d],pr=X.filter(x=>x.p.prosao).length,ut=[...new Set(X.map(x=>`${x.u.dom||''}–${x.u.gost||''}`))];
+    return `<tr><td>${DAN(d)}</td><td><span class="sm">${ut.join(', ')}</span></td><td class="num">${X.length}</td><td class="num"><b>${pr}/${X.length}</b> · ${pct(pr,X.length)}</td></tr>`}).join('');
+  const pr=S.filter(x=>x.p.prosao).length;
+  return `<div class="blok"><h3>Učinak od početka objavljivanja</h3><div class="skrol"><table><tr><th>Dan</th><th>Utakmice</th><th class="num">Predloga</th><th class="num">Prošlo</th></tr>${red}<tr><td><b>Ukupno</b></td><td></td><td class="num"><b>${S.length}</b></td><td class="num"><b>${pr}/${S.length}</b> · ${pct(pr,S.length)}</td></tr></table></div></div>`}
 function pocinje(u){if(!u||!u.pocetak)return '';const m=(Date.parse(u.pocetak)-Date.now())/60000;
   if(m>0&&m<24*60){const h=Math.floor(m/60),mm=Math.round(m%60);return 'počinje za '+(h?h+' h ':'')+mm+' min'}
   if(m<=0&&m>-150)return 'u toku';return ''}
@@ -437,9 +447,9 @@ function crtajIstoriju(){
   if(st.kolo!=='sve'&&!kola.some(k=>k.kolo===st.kolo))st.kolo=kola[0].kolo;
   let h=`<div class="kola-izbor" role="group" aria-label="Kolo">${kola.map(k=>`<button data-k="${k.kolo}" aria-pressed="${st.kolo===k.kolo}">${k.kolo}. kolo</button>`).join('')}<button data-k="sve" aria-pressed="${st.kolo==='sve'}">Sva kola</button></div>`;
   // pregled po kolu
-  h+=`<div class="blok"><h3>Pregled po kolima</h3><div class="skrol"><table><tr><th>Kolo</th><th class="num">Predloga</th><th class="num">Jaki</th><th class="num">Solidni</th><th class="num">Ukupno</th></tr>`+
-    kola.map(k=>{const P=k.predlozi.filter(ok);const c=(X)=>{const s=zbir(X);return s.n?`${s.pr}/${s.n} · <span class="${s.d>=0?'pl':'mi'}">${jed(s.d)}</span>`:'<span class="sm">čeka</span>'};
-      return `<tr><td>${k.kolo}.</td><td class="num">${P.length}</td><td class="num">${c(P.filter(p=>p.nivo==='jak'))}</td><td class="num">${c(P.filter(p=>p.nivo==='solidan'))}</td><td class="num">${c(P)}</td></tr>`}).join('')+`</table></div></div>`;
+  h+=`<div class="blok"><h3>Pregled po kolima</h3><div class="skrol"><table><tr><th>Kolo</th><th class="num">Predloga</th><th class="num">Prošlo</th></tr>`+
+    kola.map(k=>{const P=k.predlozi.filter(ok),s=zbir(P);
+      return `<tr><td>${k.kolo}.</td><td class="num">${P.length}</td><td class="num">${s.n?`<b>${s.pr}/${s.n}</b> · ${Math.round(100*s.pr/s.n)}%`:'<span class="sm">čeka</span>'}${s.n&&s.n<P.length?` <span class="sm">(${P.length-s.n} čeka)</span>`:''}</td></tr>`}).join('')+`</table></div></div>`;
   const izabrana=st.kolo==='sve'?kola:kola.filter(k=>k.kolo===st.kolo);
   for(const k of izabrana){
     const G=(k.utakmice||[]).filter(u=>k.predlozi.some(p=>p.g===u.g)||((k.ponuda||{})[u.g]||[]).length||(k.uklonjeni||[]).some(x=>x.g===u.g))
@@ -456,7 +466,7 @@ function istUtakmica(k,u){
   const U=(k.uklonjeni||[]).filter(x=>x.g===u.g&&x.s&&ok(x));
   const L=((k.ponuda||{})[u.g]||[]).filter(ok);
   const kon=konacnoU(k,u), s=zbir(P);
-  let h=`<div class="blok ist"><div class="ist-z"><h3>${u.dom||''}–${u.gost||''}</h3><span class="meta">${esc(u.vreme||'')} · ${kon?'konačni predlozi od '+kon:u.pocela?'zaključano sa poslednjim predlozima':'preliminarno'}${s.n?` · predlozi ${s.pr}/${s.n} · <span class="${s.d>=0?'pl':'mi'}">${jed(s.d)}</span>`:''}</span></div>`;
+  let h=`<div class="blok ist"><div class="ist-z"><h3>${u.dom||''}–${u.gost||''}</h3><span class="meta">${esc(u.vreme||'')} · ${kon?'konačni predlozi od '+kon:u.pocela?'zaključano sa poslednjim predlozima':'preliminarno'}${s.n?` · prošlo ${s.pr} od ${s.n}`:''}</span></div>`;
   const ko=(x,dod='')=>{const o=x.strana==='o';return `<td class="pun"><b>${esc(x.ime)}</b> <span class="sm">${x.tim}</span><br><span class="mini ${o?'o':'u'}">${o?'▲ PLUS':'▼ MINUS'}</span> ${SM[x.s]} ${o?'preko':'ispod'} ${z(x.l)}${dod}</td>`};
   if(P.length)h+=`<div class="lista"><table class="kart"><tr class="zag"><th>Igrač i predlog</th><th class="num">Kvota</th><th>Nivo</th><th>Ishod</th></tr>`+
     P.map(p=>`<tr>${ko(p)}<td class="num" data-l="Kvota"><span class="v">${z(p.kvota,2)} <span class="sm">${IMEKL(p.kl)}</span></span></td><td data-l="Nivo"><span class="v">${p.nivo||''} ${p.pp!=null?Math.round(p.pp*100)+'%':''}</span></td><td data-l="Ishod">${status(p,u)}</td></tr>`).join('')+`</table></div>`;
