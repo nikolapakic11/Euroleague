@@ -114,7 +114,7 @@ def nadji(recenica, igraci):
     return nadjeni
 
 
-def procitaj(url, igraci_po_timu, out, timovi):
+def procitaj(url, igraci_po_timu, out, timovi, novi):
     """Članak po utakmicama (zaglavlje „A vs. B (20:45 CET)“), pa po timovima; tekst tima se spaja u jedan pasus
     (ime igrača je često u posebnom redu), deli na rečenice i za svaku rečenicu se traže pomenuti igrači."""
     L = tekst_linije(get(url))
@@ -129,6 +129,8 @@ def procitaj(url, igraci_po_timu, out, timovi):
             timovi.setdefault(tim_sad, {})['pun_sastav'] = True
         if re.search(r'not (yet )?(sent|submitted) an injury report', x, re.I):
             timovi.setdefault(tim_sad, {})['bez_izvestaja'] = True
+        for m in re.finditer(r'[Nn]ew signing ([A-Z][\w\'’-]+(?: [A-Z][\w\'’-]+)+) has been registered', x):
+            novi[nk(m.group(1))] = dict(tim=tim_sad, ime=m.group(1), tekst=m.group(0)[:200])
         for rec in re.split(r'(?<=[a-z0-9\)”"])\.\s+(?=[A-Z“"])', x):
             st = stanje(rec)
             if not st:
@@ -179,15 +181,26 @@ def main():
         return
     kodovi = {u['dom'] for u in U if u['r'] == kolo} | {u['gost'] for u in U if u['r'] == kolo}
     igraci_po_timu = {k: igraci_tima(k) for k in kodovi}
-    out, timovi = {}, {}
+    out, timovi, novi = {}, {}, {}
     for url in linkovi:                     # stariji pa noviji: noviji menja stanje
-        procitaj(url, igraci_po_timu, out, timovi)
+        procitaj(url, igraci_po_timu, out, timovi, novi)
     for kod, x in timovi.items():          # „ceo sastav na raspolaganju“: niko iz tog tima nije van igre
         if x.get('pun_sastav'):
             for k, v in out.items():
                 if v['tim'] == kod and v['stanje'] != 'igra':
                     v['stanje'] = 'igra'
-    sacuvaj(put, dict(kolo=kolo, at=sad.astimezone(BG).strftime('%d.%m.%Y. %H:%M'), izvori=linkovi, igraci=out, timovi=timovi))
+    # pozicija novih igrača sa zvaničnog spiska kluba (Evroliga API)
+    POZ = {'Guard': 'G', 'Forward': 'F', 'Center': 'C'}
+    for k, v in novi.items():
+        try:
+            req = urllib.request.Request(f"https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs/{v['tim']}/people", headers={'User-Agent': 'curl/8.5.0'})
+            for x in json.loads(urllib.request.urlopen(req, timeout=20).read()):
+                n = x.get('person', {}).get('name', '')
+                if x.get('type') == 'J' and ',' in n and nk(n.split(',')[1] + ' ' + n.split(',')[0]) == k:
+                    v['pos'] = POZ.get(x.get('positionName') or '', '')
+        except Exception as e:
+            print('pozicija novog igrača:', k, e)
+    sacuvaj(put, dict(kolo=kolo, at=sad.astimezone(BG).strftime('%d.%m.%Y. %H:%M'), izvori=linkovi, igraci=out, timovi=timovi, novi=novi))
     from collections import Counter
     print(f"povrede: kolo {kolo}, članaka {len(linkovi)}, igrača {len(out)} ({dict(Counter(v['stanje'] for v in out.values()))})")
 

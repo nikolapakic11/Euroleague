@@ -274,7 +274,14 @@ def main():
     # zvanični izveštaj o povredama (povrede.py): van igre, upitan, igra
     p_pov = os.path.join(PROCENE, 'podaci', 'povrede.json')
     pov = ucitaj(p_pov) if os.path.exists(p_pov) else {}
-    pov_ig = pov.get('igraci', {}) if pov.get('kolo') == a.kolo else {}
+    pov_ig = dict(pov.get('igraci', {})) if pov.get('kolo') == a.kolo else {}
+    # ručne potvrde (Nikola): procene/podaci/povrede_rucno.json {"<kolo>": {"ključ igrača": {"stanje": "igra", "izvor": "..."}}}
+    p_ru = os.path.join(PROCENE, 'podaci', 'povrede_rucno.json')
+    if os.path.exists(p_ru):
+        for k, v in ucitaj(p_ru).get(str(a.kolo), {}).items():
+            pov_ig[k] = dict(pov_ig.get(k, {}), **v)
+    # novi igrači (pojačanja koja mogu da debituju): uzimaju minute igračima na istoj poziciji
+    pov_novi = pov.get('novi', {}) if pov.get('kolo') == a.kolo else {}
     sp_sast = os.path.join(PROCENE, 'podaci', 'sastavi.json')
     sastavi = ucitaj(sp_sast) if os.path.exists(sp_sast) else {}
     sada = dt.datetime.now(dt.timezone.utc)
@@ -395,7 +402,8 @@ def main():
                 tr_est = min(0.97, (1 / kv) / 1.08)
                 pc = spajanje.preko_kal(sp_w, sp_kal, s_, pm, tr_est) if sp_w else pm
                 x.setdefault('lest', []).append(dict(kl=kl, n=n_, k=kv, pm=round(pm, 4), pc=round(pc, 4)))
-        # verovatno odsutni rotacioni igrači: nisu u sastavu, ili ih nema ni kod jedne kladionice dok je utakmica u ponudi.
+        # odsutni rotacioni igrači: SAMO POTVRĐENO (zvanični izveštaj „van igre“, nije u sastavu, ručno). Igrač kojeg nema
+        # u ponudi kladionica se ne računa kao odsutan (Nikola, 5.11.: kladionice izbacuju igrače sa malim granicama).
         # Model računa sa prosekom minuta iz sezone i ne zna da saigrači dobijaju minute odsutnog igrača; na ranijim
         # ponudama su minusi igrača čiji tim je bez takvog saigrača prolazili znatno lošije (procene/README.md), pa se
         # za taj tim ne daju MINUS predlozi. Gleda se samo igrač koji je bio deo rotacije: bar 15 min, odigrao bar
@@ -408,7 +416,13 @@ def main():
                                  for i in st_i['igraci']
                                  if i['min'] >= 15 and n_tim and i['n'] >= 0.5 * n_tim and i['odsutan'] < 3
                                  and i.get('izvestaj') != 'igra'
-                                 and (i['ne_igra'] or (u_ponudi and not any(z.get('m', 1) for s in 'PSA' for z in i['s'][s]['linije'])))]
+                                 and i['ne_igra']]
+            # novi igrači tima (mogu da debituju): bez PLUS predloga za igrače na istoj poziciji
+            st_i['novi'] = [dict(k=k, **v) for k, v in pov_novi.items() if v.get('tim') == st_i['tim']]
+            for i in st_i['igraci']:
+                nv = [x for x in st_i['novi'] if x.get('pos') and x['pos'] == i['pos']]
+                if nv:
+                    i['novi_saigrac'] = [x['ime'] for x in nv]
         # predlozi za utakmicu: 4 do 6, po pravilu iz spajanje.izbor_utakmice (samo glavne granice)
         kand = []
         for st_i in stranice:
@@ -423,6 +437,8 @@ def main():
                         ps = z.get('ps', z['pc'])
                         for strana, pp, kv in (('o', ps, z['o']), ('u', 1 - ps, z['u'])):
                             if strana == 'u' and bez_minusa:
+                                continue
+                            if strana == 'o' and i.get('novi_saigrac'):
                                 continue
                             kand.append(dict(igr=i['k'], tim=st_i['tim'], s=s, strana=strana, pp=pp, ev=pp * kv - 1, k=kv, l=z['l'], kl=z['kl']))
         for c in (spajanje.izbor_utakmice(kand) if sp_w else []):

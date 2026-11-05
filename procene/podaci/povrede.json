@@ -1,6 +1,6 @@
 {
  "kolo": 10,
- "at": "05.11.2026. 12:04",
+ "at": "05.11.2026. 13:38",
  "izvori": [
   "https://www.eurohoops.net/en/euroleague/2030518/euroleague-round-10-injury-report-satoransky-out-powell-and-konchar-could-debut/"
  ],
@@ -340,6 +340,20 @@
   },
   "TEL": {
    "bez_izvestaja": true
+  }
+ },
+ "novi": {
+  "dwight powell": {
+   "tim": "ULK",
+   "ime": "Dwight Powell",
+   "tekst": "New signing Dwight Powell has been registered",
+   "pos": "C"
+  },
+  "john konchar": {
+   "tim": "OLY",
+   "ime": "John Konchar",
+   "tekst": "New signing John Konchar has been registered",
+   "pos": "F"
   }
  }
 }

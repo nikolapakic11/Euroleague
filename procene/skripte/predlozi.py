@@ -79,9 +79,24 @@ DAN_PO_UT, DAN_PO_TIMU, DAN_PO_STAVCI = 4, 2, 6   # najviše 4 iz iste utakmice,
 DAN_MIN_PLUS, DAN_MIN_MINUS, DAN_PRAG_KVOTE = 3, 2, 0.55   # bar 3 PLUS i 2 MINUS među prvih 8 ako ih ima sa bar 55%
 
 
-def izbor_dana(P):
-    """P: predlozi jednog dana (više utakmica). Vraća najbolje za dan, poređane po verovatnoći, uz rang_dan."""
+DAN_FORMA_N, DAN_FORMA_MIN = 7, 0.5            # u poslednjih 7 utakmica bar polovina na stranu predloga
+
+
+def forma(B, p):
+    """Koliko je puta u poslednjih DAN_FORMA_N utakmica igrač bio na strani predloga (na granici predloga)."""
+    G = [r for r in B.byk.get(p['k'], []) if r['dan'] < p['dan']][-DAN_FORMA_N:]
+    pog = sum((r[p['s']] > p['l']) if p['strana'] == 'o' else (r[p['s']] < p['l']) for r in G)
+    return pog, len(G)
+
+
+def izbor_dana(P, B=None):
+    """P: predlozi jednog dana (više utakmica). Vraća najbolje za dan, poređane po verovatnoći, uz rang_dan.
+    Predlog čija skorija forma govori suprotno (manje od polovine poslednjih utakmica na strani predloga) ne ulazi."""
     P = sorted([p for p in P if p.get('nivo') != 'slab'], key=lambda p: -p['pp'])
+    if B is not None:
+        for p in P:
+            p['forma'] = list(forma(B, p))
+        P = [p for p in P if p['forma'][1] < 4 or p['forma'][0] / p['forma'][1] >= DAN_FORMA_MIN]
     def moze(p, izab):
         return (sum(q['g'] == p['g'] for q in izab) < DAN_PO_UT and sum(q['tim'] == p['tim'] for q in izab) < DAN_PO_TIMU
                 and sum((q['s'], q['strana']) == (p['s'], p['strana']) for q in izab) < DAN_PO_STAVCI)
@@ -256,7 +271,8 @@ def main():
         po_danu = collections.defaultdict(list)
         for p in novi:
             po_danu[p['dan']].append(p)
-        novi = [q for d, L in po_danu.items() for q in (izbor_dana(L) if ut_dana[d] > 1 else L)]
+        B_dan = Baza()
+        novi = [q for d, L in po_danu.items() for q in (izbor_dana(L, B_dan) if ut_dana[d] > 1 else L)]
         sada_konacno = [u['g'] for u in tabla['utakmice'] if u['g'] not in zamrznute and u['g'] in objavljive
                         and sad_bg >= R[u['g']][1] and u['snimci']]
         # promene u odnosu na prethodno osvežavanje (važe do početka utakmice)

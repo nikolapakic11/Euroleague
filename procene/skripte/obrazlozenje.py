@@ -275,6 +275,11 @@ def razlozi(i, s, l, u, moja, tudja, K):
         sig = all(j.get('zasto') != 'nije u ponudi kladionica' for j in ned2[:2])
         T.append(dict(p=6, d=1, t=f"Kod {gen(prot)} na njegovoj poziciji {'ne ' + ('igraju' if len(ned2) > 1 else 'igra') if sig else 'verovatno ne ' + ('igraju' if len(ned2) > 1 else 'igra')} "
                                   f"{spisak([j['ime'] for j in ned2[:2]])}, pa {sta}.", kr=''))
+    # novi igrač na istoj poziciji (pojačanje koje može da debituje)
+    if i.get('novi_saigrac'):
+        nv = spisak(i['novi_saigrac'])
+        T.append(dict(p=2, d=-1, t=f"{IME.get(tim, tim)} ima pojačanje na njegovoj poziciji ({nv}) koje može da debituje; to može da mu uzme deo minuta.",
+                      kr='novo pojačanje može da mu uzme minute'))
     pv = i.get('povratak')
     if pv and abs(pv['sa'][s] - pv['bez'][s]) >= max(0.5, 0.15 * pv['bez'][s]):
         manje = pv['sa'][s] < pv['bez'][s]
