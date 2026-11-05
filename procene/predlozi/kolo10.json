@@ -745,8 +745,8 @@
    "l": 5.5,
    "kl": "mozzart",
    "kvota": 1.85,
-   "pp": 0.644,
-   "ev": 0.191,
+   "pp": 0.643,
+   "ev": 0.19,
    "nivo": "jak",
    "rang": 3,
    "ostale": [
@@ -755,11 +755,11 @@
      "k": 1.82
     },
     {
-     "kl": "maxbet",
-     "k": 1.8
+     "kl": "soccerbet",
+     "k": 1.81
     },
     {
-     "kl": "soccerbet",
+     "kl": "maxbet",
      "k": 1.8
     }
    ],
@@ -785,17 +785,17 @@
     {
      "kl": "soccerbet",
      "l": 5.5,
-     "u": 1.99,
-     "o": 1.8
+     "u": 1.98,
+     "o": 1.81
     }
    ],
    "soft": {
     "l": 5.5,
     "k": 1.85,
     "kl": "mozzart",
-    "p": 0.644,
+    "p": 0.643,
     "vrsta": "granica",
-    "ev": 0.191,
+    "ev": 0.19,
     "isti": true
    },
    "opseg": [
@@ -811,7 +811,7 @@
      "l": 5.5,
      "k": 1.85,
      "kl": "mozzart",
-     "p": 0.644,
+     "p": 0.643,
      "vrsta": "granica"
     },
     {
@@ -872,10 +872,10 @@
     "Obe ekipe vole brz ritam, pa će biti više napada nego obično."
    ],
    "rang_dan": 1,
-   "upisano": "05.11.2026. 10:26",
+   "upisano": "05.11.2026. 12:05",
    "prvi_put": "05.11.2026. 10:26",
    "zatv": 1.85,
-   "zatv_fer": 1.554
+   "zatv_fer": 1.555
   },
   {
    "g": 94,
@@ -1001,7 +1001,7 @@
     "Kod kuće postiže više poena nego u gostima (oko sedam poena naspram oko pet poena), a sada igra kod kuće."
    ],
    "rang_dan": 2,
-   "upisano": "05.11.2026. 10:26",
+   "upisano": "05.11.2026. 12:05",
    "prvi_put": "05.11.2026. 10:26",
    "zatv": 1.8,
    "zatv_fer": 1.589
@@ -1142,7 +1142,7 @@
     "U poslednje tri utakmice: 11, 12 i 12 poena, više nego inače."
    ],
    "rang_dan": 3,
-   "upisano": "05.11.2026. 10:26",
+   "upisano": "05.11.2026. 12:05",
    "prvi_put": "05.11.2026. 10:26",
    "zatv": 1.85,
    "zatv_fer": 1.608
@@ -1277,7 +1277,7 @@
     "Kod kuće postiže više poena nego u gostima (oko osam poena naspram tri do četiri poena), a sada igra kod kuće."
    ],
    "rang_dan": 4,
-   "upisano": "05.11.2026. 10:26",
+   "upisano": "05.11.2026. 12:05",
    "prvi_put": "05.11.2026. 10:26",
    "zatv": 1.92,
    "zatv_fer": 1.628
@@ -1402,7 +1402,7 @@
     "Protiv Baskonije bekovi postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi."
    ],
    "rang_dan": 5,
-   "upisano": "05.11.2026. 10:26",
+   "upisano": "05.11.2026. 12:05",
    "prvi_put": "05.11.2026. 10:26",
    "zatv": 1.85,
    "zatv_fer": 1.635
@@ -1494,7 +1494,7 @@
      "l": 10.5,
      "k": 1.5,
      "kl": "mozzart",
-     "p": 0.692,
+     "p": 0.694,
      "vrsta": "granica"
     },
     {
@@ -1558,7 +1558,7 @@
     "Kod Barselone na njegovoj poziciji verovatno ne igra Umoja Gibson, pa manje je onih koji ga čuvaju."
    ],
    "rang_dan": 6,
-   "upisano": "05.11.2026. 10:26",
+   "upisano": "05.11.2026. 12:05",
    "prvi_put": "05.11.2026. 10:26",
    "zatv": 1.92,
    "zatv_fer": 1.664
@@ -1657,7 +1657,7 @@
     "Granica od 6,5 je viša od onoga što realno očekujemo, a to je pet do šest skokova: u većini utakmica ostaje ispod ove granice."
    ],
    "rang_dan": 7,
-   "upisano": "05.11.2026. 10:26",
+   "upisano": "05.11.2026. 12:05",
    "prvi_put": "05.11.2026. 10:26",
    "zatv": 1.85,
    "zatv_fer": 1.71
@@ -1756,13 +1756,13 @@
     "Granica od 4,5 je viša od onoga što realno očekujemo, a to je oko četiri asistencije: u većini utakmica ostaje ispod ove granice."
    ],
    "rang_dan": 8,
-   "upisano": "05.11.2026. 10:26",
+   "upisano": "05.11.2026. 12:05",
    "prvi_put": "05.11.2026. 10:26",
    "zatv": 1.75,
    "zatv_fer": 1.753
   }
  ],
- "osvezeno": "05.11.2026. 10:26",
+ "osvezeno": "05.11.2026. 12:05",
  "utakmice": [
   {
    "g": 91,
@@ -1809,7 +1809,7 @@
     "Admiral": "2026-11-05T09:06:27.325Z",
     "MaxBet": "2026-11-05T09:06:39.370Z",
     "Mozzart": "2026-11-05T09:11:07Z",
-    "Soccerbet": "2026-11-05T09:12:25+00:00"
+    "Soccerbet": "2026-11-05T11:05:38+00:00"
    }
   },
   {
@@ -1833,7 +1833,7 @@
     "Admiral": "2026-11-05T09:06:27.325Z",
     "MaxBet": "2026-11-05T09:06:39.370Z",
     "Mozzart": "2026-11-05T09:11:07Z",
-    "Soccerbet": "2026-11-05T09:12:25+00:00"
+    "Soccerbet": "2026-11-05T11:05:38+00:00"
    }
   },
   {
@@ -1857,7 +1857,7 @@
     "Admiral": "2026-11-05T09:06:27.325Z",
     "MaxBet": "2026-11-05T09:06:39.370Z",
     "Mozzart": "2026-11-05T09:11:07Z",
-    "Soccerbet": "2026-11-05T09:12:25+00:00"
+    "Soccerbet": "2026-11-05T11:05:38+00:00"
    }
   },
   {
@@ -1881,7 +1881,7 @@
     "Admiral": "2026-11-05T09:06:27.325Z",
     "MaxBet": "2026-11-05T09:06:39.370Z",
     "Mozzart": "2026-11-05T09:11:07Z",
-    "Soccerbet": "2026-11-05T09:12:25+00:00"
+    "Soccerbet": "2026-11-05T11:05:38+00:00"
    }
   },
   {
@@ -1905,7 +1905,7 @@
     "Admiral": "2026-11-05T09:06:27.325Z",
     "MaxBet": "2026-11-05T09:06:39.370Z",
     "Mozzart": "2026-11-05T09:11:07Z",
-    "Soccerbet": "2026-11-05T09:12:25+00:00"
+    "Soccerbet": "2026-11-05T11:05:38+00:00"
    }
   },
   {
@@ -3422,7 +3422,7 @@
     "s": "P",
     "l": 12.5,
     "strana": "o",
-    "pp": 0.509,
+    "pp": 0.51,
     "mu": 10.8,
     "q": [
      3,
@@ -3488,7 +3488,7 @@
     "s": "P",
     "l": 8.5,
     "strana": "o",
-    "pp": 0.579,
+    "pp": 0.58,
     "mu": 9.54,
     "q": [
      3,
@@ -3500,7 +3500,7 @@
     "min": 25.2,
     "pros": 9.44,
     "p5": 13.4,
-    "u": 2,
+    "u": 2.02,
     "o": 1.85,
     "knjiga": 2,
     "pred": null,
@@ -3619,7 +3619,7 @@
     "s": "A",
     "l": 2.5,
     "strana": "o",
-    "pp": 0.516,
+    "pp": 0.517,
     "mu": 2.34,
     "q": [
      0,
@@ -3631,7 +3631,7 @@
     "min": 24.6,
     "pros": 2.33,
     "p5": 2.8,
-    "u": 2.1,
+    "u": 2.15,
     "o": 1.65,
     "knjiga": 4,
     "pred": null,
@@ -3653,7 +3653,7 @@
     "s": "P",
     "l": 11.5,
     "strana": "o",
-    "pp": 0.538,
+    "pp": 0.539,
     "mu": 10.0,
     "q": [
      3,
@@ -3818,7 +3818,7 @@
     "s": "S",
     "l": 5.5,
     "strana": "u",
-    "pp": 0.509,
+    "pp": 0.508,
     "mu": 4.96,
     "q": [
      2,
@@ -3886,7 +3886,7 @@
     "s": "P",
     "l": 19.5,
     "strana": "o",
-    "pp": 0.573,
+    "pp": 0.572,
     "mu": 22.49,
     "q": [
      10,
@@ -4116,7 +4116,7 @@
     "s": "P",
     "l": 5.5,
     "strana": "o",
-    "pp": 0.644,
+    "pp": 0.643,
     "mu": 9.67,
     "q": [
      3,
@@ -4150,7 +4150,7 @@
     "s": "S",
     "l": 4.5,
     "strana": "o",
-    "pp": 0.563,
+    "pp": 0.562,
     "mu": 5.6,
     "q": [
      2,
@@ -4184,7 +4184,7 @@
     "s": "P",
     "l": 12.5,
     "strana": "o",
-    "pp": 0.543,
+    "pp": 0.542,
     "mu": 12.12,
     "q": [
      4,
@@ -4252,7 +4252,7 @@
     "s": "P",
     "l": 5.5,
     "strana": "o",
-    "pp": 0.609,
+    "pp": 0.608,
     "mu": 7.63,
     "q": [
      2,
@@ -4803,7 +4803,7 @@
     "u": 1.92,
     "o": 1.92,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 7,5 je niža od onoga što realno očekujemo, a to je osam do devet poena, iz ovih razloga:",
      "Kod Fenerbahčea kladionice nemaju u ponudi Marcus Bingham, što obično znači da neće igrati; tada ostaje više minuta i lopti za ostale.",
@@ -4957,7 +4957,7 @@
     "s": "P",
     "l": 13.5,
     "strana": "u",
-    "pp": 0.517,
+    "pp": 0.516,
     "mu": 9.49,
     "q": [
      3,
@@ -5082,71 +5082,6 @@
     ]
    },
    {
-    "k": "kenneth faried",
-    "ime": "Kenneth Faried",
-    "tim": "BAS",
-    "pos": "C",
-    "s": "P",
-    "l": 7.5,
-    "strana": "o",
-    "pp": 0.592,
-    "mu": 8.97,
-    "q": [
-     2,
-     5,
-     8,
-     12,
-     17
-    ],
-    "min": 21.0,
-    "pros": 8.67,
-    "p5": 8.4,
-    "u": 2,
-    "o": 1.8,
-    "knjiga": 3,
-    "pred": "o",
-    "za": [
-     "Granica od 7,5 je niža od onoga što realno očekujemo, a to je oko devet poena, iz ovih razloga:",
-     "Kod Baskonije kladionice nemaju u ponudi Rodions Kurucs i Tadas Sedekerskis, što obično znači da neće igrati; tada ostaje više minuta i lopti za ostale.",
-     "U poslednje tri utakmice: 6, 7 i 17 poena, više nego inače."
-    ],
-    "protiv": [
-     "Ove sezone daje osam do devet poena po utakmici; ispod 7,5 je ostao u 6 od 9 utakmica."
-    ]
-   },
-   {
-    "k": "kenneth faried",
-    "ime": "Kenneth Faried",
-    "tim": "BAS",
-    "pos": "C",
-    "s": "S",
-    "l": 6.5,
-    "strana": "u",
-    "pp": 0.599,
-    "mu": 5.97,
-    "q": [
-     2,
-     4,
-     6,
-     8,
-     10
-    ],
-    "min": 21.0,
-    "pros": 5.89,
-    "p5": 5.8,
-    "u": 1.65,
-    "o": 2.1,
-    "knjiga": 3,
-    "pred": null,
-    "za": [
-     "Granica od 6,5 je viša od onoga što realno očekujemo, a to je oko šest skokova: u većini utakmica ostaje ispod ove granice."
-    ],
-    "protiv": [
-     "Kod Baskonije kladionice nemaju u ponudi Rodions Kurucs i Tadas Sedekerskis, što obično znači da neće igrati; tada ostaje više minuta i lopti za ostale.",
-     "Glavni je skakač Baskonije: niko u timu ne hvata više odbijenih lopti."
-    ]
-   },
-   {
     "k": "kobi simmons",
     "ime": "Kobi Simmons",
     "tim": "BAS",
@@ -5246,6 +5181,71 @@
     ]
    },
    {
+    "k": "kenneth faried",
+    "ime": "Kenneth Faried",
+    "tim": "BAS",
+    "pos": "C",
+    "s": "P",
+    "l": 7.5,
+    "strana": "o",
+    "pp": 0.592,
+    "mu": 8.97,
+    "q": [
+     2,
+     5,
+     8,
+     12,
+     17
+    ],
+    "min": 21.0,
+    "pros": 8.67,
+    "p5": 8.4,
+    "u": 2,
+    "o": 1.8,
+    "knjiga": 3,
+    "pred": "o",
+    "za": [
+     "Granica od 7,5 je niža od onoga što realno očekujemo, a to je oko devet poena, iz ovih razloga:",
+     "Kod Baskonije kladionice nemaju u ponudi Rodions Kurucs i Tadas Sedekerskis, što obično znači da neće igrati; tada ostaje više minuta i lopti za ostale.",
+     "U poslednje tri utakmice: 6, 7 i 17 poena, više nego inače."
+    ],
+    "protiv": [
+     "Ove sezone daje osam do devet poena po utakmici; ispod 7,5 je ostao u 6 od 9 utakmica."
+    ]
+   },
+   {
+    "k": "kenneth faried",
+    "ime": "Kenneth Faried",
+    "tim": "BAS",
+    "pos": "C",
+    "s": "S",
+    "l": 6.5,
+    "strana": "u",
+    "pp": 0.598,
+    "mu": 5.97,
+    "q": [
+     2,
+     4,
+     6,
+     8,
+     10
+    ],
+    "min": 21.0,
+    "pros": 5.89,
+    "p5": 5.8,
+    "u": 1.65,
+    "o": 2.1,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 6,5 je viša od onoga što realno očekujemo, a to je oko šest skokova: u većini utakmica ostaje ispod ove granice."
+    ],
+    "protiv": [
+     "Kod Baskonije kladionice nemaju u ponudi Rodions Kurucs i Tadas Sedekerskis, što obično znači da neće igrati; tada ostaje više minuta i lopti za ostale.",
+     "Glavni je skakač Baskonije: niko u timu ne hvata više odbijenih lopti."
+    ]
+   },
+   {
     "k": "damion baugh",
     "ime": "Damion Baugh",
     "tim": "BAS",
@@ -5268,7 +5268,7 @@
     "u": 2,
     "o": 1.85,
     "knjiga": 4,
-    "pred": null,
+    "pred": "o",
     "za": [
      "Granica od 6,5 je niža od onoga što realno očekujemo, a to je oko sedam poena, iz ovih razloga:",
      "Kod Baskonije kladionice nemaju u ponudi Rodions Kurucs i Tadas Sedekerskis, što obično znači da neće igrati; tada ostaje više minuta i lopti za ostale.",
@@ -5389,7 +5389,7 @@
     "s": "P",
     "l": 7.5,
     "strana": "u",
-    "pp": 0.518,
+    "pp": 0.517,
     "mu": 4.46,
     "q": [
      0,
@@ -6059,7 +6059,7 @@
     "s": "A",
     "l": 2.5,
     "strana": "o",
-    "pp": 0.512,
+    "pp": 0.511,
     "mu": 2.6,
     "q": [
      1,
@@ -6091,7 +6091,7 @@
     "s": "P",
     "l": 8.5,
     "strana": "o",
-    "pp": 0.54,
+    "pp": 0.539,
     "mu": 9.06,
     "q": [
      2,
@@ -6762,7 +6762,7 @@
     "s": "A",
     "l": 3.5,
     "strana": "o",
-    "pp": 0.516,
+    "pp": 0.515,
     "mu": 3.81,
     "q": [
      1,
@@ -7427,7 +7427,7 @@
     "s": "A",
     "l": 3.5,
     "strana": "o",
-    "pp": 0.511,
+    "pp": 0.512,
     "mu": 3.07,
     "q": [
      1,
@@ -7439,7 +7439,7 @@
     "min": 17.1,
     "pros": 3.5,
     "p5": 3.8,
-    "u": 2.15,
+    "u": 2.2,
     "o": 1.6,
     "knjiga": 3,
     "pred": null,
