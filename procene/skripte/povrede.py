@@ -1,4 +1,5 @@
-"""Zvanični izveštaj Evrolige o povredama za tekuće kolo, preko Eurohoops prenosa (zvanični portal odbija automatski pristup).
+"""Izveštaj o povredama za tekuće kolo: zvanični izveštaj Evrolige preko Eurohoops prenosa (zvanični portal odbija automatski
+pristup) i dnevni izveštaj BasketNews-a (https://basketnews.com/leagues/25-euroleague/injured.html), koji ima prednost.
 
   python3 procene/skripte/povrede.py            tekuće kolo
   python3 procene/skripte/povrede.py --kolo 10
@@ -160,6 +161,43 @@ def procitaj(url, igraci_po_timu, out, timovi, novi):
     zavrsi()
 
 
+BN_URL = 'https://basketnews.com/leagues/25-euroleague/injured.html'
+BN_STANJE = {'Out': 'van', 'Doubtful': 'upitan', 'Uncertain': 'upitan', 'Game-time': 'upitan', 'Questionable': 'upitan',
+             'Expected': 'igra', 'Ready': 'igra', 'Probable': 'igra', 'Available': 'igra'}
+R_BN = re.compile(r"\b(PG|SG|SF|PF|C|G|F)\s+((?:[A-Z][\w'’.-]*\s?){1,4}?)\s+(Out|Doubtful|Uncertain|Game-time|Expected|Ready|Questionable|Probable|Available)"
+                  r"\s+(?:Round\s+(\d+)|(Out for season|Out indefinitely))\s+(.*?)(?=\s(?:PG|SG|SF|PF|C|G|F)\s+[A-Z][\w'’.-]*\s+[A-Z]|$)")
+
+
+def basketnews(kolo, igraci_po_timu):
+    """BasketNews dnevni izveštaj o povredama Evrolige: igrač -> stanje za ovo kolo (Out = van, Doubtful/Uncertain/Game-time = upitan,
+    Expected/Ready = igra). Igrač se prepoznaje po imenu među igračima timova iz kola."""
+    L = ' '.join(tekst_linije(get(BN_URL)))
+    i = L.find('P Player Status Round Comments')
+    if i < 0:
+        print('basketnews: izveštaj nije pročitan')
+        return {}
+    out = {}
+    sve = {}
+    B = getattr(igraci_tima, 'B', None)
+    for kod, ig in igraci_po_timu.items():
+        for k, reci in ig.items():
+            zadnji = B.byk[k][-1]['team'] if B is not None and B.byk.get(k) else None
+            if k not in sve or zadnji == kod:          # igrač sa spiska više klubova: tim za koji je poslednji igrao
+                sve[k] = (kod, reci)
+    for poz, ime, st, rnd, sezona, kom in R_BN.findall(L[i:]):
+        if rnd and int(rnd) != kolo:
+            continue
+        n = nk(ime).replace('.', ' ').split()
+        if not n:
+            continue
+        kand = [k for k, (kod, reci) in sve.items() if reci and reci[-1] == n[-1] and (len(n) == 1 or reci[0][0] == n[0][0])]
+        if len(kand) != 1:
+            continue
+        k = kand[0]
+        out[k] = dict(tim=sve[k][0], stanje=BN_STANJE[st], tekst=f'{st}: {kom}'[:300], izvor='basketnews')
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--kolo', type=int)
@@ -184,6 +222,13 @@ def main():
     out, timovi, novi = {}, {}, {}
     for url in linkovi:                     # stariji pa noviji: noviji menja stanje
         procitaj(url, igraci_po_timu, out, timovi, novi)
+    # BasketNews (ažurira se svakog dana, po kolu): ima prednost nad Eurohoops prenosom
+    bn = basketnews(kolo, igraci_po_timu)
+    for k, v in bn.items():
+        if k in out:
+            v['tekst'] = v['tekst'] + ' | Eurohoops: ' + out[k]['tekst'][:150]
+        out[k] = v
+    print(f'basketnews: igrača {len(bn)}')
     for kod, x in timovi.items():          # „ceo sastav na raspolaganju“: niko iz tog tima nije van igre
         if x.get('pun_sastav'):
             for k, v in out.items():

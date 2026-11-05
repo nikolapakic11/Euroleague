@@ -80,6 +80,7 @@ DAN_MIN_PLUS, DAN_MIN_MINUS, DAN_PRAG_KVOTE = 3, 2, 0.55   # bar 3 PLUS i 2 MINU
 
 
 DAN_FORMA_N, DAN_FORMA_MIN = 7, 0.5            # u poslednjih 7 utakmica bar polovina na stranu predloga
+DAN_ZADRZI = 0.02                              # već objavljen predlog ostaje dok ga novi ne nadmaši za bar 2 poena procenta
 
 
 def forma(B, p):
@@ -89,10 +90,13 @@ def forma(B, p):
     return pog, len(G)
 
 
-def izbor_dana(P, B=None):
+def izbor_dana(P, B=None, ranije=()):
     """P: predlozi jednog dana (više utakmica). Vraća najbolje za dan, poređane po verovatnoći, uz rang_dan.
     Predlog čija skorija forma govori suprotno (manje od polovine poslednjih utakmica na strani predloga) ne ulazi."""
-    P = sorted([p for p in P if p.get('nivo') != 'slab'], key=lambda p: -p['pp'])
+    ist = lambda p: (p['k'], p['s'], p['strana'], p['l'])
+    ranije = set(ranije)
+    ocena = lambda p: p['pp'] + (DAN_ZADRZI if ist(p) in ranije else 0)
+    P = sorted([p for p in P if p.get('nivo') != 'slab'], key=lambda p: -ocena(p))
     if B is not None:
         for p in P:
             p['forma'] = list(forma(B, p))
@@ -111,7 +115,7 @@ def izbor_dana(P, B=None):
             druga = [q for q in izab if q['strana'] != strana]
             if not kand or len(druga) <= (DAN_MIN_PLUS if strana == 'u' else DAN_MIN_MINUS):
                 break
-            izlazi = min(druga, key=lambda q: q['pp'])
+            izlazi = min(druga, key=ocena)
             ostali = [q for q in izab if q is not izlazi]
             ulazi = next((p for p in kand if moze(p, ostali)), None)
             if not ulazi:
@@ -121,7 +125,7 @@ def izbor_dana(P, B=None):
     for p in P:
         if len(izab) >= DAN_MAX:
             break
-        if p not in izab and p['pp'] >= DAN_JAK and moze(p, izab):
+        if p not in izab and ocena(p) >= DAN_JAK and moze(p, izab):
             izab.append(p)
     izab.sort(key=lambda p: -p['pp'])
     for i, p in enumerate(izab, 1):
@@ -272,7 +276,8 @@ def main():
         for p in novi:
             po_danu[p['dan']].append(p)
         B_dan = Baza()
-        novi = [q for d, L in po_danu.items() for q in (izbor_dana(L, B_dan) if ut_dana[d] > 1 else L)]
+        ranije = [(p['k'], p['s'], p['strana'], p['l']) for p in st['predlozi'] if p['g'] not in zamrznute]
+        novi = [q for d, L in po_danu.items() for q in (izbor_dana(L, B_dan, ranije) if ut_dana[d] > 1 else L)]
         sada_konacno = [u['g'] for u in tabla['utakmice'] if u['g'] not in zamrznute and u['g'] in objavljive
                         and sad_bg >= R[u['g']][1] and u['snimci']]
         # promene u odnosu na prethodno osvežavanje (važe do početka utakmice)
