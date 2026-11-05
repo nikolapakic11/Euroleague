@@ -733,7 +733,7 @@
    "prosao": true
   }
  ],
- "osvezeno": "04.11.2026. 23:02",
+ "osvezeno": "05.11.2026. 10:12",
  "utakmice": [
   {
    "g": 91,
@@ -770,8 +770,18 @@
    "sastav": null,
    "objava": "2026-11-05T12:00:00+01:00",
    "rok": "2026-11-05T16:45:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Mozzart",
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Admiral": "2026-11-05T09:06:27.325Z",
+    "MaxBet": "2026-11-05T09:06:39.370Z",
+    "Mozzart": "2026-11-05T09:11:07Z",
+    "Soccerbet": "2026-11-05T09:12:25+00:00"
+   }
   },
   {
    "g": 92,
@@ -784,8 +794,18 @@
    "sastav": null,
    "objava": "2026-11-05T12:00:00+01:00",
    "rok": "2026-11-05T16:45:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Mozzart",
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Admiral": "2026-11-05T09:06:27.325Z",
+    "MaxBet": "2026-11-05T09:06:39.370Z",
+    "Mozzart": "2026-11-05T09:11:07Z",
+    "Soccerbet": "2026-11-05T09:12:25+00:00"
+   }
   },
   {
    "g": 93,
@@ -798,8 +818,18 @@
    "sastav": null,
    "objava": "2026-11-05T12:00:00+01:00",
    "rok": "2026-11-05T16:45:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Mozzart",
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Admiral": "2026-11-05T09:06:27.325Z",
+    "MaxBet": "2026-11-05T09:06:39.370Z",
+    "Mozzart": "2026-11-05T09:11:07Z",
+    "Soccerbet": "2026-11-05T09:12:25+00:00"
+   }
   },
   {
    "g": 94,
@@ -812,8 +842,18 @@
    "sastav": null,
    "objava": "2026-11-05T12:00:00+01:00",
    "rok": "2026-11-05T16:45:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Mozzart",
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Admiral": "2026-11-05T09:06:27.325Z",
+    "MaxBet": "2026-11-05T09:06:39.370Z",
+    "Mozzart": "2026-11-05T09:11:07Z",
+    "Soccerbet": "2026-11-05T09:12:25+00:00"
+   }
   },
   {
    "g": 96,
@@ -826,8 +866,18 @@
    "sastav": null,
    "objava": "2026-11-05T12:00:00+01:00",
    "rok": "2026-11-05T16:45:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Mozzart",
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Admiral": "2026-11-05T09:06:27.325Z",
+    "MaxBet": "2026-11-05T09:06:39.370Z",
+    "Mozzart": "2026-11-05T09:11:07Z",
+    "Soccerbet": "2026-11-05T09:12:25+00:00"
+   }
   },
   {
    "g": 97,
