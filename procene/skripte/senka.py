@@ -18,6 +18,7 @@ from model import Baza, verovatnoca_preko
 from zajedno import PROCENE, ucitaj, sacuvaj
 
 A = 0.7
+PRVO_KOLO = 11        # ranija kola: tabla za odigrane utakmice nije stanje pred početak
 MIN_KOLA = 3          # posle ovoliko kola sa ishodima dan.py podseća da se odluči
 
 
@@ -113,6 +114,9 @@ def main():
         kola, out = pregled()
         print(f'senka: kola sa ishodima {kola};', ' | '.join(
             f"{v}: {o['prosao']}/{o['n']} dobit {o['dobit']:+.2f}" if o else f'{v}: još nema' for v, o in out.items()))
+        return
+    if a.kolo < PRVO_KOLO:
+        print(f'senka kolo {a.kolo}: senka počinje od kola {PRVO_KOLO}')
         return
     B = Baza()
     T = ucitaj(os.path.join(PROCENE, 'tabla', f'kolo{a.kolo}.json'))
