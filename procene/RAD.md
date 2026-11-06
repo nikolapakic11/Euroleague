@@ -41,9 +41,11 @@ Zakazani zadaci su isključeni (odluka 5.11.2026): ništa se ne pokreće samo. S
 - Ništa pre 12h na dan utakmice. Ranija objava samo kad Nikola traži: `procene/podaci/objava.json` `{"<dan>": "HH:MM"}`.
 - Konačni predlozi: sat pre prve utakmice dana ako počinje pre 18h, inače sat i po pre (zajedno.rokovi).
   Konačno je ono što je objavljeno u tom trenutku; posle se ne menja. Učinak se računa samo za konačne.
-- Predlozi za dan (od 6.11.2026): iz svih utakmica dana svi sa kalibrisanom verovatnoćom bar 58%, najmanje 4, najviše 12;
-  najviše 4 iz utakmice i 2 iz tima. PLUS nije obavezan; ako ih nema, dodaju se do 2 najbolja PLUS sa bar 56%.
-  Isto za dan sa jednom utakmicom. Bazen po utakmici: do 6 koji prolaze prag, bez dopune i bez obaveznog PLUS-a.
+- Predlozi za dan (od 6.11.2026, posle podne): rang po PREDNOSTI nad tržištem (naša verovatnoća − fer verovatnoća iz kvota
+  svih kladionica). Ulazi strana sa prednošću bar 4 poena i verovatnoćom bar 54%, najmanje 4, najviše 12; najviše 4 iz
+  utakmice, 2 iz tima, 3 sa kvotom ispod 1,65. PLUS nije obavezan; do 2 najbolja PLUS sa bar 54% i prednošću bar 2 poena.
+  Razlog (Nikola): po samoj verovatnoći izbor ide na najniže kvote, a to može svako. Provera: `procene/provera/kvote_2026-11-06.txt`
+  (po prednosti 60,6%, +17,8%, kvota 1,95; po verovatnoći 60,8%, +2,3%, kvota 1,69).
 - Spajanje (od 6.11.2026): novija kola imaju veću težinu (0,55 po kolu unazad), slobodni član prema stopi preko u
   poslednja 2 kola (stopa preko raste kroz sezonu: kola 4–5 oko 39%, 8–10 oko 49%).
 - Forma: predlog ulazi samo ako je igrač u bar polovini poslednjih 7 utakmica bio na toj strani granice.

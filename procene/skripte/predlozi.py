@@ -66,20 +66,23 @@ def izaberi(tabla, K=None):
                     an = OB.analiza(i, s, pr, u, st, tudja, K, broj_tacaka(pr['pp'])) if K else []
                     out.append(dict(g=u['g'], dan=u['dan'], vreme=u['vreme'], k=i['k'], ime=i['ime'], tim=st['tim'], prot=st['prot'],
                                     s=s, strana=pr['strana'], l=pr['l'], kl=pr['kl'], kvota=pr['kvota'], pp=pr['pp'], ev=pr['ev'],
-                                    nivo=pr['nivo'], rang=pr['rang'], ostale=pr.get('ostale', []), knjige=pr.get('knjige', []), soft=pr.get('soft'),
+                                    nivo=pr['nivo'], rang=pr['rang'], fer=pr.get('fer'), ostale=pr.get('ostale', []), knjige=pr.get('knjige', []), soft=pr.get('soft'),
                                     opseg=pr.get('opseg', []), q=i['s'][s]['q'], mu=i['s'][s]['mu'], min=i['min'],
                                     pm=z.get('pm'), tr=z.get('tr'), l0=z.get('l0'), vatra=i['s'][s].get('vatra'),
                                     pos=i['pos'], of=i['s'][s]['of'], analiza=an))
     return out
 
 
-# Predlozi za dan (odluka 6.11.2026, provera_2026-11-06.md deo 6): iz svih utakmica dana svi dovoljno dobri, najmanje
-# DAN_NAJMANJE, najviše DAN_MAX; PLUS nije obavezan, ali se dodaje do DAN_PLUS najboljih PLUS sa bar DAN_PLUS_PRAG
-# kad ih nema među izabranima. Isto pravilo i za dan sa jednom utakmicom. Raznovrsnost: najviše 4 iz utakmice, 2 iz tima.
-# Walk-forward kola 5–10: 68,9% i +18,0% (staro pravilo 64,9% i +11,5%).
-DAN_PRAG, DAN_NAJMANJE, DAN_MAX = 0.58, 4, 12
-DAN_PLUS, DAN_PLUS_PRAG = 2, 0.56
+# Predlozi za dan (odluka 6.11.2026, provera kvote_2026-11-06.txt): rang po PREDNOSTI nad tržištem (naša verovatnoća
+# minus fer verovatnoća iz kvota svih kladionica), a ne po samoj verovatnoći, jer po verovatnoći izbor ide na najniže kvote.
+# Ulazi strana sa prednošću bar DAN_PREDNOST i verovatnoćom bar DAN_PRAG; najmanje DAN_NAJMANJE, najviše DAN_MAX;
+# najviše 4 iz utakmice, 2 iz tima. PLUS nije obavezan; dodaje se do DAN_PLUS najboljih PLUS sa verovatnoćom bar
+# DAN_PRAG i prednošću bar DAN_PLUS_PREDNOST. Walk-forward kola 5–10: 60,6%, +17,8%, prosečna kvota 1,95
+# (po verovatnoći: 60,8%, +2,3%, kvota 1,69). Isto pravilo i za dan sa jednom utakmicom.
+DAN_PRAG, DAN_PREDNOST, DAN_NAJMANJE, DAN_MAX = 0.54, 0.04, 4, 12
+DAN_PLUS, DAN_PLUS_PREDNOST = 2, 0.02
 DAN_PO_UT, DAN_PO_TIMU, DAN_PO_STAVCI = 4, 2, 12
+DAN_NISKA, DAN_NISKE_MAX = 1.65, 3   # najviše 3 predloga sa kvotom ispod 1,65 za dan (Nikola, 6.11.: ne sme sve najniže kvote)
 DAN_FORMA_N, DAN_FORMA_MIN = 7, 0.5            # u poslednjih 7 utakmica bar polovina na stranu predloga
 DAN_ZADRZI = 0.02                              # već objavljen predlog ostaje dok ga novi ne nadmaši za bar 2 poena procenta
 
@@ -96,7 +99,8 @@ def izbor_dana(P, B=None, ranije=()):
     Predlog čija skorija forma govori suprotno (manje od polovine poslednjih utakmica na strani predloga) ne ulazi."""
     ist = lambda p: (p['k'], p['s'], p['strana'], p['l'])
     ranije = set(ranije)
-    ocena = lambda p: p['pp'] + (DAN_ZADRZI if ist(p) in ranije else 0)
+    pred = lambda p: p['pp'] - (p['fer'] if p.get('fer') is not None else 0.5)
+    ocena = lambda p: pred(p) + (DAN_ZADRZI if ist(p) in ranije else 0)
     P = sorted([p for p in P if p.get('nivo') != 'slab'], key=lambda p: -ocena(p))
     if B is not None:
         for p in P:
@@ -105,17 +109,19 @@ def izbor_dana(P, B=None, ranije=()):
 
     def moze(p, izab):
         return (sum(q['g'] == p['g'] for q in izab) < DAN_PO_UT and sum(q['tim'] == p['tim'] for q in izab) < DAN_PO_TIMU
-                and sum((q['s'], q['strana']) == (p['s'], p['strana']) for q in izab) < DAN_PO_STAVCI)
+                and sum((q['s'], q['strana']) == (p['s'], p['strana']) for q in izab) < DAN_PO_STAVCI
+                and (p['kvota'] >= DAN_NISKA or sum(q['kvota'] < DAN_NISKA for q in izab) < DAN_NISKE_MAX))
     izab = []
     for p in P:
         if len(izab) >= DAN_MAX:
             break
-        if (ocena(p) >= DAN_PRAG or len(izab) < DAN_NAJMANJE) and moze(p, izab):
+        if ((ocena(p) >= DAN_PREDNOST and p['pp'] >= DAN_PRAG) or len(izab) < DAN_NAJMANJE) and moze(p, izab):
             izab.append(p)
     for p in P:                                   # poželjan PLUS, ako je dovoljno dobar
         if sum(q['strana'] == 'o' for q in izab) >= DAN_PLUS:
             break
-        if p['strana'] == 'o' and p not in izab and ocena(p) >= DAN_PLUS_PRAG and moze(p, izab):
+        if (p['strana'] == 'o' and p not in izab and p['pp'] >= DAN_PRAG and ocena(p) >= DAN_PLUS_PREDNOST
+                and moze(p, izab)):
             izab.append(p)
     izab.sort(key=lambda p: -p['pp'])
     for i, p in enumerate(izab, 1):

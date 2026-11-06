@@ -324,14 +324,16 @@ def main():
                                 continue
                             if strana == 'o' and i.get('novi_saigrac'):
                                 continue
-                            kand.append(dict(igr=i['k'], tim=st_i['tim'], s=s, strana=strana, pp=pp, ev=pp * kv - 1, k=kv, l=z['l'], kl=z['kl']))
+                            trk = z.get('trk', z['tr'])
+                            kand.append(dict(igr=i['k'], tim=st_i['tim'], s=s, strana=strana, pp=pp, ev=pp * kv - 1, k=kv, l=z['l'], kl=z['kl'],
+                                             fer=trk if strana == 'o' else 1 - trk))
         for c in (spajanje.izbor_utakmice(kand) if sp_w else []):
             _, i = po_kljucu[c['igr']]
             z = next(z for z in i['s'][c['s']]['linije'] if z['kl'] == c['kl'] and z['l'] == c['l'] and z.get('m', 1))
             po = c['pp'] if c['strana'] == 'o' else 1 - c['pp']          # verovatnoća za preko korišćena u izboru
             pc_iz = spajanje.kalibrisi(po, sp_kal, c['s']) if sp_kal else po
             pk = pc_iz if c['strana'] == 'o' else 1 - pc_iz              # kalibrisana, za prikaz
-            pred = dict(strana=c['strana'], pp=round(pk, 3), ps=round(c['pp'], 3), ev=round(pk * c['k'] - 1, 3), kvota=c['k'],
+            pred = dict(strana=c['strana'], pp=round(pk, 3), ps=round(c['pp'], 3), ev=round(pk * c['k'] - 1, 3), kvota=c['k'], fer=round(c['fer'], 4),
                         l=c['l'], kl=c['kl'], nivo=spajanje.nivo(pk, slab=(c['nivo'] == 'slab')), rang=c['rang'])
             # iste granice i strane kod ostalih kladionica
             pred['ostale'] = sorted([dict(kl=z['kl'], k=(z['o'] if c['strana'] == 'o' else z['u']))

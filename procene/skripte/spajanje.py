@@ -24,12 +24,12 @@ KVOTA_MIN = 1.50
 # ranijim kolima): staro pravilo +10%, ovo +16% (procene/provera/izbor_2026-11-04.md). Donja granica vrednosti (EV)
 # i izbor po kalibrisanoj verovatnoći su tamo bili lošiji, pa se ne koriste.
 # Za prikaz se verovatnoća kalibriše (kal, Platt po stavci), jer je spojena previše samouverena.
-PRAG = {'u': 0.53, 'o': 0.53}
-MIN_UT, MAX_UT = 0, 6   # od 6.11.2026 bez dopune: po utakmici do 6 koji prolaze prag (bazen za izbor dana, predlozi.izbor_dana)
+PRAG = {'u': 0.50, 'o': 0.50}   # od 6.11.2026 bazen: strana koju spoj vidi kao verovatniju; izbor dana odlučuje (predlozi.izbor_dana)
+MIN_UT, MAX_UT = 0, 12  # od 6.11.2026 bez dopune: po utakmici do 6 koji prolaze prag (bazen za izbor dana, predlozi.izbor_dana)
 PLUS_MIN = 0          # od 6.11.2026 PLUS nije obavezan po utakmici; poželjan PLUS se dodaje u izboru dana (DAN_PLUS)
 PLUS_POD = 0.45       # obavezni PLUS ne ide ispod ove spojene verovatnoće
-MAX_ISTA = 2          # najviše 2 predloga iste stavke i strane po utakmici (raznovrsnost)
-MAX_TIM = 4           # najviše 4 predloga iz istog tima po utakmici
+MAX_ISTA = 12         # od 6.11.2026 bez ograničenja u bazenu (raznovrsnost se gleda u izboru dana)
+MAX_TIM = 12          # od 6.11.2026 bez ograničenja u bazenu
 NIVOI = ((0.62, 'jak'), (0.56, 'solidan'))      # na kalibrisanoj verovatnoći; ispod 0,56: „nagoveštaj“
 
 
@@ -137,7 +137,8 @@ def izbor_utakmice(kand):
         kl = (c['igr'], c['s'], c['strana'])
         if kl not in po_stavci or c['ev'] > po_stavci[kl]['ev']:      # najbolja cena za istu stavku i stranu
             po_stavci[kl] = c
-    red = sorted(po_stavci.values(), key=lambda c: (-c['pp'], -c['ev']))
+    # od 6.11.2026 rang po prednosti nad tržištem (verovatnoća − fer verovatnoća kvota), kad je poznata
+    red = sorted(po_stavci.values(), key=lambda c: (-(c['pp'] - c['fer']) if 'fer' in c else -c['pp'], -c['ev']))
     izabrani, igraci, ista, timovi = [], set(), collections.Counter(), collections.Counter()
 
     def moze(c):

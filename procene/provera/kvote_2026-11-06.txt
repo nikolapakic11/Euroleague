@@ -1,0 +1,29 @@
+1) Strana koju spoj vidi sa bar 58%, po kvoti:
+   kvota 1.00–1.60: predviđeno 0.650 | 89/129 69.0% +3.7% (kvota 1.50)
+   kvota 1.60–1.75: predviđeno 0.658 | 82/141 58.2% -4.1% (kvota 1.66)
+   kvota 1.75–1.90: predviđeno 0.627 | 136/229 59.4% +8.7% (kvota 1.83)
+   kvota 1.90–9.00: predviđeno 0.615 | 207/368 56.2% +11.3% (kvota 1.99)
+   prednost nad tržištem ≥ 4 poena, po kvoti:
+   kvota 1.00–1.60: predviđeno 0.690 fer 0.608 | 41/60 68.3% +4.0% (kvota 1.51)
+   kvota 1.60–1.75: predviđeno 0.661 fer 0.556 | 76/134 56.7% -6.4% (kvota 1.66)
+   kvota 1.75–1.90: predviđeno 0.609 fer 0.510 | 181/325 55.7% +2.1% (kvota 1.83)
+   kvota 1.90–9.00: predviđeno 0.568 fer 0.462 | 487/906 53.8% +8.8% (kvota 2.04)
+
+2) Izbor dana (12 dana):
+   verovatnoća ≥58% (sada)                      10.8/dan | 79/130 60.8% +2.3% (kvota 1.69) | PLUS 1/2 50.0% -25.0% (kvota 1.52) | MINUS 78/128 60.9% +2.8% (kvota 1.69) | ispod 1,65: 55, od 1,75: 41
+   verovatnoća ≥58%, najviše 3 ispod 1,65       10.8/dan | 78/130 60.0% +3.7% (kvota 1.73) | PLUS — | MINUS 78/130 60.0% +3.7% (kvota 1.73) | ispod 1,65: 32, od 1,75: 57
+   verovatnoća ≥56%, najviše 3 ispod 1,65       10.9/dan | 79/131 60.3% +4.4% (kvota 1.73) | PLUS — | MINUS 79/131 60.3% +4.4% (kvota 1.73) | ispod 1,65: 32, od 1,75: 58
+   prednost ≥4 p., verov. ≥54%                  11.0/dan | 80/132 60.6% +17.9% (kvota 1.95) | PLUS 1/1 100.0% +92.0% (kvota 1.92) | MINUS 79/131 60.3% +17.3% (kvota 1.95) | ispod 1,65: 9, od 1,75: 113
+   prednost ≥6 p., verov. ≥54%                  10.8/dan | 79/130 60.8% +18.6% (kvota 1.96) | PLUS 1/1 100.0% +92.0% (kvota 1.92) | MINUS 78/129 60.5% +18.0% (kvota 1.96) | ispod 1,65: 8, od 1,75: 112
+   EV ≥5%, verov. ≥54%                          10.6/dan | 72/127 56.7% +13.4% (kvota 2.01) | PLUS 1/1 100.0% +92.0% (kvota 1.92) | MINUS 71/126 56.3% +12.8% (kvota 2.01) | ispod 1,65: 2, od 1,75: 120
+   EV ≥8%, verov. ≥54%                          10.3/dan | 71/124 57.3% +14.7% (kvota 2.01) | PLUS 1/1 100.0% +92.0% (kvota 1.92) | MINUS 70/123 56.9% +14.0% (kvota 2.01) | ispod 1,65: 2, od 1,75: 117
+   EV ≥5%, verov. ≥56%, najviše 3 ispod 1,65    10.6/dan | 75/127 59.1% +17.5% (kvota 2.00) | PLUS 1/1 100.0% +92.0% (kvota 1.92) | MINUS 74/126 58.7% +16.9% (kvota 2.00) | ispod 1,65: 3, od 1,75: 119
+
+3) Prednost ≥4 p. i verov. ≥54%, uz poželjan PLUS (do N najboljih PLUS po prednosti):
+   PLUS do 2, verov. ≥54%, prednost ≥2%: 83/137 60.6% +17.8% (kvota 1.95) | PLUS 4/6 66.7% +27.8% (kvota 1.94) | MINUS 79/131 60.3% +17.3% (kvota 1.95)
+   PLUS do 2, verov. ≥52%, prednost ≥0%: 83/140 59.3% +15.3% (kvota 1.95) | PLUS 4/9 44.4% -14.8% (kvota 1.94) | MINUS 79/131 60.3% +17.3% (kvota 1.95)
+   PLUS do 2, verov. ≥56%, prednost ≥0%: 81/134 60.4% +17.3% (kvota 1.95) | PLUS 2/3 66.7% +14.0% (kvota 1.78) | MINUS 79/131 60.3% +17.3% (kvota 1.95)
+   PLUS do 1, verov. ≥54%, prednost ≥2%: 81/135 60.0% +16.7% (kvota 1.95) | PLUS 2/4 50.0% -4.0% (kvota 1.95) | MINUS 79/131 60.3% +17.3% (kvota 1.95)
+
+4) Po kolima (prednost ≥4 p., verov. ≥54%): {5: '15/24 62.5% +28.2% (kvota 2.05)', 6: '15/24 62.5% +21.6% (kvota 1.95)', 7: '14/24 58.3% +20.0% (kvota 2.07)', 8: '12/24 50.0% -11.2% (kvota 1.84)', 9: '17/24 70.8% +34.7% (kvota 1.87)', 10: '7/12 58.3% +10.4% (kvota 1.92)'}
+   po stavci: {'P': '6/9 66.7% +26.8% (kvota 1.91)', 'S': '45/72 62.5% +23.7% (kvota 1.98)', 'A': '29/51 56.9% +8.1% (kvota 1.93)'}
