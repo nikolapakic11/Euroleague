@@ -1903,116 +1903,10 @@
     7
    ],
    "rang_dan": 1,
-   "upisano": "06.11.2026. 11:55",
+   "upisano": "06.11.2026. 12:30",
    "prvi_put": "06.11.2026. 11:21",
    "zatv": 1.6,
    "zatv_fer": 1.551
-  },
-  {
-   "g": 99,
-   "dan": "2026-11-06",
-   "vreme": "06.11. 20:45",
-   "k": "carlik jones",
-   "ime": "Carlik Jones",
-   "tim": "PAR",
-   "prot": "TEL",
-   "s": "A",
-   "strana": "u",
-   "l": 6.5,
-   "kl": "mozzart",
-   "kvota": 1.75,
-   "pp": 0.606,
-   "ev": 0.06,
-   "nivo": "solidan",
-   "rang": 4,
-   "fer": 0.5371,
-   "ostale": [
-    {
-     "kl": "admiral",
-     "k": 1.7
-    },
-    {
-     "kl": "maxbet",
-     "k": 1.7
-    },
-    {
-     "kl": "soccerbet",
-     "k": 1.7
-    }
-   ],
-   "knjige": [
-    {
-     "kl": "admiral",
-     "l": 6.5,
-     "u": 1.7,
-     "o": 2
-    },
-    {
-     "kl": "maxbet",
-     "l": 6.5,
-     "u": 1.7,
-     "o": 2
-    },
-    {
-     "kl": "mozzart",
-     "l": 6.5,
-     "u": 1.75,
-     "o": 1.95
-    },
-    {
-     "kl": "soccerbet",
-     "l": 6.5,
-     "u": 1.7,
-     "o": 2
-    }
-   ],
-   "soft": {
-    "l": 6.5,
-    "k": 1.75,
-    "kl": "mozzart",
-    "p": 0.606,
-    "vrsta": "granica",
-    "ev": 0.06,
-    "isti": true
-   },
-   "opseg": [
-    {
-     "l": 6.5,
-     "k": 1.75,
-     "kl": "mozzart",
-     "p": 0.606,
-     "vrsta": "granica"
-    }
-   ],
-   "q": [
-    2,
-    3,
-    5,
-    7,
-    9
-   ],
-   "mu": 5.08,
-   "min": 27.6,
-   "pm": 0.2768,
-   "tr": 0.473,
-   "l0": null,
-   "vatra": null,
-   "pos": "G",
-   "of": 1.082,
-   "analiza": [
-    "Granica od 6,5 je viša od onoga što realno očekujemo, a to je oko pet asistencija, iz ovih razloga:",
-    "Ove sezone daje oko šest asistencija po utakmici; ispod 6,5 je ostao u 6 od 9 utakmica.",
-    "Obe ekipe igraju sporo, pa će napada biti manje nego obično."
-   ],
-   "forma": [
-    5,
-    7
-   ],
-   "rang_dan": 2,
-   "upisano": "06.11.2026. 11:55",
-   "prvi_put": "06.11.2026. 11:21",
-   "zatv": 1.75,
-   "zatv_fer": 1.651
   },
   {
    "g": 98,
@@ -2130,9 +2024,129 @@
     4,
     7
    ],
-   "rang_dan": 3,
-   "upisano": "06.11.2026. 11:55",
+   "rang_dan": 2,
+   "upisano": "06.11.2026. 12:30",
    "prvi_put": "06.11.2026. 11:21",
+   "zatv": 1.8,
+   "zatv_fer": 1.743
+  },
+  {
+   "g": 100,
+   "dan": "2026-11-06",
+   "vreme": "06.11. 20:15",
+   "k": "tyson ward",
+   "ime": "Tyson Ward",
+   "tim": "OLY",
+   "prot": "RED",
+   "s": "P",
+   "strana": "u",
+   "l": 9.5,
+   "kl": "admiral",
+   "kvota": 1.8,
+   "pp": 0.574,
+   "ev": 0.033,
+   "nivo": "solidan",
+   "rang": 7,
+   "fer": 0.5303,
+   "ostale": [
+    {
+     "kl": "maxbet",
+     "k": 1.78
+    },
+    {
+     "kl": "soccerbet",
+     "k": 1.77
+    }
+   ],
+   "knjige": [
+    {
+     "kl": "admiral",
+     "l": 9.5,
+     "u": 1.8,
+     "o": 2.02
+    },
+    {
+     "kl": "maxbet",
+     "l": 9.5,
+     "u": 1.78,
+     "o": 2
+    },
+    {
+     "kl": "mozzart",
+     "l": 8.5,
+     "u": 2.0,
+     "o": 1.8
+    },
+    {
+     "kl": "soccerbet",
+     "l": 9.5,
+     "u": 1.77,
+     "o": 2.02
+    }
+   ],
+   "soft": {
+    "l": 9.5,
+    "k": 1.8,
+    "kl": "admiral",
+    "p": 0.574,
+    "vrsta": "granica",
+    "ev": 0.033,
+    "isti": true
+   },
+   "opseg": [
+    {
+     "l": 8.5,
+     "k": 2.0,
+     "kl": "mozzart",
+     "p": 0.497,
+     "vrsta": "granica"
+    },
+    {
+     "l": 9.5,
+     "k": 1.8,
+     "kl": "admiral",
+     "p": 0.574,
+     "vrsta": "granica"
+    }
+   ],
+   "q": [
+    2,
+    3,
+    6,
+    10,
+    15
+   ],
+   "mu": 7.35,
+   "min": 20,
+   "pm": 0.2805,
+   "tr": 0.4712,
+   "l0": null,
+   "vatra": {
+    "l3": [
+     11,
+     13,
+     14
+    ],
+    "a3": 12.7,
+    "ap": 7.2,
+    "pct": 77
+   },
+   "pos": "F",
+   "of": 0.93,
+   "analiza": [
+    "Granica od 9,5 je viša od onoga što realno očekujemo, a to je sedam do osam poena, iz ovih razloga:",
+    "Olimpijakos ima pojačanje na njegovoj poziciji (John Konchar) koje može da debituje; to može da mu uzme deo minuta.",
+    "Nije među prvim opcijama u napadu; više šuteva dobijaju Vezenkov i Fournier.",
+    "Zvezda dobro brani krila; to je i jedna od najboljih odbrana u ligi.",
+    "Na raspolaganju je ponovo i Evan Fournier, pa minuti na njegovoj poziciji mogu da budu podeljeni."
+   ],
+   "forma": [
+    4,
+    7
+   ],
+   "rang_dan": 3,
+   "upisano": "06.11.2026. 12:30",
+   "prvi_put": "06.11.2026. 12:30",
    "zatv": 1.8,
    "zatv_fer": 1.743
   },
@@ -2261,7 +2275,7 @@
     7
    ],
    "rang_dan": 4,
-   "upisano": "06.11.2026. 11:55",
+   "upisano": "06.11.2026. 12:30",
    "prvi_put": "06.11.2026. 11:21",
    "zatv": 1.9,
    "zatv_fer": 1.8
@@ -2428,15 +2442,16 @@
    ],
    "rucno": true,
    "rang_dan": 5,
-   "upisano": "06.11.2026. 11:55",
+   "upisano": "06.11.2026. 12:30",
    "prvi_put": "06.11.2026. 11:55",
    "promena": "novo",
+   "ranije": null,
    "promena_u": "06.11.2026. 11:55",
    "zatv": 1.85,
    "zatv_fer": 1.855
   }
  ],
- "osvezeno": "06.11.2026. 11:55",
+ "osvezeno": "06.11.2026. 12:30",
  "utakmice": [
   {
    "g": 91,
@@ -3109,6 +3124,26 @@
    "opis": "asist. ispod 4,5 · 1,92 Soccerbet",
    "od": "06.11.2026. 11:21",
    "u": "06.11.2026. 11:55",
+   "vrsta": "povučen",
+   "zamena": null
+  },
+  {
+   "g": 99,
+   "k": "carlik jones",
+   "ime": "Carlik Jones",
+   "tim": "PAR",
+   "prot": "TEL",
+   "s": "A",
+   "strana": "u",
+   "l": 6.5,
+   "kl": "mozzart",
+   "kvota": 1.75,
+   "pp": 0.606,
+   "nivo": "solidan",
+   "mu": 5.08,
+   "opis": "asist. ispod 6,5 · 1,75 Mozzart",
+   "od": "06.11.2026. 11:21",
+   "u": "06.11.2026. 12:30",
    "vrsta": "povučen",
    "zamena": null
   }
@@ -10858,106 +10893,6 @@
     ]
    },
    {
-    "k": "tyson ward",
-    "ime": "Tyson Ward",
-    "tim": "OLY",
-    "pos": "F",
-    "s": "P",
-    "l": 9.5,
-    "strana": "u",
-    "pp": 0.547,
-    "mu": 8.6,
-    "q": [
-     2,
-     4,
-     7,
-     12,
-     17
-    ],
-    "min": 23.4,
-    "pros": 9.0,
-    "p5": 10.0,
-    "u": 1.8,
-    "o": 2.02,
-    "knjiga": 3,
-    "pred": "u",
-    "za": [
-     "Granica od 9,5 je viša od onoga što realno očekujemo, a to je osam do devet poena, iz ovih razloga:",
-     "Olimpijakos ima pojačanje na njegovoj poziciji (John Konchar) koje može da debituje; to može da mu uzme deo minuta.",
-     "Nije među prvim opcijama u napadu; više šuteva dobijaju Vezenkov i Fournier."
-    ],
-    "protiv": [
-     "Ove sezone daje oko devet poena po utakmici i granicu od 9,5 prebacio je u 5 od 9 utakmica.",
-     "U poslednjim utakmicama igra više nego ranije (24, 30 i 34 minuta)."
-    ]
-   },
-   {
-    "k": "tyson ward",
-    "ime": "Tyson Ward",
-    "tim": "OLY",
-    "pos": "F",
-    "s": "S",
-    "l": 3.5,
-    "strana": "o",
-    "pp": 0.597,
-    "mu": 3.52,
-    "q": [
-     1,
-     2,
-     3,
-     5,
-     7
-    ],
-    "min": 23.4,
-    "pros": 3.67,
-    "p5": 4.2,
-    "u": 2.3,
-    "o": 1.55,
-    "knjiga": 4,
-    "pred": null,
-    "za": [
-     "U poslednjim utakmicama igra više nego ranije (24, 30 i 34 minuta).",
-     "Protiv Zvezde se skače: dozvoljavaju dosta odbijenih lopti."
-    ],
-    "protiv": [
-     "Ove sezone daje tri do četiri skoka po utakmici; ispod 3,5 je ostao u 5 od 9 utakmica.",
-     "Olimpijakos ima pojačanje na njegovoj poziciji (John Konchar) koje može da debituje; to može da mu uzme deo minuta."
-    ]
-   },
-   {
-    "k": "tyson ward",
-    "ime": "Tyson Ward",
-    "tim": "OLY",
-    "pos": "F",
-    "s": "A",
-    "l": 2.5,
-    "strana": "o",
-    "pp": 0.56,
-    "mu": 2.17,
-    "q": [
-     0,
-     1,
-     2,
-     3,
-     4
-    ],
-    "min": 23.4,
-    "pros": 1.89,
-    "p5": 2.6,
-    "u": 2.25,
-    "o": 1.85,
-    "knjiga": 4,
-    "pred": null,
-    "za": [
-     "U poslednjim utakmicama igra više nego ranije (24, 30 i 34 minuta).",
-     "U poslednje tri utakmice: 1, 5 i 3 asistencije, više nego inače."
-    ],
-    "protiv": [
-     "Granica od 2,5 je viša od onoga što realno očekujemo, a to je oko dve asistencije.",
-     "Ove sezone daje oko dve asistencije po utakmici; ispod 2,5 je ostao u 6 od 9 utakmica."
-    ]
-   },
-   {
     "k": "codi miller mcintyre",
     "ime": "Codi Miller-Mcintyre",
     "tim": "OLY",
@@ -11057,6 +10992,106 @@
     "protiv": [
      "Granica od 5,5 je viša od onoga što realno očekujemo, a to je četiri do pet asistencija.",
      "Zvezda ne dozvoljava laku igru dodavanjem; protiv njih se deli malo asistencija."
+    ]
+   },
+   {
+    "k": "tyson ward",
+    "ime": "Tyson Ward",
+    "tim": "OLY",
+    "pos": "F",
+    "s": "P",
+    "l": 9.5,
+    "strana": "u",
+    "pp": 0.574,
+    "mu": 7.35,
+    "q": [
+     2,
+     3,
+     6,
+     10,
+     15
+    ],
+    "min": 20,
+    "pros": 9.0,
+    "p5": 10.0,
+    "u": 1.8,
+    "o": 2.02,
+    "knjiga": 3,
+    "pred": "u",
+    "za": [
+     "Granica od 9,5 je viša od onoga što realno očekujemo, a to je sedam do osam poena, iz ovih razloga:",
+     "Olimpijakos ima pojačanje na njegovoj poziciji (John Konchar) koje može da debituje; to može da mu uzme deo minuta.",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Vezenkov i Fournier."
+    ],
+    "protiv": [
+     "Ove sezone daje oko devet poena po utakmici i granicu od 9,5 prebacio je u 5 od 9 utakmica.",
+     "U poslednjim utakmicama igra više nego ranije (24, 30 i 34 minuta)."
+    ]
+   },
+   {
+    "k": "tyson ward",
+    "ime": "Tyson Ward",
+    "tim": "OLY",
+    "pos": "F",
+    "s": "S",
+    "l": 3.5,
+    "strana": "o",
+    "pp": 0.569,
+    "mu": 3.01,
+    "q": [
+     1,
+     1,
+     3,
+     4,
+     6
+    ],
+    "min": 20,
+    "pros": 3.67,
+    "p5": 4.2,
+    "u": 2.3,
+    "o": 1.55,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "U poslednjim utakmicama igra više nego ranije (24, 30 i 34 minuta).",
+     "Protiv Zvezde se skače: dozvoljavaju dosta odbijenih lopti."
+    ],
+    "protiv": [
+     "Granica od 3,5 je viša od onoga što realno očekujemo, a to je oko tri skoka.",
+     "Ove sezone daje tri do četiri skoka po utakmici; ispod 3,5 je ostao u 5 od 9 utakmica."
+    ]
+   },
+   {
+    "k": "tyson ward",
+    "ime": "Tyson Ward",
+    "tim": "OLY",
+    "pos": "F",
+    "s": "A",
+    "l": 2.5,
+    "strana": "o",
+    "pp": 0.529,
+    "mu": 1.85,
+    "q": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "min": 20,
+    "pros": 1.89,
+    "p5": 2.6,
+    "u": 2.25,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "U poslednjim utakmicama igra više nego ranije (24, 30 i 34 minuta).",
+     "U poslednje tri utakmice: 1, 5 i 3 asistencije, više nego inače."
+    ],
+    "protiv": [
+     "Granica od 2,5 je viša od onoga što realno očekujemo, a to je oko dve asistencije.",
+     "Ove sezone daje oko dve asistencije po utakmici; ispod 2,5 je ostao u 6 od 9 utakmica."
     ]
    },
    {
@@ -12746,7 +12781,7 @@
     "knjiga": 4,
     "pred": "u",
     "za": [
-     "Granica od 15,5 je viša od onoga što realno očekujemo, a to je oko 13 poena: obe ekipe igraju sporo."
+     "Granica od 15,5 je viša od onoga što realno očekujemo, a to je oko 13 poena."
     ],
     "protiv": [
      "Ove sezone daje 14 do 15 poena po utakmici i granicu od 15,5 prebacio je u 5 od 9 utakmica.",
@@ -12812,9 +12847,7 @@
     "knjiga": 4,
     "pred": "u",
     "za": [
-     "Granica od 6,5 je viša od onoga što realno očekujemo, a to je oko pet asistencija, iz ovih razloga:",
-     "Ove sezone daje oko šest asistencija po utakmici; ispod 6,5 je ostao u 6 od 9 utakmica.",
-     "Obe ekipe igraju sporo, pa će napada biti manje nego obično."
+     "Granica od 6,5 je viša od onoga što realno očekujemo, a to je oko pet asistencija: u većini utakmica ostaje ispod ove granice."
     ],
     "protiv": [
      "Prvi je organizator igre Partizana: lopta je najčešće u njegovim rukama.",
@@ -12849,7 +12882,6 @@
      "Granica od 5,5 je niža od onoga što realno očekujemo, a to je oko osam poena: protiv Makabija krila postižu više."
     ],
     "protiv": [
-     "Obe ekipe igraju sporo, pa će napada biti manje nego obično.",
      "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
     ]
    },
@@ -12883,7 +12915,6 @@
      "Jedna je od prvih opcija u napadu Partizana."
     ],
     "protiv": [
-     "Obe ekipe igraju sporo, pa će napada biti manje nego obično.",
      "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
     ]
    },
@@ -13251,7 +13282,7 @@
     "za": [
      "Granica od 7,5 je viša od onoga što realno očekujemo, a to je pet do šest poena, iz ovih razloga:",
      "Ove sezone daje oko pet poena po utakmici; ispod 7,5 je ostao u 2 od 2 utakmice.",
-     "Obe ekipe igraju sporo, pa će napada biti manje nego obično."
+     "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
     ],
     "protiv": [
      "Protiv Makabija krila postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi."
@@ -13409,9 +13440,7 @@
     "knjiga": 4,
     "pred": "u",
     "za": [
-     "Granica od 12,5 je viša od onoga što realno očekujemo, a to je oko deset poena, iz ovih razloga:",
-     "Partizan dobro brani bekove; to je i jedna od najboljih odbrana u ligi.",
-     "Obe ekipe igraju sporo, pa će napada biti manje nego obično."
+     "Granica od 12,5 je viša od onoga što realno očekujemo, a to je oko deset poena: Partizan dobro brani bekove."
     ],
     "protiv": [
      "Ove sezone daje oko 12 poena po utakmici i granicu od 12,5 prebacio je u 5 od 9 utakmica.",
@@ -13675,9 +13704,7 @@
     "knjiga": 4,
     "pred": "u",
     "za": [
-     "Granica od 12,5 je viša od onoga što realno očekujemo, a to je devet do deset poena, iz ovih razloga:",
-     "Partizan dobro brani krila; to je i jedna od najboljih odbrana u ligi.",
-     "Obe ekipe igraju sporo, pa će napada biti manje nego obično."
+     "Granica od 12,5 je viša od onoga što realno očekujemo, a to je devet do deset poena: Partizan dobro brani krila."
     ],
     "protiv": [
      "Ove sezone daje oko 11 poena po utakmici i granicu od 12,5 prebacio je u 5 od 9 utakmica."

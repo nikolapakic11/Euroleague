@@ -249,7 +249,8 @@ def razlozi(i, s, l, u, moja, tudja, K):
     if s in ('P', 'A'):
         t1, t2 = ST['timovi'].get(tim, {}).get('mesto', {}).get('tempo'), tp.get('mesto', {}).get('tempo')
         if t1 and t2:
-            sr = (t1 + t2) / 2
+            # od 6.11.2026 (Nikola: „kako Makabi igra sporo?“): tvrdnja o obe ekipe samo kad važi za obe pojedinačno
+            sr = (t1 + t2) / 2 if (max(t1, t2) <= 6 or min(t1, t2) >= 15) else 10
             if sr <= 6:
                 T.append(dict(p=7, d=1, t='Obe ekipe vole brz ritam, pa će biti više napada nego obično.', kr='utakmica obećava brz ritam'))
             elif sr >= 15:
