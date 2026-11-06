@@ -3163,7 +3163,9 @@
    "od": "06.11.2026. 11:21",
    "u": "06.11.2026. 12:30",
    "vrsta": "povučen",
-   "zamena": null
+   "zamena": null,
+   "ishod": 7,
+   "prosao": false
   }
  ],
  "konacno": {
@@ -13369,7 +13371,10 @@
     "protiv": [
      "Kod Partizana ne igra Kevarrius Hayes, pa ostaje više minuta i lopti za ostale.",
      "Jedna je od prvih opcija u napadu Partizana."
-    ]
+    ],
+    "ishod": 7,
+    "min_st": 24,
+    "prosao": true
    },
    {
     "k": "carlik jones",
@@ -13406,7 +13411,10 @@
     "protiv": [
      "Kao bek retko ide u skok; odbijene lopte kod Partizana uglavnom hvataju Stevens i Jekiri.",
      "Makabi dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 24,
+    "prosao": false
    },
    {
     "k": "carlik jones",
@@ -13441,7 +13449,10 @@
     "protiv": [
      "Kod Partizana ne igra Kevarrius Hayes, pa ostaje više minuta i lopti za ostale.",
      "Prvi je organizator igre Partizana: lopta je najčešće u njegovim rukama."
-    ]
+    ],
+    "ishod": 7,
+    "min_st": 24,
+    "prosao": false
    },
    {
     "k": "robert franks",
@@ -13478,7 +13489,10 @@
     "protiv": [
      "Ove sezone daje pet do šest poena po utakmici; ispod 6,5 je ostao u 1 od 2 utakmice.",
      "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
-    ]
+    ],
+    "ishod": 11,
+    "min_st": 18,
+    "prosao": true
    },
    {
     "k": "lamar stevens",
@@ -13514,7 +13528,10 @@
     ],
     "protiv": [
      "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
-    ]
+    ],
+    "ishod": 14,
+    "min_st": 28,
+    "prosao": true
    },
    {
     "k": "lamar stevens",
@@ -13551,7 +13568,10 @@
     "protiv": [
      "Makabi dobro zatvara skok: protiv njih se hvata malo odbijenih lopti.",
      "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
-    ]
+    ],
+    "ishod": 8,
+    "min_st": 28,
+    "prosao": true
    },
    {
     "k": "ethan thompson",
@@ -13588,7 +13608,10 @@
     "protiv": [
      "Kod Partizana ne igra Kevarrius Hayes, pa ostaje više minuta i lopti za ostale.",
      "Protiv Makabija krila postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi."
-    ]
+    ],
+    "ishod": 16,
+    "min_st": 28,
+    "prosao": false
    },
    {
     "k": "alessandro pajola",
@@ -13625,7 +13648,10 @@
     "protiv": [
      "Ove sezone daje oko četiri poena po utakmici; ispod 4,5 je ostao u 5 od 9 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Jones i Stevens."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 19,
+    "prosao": true
    },
    {
     "k": "alessandro pajola",
@@ -13662,7 +13688,10 @@
     "protiv": [
      "Kod Partizana ne igra Kevarrius Hayes, pa ostaje više minuta i lopti za ostale.",
      "Protiv Makabija lopta dobro kruži; dozvoljavaju dosta asistencija."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 19,
+    "prosao": false
    },
    {
     "k": "luca vildoza",
@@ -13699,7 +13728,10 @@
     "protiv": [
      "Ove sezone daje oko osam poena po utakmici; ispod 8,5 je ostao u 6 od 9 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Jones i Stevens."
-    ]
+    ],
+    "ishod": 0,
+    "min_st": 4,
+    "prosao": false
    },
    {
     "k": "luca vildoza",
@@ -13736,7 +13768,10 @@
     "protiv": [
      "Kod Partizana ne igra Kevarrius Hayes, pa ostaje više minuta i lopti za ostale.",
      "U poslednjim utakmicama igra više nego ranije (30, 18 i 23 minuta)."
-    ]
+    ],
+    "ishod": 1,
+    "min_st": 4,
+    "prosao": true
    },
    {
     "k": "nikola tanaskovic",
@@ -13773,7 +13808,10 @@
     "protiv": [
      "Kod Partizana ne igra Kevarrius Hayes, pa ostaje više minuta i lopti za ostale.",
      "U poslednje tri utakmice: 4, 6 i 19 poena, više nego inače."
-    ]
+    ],
+    "ishod": 11,
+    "min_st": 27,
+    "prosao": false
    },
    {
     "k": "nikola tanaskovic",
@@ -13810,7 +13848,10 @@
     "protiv": [
      "Ove sezone daje tri do četiri skoka po utakmici; ispod 4,5 je ostao u 6 od 9 utakmica.",
      "Makabi dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
-    ]
+    ],
+    "ishod": 7,
+    "min_st": 27,
+    "prosao": true
    },
    {
     "k": "antonio reeves",
@@ -13846,7 +13887,10 @@
     "protiv": [
      "Kod Partizana ne igra Kevarrius Hayes, pa ostaje više minuta i lopti za ostale.",
      "Protiv Makabija krila postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi."
-    ]
+    ],
+    "ishod": 13,
+    "min_st": 26,
+    "prosao": false
    },
    {
     "k": "jaylen hoard",
@@ -13880,7 +13924,10 @@
      "Ove sezone daje oko osam poena po utakmici; ispod 8,5 je ostao u 5 od 9 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Iii i Madar."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 9,
+    "min_st": 26,
+    "prosao": false
    },
    {
     "k": "jaylen hoard",
@@ -13914,7 +13961,10 @@
      "Ove sezone daje tri do četiri skoka po utakmici; ispod 4,5 je ostao u 7 od 9 utakmica.",
      "Partizan dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 6,
+    "min_st": 26,
+    "prosao": false
    },
    {
     "k": "o shae j brissett",
@@ -13948,7 +13998,10 @@
      "Ove sezone daje osam do devet poena po utakmici; ispod 8,5 je ostao u 6 od 9 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Iii i Madar."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 7,
+    "min_st": 24,
+    "prosao": true
    },
    {
     "k": "o shae j brissett",
@@ -13984,7 +14037,10 @@
     "protiv": [
      "Glavni je skakač Makabija: niko u timu ne hvata više odbijenih lopti.",
      "U gostima hvata više skokova nego kod kuće (pet do šest skokova naspram oko tri skoka), a sada igra u gostima."
-    ]
+    ],
+    "ishod": 7,
+    "min_st": 24,
+    "prosao": false
    },
    {
     "k": "yam madar",
@@ -14019,7 +14075,10 @@
     "protiv": [
      "Ove sezone daje oko 12 poena po utakmici i granicu od 12,5 prebacio je u 5 od 9 utakmica.",
      "Jedna je od prvih opcija u napadu Makabija."
-    ]
+    ],
+    "ishod": 10,
+    "min_st": 21,
+    "prosao": true
    },
    {
     "k": "yam madar",
@@ -14053,7 +14112,10 @@
      "Ove sezone daje oko dva skoka po utakmici; ispod 2,5 je ostao u 5 od 9 utakmica.",
      "Kao bek retko ide u skok; odbijene lopte kod Makabija uglavnom hvataju Brissett i Hoard."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 4,
+    "min_st": 21,
+    "prosao": false
    },
    {
     "k": "yam madar",
@@ -14089,7 +14151,10 @@
     ],
     "protiv": [
      "Prvi je organizator igre Makabija: lopta je najčešće u njegovim rukama."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 21,
+    "prosao": true
    },
    {
     "k": "jimmy clark",
@@ -14126,7 +14191,10 @@
     "protiv": [
      "Partizan dobro brani bekove; to je i jedna od najboljih odbrana u ligi.",
      "Dolazi sa klupe i igra oko 21 minut."
-    ]
+    ],
+    "ishod": 8,
+    "min_st": 23,
+    "prosao": false
    },
    {
     "k": "jimmy clark",
@@ -14163,7 +14231,10 @@
     "protiv": [
      "Kao bek retko ide u skok; odbijene lopte kod Makabija uglavnom hvataju Brissett i Hoard.",
      "Dolazi sa klupe i igra oko 21 minut."
-    ]
+    ],
+    "ishod": 1,
+    "min_st": 23,
+    "prosao": false
    },
    {
     "k": "jimmy clark",
@@ -14199,7 +14270,10 @@
     ],
     "protiv": [
      "U poslednjim utakmicama igra više nego ranije (22, 24 i 28 minuta)."
-    ]
+    ],
+    "ishod": 6,
+    "min_st": 23,
+    "prosao": false
    },
    {
     "k": "bonzie colson",
@@ -14236,7 +14310,10 @@
     "protiv": [
      "Ove sezone daje 10 do 11 poena po utakmici i granicu od 10,5 prebacio je u 6 od 9 utakmica.",
      "U poslednje tri utakmice: 19, 6 i 16 poena, više nego inače."
-    ]
+    ],
+    "ishod": 8,
+    "min_st": 22,
+    "prosao": true
    },
    {
     "k": "bonzie colson",
@@ -14272,7 +14349,10 @@
     ],
     "protiv": [
      "U gostima hvata više skokova nego kod kuće (tri do četiri skoka naspram dva do tri skoka), a sada igra u gostima."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 22,
+    "prosao": true
    },
    {
     "k": "roman sorkin",
@@ -14306,7 +14386,10 @@
     ],
     "protiv": [
      "Ove sezone daje oko 11 poena po utakmici i granicu od 12,5 prebacio je u 5 od 9 utakmica."
-    ]
+    ],
+    "ishod": 0,
+    "min_st": 5,
+    "prosao": true
    },
    {
     "k": "keaton wallace",
@@ -14340,7 +14423,10 @@
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Iii i Madar.",
      "Partizan dobro brani bekove; to je i jedna od najboljih odbrana u ligi."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 6,
+    "min_st": 15,
+    "prosao": false
    }
   ]
  }
