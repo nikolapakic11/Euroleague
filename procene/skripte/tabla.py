@@ -17,6 +17,7 @@ import model
 from model import Baza, verovatnoca_preko, percentili, raspodela
 from zajedno import kljuc_snimka, BAZA, PROCENE, BG, ucitaj, sacuvaj, tim, utakmice, pn
 import spajanje
+import prilagodjavanje
 
 KLADIONICE = ('admiral', 'maxbet', 'mozzart', 'soccerbet')
 IME_KL = {'admiral': 'Admiral', 'maxbet': 'MaxBet', 'mozzart': 'Mozzart', 'soccerbet': 'Soccerbet'}
@@ -114,130 +115,9 @@ def vatra(g, s):
     return None
 
 
-# Povratak važnog saigrača (odluka 4.11.2026): kad se vrati igrač koji nosi tim (bar POV_MIN minuta u proseku), a
-# propustio je bar 2 utakmice, uloga ostalih se menja (npr. Francisco posle povratka Nunna: isti minuti, poeni sa
-# 16 na 8). Prosek sezone to sporo hvata, pa se minuti i učinak po minutu ostalih igrača tog tima mešaju sa
-# utakmicama u kojima su povratnici igrali: težina n/(n+POV_K) (3 utakmice → 0,67). Odnos učinka po minutu se
-# skuplja ka 1 (pseudo-brojevi POV_C) i ograničava na 0,5 do 1,5.
-POV_MIN, POV_K, POV_MAX_POSLE = 20.0, 1.5, 5
-POV_C = {'P': 3.0, 'S': 1.5, 'A': 1.5}
-
-
-def povratak_saigraca(igraci, B, kod, dan):
-    tg = []
-    for r in B.rows:
-        if r['team'] == kod and r['dan'] < dan and r['g'] not in tg:
-            tg.append(r['g'])
-    if len(tg) < 4:
-        return
-    igrao = {i['k']: {r['g']: r for r in B.byk.get(i['k'], []) if r['dan'] < dan and r['team'] == kod} for i in igraci}
-    povr = []
-    for j in igraci:
-        G = igrao[j['k']]
-        if j['ne_igra'] or not G:
-            continue
-        mins = [r['min'] for r in G.values()]
-        if sum(mins) / len(mins) < POV_MIN:
-            continue
-        posle = 0
-        for gg in reversed(tg):
-            if gg in G:
-                posle += 1
-            else:
-                break
-        propustio = sum(1 for gg in tg if gg not in G)
-        if 1 <= posle <= POV_MAX_POSLE and propustio >= 2 and propustio > posle - 1:
-            povr.append((j, set(tg[len(tg) - posle:])))
-    if not povr:
-        return
-    sa_g = set.intersection(*[s for _, s in povr])
-    ko = [j['ime'] for j, _ in povr]
-    kljucevi_povr = {j['k'] for j, _ in povr}
-    for i in igraci:
-        if i['k'] in kljucevi_povr or i['ne_igra']:
-            continue
-        G = igrao[i['k']]
-        sa = [G[gg] for gg in G if gg in sa_g]
-        bez = [G[gg] for gg in G if gg not in sa_g]
-        if not sa or len(bez) < 2:
-            continue
-        w = len(sa) / (len(sa) + POV_K)
-        sv = lambda L, s: sum(r[s] for r in L)
-        m_sa = sv(sa, 'min') / len(sa)
-        m_bez = sv(bez, 'min') / len(bez)
-        m_sve = (sv(sa, 'min') + sv(bez, 'min'))
-        m_staro = i['min']
-        m_novo = m_staro if i.get('rucno_min') else (1 - w) * m_staro + w * m_sa
-        info = dict(ko=ko, n=len(sa), w=round(w, 2), min_sa=round(m_sa, 1), min_bez=round(m_bez, 1), sa={}, bez={}, odnos={})
-        for s in 'PSA':
-            x = i['s'][s]
-            r_sve = (sv(sa, s) + sv(bez, s)) / m_sve if m_sve else 0
-            if r_sve > 0 and sv(sa, 'min') > 0:
-                odnos = (sv(sa, s) + POV_C[s]) / (r_sve * sv(sa, 'min') + POV_C[s])
-            else:
-                odnos = 1.0
-            odnos = min(1.5, max(0.5, odnos))
-            mnoz = ((1 - w) + w * odnos) * (m_novo / m_staro if m_staro else 1)
-            mu = max(0.05, x['mu'] * mnoz)
-            x['mu'] = round(mu, 2)
-            x['var'] = round(x['A'] * mu + x['C'] * mu * mu, 2)
-            x['q'] = percentili(x['mu'], x['var'])
-            x['rpm'] = round(mu / m_novo, 4) if m_novo else 0
-            info['sa'][s] = round(sv(sa, s) / len(sa), 1)
-            info['bez'][s] = round(sv(bez, s) / len(bez), 1)
-            info['odnos'][s] = round(odnos, 2)
-        i['min'] = round(m_novo, 1)
-        i['povratak'] = info
-
-
-ODS_BLIZINA = {('G', 'G'): 1.0, ('F', 'F'): 1.0, ('C', 'C'): 1.0, ('G', 'F'): 0.6, ('F', 'G'): 0.6,
-               ('F', 'C'): 0.6, ('C', 'F'): 0.6, ('G', 'C'): 0.2, ('C', 'G'): 0.2}
-ODS_UDEO = 0.85         # deo minuta odsutnih koji ide igračima iz rotacije (ostatak mladima i igračima van rotacije)
-ODS_MAX_MIN = 32.0      # najviše očekivanih minuta posle raspodele
-
-
-def odsustvo_saigraca(igraci, n_tim):
-    """Odsutni igrači iz rotacije (ne igraju danas, a igrali su bar polovinu utakmica tima i bar jednu od poslednje 3,
-    pa su njihovi minuti još u prosecima saigrača): njihovi minuti se dele ostalima iz rotacije, srazmerno dosadašnjim
-    minutima i blizini pozicije (ista 1, bek-krilo i krilo-centar 0,6, bek-centar 0,2), ukupno ODS_UDEO minuta odsutnih,
-    do ODS_MAX_MIN po igraču. Učinak po minutu ostaje isti, pa očekivanje raste sa minutima; raspon se računa ponovo."""
-    van = [j for j in igraci if j['ne_igra'] and j['min'] >= 12 and n_tim and j['n'] >= 0.5 * n_tim and j['odsutan'] < 3]
-    akt = [i for i in igraci if not i['ne_igra'] and i['min'] >= 8]
-    if not van or not akt:
-        return
-    dod = {i['k']: 0.0 for i in akt}
-    for j in van:
-        tez = {i['k']: i['min'] * ODS_BLIZINA.get((i['pos'], j['pos']), 0.6) for i in akt}
-        zbir = sum(tez.values())
-        for i in akt:
-            dod[i['k']] += j['min'] * ODS_UDEO * tez[i['k']] / zbir
-    # granica minuta: višak ide ostalima srazmerno minutima
-    for _ in range(5):
-        visak = 0.0
-        for i in akt:
-            if i['min'] + dod[i['k']] > ODS_MAX_MIN:
-                visak += i['min'] + dod[i['k']] - ODS_MAX_MIN
-                dod[i['k']] = max(0.0, ODS_MAX_MIN - i['min'])
-        slobodni = [i for i in akt if i['min'] + dod[i['k']] < ODS_MAX_MIN - 0.01]
-        if visak < 0.05 or not slobodni:
-            break
-        zbir = sum(i['min'] for i in slobodni)
-        for i in slobodni:
-            dod[i['k']] += visak * i['min'] / zbir
-    ko = [j['ime'] for j in van]
-    for i in akt:
-        if i.get('rucno_min') or dod[i['k']] < 0.3:
-            continue
-        m_staro, m_novo = i['min'], i['min'] + dod[i['k']]
-        f = m_novo / m_staro
-        for s in 'PSA':
-            x = i['s'][s]
-            mu = max(0.05, x['mu'] * f)
-            x['mu'] = round(mu, 2)
-            x['var'] = round(x['A'] * mu + x['C'] * mu * mu, 2)
-            x['q'] = percentili(x['mu'], x['var'])
-        i['min'] = round(m_novo, 1)
-        i['odsustvo'] = dict(ko=ko, min_staro=round(m_staro, 1))
+# Povratak i odsustvo saigrača: procene/skripte/prilagodjavanje.py (pravilo NOVO od 6.11.2026, provera_2026-11-06.md).
+# Prilagođeno očekivanje se prikazuje, a za izbor predloga važi manja od dve verovatnoće (sa i bez prilagođavanja):
+# prilagođavanje može da smanji poverenje u stranu, ali ne može samo da stvori ili pojača predlog.
 
 
 def lepo_ime(n):
@@ -335,8 +215,7 @@ def main():
                     i['ne_igra'], i['razlog'] = True, 'van igre'
                 elif pv['stanje'] == 'upitan':
                     i['upitan'] = True
-            povratak_saigraca(igraci, B, kod, u['dan'])
-            odsustvo_saigraca(igraci, len(tim_g[kod]))
+            prilagodjavanje.prilagodi(igraci, B, kod, u['dan'], len(tim_g[kod]), prilagodjavanje.NOVO)
             igraci.sort(key=lambda x: -x['min'])
             stranice.append(dict(tim=kod, prot=prot, igraci=igraci))
         # ponude
@@ -386,6 +265,10 @@ def main():
                             ps = spajanje.preko(sp_w, s, z['pm'], z['trk'])
                             z['ps'] = round(ps, 4)
                             z['pc'] = round(spajanje.kalibrisi(ps, sp_kal, s), 4)
+                            x0 = i['s'][s]
+                            if abs(x0.get('mu0', x0['mu']) - x0['mu']) > 0.01:
+                                pm0 = verovatnoca_preko(s, x0['mu0'], x0['var0'], z['l'])
+                                z['ps0'] = round(spajanje.preko(sp_w, s, pm0, z['trk']), 4)
         # lestvice „N+“ (samo preko): procena modela, a kvote bez marže približno (marža lestvica ~8%)
         for (kl, d), X in LESTVICE.items():
             if d != u['dan']:
@@ -435,7 +318,8 @@ def main():
                         if not z.get('m', 1):
                             continue
                         ps = z.get('ps', z['pc'])
-                        for strana, pp, kv in (('o', ps, z['o']), ('u', 1 - ps, z['u'])):
+                        ps0 = z.get('ps0', ps)
+                        for strana, pp, kv in (('o', min(ps, ps0), z['o']), ('u', min(1 - ps, 1 - ps0), z['u'])):
                             if strana == 'u' and bez_minusa:
                                 continue
                             if strana == 'o' and i.get('novi_saigrac'):
@@ -444,7 +328,9 @@ def main():
         for c in (spajanje.izbor_utakmice(kand) if sp_w else []):
             _, i = po_kljucu[c['igr']]
             z = next(z for z in i['s'][c['s']]['linije'] if z['kl'] == c['kl'] and z['l'] == c['l'] and z.get('m', 1))
-            pk = z['pc'] if c['strana'] == 'o' else 1 - z['pc']          # kalibrisana, za prikaz
+            po = c['pp'] if c['strana'] == 'o' else 1 - c['pp']          # verovatnoća za preko korišćena u izboru
+            pc_iz = spajanje.kalibrisi(po, sp_kal, c['s']) if sp_kal else po
+            pk = pc_iz if c['strana'] == 'o' else 1 - pc_iz              # kalibrisana, za prikaz
             pred = dict(strana=c['strana'], pp=round(pk, 3), ps=round(c['pp'], 3), ev=round(pk * c['k'] - 1, 3), kvota=c['k'],
                         l=c['l'], kl=c['kl'], nivo=spajanje.nivo(pk, slab=(c['nivo'] == 'slab')), rang=c['rang'])
             # iste granice i strane kod ostalih kladionica

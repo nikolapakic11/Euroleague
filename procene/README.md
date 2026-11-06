@@ -49,7 +49,7 @@ Sve skripte se pokreću iz korena repozitorijuma. Ceo dnevni posao radi jedna ko
 | Senka | `python3 procene/skripte/senka.py --kolo 11` (`--pregled`) | Uporedni predlozi po varijanti „skupljanje nadole“, bez prikaza (od kola 11, odluka 5.11.2026); `procene/senka/`. Poziva ga `dan.py`. |
 | Ishodi | `python3 procene/skripte/dnevnik.py --kolo 11` | Upisuje stvarne učinke u dnevnik i ispisuje tačnost. |
 
-Minuti su prosek igrača u ovoj sezoni. Izuzetak (odluka 4.11.2026): kad se vrati važan igrač (bar 20 min u proseku, propustio bar 2 utakmice, vratio se u poslednjih 5), minuti i učinak po minutu saigrača mešaju se sa utakmicama od njegovog povratka, težina n/(n+1,5) (`tabla.povratak_saigraca`); npr. Francisco posle povratka Nunna. Izuzetak za povredu ili „ne igra“ samo kroz `procene/minuti.json`, npr. `{"11": {"nikola milutinov": 0}}` (ključ je ime malim slovima, bez kvačica).
+Minuti su prosek igrača u ovoj sezoni. Povratak važnog igrača i potvrđeno odsustvo menjaju očekivanje saigrača blago (od 6.11.2026, `prilagodjavanje.py`, pravilo NOVO: povratak w = n/(n+4), odsustvo 40% minuta, ±12%, korist po minutu samo glavnoj opciji); za izbor predloga važi manja verovatnoća od dve (sa i bez prilagođavanja). Izuzetak za povredu ili „ne igra“ samo kroz `procene/minuti.json`, npr. `{"11": {"nikola milutinov": 0}}` (ključ je ime malim slovima, bez kvačica).
 
 Tabla (tekuće kolo, `procene/tabla/aktuelno.html`): https://claude.ai/artifact/P3awRXNbkBvDErZ8Jug9vZ
 Javna stranica sa predlozima: https://claude.ai/artifact/HUT71aS4AnLVknR6pKgpDv (javna kad se uključi deljenje u meniju Share)

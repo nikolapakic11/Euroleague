@@ -30,6 +30,9 @@ Zakazani zadaci su isključeni (odluka 5.11.2026): ništa se ne pokreće samo. S
 
 ## Pravila objave (dogovoreno)
 
+- Konsultacija pre objave (odluka 6.11.2026): kad Nikola pošalje ponude, pokreni `dan.py`, pokaži mu predloge za dan
+  u razgovoru (sa razlozima i upozorenjima) i objavi na sajt i artefakt TEK kad on potvrdi.
+
 - Ništa pre 12h na dan utakmice. Ranija objava samo kad Nikola traži: `procene/podaci/objava.json` `{"<dan>": "HH:MM"}`.
 - Konačni predlozi: sat pre prve utakmice dana ako počinje pre 18h, inače sat i po pre (zajedno.rokovi).
   Konačno je ono što je objavljeno u tom trenutku; posle se ne menja. Učinak se računa samo za konačne.
@@ -40,6 +43,11 @@ Zakazani zadaci su isključeni (odluka 5.11.2026): ništa se ne pokreće samo. S
 - Povučeni i izmenjeni predlozi ostaju u Istoriji sa vremenom i ishodom; ne ulaze u učinak.
 
 ## Povrede i odsutni (samo potvrđeno)
+
+- Povratak i odsustvo saigrača (od 6.11.2026, `procene/skripte/prilagodjavanje.py`, pravilo NOVO): blago (povratak
+  w = n/(n+4), odnos 0,85–1,15; od odsutnog 40% minuta, najviše +4 min po igraču; ukupno ±12%), korist po minutu
+  (+4% P i A) samo glavnoj opciji tima, ostali samo minute. Za izbor predloga važi manja verovatnoća od dve
+  (sa i bez prilagođavanja): prilagođavanje ne može samo da stvori ili pojača predlog. Provera: `procene/provera/provera_2026-11-06.md`.
 
 - Izvori: zvanični izveštaj Evrolige preko Eurohoops i dnevni izveštaj BasketNews-a
   (https://basketnews.com/leagues/25-euroleague/injured.html, ima prednost). `povrede.py` čita oba.

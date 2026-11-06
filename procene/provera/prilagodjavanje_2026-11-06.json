@@ -1,0 +1,360 @@
+{
+ "tacnost": {
+  "staro": {
+   "n": 1573,
+   "ll_sirovo": 0.6973,
+   "ll_var": 0.6882,
+   "ll_kvote": 0.6883,
+   "greska_sirovo": 0.4,
+   "greska_var": -0.37,
+   "mae_sirovo": 3.18,
+   "mae_var": 3.23
+  },
+  "novo": {
+   "n": 1501,
+   "ll_sirovo": 0.6999,
+   "ll_var": 0.6896,
+   "ll_kvote": 0.6884,
+   "greska_sirovo": 0.44,
+   "greska_var": 0.06,
+   "mae_sirovo": 3.19,
+   "mae_var": 3.17
+  },
+  "novo bez glavne opcije": {
+   "n": 1503,
+   "ll_sirovo": 0.7,
+   "ll_var": 0.6903,
+   "ll_kvote": 0.6883,
+   "greska_sirovo": 0.44,
+   "greska_var": 0.1,
+   "mae_sirovo": 3.18,
+   "mae_var": 3.17
+  },
+  "novo bez ograničenja": {
+   "n": 1501,
+   "ll_sirovo": 0.6999,
+   "ll_var": 0.689,
+   "ll_kvote": 0.6884,
+   "greska_sirovo": 0.44,
+   "greska_var": 0.01,
+   "mae_sirovo": 3.19,
+   "mae_var": 3.18
+  }
+ },
+ "izbor": {
+  "sirovo": {
+   "sve": {
+    "n": 312,
+    "prosao": 193,
+    "pogodak": 0.619,
+    "povracaj": 0.077
+   },
+   "plus": {
+    "n": 95,
+    "prosao": 56,
+    "pogodak": 0.589,
+    "povracaj": 0.003
+   },
+   "minus": {
+    "n": 217,
+    "prosao": 137,
+    "pogodak": 0.631,
+    "povracaj": 0.109
+   },
+   "prilagodjeni": {
+    "n": 0
+   },
+   "prilagodjeni_plus": {
+    "n": 0
+   }
+  },
+  "staro": {
+   "sve": {
+    "n": 312,
+    "prosao": 182,
+    "pogodak": 0.583,
+    "povracaj": 0.015
+   },
+   "plus": {
+    "n": 98,
+    "prosao": 55,
+    "pogodak": 0.561,
+    "povracaj": -0.049
+   },
+   "minus": {
+    "n": 214,
+    "prosao": 127,
+    "pogodak": 0.593,
+    "povracaj": 0.045
+   },
+   "prilagodjeni": {
+    "n": 229,
+    "prosao": 128,
+    "pogodak": 0.559,
+    "povracaj": -0.033
+   },
+   "prilagodjeni_plus": {
+    "n": 77,
+    "prosao": 45,
+    "pogodak": 0.584,
+    "povracaj": -0.01
+   }
+  },
+  "novo": {
+   "sve": {
+    "n": 312,
+    "prosao": 183,
+    "pogodak": 0.587,
+    "povracaj": 0.02
+   },
+   "plus": {
+    "n": 97,
+    "prosao": 53,
+    "pogodak": 0.546,
+    "povracaj": -0.075
+   },
+   "minus": {
+    "n": 215,
+    "prosao": 130,
+    "pogodak": 0.605,
+    "povracaj": 0.062
+   },
+   "prilagodjeni": {
+    "n": 220,
+    "prosao": 121,
+    "pogodak": 0.55,
+    "povracaj": -0.046
+   },
+   "prilagodjeni_plus": {
+    "n": 69,
+    "prosao": 41,
+    "pogodak": 0.594,
+    "povracaj": 0.011
+   }
+  },
+  "novo bez glavne opcije": {
+   "sve": {
+    "n": 312,
+    "prosao": 183,
+    "pogodak": 0.587,
+    "povracaj": 0.021
+   },
+   "plus": {
+    "n": 97,
+    "prosao": 52,
+    "pogodak": 0.536,
+    "povracaj": -0.094
+   },
+   "minus": {
+    "n": 215,
+    "prosao": 131,
+    "pogodak": 0.609,
+    "povracaj": 0.072
+   },
+   "prilagodjeni": {
+    "n": 220,
+    "prosao": 122,
+    "pogodak": 0.555,
+    "povracaj": -0.038
+   },
+   "prilagodjeni_plus": {
+    "n": 68,
+    "prosao": 40,
+    "pogodak": 0.588,
+    "povracaj": -0.002
+   }
+  },
+  "novo bez ograničenja": {
+   "sve": {
+    "n": 312,
+    "prosao": 184,
+    "pogodak": 0.59,
+    "povracaj": 0.025
+   },
+   "plus": {
+    "n": 97,
+    "prosao": 53,
+    "pogodak": 0.546,
+    "povracaj": -0.071
+   },
+   "minus": {
+    "n": 215,
+    "prosao": 131,
+    "pogodak": 0.609,
+    "povracaj": 0.069
+   },
+   "prilagodjeni": {
+    "n": 220,
+    "prosao": 122,
+    "pogodak": 0.555,
+    "povracaj": -0.038
+   },
+   "prilagodjeni_plus": {
+    "n": 69,
+    "prosao": 41,
+    "pogodak": 0.594,
+    "povracaj": 0.016
+   }
+  },
+  "novo, samo naniže": {
+   "sve": {
+    "n": 312,
+    "prosao": 191,
+    "pogodak": 0.612,
+    "povracaj": 0.067
+   },
+   "plus": {
+    "n": 95,
+    "prosao": 56,
+    "pogodak": 0.589,
+    "povracaj": 0.002
+   },
+   "minus": {
+    "n": 217,
+    "prosao": 135,
+    "pogodak": 0.622,
+    "povracaj": 0.095
+   },
+   "prilagodjeni": {
+    "n": 216,
+    "prosao": 126,
+    "pogodak": 0.583,
+    "povracaj": 0.011
+   },
+   "prilagodjeni_plus": {
+    "n": 61,
+    "prosao": 41,
+    "pogodak": 0.672,
+    "povracaj": 0.14
+   }
+  },
+  "novo, prosek sa sirovim": {
+   "sve": {
+    "n": 312,
+    "prosao": 190,
+    "pogodak": 0.609,
+    "povracaj": 0.06
+   },
+   "plus": {
+    "n": 96,
+    "prosao": 55,
+    "pogodak": 0.573,
+    "povracaj": -0.024
+   },
+   "minus": {
+    "n": 216,
+    "prosao": 135,
+    "pogodak": 0.625,
+    "povracaj": 0.097
+   },
+   "prilagodjeni": {
+    "n": 217,
+    "prosao": 126,
+    "pogodak": 0.581,
+    "povracaj": 0.007
+   },
+   "prilagodjeni_plus": {
+    "n": 64,
+    "prosao": 41,
+    "pogodak": 0.641,
+    "povracaj": 0.093
+   }
+  },
+  "naniže + tim sa odsutnim bez MINUS": {
+   "sve": {
+    "n": 290,
+    "prosao": 184,
+    "pogodak": 0.634,
+    "povracaj": 0.127
+   },
+   "plus": {
+    "n": 130,
+    "prosao": 73,
+    "pogodak": 0.562,
+    "povracaj": -0.03
+   },
+   "minus": {
+    "n": 160,
+    "prosao": 111,
+    "pogodak": 0.694,
+    "povracaj": 0.255
+   },
+   "prilagodjeni": {
+    "n": 163,
+    "prosao": 106,
+    "pogodak": 0.65,
+    "povracaj": 0.15
+   },
+   "prilagodjeni_plus": {
+    "n": 96,
+    "prosao": 58,
+    "pogodak": 0.604,
+    "povracaj": 0.046
+   }
+  },
+  "naniže + bez MINUS + PLUS samo glavni": {
+   "sve": {
+    "n": 260,
+    "prosao": 163,
+    "pogodak": 0.627,
+    "povracaj": 0.113
+   },
+   "plus": {
+    "n": 99,
+    "prosao": 53,
+    "pogodak": 0.535,
+    "povracaj": -0.093
+   },
+   "minus": {
+    "n": 161,
+    "prosao": 110,
+    "pogodak": 0.683,
+    "povracaj": 0.24
+   },
+   "prilagodjeni": {
+    "n": 134,
+    "prosao": 85,
+    "pogodak": 0.634,
+    "povracaj": 0.116
+   },
+   "prilagodjeni_plus": {
+    "n": 66,
+    "prosao": 37,
+    "pogodak": 0.561,
+    "povracaj": -0.058
+   }
+  },
+  "naniže + bez MINUS, bez dopune do 6 kad tim nema MINUS": {
+   "sve": {
+    "n": 224,
+    "prosao": 150,
+    "pogodak": 0.67,
+    "povracaj": 0.171
+   },
+   "plus": {
+    "n": 95,
+    "prosao": 56,
+    "pogodak": 0.589,
+    "povracaj": 0.002
+   },
+   "minus": {
+    "n": 129,
+    "prosao": 94,
+    "pogodak": 0.729,
+    "povracaj": 0.295
+   },
+   "prilagodjeni": {
+    "n": 114,
+    "prosao": 80,
+    "pogodak": 0.702,
+    "povracaj": 0.216
+   },
+   "prilagodjeni_plus": {
+    "n": 61,
+    "prosao": 41,
+    "pogodak": 0.672,
+    "povracaj": 0.14
+   }
+  }
+ }
+}

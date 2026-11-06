@@ -1,0 +1,326 @@
+{
+ "odsustvo druga poz": {
+  "min": {
+   "odnos": 0.989,
+   "n": 360
+  },
+  "P": {
+   "odnos": 1.008,
+   "n": 360
+  },
+  "S": {
+   "odnos": 1.017,
+   "n": 360
+  },
+  "A": {
+   "odnos": 0.926,
+   "n": 360
+  }
+ },
+ "odsustvo ista poz: 1. po minutima": {
+  "min": {
+   "odnos": 1.016,
+   "n": 82
+  },
+  "P": {
+   "odnos": 0.97,
+   "n": 82
+  },
+  "S": {
+   "odnos": 0.953,
+   "n": 82
+  },
+  "A": {
+   "odnos": 1.221,
+   "n": 82
+  }
+ },
+ "odsustvo ista poz: ostali": {
+  "min": {
+   "odnos": 1.154,
+   "n": 213
+  },
+  "P": {
+   "odnos": 1.169,
+   "n": 213
+  },
+  "S": {
+   "odnos": 1.054,
+   "n": 213
+  },
+  "A": {
+   "odnos": 1.143,
+   "n": 213
+  }
+ },
+ "odsustvo rang 1": {
+  "min": {
+   "odnos": 1.034,
+   "n": 66
+  },
+  "P": {
+   "odnos": 0.922,
+   "n": 66
+  },
+  "S": {
+   "odnos": 0.957,
+   "n": 66
+  },
+  "A": {
+   "odnos": 1.054,
+   "n": 66
+  }
+ },
+ "odsustvo rang 2": {
+  "min": {
+   "odnos": 0.979,
+   "n": 66
+  },
+  "P": {
+   "odnos": 0.923,
+   "n": 66
+  },
+  "S": {
+   "odnos": 0.948,
+   "n": 66
+  },
+  "A": {
+   "odnos": 1.034,
+   "n": 66
+  }
+ },
+ "odsustvo rang 3": {
+  "min": {
+   "odnos": 1.02,
+   "n": 66
+  },
+  "P": {
+   "odnos": 1.019,
+   "n": 66
+  },
+  "S": {
+   "odnos": 0.918,
+   "n": 66
+  },
+  "A": {
+   "odnos": 1.094,
+   "n": 66
+  }
+ },
+ "odsustvo rang 4": {
+  "min": {
+   "odnos": 1.059,
+   "n": 457
+  },
+  "P": {
+   "odnos": 1.141,
+   "n": 457
+  },
+  "S": {
+   "odnos": 1.058,
+   "n": 457
+  },
+  "A": {
+   "odnos": 1.017,
+   "n": 457
+  }
+ },
+ "odsustvo: glavna opcija ili direktna zamena": {
+  "min": {
+   "odnos": 1.011,
+   "n": 99
+  },
+  "P": {
+   "odnos": 0.927,
+   "n": 99
+  },
+  "S": {
+   "odnos": 0.944,
+   "n": 99
+  },
+  "A": {
+   "odnos": 1.068,
+   "n": 99
+  }
+ },
+ "odsustvo: svi ostali": {
+  "min": {
+   "odnos": 1.049,
+   "n": 556
+  },
+  "P": {
+   "odnos": 1.09,
+   "n": 556
+  },
+  "S": {
+   "odnos": 1.032,
+   "n": 556
+  },
+  "A": {
+   "odnos": 1.025,
+   "n": 556
+  }
+ },
+ "osnova rang 1": {
+  "min": {
+   "odnos": 0.972,
+   "n": 66
+  },
+  "P": {
+   "odnos": 0.9,
+   "n": 66
+  },
+  "S": {
+   "odnos": 1.029,
+   "n": 66
+  },
+  "A": {
+   "odnos": 0.97,
+   "n": 66
+  }
+ },
+ "osnova rang 2": {
+  "min": {
+   "odnos": 0.923,
+   "n": 66
+  },
+  "P": {
+   "odnos": 0.799,
+   "n": 66
+  },
+  "S": {
+   "odnos": 0.846,
+   "n": 66
+  },
+  "A": {
+   "odnos": 0.834,
+   "n": 66
+  }
+ },
+ "osnova rang 3": {
+  "min": {
+   "odnos": 0.958,
+   "n": 66
+  },
+  "P": {
+   "odnos": 0.954,
+   "n": 66
+  },
+  "S": {
+   "odnos": 0.922,
+   "n": 66
+  },
+  "A": {
+   "odnos": 0.969,
+   "n": 66
+  }
+ },
+ "osnova rang 4": {
+  "min": {
+   "odnos": 1.013,
+   "n": 482
+  },
+  "P": {
+   "odnos": 1.116,
+   "n": 482
+  },
+  "S": {
+   "odnos": 0.979,
+   "n": 482
+  },
+  "A": {
+   "odnos": 1.067,
+   "n": 482
+  }
+ },
+ "povratak, 1. utakmica posle": {
+  "min": {
+   "odnos": 1.012,
+   "n": 66
+  },
+  "P": {
+   "odnos": 0.895,
+   "n": 66
+  },
+  "S": {
+   "odnos": 0.943,
+   "n": 66
+  },
+  "A": {
+   "odnos": 0.912,
+   "n": 66
+  }
+ },
+ "povratak, 2. utakmica posle": {
+  "min": {
+   "odnos": 0.975,
+   "n": 58
+  },
+  "P": {
+   "odnos": 0.917,
+   "n": 58
+  },
+  "S": {
+   "odnos": 0.9,
+   "n": 58
+  },
+  "A": {
+   "odnos": 0.949,
+   "n": 58
+  }
+ },
+ "povratak, 3. utakmica posle": {
+  "min": {
+   "odnos": 0.971,
+   "n": 42
+  },
+  "P": {
+   "odnos": 0.872,
+   "n": 42
+  },
+  "S": {
+   "odnos": 1.013,
+   "n": 42
+  },
+  "A": {
+   "odnos": 0.707,
+   "n": 42
+  }
+ },
+ "povratak, 4. utakmica posle": {
+  "min": {
+   "odnos": 1.05,
+   "n": 35
+  },
+  "P": {
+   "odnos": 1.16,
+   "n": 35
+  },
+  "S": {
+   "odnos": 1.065,
+   "n": 35
+  },
+  "A": {
+   "odnos": 1.268,
+   "n": 35
+  }
+ },
+ "povratak, 5. utakmica posle": {
+  "min": {
+   "odnos": 0.963,
+   "n": 48
+  },
+  "P": {
+   "odnos": 0.925,
+   "n": 48
+  },
+  "S": {
+   "odnos": 0.873,
+   "n": 48
+  },
+  "A": {
+   "odnos": 1.036,
+   "n": 48
+  }
+ }
+}
