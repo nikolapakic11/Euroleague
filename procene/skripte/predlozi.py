@@ -87,8 +87,11 @@ def izaberi(tabla, K=None):
 # najviše 4 iz utakmice, 2 iz tima. PLUS nije obavezan; dodaje se do DAN_PLUS najboljih PLUS sa verovatnoćom bar
 # DAN_PRAG i prednošću bar DAN_PLUS_PREDNOST. Walk-forward kola 5–10: 60,6%, +17,8%, prosečna kvota 1,95
 # (po verovatnoći: 60,8%, +2,3%, kvota 1,69). Isto pravilo i za dan sa jednom utakmicom.
-DAN_PRAG, DAN_PREDNOST, DAN_NAJMANJE, DAN_MAX = 0.54, 0.04, 4, 12
-DAN_PLUS, DAN_PLUS_PREDNOST = 2, 0.02
+# Od 7.11.2026 (provera/logika_2026-11-06.md): prednost bar 6%; PLUS signali modela nemaju vrednost (kad je model iznad
+# tržišta, preko ne prolazi češće od tržišta), pa nema „poželjnog PLUS-a“, a PLUS ulazi samo sa prednošću bar 8%
+# (ručno dodat ide uvek, uz tvrd razlog).
+DAN_PRAG, DAN_PREDNOST, DAN_NAJMANJE, DAN_MAX = 0.54, 0.06, 4, 12
+DAN_PLUS, DAN_PLUS_PREDNOST = 0, 0.08
 DAN_PO_UT, DAN_PO_TIMU, DAN_PO_STAVCI = 4, 2, 12
 DAN_NISKA, DAN_NISKE_MAX = 1.65, 3   # najviše 3 predloga sa kvotom ispod 1,65 za dan (Nikola, 6.11.: ne sme sve najniže kvote)
 DAN_FORMA_N, DAN_FORMA_MIN = 7, 0.5            # u poslednjih 7 utakmica bar polovina na stranu predloga
@@ -133,7 +136,8 @@ def izbor_dana(P, B=None, ranije=()):
     def moze(p, izab):
         return (all(q['k'] != p['k'] for q in izab) and sum(q['g'] == p['g'] for q in izab) < DAN_PO_UT and sum(q['tim'] == p['tim'] for q in izab) < DAN_PO_TIMU
                 and sum((q['s'], q['strana']) == (p['s'], p['strana']) for q in izab) < DAN_PO_STAVCI
-                and (p['kvota'] >= DAN_NISKA or sum(q['kvota'] < DAN_NISKA for q in izab) < DAN_NISKE_MAX))
+                and (p['kvota'] >= DAN_NISKA or sum(q['kvota'] < DAN_NISKA for q in izab) < DAN_NISKE_MAX)
+                and (p['strana'] != 'o' or ocena(p) >= DAN_PLUS_PREDNOST))
     izab = []
     for p in P:                                   # prvo svi koji prolaze prag
         if len(izab) >= DAN_MAX:

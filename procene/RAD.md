@@ -57,8 +57,13 @@ Zakazani zadaci su isključeni (odluka 5.11.2026): ništa se ne pokreće samo. S
 - Konačni predlozi: sat pre prve utakmice dana ako počinje pre 18h, inače sat i po pre (zajedno.rokovi).
   Konačno je ono što je objavljeno u tom trenutku; posle se ne menja. Učinak se računa samo za konačne.
 - Predlozi za dan (od 6.11.2026, posle podne): rang po PREDNOSTI nad tržištem (naša verovatnoća − fer verovatnoća iz kvota
-  svih kladionica). Ulazi strana sa prednošću bar 4 poena i verovatnoćom bar 54%, najmanje 4, najviše 12; najviše 4 iz
-  utakmice, 2 iz tima, 3 sa kvotom ispod 1,65. PLUS nije obavezan; do 2 najbolja PLUS sa bar 54% i prednošću bar 2 poena.
+  svih kladionica). Ulazi strana sa prednošću bar 6 poena i verovatnoćom bar 54% (od 7.11.2026), najmanje 4, najviše 12; najviše 4 iz
+  utakmice, 2 iz tima, 3 sa kvotom ispod 1,65. PLUS samo sa prednošću bar 8 poena (i u dopuni do 4); nema „poželjnog PLUS-a“.
+  Ručno dodat predlog (iskljuceni.json → dodati) samo uz tvrd razlog; ručni minuti (minuti.json) samo uz tvrd podatak
+  (izjava trenera, potvrđena povreda), ne zbog utiska (Walker 6.11: ručno 26 min, igrao 21,9).
+- Spoj od 7.11.2026: fiksno 30% model / 70% tržište u logitu + slobodni član prema poslednja 2 kola (`spajanje.podesi_fiksno`),
+  bez Platt-a. Razlog i provera: `provera/logika_2026-11-06.md` (tržište precenjuje preko; PLUS signali modela bez vrednosti;
+  stari spoj preterano siguran iznad 62%). Senka (`senka.py`) i dalje računa staru varijantu radi poređenja.
   Razlog (Nikola): po samoj verovatnoći izbor ide na najniže kvote, a to može svako. Provera: `procene/provera/kvote_2026-11-06.txt`
   (po prednosti 60,6%, +17,8%, kvota 1,95; po verovatnoći 60,8%, +2,3%, kvota 1,69).
 - Spajanje (od 6.11.2026): novija kola imaju veću težinu (0,55 po kolu unazad), slobodni član prema stopi preko u

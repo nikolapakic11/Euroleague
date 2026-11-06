@@ -1,40 +1,27 @@
 {
  "w": [
-  0.1263,
-  0.3254,
-  1.1594,
-  -0.0599,
-  -0.0596
+  -0.047,
+  0.3,
+  0.7,
+  0.0,
+  0.0
  ],
- "kal": {
-  "P": [
-   -0.0151,
-   0.8781
-  ],
-  "S": [
-   -0.052,
-   0.9618
-  ],
-  "A": [
-   0.0164,
-   1.0672
-  ]
- },
- "n_wf": 1736,
+ "kal": {},
+ "n_wf": 2495,
  "w_kola_4_6": [
-  -0.0359,
-  0.4857,
-  0.1113,
-  -0.1776,
-  -0.1102
+  -0.1912,
+  0.3,
+  0.7,
+  0.0,
+  0.0
  ],
- "n_granica": 2300,
+ "n_granica": 3059,
  "pravilo": {
   "kvota_min": 1.5,
-  "prag_minus": 0.53,
-  "prag_plus": 0.53,
+  "prag_minus": 0.5,
+  "prag_plus": 0.5,
   "min_ut": 0,
-  "max_ut": 6,
+  "max_ut": 40,
   "plus_min": 0,
   "nivoi": [
    [
@@ -49,142 +36,142 @@
  },
  "test": {
   "kola_7_9": {
-   "utakmica": 32,
-   "predloga": 192,
+   "utakmica": 38,
+   "predloga": 1014,
    "ukupno": {
-    "n": 192,
-    "prosao": 115,
-    "dobit": 18.75,
-    "pp": 0.633
+    "n": 1014,
+    "prosao": 571,
+    "dobit": 44.09,
+    "pp": 0.576
    },
    "po_strani": {
     "minus": {
-     "n": 186,
-     "prosao": 111,
-     "dobit": 18.24,
-     "pp": 0.635
+     "n": 918,
+     "prosao": 509,
+     "dobit": 40.9,
+     "pp": 0.581
     },
     "plus": {
-     "n": 6,
-     "prosao": 4,
-     "dobit": 0.51,
-     "pp": 0.582
+     "n": 96,
+     "prosao": 62,
+     "dobit": 3.19,
+     "pp": 0.531
     }
    },
    "po_nivou": {
     "jak": {
-     "n": 113,
-     "prosao": 69,
-     "dobit": 11.38,
-     "pp": 0.661
+     "n": 149,
+     "prosao": 88,
+     "dobit": -0.12,
+     "pp": 0.647
     },
     "nagoveštaj": {
-     "n": 3,
-     "prosao": 2,
-     "dobit": 0.83,
-     "pp": 0.553
+     "n": 356,
+     "prosao": 202,
+     "dobit": 29.14,
+     "pp": 0.532
     },
     "solidan": {
-     "n": 76,
-     "prosao": 44,
-     "dobit": 6.54,
-     "pp": 0.596
+     "n": 509,
+     "prosao": 281,
+     "dobit": 15.07,
+     "pp": 0.586
     }
    },
    "po_kolu": {
     "7": {
-     "n": 54,
-     "prosao": 33,
-     "dobit": 5.65,
-     "pp": 0.638
+     "n": 244,
+     "prosao": 148,
+     "dobit": 30.0,
+     "pp": 0.579
     },
     "8": {
-     "n": 60,
-     "prosao": 34,
-     "dobit": 2.57,
-     "pp": 0.626
+     "n": 262,
+     "prosao": 137,
+     "dobit": -7.16,
+     "pp": 0.575
     },
     "9": {
-     "n": 60,
-     "prosao": 38,
-     "dobit": 9.43,
-     "pp": 0.636
+     "n": 271,
+     "prosao": 153,
+     "dobit": 10.51,
+     "pp": 0.583
     },
     "10": {
-     "n": 18,
-     "prosao": 10,
-     "dobit": 1.1,
-     "pp": 0.637
+     "n": 237,
+     "prosao": 133,
+     "dobit": 10.74,
+     "pp": 0.567
     }
    }
   },
   "kola_4_6": {
    "utakmica": 29,
-   "predloga": 171,
+   "predloga": 744,
    "ukupno": {
-    "n": 171,
-    "prosao": 106,
-    "dobit": 23.04,
-    "pp": 0.625
+    "n": 744,
+    "prosao": 436,
+    "dobit": 64.53,
+    "pp": 0.574
    },
    "po_strani": {
     "minus": {
-     "n": 167,
-     "prosao": 103,
-     "dobit": 21.6,
-     "pp": 0.626
+     "n": 666,
+     "prosao": 394,
+     "dobit": 75.69,
+     "pp": 0.58
     },
     "plus": {
-     "n": 4,
-     "prosao": 3,
-     "dobit": 1.44,
-     "pp": 0.592
+     "n": 78,
+     "prosao": 42,
+     "dobit": -11.16,
+     "pp": 0.529
     }
    },
    "po_nivou": {
     "jak": {
-     "n": 90,
-     "prosao": 57,
-     "dobit": 11.14,
-     "pp": 0.654
+     "n": 93,
+     "prosao": 63,
+     "dobit": 13.51,
+     "pp": 0.647
     },
     "nagoveštaj": {
-     "n": 8,
-     "prosao": 2,
-     "dobit": -3.99,
-     "pp": 0.547
+     "n": 272,
+     "prosao": 144,
+     "dobit": 0.92,
+     "pp": 0.532
     },
     "solidan": {
-     "n": 73,
-     "prosao": 47,
-     "dobit": 15.89,
-     "pp": 0.598
+     "n": 379,
+     "prosao": 229,
+     "dobit": 50.1,
+     "pp": 0.586
     }
    },
    "po_kolu": {
     "4": {
-     "n": 54,
-     "prosao": 34,
-     "dobit": 6.91,
-     "pp": 0.632
+     "n": 234,
+     "prosao": 140,
+     "dobit": 23.32,
+     "pp": 0.58
     },
     "5": {
-     "n": 59,
-     "prosao": 40,
-     "dobit": 14.23,
-     "pp": 0.628
+     "n": 259,
+     "prosao": 158,
+     "dobit": 34.36,
+     "pp": 0.573
     },
     "6": {
-     "n": 58,
-     "prosao": 32,
-     "dobit": 1.9,
-     "pp": 0.616
+     "n": 251,
+     "prosao": 138,
+     "dobit": 6.85,
+     "pp": 0.57
     }
    }
   },
   "opis": "koeficijenti spajanja iz kola 4–6; kola 7–9 su van podešavanja, kola 4–6 su u periodu podešavanja. Admiral i MaxBet, jedna kladionica po danu, samo glavne granice",
-  "ll_spojeno": 0.6919,
-  "ll_kvote": 0.6849,
-  "ll_model": 0.7075
+  "ll_spojeno": 0.685,
+  "ll_kvote": 0.6864,
+  "ll_model": 0.7003
  }
 }

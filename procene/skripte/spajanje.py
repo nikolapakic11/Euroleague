@@ -182,6 +182,26 @@ def izbor_utakmice(kand):
     return [dict(c, nivo=nivo(c['pp'], slab=c.get('slab', False)), rang=r) for r, c in enumerate(L, 1)]
 
 
+# Odluka 7.11.2026 (provera/logika_2026-11-06.md): naučene težine + Platt nisu pobeđivale tržište (log gubitak +0,0011)
+# i bile su preterano sigurne iznad 62% (predviđeno 65%, stvarno 55%). Fiksni spoj, 30% model i 70% tržište u logitu,
+# uz slobodni član prema poslednjih POMAK_KOLA kola: −0,0017 prema tržištu, dobro kalibrisan, izbor pozitivan u kolima 6–10.
+UDEO_MODELA = 0.30
+
+
+def podesi_fiksno(R):
+    """w za x_vek: [c, UDEO_MODELA, 1 − UDEO_MODELA, 0, 0]; c tako da prosek preko = stvarni na poslednjih POMAK_KOLA kola."""
+    w = [0.0, UDEO_MODELA, 1 - UDEO_MODELA, 0.0, 0.0]
+    if not R:
+        return w
+    kmax = max(r['kolo'] for r in R)
+    Y = [r for r in R if r['kolo'] > kmax - POMAK_KOLA]
+    c = sum(r['preko'] for r in Y) / len(Y)
+    for _ in range(20):
+        m = sum(preko(w, r['s'], r['pm'], r['tr']) for r in Y) / len(Y)
+        w[0] += (lg(c) - lg(m)) * 0.8
+    return [round(a, 4) for a in w]
+
+
 def platt(X, l2=20.0):
     """X: dict(p, y). Vraća [a, b] za logit p' = a + b·logit p; L2 kazna ka a=0, b=1."""
     a, b = 0.0, 1.0
@@ -214,10 +234,10 @@ def predlozi_unazad(w, R, g_od, kal=None):
 
 def main():
     R = ucitaj(os.path.join(PROCENE, 'provera', 'granice.json'))
-    w_sve = podesi_vreme(R)
+    w_sve = podesi_fiksno(R)
     tr = [r for r in R if r['kolo'] <= 6]
     te = [r for r in R if r['kolo'] >= 7]
-    w_tr = podesi_vreme(tr)
+    w_tr = podesi_fiksno(tr)
     from model import Baza
     B = Baza()
     g_idx = {(x['k'], x['dan']): x['g'] for x in B.rows}
@@ -239,14 +259,14 @@ def main():
         ranije = [r for r in R if r['kolo'] < k]
         if len(ranije) < 300:
             continue
-        w_k = podesi_vreme(ranije)
+        w_k = podesi_fiksno(ranije)
         wf += [dict(s=r['s'], p=preko(w_k, r['s'], r['pm'], r['tr']), y=r['preko']) for r in R if r['kolo'] == k]
     # Od 6.11.2026: slobodni član spajanja se već pomera prema poslednjim kolima, pa bi Platt na starim walk-forward
     # predviđanjima (koja su potcenjivala preko) ispravku uradio još jednom (+2,7 poena na kolima 9–10). Zato se
     # kalibracija podešava na predviđanjima tekućih koeficijenata u poslednja 3 kola (skupljena ka 1, l2=20).
     kmax = max(r['kolo'] for r in R)
     sk = [dict(s=r['s'], p=preko(w_sve, r['s'], r['pm'], r['tr']), y=r['preko']) for r in R if r['kolo'] > kmax - 3]
-    kal = {s: platt([x for x in sk if x['s'] == s]) for s in 'PSA'}
+    kal = {}    # od 7.11.2026 bez Platt-a (fiksni spoj je već kalibrisan)
 
     test = {}
     for ime, X in (('kola_7_9', te), ('kola_4_6', tr)):
