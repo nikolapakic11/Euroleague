@@ -1,6 +1,6 @@
 {
 "v": 1,
-"savedAt": 1793957658623,
+"savedAt": 1793961041239,
 "tickets": [
 {
 "id": "adm7579167865",
@@ -74188,6 +74188,2746 @@
 "stat": "P",
 "line": 17.5,
 "odds": 1.92
+}
+]
+},
+{
+"id": "r10d3-01",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Lonnie Walker IV",
+"team": "Besiktas",
+"stat": "P",
+"line": 16.5,
+"odds": 1.88
+},
+{
+"p": "Marcus Carr",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Jaylen Hoard",
+"team": "Maccabi Tel Aviv",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Scottie Wilbekin",
+"team": "Besiktas",
+"stat": "P",
+"line": 13.5,
+"odds": 1.84
+},
+{
+"p": "Alessandro Pajola",
+"team": "Partizan",
+"stat": "A",
+"line": 4.5,
+"odds": 1.72
+},
+{
+"p": "Wendell Moore Jr.",
+"team": "Virtus Bologna",
+"stat": "P",
+"line": 11.5,
+"odds": 1.92
+},
+{
+"p": "Yam Madar",
+"team": "Maccabi Tel Aviv",
+"stat": "A",
+"line": 4.5,
+"odds": 2
+},
+{
+"p": "McKinley Wright IV",
+"team": "Dubai",
+"stat": "P",
+"line": 10.5,
+"odds": 1.83
+}
+]
+},
+{
+"id": "r10d3-02",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Dwayne Bacon",
+"team": "Dubai",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Alessandro Pajola",
+"team": "Partizan",
+"stat": "A",
+"line": 4.5,
+"odds": 1.72
+},
+{
+"p": "Bo Klintman",
+"team": "Virtus Bologna",
+"stat": "P",
+"line": 5.5,
+"odds": 1.79
+},
+{
+"p": "Jimmy Clark III",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 13.5,
+"odds": 1.99
+},
+{
+"p": "Christian Koloko",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "Semi Ojeleye",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Azuolas Tubelis",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 10.5,
+"odds": 1.99
+},
+{
+"p": "McKinley Wright IV",
+"team": "Dubai",
+"stat": "P",
+"line": 10.5,
+"odds": 1.83
+}
+]
+},
+{
+"id": "r10d3-03",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Jordan Nwora",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Jaylen Hoard",
+"team": "Maccabi Tel Aviv",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Oshae Brissett",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Sasha Vezenkov",
+"team": "Olympiacos",
+"stat": "P",
+"line": 18.5,
+"odds": 1.92
+},
+{
+"p": "Jaylen Nowell",
+"team": "Besiktas",
+"stat": "P",
+"line": 11.5,
+"odds": 1.93
+},
+{
+"p": "Saben Lee",
+"team": "Zalgiris Kaunas",
+"stat": "A",
+"line": 4.5,
+"odds": 1.77
+},
+{
+"p": "Tyson Ward",
+"team": "Olympiacos",
+"stat": "P",
+"line": 9.5,
+"odds": 1.8
+},
+{
+"p": "Dwayne Bacon",
+"team": "Dubai",
+"stat": "P",
+"line": 15.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d3-04",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Mfiondu Kabengele",
+"team": "Dubai",
+"stat": "P",
+"line": 14.5,
+"odds": 1.84
+},
+{
+"p": "Luca Vildoza",
+"team": "Partizan",
+"stat": "A",
+"line": 3.5,
+"odds": 1.7
+},
+{
+"p": "Wendell Moore Jr.",
+"team": "Virtus Bologna",
+"stat": "P",
+"line": 11.5,
+"odds": 1.92
+},
+{
+"p": "Tyson Ward",
+"team": "Olympiacos",
+"stat": "P",
+"line": 9.5,
+"odds": 1.8
+},
+{
+"p": "Bo Klintman",
+"team": "Virtus Bologna",
+"stat": "P",
+"line": 5.5,
+"odds": 1.79
+},
+{
+"p": "Chris Jones",
+"team": "Crvena Zvezda",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Jimmy Clark III",
+"team": "Maccabi Tel Aviv",
+"stat": "A",
+"line": 3.5,
+"odds": 1.7
+},
+{
+"p": "Saben Lee",
+"team": "Zalgiris Kaunas",
+"stat": "A",
+"line": 4.5,
+"odds": 1.77
+}
+]
+},
+{
+"id": "r10d3-05",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Oshae Brissett",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Lonnie Walker IV",
+"team": "Besiktas",
+"stat": "P",
+"line": 16.5,
+"odds": 1.88
+},
+{
+"p": "Bonzie Colson",
+"team": "Maccabi Tel Aviv",
+"stat": "S",
+"line": 3.5,
+"odds": 1.72
+},
+{
+"p": "Semi Ojeleye",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Anthony Brown",
+"team": "Besiktas",
+"stat": "P",
+"line": 7.5,
+"odds": 1.83
+},
+{
+"p": "Sterling Brown",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 10.5,
+"odds": 1.91
+},
+{
+"p": "Marcus Carr",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Chris Jones",
+"team": "Crvena Zvezda",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+}
+]
+},
+{
+"id": "r10d3-06",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Alessandro Pajola",
+"team": "Partizan",
+"stat": "A",
+"line": 4.5,
+"odds": 1.72
+},
+{
+"p": "Robert Franks",
+"team": "Partizan",
+"stat": "P",
+"line": 5.5,
+"odds": 1.92
+},
+{
+"p": "Bonzie Colson",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 10.5,
+"odds": 1.83
+},
+{
+"p": "Marcus Carr",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "McKinley Wright IV",
+"team": "Dubai",
+"stat": "P",
+"line": 10.5,
+"odds": 1.83
+},
+{
+"p": "Tyson Ward",
+"team": "Olympiacos",
+"stat": "P",
+"line": 9.5,
+"odds": 1.8
+},
+{
+"p": "Ognjen Dobric",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 3.5,
+"odds": 1.92
+},
+{
+"p": "Elie Okobo",
+"team": "Dubai",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+}
+]
+},
+{
+"id": "r10d3-07",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Jaylen Hoard",
+"team": "Maccabi Tel Aviv",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Scottie Wilbekin",
+"team": "Besiktas",
+"stat": "P",
+"line": 13.5,
+"odds": 1.84
+},
+{
+"p": "Jaylen Nowell",
+"team": "Besiktas",
+"stat": "P",
+"line": 11.5,
+"odds": 1.93
+},
+{
+"p": "Aliou Diarra",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 6.5,
+"odds": 1.85
+},
+{
+"p": "Carlik Jones",
+"team": "Partizan",
+"stat": "A",
+"line": 6.5,
+"odds": 1.7
+},
+{
+"p": "Codi Miller-McIntyre",
+"team": "Olympiacos",
+"stat": "P",
+"line": 10.5,
+"odds": 1.92
+},
+{
+"p": "Jared Butler",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 10.5,
+"odds": 1.92
+},
+{
+"p": "Chris Jones",
+"team": "Crvena Zvezda",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+}
+]
+},
+{
+"id": "r10d3-08",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Jimmy Clark III",
+"team": "Maccabi Tel Aviv",
+"stat": "A",
+"line": 3.5,
+"odds": 1.7
+},
+{
+"p": "Elie Okobo",
+"team": "Dubai",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Nick Weiler Babb",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 3.5,
+"odds": 1.88
+},
+{
+"p": "Mfiondu Kabengele",
+"team": "Dubai",
+"stat": "P",
+"line": 14.5,
+"odds": 1.84
+},
+{
+"p": "Derrick Alston Jr",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Jaylen Hoard",
+"team": "Maccabi Tel Aviv",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Sasha Vezenkov",
+"team": "Olympiacos",
+"stat": "P",
+"line": 18.5,
+"odds": 1.92
+},
+{
+"p": "Chris Jones",
+"team": "Crvena Zvezda",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+}
+]
+},
+{
+"id": "r10d3-09",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Tyson Ward",
+"team": "Olympiacos",
+"stat": "P",
+"line": 9.5,
+"odds": 1.8
+},
+{
+"p": "Scottie Wilbekin",
+"team": "Besiktas",
+"stat": "P",
+"line": 13.5,
+"odds": 1.84
+},
+{
+"p": "Yam Madar",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 12.5,
+"odds": 2.02
+},
+{
+"p": "Keaton Wallace",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 4.5,
+"odds": 2.01
+},
+{
+"p": "Aliou Diarra",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 6.5,
+"odds": 1.85
+},
+{
+"p": "Chris Jones",
+"team": "Crvena Zvezda",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Marcus Carr",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Dwayne Bacon",
+"team": "Dubai",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+}
+]
+},
+{
+"id": "r10d3-10",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Chima Moneke",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 10.5,
+"odds": 1.92
+},
+{
+"p": "Anthony Brown",
+"team": "Besiktas",
+"stat": "P",
+"line": 7.5,
+"odds": 1.83
+},
+{
+"p": "Jaylen Nowell",
+"team": "Besiktas",
+"stat": "P",
+"line": 11.5,
+"odds": 1.93
+},
+{
+"p": "Trent Frazier",
+"team": "Virtus Bologna",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Semi Ojeleye",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Dwayne Bacon",
+"team": "Dubai",
+"stat": "P",
+"line": 15.5,
+"odds": 1.92
+},
+{
+"p": "Jaylen Hoard",
+"team": "Maccabi Tel Aviv",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Bo Klintman",
+"team": "Virtus Bologna",
+"stat": "P",
+"line": 5.5,
+"odds": 1.79
+}
+]
+},
+{
+"id": "r10d3-11",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "McKinley Wright IV",
+"team": "Dubai",
+"stat": "P",
+"line": 10.5,
+"odds": 1.83
+},
+{
+"p": "Evan Fournier",
+"team": "Olympiacos",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+},
+{
+"p": "Carsen Edwards",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 15.5,
+"odds": 1.98
+},
+{
+"p": "Tyson Carter",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 7.5,
+"odds": 1.87
+},
+{
+"p": "Lonnie Walker IV",
+"team": "Besiktas",
+"stat": "P",
+"line": 16.5,
+"odds": 1.88
+},
+{
+"p": "Jordan Nwora",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Mfiondu Kabengele",
+"team": "Dubai",
+"stat": "P",
+"line": 14.5,
+"odds": 1.84
+},
+{
+"p": "Dustin Sleva",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 5.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d3-12",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Christian Koloko",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "Tyson Ward",
+"team": "Olympiacos",
+"stat": "P",
+"line": 9.5,
+"odds": 1.8
+},
+{
+"p": "Carlik Jones",
+"team": "Partizan",
+"stat": "A",
+"line": 6.5,
+"odds": 1.7
+},
+{
+"p": "Saben Lee",
+"team": "Zalgiris Kaunas",
+"stat": "A",
+"line": 4.5,
+"odds": 1.77
+},
+{
+"p": "Oshae Brissett",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Jonas Valanciunas",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 14.5,
+"odds": 1.8
+},
+{
+"p": "Semi Ojeleye",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Luca Vildoza",
+"team": "Partizan",
+"stat": "A",
+"line": 3.5,
+"odds": 1.7
+}
+]
+},
+{
+"id": "r10d3-13",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Jaylen Nowell",
+"team": "Besiktas",
+"stat": "P",
+"line": 11.5,
+"odds": 1.93
+},
+{
+"p": "Ebuka Izundu",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 4.5,
+"odds": 1.88
+},
+{
+"p": "McKinley Wright IV",
+"team": "Dubai",
+"stat": "P",
+"line": 10.5,
+"odds": 1.83
+},
+{
+"p": "Tyson Ward",
+"team": "Olympiacos",
+"stat": "P",
+"line": 9.5,
+"odds": 1.8
+},
+{
+"p": "Sasha Vezenkov",
+"team": "Olympiacos",
+"stat": "P",
+"line": 18.5,
+"odds": 1.92
+},
+{
+"p": "Anthony Brown",
+"team": "Besiktas",
+"stat": "P",
+"line": 7.5,
+"odds": 1.83
+},
+{
+"p": "Saben Lee",
+"team": "Zalgiris Kaunas",
+"stat": "A",
+"line": 4.5,
+"odds": 1.77
+},
+{
+"p": "Elie Okobo",
+"team": "Dubai",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+}
+]
+},
+{
+"id": "r10d3-14",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Bonzie Colson",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 10.5,
+"odds": 1.83
+},
+{
+"p": "Elie Okobo",
+"team": "Dubai",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Sterling Brown",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 10.5,
+"odds": 1.91
+},
+{
+"p": "Semi Ojeleye",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Mfiondu Kabengele",
+"team": "Dubai",
+"stat": "P",
+"line": 14.5,
+"odds": 1.84
+},
+{
+"p": "Marcus Carr",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Alessandro Pajola",
+"team": "Partizan",
+"stat": "A",
+"line": 4.5,
+"odds": 1.72
+},
+{
+"p": "Jaylen Hoard",
+"team": "Maccabi Tel Aviv",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+}
+]
+},
+{
+"id": "r10d3-15",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Elie Okobo",
+"team": "Dubai",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Bo Klintman",
+"team": "Virtus Bologna",
+"stat": "P",
+"line": 5.5,
+"odds": 1.79
+},
+{
+"p": "Jaylen Hoard",
+"team": "Maccabi Tel Aviv",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Jaylen Nowell",
+"team": "Besiktas",
+"stat": "P",
+"line": 11.5,
+"odds": 1.93
+},
+{
+"p": "Carlik Jones",
+"team": "Partizan",
+"stat": "A",
+"line": 6.5,
+"odds": 1.7
+},
+{
+"p": "Aliou Diarra",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 6.5,
+"odds": 1.85
+},
+{
+"p": "Jimmy Clark III",
+"team": "Maccabi Tel Aviv",
+"stat": "A",
+"line": 3.5,
+"odds": 1.7
+},
+{
+"p": "Jonas Valanciunas",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 14.5,
+"odds": 1.8
+}
+]
+},
+{
+"id": "r10d3-16",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Jonas Valanciunas",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 14.5,
+"odds": 1.8
+},
+{
+"p": "Elie Okobo",
+"team": "Dubai",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Christian Koloko",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "Bo Klintman",
+"team": "Virtus Bologna",
+"stat": "P",
+"line": 5.5,
+"odds": 1.79
+},
+{
+"p": "Oshae Brissett",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Semi Ojeleye",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Marcus Carr",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Mbaye Ndiaye",
+"team": "Olympiacos",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d3-17",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Dzanan Musa",
+"team": "Dubai",
+"stat": "P",
+"line": 9.5,
+"odds": 2
+},
+{
+"p": "Sasha Vezenkov",
+"team": "Olympiacos",
+"stat": "P",
+"line": 18.5,
+"odds": 1.92
+},
+{
+"p": "Lonnie Walker IV",
+"team": "Besiktas",
+"stat": "P",
+"line": 16.5,
+"odds": 1.88
+},
+{
+"p": "Carlik Jones",
+"team": "Partizan",
+"stat": "A",
+"line": 6.5,
+"odds": 1.7
+},
+{
+"p": "Yam Madar",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 12.5,
+"odds": 2.02
+},
+{
+"p": "Jimmy Clark III",
+"team": "Maccabi Tel Aviv",
+"stat": "A",
+"line": 3.5,
+"odds": 1.7
+},
+{
+"p": "Elie Okobo",
+"team": "Dubai",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Ebuka Izundu",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 4.5,
+"odds": 1.88
+}
+]
+},
+{
+"id": "r10d3-18",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Anthony Brown",
+"team": "Besiktas",
+"stat": "P",
+"line": 7.5,
+"odds": 1.83
+},
+{
+"p": "Carlik Jones",
+"team": "Partizan",
+"stat": "P",
+"line": 15.5,
+"odds": 1.92
+},
+{
+"p": "McKinley Wright IV",
+"team": "Dubai",
+"stat": "P",
+"line": 10.5,
+"odds": 1.83
+},
+{
+"p": "Lamar Stevens",
+"team": "Partizan",
+"stat": "S",
+"line": 4.5,
+"odds": 1.97
+},
+{
+"p": "Lonnie Walker IV",
+"team": "Besiktas",
+"stat": "P",
+"line": 16.5,
+"odds": 1.88
+},
+{
+"p": "Nick Weiler Babb",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 3.5,
+"odds": 1.88
+},
+{
+"p": "Ebuka Izundu",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 4.5,
+"odds": 1.88
+},
+{
+"p": "Jonas Valanciunas",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 14.5,
+"odds": 1.8
+}
+]
+},
+{
+"id": "r10d3-19",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Yam Madar",
+"team": "Maccabi Tel Aviv",
+"stat": "A",
+"line": 4.5,
+"odds": 2
+},
+{
+"p": "Sterling Brown",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 10.5,
+"odds": 1.91
+},
+{
+"p": "Bonzie Colson",
+"team": "Maccabi Tel Aviv",
+"stat": "S",
+"line": 3.5,
+"odds": 1.72
+},
+{
+"p": "Carlik Jones",
+"team": "Partizan",
+"stat": "A",
+"line": 6.5,
+"odds": 1.7
+},
+{
+"p": "Chima Moneke",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 10.5,
+"odds": 1.92
+},
+{
+"p": "Evan Fournier",
+"team": "Olympiacos",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+},
+{
+"p": "Semi Ojeleye",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Scottie Wilbekin",
+"team": "Besiktas",
+"stat": "P",
+"line": 13.5,
+"odds": 1.84
+}
+]
+},
+{
+"id": "r10d3-20",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Jonas Valanciunas",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 14.5,
+"odds": 1.8
+},
+{
+"p": "Elie Okobo",
+"team": "Dubai",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Sterling Brown",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 10.5,
+"odds": 1.91
+},
+{
+"p": "Lonnie Walker IV",
+"team": "Besiktas",
+"stat": "P",
+"line": 16.5,
+"odds": 1.88
+},
+{
+"p": "Dwayne Bacon",
+"team": "Dubai",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Alessandro Pajola",
+"team": "Partizan",
+"stat": "A",
+"line": 4.5,
+"odds": 1.72
+},
+{
+"p": "Bonzie Colson",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 10.5,
+"odds": 1.83
+},
+{
+"p": "Yam Madar",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 12.5,
+"odds": 2.02
+}
+]
+},
+{
+"id": "r10d3-21",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Jordan Nwora",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Lonnie Walker IV",
+"team": "Besiktas",
+"stat": "P",
+"line": 16.5,
+"odds": 1.88
+},
+{
+"p": "Luca Vildoza",
+"team": "Partizan",
+"stat": "A",
+"line": 3.5,
+"odds": 1.7
+},
+{
+"p": "Chris Jones",
+"team": "Crvena Zvezda",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Jaylen Nowell",
+"team": "Besiktas",
+"stat": "P",
+"line": 11.5,
+"odds": 1.93
+},
+{
+"p": "Jonas Valanciunas",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 14.5,
+"odds": 1.8
+},
+{
+"p": "Oshae Brissett",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Lamar Stevens",
+"team": "Partizan",
+"stat": "P",
+"line": 9.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d3-22",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Luca Vildoza",
+"team": "Partizan",
+"stat": "A",
+"line": 3.5,
+"odds": 1.7
+},
+{
+"p": "Chris Jones",
+"team": "Crvena Zvezda",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "McKinley Wright IV",
+"team": "Dubai",
+"stat": "P",
+"line": 10.5,
+"odds": 1.83
+},
+{
+"p": "Chima Moneke",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 10.5,
+"odds": 1.92
+},
+{
+"p": "Saben Lee",
+"team": "Zalgiris Kaunas",
+"stat": "A",
+"line": 4.5,
+"odds": 1.77
+},
+{
+"p": "Jaylen Hoard",
+"team": "Maccabi Tel Aviv",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Elie Okobo",
+"team": "Dubai",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Jimmy Clark III",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 13.5,
+"odds": 1.99
+}
+]
+},
+{
+"id": "r10d3-23",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Kevarrius Hayes",
+"team": "Partizan",
+"stat": "P",
+"line": 10.5,
+"odds": 1.92
+},
+{
+"p": "Oshae Brissett",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Filip Petrusev",
+"team": "Dubai",
+"stat": "P",
+"line": 7.5,
+"odds": 2
+},
+{
+"p": "Chima Moneke",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 10.5,
+"odds": 1.92
+},
+{
+"p": "Evan Fournier",
+"team": "Olympiacos",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+},
+{
+"p": "Bo Klintman",
+"team": "Virtus Bologna",
+"stat": "P",
+"line": 5.5,
+"odds": 1.79
+},
+{
+"p": "Wendell Moore Jr.",
+"team": "Virtus Bologna",
+"stat": "P",
+"line": 11.5,
+"odds": 1.92
+},
+{
+"p": "Tyson Ward",
+"team": "Olympiacos",
+"stat": "P",
+"line": 9.5,
+"odds": 1.8
+}
+]
+},
+{
+"id": "r10d3-24",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Marius Grigonis",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 5.5,
+"odds": 1.92
+},
+{
+"p": "Semi Ojeleye",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Luca Vildoza",
+"team": "Partizan",
+"stat": "A",
+"line": 3.5,
+"odds": 1.7
+},
+{
+"p": "Aliou Diarra",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 6.5,
+"odds": 1.85
+},
+{
+"p": "Alessandro Pajola",
+"team": "Partizan",
+"stat": "A",
+"line": 4.5,
+"odds": 1.72
+},
+{
+"p": "Jaylen Nowell",
+"team": "Besiktas",
+"stat": "P",
+"line": 11.5,
+"odds": 1.93
+},
+{
+"p": "Bonzie Colson",
+"team": "Maccabi Tel Aviv",
+"stat": "S",
+"line": 3.5,
+"odds": 1.72
+},
+{
+"p": "Jonas Valanciunas",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 14.5,
+"odds": 1.8
+}
+]
+},
+{
+"id": "r10d3-25",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Mfiondu Kabengele",
+"team": "Dubai",
+"stat": "P",
+"line": 14.5,
+"odds": 1.84
+},
+{
+"p": "Conor Morgan",
+"team": "Besiktas",
+"stat": "P",
+"line": 6.5,
+"odds": 2.01
+},
+{
+"p": "Marcus Carr",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Scottie Wilbekin",
+"team": "Besiktas",
+"stat": "P",
+"line": 13.5,
+"odds": 1.84
+},
+{
+"p": "Jonas Valanciunas",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 14.5,
+"odds": 1.8
+},
+{
+"p": "Jaylen Hoard",
+"team": "Maccabi Tel Aviv",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Oshae Brissett",
+"team": "Maccabi Tel Aviv",
+"stat": "S",
+"line": 4.5,
+"odds": 1.85
+},
+{
+"p": "Chris Jones",
+"team": "Crvena Zvezda",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+}
+]
+},
+{
+"id": "r10d3-26",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Jordan Nwora",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Marcus Carr",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Chris Jones",
+"team": "Crvena Zvezda",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Jonas Valanciunas",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 14.5,
+"odds": 1.8
+},
+{
+"p": "Bonzie Colson",
+"team": "Maccabi Tel Aviv",
+"stat": "S",
+"line": 3.5,
+"odds": 1.72
+},
+{
+"p": "Tyson Ward",
+"team": "Olympiacos",
+"stat": "P",
+"line": 9.5,
+"odds": 1.8
+},
+{
+"p": "Luca Vildoza",
+"team": "Partizan",
+"stat": "A",
+"line": 3.5,
+"odds": 1.7
+},
+{
+"p": "Carlik Jones",
+"team": "Partizan",
+"stat": "A",
+"line": 6.5,
+"odds": 1.7
+}
+]
+},
+{
+"id": "r10d3-27",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Carlik Jones",
+"team": "Partizan",
+"stat": "A",
+"line": 6.5,
+"odds": 1.7
+},
+{
+"p": "Luca Vildoza",
+"team": "Partizan",
+"stat": "A",
+"line": 3.5,
+"odds": 1.7
+},
+{
+"p": "Anthony Brown",
+"team": "Besiktas",
+"stat": "P",
+"line": 7.5,
+"odds": 1.83
+},
+{
+"p": "Dwayne Bacon",
+"team": "Dubai",
+"stat": "P",
+"line": 15.5,
+"odds": 1.92
+},
+{
+"p": "Scottie Wilbekin",
+"team": "Besiktas",
+"stat": "P",
+"line": 13.5,
+"odds": 1.84
+},
+{
+"p": "Derrick Alston Jr",
+"team": "Virtus Bologna",
+"stat": "P",
+"line": 13.5,
+"odds": 2.02
+},
+{
+"p": "Marcus Carr",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Roman Sorkin",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d3-28",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Luca Vildoza",
+"team": "Partizan",
+"stat": "A",
+"line": 3.5,
+"odds": 1.7
+},
+{
+"p": "Alessandro Pajola",
+"team": "Partizan",
+"stat": "A",
+"line": 4.5,
+"odds": 1.72
+},
+{
+"p": "Marius Grigonis",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 5.5,
+"odds": 1.92
+},
+{
+"p": "Lonnie Walker IV",
+"team": "Besiktas",
+"stat": "P",
+"line": 16.5,
+"odds": 1.88
+},
+{
+"p": "Aliou Diarra",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 6.5,
+"odds": 1.85
+},
+{
+"p": "Chima Moneke",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 10.5,
+"odds": 1.92
+},
+{
+"p": "Trent Frazier",
+"team": "Virtus Bologna",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Oshae Brissett",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+}
+]
+},
+{
+"id": "r10d3-29",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Semi Ojeleye",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Tyson Carter",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 7.5,
+"odds": 1.87
+},
+{
+"p": "Derrick Alston Jr",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Scottie Wilbekin",
+"team": "Besiktas",
+"stat": "P",
+"line": 13.5,
+"odds": 1.84
+},
+{
+"p": "Ebuka Izundu",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 4.5,
+"odds": 1.88
+},
+{
+"p": "Marcus Carr",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Bonzie Colson",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 10.5,
+"odds": 1.83
+},
+{
+"p": "Dwayne Bacon",
+"team": "Dubai",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+}
+]
+},
+{
+"id": "r10d3-30",
+"date": "2026-11-06",
+"round": "10",
+"stake": 100,
+"fund": "novi",
+"legs": [
+{
+"p": "Anthony Brown",
+"team": "Besiktas",
+"stat": "P",
+"line": 7.5,
+"odds": 1.83
+},
+{
+"p": "Saben Lee",
+"team": "Zalgiris Kaunas",
+"stat": "A",
+"line": 4.5,
+"odds": 1.77
+},
+{
+"p": "Bo Klintman",
+"team": "Virtus Bologna",
+"stat": "P",
+"line": 5.5,
+"odds": 1.79
+},
+{
+"p": "Wendell Moore Jr.",
+"team": "Virtus Bologna",
+"stat": "P",
+"line": 11.5,
+"odds": 1.92
+},
+{
+"p": "Jaylen Hoard",
+"team": "Maccabi Tel Aviv",
+"stat": "S",
+"line": 4.5,
+"odds": 1.65
+},
+{
+"p": "Mfiondu Kabengele",
+"team": "Dubai",
+"stat": "P",
+"line": 14.5,
+"odds": 1.84
+},
+{
+"p": "Scottie Wilbekin",
+"team": "Besiktas",
+"stat": "P",
+"line": 13.5,
+"odds": 1.84
+},
+{
+"p": "Bonzie Colson",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 10.5,
+"odds": 1.83
+}
+]
+},
+{
+"id": "r10d3-31",
+"date": "2026-11-06",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Codi Miller-McIntyre",
+"team": "Olympiacos",
+"stat": "P",
+"line": 10.5,
+"odds": 1.92
+},
+{
+"p": "Anthony Brown",
+"team": "Besiktas",
+"stat": "P",
+"line": 7.5,
+"odds": 1.83
+},
+{
+"p": "Christian Koloko",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "Robert Franks",
+"team": "Partizan",
+"stat": "P",
+"line": 5.5,
+"odds": 1.92
+},
+{
+"p": "Saben Lee",
+"team": "Zalgiris Kaunas",
+"stat": "A",
+"line": 4.5,
+"odds": 1.77
+},
+{
+"p": "Mbaye Ndiaye",
+"team": "Olympiacos",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "Carlik Jones",
+"team": "Partizan",
+"stat": "A",
+"line": 6.5,
+"odds": 1.7
+},
+{
+"p": "Chima Moneke",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 10.5,
+"odds": 1.92
+},
+{
+"p": "Yam Madar",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 12.5,
+"odds": 2.02
+},
+{
+"p": "Scottie Wilbekin",
+"team": "Besiktas",
+"stat": "P",
+"line": 13.5,
+"odds": 1.84
+}
+]
+},
+{
+"id": "r10d3-32",
+"date": "2026-11-06",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Bo Klintman",
+"team": "Virtus Bologna",
+"stat": "P",
+"line": 5.5,
+"odds": 1.79
+},
+{
+"p": "Yam Madar",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 12.5,
+"odds": 2.02
+},
+{
+"p": "Ethan Thompson",
+"team": "Partizan",
+"stat": "P",
+"line": 10.5,
+"odds": 2
+},
+{
+"p": "Robert Franks",
+"team": "Partizan",
+"stat": "P",
+"line": 5.5,
+"odds": 1.92
+},
+{
+"p": "Elie Okobo",
+"team": "Dubai",
+"stat": "P",
+"line": 11.5,
+"odds": 1.92
+},
+{
+"p": "Mfiondu Kabengele",
+"team": "Dubai",
+"stat": "P",
+"line": 14.5,
+"odds": 1.84
+},
+{
+"p": "Kostas Papanikolaou",
+"team": "Olympiacos",
+"stat": "P",
+"line": 3.5,
+"odds": 1.92
+},
+{
+"p": "Rasheed Bello",
+"team": "Virtus Bologna",
+"stat": "P",
+"line": 4.5,
+"odds": 2.04
+},
+{
+"p": "Marius Grigonis",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 5.5,
+"odds": 1.92
+},
+{
+"p": "Anthony Brown",
+"team": "Besiktas",
+"stat": "P",
+"line": 7.5,
+"odds": 1.83
+}
+]
+},
+{
+"id": "r10d3-33",
+"date": "2026-11-06",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Codi Miller-McIntyre",
+"team": "Olympiacos",
+"stat": "P",
+"line": 10.5,
+"odds": 1.92
+},
+{
+"p": "Robert Franks",
+"team": "Partizan",
+"stat": "P",
+"line": 5.5,
+"odds": 1.92
+},
+{
+"p": "Anthony Brown",
+"team": "Besiktas",
+"stat": "P",
+"line": 7.5,
+"odds": 1.83
+},
+{
+"p": "Aliou Diarra",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 6.5,
+"odds": 1.85
+},
+{
+"p": "Jimmy Clark III",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 13.5,
+"odds": 1.99
+},
+{
+"p": "Tyson Carter",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 7.5,
+"odds": 1.87
+},
+{
+"p": "Sasha Vezenkov",
+"team": "Olympiacos",
+"stat": "P",
+"line": 18.5,
+"odds": 1.92
+},
+{
+"p": "Mfiondu Kabengele",
+"team": "Dubai",
+"stat": "P",
+"line": 14.5,
+"odds": 1.84
+},
+{
+"p": "Ebuka Izundu",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 4.5,
+"odds": 1.88
+},
+{
+"p": "McKinley Wright IV",
+"team": "Dubai",
+"stat": "P",
+"line": 10.5,
+"odds": 1.83
+}
+]
+},
+{
+"id": "r10d3-34",
+"date": "2026-11-06",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Semi Ojeleye",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Saben Lee",
+"team": "Zalgiris Kaunas",
+"stat": "A",
+"line": 4.5,
+"odds": 1.77
+},
+{
+"p": "Mbaye Ndiaye",
+"team": "Olympiacos",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "McKinley Wright IV",
+"team": "Dubai",
+"stat": "P",
+"line": 10.5,
+"odds": 1.83
+},
+{
+"p": "Robert Franks",
+"team": "Partizan",
+"stat": "P",
+"line": 5.5,
+"odds": 1.92
+},
+{
+"p": "Derrick Alston Jr",
+"team": "Virtus Bologna",
+"stat": "P",
+"line": 13.5,
+"odds": 2.02
+},
+{
+"p": "Wendell Moore Jr.",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 3.5,
+"odds": 2
+},
+{
+"p": "Dwayne Bacon",
+"team": "Dubai",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Nikola Tanaskovic",
+"team": "Partizan",
+"stat": "P",
+"line": 7.5,
+"odds": 1.92
+},
+{
+"p": "Jordan Nwora",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r10d3-35",
+"date": "2026-11-06",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Oshae Brissett",
+"team": "Maccabi Tel Aviv",
+"stat": "S",
+"line": 4.5,
+"odds": 1.85
+},
+{
+"p": "Evan Fournier",
+"team": "Olympiacos",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+},
+{
+"p": "Jared Butler",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 10.5,
+"odds": 1.92
+},
+{
+"p": "Wendell Moore Jr.",
+"team": "Virtus Bologna",
+"stat": "P",
+"line": 11.5,
+"odds": 1.92
+},
+{
+"p": "Dwayne Bacon",
+"team": "Dubai",
+"stat": "P",
+"line": 15.5,
+"odds": 1.92
+},
+{
+"p": "Saben Lee",
+"team": "Zalgiris Kaunas",
+"stat": "A",
+"line": 4.5,
+"odds": 1.77
+},
+{
+"p": "Yam Madar",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 12.5,
+"odds": 2.02
+},
+{
+"p": "Alessandro Pajola",
+"team": "Partizan",
+"stat": "A",
+"line": 4.5,
+"odds": 1.72
+},
+{
+"p": "Nick Weiler Babb",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 3.5,
+"odds": 1.88
+},
+{
+"p": "Sasha Vezenkov",
+"team": "Olympiacos",
+"stat": "S",
+"line": 5.5,
+"odds": 1.9
+}
+]
+},
+{
+"id": "r10d3-36",
+"date": "2026-11-06",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Kostas Papanikolaou",
+"team": "Olympiacos",
+"stat": "P",
+"line": 3.5,
+"odds": 1.92
+},
+{
+"p": "Sasha Vezenkov",
+"team": "Olympiacos",
+"stat": "P",
+"line": 18.5,
+"odds": 1.92
+},
+{
+"p": "Luca Vildoza",
+"team": "Partizan",
+"stat": "A",
+"line": 3.5,
+"odds": 1.7
+},
+{
+"p": "Lonnie Walker IV",
+"team": "Besiktas",
+"stat": "P",
+"line": 16.5,
+"odds": 1.88
+},
+{
+"p": "Robert Franks",
+"team": "Partizan",
+"stat": "P",
+"line": 5.5,
+"odds": 1.92
+},
+{
+"p": "Dzanan Musa",
+"team": "Dubai",
+"stat": "P",
+"line": 9.5,
+"odds": 2
+},
+{
+"p": "Jordan Nwora",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Aliou Diarra",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 6.5,
+"odds": 1.85
+},
+{
+"p": "Derrick Alston Jr",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Anthony Brown",
+"team": "Besiktas",
+"stat": "P",
+"line": 7.5,
+"odds": 1.83
+}
+]
+},
+{
+"id": "r10d3-37",
+"date": "2026-11-06",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Oshae Brissett",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 8.5,
+"odds": 1.8
+},
+{
+"p": "Mfiondu Kabengele",
+"team": "Dubai",
+"stat": "P",
+"line": 14.5,
+"odds": 1.84
+},
+{
+"p": "Chris Jones",
+"team": "Crvena Zvezda",
+"stat": "S",
+"line": 2.5,
+"odds": 1.67
+},
+{
+"p": "Jared Butler",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 10.5,
+"odds": 1.92
+},
+{
+"p": "Evan Fournier",
+"team": "Olympiacos",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+},
+{
+"p": "Tyson Ward",
+"team": "Olympiacos",
+"stat": "P",
+"line": 9.5,
+"odds": 1.8
+},
+{
+"p": "Lamar Stevens",
+"team": "Partizan",
+"stat": "S",
+"line": 4.5,
+"odds": 1.97
+},
+{
+"p": "Bonzie Colson",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 10.5,
+"odds": 1.83
+},
+{
+"p": "Jaron Blossomgame",
+"team": "Dubai",
+"stat": "P",
+"line": 4.5,
+"odds": 2.04
+},
+{
+"p": "Aliou Diarra",
+"team": "Virtus Bologna",
+"stat": "P",
+"line": 9.5,
+"odds": 2
+}
+]
+},
+{
+"id": "r10d3-38",
+"date": "2026-11-06",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Roman Sorkin",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 12.5,
+"odds": 1.92
+},
+{
+"p": "Jordan Nwora",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Scottie Wilbekin",
+"team": "Besiktas",
+"stat": "P",
+"line": 13.5,
+"odds": 1.84
+},
+{
+"p": "Alessandro Pajola",
+"team": "Partizan",
+"stat": "A",
+"line": 4.5,
+"odds": 1.72
+},
+{
+"p": "Nick Weiler Babb",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 3.5,
+"odds": 1.88
+},
+{
+"p": "Ebuka Izundu",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 4.5,
+"odds": 1.88
+},
+{
+"p": "Kevarrius Hayes",
+"team": "Partizan",
+"stat": "P",
+"line": 10.5,
+"odds": 1.92
+},
+{
+"p": "Jaylen Nowell",
+"team": "Besiktas",
+"stat": "P",
+"line": 11.5,
+"odds": 1.93
+},
+{
+"p": "Marius Grigonis",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 5.5,
+"odds": 1.92
+},
+{
+"p": "Saben Lee",
+"team": "Zalgiris Kaunas",
+"stat": "A",
+"line": 4.5,
+"odds": 1.77
+}
+]
+},
+{
+"id": "r10d3-39",
+"date": "2026-11-06",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Dwayne Bacon",
+"team": "Dubai",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Marius Grigonis",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 5.5,
+"odds": 1.92
+},
+{
+"p": "Luca Vildoza",
+"team": "Partizan",
+"stat": "A",
+"line": 3.5,
+"odds": 1.7
+},
+{
+"p": "Tyson Ward",
+"team": "Olympiacos",
+"stat": "P",
+"line": 9.5,
+"odds": 1.8
+},
+{
+"p": "Aliou Diarra",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 6.5,
+"odds": 1.85
+},
+{
+"p": "Kostas Papanikolaou",
+"team": "Olympiacos",
+"stat": "P",
+"line": 3.5,
+"odds": 1.92
+},
+{
+"p": "Conor Morgan",
+"team": "Besiktas",
+"stat": "P",
+"line": 6.5,
+"odds": 2.01
+},
+{
+"p": "McKinley Wright IV",
+"team": "Dubai",
+"stat": "S",
+"line": 2.5,
+"odds": 1.92
+},
+{
+"p": "Derrick Alston Jr",
+"team": "Virtus Bologna",
+"stat": "P",
+"line": 13.5,
+"odds": 2.02
+},
+{
+"p": "Lonnie Walker IV",
+"team": "Besiktas",
+"stat": "P",
+"line": 16.5,
+"odds": 1.88
+}
+]
+},
+{
+"id": "r10d3-40",
+"date": "2026-11-06",
+"round": "10",
+"stake": 50,
+"fund": "dobitak",
+"legs": [
+{
+"p": "Trent Frazier",
+"team": "Virtus Bologna",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Jaron Blossomgame",
+"team": "Dubai",
+"stat": "P",
+"line": 4.5,
+"odds": 2.04
+},
+{
+"p": "Carlik Jones",
+"team": "Partizan",
+"stat": "P",
+"line": 15.5,
+"odds": 1.92
+},
+{
+"p": "Jordan Nwora",
+"team": "Crvena Zvezda",
+"stat": "P",
+"line": 14.5,
+"odds": 1.92
+},
+{
+"p": "Jaylen Nowell",
+"team": "Besiktas",
+"stat": "P",
+"line": 11.5,
+"odds": 1.93
+},
+{
+"p": "Jimmy Clark III",
+"team": "Maccabi Tel Aviv",
+"stat": "P",
+"line": 13.5,
+"odds": 1.99
+},
+{
+"p": "Aliou Diarra",
+"team": "Virtus Bologna",
+"stat": "S",
+"line": 6.5,
+"odds": 1.85
+},
+{
+"p": "Jonas Valanciunas",
+"team": "Zalgiris Kaunas",
+"stat": "P",
+"line": 14.5,
+"odds": 1.8
+},
+{
+"p": "Alessandro Pajola",
+"team": "Partizan",
+"stat": "A",
+"line": 4.5,
+"odds": 1.72
+},
+{
+"p": "Conor Morgan",
+"team": "Besiktas",
+"stat": "P",
+"line": 6.5,
+"odds": 2.01
 }
 ]
 }
@@ -156317,7 +159057,8 @@
 "Kolo 10, 4.11.2026: odigrana samo utakmica Real – Panatinaikos 112:115 posle produžetka; Nikola nije igrao minuse. Cela Admiralova ponuda za tu utakmicu: minusi 15 od 33 (poeni 6 od 16, skokovi 7 od 12, asistencije 2 od 5), visok rezultat zbog produžetka (Nunn 33, Feliz 27, Abalde 23). Zapisnik 91 ubačen u bazu; minLog, ctx2 i tabela tačnih granica (sada 1.770 minusa iz ponude, 8.10. do 4.11.) osveženi.",
 "Kolo 10, 5.11.2026: uplaćeno 45 tiketa po planu cp-r10d2-45 (35 osmica po 100, 10 desetki po 50, ukupno 4.000), sve svež novac (uplata 4.000). Na računu ostalo oko 150 din.",
 "Kolo 10, 5.11.2026: 45 tiketa (35 osmica po 100 i 10 desetki po 50 din, 4.000 din svežeg novca, plan cp-r10d2). Nijedan nije prošao. Tačno jedan promašaj imaju r10d2-06 (8 parova), r10d2-08 i r10d2-25 (po 7 parova koji se računaju, Washington vraćen jer nije u zapisniku), pa čekaju povraćaj (iznos sa PDF-a). Ostalih 42 palo. Parova 380 na tiketima: prošlo 191, palo 177, vraćeno 12 (Washington P 16,5, 12 tiketa); jedinstvenih parova 49, prošlo 24 (49%). Oborili su Rhoden P, Brizuela P, Both Tut Gach P (16 na 7,5), Brooks P, Robinson A, Taylor S i Simmons A (svaki na 12 tiketa), zatim Micić A (10), Martin P (9), Clyburn P (9), Hifi A (8). Opet su najviše ponavljani parovi pali (od 14 parova sa po 12 tiketa pala 7), a ostali su prošli bolje. Rezultati: Fener – Baskonija 84:65, Hapoel – Barselona 90:93, Asvel – Bajern 95:99, Efes – Pariz 90:95, Milano – Valensija 73:84 (zapisnik 96 upisan dok je feed Evrolige još označavao utakmicu kao u toku, rezultat po četvrtinama nepromenjen; proveriti). minLog i ctx2 osveženi sa utakmicama 92 do 96.",
-"Kolo 10, 5.11.2026: povraćaj ukupno 500 din na 3 tiketa sa jednim promašajem (r10d2-06 300, r10d2-08 100, r10d2-25 100), tačno po pravilu kvote ostalih parova (73,1 x3, 36,9 x1, 38,1 x1); zbir se poklapa sa iznosom koji je Nikola potvrdio. Stanje na računu oko 650 din."
+"Kolo 10, 5.11.2026: povraćaj ukupno 500 din na 3 tiketa sa jednim promašajem (r10d2-06 300, r10d2-08 100, r10d2-25 100), tačno po pravilu kvote ostalih parova (73,1 x3, 36,9 x1, 38,1 x1); zbir se poklapa sa iznosom koji je Nikola potvrdio. Stanje na računu oko 650 din.",
+"Kolo 10, 6.11.2026: odigrano 40 tiketa po planu cp-r10d3-40 (ponuda od 10:59): 30 osmica po 100 i 10 desetki po 50 din, ukupno 3.500 din; Nikola uplatio 3.000 din svežeg novca, ostalih 500 iz povraćaja (desetke upisane kao igrane iz dobitka). Pretpostavka da je plan odigran bez izmena. Pravilo kvote: najmanja 1,60, najviše jedna ispod 1,65, ostale 1,75+ (danas sve 1,65+). Procene: model 0,19 / kladionica 0,17 / 57% 0,37 dobitnih tiketa. Stanje na računu posle uplate oko 150 din."
 ]
 },
 "offerSnaps": [
