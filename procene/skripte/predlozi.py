@@ -132,6 +132,12 @@ def izbor_dana(P, B=None, ranije=()):
             break
         if ocena(p) >= DAN_PREDNOST and p['pp'] >= DAN_PRAG and moze(p, izab):
             izab.append(p)
+    for x in isk.get('dodati', {}).get(P[0]['dan'] if P else '', []):     # ručno dodati (Nikola)
+        for p in P:
+            if p['k'] == x['k'] and p['s'] == x['s'] and p['strana'] == x.get('strana', p['strana']) and p not in izab:
+                p['rucno'] = True
+                izab.append(p)
+                break
     for p in P:                                   # dopuna do najmanjeg broja, najbolji preostali
         if len(izab) >= DAN_NAJMANJE:
             break
@@ -143,12 +149,6 @@ def izbor_dana(P, B=None, ranije=()):
         if (p['strana'] == 'o' and p not in izab and p['pp'] >= DAN_PRAG and ocena(p) >= DAN_PLUS_PREDNOST
                 and moze(p, izab)):
             izab.append(p)
-    for x in isk.get('dodati', {}).get(P[0]['dan'] if P else '', []):     # ručno dodati (Nikola)
-        for p in P:
-            if p['k'] == x['k'] and p['s'] == x['s'] and p['strana'] == x.get('strana', p['strana']) and p not in izab:
-                p['rucno'] = True
-                izab.append(p)
-                break
     izab.sort(key=lambda p: -p['pp'])
     for i, p in enumerate(izab, 1):
         p['rang_dan'] = i
