@@ -94,14 +94,29 @@ def forma(B, p):
     return pog, len(G)
 
 
+ISKLJ_PUT = os.path.join(PROCENE, 'podaci', 'iskljuceni.json')
+
+
+def iskljuceni():
+    """Ručno isključeni predlozi (Nikola): {"<dan>": [{"k": "ime malim slovima", "s": "S", "razlog": "..."}]}; bez "s" ceo igrač.
+    Ručno dodati (ključ "dodati"): {"dodati": {"<dan>": [{"k": ..., "s": ..., "strana": "o"|"u"}]}}: ulaze bez praga i ograničenja."""
+    try:
+        return ucitaj(ISKLJ_PUT) if os.path.exists(ISKLJ_PUT) else {}
+    except Exception:
+        return {}
+
+
 def izbor_dana(P, B=None, ranije=()):
     """P: predlozi jednog dana. Vraća izabrane, poređane po verovatnoći, uz rang_dan.
+    Ručno isključeni (procene/podaci/iskljuceni.json) ne ulaze, a mesto dobija sledeći po pravilu.
     Predlog čija skorija forma govori suprotno (manje od polovine poslednjih utakmica na strani predloga) ne ulazi."""
     ist = lambda p: (p['k'], p['s'], p['strana'], p['l'])
     ranije = set(ranije)
     pred = lambda p: p['pp'] - (p['fer'] if p.get('fer') is not None else 0.5)
     ocena = lambda p: pred(p) + (DAN_ZADRZI if ist(p) in ranije else 0)
-    P = sorted([p for p in P if p.get('nivo') != 'slab'], key=lambda p: -ocena(p))
+    isk = iskljuceni()
+    van = lambda p: any(x['k'] == p['k'] and x.get('s', p['s']) == p['s'] for x in isk.get(p['dan'], []) if isinstance(x, dict))
+    P = sorted([p for p in P if p.get('nivo') != 'slab' and not van(p)], key=lambda p: -ocena(p))
     if B is not None:
         for p in P:
             p['forma'] = list(forma(B, p))
@@ -123,6 +138,12 @@ def izbor_dana(P, B=None, ranije=()):
         if (p['strana'] == 'o' and p not in izab and p['pp'] >= DAN_PRAG and ocena(p) >= DAN_PLUS_PREDNOST
                 and moze(p, izab)):
             izab.append(p)
+    for x in isk.get('dodati', {}).get(P[0]['dan'] if P else '', []):     # ručno dodati (Nikola)
+        for p in P:
+            if p['k'] == x['k'] and p['s'] == x['s'] and p['strana'] == x.get('strana', p['strana']) and p not in izab:
+                p['rucno'] = True
+                izab.append(p)
+                break
     izab.sort(key=lambda p: -p['pp'])
     for i, p in enumerate(izab, 1):
         p['rang_dan'] = i
