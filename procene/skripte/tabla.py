@@ -306,6 +306,43 @@ def main():
                 nv = [x for x in st_i['novi'] if x.get('pos') and x['pos'] == i['pos']]
                 if nv:
                     i['novi_saigrac'] = [x['ime'] for x in nv]
+        # Objedinjeno očekivanje (od 6.11.2026, Nikola: na sajtu jedan gotov proizvod, ne „model i kladionice“ odvojeno):
+        # model i kladionice se čitaju u pozadini; prikazuje se očekivanje koje odgovara zbirnoj verovatnoći na glavnoj
+        # granici (isti oblik raspodele kao model, pomereno tako da P(preko) = zbirna verovatnoća). Model ostaje u mu_m
+        # i koristi se samo interno (predlog mora biti na strani modela).
+        for st_i in stranice:
+            for i in st_i['igraci']:
+                for s in 'PSA':
+                    x = i['s'][s]
+                    x.setdefault('mu_m', x['mu'])
+                    L = [z for z in x['linije'] if z.get('m', 1) and 'pc' in z]
+                    if not L:
+                        continue
+                    cn = collections.Counter(z['l'] for z in L)
+                    lg = sorted(cn, key=lambda v: (-cn[v], v))[0]
+                    cilj = sum(z['pc'] for z in L if z['l'] == lg) / cn[lg]
+                    mu0, var0 = x['mu_m'], x['var']
+                    vr = lambda m: max(var0 * m / mu0 if mu0 > 0 else var0, m * 1.0001)
+                    lo, hi = 0.05, max(3 * lg + 3, mu0 * 3 + 3)
+                    for _ in range(40):
+                        md = (lo + hi) / 2
+                        if verovatnoca_preko(s, md, vr(md), lg) < cilj:
+                            lo = md
+                        else:
+                            hi = md
+                    sr = (lo + hi) / 2
+                    x['var_o'] = round(vr(sr), 2)
+                    x['q'] = percentili(sr, x['var_o'])
+                    # prikazuje se sredina raspodele (medijana, glatko između celih brojeva), ne prosek: kod iskošenih
+                    # raspodela prosek ume da bude iznad granice iako je „ispod“ verovatnije; medijana je uvek na strani
+                    # na koju se naginje
+                    pmf = raspodela(sr, x['var_o'])
+                    F, j = 0.0, 0
+                    while j < len(pmf) and F + pmf[j] < 0.5:
+                        F += pmf[j]; j += 1
+                    med = j - 0.5 + ((0.5 - F) / pmf[j] if j < len(pmf) and pmf[j] > 0 else 0.5)
+                    x['mu'] = round(med, 2)
+                    x['mu_sr'] = round(sr, 2)
         # predlozi za utakmicu: 4 do 6, po pravilu iz spajanje.izbor_utakmice (samo glavne granice)
         kand = []
         for st_i in stranice:
@@ -324,7 +361,7 @@ def main():
                         ps0 = z.get('ps0', ps)
                         for strana, pp, kv in (('o', min(ps, ps0), z['o']), ('u', min(1 - ps, 1 - ps0), z['u'])):
                             # od 6.11.2026: predlog samo na strani koju vidi i model (ne samo kladionice)
-                            mu_s = i['s'][s]['mu']
+                            mu_s = i['s'][s].get('mu_m', i['s'][s]['mu'])     # interno: model
                             if (strana == 'o' and mu_s <= z['l']) or (strana == 'u' and mu_s >= z['l']):
                                 continue
                             if strana == 'u' and bez_minusa:

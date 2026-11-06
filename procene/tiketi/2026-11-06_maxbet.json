@@ -5,7 +5,7 @@
  "odigrano": null,
  "utakmice": "6.11. BES–ZAL, OLY–CZV, VIR–DUB, PAR–TEL",
  "ulog_ukupno": 2000,
- "napomena": "20 tiketa po 100 din, po 6 parova, od 10 igrača (MaxBet granice i kvote 14:11); svaki igrač na 12 tiketa, najviše 2 para iz iste utakmice; d=O je plus (preko), bez d je minus",
+ "napomena": "20 tiketa po 100 din, po 6 parova, od 10 igrača (MaxBet 14:11); Chris Jones umesto Tyson Cartera (Nikola), Madar umesto Fourniera; najviše 2 para iz iste utakmice; d=O je plus",
  "tickets": [
   {
    "stake": 100,
@@ -46,6 +46,64 @@
      "d": "O"
     },
     {
+     "c": "2114",
+     "p": "Chris Jones",
+     "t": "Crvena zvezda",
+     "s": "A",
+     "l": 4.5,
+     "u": 1.67,
+     "d": "O"
+    },
+    {
+     "c": "2080",
+     "p": "Yam Madar",
+     "t": "Maccabi T.A.",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    }
+   ],
+   "kvota": 20.47,
+   "sansa": 0.046
+  },
+  {
+   "stake": 100,
+   "legs": [
+    {
+     "c": "2143",
+     "p": "McKinley Wright IV",
+     "t": "Dubai",
+     "s": "A",
+     "l": 3.5,
+     "u": 1.6,
+     "d": "O"
+    },
+    {
+     "c": "2085",
+     "p": "Lonnie Walker IV",
+     "t": "Besiktas",
+     "s": "A",
+     "l": 2.5,
+     "u": 1.75,
+     "d": "O"
+    },
+    {
+     "c": "2117",
+     "p": "Jordan Nwora",
+     "t": "Crvena zvezda",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.6
+    },
+    {
+     "c": "2127",
+     "p": "Mbaye Ndiaye",
+     "t": "Olympiacos",
+     "s": "S",
+     "l": 3.5,
+     "u": 1.62
+    },
+    {
      "c": "2106",
      "p": "Azuolas Tubelis",
      "t": "Zalgiris",
@@ -55,46 +113,36 @@
      "d": "O"
     },
     {
-     "c": "2119",
-     "p": "Tyson Carter",
-     "t": "Crvena zvezda",
-     "s": "A",
-     "l": 1.5,
-     "u": 1.5,
-     "d": "O"
+     "c": "2080",
+     "p": "Yam Madar",
+     "t": "Maccabi T.A.",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
     }
    ],
-   "kvota": 21.89,
-   "sansa": 0.0489
+   "kvota": 19.97,
+   "sansa": 0.051
   },
   {
    "stake": 100,
    "legs": [
     {
-     "c": "2105",
-     "p": "Arnas Butkevicius",
-     "t": "Zalgiris",
-     "s": "P",
-     "l": 4.5,
-     "u": 1.8,
-     "d": "O"
-    },
-    {
-     "c": "2130",
-     "p": "Tyson Ward",
-     "t": "Olympiacos",
-     "s": "P",
-     "l": 9.5,
-     "u": 1.78
-    },
-    {
-     "c": "2143",
-     "p": "McKinley Wright IV",
-     "t": "Dubai",
+     "c": "2085",
+     "p": "Lonnie Walker IV",
+     "t": "Besiktas",
      "s": "A",
-     "l": 3.5,
-     "u": 1.6,
+     "l": 2.5,
+     "u": 1.75,
      "d": "O"
+    },
+    {
+     "c": "2117",
+     "p": "Jordan Nwora",
+     "t": "Crvena zvezda",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.6
     },
     {
      "c": "2141",
@@ -115,17 +163,25 @@
      "d": "O"
     },
     {
-     "c": "2119",
-     "p": "Tyson Carter",
+     "c": "2114",
+     "p": "Chris Jones",
      "t": "Crvena zvezda",
      "s": "A",
-     "l": 1.5,
-     "u": 1.5,
+     "l": 4.5,
+     "u": 1.67,
      "d": "O"
+    },
+    {
+     "c": "2080",
+     "p": "Yam Madar",
+     "t": "Maccabi T.A.",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
     }
    ],
-   "kvota": 25.05,
-   "sansa": 0.0427
+   "kvota": 23.16,
+   "sansa": 0.0389
   },
   {
    "stake": 100,
@@ -139,6 +195,56 @@
      "u": 1.8,
      "d": "O"
     },
+    {
+     "c": "2085",
+     "p": "Lonnie Walker IV",
+     "t": "Besiktas",
+     "s": "A",
+     "l": 2.5,
+     "u": 1.75,
+     "d": "O"
+    },
+    {
+     "c": "2141",
+     "p": "Filip Petrusev",
+     "t": "Dubai",
+     "s": "P",
+     "l": 7.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "2127",
+     "p": "Mbaye Ndiaye",
+     "t": "Olympiacos",
+     "s": "S",
+     "l": 3.5,
+     "u": 1.62
+    },
+    {
+     "c": "2114",
+     "p": "Chris Jones",
+     "t": "Crvena zvezda",
+     "s": "A",
+     "l": 4.5,
+     "u": 1.67,
+     "d": "O"
+    },
+    {
+     "c": "2080",
+     "p": "Yam Madar",
+     "t": "Maccabi T.A.",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    }
+   ],
+   "kvota": 23.32,
+   "sansa": 0.0384
+  },
+  {
+   "stake": 100,
+   "legs": [
     {
      "c": "2130",
      "p": "Tyson Ward",
@@ -175,106 +281,6 @@
      "d": "O"
     },
     {
-     "c": "2119",
-     "p": "Tyson Carter",
-     "t": "Crvena zvezda",
-     "s": "A",
-     "l": 1.5,
-     "u": 1.5,
-     "d": "O"
-    }
-   ],
-   "kvota": 24.22,
-   "sansa": 0.045
-  },
-  {
-   "stake": 100,
-   "legs": [
-    {
-     "c": "2105",
-     "p": "Arnas Butkevicius",
-     "t": "Zalgiris",
-     "s": "P",
-     "l": 4.5,
-     "u": 1.8,
-     "d": "O"
-    },
-    {
-     "c": "2130",
-     "p": "Tyson Ward",
-     "t": "Olympiacos",
-     "s": "P",
-     "l": 9.5,
-     "u": 1.78
-    },
-    {
-     "c": "2143",
-     "p": "McKinley Wright IV",
-     "t": "Dubai",
-     "s": "A",
-     "l": 3.5,
-     "u": 1.6,
-     "d": "O"
-    },
-    {
-     "c": "2085",
-     "p": "Lonnie Walker IV",
-     "t": "Besiktas",
-     "s": "A",
-     "l": 2.5,
-     "u": 1.75,
-     "d": "O"
-    },
-    {
-     "c": "2117",
-     "p": "Jordan Nwora",
-     "t": "Crvena zvezda",
-     "s": "S",
-     "l": 4.5,
-     "u": 1.6
-    },
-    {
-     "c": "2080",
-     "p": "Yam Madar",
-     "t": "Maccabi T.A.",
-     "s": "S",
-     "l": 2.5,
-     "u": 1.52
-    }
-   ],
-   "kvota": 21.82,
-   "sansa": 0.0485
-  },
-  {
-   "stake": 100,
-   "legs": [
-    {
-     "c": "2105",
-     "p": "Arnas Butkevicius",
-     "t": "Zalgiris",
-     "s": "P",
-     "l": 4.5,
-     "u": 1.8,
-     "d": "O"
-    },
-    {
-     "c": "2143",
-     "p": "McKinley Wright IV",
-     "t": "Dubai",
-     "s": "A",
-     "l": 3.5,
-     "u": 1.6,
-     "d": "O"
-    },
-    {
-     "c": "2117",
-     "p": "Jordan Nwora",
-     "t": "Crvena zvezda",
-     "s": "S",
-     "l": 4.5,
-     "u": 1.6
-    },
-    {
      "c": "2106",
      "p": "Azuolas Tubelis",
      "t": "Zalgiris",
@@ -284,25 +290,17 @@
      "d": "O"
     },
     {
-     "c": "2119",
-     "p": "Tyson Carter",
+     "c": "2114",
+     "p": "Chris Jones",
      "t": "Crvena zvezda",
      "s": "A",
-     "l": 1.5,
-     "u": 1.5,
+     "l": 4.5,
+     "u": 1.67,
      "d": "O"
-    },
-    {
-     "c": "2080",
-     "p": "Yam Madar",
-     "t": "Maccabi T.A.",
-     "s": "S",
-     "l": 2.5,
-     "u": 1.52
     }
    ],
-   "kvota": 19.02,
-   "sansa": 0.0549
+   "kvota": 27.12,
+   "sansa": 0.0358
   },
   {
    "stake": 100,
@@ -343,12 +341,12 @@
      "u": 1.62
     },
     {
-     "c": "2119",
-     "p": "Tyson Carter",
+     "c": "2114",
+     "p": "Chris Jones",
      "t": "Crvena zvezda",
      "s": "A",
-     "l": 1.5,
-     "u": 1.5,
+     "l": 4.5,
+     "u": 1.67,
      "d": "O"
     },
     {
@@ -360,8 +358,66 @@
      "u": 1.52
     }
    ],
-   "kvota": 18.62,
-   "sansa": 0.056
+   "kvota": 20.73,
+   "sansa": 0.0453
+  },
+  {
+   "stake": 100,
+   "legs": [
+    {
+     "c": "2105",
+     "p": "Arnas Butkevicius",
+     "t": "Zalgiris",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "2117",
+     "p": "Jordan Nwora",
+     "t": "Crvena zvezda",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.6
+    },
+    {
+     "c": "2141",
+     "p": "Filip Petrusev",
+     "t": "Dubai",
+     "s": "P",
+     "l": 7.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "2127",
+     "p": "Mbaye Ndiaye",
+     "t": "Olympiacos",
+     "s": "S",
+     "l": 3.5,
+     "u": 1.62
+    },
+    {
+     "c": "2106",
+     "p": "Azuolas Tubelis",
+     "t": "Zalgiris",
+     "s": "P",
+     "l": 10.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "2080",
+     "p": "Yam Madar",
+     "t": "Maccabi T.A.",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    }
+   ],
+   "kvota": 23.1,
+   "sansa": 0.0417
   },
   {
    "stake": 100,
@@ -393,21 +449,20 @@
      "d": "O"
     },
     {
+     "c": "2117",
+     "p": "Jordan Nwora",
+     "t": "Crvena zvezda",
+     "s": "S",
+     "l": 4.5,
+     "u": 1.6
+    },
+    {
      "c": "2141",
      "p": "Filip Petrusev",
      "t": "Dubai",
      "s": "P",
      "l": 7.5,
      "u": 1.8,
-     "d": "O"
-    },
-    {
-     "c": "2119",
-     "p": "Tyson Carter",
-     "t": "Crvena zvezda",
-     "s": "A",
-     "l": 1.5,
-     "u": 1.5,
      "d": "O"
     },
     {
@@ -419,19 +474,27 @@
      "u": 1.52
     }
    ],
-   "kvota": 23.01,
-   "sansa": 0.0443
+   "kvota": 24.55,
+   "sansa": 0.0411
   },
   {
    "stake": 100,
    "legs": [
     {
-     "c": "2105",
-     "p": "Arnas Butkevicius",
-     "t": "Zalgiris",
+     "c": "2130",
+     "p": "Tyson Ward",
+     "t": "Olympiacos",
      "s": "P",
-     "l": 4.5,
-     "u": 1.8,
+     "l": 9.5,
+     "u": 1.78
+    },
+    {
+     "c": "2085",
+     "p": "Lonnie Walker IV",
+     "t": "Besiktas",
+     "s": "A",
+     "l": 2.5,
+     "u": 1.75,
      "d": "O"
     },
     {
@@ -461,12 +524,62 @@
      "d": "O"
     },
     {
-     "c": "2119",
-     "p": "Tyson Carter",
+     "c": "2080",
+     "p": "Yam Madar",
+     "t": "Maccabi T.A.",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    }
+   ],
+   "kvota": 24.99,
+   "sansa": 0.039
+  },
+  {
+   "stake": 100,
+   "legs": [
+    {
+     "c": "2105",
+     "p": "Arnas Butkevicius",
+     "t": "Zalgiris",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "2130",
+     "p": "Tyson Ward",
+     "t": "Olympiacos",
+     "s": "P",
+     "l": 9.5,
+     "u": 1.78
+    },
+    {
+     "c": "2141",
+     "p": "Filip Petrusev",
+     "t": "Dubai",
+     "s": "P",
+     "l": 7.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "2106",
+     "p": "Azuolas Tubelis",
+     "t": "Zalgiris",
+     "s": "P",
+     "l": 10.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "2114",
+     "p": "Chris Jones",
      "t": "Crvena zvezda",
      "s": "A",
-     "l": 1.5,
-     "u": 1.5,
+     "l": 4.5,
+     "u": 1.67,
      "d": "O"
     },
     {
@@ -478,8 +591,67 @@
      "u": 1.52
     }
    ],
-   "kvota": 21.66,
-   "sansa": 0.045
+   "kvota": 26.5,
+   "sansa": 0.034
+  },
+  {
+   "stake": 100,
+   "legs": [
+    {
+     "c": "2105",
+     "p": "Arnas Butkevicius",
+     "t": "Zalgiris",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "2130",
+     "p": "Tyson Ward",
+     "t": "Olympiacos",
+     "s": "P",
+     "l": 9.5,
+     "u": 1.78
+    },
+    {
+     "c": "2143",
+     "p": "McKinley Wright IV",
+     "t": "Dubai",
+     "s": "A",
+     "l": 3.5,
+     "u": 1.6,
+     "d": "O"
+    },
+    {
+     "c": "2106",
+     "p": "Azuolas Tubelis",
+     "t": "Zalgiris",
+     "s": "P",
+     "l": 10.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "2114",
+     "p": "Chris Jones",
+     "t": "Crvena zvezda",
+     "s": "A",
+     "l": 4.5,
+     "u": 1.67,
+     "d": "O"
+    },
+    {
+     "c": "2080",
+     "p": "Yam Madar",
+     "t": "Maccabi T.A.",
+     "s": "S",
+     "l": 2.5,
+     "u": 1.52
+    }
+   ],
+   "kvota": 23.55,
+   "sansa": 0.0402
   },
   {
    "stake": 100,
@@ -612,6 +784,23 @@
      "d": "O"
     },
     {
+     "c": "2130",
+     "p": "Tyson Ward",
+     "t": "Olympiacos",
+     "s": "P",
+     "l": 9.5,
+     "u": 1.78
+    },
+    {
+     "c": "2143",
+     "p": "McKinley Wright IV",
+     "t": "Dubai",
+     "s": "A",
+     "l": 3.5,
+     "u": 1.6,
+     "d": "O"
+    },
+    {
      "c": "2085",
      "p": "Lonnie Walker IV",
      "t": "Besiktas",
@@ -619,14 +808,6 @@
      "l": 2.5,
      "u": 1.75,
      "d": "O"
-    },
-    {
-     "c": "2117",
-     "p": "Jordan Nwora",
-     "t": "Crvena zvezda",
-     "s": "S",
-     "l": 4.5,
-     "u": 1.6
     },
     {
      "c": "2141",
@@ -644,18 +825,10 @@
      "s": "S",
      "l": 3.5,
      "u": 1.62
-    },
-    {
-     "c": "2080",
-     "p": "Yam Madar",
-     "t": "Maccabi T.A.",
-     "s": "S",
-     "l": 2.5,
-     "u": 1.52
     }
    ],
-   "kvota": 22.34,
-   "sansa": 0.0439
+   "kvota": 26.16,
+   "sansa": 0.0404
   },
   {
    "stake": 100,
@@ -669,55 +842,6 @@
      "u": 1.8,
      "d": "O"
     },
-    {
-     "c": "2130",
-     "p": "Tyson Ward",
-     "t": "Olympiacos",
-     "s": "P",
-     "l": 9.5,
-     "u": 1.78
-    },
-    {
-     "c": "2141",
-     "p": "Filip Petrusev",
-     "t": "Dubai",
-     "s": "P",
-     "l": 7.5,
-     "u": 1.8,
-     "d": "O"
-    },
-    {
-     "c": "2127",
-     "p": "Mbaye Ndiaye",
-     "t": "Olympiacos",
-     "s": "S",
-     "l": 3.5,
-     "u": 1.62
-    },
-    {
-     "c": "2106",
-     "p": "Azuolas Tubelis",
-     "t": "Zalgiris",
-     "s": "P",
-     "l": 10.5,
-     "u": 1.81,
-     "d": "O"
-    },
-    {
-     "c": "2080",
-     "p": "Yam Madar",
-     "t": "Maccabi T.A.",
-     "s": "S",
-     "l": 2.5,
-     "u": 1.52
-    }
-   ],
-   "kvota": 25.7,
-   "sansa": 0.0377
-  },
-  {
-   "stake": 100,
-   "legs": [
     {
      "c": "2143",
      "p": "McKinley Wright IV",
@@ -745,33 +869,26 @@
      "u": 1.6
     },
     {
-     "c": "2127",
-     "p": "Mbaye Ndiaye",
-     "t": "Olympiacos",
-     "s": "S",
-     "l": 3.5,
-     "u": 1.62
-    },
-    {
-     "c": "2106",
-     "p": "Azuolas Tubelis",
-     "t": "Zalgiris",
+     "c": "2141",
+     "p": "Filip Petrusev",
+     "t": "Dubai",
      "s": "P",
-     "l": 10.5,
-     "u": 1.81,
+     "l": 7.5,
+     "u": 1.8,
      "d": "O"
     },
     {
-     "c": "2080",
-     "p": "Yam Madar",
-     "t": "Maccabi T.A.",
-     "s": "S",
-     "l": 2.5,
-     "u": 1.52
+     "c": "2114",
+     "p": "Chris Jones",
+     "t": "Crvena zvezda",
+     "s": "A",
+     "l": 4.5,
+     "u": 1.67,
+     "d": "O"
     }
    ],
-   "kvota": 19.97,
-   "sansa": 0.051
+   "kvota": 24.24,
+   "sansa": 0.0402
   },
   {
    "stake": 100,
@@ -803,21 +920,21 @@
      "d": "O"
     },
     {
+     "c": "2085",
+     "p": "Lonnie Walker IV",
+     "t": "Besiktas",
+     "s": "A",
+     "l": 2.5,
+     "u": 1.75,
+     "d": "O"
+    },
+    {
      "c": "2117",
      "p": "Jordan Nwora",
      "t": "Crvena zvezda",
      "s": "S",
      "l": 4.5,
      "u": 1.6
-    },
-    {
-     "c": "2106",
-     "p": "Azuolas Tubelis",
-     "t": "Zalgiris",
-     "s": "P",
-     "l": 10.5,
-     "u": 1.81,
-     "d": "O"
     },
     {
      "c": "2080",
@@ -828,8 +945,8 @@
      "u": 1.52
     }
    ],
-   "kvota": 22.57,
-   "sansa": 0.046
+   "kvota": 21.82,
+   "sansa": 0.0485
   },
   {
    "stake": 100,
@@ -853,12 +970,71 @@
      "d": "O"
     },
     {
-     "c": "2085",
-     "p": "Lonnie Walker IV",
-     "t": "Besiktas",
+     "c": "2141",
+     "p": "Filip Petrusev",
+     "t": "Dubai",
+     "s": "P",
+     "l": 7.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "2127",
+     "p": "Mbaye Ndiaye",
+     "t": "Olympiacos",
+     "s": "S",
+     "l": 3.5,
+     "u": 1.62
+    },
+    {
+     "c": "2106",
+     "p": "Azuolas Tubelis",
+     "t": "Zalgiris",
+     "s": "P",
+     "l": 10.5,
+     "u": 1.81,
+     "d": "O"
+    },
+    {
+     "c": "2114",
+     "p": "Chris Jones",
+     "t": "Crvena zvezda",
      "s": "A",
-     "l": 2.5,
-     "u": 1.75,
+     "l": 4.5,
+     "u": 1.67,
+     "d": "O"
+    }
+   ],
+   "kvota": 25.38,
+   "sansa": 0.0369
+  },
+  {
+   "stake": 100,
+   "legs": [
+    {
+     "c": "2105",
+     "p": "Arnas Butkevicius",
+     "t": "Zalgiris",
+     "s": "P",
+     "l": 4.5,
+     "u": 1.8,
+     "d": "O"
+    },
+    {
+     "c": "2130",
+     "p": "Tyson Ward",
+     "t": "Olympiacos",
+     "s": "P",
+     "l": 9.5,
+     "u": 1.78
+    },
+    {
+     "c": "2143",
+     "p": "McKinley Wright IV",
+     "t": "Dubai",
+     "s": "A",
+     "l": 3.5,
+     "u": 1.6,
      "d": "O"
     },
     {
@@ -879,16 +1055,17 @@
      "d": "O"
     },
     {
-     "c": "2127",
-     "p": "Mbaye Ndiaye",
-     "t": "Olympiacos",
-     "s": "S",
-     "l": 3.5,
-     "u": 1.62
+     "c": "2106",
+     "p": "Azuolas Tubelis",
+     "t": "Zalgiris",
+     "s": "P",
+     "l": 10.5,
+     "u": 1.81,
+     "d": "O"
     }
    ],
-   "kvota": 23.51,
-   "sansa": 0.0446
+   "kvota": 26.72,
+   "sansa": 0.0395
   },
   {
    "stake": 100,
@@ -952,12 +1129,13 @@
    "stake": 100,
    "legs": [
     {
-     "c": "2130",
-     "p": "Tyson Ward",
-     "t": "Olympiacos",
-     "s": "P",
-     "l": 9.5,
-     "u": 1.78
+     "c": "2143",
+     "p": "McKinley Wright IV",
+     "t": "Dubai",
+     "s": "A",
+     "l": 3.5,
+     "u": 1.6,
+     "d": "O"
     },
     {
      "c": "2085",
@@ -977,15 +1155,6 @@
      "u": 1.6
     },
     {
-     "c": "2141",
-     "p": "Filip Petrusev",
-     "t": "Dubai",
-     "s": "P",
-     "l": 7.5,
-     "u": 1.8,
-     "d": "O"
-    },
-    {
      "c": "2106",
      "p": "Azuolas Tubelis",
      "t": "Zalgiris",
@@ -995,180 +1164,12 @@
      "d": "O"
     },
     {
-     "c": "2080",
-     "p": "Yam Madar",
-     "t": "Maccabi T.A.",
-     "s": "S",
-     "l": 2.5,
-     "u": 1.52
-    }
-   ],
-   "kvota": 24.68,
-   "sansa": 0.0403
-  },
-  {
-   "stake": 100,
-   "legs": [
-    {
-     "c": "2130",
-     "p": "Tyson Ward",
-     "t": "Olympiacos",
-     "s": "P",
-     "l": 9.5,
-     "u": 1.78
-    },
-    {
-     "c": "2143",
-     "p": "McKinley Wright IV",
-     "t": "Dubai",
-     "s": "A",
-     "l": 3.5,
-     "u": 1.6,
-     "d": "O"
-    },
-    {
-     "c": "2085",
-     "p": "Lonnie Walker IV",
-     "t": "Besiktas",
-     "s": "A",
-     "l": 2.5,
-     "u": 1.75,
-     "d": "O"
-    },
-    {
-     "c": "2106",
-     "p": "Azuolas Tubelis",
-     "t": "Zalgiris",
-     "s": "P",
-     "l": 10.5,
-     "u": 1.81,
-     "d": "O"
-    },
-    {
-     "c": "2119",
-     "p": "Tyson Carter",
+     "c": "2114",
+     "p": "Chris Jones",
      "t": "Crvena zvezda",
      "s": "A",
-     "l": 1.5,
-     "u": 1.5,
-     "d": "O"
-    },
-    {
-     "c": "2080",
-     "p": "Yam Madar",
-     "t": "Maccabi T.A.",
-     "s": "S",
-     "l": 2.5,
-     "u": 1.52
-    }
-   ],
-   "kvota": 20.57,
-   "sansa": 0.0514
-  },
-  {
-   "stake": 100,
-   "legs": [
-    {
-     "c": "2143",
-     "p": "McKinley Wright IV",
-     "t": "Dubai",
-     "s": "A",
-     "l": 3.5,
-     "u": 1.6,
-     "d": "O"
-    },
-    {
-     "c": "2085",
-     "p": "Lonnie Walker IV",
-     "t": "Besiktas",
-     "s": "A",
-     "l": 2.5,
-     "u": 1.75,
-     "d": "O"
-    },
-    {
-     "c": "2141",
-     "p": "Filip Petrusev",
-     "t": "Dubai",
-     "s": "P",
-     "l": 7.5,
-     "u": 1.8,
-     "d": "O"
-    },
-    {
-     "c": "2127",
-     "p": "Mbaye Ndiaye",
-     "t": "Olympiacos",
-     "s": "S",
-     "l": 3.5,
-     "u": 1.62
-    },
-    {
-     "c": "2119",
-     "p": "Tyson Carter",
-     "t": "Crvena zvezda",
-     "s": "A",
-     "l": 1.5,
-     "u": 1.5,
-     "d": "O"
-    },
-    {
-     "c": "2080",
-     "p": "Yam Madar",
-     "t": "Maccabi T.A.",
-     "s": "S",
-     "l": 2.5,
-     "u": 1.52
-    }
-   ],
-   "kvota": 18.62,
-   "sansa": 0.055
-  },
-  {
-   "stake": 100,
-   "legs": [
-    {
-     "c": "2085",
-     "p": "Lonnie Walker IV",
-     "t": "Besiktas",
-     "s": "A",
-     "l": 2.5,
-     "u": 1.75,
-     "d": "O"
-    },
-    {
-     "c": "2117",
-     "p": "Jordan Nwora",
-     "t": "Crvena zvezda",
-     "s": "S",
      "l": 4.5,
-     "u": 1.6
-    },
-    {
-     "c": "2141",
-     "p": "Filip Petrusev",
-     "t": "Dubai",
-     "s": "P",
-     "l": 7.5,
-     "u": 1.8,
-     "d": "O"
-    },
-    {
-     "c": "2106",
-     "p": "Azuolas Tubelis",
-     "t": "Zalgiris",
-     "s": "P",
-     "l": 10.5,
-     "u": 1.81,
-     "d": "O"
-    },
-    {
-     "c": "2119",
-     "p": "Tyson Carter",
-     "t": "Crvena zvezda",
-     "s": "A",
-     "l": 1.5,
-     "u": 1.5,
+     "u": 1.67,
      "d": "O"
     },
     {
@@ -1180,8 +1181,8 @@
      "u": 1.52
     }
    ],
-   "kvota": 20.8,
-   "sansa": 0.0481
+   "kvota": 20.58,
+   "sansa": 0.046
   }
  ]
 }

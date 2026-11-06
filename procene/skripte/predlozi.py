@@ -50,9 +50,9 @@ def naginje(x):
     # verovatnoća slažu i kad je zbirna bar 53%; inače je „neodlučno“ (model jedno, kladionice drugo)
     pm = sum(z.get('pm', pc) for z in L if z['l'] == l) / c[l]
     fer = sum(z.get('trk', z.get('tr', pc)) for z in L if z['l'] == l) / c[l]
-    mu = x.get('mu')
-    model_preko = (mu > l) if mu is not None else (pm >= 0.5)       # model po očekivanju naspram granice
-    neodl = model_preko != (pc >= 0.5) or max(pc, 1 - pc) < 0.53
+    # od 6.11.2026 (objedinjen prikaz): prikazano očekivanje je usklađeno sa zbirnom verovatnoćom, pa je strana uvek
+    # dosledna očekivanju; „bez jasne strane“ kad je verovatnoća ispod 53%
+    neodl = max(pc, 1 - pc) < 0.53
     return dict(strana='o' if pc >= 0.5 else 'u', l=l, pp=round(max(pc, 1 - pc), 3), pm=round(pm, 3), fer=round(fer, 3),
                 neodl=neodl)
 

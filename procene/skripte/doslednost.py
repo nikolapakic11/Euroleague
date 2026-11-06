@@ -28,8 +28,8 @@ for i in (D.get('igraci') or {}).get('igraci', []):
         id_ = f"{i['ime']} {s} {l}"
         if not ng.get('neodl') and (ng['strana'] == 'o') != model_o:
             greske.append(f'{id_}: naginje {ng["strana"]}, a očekivanje {mu}')
-        if ng.get('neodl') and ng['pp'] >= 0.535 and (ng['strana'] == 'o') == model_o:
-            greske.append(f'{id_}: neodlučno bez razloga ({ng["pp"]}, očekivanje {mu})')
+        if ng.get('neodl') and ng['pp'] >= 0.535:
+            greske.append(f'{id_}: „bez jasne strane“, a verovatnoća {ng["pp"]}')
         pr = x.get('pred')
         if pr and (pr['strana'] == 'o') != (mu > pr['l']):
             greske.append(f'{id_}: predlog {pr["strana"]} {pr["l"]}, a očekivanje {mu}')
