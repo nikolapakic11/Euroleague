@@ -240,7 +240,12 @@ def main():
             continue
         w_k = podesi_vreme(ranije)
         wf += [dict(s=r['s'], p=preko(w_k, r['s'], r['pm'], r['tr']), y=r['preko']) for r in R if r['kolo'] == k]
-    kal = {s: platt([x for x in wf if x['s'] == s]) for s in 'PSA'}
+    # Od 6.11.2026: slobodni član spajanja se već pomera prema poslednjim kolima, pa bi Platt na starim walk-forward
+    # predviđanjima (koja su potcenjivala preko) ispravku uradio još jednom (+2,7 poena na kolima 9–10). Zato se
+    # kalibracija podešava na predviđanjima tekućih koeficijenata u poslednja 3 kola (skupljena ka 1, l2=20).
+    kmax = max(r['kolo'] for r in R)
+    sk = [dict(s=r['s'], p=preko(w_sve, r['s'], r['pm'], r['tr']), y=r['preko']) for r in R if r['kolo'] > kmax - 3]
+    kal = {s: platt([x for x in sk if x['s'] == s]) for s in 'PSA'}
 
     test = {}
     for ime, X in (('kola_7_9', te), ('kola_4_6', tr)):
