@@ -35,6 +35,8 @@ Zakazani zadaci su isključeni (odluka 5.11.2026): ništa se ne pokreće samo. S
 
 ## Pravila objave (dogovoreno)
 
+- Posle svakog `predlozi.py` pokrenuti `doslednost.py`: prikazana strana, predlog i očekivanje moraju da se slažu (0 nedoslednosti).
+
 - Dubinska analiza svakog predloga pre objave (Nikola, 6.11.2026: „krem de la krem“): za svakog kandidata poslednjih 8
   utakmica (minuti i stavka), domaća liga, ranije protiv istog protivnika, odbrana protivnika po poziciji, ko se vraća ili
   nedostaje u oba tima (izveštaj o povredama, vesti, novi igrači), razlika granica među kladionicama.
