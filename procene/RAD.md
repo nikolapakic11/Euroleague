@@ -3,6 +3,11 @@
 Pročitaj prvo `CLAUDE.md` (korisnik, jezik, granice projekata) i `procene/README.md` (skripte i model).
 Ovaj fajl je sažetak kako se radi iz dana u dan i šta je dogovoreno sa Nikolom (stanje 5.11.2026).
 
+## Izvori
+
+- Koji sajtovi rade i kako se čitaju: `procene/IZVORI.md`. Pri analizi i pravljenju predloga otvarati vesti, povrede i
+  sastave (Eurohoops, BasketNews, Evroliga), ne samo podatke iz repozitorijuma (Nikola, 6.11.2026).
+
 ## Granice
 
 - Pišeš samo u `procene/` i u `baza/ponude/<kladionica>/` kad Nikola pošalje ponudu ili je ti povučeš.
