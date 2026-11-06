@@ -7,13 +7,17 @@ SIZES=CFG['sizes']; N=len(SIZES)
 GCS={int(k):v for k,v in CFG['gcaps'].items()}; TCAP=CFG.get('tcap',3)
 MAXU=CFG['maxu']; PMAX=CFG['pmax']; K=CFG.get('k',10); SEED=CFG.get('seed',1); SECS=CFG.get('secs',60)
 R=random.Random(SEED)
-FIX=CFG.get('fixed',[]); NF=len(FIX); LOCK=set(CFG.get('lock',[])); LOWU=CFG.get('lowu',0); LOWMAX=CFG.get('lowmax',99)
+FIX=CFG.get('fixed',[]); NF=len(FIX); LOCK=set(CFG.get('lock',[])); LOWU=CFG.get('lowu',0); LOWMAX=CFG.get('lowmax',99); OTH=CFG.get('lowothers',0)
 pm=np.mean([x['pr'] for x in P]); w=[math.exp(K*(x['pr']-pm)) for x in P]
 players=sorted({x['p'] for x in P}); pid=[players.index(x['p']) for x in P]
 use=[0]*n; puse=[0]*len(players)
 def legal(t,i,L,skip=-1):
     if i in LOCK: return False
     if puse[pid[i]]-pfix[pid[i]]>=PNEW: return False
+    if OTH:  # ako je u tiketu kvota ispod LOWU, sve ostale moraju biti >= OTH
+        ot=[P[j]['u'] for k,j in enumerate(t) if k!=skip]
+        if P[i]['u']<LOWU and any(u<OTH for u in ot): return False
+        if P[i]['u']<OTH and any(u<LOWU for u in ot): return False
     if P[i]['u']<LOWU and sum(1 for k,j in enumerate(t) if k!=skip and P[j]['u']<LOWU)>=LOWMAX: return False
     if use[i]>=MAXU or puse[pid[i]]>=PMAX: return False
     tc=gc=0
