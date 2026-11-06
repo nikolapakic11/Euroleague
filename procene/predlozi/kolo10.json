@@ -1861,7 +1861,7 @@
     7
    ],
    "rang_dan": 1,
-   "upisano": "06.11.2026. 11:21",
+   "upisano": "06.11.2026. 11:47",
    "prvi_put": "06.11.2026. 11:21",
    "zatv": 1.65,
    "zatv_fer": 1.53
@@ -1989,7 +1989,7 @@
     7
    ],
    "rang_dan": 2,
-   "upisano": "06.11.2026. 11:21",
+   "upisano": "06.11.2026. 11:47",
    "prvi_put": "06.11.2026. 11:21",
    "zatv": 1.55,
    "zatv_fer": 1.528
@@ -2135,7 +2135,7 @@
     7
    ],
    "rang_dan": 3,
-   "upisano": "06.11.2026. 11:21",
+   "upisano": "06.11.2026. 11:47",
    "prvi_put": "06.11.2026. 11:21",
    "zatv": 1.6,
    "zatv_fer": 1.551
@@ -2241,7 +2241,7 @@
     7
    ],
    "rang_dan": 4,
-   "upisano": "06.11.2026. 11:21",
+   "upisano": "06.11.2026. 11:47",
    "prvi_put": "06.11.2026. 11:21",
    "zatv": 1.75,
    "zatv_fer": 1.651
@@ -2372,7 +2372,7 @@
     7
    ],
    "rang_dan": 5,
-   "upisano": "06.11.2026. 11:21",
+   "upisano": "06.11.2026. 11:47",
    "prvi_put": "06.11.2026. 11:21",
    "zatv": 1.8,
    "zatv_fer": 1.69
@@ -2476,7 +2476,7 @@
     6
    ],
    "rang_dan": 6,
-   "upisano": "06.11.2026. 11:21",
+   "upisano": "06.11.2026. 11:47",
    "prvi_put": "06.11.2026. 11:21",
    "zatv": 1.92,
    "zatv_fer": 1.717
@@ -2598,7 +2598,7 @@
     7
    ],
    "rang_dan": 7,
-   "upisano": "06.11.2026. 11:21",
+   "upisano": "06.11.2026. 11:47",
    "prvi_put": "06.11.2026. 11:21",
    "zatv": 1.8,
    "zatv_fer": 1.743
@@ -2619,7 +2619,7 @@
    "pp": 0.556,
    "ev": 0.056,
    "nivo": "nagoveštaj",
-   "rang": 8,
+   "rang": 7,
    "fer": 0.5174,
    "ostale": [
     {
@@ -2729,13 +2729,13 @@
    ],
    "rucno": true,
    "rang_dan": 8,
-   "upisano": "06.11.2026. 11:21",
+   "upisano": "06.11.2026. 11:47",
    "prvi_put": "06.11.2026. 11:21",
    "zatv": 1.9,
    "zatv_fer": 1.8
   }
  ],
- "osvezeno": "06.11.2026. 11:21",
+ "osvezeno": "06.11.2026. 11:47",
  "utakmice": [
   {
    "g": 91,
@@ -10062,6 +10062,100 @@
   ],
   "97": [
    {
+    "k": "lonnie walker",
+    "ime": "Lonnie Walker Iv",
+    "tim": "BES",
+    "pos": "G",
+    "s": "P",
+    "l": 16.5,
+    "strana": "u",
+    "pp": 0.514,
+    "mu": 15.93,
+    "q": [
+     5,
+     9,
+     14,
+     21,
+     29
+    ],
+    "min": 23.7,
+    "pros": 17.5,
+    "p5": 17.5,
+    "u": 1.88,
+    "o": 1.96,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 16,5 je viša od onoga što realno očekujemo, a to je oko 16 poena, iz ovih razloga:",
+     "Žalgiris dobro brani bekove.",
+     "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
+    ],
+    "protiv": [
+     "Ove sezone daje 17 do 18 poena po utakmici i granicu od 16,5 prebacio je u 1 od 2 utakmice."
+    ]
+   },
+   {
+    "k": "lonnie walker",
+    "ime": "Lonnie Walker Iv",
+    "tim": "BES",
+    "pos": "G",
+    "s": "S",
+    "l": 2.5,
+    "strana": "o",
+    "pp": 0.584,
+    "mu": 2.69,
+    "q": [
+     0,
+     1,
+     2,
+     4,
+     5
+    ],
+    "min": 23.7,
+    "pros": 2.5,
+    "p5": 2.5,
+    "u": 2.2,
+    "o": 1.6,
+    "knjiga": 4,
+    "pred": null,
+    "za": [],
+    "protiv": [
+     "Žalgiris dobro zatvara skok: protiv njih se hvata malo odbijenih lopti.",
+     "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
+    ]
+   },
+   {
+    "k": "lonnie walker",
+    "ime": "Lonnie Walker Iv",
+    "tim": "BES",
+    "pos": "G",
+    "s": "A",
+    "l": 2.5,
+    "strana": "o",
+    "pp": 0.561,
+    "mu": 2.91,
+    "q": [
+     0,
+     1,
+     3,
+     4,
+     6
+    ],
+    "min": 23.7,
+    "pros": 3.0,
+    "p5": 3.0,
+    "u": 1.95,
+    "o": 1.75,
+    "knjiga": 4,
+    "pred": "o",
+    "za": [
+     "Granica od 2,5 je niža od onoga što realno očekujemo, a to je oko tri asistencije: češće je preko nego ispod ove granice."
+    ],
+    "protiv": [
+     "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
+    ]
+   },
+   {
     "k": "anthony brown",
     "ime": "Anthony Brown",
     "tim": "BES",
@@ -10363,100 +10457,6 @@
     ]
    },
    {
-    "k": "lonnie walker",
-    "ime": "Lonnie Walker Iv",
-    "tim": "BES",
-    "pos": "G",
-    "s": "P",
-    "l": 16.5,
-    "strana": "u",
-    "pp": 0.55,
-    "mu": 13.26,
-    "q": [
-     4,
-     7,
-     12,
-     18,
-     25
-    ],
-    "min": 19.7,
-    "pros": 17.5,
-    "p5": 17.5,
-    "u": 1.88,
-    "o": 1.96,
-    "knjiga": 3,
-    "pred": null,
-    "za": [
-     "Granica od 16,5 je viša od onoga što realno očekujemo, a to je 13 do 14 poena, iz ovih razloga:",
-     "Žalgiris dobro brani bekove.",
-     "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
-    ],
-    "protiv": [
-     "Ove sezone daje 17 do 18 poena po utakmici i granicu od 16,5 prebacio je u 1 od 2 utakmice."
-    ]
-   },
-   {
-    "k": "lonnie walker",
-    "ime": "Lonnie Walker Iv",
-    "tim": "BES",
-    "pos": "G",
-    "s": "S",
-    "l": 2.5,
-    "strana": "o",
-    "pp": 0.557,
-    "mu": 2.24,
-    "q": [
-     0,
-     1,
-     2,
-     3,
-     5
-    ],
-    "min": 19.7,
-    "pros": 2.5,
-    "p5": 2.5,
-    "u": 2.2,
-    "o": 1.6,
-    "knjiga": 4,
-    "pred": null,
-    "za": [],
-    "protiv": [
-     "Žalgiris dobro zatvara skok: protiv njih se hvata malo odbijenih lopti.",
-     "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
-    ]
-   },
-   {
-    "k": "lonnie walker",
-    "ime": "Lonnie Walker Iv",
-    "tim": "BES",
-    "pos": "G",
-    "s": "A",
-    "l": 2.5,
-    "strana": "o",
-    "pp": 0.527,
-    "mu": 2.42,
-    "q": [
-     0,
-     1,
-     2,
-     3,
-     5
-    ],
-    "min": 19.7,
-    "pros": 3.0,
-    "p5": 3.0,
-    "u": 1.95,
-    "o": 1.75,
-    "knjiga": 4,
-    "pred": null,
-    "za": [
-     "Ove sezone daje oko tri asistencije po utakmici i granicu od 2,5 prebacio je u 1 od 2 utakmice."
-    ],
-    "protiv": [
-     "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
-    ]
-   },
-   {
     "k": "eugene omoruyi",
     "ime": "Eugene Omoruyi",
     "tim": "BES",
@@ -10641,7 +10641,7 @@
     "u": 2.25,
     "o": 1.85,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [],
     "protiv": [
      "Ove sezone daje dve do tri asistencije po utakmici; ispod 2,5 je ostao u 6 od 9 utakmica.",
@@ -11002,7 +11002,7 @@
     "u": 1.92,
     "o": 1.92,
     "knjiga": 4,
-    "pred": null,
+    "pred": "u",
     "za": [
      "Granica od 12,5 je viša od onoga što realno očekujemo, a to je oko 11 poena, iz ovih razloga:",
      "Ove sezone daje 11 do 12 poena po utakmici; ispod 12,5 je ostao u 4 od 6 utakmica.",
@@ -11098,7 +11098,7 @@
     "u": 1.8,
     "o": 2.02,
     "knjiga": 3,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 9,5 je viša od onoga što realno očekujemo, a to je osam do devet poena, iz ovih razloga:",
      "Olimpijakos ima pojačanje na njegovoj poziciji (John Konchar) koje može da debituje; to može da mu uzme deo minuta.",
@@ -11401,7 +11401,7 @@
     "u": 1.92,
     "o": 1.92,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Ove sezone daje oko šest poena po utakmici; ispod 5,5 je ostao u 6 od 9 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Vezenkov i Fournier.",
@@ -11917,7 +11917,7 @@
     "u": 1.9,
     "o": 1.97,
     "knjiga": 2,
-    "pred": null,
+    "pred": "o",
     "za": [
      "Granica od 4,5 je niža od onoga što realno očekujemo, a to je šest do sedam poena, iz ovih razloga:",
      "Ove sezone daje oko pet poena po utakmici i granicu od 4,5 prebacio je u 3 od 6 utakmica.",
@@ -11926,38 +11926,6 @@
     "protiv": [
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Nwora i Moneke.",
      "Olimpijakos dobro brani centre; to je i jedna od najboljih odbrana u ligi."
-    ]
-   },
-   {
-    "k": "christian koloko",
-    "ime": "Christian Koloko",
-    "tim": "RED",
-    "pos": "F",
-    "s": "P",
-    "l": 6.5,
-    "strana": "o",
-    "pp": 0.531,
-    "mu": 6.63,
-    "q": [
-     1,
-     3,
-     5,
-     9,
-     14
-    ],
-    "min": 15.0,
-    "pros": 9.0,
-    "p5": 9.0,
-    "u": 2.02,
-    "o": 1.8,
-    "knjiga": 2,
-    "pred": null,
-    "za": [
-     "Ove sezone daje oko devet poena po utakmici i granicu od 6,5 prebacio je u 1 od 2 utakmice."
-    ],
-    "protiv": [
-     "Olimpijakos dobro brani krila; to je i jedna od najboljih odbrana u ligi.",
-     "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
     ]
    },
    {
@@ -11992,6 +11960,38 @@
     "protiv": [
      "Ove sezone daje oko pet poena po utakmici; ispod 4,5 je ostao u 5 od 9 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Nwora i Moneke."
+    ]
+   },
+   {
+    "k": "christian koloko",
+    "ime": "Christian Koloko",
+    "tim": "RED",
+    "pos": "F",
+    "s": "P",
+    "l": 6.5,
+    "strana": "o",
+    "pp": 0.523,
+    "mu": 6.32,
+    "q": [
+     1,
+     3,
+     5,
+     9,
+     13
+    ],
+    "min": 14.3,
+    "pros": 9.0,
+    "p5": 9.0,
+    "u": 2.02,
+    "o": 1.8,
+    "knjiga": 2,
+    "pred": null,
+    "za": [
+     "Ove sezone daje oko devet poena po utakmici i granicu od 6,5 prebacio je u 1 od 2 utakmice."
+    ],
+    "protiv": [
+     "Olimpijakos dobro brani krila; to je i jedna od najboljih odbrana u ligi.",
+     "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
     ]
    },
    {
@@ -12805,6 +12805,38 @@
     "protiv": []
    },
    {
+    "k": "dzanan musa",
+    "ime": "Dzanan Musa",
+    "tim": "DUB",
+    "pos": "G",
+    "s": "P",
+    "l": 9.5,
+    "strana": "o",
+    "pp": 0.53,
+    "mu": 10.03,
+    "q": [
+     3,
+     5,
+     9,
+     14,
+     19
+    ],
+    "min": 20.8,
+    "pros": 5.5,
+    "p5": 5.5,
+    "u": 2,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 9,5 je niža od onoga što realno očekujemo, a to je oko deset poena."
+    ],
+    "protiv": [
+     "Ove sezone daje pet do šest poena po utakmici; ispod 9,5 je ostao u 2 od 2 utakmice.",
+     "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
+    ]
+   },
+   {
     "k": "jaron blossomgame",
     "ime": "Jaron Blossomgame",
     "tim": "DUB",
@@ -12870,37 +12902,6 @@
     "protiv": [
      "Protiv Virtusa se skače: dozvoljavaju dosta odbijenih lopti."
     ]
-   },
-   {
-    "k": "dzanan musa",
-    "ime": "Dzanan Musa",
-    "tim": "DUB",
-    "pos": "G",
-    "s": "P",
-    "l": 9.5,
-    "strana": "u",
-    "pp": 0.521,
-    "mu": 7.43,
-    "q": [
-     1,
-     3,
-     6,
-     10,
-     15
-    ],
-    "min": 15.4,
-    "pros": 5.5,
-    "p5": 5.5,
-    "u": 2,
-    "o": 1.85,
-    "knjiga": 4,
-    "pred": null,
-    "za": [
-     "Granica od 9,5 je viša od onoga što realno očekujemo, a to je sedam do osam poena, iz ovih razloga:",
-     "Ove sezone daje pet do šest poena po utakmici; ispod 9,5 je ostao u 2 od 2 utakmice.",
-     "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
-    ],
-    "protiv": []
    },
    {
     "k": "filip petrusev",
@@ -13036,6 +13037,38 @@
     "protiv": [
      "Prvi je organizator igre Partizana: lopta je najčešće u njegovim rukama.",
      "U poslednjim utakmicama igra više nego ranije (37, 26 i 29 minuta)."
+    ]
+   },
+   {
+    "k": "robert franks",
+    "ime": "Robert Franks",
+    "tim": "PAR",
+    "pos": "F",
+    "s": "P",
+    "l": 5.5,
+    "strana": "o",
+    "pp": 0.549,
+    "mu": 7.8,
+    "q": [
+     2,
+     3,
+     7,
+     11,
+     16
+    ],
+    "min": 20.7,
+    "pros": 5.5,
+    "p5": 5.5,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 2,
+    "pred": null,
+    "za": [
+     "Granica od 5,5 je niža od onoga što realno očekujemo, a to je oko osam poena: protiv Makabija krila postižu više."
+    ],
+    "protiv": [
+     "Obe ekipe igraju sporo, pa će napada biti manje nego obično.",
+     "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
     ]
    },
    {
@@ -13344,38 +13377,6 @@
     ]
    },
    {
-    "k": "robert franks",
-    "ime": "Robert Franks",
-    "tim": "PAR",
-    "pos": "F",
-    "s": "P",
-    "l": 5.5,
-    "strana": "o",
-    "pp": 0.539,
-    "mu": 7.31,
-    "q": [
-     1,
-     3,
-     6,
-     10,
-     15
-    ],
-    "min": 19.4,
-    "pros": 5.5,
-    "p5": 5.5,
-    "u": 1.92,
-    "o": 1.92,
-    "knjiga": 2,
-    "pred": null,
-    "za": [
-     "Granica od 5,5 je niža od onoga što realno očekujemo, a to je sedam do osam poena: protiv Makabija krila postižu više."
-    ],
-    "protiv": [
-     "Obe ekipe igraju sporo, pa će napada biti manje nego obično.",
-     "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
-    ]
-   },
-   {
     "k": "nikola tanaskovic",
     "ime": "Nikola Tanaskovic",
     "tim": "PAR",
@@ -13449,16 +13450,16 @@
     "s": "P",
     "l": 7.5,
     "strana": "u",
-    "pp": 0.504,
-    "mu": 6.44,
+    "pp": 0.523,
+    "mu": 5.69,
     "q": [
      1,
-     3,
+     2,
      5,
-     9,
-     13
+     8,
+     12
     ],
-    "min": 16.3,
+    "min": 14.4,
     "pros": 5.0,
     "p5": 5.0,
     "u": 2,
@@ -13466,7 +13467,7 @@
     "knjiga": 4,
     "pred": null,
     "za": [
-     "Granica od 7,5 je viša od onoga što realno očekujemo, a to je šest do sedam poena, iz ovih razloga:",
+     "Granica od 7,5 je viša od onoga što realno očekujemo, a to je pet do šest poena, iz ovih razloga:",
      "Ove sezone daje oko pet poena po utakmici; ispod 7,5 je ostao u 2 od 2 utakmice.",
      "Obe ekipe igraju sporo, pa će napada biti manje nego obično."
     ],

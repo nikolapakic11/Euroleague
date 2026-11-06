@@ -311,7 +311,10 @@ def main():
         for st_i in stranice:
             bez_minusa = bool(st_i['nedostaju'])
             for i in st_i['igraci']:
-                if i['ne_igra'] or i.get('upitan') or i['odsutan'] > 0 or i['n'] < 3:
+                # od 6.11.2026: izostanak iz poslednje 3 ne isključuje igrača kog izveštaj potvrđuje („igra“), a novajlija sa
+                # prošlom sezonom Evrolige može već posle 2 utakmice za tim (Nikola: Lonnie Walker)
+                potvrdjen = i.get('izvestaj') == 'igra'
+                if i['ne_igra'] or i.get('upitan') or (i['odsutan'] > 0 and not potvrdjen) or (i['n'] < 3 and not (i.get('novajlija') and i['n'] >= 2)):
                     continue
                 for s in 'PSA':
                     for z in i['s'][s]['linije']:

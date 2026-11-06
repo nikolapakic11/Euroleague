@@ -54,6 +54,12 @@ Zakazani zadaci su isključeni (odluka 5.11.2026): ništa se ne pokreće samo. S
 
 ## Povrede i odsutni (samo potvrđeno)
 
+- Novajlija (od 6.11.2026, Nikola, primer Lonnie Walker): igrač čiji je prvi meč za tim u poslednje 4 utakmice tima i ima bar 2:
+  minuti = ponderisani prosek (prva utakmica 0,3, ostale 1, plus prosek minuta iz prošle sezone Evrolige), a može u predlog
+  već posle 2 utakmice ako ima prošlu sezonu. Izostanak iz poslednje 3 ne isključuje igrača kog izveštaj potvrđuje („igra“).
+  Kod novih igrača pogledati i njihovu istoriju (prethodni klubovi u Evroligi, domaća liga, vesti o ulozi) pre predloga;
+  ako je jasno da će uloga biti veća od proseka, predložiti Nikoli ručne minute (`procene/minuti.json`).
+
 - Povratak i odsustvo saigrača (od 6.11.2026, `procene/skripte/prilagodjavanje.py`, pravilo NOVO): blago (povratak
   w = n/(n+4), odnos 0,85–1,15; od odsutnog 40% minuta, najviše +4 min po igraču; ukupno ±12%), korist po minutu
   (+4% P i A) samo glavnoj opciji tima, ostali samo minute. Za izbor predloga važi manja verovatnoća od dve

@@ -162,7 +162,42 @@ def odsustvo(igraci, n_tim, PAR=NOVO):
         i['odsustvo'] = dict(ko=ko, min_staro=round(m_staro, 1), glavni=(i['k'] == glavni))
 
 
+def novajlija(igraci, B, kod, dan):
+    """Igrač tek stigao u tim (Nikola, 6.11.2026, primer Lonnie Walker): prvi meč za tim je u poslednje 4 utakmice tima
+    i odigrao je bar 2. Prosek minuta tada vara: prva utakmica je privikavanje. Očekivani minuti su ponderisani
+    prosek: prva utakmica težina 0,3, ostale 1, plus prosek minuta iz prošle sezone Evrolige kao jedna utakmica.
+    Učinak po minutu ostaje iz modela (on već koristi prošlu sezonu). Ovo je deo procene samog igrača, ne
+    prilagođavanje saigrača, pa ulazi u sirovo očekivanje (može da stvori predlog). Igrač sa ručnim minutima se ne menja."""
+    tg = []
+    for r in sorted(B.rows, key=lambda r: r['d']):
+        if r['team'] == kod and r['dan'] < dan and r['g'] not in tg:
+            tg.append(r['g'])
+    for i in igraci:
+        if i['ne_igra'] or i.get('rucno_min'):
+            continue
+        G = [r for r in B.byk.get(i['k'], []) if r['team'] == kod and r['dan'] < dan]
+        if len(G) < 2 or G[0]['g'] not in tg or len(tg) - tg.index(G[0]['g']) > 4:
+            continue
+        tez = [0.3] + [1.0] * (len(G) - 1)
+        zb, wz = sum(t * r['min'] for t, r in zip(tez, G)), sum(tez)
+        pr = B.prosla.get(i['k'])
+        if pr and pr.get('n', 0) >= 5:
+            zb += pr['min'] / pr['n']; wz += 1
+        m_novo = zb / wz
+        if abs(m_novo - i['min']) < 0.5 or not i['min']:
+            continue
+        f = m_novo / i['min']
+        for s in 'PSA':
+            x = i['s'][s]
+            _postavi(x, x['mu'] * f)
+        i['novajlija'] = dict(min_staro=round(i['min'], 1), min_novo=round(m_novo, 1), utakmica=len(G),
+                              prosla_min=round(pr['min'] / pr['n'], 1) if pr and pr.get('n', 0) >= 5 else None)
+        i['min'] = round(m_novo, 1)
+
+
 def prilagodi(igraci, B, kod, dan, n_tim, PAR=NOVO):
+    if PAR is not None:
+        novajlija(igraci, B, kod, dan)
     zapamti_sirovo(igraci)
     if PAR is None:
         return
