@@ -19,6 +19,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--dan', default=dt.datetime.now(BG).date().isoformat())
     ap.add_argument('--kolo', type=int)
+    ap.add_argument('--bez-dodataka', action='store_true')
     a = ap.parse_args()
     if a.kolo is None:
         import glob
@@ -68,5 +69,16 @@ def main():
             print(f'\nNajbliži {ime} ispod praga: ' + '; '.join(f"{c['ime']} {SN[c['s']]} {c['l']} {c['pp']:.0%}/{c['fer']:.0%} @{c['kvota']}" for c in L))
 
 
+def dodaci(dan):
+    """Fundamenti (poslednje 3 utakmice po timu) i kladionice (razlike granica, kretanja) za dan."""
+    import subprocess
+    sk = os.path.dirname(os.path.abspath(__file__))
+    for ime, args in (('PROMENE U POSLEDNJE 3 UTAKMICE', ['promene.py', '--dan', dan]), ('KLADIONICE', ['knjige.py', '--dan', dan])):
+        r = subprocess.run([sys.executable, os.path.join(sk, args[0])] + args[1:], capture_output=True, text=True)
+        print(f'\n=== {ime} ===\n' + (r.stdout or r.stderr).strip())
+
+
 if __name__ == '__main__':
     main()
+    if '--bez-dodataka' not in sys.argv:
+        dodaci(next((sys.argv[i + 1] for i, x in enumerate(sys.argv) if x == '--dan'), dt.datetime.now(BG).date().isoformat()))

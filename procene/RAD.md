@@ -37,7 +37,15 @@ Zakazani zadaci su isključeni (odluka 5.11.2026): ništa se ne pokreće samo. S
 
 - Dubinska analiza svakog predloga pre objave (Nikola, 6.11.2026: „krem de la krem“): za svakog kandidata poslednjih 8
   utakmica (minuti i stavka), domaća liga, ranije protiv istog protivnika, odbrana protivnika po poziciji, ko se vraća ili
-  nedostaje u oba tima (izveštaj o povredama, vesti, novi igrači), razlika granica među kladionicama. Izbaciti
+  nedostaje u oba tima (izveštaj o povredama, vesti, novi igrači), razlika granica među kladionicama.
+  Fundamenti (Nikola, 6.11.): `promene.py` (deo preseka) poredi poslednje 3 utakmice tima sa ranijim delom sezone:
+  primljeni poeni, dozvoljeni skokovi i asistencije, novi igrači i kako tim igra sa njima i bez njih, kome su se minuti
+  promenili za bar 5, ko od rotacije nije igrao. Predlog koji ide protiv jasnog skorašnjeg trenda (npr. MINUS na
+  asistencije protiv tima koji poslednje 3 dozvoljava mnogo više asistencija) se izbacuje ili se pita Nikola.
+  Kladionice (`knjige.py`, izveštaj `procene/provera/knjige.md`, deo preseka): razlike granica i kretanja u toku dana.
+  Za sada (mali uzorak, 4.–5.11.): Admiral je najmanje tačan, Mozzart i Soccerbet najtačniji; kad se granice razlikuju,
+  PREKO na najnižoj granici je prolazio (20/33, najčešće Mozzart sa granicom za 1 nižom), ISPOD na najvišoj nije
+  (14/33); kad granica u toku dana padne, ishod je češće ispod (15/19). Pratiti i proveriti kad uzorak poraste. Izbaciti
   (`procene/podaci/iskljuceni.json`, sa razlogom) sve gde kontekst ide protiv ili je oko 50%; bolje manje, a sigurnije.
 
 - Konsultacija pre objave (odluka 6.11.2026): kad Nikola pošalje ponude, pokreni `dan.py`, pokaži mu predloge za dan
