@@ -2,13 +2,13 @@
  "v": 1,
  "round": "10",
  "kladionica": "maxbet",
- "odigrano": null,
+ "odigrano": "tiketi 1–11 (2. i 11. po 100 din, ostali po 200); 12–20 nisu odigrani",
  "utakmice": "6.11. BES–ZAL, OLY–CZV, VIR–DUB, PAR–TEL",
  "ulog_ukupno": 2000,
  "napomena": "20 tiketa po 100 din, po 6 parova, od 10 igrača (MaxBet 14:11); Chris Jones umesto Tyson Cartera (Nikola), Madar umesto Fourniera; najviše 2 para iz iste utakmice; d=O je plus",
  "tickets": [
   {
-   "stake": 100,
+   "stake": 200,
    "legs": [
     {
      "c": "2143",
@@ -64,7 +64,8 @@
     }
    ],
    "kvota": 20.47,
-   "sansa": 0.046
+   "sansa": 0.046,
+   "odigran": true
   },
   {
    "stake": 100,
@@ -122,10 +123,11 @@
     }
    ],
    "kvota": 19.97,
-   "sansa": 0.051
+   "sansa": 0.051,
+   "odigran": true
   },
   {
-   "stake": 100,
+   "stake": 200,
    "legs": [
     {
      "c": "2085",
@@ -181,10 +183,11 @@
     }
    ],
    "kvota": 23.16,
-   "sansa": 0.0389
+   "sansa": 0.0389,
+   "odigran": true
   },
   {
-   "stake": 100,
+   "stake": 200,
    "legs": [
     {
      "c": "2105",
@@ -240,10 +243,11 @@
     }
    ],
    "kvota": 23.32,
-   "sansa": 0.0384
+   "sansa": 0.0384,
+   "odigran": true
   },
   {
-   "stake": 100,
+   "stake": 200,
    "legs": [
     {
      "c": "2130",
@@ -300,10 +304,11 @@
     }
    ],
    "kvota": 27.12,
-   "sansa": 0.0358
+   "sansa": 0.0358,
+   "odigran": true
   },
   {
-   "stake": 100,
+   "stake": 200,
    "legs": [
     {
      "c": "2105",
@@ -359,10 +364,11 @@
     }
    ],
    "kvota": 20.73,
-   "sansa": 0.0453
+   "sansa": 0.0453,
+   "odigran": true
   },
   {
-   "stake": 100,
+   "stake": 200,
    "legs": [
     {
      "c": "2105",
@@ -417,10 +423,11 @@
     }
    ],
    "kvota": 23.1,
-   "sansa": 0.0417
+   "sansa": 0.0417,
+   "odigran": true
   },
   {
-   "stake": 100,
+   "stake": 200,
    "legs": [
     {
      "c": "2105",
@@ -475,10 +482,11 @@
     }
    ],
    "kvota": 24.55,
-   "sansa": 0.0411
+   "sansa": 0.0411,
+   "odigran": true
   },
   {
-   "stake": 100,
+   "stake": 200,
    "legs": [
     {
      "c": "2130",
@@ -533,10 +541,11 @@
     }
    ],
    "kvota": 24.99,
-   "sansa": 0.039
+   "sansa": 0.039,
+   "odigran": true
   },
   {
-   "stake": 100,
+   "stake": 200,
    "legs": [
     {
      "c": "2105",
@@ -592,7 +601,8 @@
     }
    ],
    "kvota": 26.5,
-   "sansa": 0.034
+   "sansa": 0.034,
+   "odigran": true
   },
   {
    "stake": 100,
@@ -651,7 +661,8 @@
     }
    ],
    "kvota": 23.55,
-   "sansa": 0.0402
+   "sansa": 0.0402,
+   "odigran": true
   },
   {
    "stake": 100,
@@ -710,7 +721,8 @@
     }
    ],
    "kvota": 26.31,
-   "sansa": 0.0397
+   "sansa": 0.0397,
+   "odigran": false
   },
   {
    "stake": 100,
@@ -769,7 +781,8 @@
     }
    ],
    "kvota": 24.32,
-   "sansa": 0.0423
+   "sansa": 0.0423,
+   "odigran": false
   },
   {
    "stake": 100,
@@ -828,7 +841,8 @@
     }
    ],
    "kvota": 26.16,
-   "sansa": 0.0404
+   "sansa": 0.0404,
+   "odigran": false
   },
   {
    "stake": 100,
@@ -888,7 +902,8 @@
     }
    ],
    "kvota": 24.24,
-   "sansa": 0.0402
+   "sansa": 0.0402,
+   "odigran": false
   },
   {
    "stake": 100,
@@ -946,7 +961,8 @@
     }
    ],
    "kvota": 21.82,
-   "sansa": 0.0485
+   "sansa": 0.0485,
+   "odigran": false
   },
   {
    "stake": 100,
@@ -1006,7 +1022,8 @@
     }
    ],
    "kvota": 25.38,
-   "sansa": 0.0369
+   "sansa": 0.0369,
+   "odigran": false
   },
   {
    "stake": 100,
@@ -1065,7 +1082,8 @@
     }
    ],
    "kvota": 26.72,
-   "sansa": 0.0395
+   "sansa": 0.0395,
+   "odigran": false
   },
   {
    "stake": 100,
@@ -1123,7 +1141,8 @@
     }
    ],
    "kvota": 22.85,
-   "sansa": 0.0446
+   "sansa": 0.0446,
+   "odigran": false
   },
   {
    "stake": 100,
@@ -1182,7 +1201,8 @@
     }
    ],
    "kvota": 20.58,
-   "sansa": 0.046
+   "sansa": 0.046,
+   "odigran": false
   }
  ]
 }
