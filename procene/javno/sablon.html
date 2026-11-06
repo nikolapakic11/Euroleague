@@ -210,6 +210,7 @@ td.num,th.num{text-align:right}
 .st{display:flex;flex-direction:column;gap:2px;min-width:96px}
 .st b{font:700 17px var(--f-disp)}
 .ir-lista{display:flex;flex-direction:column}
+.cap.neo{color:var(--muted)} .tr.neo span{opacity:.55}
 .cel{display:flex;flex-direction:column;gap:3px;border-radius:9px;padding:7px 9px;border:1px solid transparent}
 .cel.da{background:var(--dobro-soft);border-color:color-mix(in srgb,var(--dobro) 35%,transparent)}
 .cel.ne{background:var(--lose-soft);border-color:color-mix(in srgb,var(--lose) 35%,transparent)}
@@ -496,8 +497,8 @@ const OTV2=new Set();
 const ISHODI={};D.kola.forEach(k=>Object.entries(k.ponuda||{}).forEach(([g,L])=>L.forEach(x=>{x.g=+g;ISHODI[g+'|'+x.k+'|'+x.s]=x})));
 // jedna ćelija granice: kvote, šansa (procenti ili skala), očekivano, predlog i stvarni učinak; zelena ili crvena pozadina po ishodu
 function celIshod(x,s){
-  const d=x.prosao===true?'da':x.prosao===false?'ne':'';
-  const p={s,strana:x.strana,l:x.l,pp:x.pp,q:x.q,mu:x.mu};
+  const d=x.neodl?'':x.prosao===true?'da':x.prosao===false?'ne':'';
+  const p={s,strana:x.strana,l:x.l,pp:x.pp,q:x.q,mu:x.mu,neodl:!!x.neodl,pm:x.pm,fer:x.fer};
   const st_=x.nije_igrao?'<span class="sm">nije igrao</span>':x.ishod!=null?`<span class="cel-st">stvarno <b>${x.ishod}</b> ${d==='da'?'✓':d==='ne'?'✗':''}</span>`:'';
   const pr=x.pred?`<span class="mini ${x.pred}">${x.pred==='o'?'▲ PLUS':'▼ MINUS'} predlog</span>`:'';
   return `<td class="siroko" data-l="${S[s]}"><div class="cel ${d}"><div class="cel-z"><span>granica <b>${z(x.l)}</b></span><span class="sm">${x.u?z(x.u,2)+' / '+z(x.o,2):''}</span></div>${x.q&&x.q.length?malaSansa(p):''}<span class="sm">očekivano ${z(x.mu)} · prosek ${z(x.pros)}</span>${pr}${st_}</div></td>`}
@@ -509,10 +510,10 @@ function ponudaDana(d){
   if(!I.length)return '';
   const ima=r=>akt.some(s=>r.s[s]&&r.s[s].pred);
   I.sort((a,b)=>ima(b)-ima(a)||(b.x.min||0)-(a.x.min||0));
-  const sa=I.flatMap(r=>akt.map(s=>r.s[s]).filter(x=>x&&(x.prosao===true||x.prosao===false)));
+  const sa=I.flatMap(r=>akt.map(s=>r.s[s]).filter(x=>x&&!x.neodl&&(x.prosao===true||x.prosao===false)));
   const id='pd'+d, otv=OTV2.has(id);
   return `<details class="pod" data-p="${id}"${otv?' open':''}><summary>Cela ponuda dana: ${I.length} igrača${sa.length?` · strana na koju je model naginjao prošla ${sa.filter(x=>x.prosao).length} od ${sa.length}`:''}</summary>`+
-    `<p class="meta">Za svaku granicu: kvote (ispod / preko), na koju stranu je model naginjao, očekivanje, predlog ako ga je bilo i stvarni učinak. Zeleno: naginjanje je prošlo, crveno: nije. Stanje u trenutku konačnih predloga.</p>`+
+    `<p class="meta">Za svaku granicu: kvote (ispod / preko), na koju stranu je model naginjao, očekivanje, predlog ako ga je bilo i stvarni učinak. Zeleno: naginjanje je prošlo, crveno: nije; bez boje kad je bilo neodlučno (model i kladionice na različitim stranama). Stanje u trenutku konačnih predloga.</p>`+
     `<div class="lista"><div class="skrol"><table class="kart pon"><tr class="zag"><th>Igrač</th><th class="num">Minuti</th>${akt.map(s=>`<th>${S[s]}</th>`).join('')}</tr>`+
     I.map(r=>{const x=r.x;return `<tr><td class="pun"><b>${esc(x.ime)}</b> <span class="sm">${x.tim} · ${r.u.dom||''}–${r.u.gost||''}</span></td><td class="num" data-l="Minuti"><span class="v">${z(x.min)}${x.min_st!=null?` → <b>${x.min_st}</b>`:''}</span></td>`+
       akt.map(s=>r.s[s]?celIshod(r.s[s],s):`<td class="sm" data-l="${S[s]}">—</td>`).join('')+`</tr>`}).join('')+`</table></div></div></details>`}
@@ -577,13 +578,19 @@ function linIzvod(x){if(!x.lin||!x.lin.length)return '';const ls=[...new Set(x.l
 const OTV=new Set();
 const ZAKLJ=!!(D.zakljucano&&D.zakljucano.napredno);
 const napredno=()=>st.napredno&&!ZAKLJ;
-const pIgr=(i,s)=>{const x=i.s[s],n=x.ng;return n?{s,strana:n.strana,l:n.l,pp:n.pp,q:x.q,mu:x.mu,opseg:[],analiza:n.zasto,protiv:n.protiv||[]}:null};
+const pIgr=(i,s)=>{const x=i.s[s],n=x.ng;return n?{s,strana:n.strana,l:n.l,pp:n.pp,q:x.q,mu:x.mu,opseg:[],analiza:n.zasto,protiv:n.protiv||[],neodl:!!n.neodl,pm:n.pm,fer:n.fer}:null};
 function malaSansa(p){
   const o=p.strana==='o',pp=Math.round(p.pp*100),pu=o?100-pp:pp,po=100-pu;
-  const cap=`<span class="cap">naginje <b class="${o?'o':'u'}">${o?'▲ preko':'▼ ispod'} ${z(p.l)}</b> · ${pp}%</span>`;
+  // neodlučno (od 6.11.2026): model i kladionice vide različite strane, ili je zbirno ispod 53%
+  const pmo=p.pm!=null?Math.round(p.pm*100):null, fo=p.fer!=null?Math.round(p.fer*100):null;
+  const kl=fo==null?'':Math.abs(fo-50)<=1?'kladionice pola-pola':`kladionice ${fo>=50?'▲ preko':'▼ ispod'} ${Math.max(fo,100-fo)}%`;
+  const sukob=fo!=null&&Math.abs(fo-50)>1&&((p.mu>p.l)!==(fo>=50));
+  const cap=p.neodl?(sukob?`<span class="cap neo">neodlučno oko ${z(p.l)} · model ${p.mu>p.l?'▲ preko':'▼ ispod'} (očekuje ${z(p.mu)}), ${kl}</span>`
+      :`<span class="cap neo">blizu granice ${z(p.l)} · ${pp}% · očekuje ${z(p.mu)}${fo!=null?', '+kl:''}</span>`)
+    :`<span class="cap">naginje <b class="${o?'o':'u'}">${o?'▲ preko':'▼ ispod'} ${z(p.l)}</b> · ${pp}%</span>`;
   if(st.prikaz==='c'){const q=p.q,hi=Math.max(q[4]+1,p.l+2,p.mu+2),X=v=>4+182*v/hi,b=o?'var(--plus)':'var(--minus)';
-    return `<div class="ng"><svg viewBox="0 0 190 26" role="img" aria-label="Očekivano ${z(p.mu)}, obično ${q[1]} do ${q[3]}, granica ${z(p.l)}"><line x1="4" x2="186" y1="13" y2="13" stroke="var(--line)" stroke-width="2"/><rect x="${X(q[1])}" y="8" width="${Math.max(4,X(q[3])-X(q[1]))}" height="10" rx="5" fill="var(--bar)"/><circle cx="${X(p.mu)}" cy="13" r="5" fill="var(--fg)"/><line x1="${X(p.l)}" x2="${X(p.l)}" y1="3" y2="23" stroke="${b}" stroke-width="3"/></svg>${cap}</div>`}
-  return `<div class="ng"><div class="tr" role="img" aria-label="Ispod ${z(p.l)}: ${pu}%, preko: ${po}%"><span class="u${o?'':' akt'}" style="width:${pu}%">${pu}%</span><span class="o${o?' akt':''}" style="width:${po}%">${po}%</span></div>${cap}</div>`}
+    return `<div class="ng"><svg viewBox="0 0 190 26" role="img" aria-label="Očekivano ${z(p.mu)}, obično ${q[1]} do ${q[3]}, granica ${z(p.l)}"><line x1="4" x2="186" y1="13" y2="13" stroke="var(--line)" stroke-width="2"/><rect x="${X(q[1])}" y="8" width="${Math.max(4,X(q[3])-X(q[1]))}" height="10" rx="5" fill="var(--bar)"/><circle cx="${X(p.mu)}" cy="13" r="5" fill="var(--fg)"/><line x1="${X(p.l)}" x2="${X(p.l)}" y1="3" y2="23" stroke="${p.neodl?'var(--muted)':b}" stroke-width="3"/></svg>${cap}</div>`}
+  return `<div class="ng"><div class="tr${p.neodl?' neo':''}" role="img" aria-label="Ispod ${z(p.l)}: ${pu}%, preko: ${po}%"><span class="u${o||p.neodl?'':' akt'}" style="width:${pu}%">${pu}%</span><span class="o${o&&!p.neodl?' akt':''}" style="width:${po}%">${po}%</span></div>${cap}</div>`}
 function detalj(i,akt){
   const N=napredno()&&!i.skriveno;
   const s=i.sez;const sez=s?`<div><h4>Prosek ove sezone (${s.n} utak.)</h4><div class="sez"><span>Minuti <b>${z(s.min)}</b></span>${['P','S','A'].map(k=>`<span>${S[k]} <b>${z(s[k])}</b> <span class="sm">${s.mn[k]}–${s.mx[k]}</span></span>`).join('')}</div></div>`:'';
@@ -591,7 +598,8 @@ function detalj(i,akt){
   const tabK=s=>{const L=i.s[s].lin||[];if(!L.length)return '';return `<table><tr><th>Kladionica</th><th class="num">Granica</th><th class="num">Ispod</th><th class="num">Preko</th>${N?'<th class="num">Naša preko</th>':''}</tr>${L.map(l=>`<tr><td>${IMEKL(l[0])}</td><td class="num">${z(l[1])}</td><td class="num">${z(l[2],2)}</td><td class="num">${z(l[3],2)}</td>${N?`<td class="num">${Math.round(l[4]*100)}%</td>`:''}</tr>`).join('')}</table>`};
   const lista=(nas,A,kl)=>A.length?`<div class="zz ${kl}"><span class="lbl">${nas}</span><div class="zst">${analizaLista(A)}</div></div>`:'';
   const po=akt.map(s=>{const p=N?pIgr(i,s):null,tk=tabK(s);if(!p&&!tk)return '';const sm=p&&p.strana==='o'?'preko':'ispod';
-    return `<div class="dst"><h4>${S[s]}${p?`: naginje ${sm} ${z(p.l)}`:': granice kladionica'}</h4>${p?ocekivanje(p):''}${p?lista('Zašto '+sm,p.analiza||[],'da')+lista('Šta govori protiv',p.protiv,'ne'):''}${tk}</div>`}).join('');
+    const so=p&&p.strana==='o'?'ispod':'preko';
+    return `<div class="dst"><h4>${S[s]}${p?(p.neodl?`: neodlučno oko ${z(p.l)}`:`: naginje ${sm} ${z(p.l)}`):': granice kladionica'}</h4>${p?ocekivanje(p):''}${p?(p.neodl?lista('Za '+sm,p.analiza||[],'da')+lista('Za '+so,p.protiv,'ne'):lista('Zašto '+sm,p.analiza||[],'da')+lista('Šta govori protiv',p.protiv,'ne')):''}${tk}</div>`}).join('');
   return `<div class="dg">${sez}${zad}</div>${po?`<div class="dg" style="margin-top:14px">${po}</div>`:'<p class="meta" style="margin-top:10px">Kladionice još nemaju granice za ovog igrača.</p>'}`;
 }
 function celija(i,s,N){const x=i.s[s];if(i.ne_igra)return `<td class="sm" data-l="${S[s]}">—</td>`;
@@ -600,9 +608,9 @@ function celija(i,s,N){const x=i.s[s];if(i.ne_igra)return `<td class="sm" data-l
     return `<td data-l="${S[s]}"><div class="st"><b>${z(x.pros)}</b><span class="sm">${a3!=null?'poslednje 3: '+z(a3):''}</span>${linIzvod(x)}${R&&R.ishod!=null?`<span class="cel-st">stvarno <b>${R.ishod}</b></span>`:''}</div></td>`}
   // odigrana utakmica: stanje iz trenutka konačnih predloga (cela ponuda dana), ne nova računica
   const R=ISHODI[i.g+'|'+i.k+'|'+s];
-  if(R&&R.q&&R.q.length){const d=R.prosao===true?'da':R.prosao===false?'ne':'';
+  if(R&&R.q&&R.q.length&&(R.ishod!=null||R.nije_igrao)){const d=R.neodl?'':R.prosao===true?'da':R.prosao===false?'ne':'';
     const prR=R.pred?`<span class="mini ${R.pred}">${R.pred==='o'?'▲ PLUS':'▼ MINUS'} predlog ${z(R.l)}</span>`:'';
-    return `<td class="siroko" data-l="${S[s]}"><div class="st cel ${d}"><b>${z(R.mu)}</b><span class="sm">${R.q[0]}–${R.q[4]} · prosek ${z(R.pros)}</span>${malaSansa({s,strana:R.strana,l:R.l,pp:R.pp,q:R.q,mu:R.mu})}${prR}${R.ishod!=null?`<span class="cel-st">stvarno <b>${R.ishod}</b> ${d==='da'?'✓':d==='ne'?'✗':''}</span>`:''}</div></td>`}
+    return `<td class="siroko" data-l="${S[s]}"><div class="st cel ${d}"><b>${z(R.mu)}</b><span class="sm">${R.q[0]}–${R.q[4]} · prosek ${z(R.pros)}</span>${malaSansa({s,strana:R.strana,l:R.l,pp:R.pp,q:R.q,mu:R.mu,neodl:!!R.neodl,pm:R.pm,fer:R.fer})}${prR}${R.ishod!=null?`<span class="cel-st">stvarno <b>${R.ishod}</b> ${d==='da'?'✓':d==='ne'?'✗':''}</span>`:''}</div></td>`}
   const pr=x.pred?`<span class="mini ${x.pred.strana}">${x.pred.strana==='o'?'▲ PLUS':'▼ MINUS'} predlog ${z(x.pred.l)}</span>`:'';
   const p=pIgr(i,s);
   const d=R&&p&&R.l===p.l?(R.prosao===true?'da':R.prosao===false?'ne':''):'';
@@ -715,7 +723,7 @@ function crtajKako(){
    'Uz svaki predlog: koliko očekujemo i u kom opsegu se igrač najčešće kreće. Prikaz šansi „Procenti“ daje verovatnoću za ispod i preko granice, a „Skala“ pokazuje očekivanje, uobičajeni raspon i granicu na istoj skali. „Druge ponude“ su alternativne granice i lestvice (npr. 10+ poena) sa kvotom i našom verovatnoćom.',
    'Uz svaki predlog je obrazloženje: zašto je granica iznad ili ispod onoga što realno očekujemo i razlozi koji idu u prilog predlogu (uloga u timu, minuti, forma, protivnik, ritam utakmice, ko nedostaje ili se vraća, raspored). Jači predlog ima više razloga.',
    'Kartica Statistika: timovi (napad, odbrana, tempo, skok, asistencije, trojke i šta dozvoljavaju bekovima, krilima i centrima) i igrači ove sezone, sa filterima i sortiranjem.',
-   'Kartica Igrači: izaberete dan, a igrači su poređani po utakmici i timu, po minutima. Osnovni prikaz daje proseke i granice kladionica, a uz „Očekivanja“ očekivanje iz modela, raspon i na koju stranu igrač naginje. Klik na ime otvara detalje.',
+   'Kartica Igrači: izaberete dan, a igrači su poređani po utakmici i timu, po minutima. Osnovni prikaz daje proseke i granice kladionica, a uz „Očekivanja“ očekivanje iz modela, raspon i na koju stranu igrač naginje. Strana se prikazuje samo kad se model i kladionice slažu; kad model vidi jednu, a kladionice drugu stranu, piše „neodlučno“ i obe strane. Oznaka „predlog“ stoji samo uz objavljene predloge dana.',
    'Posle utakmice tabela kladionica pokazuje ishod za svaku granicu posebno (zeleno prošao, crveno pao), jer granice nisu svuda iste. Učinak se računa po granici i kvoti iz predloga.',
    'Model: prosek minuta igrača u ovoj sezoni, učinak po minutu u ovoj i prošloj sezoni, odbrana protivnika prema poziciji i tempo. Igrač mora imati bar 3 utakmice ove sezone i da je igrao sve 3 poslednje utakmice svog tima.',
    'Plamen pored imena: igrač je u formi u toj stavci (poslednje 3 utakmice bar 30% iznad ranijeg proseka). Samo informacija, forma je već u proceni.',

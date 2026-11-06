@@ -46,7 +46,15 @@ def naginje(x):
     c = collections.Counter(z['l'] for z in L)
     l = sorted(c, key=lambda v: (-c[v], v))[0]
     pc = sum(z['pc'] for z in L if z['l'] == l) / c[l]
-    return dict(strana='o' if pc >= 0.5 else 'u', l=l, pp=round(max(pc, 1 - pc), 3))
+    # od 6.11.2026 (Nikola: „očekuješ 4,3, a naginje preko 5,5“): strana se prikazuje samo kad se model i zbirna
+    # verovatnoća slažu i kad je zbirna bar 53%; inače je „neodlučno“ (model jedno, kladionice drugo)
+    pm = sum(z.get('pm', pc) for z in L if z['l'] == l) / c[l]
+    fer = sum(z.get('trk', z.get('tr', pc)) for z in L if z['l'] == l) / c[l]
+    mu = x.get('mu')
+    model_preko = (mu > l) if mu is not None else (pm >= 0.5)       # model po očekivanju naspram granice
+    neodl = model_preko != (pc >= 0.5) or max(pc, 1 - pc) < 0.53
+    return dict(strana='o' if pc >= 0.5 else 'u', l=l, pp=round(max(pc, 1 - pc), 3), pm=round(pm, 3), fer=round(fer, 3),
+                neodl=neodl)
 
 
 def izaberi(tabla, K=None):
@@ -205,6 +213,7 @@ def ponuda_dana(tabla, K):
                     p5 = (x.get('posl') or [])[-5:]
                     pr = x.get('pred')
                     L.append(dict(k=i['k'], ime=i['ime'], tim=st['tim'], pos=i['pos'], s=s, l=ng['l'], strana=ng['strana'], pp=ng['pp'],
+                                  neodl=ng['neodl'], pm=ng['pm'], fer=ng['fer'],
                                   mu=x['mu'], q=x['q'], min=i['min'], pros=x['pros'], p5=round(sum(p5) / len(p5), 1) if p5 else None,
                                   u=max(z['u'] for z in na), o=max(z['o'] for z in na), knjiga=len(na),
                                   pred=(pr['strana'] if pr else None), za=za, protiv=protiv))
@@ -226,6 +235,8 @@ def igraci_kola(kolo):
     R = rokovi()
     sad_bg = dt.datetime.now(dt.timezone.utc).astimezone(BG)
     ut, out = [], []
+    pk = os.path.join(PROCENE, 'predlozi', f'kolo{kolo}.json')
+    objavljeni = {(p['k'], p['s'], p['dan']) for p in (ucitaj(pk).get('predlozi', []) if os.path.exists(pk) else [])}
     for u in t['utakmice']:
         # pre objave (12:00 na dan utakmice) nema procena: samo prosek, poslednje utakmice i granice kladionica
         skr = u['g'] in R and sad_bg < R[u['g']][0]
@@ -247,7 +258,8 @@ def igraci_kola(kolo):
                         ng['zasto'], ng['protiv'] = OB.analiza(i, s, ng, u, st, tudja, K, broj_tacaka(ng['pp']) - 1, protiv=3)
                     s_[s] = dict(ng=ng, mu=x['mu'], q=x['q'], pros=x['pros'], posl=x['posl'], of=x['of'], vatra=x.get('vatra'),
                                  lin=[[z['kl'], z['l'], z['u'], z['o'], round(z['pc'], 3)] for z in x['linije'] if z.get('m', 1)],
-                                 pred=(dict(strana=pr['strana'], l=pr['l'], kl=pr['kl'], nivo=pr['nivo'], pp=pr['pp']) if pr else None))
+                                 pred=(dict(strana=pr['strana'], l=pr['l'], kl=pr['kl'], nivo=pr['nivo'], pp=pr['pp'])
+                                       if pr and (i['k'], s, u['dan']) in objavljeni else None))
                 zad = [[r['dan'][8:10] + '.' + r['dan'][5:7] + '.', r['opp'], round(r['min']), r['P'], r['S'], r['A']]
                        for r in B.byk.get(i['k'], []) if r['dan'] < u['dan']][-5:][::-1]
                 gs = [r for r in B.byk.get(i['k'], []) if r['dan'] < u['dan']]
@@ -342,7 +354,11 @@ def main():
         # cela ponuda dana (arhiva za Istoriju): svi igrači u ponudi sa očekivanjem, stranom na koju naginju i razlozima;
         # osvežava se dok utakmica nije zaključana (isti trenutak kao konačni predlozi)
         ponuda = st.setdefault('ponuda', {})
+        objav = {(p['g'], p['k'], p['s']) for p in st['predlozi']}
         for g, L in ponuda_dana(tabla, K_ob).items():
+            for x in L:                      # od 6.11.2026: „predlog“ samo za objavljene predloge dana
+                if (g, x['k'], x['s']) not in objav:
+                    x['pred'] = None
             if g in objavljive and (g not in zamrznute or (str(g) not in ponuda and g not in pocele) or g in sada_konacno):
                 ponuda[str(g)] = L
         st['osvezeno'] = sada

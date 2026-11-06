@@ -1903,7 +1903,7 @@
     7
    ],
    "rang_dan": 1,
-   "upisano": "06.11.2026. 14:19",
+   "upisano": "06.11.2026. 15:14",
    "prvi_put": "06.11.2026. 11:21",
    "zatv": 1.6,
    "zatv_fer": 1.544
@@ -2025,7 +2025,7 @@
     7
    ],
    "rang_dan": 2,
-   "upisano": "06.11.2026. 14:19",
+   "upisano": "06.11.2026. 15:14",
    "prvi_put": "06.11.2026. 11:21",
    "zatv": 1.8,
    "zatv_fer": 1.743
@@ -2046,7 +2046,7 @@
    "pp": 0.572,
    "ev": 0.03,
    "nivo": "solidan",
-   "rang": 8,
+   "rang": 7,
    "fer": 0.529,
    "ostale": [
     {
@@ -2145,7 +2145,7 @@
     7
    ],
    "rang_dan": 3,
-   "upisano": "06.11.2026. 14:19",
+   "upisano": "06.11.2026. 15:14",
    "prvi_put": "06.11.2026. 12:30",
    "zatv": 1.8,
    "zatv_fer": 1.747
@@ -2166,7 +2166,7 @@
    "pp": 0.557,
    "ev": 0.059,
    "nivo": "nagoveštaj",
-   "rang": 13,
+   "rang": 12,
    "fer": 0.5188,
    "ostale": [
     {
@@ -2275,7 +2275,7 @@
     7
    ],
    "rang_dan": 4,
-   "upisano": "06.11.2026. 14:19",
+   "upisano": "06.11.2026. 15:14",
    "prvi_put": "06.11.2026. 11:21",
    "zatv": 1.9,
    "zatv_fer": 1.795
@@ -2296,7 +2296,7 @@
    "pp": 0.539,
    "ev": -0.003,
    "nivo": "nagoveštaj",
-   "rang": 17,
+   "rang": 16,
    "fer": 0.5132,
    "ostale": [],
    "knjige": [
@@ -2442,7 +2442,7 @@
    ],
    "rucno": true,
    "rang_dan": 5,
-   "upisano": "06.11.2026. 14:19",
+   "upisano": "06.11.2026. 15:14",
    "prvi_put": "06.11.2026. 11:55",
    "promena": "novo",
    "ranije": null,
@@ -2451,7 +2451,7 @@
    "zatv_fer": 1.855
   }
  ],
- "osvezeno": "06.11.2026. 14:19",
+ "osvezeno": "06.11.2026. 15:14",
  "utakmice": [
   {
    "g": 91,
@@ -9886,6 +9886,9 @@
     "l": 16.5,
     "strana": "o",
     "pp": 0.504,
+    "neodl": true,
+    "pm": 0.466,
+    "fer": 0.489,
     "mu": 17.5,
     "q": [
      6,
@@ -9918,6 +9921,9 @@
     "l": 2.5,
     "strana": "o",
     "pp": 0.598,
+    "neodl": false,
+    "pm": 0.511,
+    "fer": 0.582,
     "mu": 2.95,
     "q": [
      1,
@@ -9932,7 +9938,7 @@
     "u": 2.2,
     "o": 1.6,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 2,5 je niža od onoga što realno očekujemo, a to je oko tri skoka."
     ],
@@ -9950,6 +9956,9 @@
     "l": 2.5,
     "strana": "o",
     "pp": 0.579,
+    "neodl": false,
+    "pm": 0.569,
+    "fer": 0.527,
     "mu": 3.2,
     "q": [
      1,
@@ -9964,7 +9973,7 @@
     "u": 1.95,
     "o": 1.75,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 2,5 je niža od onoga što realno očekujemo, a to je oko tri asistencije: češće je preko nego ispod ove granice."
     ],
@@ -9981,6 +9990,9 @@
     "l": 7.5,
     "strana": "o",
     "pp": 0.51,
+    "neodl": true,
+    "pm": 0.537,
+    "fer": 0.476,
     "mu": 9.27,
     "q": [
      2,
@@ -9995,7 +10007,7 @@
     "u": 1.82,
     "o": 2.01,
     "knjiga": 3,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 7,5 je niža od onoga što realno očekujemo, a to je devet do deset poena, iz ovih razloga:",
      "Ove sezone daje oko devet poena po utakmici i granicu od 7,5 prebacio je u 6 od 9 utakmica.",
@@ -10015,6 +10027,9 @@
     "l": 2.5,
     "strana": "o",
     "pp": 0.669,
+    "neodl": false,
+    "pm": 0.66,
+    "fer": 0.607,
     "mu": 3.89,
     "q": [
      1,
@@ -10029,7 +10044,7 @@
     "u": 2.35,
     "o": 1.55,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 2,5 je niža od onoga što realno očekujemo, a to je oko četiri skoka, iz ovih razloga:",
      "Ove sezone daje oko tri skoka po utakmici i granicu od 2,5 prebacio je u 5 od 9 utakmica.",
@@ -10049,6 +10064,9 @@
     "l": 12.5,
     "strana": "o",
     "pp": 0.502,
+    "neodl": true,
+    "pm": 0.401,
+    "fer": 0.507,
     "mu": 11.92,
     "q": [
      4,
@@ -10063,7 +10081,7 @@
     "u": 1.95,
     "o": 1.92,
     "knjiga": 2,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Ove sezone daje oko 15 poena po utakmici i granicu od 12,5 prebacio je u 5 od 9 utakmica.",
      "Jedna je od prvih opcija u napadu Bešiktaša."
@@ -10082,6 +10100,9 @@
     "l": 2.5,
     "strana": "o",
     "pp": 0.654,
+    "neodl": false,
+    "pm": 0.559,
+    "fer": 0.593,
     "mu": 3.01,
     "q": [
      1,
@@ -10096,7 +10117,7 @@
     "u": 2.3,
     "o": 1.55,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 2,5 je niža od onoga što realno očekujemo, a to je oko tri asistencije: redovno prebacuje ovu granicu."
     ],
@@ -10113,6 +10134,9 @@
     "l": 11.5,
     "strana": "u",
     "pp": 0.511,
+    "neodl": true,
+    "pm": 0.38,
+    "fer": 0.5,
     "mu": 10.64,
     "q": [
      3,
@@ -10127,7 +10151,7 @@
     "u": 1.92,
     "o": 1.92,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 11,5 je viša od onoga što realno očekujemo, a to je 10 do 11 poena, iz ovih razloga:",
      "Žalgiris dobro brani bekove.",
@@ -10147,6 +10171,9 @@
     "l": 2.5,
     "strana": "u",
     "pp": 0.603,
+    "neodl": false,
+    "pm": 0.439,
+    "fer": 0.421,
     "mu": 2.49,
     "q": [
      0,
@@ -10161,7 +10188,7 @@
     "u": 1.6,
     "o": 2.2,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Kao bek retko ide u skok; odbijene lopte kod Bešiktaša uglavnom hvataju Zizic i Birsen.",
      "Na raspolaganju je ponovo i Lonnie Walker Iv, pa minuti na njegovoj poziciji mogu da budu podeljeni.",
@@ -10180,6 +10207,9 @@
     "l": 2.5,
     "strana": "u",
     "pp": 0.595,
+    "neodl": true,
+    "pm": 0.519,
+    "fer": 0.4,
     "mu": 2.82,
     "q": [
      1,
@@ -10213,6 +10243,9 @@
     "l": 6.5,
     "strana": "o",
     "pp": 0.555,
+    "neodl": false,
+    "pm": 0.531,
+    "fer": 0.522,
     "mu": 8.06,
     "q": [
      2,
@@ -10227,7 +10260,7 @@
     "u": 2.01,
     "o": 1.85,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 6,5 je niža od onoga što realno očekujemo, a to je oko osam poena, iz ovih razloga:",
      "Ove sezone daje osam do devet poena po utakmici i granicu od 6,5 prebacio je u 6 od 9 utakmica.",
@@ -10247,6 +10280,9 @@
     "l": 2.5,
     "strana": "o",
     "pp": 0.695,
+    "neodl": false,
+    "pm": 0.74,
+    "fer": 0.607,
     "mu": 4.59,
     "q": [
      1,
@@ -10261,7 +10297,7 @@
     "u": 2.35,
     "o": 1.55,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 2,5 je niža od onoga što realno očekujemo, a to je četiri do pet skokova, iz ovih razloga:",
      "Ove sezone daje oko tri skoka po utakmici i granicu od 2,5 prebacio je u 5 od 9 utakmica.",
@@ -10281,6 +10317,9 @@
     "l": 8.5,
     "strana": "u",
     "pp": 0.527,
+    "neodl": true,
+    "pm": 0.329,
+    "fer": 0.5,
     "mu": 7.23,
     "q": [
      1,
@@ -10312,6 +10351,9 @@
     "l": 8.5,
     "strana": "o",
     "pp": 0.523,
+    "neodl": true,
+    "pm": 0.425,
+    "fer": 0.521,
     "mu": 8.55,
     "q": [
      2,
@@ -10326,7 +10368,7 @@
     "u": 2,
     "o": 1.85,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Ove sezone daje devet do deset poena po utakmici i granicu od 8,5 prebacio je u 5 od 9 utakmica."
     ],
@@ -10344,6 +10386,9 @@
     "l": 5.5,
     "strana": "o",
     "pp": 0.522,
+    "neodl": true,
+    "pm": 0.383,
+    "fer": 0.531,
     "mu": 5.28,
     "q": [
      1,
@@ -10376,6 +10421,9 @@
     "l": 10.5,
     "strana": "o",
     "pp": 0.555,
+    "neodl": false,
+    "pm": 0.536,
+    "fer": 0.52,
     "mu": 12.28,
     "q": [
      4,
@@ -10390,7 +10438,7 @@
     "u": 2,
     "o": 1.85,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 10,5 je niža od onoga što realno očekujemo, a to je 12 do 13 poena: protiv Bešiktaša krila postižu više."
     ],
@@ -10408,6 +10456,9 @@
     "l": 4.5,
     "strana": "o",
     "pp": 0.619,
+    "neodl": false,
+    "pm": 0.517,
+    "fer": 0.6,
     "mu": 5.0,
     "q": [
      2,
@@ -10422,7 +10473,7 @@
     "u": 2.3,
     "o": 1.55,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 4,5 je niža od onoga što realno očekujemo, a to je oko pet skokova, iz ovih razloga:",
      "Ove sezone daje oko šest skokova po utakmici i granicu od 4,5 prebacio je u 5 od 9 utakmica.",
@@ -10441,6 +10492,9 @@
     "l": 15.5,
     "strana": "o",
     "pp": 0.515,
+    "neodl": true,
+    "pm": 0.404,
+    "fer": 0.518,
     "mu": 14.83,
     "q": [
      5,
@@ -10455,7 +10509,7 @@
     "u": 1.99,
     "o": 1.85,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Ove sezone daje oko 16 poena po utakmici i granicu od 15,5 prebacio je u 7 od 9 utakmica.",
      "Jedna je od prvih opcija u napadu Žalgirisa."
@@ -10474,6 +10528,9 @@
     "l": 2.5,
     "strana": "o",
     "pp": 0.584,
+    "neodl": true,
+    "pm": 0.432,
+    "fer": 0.569,
     "mu": 2.44,
     "q": [
      0,
@@ -10488,7 +10545,7 @@
     "u": 2.25,
     "o": 1.85,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [],
     "protiv": [
      "Ove sezone daje dve do tri asistencije po utakmici; ispod 2,5 je ostao u 6 od 9 utakmica.",
@@ -10504,6 +10561,9 @@
     "l": 14.5,
     "strana": "u",
     "pp": 0.581,
+    "neodl": false,
+    "pm": 0.251,
+    "fer": 0.472,
     "mu": 10.88,
     "q": [
      3,
@@ -10518,7 +10578,7 @@
     "u": 1.81,
     "o": 2.02,
     "knjiga": 3,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 14,5 je viša od onoga što realno očekujemo, a to je oko 11 poena: u većini utakmica ostaje ispod ove granice."
     ],
@@ -10536,6 +10596,9 @@
     "l": 8.5,
     "strana": "u",
     "pp": 0.653,
+    "neodl": false,
+    "pm": 0.238,
+    "fer": 0.438,
     "mu": 6.26,
     "q": [
      2,
@@ -10550,7 +10613,7 @@
     "u": 1.65,
     "o": 2.1,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 8,5 je viša od onoga što realno očekujemo, a to je šest do sedam skokova: u većini utakmica ostaje ispod ove granice."
     ],
@@ -10567,6 +10630,9 @@
     "l": 6.5,
     "strana": "o",
     "pp": 0.553,
+    "neodl": false,
+    "pm": 0.514,
+    "fer": 0.525,
     "mu": 7.69,
     "q": [
      2,
@@ -10581,7 +10647,7 @@
     "u": 2.01,
     "o": 1.82,
     "knjiga": 3,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 6,5 je niža od onoga što realno očekujemo, a to je sedam do osam poena: u poslednjim utakmicama daje više nego inače."
     ],
@@ -10599,6 +10665,9 @@
     "l": 4.5,
     "strana": "u",
     "pp": 0.558,
+    "neodl": false,
+    "pm": 0.255,
+    "fer": 0.511,
     "mu": 3.29,
     "q": [
      1,
@@ -10613,7 +10682,7 @@
     "u": 1.92,
     "o": 1.9,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 4,5 je viša od onoga što realno očekujemo, a to je tri do četiri asistencije: u gostima deli manje."
     ],
@@ -10630,6 +10699,9 @@
     "l": 4.5,
     "strana": "o",
     "pp": 0.557,
+    "neodl": false,
+    "pm": 0.55,
+    "fer": 0.519,
     "mu": 6.05,
     "q": [
      1,
@@ -10664,6 +10736,9 @@
     "l": 10.5,
     "strana": "u",
     "pp": 0.507,
+    "neodl": true,
+    "pm": 0.393,
+    "fer": 0.5,
     "mu": 9.93,
     "q": [
      3,
@@ -10678,7 +10753,7 @@
     "u": 1.92,
     "o": 1.92,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 10,5 je viša od onoga što realno očekujemo, a to je oko deset poena, iz ovih razloga:",
      "Dolazi sa klupe i igra 18 do 19 minuta.",
@@ -10697,6 +10772,9 @@
     "l": 5.5,
     "strana": "o",
     "pp": 0.536,
+    "neodl": false,
+    "pm": 0.541,
+    "fer": 0.5,
     "mu": 7.05,
     "q": [
      1,
@@ -10711,7 +10789,7 @@
     "u": 1.92,
     "o": 1.92,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 5,5 je niža od onoga što realno očekujemo, a to je oko sedam poena, iz ovih razloga:",
      "Ove sezone daje oko šest poena po utakmici i granicu od 5,5 prebacio je u 5 od 9 utakmica.",
@@ -10731,6 +10809,9 @@
     "l": 5.5,
     "strana": "o",
     "pp": 0.53,
+    "neodl": false,
+    "pm": 0.523,
+    "fer": 0.5,
     "mu": 6.78,
     "q": [
      1,
@@ -10745,7 +10826,7 @@
     "u": 1.92,
     "o": 1.92,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 5,5 je niža od onoga što realno očekujemo, a to je oko sedam poena, iz ovih razloga:",
      "Ove sezone daje oko sedam poena po utakmici i granicu od 5,5 prebacio je u 7 od 9 utakmica.",
@@ -10767,6 +10848,9 @@
     "l": 18.5,
     "strana": "u",
     "pp": 0.515,
+    "neodl": true,
+    "pm": 0.341,
+    "fer": 0.508,
     "mu": 16.19,
     "q": [
      6,
@@ -10781,7 +10865,7 @@
     "u": 1.96,
     "o": 1.92,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 18,5 je viša od onoga što realno očekujemo, a to je oko 16 poena, iz ovih razloga:",
      "Ove sezone daje oko 18 poena po utakmici; ispod 18,5 je ostao u 5 od 9 utakmica.",
@@ -10801,6 +10885,9 @@
     "l": 5.5,
     "strana": "o",
     "pp": 0.557,
+    "neodl": false,
+    "pm": 0.466,
+    "fer": 0.558,
     "mu": 5.63,
     "q": [
      2,
@@ -10835,6 +10922,9 @@
     "l": 12.5,
     "strana": "u",
     "pp": 0.523,
+    "neodl": true,
+    "pm": 0.342,
+    "fer": 0.5,
     "mu": 10.89,
     "q": [
      3,
@@ -10849,7 +10939,7 @@
     "u": 1.9,
     "o": 1.9,
     "knjiga": 3,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 12,5 je viša od onoga što realno očekujemo, a to je oko 11 poena, iz ovih razloga:",
      "Ove sezone daje 11 do 12 poena po utakmici; ispod 12,5 je ostao u 4 od 6 utakmica.",
@@ -10866,6 +10956,9 @@
     "l": 1.5,
     "strana": "o",
     "pp": 0.63,
+    "neodl": false,
+    "pm": 0.648,
+    "fer": 0.573,
     "mu": 2.48,
     "q": [
      0,
@@ -10898,6 +10991,9 @@
     "l": 2.5,
     "strana": "o",
     "pp": 0.613,
+    "neodl": false,
+    "pm": 0.45,
+    "fer": 0.589,
     "mu": 2.53,
     "q": [
      0,
@@ -10931,6 +11027,9 @@
     "l": 10.5,
     "strana": "u",
     "pp": 0.507,
+    "neodl": true,
+    "pm": 0.393,
+    "fer": 0.5,
     "mu": 9.97,
     "q": [
      3,
@@ -10945,7 +11044,7 @@
     "u": 1.9,
     "o": 1.9,
     "knjiga": 3,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 10,5 je viša od onoga što realno očekujemo, a to je oko deset poena, iz ovih razloga:",
      "Ove sezone daje oko devet poena po utakmici; ispod 10,5 je ostao u 6 od 9 utakmica.",
@@ -10965,6 +11064,9 @@
     "l": 3.5,
     "strana": "u",
     "pp": 0.688,
+    "neodl": false,
+    "pm": 0.366,
+    "fer": 0.362,
     "mu": 3.06,
     "q": [
      1,
@@ -10979,7 +11081,7 @@
     "u": 1.45,
     "o": 2.55,
     "knjiga": 3,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 3,5 je viša od onoga što realno očekujemo, a to je oko tri skoka, iz ovih razloga:",
      "Ove sezone daje oko tri skoka po utakmici; ispod 3,5 je ostao u 5 od 9 utakmica.",
@@ -10999,6 +11101,9 @@
     "l": 5.5,
     "strana": "o",
     "pp": 0.523,
+    "neodl": true,
+    "pm": 0.294,
+    "fer": 0.562,
     "mu": 4.34,
     "q": [
      1,
@@ -11013,7 +11118,7 @@
     "u": 2.1,
     "o": 1.65,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Ove sezone daje oko pet asistencija po utakmici i granicu od 5,5 prebacio je u 5 od 9 utakmica.",
      "Prvi je organizator igre Olimpijakosa: lopta je najčešće u njegovim rukama.",
@@ -11033,6 +11138,9 @@
     "l": 9.5,
     "strana": "u",
     "pp": 0.572,
+    "neodl": false,
+    "pm": 0.281,
+    "fer": 0.471,
     "mu": 7.35,
     "q": [
      2,
@@ -11067,6 +11175,9 @@
     "l": 3.5,
     "strana": "o",
     "pp": 0.569,
+    "neodl": true,
+    "pm": 0.358,
+    "fer": 0.6,
     "mu": 3.01,
     "q": [
      1,
@@ -11100,6 +11211,9 @@
     "l": 2.5,
     "strana": "o",
     "pp": 0.53,
+    "neodl": true,
+    "pm": 0.289,
+    "fer": 0.569,
     "mu": 1.85,
     "q": [
      0,
@@ -11133,6 +11247,9 @@
     "l": 7.5,
     "strana": "u",
     "pp": 0.513,
+    "neodl": true,
+    "pm": 0.31,
+    "fer": 0.519,
     "mu": 6.13,
     "q": [
      1,
@@ -11147,7 +11264,7 @@
     "u": 2,
     "o": 1.92,
     "knjiga": 3,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 7,5 je viša od onoga što realno očekujemo, a to je oko šest poena, iz ovih razloga:",
      "Olimpijakos ima pojačanje na njegovoj poziciji (John Konchar) koje može da debituje; to može da mu uzme deo minuta.",
@@ -11166,6 +11283,9 @@
     "l": 3.5,
     "strana": "u",
     "pp": 0.607,
+    "neodl": false,
+    "pm": 0.405,
+    "fer": 0.427,
     "mu": 3.29,
     "q": [
      1,
@@ -11180,7 +11300,7 @@
     "u": 1.62,
     "o": 2.2,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Ove sezone daje oko tri skoka po utakmici; ispod 3,5 je ostao u 6 od 9 utakmica.",
      "Olimpijakos ima pojačanje na njegovoj poziciji (John Konchar) koje može da debituje; to može da mu uzme deo minuta.",
@@ -11200,6 +11320,9 @@
     "l": 3.5,
     "strana": "o",
     "pp": 0.513,
+    "neodl": true,
+    "pm": 0.461,
+    "fer": 0.5,
     "mu": 4.11,
     "q": [
      0,
@@ -11234,6 +11357,9 @@
     "l": 5.5,
     "strana": "u",
     "pp": 0.512,
+    "neodl": true,
+    "pm": 0.377,
+    "fer": 0.5,
     "mu": 5.2,
     "q": [
      1,
@@ -11248,7 +11374,7 @@
     "u": 1.92,
     "o": 1.92,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Ove sezone daje oko šest poena po utakmici; ispod 5,5 je ostao u 6 od 9 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Vezenkov i Fournier.",
@@ -11265,6 +11391,9 @@
     "l": 3.5,
     "strana": "o",
     "pp": 0.584,
+    "neodl": true,
+    "pm": 0.403,
+    "fer": 0.6,
     "mu": 3.28,
     "q": [
      1,
@@ -11279,7 +11408,7 @@
     "u": 2.3,
     "o": 1.55,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Protiv Zvezde se skače: dozvoljavaju dosta odbijenih lopti."
     ],
@@ -11297,6 +11426,9 @@
     "l": 8.5,
     "strana": "u",
     "pp": 0.526,
+    "neodl": true,
+    "pm": 0.431,
+    "fer": 0.471,
     "mu": 8.69,
     "q": [
      2,
@@ -11311,7 +11443,7 @@
     "u": 1.8,
     "o": 2.02,
     "knjiga": 3,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Olimpijakos dobro brani krila; to je i jedna od najboljih odbrana u ligi."
     ],
@@ -11329,6 +11461,9 @@
     "l": 3.5,
     "strana": "o",
     "pp": 0.523,
+    "neodl": true,
+    "pm": 0.433,
+    "fer": 0.537,
     "mu": 3.47,
     "q": [
      1,
@@ -11361,6 +11496,9 @@
     "l": 14.5,
     "strana": "u",
     "pp": 0.515,
+    "neodl": true,
+    "pm": 0.398,
+    "fer": 0.491,
     "mu": 13.76,
     "q": [
      5,
@@ -11375,7 +11513,7 @@
     "u": 1.92,
     "o": 2,
     "knjiga": 3,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 14,5 je viša od onoga što realno očekujemo, a to je oko 14 poena, iz ovih razloga:",
      "Ove sezone daje 14 do 15 poena po utakmici; ispod 14,5 je ostao u 5 od 9 utakmica.",
@@ -11395,6 +11533,9 @@
     "l": 4.5,
     "strana": "u",
     "pp": 0.632,
+    "neodl": false,
+    "pm": 0.346,
+    "fer": 0.421,
     "mu": 3.82,
     "q": [
      1,
@@ -11409,7 +11550,7 @@
     "u": 1.6,
     "o": 2.2,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 4,5 je viša od onoga što realno očekujemo, a to je oko četiri skoka."
     ],
@@ -11427,6 +11568,9 @@
     "l": 10.5,
     "strana": "u",
     "pp": 0.501,
+    "neodl": true,
+    "pm": 0.413,
+    "fer": 0.5,
     "mu": 10.22,
     "q": [
      3,
@@ -11441,7 +11585,7 @@
     "u": 1.9,
     "o": 1.9,
     "knjiga": 3,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Ove sezone daje oko 11 poena po utakmici; ispod 10,5 je ostao u 5 od 9 utakmica.",
      "Olimpijakos dobro brani krila; to je i jedna od najboljih odbrana u ligi.",
@@ -11460,6 +11604,9 @@
     "l": 4.5,
     "strana": "o",
     "pp": 0.522,
+    "neodl": true,
+    "pm": 0.451,
+    "fer": 0.531,
     "mu": 4.51,
     "q": [
      1,
@@ -11490,6 +11637,9 @@
     "l": 3.5,
     "strana": "o",
     "pp": 0.516,
+    "neodl": true,
+    "pm": 0.517,
+    "fer": 0.488,
     "mu": 4.55,
     "q": [
      0,
@@ -11504,7 +11654,7 @@
     "u": 1.88,
     "o": 1.97,
     "knjiga": 2,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 3,5 je niža od onoga što realno očekujemo, a to je četiri do pet poena: u poslednjim utakmicama daje više nego inače."
     ],
@@ -11522,6 +11672,9 @@
     "l": 8.5,
     "strana": "o",
     "pp": 0.511,
+    "neodl": true,
+    "pm": 0.454,
+    "fer": 0.5,
     "mu": 9.0,
     "q": [
      2,
@@ -11536,7 +11689,7 @@
     "u": 1.92,
     "o": 1.92,
     "knjiga": 3,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 8,5 je niža od onoga što realno očekujemo, a to je oko devet poena, iz ovih razloga:",
      "U poslednje tri utakmice: 22, 8 i 6 poena, više nego inače.",
@@ -11556,6 +11709,9 @@
     "l": 2.5,
     "strana": "u",
     "pp": 0.598,
+    "neodl": false,
+    "pm": 0.367,
+    "fer": 0.447,
     "mu": 2.17,
     "q": [
      0,
@@ -11570,7 +11726,7 @@
     "u": 1.67,
     "o": 2.1,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 2,5 je viša od onoga što realno očekujemo, a to je oko dva skoka: kao bek retko ide u skok."
     ],
@@ -11588,6 +11744,9 @@
     "l": 4.5,
     "strana": "o",
     "pp": 0.568,
+    "neodl": true,
+    "pm": 0.442,
+    "fer": 0.553,
     "mu": 4.44,
     "q": [
      1,
@@ -11620,6 +11779,9 @@
     "l": 6.5,
     "strana": "o",
     "pp": 0.567,
+    "neodl": false,
+    "pm": 0.576,
+    "fer": 0.521,
     "mu": 8.65,
     "q": [
      2,
@@ -11634,7 +11796,7 @@
     "u": 2,
     "o": 1.85,
     "knjiga": 2,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 6,5 je niža od onoga što realno očekujemo, a to je osam do devet poena: u poslednjim utakmicama daje više nego inače."
     ],
@@ -11652,6 +11814,9 @@
     "l": 1.5,
     "strana": "o",
     "pp": 0.68,
+    "neodl": false,
+    "pm": 0.578,
+    "fer": 0.61,
     "mu": 2.03,
     "q": [
      0,
@@ -11666,7 +11831,7 @@
     "u": 2.35,
     "o": 1.5,
     "knjiga": 3,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 1,5 je niža od onoga što realno očekujemo, a to je oko dve asistencije, iz ovih razloga:",
      "Ove sezone daje oko dve asistencije po utakmici i granicu od 1,5 prebacio je u 6 od 9 utakmica.",
@@ -11685,6 +11850,9 @@
     "l": 10.5,
     "strana": "u",
     "pp": 0.518,
+    "neodl": true,
+    "pm": 0.423,
+    "fer": 0.481,
     "mu": 10.43,
     "q": [
      3,
@@ -11699,7 +11867,7 @@
     "u": 1.92,
     "o": 2,
     "knjiga": 3,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Dolazi sa klupe i igra oko 17 minuta.",
      "U gostima postiže manje poena nego kod kuće (pet do šest poena naspram 12 do 13 poena), a sada igra u gostima."
@@ -11718,6 +11886,9 @@
     "l": 2.5,
     "strana": "u",
     "pp": 0.606,
+    "neodl": true,
+    "pm": 0.486,
+    "fer": 0.4,
     "mu": 2.68,
     "q": [
      0,
@@ -11751,6 +11922,9 @@
     "l": 4.5,
     "strana": "o",
     "pp": 0.539,
+    "neodl": false,
+    "pm": 0.575,
+    "fer": 0.494,
     "mu": 6.34,
     "q": [
      1,
@@ -11765,7 +11939,7 @@
     "u": 1.9,
     "o": 1.97,
     "knjiga": 2,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 4,5 je niža od onoga što realno očekujemo, a to je šest do sedam poena, iz ovih razloga:",
      "Ove sezone daje oko pet poena po utakmici i granicu od 4,5 prebacio je u 3 od 6 utakmica.",
@@ -11785,6 +11959,9 @@
     "l": 4.5,
     "strana": "o",
     "pp": 0.516,
+    "neodl": true,
+    "pm": 0.472,
+    "fer": 0.5,
     "mu": 5.31,
     "q": [
      1,
@@ -11799,7 +11976,7 @@
     "u": 1.92,
     "o": 1.92,
     "knjiga": 2,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 4,5 je niža od onoga što realno očekujemo, a to je pet do šest poena, iz ovih razloga:",
      "U poslednjim utakmicama igra više nego ranije (27, 13 i 16 minuta).",
@@ -11819,6 +11996,9 @@
     "l": 7.5,
     "strana": "u",
     "pp": 0.528,
+    "neodl": true,
+    "pm": 0.325,
+    "fer": 0.5,
     "mu": 6.32,
     "q": [
      1,
@@ -11852,6 +12032,9 @@
     "l": 3.5,
     "strana": "o",
     "pp": 0.506,
+    "neodl": true,
+    "pm": 0.436,
+    "fer": 0.5,
     "mu": 3.95,
     "q": [
      0,
@@ -11886,6 +12069,9 @@
     "l": 11.5,
     "strana": "u",
     "pp": 0.508,
+    "neodl": true,
+    "pm": 0.39,
+    "fer": 0.5,
     "mu": 10.78,
     "q": [
      3,
@@ -11900,7 +12086,7 @@
     "u": 1.92,
     "o": 1.92,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 11,5 je viša od onoga što realno očekujemo, a to je oko 11 poena, iz ovih razloga:",
      "U poslednje tri utakmice: 11, 2 i 13 poena, manje nego inače.",
@@ -11919,6 +12105,9 @@
     "l": 3.5,
     "strana": "u",
     "pp": 0.511,
+    "neodl": true,
+    "pm": 0.331,
+    "fer": 0.537,
     "mu": 2.86,
     "q": [
      1,
@@ -11933,7 +12122,7 @@
     "u": 2,
     "o": 1.75,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 3,5 je viša od onoga što realno očekujemo, a to je oko tri skoka, iz ovih razloga:",
      "Kao bek retko ide u skok; odbijene lopte kod Virtusa uglavnom hvataju Diarra i Edwards.",
@@ -11952,6 +12141,9 @@
     "l": 13.5,
     "strana": "o",
     "pp": 0.503,
+    "neodl": true,
+    "pm": 0.346,
+    "fer": 0.524,
     "mu": 11.85,
     "q": [
      4,
@@ -11966,7 +12158,7 @@
     "u": 2.02,
     "o": 1.85,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Jedna je od prvih opcija u napadu Virtusa.",
      "U poslednje tri utakmice: 12, 18 i 19 poena, više nego inače."
@@ -11985,6 +12177,9 @@
     "l": 2.5,
     "strana": "o",
     "pp": 0.507,
+    "neodl": true,
+    "pm": 0.513,
+    "fer": 0.5,
     "mu": 2.85,
     "q": [
      1,
@@ -11999,7 +12194,7 @@
     "u": 1.85,
     "o": 1.85,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 2,5 je niža od onoga što realno očekujemo, a to je oko tri skoka."
     ],
@@ -12017,6 +12212,9 @@
     "l": 12.5,
     "strana": "u",
     "pp": 0.5,
+    "neodl": true,
+    "pm": 0.352,
+    "fer": 0.519,
     "mu": 11.06,
     "q": [
      4,
@@ -12031,7 +12229,7 @@
     "u": 1.99,
     "o": 1.85,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 12,5 je viša od onoga što realno očekujemo, a to je oko 11 poena, iz ovih razloga:",
      "Ove sezone daje oko 13 poena po utakmici; ispod 12,5 je ostao u 6 od 9 utakmica.",
@@ -12051,6 +12249,9 @@
     "l": 2.5,
     "strana": "u",
     "pp": 0.575,
+    "neodl": false,
+    "pm": 0.441,
+    "fer": 0.447,
     "mu": 2.48,
     "q": [
      0,
@@ -12065,7 +12266,7 @@
     "u": 1.67,
     "o": 2.1,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Ove sezone daje oko dva skoka po utakmici; ispod 2,5 je ostao u 5 od 9 utakmica.",
      "Kao bek retko ide u skok; odbijene lopte kod Virtusa uglavnom hvataju Diarra i Edwards.",
@@ -12085,6 +12286,9 @@
     "l": 4.5,
     "strana": "o",
     "pp": 0.515,
+    "neodl": true,
+    "pm": 0.298,
+    "fer": 0.554,
     "mu": 3.56,
     "q": [
      1,
@@ -12117,6 +12321,9 @@
     "l": 8.5,
     "strana": "o",
     "pp": 0.548,
+    "neodl": false,
+    "pm": 0.512,
+    "fer": 0.521,
     "mu": 9.7,
     "q": [
      3,
@@ -12131,7 +12338,7 @@
     "u": 2,
     "o": 1.85,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 8,5 je niža od onoga što realno očekujemo, a to je devet do deset poena: u poslednjim utakmicama daje više nego inače."
     ],
@@ -12149,6 +12356,9 @@
     "l": 2.5,
     "strana": "u",
     "pp": 0.502,
+    "neodl": true,
+    "pm": 0.432,
+    "fer": 0.5,
     "mu": 2.42,
     "q": [
      0,
@@ -12163,7 +12373,7 @@
     "u": 1.85,
     "o": 1.85,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Ove sezone daje dve do tri asistencije po utakmici; ispod 2,5 je ostao u 5 od 9 utakmica.",
      "Nije glavni organizator; loptu kod Virtusa uglavnom vode Carr i Bello.",
@@ -12180,6 +12390,9 @@
     "l": 9.5,
     "strana": "o",
     "pp": 0.537,
+    "neodl": false,
+    "pm": 0.476,
+    "fer": 0.519,
     "mu": 10.23,
     "q": [
      3,
@@ -12194,7 +12407,7 @@
     "u": 1.98,
     "o": 1.85,
     "knjiga": 3,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 9,5 je niža od onoga što realno očekujemo, a to je oko deset poena, iz ovih razloga:",
      "Ove sezone daje 11 do 12 poena po utakmici i granicu od 9,5 prebacio je u 5 od 9 utakmica.",
@@ -12213,6 +12426,9 @@
     "l": 6.5,
     "strana": "u",
     "pp": 0.541,
+    "neodl": false,
+    "pm": 0.364,
+    "fer": 0.5,
     "mu": 5.75,
     "q": [
      2,
@@ -12227,7 +12443,7 @@
     "u": 1.85,
     "o": 1.85,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 6,5 je viša od onoga što realno očekujemo, a to je oko šest skokova, iz ovih razloga:",
      "Dolazi sa klupe i igra oko 19 minuta.",
@@ -12247,6 +12463,9 @@
     "l": 5.5,
     "strana": "u",
     "pp": 0.513,
+    "neodl": true,
+    "pm": 0.488,
+    "fer": 0.467,
     "mu": 6.38,
     "q": [
      1,
@@ -12280,6 +12499,9 @@
     "l": 4.5,
     "strana": "o",
     "pp": 0.558,
+    "neodl": false,
+    "pm": 0.51,
+    "fer": 0.531,
     "mu": 5.54,
     "q": [
      1,
@@ -12294,7 +12516,7 @@
     "u": 2.04,
     "o": 1.8,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 4,5 je niža od onoga što realno očekujemo, a to je pet do šest poena: češće je preko nego ispod ove granice."
     ],
@@ -12312,6 +12534,9 @@
     "l": 11.5,
     "strana": "o",
     "pp": 0.53,
+    "neodl": true,
+    "pm": 0.52,
+    "fer": 0.5,
     "mu": 12.97,
     "q": [
      5,
@@ -12326,7 +12551,7 @@
     "u": 1.92,
     "o": 1.92,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 11,5 je niža od onoga što realno očekujemo, a to je oko 13 poena: u gostima postiže više."
     ],
@@ -12344,6 +12569,9 @@
     "l": 2.5,
     "strana": "u",
     "pp": 0.571,
+    "neodl": true,
+    "pm": 0.452,
+    "fer": 0.447,
     "mu": 2.54,
     "q": [
      0,
@@ -12377,6 +12605,9 @@
     "l": 4.5,
     "strana": "o",
     "pp": 0.548,
+    "neodl": false,
+    "pm": 0.514,
+    "fer": 0.517,
     "mu": 4.85,
     "q": [
      2,
@@ -12391,7 +12622,7 @@
     "u": 1.92,
     "o": 1.8,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 4,5 je niža od onoga što realno očekujemo, a to je oko pet asistencija, iz ovih razloga:",
      "Prvi je organizator igre Dubaija: lopta je najčešće u njegovim rukama.",
@@ -12410,6 +12641,9 @@
     "l": 15.5,
     "strana": "o",
     "pp": 0.501,
+    "neodl": true,
+    "pm": 0.421,
+    "fer": 0.5,
     "mu": 15.19,
     "q": [
      5,
@@ -12442,6 +12676,9 @@
     "l": 3.5,
     "strana": "o",
     "pp": 0.652,
+    "neodl": false,
+    "pm": 0.546,
+    "fer": 0.623,
     "mu": 4.17,
     "q": [
      1,
@@ -12456,7 +12693,7 @@
     "u": 2.45,
     "o": 1.5,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 3,5 je niža od onoga što realno očekujemo, a to je oko četiri skoka, iz ovih razloga:",
      "U poslednje tri utakmice: 1, 10 i 5 skokova, više nego inače.",
@@ -12476,6 +12713,9 @@
     "l": 2.5,
     "strana": "u",
     "pp": 0.506,
+    "neodl": true,
+    "pm": 0.421,
+    "fer": 0.5,
     "mu": 2.39,
     "q": [
      0,
@@ -12490,7 +12730,7 @@
     "u": 1.85,
     "o": 1.85,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Ove sezone daje oko tri asistencije po utakmici; ispod 2,5 je ostao u 5 od 9 utakmica.",
      "Nije glavni organizator; loptu kod Dubaija uglavnom vode Okobo i Iv."
@@ -12506,6 +12746,9 @@
     "l": 10.5,
     "strana": "u",
     "pp": 0.513,
+    "neodl": true,
+    "pm": 0.45,
+    "fer": 0.478,
     "mu": 10.81,
     "q": [
      3,
@@ -12520,7 +12763,7 @@
     "u": 1.83,
     "o": 2,
     "knjiga": 3,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Bacon i Kabengele."
     ],
@@ -12538,6 +12781,9 @@
     "l": 2.5,
     "strana": "o",
     "pp": 0.513,
+    "neodl": true,
+    "pm": 0.471,
+    "fer": 0.517,
     "mu": 2.64,
     "q": [
      1,
@@ -12552,7 +12798,7 @@
     "u": 1.92,
     "o": 1.8,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Protiv Virtusa se skače: dozvoljavaju dosta odbijenih lopti."
     ],
@@ -12570,6 +12816,9 @@
     "l": 3.5,
     "strana": "o",
     "pp": 0.648,
+    "neodl": false,
+    "pm": 0.596,
+    "fer": 0.578,
     "mu": 4.33,
     "q": [
      1,
@@ -12602,6 +12851,9 @@
     "l": 14.5,
     "strana": "u",
     "pp": 0.511,
+    "neodl": true,
+    "pm": 0.45,
+    "fer": 0.48,
     "mu": 14.85,
     "q": [
      5,
@@ -12616,7 +12868,7 @@
     "u": 1.84,
     "o": 1.99,
     "knjiga": 3,
-    "pred": "o",
+    "pred": null,
     "za": [],
     "protiv": [
      "Granica od 14,5 je niža od onoga što realno očekujemo, a to je oko 15 poena.",
@@ -12632,6 +12884,9 @@
     "l": 6.5,
     "strana": "o",
     "pp": 0.589,
+    "neodl": false,
+    "pm": 0.485,
+    "fer": 0.581,
     "mu": 6.87,
     "q": [
      3,
@@ -12646,7 +12901,7 @@
     "u": 2.2,
     "o": 1.6,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 6,5 je niža od onoga što realno očekujemo, a to je oko sedam skokova, iz ovih razloga:",
      "Ove sezone daje sedam do osam skokova po utakmici i granicu od 6,5 prebacio je u 6 od 9 utakmica.",
@@ -12663,6 +12918,9 @@
     "l": 9.5,
     "strana": "o",
     "pp": 0.53,
+    "neodl": false,
+    "pm": 0.451,
+    "fer": 0.52,
     "mu": 10.03,
     "q": [
      3,
@@ -12695,6 +12953,9 @@
     "l": 4.5,
     "strana": "o",
     "pp": 0.592,
+    "neodl": false,
+    "pm": 0.626,
+    "fer": 0.531,
     "mu": 6.91,
     "q": [
      1,
@@ -12709,7 +12970,7 @@
     "u": 2.04,
     "o": 1.8,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 4,5 je niža od onoga što realno očekujemo, a to je oko sedam poena, iz ovih razloga:",
      "Ove sezone daje oko šest poena po utakmici i granicu od 4,5 prebacio je u 5 od 9 utakmica.",
@@ -12729,6 +12990,9 @@
     "l": 3.5,
     "strana": "u",
     "pp": 0.604,
+    "neodl": false,
+    "pm": 0.415,
+    "fer": 0.427,
     "mu": 3.33,
     "q": [
      1,
@@ -12743,7 +13007,7 @@
     "u": 1.62,
     "o": 2.2,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Ove sezone daje tri do četiri skoka po utakmici; ispod 3,5 je ostao u 6 od 9 utakmica.",
      "Glavni skakač Dubaija je Kabengele, pa za njega ostaje manje odbijenih lopti.",
@@ -12762,6 +13026,9 @@
     "l": 7.5,
     "strana": "o",
     "pp": 0.551,
+    "neodl": false,
+    "pm": 0.519,
+    "fer": 0.521,
     "mu": 8.89,
     "q": [
      2,
@@ -12776,7 +13043,7 @@
     "u": 2.01,
     "o": 1.85,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 7,5 je niža od onoga što realno očekujemo, a to je oko devet poena, iz ovih razloga:",
      "Ove sezone daje oko devet poena po utakmici i granicu od 7,5 prebacio je u 4 od 8 utakmica.",
@@ -12798,6 +13065,9 @@
     "l": 15.5,
     "strana": "u",
     "pp": 0.519,
+    "neodl": true,
+    "pm": 0.355,
+    "fer": 0.5,
     "mu": 13.81,
     "q": [
      5,
@@ -12830,6 +13100,9 @@
     "l": 2.5,
     "strana": "o",
     "pp": 0.646,
+    "neodl": false,
+    "pm": 0.584,
+    "fer": 0.607,
     "mu": 3.24,
     "q": [
      1,
@@ -12844,7 +13117,7 @@
     "u": 2.35,
     "o": 1.55,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 2,5 je niža od onoga što realno očekujemo, a to je oko tri skoka, iz ovih razloga:",
      "Kod Partizana ne igra Kevarrius Hayes, pa ostaje više minuta i lopti za ostale.",
@@ -12864,6 +13137,9 @@
     "l": 6.5,
     "strana": "u",
     "pp": 0.591,
+    "neodl": false,
+    "pm": 0.314,
+    "fer": 0.463,
     "mu": 5.36,
     "q": [
      2,
@@ -12896,6 +13172,9 @@
     "l": 6.5,
     "strana": "o",
     "pp": 0.533,
+    "neodl": false,
+    "pm": 0.531,
+    "fer": 0.5,
     "mu": 8.13,
     "q": [
      2,
@@ -12930,6 +13209,9 @@
     "l": 9.5,
     "strana": "o",
     "pp": 0.53,
+    "neodl": false,
+    "pm": 0.482,
+    "fer": 0.511,
     "mu": 10.6,
     "q": [
      3,
@@ -12944,7 +13226,7 @@
     "u": 2,
     "o": 1.9,
     "knjiga": 2,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 9,5 je niža od onoga što realno očekujemo, a to je 10 do 11 poena, iz ovih razloga:",
      "Kod Partizana ne igra Kevarrius Hayes, pa ostaje više minuta i lopti za ostale.",
@@ -12963,6 +13245,9 @@
     "l": 4.5,
     "strana": "o",
     "pp": 0.552,
+    "neodl": true,
+    "pm": 0.361,
+    "fer": 0.583,
     "mu": 3.93,
     "q": [
      1,
@@ -12977,7 +13262,7 @@
     "u": 2.3,
     "o": 1.75,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Kod Partizana ne igra Kevarrius Hayes, pa ostaje više minuta i lopti za ostale.",
      "Ove sezone daje četiri do pet skokova po utakmici i granicu od 4,5 prebacio je u 4 od 7 utakmica.",
@@ -12997,6 +13282,9 @@
     "l": 10.5,
     "strana": "u",
     "pp": 0.509,
+    "neodl": true,
+    "pm": 0.321,
+    "fer": 0.52,
     "mu": 8.81,
     "q": [
      2,
@@ -13031,6 +13319,9 @@
     "l": 4.5,
     "strana": "o",
     "pp": 0.505,
+    "neodl": true,
+    "pm": 0.435,
+    "fer": 0.5,
     "mu": 4.87,
     "q": [
      1,
@@ -13045,7 +13336,7 @@
     "u": 1.92,
     "o": 1.92,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Granica od 4,5 je niža od onoga što realno očekujemo, a to je oko pet poena, iz ovih razloga:",
      "Kod Partizana ne igra Kevarrius Hayes, pa ostaje više minuta i lopti za ostale.",
@@ -13065,6 +13356,9 @@
     "l": 4.5,
     "strana": "u",
     "pp": 0.562,
+    "neodl": false,
+    "pm": 0.384,
+    "fer": 0.465,
     "mu": 4.07,
     "q": [
      1,
@@ -13099,6 +13393,9 @@
     "l": 8.5,
     "strana": "o",
     "pp": 0.521,
+    "neodl": true,
+    "pm": 0.413,
+    "fer": 0.521,
     "mu": 8.38,
     "q": [
      2,
@@ -13113,7 +13410,7 @@
     "u": 2,
     "o": 1.85,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Kod Partizana ne igra Kevarrius Hayes, pa ostaje više minuta i lopti za ostale.",
      "Protiv Makabija bekovi postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi.",
@@ -13133,6 +13430,9 @@
     "l": 3.5,
     "strana": "u",
     "pp": 0.55,
+    "neodl": false,
+    "pm": 0.426,
+    "fer": 0.463,
     "mu": 3.37,
     "q": [
      1,
@@ -13167,6 +13467,9 @@
     "l": 9.5,
     "strana": "u",
     "pp": 0.524,
+    "neodl": true,
+    "pm": 0.358,
+    "fer": 0.494,
     "mu": 8.54,
     "q": [
      2,
@@ -13201,6 +13504,9 @@
     "l": 4.5,
     "strana": "o",
     "pp": 0.551,
+    "neodl": false,
+    "pm": 0.456,
+    "fer": 0.555,
     "mu": 4.65,
     "q": [
      1,
@@ -13215,7 +13521,7 @@
     "u": 2.2,
     "o": 1.75,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Kod Partizana ne igra Kevarrius Hayes, pa ostaje više minuta i lopti za ostale.",
      "Kod kuće hvata više skokova nego u gostima (oko pet skokova naspram oko tri skoka), a sada igra kod kuće."
@@ -13234,6 +13540,9 @@
     "l": 7.5,
     "strana": "u",
     "pp": 0.517,
+    "neodl": true,
+    "pm": 0.295,
+    "fer": 0.521,
     "mu": 5.93,
     "q": [
      1,
@@ -13268,6 +13577,9 @@
     "l": 8.5,
     "strana": "u",
     "pp": 0.541,
+    "neodl": false,
+    "pm": 0.362,
+    "fer": 0.476,
     "mu": 7.69,
     "q": [
      2,
@@ -13282,7 +13594,7 @@
     "u": 1.83,
     "o": 2,
     "knjiga": 3,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 8,5 je viša od onoga što realno očekujemo, a to je sedam do osam poena, iz ovih razloga:",
      "Ove sezone daje oko osam poena po utakmici; ispod 8,5 je ostao u 5 od 9 utakmica.",
@@ -13299,6 +13611,9 @@
     "l": 4.5,
     "strana": "u",
     "pp": 0.56,
+    "neodl": true,
+    "pm": 0.497,
+    "fer": 0.444,
     "mu": 4.95,
     "q": [
      1,
@@ -13313,7 +13628,7 @@
     "u": 1.65,
     "o": 2.1,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Ove sezone daje tri do četiri skoka po utakmici; ispod 4,5 je ostao u 7 od 9 utakmica.",
      "Partizan dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
@@ -13331,6 +13646,9 @@
     "l": 8.5,
     "strana": "u",
     "pp": 0.529,
+    "neodl": true,
+    "pm": 0.429,
+    "fer": 0.468,
     "mu": 8.55,
     "q": [
      2,
@@ -13345,7 +13663,7 @@
     "u": 1.8,
     "o": 2.02,
     "knjiga": 3,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Ove sezone daje osam do devet poena po utakmici; ispod 8,5 je ostao u 6 od 9 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Iii i Madar.",
@@ -13362,6 +13680,9 @@
     "l": 4.5,
     "strana": "u",
     "pp": 0.505,
+    "neodl": true,
+    "pm": 0.475,
+    "fer": 0.5,
     "mu": 4.67,
     "q": [
      2,
@@ -13376,7 +13697,7 @@
     "u": 1.85,
     "o": 1.85,
     "knjiga": 4,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Ove sezone daje četiri do pet skokova po utakmici; ispod 4,5 je ostao u 6 od 9 utakmica.",
      "Partizan dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
@@ -13395,6 +13716,9 @@
     "l": 12.5,
     "strana": "u",
     "pp": 0.514,
+    "neodl": true,
+    "pm": 0.296,
+    "fer": 0.524,
     "mu": 10.07,
     "q": [
      3,
@@ -13409,7 +13733,7 @@
     "u": 2.02,
     "o": 1.85,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 12,5 je viša od onoga što realno očekujemo, a to je oko deset poena: Partizan dobro brani bekove."
     ],
@@ -13427,6 +13751,9 @@
     "l": 2.5,
     "strana": "u",
     "pp": 0.638,
+    "neodl": false,
+    "pm": 0.402,
+    "fer": 0.399,
     "mu": 2.33,
     "q": [
      0,
@@ -13441,7 +13768,7 @@
     "u": 1.55,
     "o": 2.3,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Ove sezone daje oko dva skoka po utakmici; ispod 2,5 je ostao u 5 od 9 utakmica.",
      "Kao bek retko ide u skok; odbijene lopte kod Makabija uglavnom hvataju Brissett i Hoard.",
@@ -13458,6 +13785,9 @@
     "l": 4.5,
     "strana": "u",
     "pp": 0.512,
+    "neodl": true,
+    "pm": 0.297,
+    "fer": 0.533,
     "mu": 3.53,
     "q": [
      1,
@@ -13472,7 +13802,7 @@
     "u": 2,
     "o": 1.75,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 4,5 je viša od onoga što realno očekujemo, a to je tri do četiri asistencije, iz ovih razloga:",
      "Ove sezone daje četiri do pet asistencija po utakmici; ispod 4,5 je ostao u 5 od 9 utakmica.",
@@ -13491,6 +13821,9 @@
     "l": 13.5,
     "strana": "o",
     "pp": 0.504,
+    "neodl": true,
+    "pm": 0.369,
+    "fer": 0.518,
     "mu": 12.28,
     "q": [
      4,
@@ -13525,6 +13858,9 @@
     "l": 1.5,
     "strana": "o",
     "pp": 0.667,
+    "neodl": false,
+    "pm": 0.541,
+    "fer": 0.637,
     "mu": 1.92,
     "q": [
      0,
@@ -13559,6 +13895,9 @@
     "l": 3.5,
     "strana": "u",
     "pp": 0.551,
+    "neodl": false,
+    "pm": 0.423,
+    "fer": 0.463,
     "mu": 3.34,
     "q": [
      1,
@@ -13573,7 +13912,7 @@
     "u": 1.75,
     "o": 2,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Ove sezone daje tri do četiri asistencije po utakmici; ispod 3,5 je ostao u 5 od 9 utakmica.",
      "Nije glavni organizator; loptu kod Makabija uglavnom vode Madar i Theis.",
@@ -13592,6 +13931,9 @@
     "l": 10.5,
     "strana": "u",
     "pp": 0.543,
+    "neodl": false,
+    "pm": 0.351,
+    "fer": 0.478,
     "mu": 9.27,
     "q": [
      3,
@@ -13606,7 +13948,7 @@
     "u": 1.83,
     "o": 2,
     "knjiga": 3,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 10,5 je viša od onoga što realno očekujemo, a to je devet do deset poena, iz ovih razloga:",
      "Partizan dobro brani krila; to je i jedna od najboljih odbrana u ligi.",
@@ -13626,6 +13968,9 @@
     "l": 3.5,
     "strana": "u",
     "pp": 0.571,
+    "neodl": false,
+    "pm": 0.39,
+    "fer": 0.465,
     "mu": 3.18,
     "q": [
      1,
@@ -13640,7 +13985,7 @@
     "u": 1.75,
     "o": 2,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 3,5 je viša od onoga što realno očekujemo, a to je oko tri skoka, iz ovih razloga:",
      "Ove sezone daje oko tri skoka po utakmici; ispod 3,5 je ostao u 5 od 9 utakmica.",
@@ -13659,6 +14004,9 @@
     "l": 12.5,
     "strana": "u",
     "pp": 0.541,
+    "neodl": false,
+    "pm": 0.272,
+    "fer": 0.505,
     "mu": 9.61,
     "q": [
      2,
@@ -13673,7 +14021,7 @@
     "u": 1.99,
     "o": 1.9,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
      "Granica od 12,5 je viša od onoga što realno očekujemo, a to je devet do deset poena: Partizan dobro brani krila."
     ],
@@ -13690,6 +14038,9 @@
     "l": 5.5,
     "strana": "u",
     "pp": 0.52,
+    "neodl": true,
+    "pm": 0.435,
+    "fer": 0.475,
     "mu": 5.84,
     "q": [
      1,
@@ -13704,7 +14055,7 @@
     "u": 1.82,
     "o": 2.01,
     "knjiga": 3,
-    "pred": "o",
+    "pred": null,
     "za": [
      "Ove sezone daje oko pet poena po utakmici; ispod 5,5 je ostao u 5 od 9 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Iii i Madar.",

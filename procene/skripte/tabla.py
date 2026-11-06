@@ -323,6 +323,10 @@ def main():
                         ps = z.get('ps', z['pc'])
                         ps0 = z.get('ps0', ps)
                         for strana, pp, kv in (('o', min(ps, ps0), z['o']), ('u', min(1 - ps, 1 - ps0), z['u'])):
+                            # od 6.11.2026: predlog samo na strani koju vidi i model (ne samo kladionice)
+                            mu_s = i['s'][s]['mu']
+                            if (strana == 'o' and mu_s <= z['l']) or (strana == 'u' and mu_s >= z['l']):
+                                continue
                             if strana == 'u' and bez_minusa:
                                 continue
                             if strana == 'o' and i.get('novi_saigrac'):
