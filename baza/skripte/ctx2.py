@@ -1,6 +1,8 @@
 # Kontekst za generator v6: pozicijska odbrana protivnika, ritam/poeni timova, uloga i forma igrača
-import json,collections,statistics as stt,sys
-rows=json.load(open('/home/claude/form/rows.json'))
+import json,collections,statistics as stt,sys,os
+sys.path.insert(0,os.path.join(os.path.dirname(os.path.abspath(__file__)),'..','..','minusi'))
+from putanje import BAZA
+rows=json.load(open(BAZA+'/rows.json'))
 OUT=sys.argv[1]
 # 1) pozicijska odbrana: koliko protivnik dozvoljava bekovima/krilima/centrima po utakmici, u odnosu na ligu, skupljeno ka 1 (n/(n+6))
 al=collections.defaultdict(lambda: collections.defaultdict(lambda: collections.defaultdict(lambda:[0,0,0])))
