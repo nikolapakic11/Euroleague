@@ -1,6 +1,6 @@
 # Provera modela raspona na ponudama
 
-Parametri: kola 3-6, 836 učinaka, log ver -5417.3. Ponude: admiral, maxbet, mozzart, soccerbet, 2026-10-08 do 2026-11-05. Granica sa ishodom: 2300 (igrač nije igrao: 412, ne računa se).
+Parametri: kola 3-6, 836 učinaka, log ver -5417.3. Ponude: admiral, maxbet, mozzart, soccerbet, 2026-10-08 do 2026-11-06. Granica sa ishodom: 3059 (igrač nije igrao: 161, ne računa se).
 
 Manji log gubitak i Brier znače bolje. „Kvote kažu“ je verovatnoća iz kvota bez marže. Kola 7 do 9 su van perioda podešavanja (pravi test).
 
@@ -8,28 +8,28 @@ Manji log gubitak i Brier znače bolje. „Kvote kažu“ je verovatnoća iz kvo
 
 | skup | granica | stvarno preko | model kaže preko | kvote kažu preko | log gubitak model | log gubitak kvote | log gubitak pola-pola | Brier model | Brier kvote |
 |---|---|---|---|---|---|---|---|---|---|
-| sve | 2300 | 46.0% | 41.7% | 50.6% | 0.6983 | 0.6885 | 0.6831 | 0.2515 | 0.2477 |
+| sve | 3059 | 45.6% | 42.3% | 50.7% | 0.6953 | 0.6887 | 0.6827 | 0.2502 | 0.2478 |
 | kola 4 do 6 (u periodu podešavanja) | 840 | 42.3% | 42.8% | 50.8% | 0.6822 | 0.6949 | 0.6802 | 0.2443 | 0.2508 |
-| kola 7 do 9 (van podešavanja) | 1460 | 48.1% | 41.2% | 50.5% | 0.7075 | 0.6849 | 0.6848 | 0.2556 | 0.2459 |
-| poeni | 1147 | 47.5% | 41.1% | 50.1% | 0.7113 | 0.6910 | 0.6917 | 0.2578 | 0.2489 |
-| skokovi | 665 | 44.7% | 43.1% | 51.5% | 0.6859 | 0.6874 | 0.6771 | 0.2462 | 0.2471 |
-| asistencije | 488 | 44.1% | 41.3% | 50.8% | 0.6844 | 0.6841 | 0.6710 | 0.2436 | 0.2455 |
-| admiral | 1819 | 44.9% | 42.0% | 50.7% | 0.6943 | 0.6918 | 0.6834 | 0.2498 | 0.2493 |
-| maxbet | 270 | 49.3% | 41.7% | 50.6% | 0.7157 | 0.6767 | 0.6839 | 0.2590 | 0.2419 |
-| mozzart | 83 | 51.8% | 40.6% | 50.0% | 0.7201 | 0.6794 | 0.6878 | 0.2611 | 0.2432 |
-| soccerbet | 128 | 50.8% | 39.2% | 50.4% | 0.7027 | 0.6725 | 0.6745 | 0.2533 | 0.2398 |
+| kola 7 do 9 (van podešavanja) | 2219 | 46.8% | 42.1% | 50.6% | 0.7003 | 0.6864 | 0.6836 | 0.2524 | 0.2467 |
+| poeni | 1569 | 46.5% | 41.9% | 50.1% | 0.6957 | 0.6917 | 0.6855 | 0.2506 | 0.2493 |
+| skokovi | 870 | 46.1% | 43.3% | 51.5% | 0.7009 | 0.6847 | 0.6833 | 0.2529 | 0.2458 |
+| asistencije | 620 | 42.6% | 41.8% | 51.1% | 0.6866 | 0.6869 | 0.6746 | 0.2453 | 0.2469 |
+| admiral | 1998 | 44.8% | 42.2% | 50.7% | 0.6943 | 0.6918 | 0.6836 | 0.2498 | 0.2493 |
+| maxbet | 446 | 48.0% | 42.6% | 50.7% | 0.7096 | 0.6828 | 0.6860 | 0.2565 | 0.2449 |
+| mozzart | 237 | 47.3% | 43.3% | 50.7% | 0.6951 | 0.6824 | 0.6805 | 0.2499 | 0.2446 |
+| soccerbet | 378 | 45.5% | 42.0% | 50.6% | 0.6842 | 0.6837 | 0.6752 | 0.2450 | 0.2453 |
 
 ## Kalibracija: kad model kaže X% za preko, koliko puta je stvarno bilo preko
 
 | model kaže preko | granica | stvarno preko | kvote kažu preko |
 |---|---|---|---|
-| 0% do 20% | 40 | 45.0% | 47.5% |
-| 20% do 30% | 236 | 39.4% | 48.7% |
-| 30% do 40% | 778 | 42.7% | 49.6% |
-| 40% do 50% | 757 | 46.4% | 50.9% |
-| 50% do 60% | 369 | 50.7% | 52.3% |
-| 60% do 70% | 101 | 61.4% | 54.6% |
-| 70% do 80% | 18 | 72.2% | 57.4% |
+| 0% do 20% | 46 | 47.8% | 47.3% |
+| 20% do 30% | 282 | 35.1% | 48.4% |
+| 30% do 40% | 986 | 42.5% | 49.4% |
+| 40% do 50% | 1043 | 47.1% | 50.9% |
+| 50% do 60% | 554 | 48.4% | 52.7% |
+| 60% do 70% | 125 | 64.8% | 55.0% |
+| 70% do 80% | 22 | 59.1% | 58.0% |
 | 80% do 100% | 1 | 100.0% | 57.3% |
 
 ## Razlika model minus kvote: da li prati ishod
@@ -38,13 +38,13 @@ Granice su podeljene po tome koliko model vidi veću verovatnoću za preko od kv
 
 | model minus kvote (preko) | granica | kvote kažu preko | stvarno preko | razlika stvarno minus kvote |
 |---|---|---|---|---|
-| -100% do -15% | 648 | 51.6% | 44.6% | -7.0% (±2.0%) |
-| -15% do -8% | 616 | 50.6% | 43.5% | -7.1% (±2.0%) |
-| -8% do -3% | 377 | 50.1% | 44.3% | -5.8% (±2.6%) |
-| -3% do +3% | 373 | 50.1% | 48.8% | -1.3% (±2.6%) |
-| +3% do +8% | 172 | 50.1% | 52.3% | +2.2% (±3.8%) |
-| +8% do +15% | 90 | 50.2% | 55.6% | +5.4% (±5.3%) |
-| +15% do +100% | 24 | 47.5% | 45.8% | -1.6% (±10.2%) |
+| -100% do -15% | 780 | 51.8% | 42.9% | -8.9% (±1.8%) |
+| -15% do -8% | 851 | 50.9% | 44.3% | -6.6% (±1.7%) |
+| -8% do -3% | 529 | 50.0% | 44.4% | -5.6% (±2.2%) |
+| -3% do +3% | 532 | 50.1% | 50.6% | +0.5% (±2.2%) |
+| +3% do +8% | 215 | 50.1% | 50.2% | +0.1% (±3.4%) |
+| +8% do +15% | 121 | 49.5% | 48.8% | -0.8% (±4.5%) |
+| +15% do +100% | 31 | 46.8% | 35.5% | -11.3% (±9.0%) |
 
 ## Osnova bez modela: uvek ista strana
 
@@ -52,19 +52,19 @@ Da bi se videlo koliko model dodaje, ovo je ishod kad se bez ikakvog modela uvek
 
 | stavka | granica | uvek ispod: povraćaj | uvek preko: povraćaj | prosečna marža |
 |---|---|---|---|---|
-| sve | 2300 | +2.6% | -14.9% | 6.6% |
-| poeni | 1147 | +0.4% | -9.4% | 4.7% |
-| skokovi | 665 | +5.3% | -20.5% | 8.5% |
-| asistencije | 488 | +4.4% | -20.4% | 8.6% |
+| sve | 3059 | +3.5% | -15.8% | 6.7% |
+| poeni | 1569 | +2.3% | -11.6% | 5.0% |
+| skokovi | 870 | +2.4% | -18.0% | 8.5% |
+| asistencije | 620 | +8.0% | -23.5% | 8.6% |
 
 Model unutar ispod: povraćaj na granicama gde model kaže ispod (prednost iznad 5%) u odnosu na ostale granice gde se uzme ispod.
 
 | stavka | model bira ispod: granica | povraćaj | ostale granice ispod: granica | povraćaj |
 |---|---|---|---|---|
-| sve | 1434 | +7.6% | 866 | -5.6% |
-| poeni | 771 | +3.2% | 376 | -5.5% |
-| skokovi | 377 | +13.3% | 288 | -5.1% |
-| asistencije | 286 | +12.1% | 202 | -6.6% |
+| sve | 1855 | +8.5% | 1204 | -4.3% |
+| poeni | 998 | +9.5% | 571 | -10.2% |
+| skokovi | 488 | +4.2% | 382 | -0.0% |
+| asistencije | 369 | +11.5% | 251 | +2.8% |
 
 ## Da se igralo po modelu: ravan ulog, jedna strana po granici
 
@@ -72,34 +72,34 @@ Igra se strana gde je model × kvota najveće, ako prelazi prag. Ovo je samo pro
 
 | prag prednosti | strana | stavka | igrano | prošlo | prosečna kvota | povraćaj na ulog |
 |---|---|---|---|---|---|---|
-| 0% | preko | sve | 275 | 146 | 1.91 | -0.6% |
-| 0% | ispod | sve | 1642 | 914 | 1.93 | +6.7% |
-| 0% | obe | sve | 1917 | 1060 | 1.93 | +5.7% |
-| 5% | preko | sve | 171 | 88 | 1.94 | -1.4% |
-| 5% | preko | P | 86 | 42 | 1.93 | -5.5% |
-| 5% | preko | S | 47 | 23 | 2.01 | -4.6% |
-| 5% | preko | A | 38 | 23 | 1.87 | +12.2% |
-| 5% | ispod | sve | 1434 | 802 | 1.94 | +7.6% |
-| 5% | ispod | P | 771 | 415 | 1.92 | +3.2% |
-| 5% | ispod | S | 377 | 218 | 1.98 | +13.3% |
-| 5% | ispod | A | 286 | 169 | 1.92 | +12.1% |
-| 5% | obe | sve | 1605 | 890 | 1.94 | +6.7% |
-| 5% | obe | P | 857 | 457 | 1.92 | +2.3% |
-| 5% | obe | S | 424 | 241 | 1.98 | +11.3% |
-| 5% | obe | A | 324 | 192 | 1.91 | +12.1% |
-| 10% | preko | sve | 100 | 48 | 1.97 | -7.3% |
-| 10% | ispod | sve | 1219 | 666 | 1.95 | +5.9% |
-| 10% | obe | sve | 1319 | 714 | 1.95 | +4.9% |
-| 15% | preko | sve | 57 | 27 | 2.07 | -4.5% |
-| 15% | ispod | sve | 982 | 548 | 1.96 | +8.7% |
-| 15% | obe | sve | 1039 | 575 | 1.96 | +8.0% |
+| 0% | preko | sve | 360 | 173 | 1.92 | -10.3% |
+| 0% | ispod | sve | 2138 | 1194 | 1.94 | +7.6% |
+| 0% | obe | sve | 2498 | 1367 | 1.94 | +5.0% |
+| 5% | preko | sve | 221 | 102 | 1.95 | -11.7% |
+| 5% | preko | P | 112 | 56 | 1.93 | -3.8% |
+| 5% | preko | S | 55 | 23 | 1.99 | -18.5% |
+| 5% | preko | A | 54 | 23 | 1.96 | -21.1% |
+| 5% | ispod | sve | 1855 | 1038 | 1.95 | +8.5% |
+| 5% | ispod | P | 998 | 567 | 1.93 | +9.5% |
+| 5% | ispod | S | 488 | 257 | 1.99 | +4.2% |
+| 5% | ispod | A | 369 | 214 | 1.93 | +11.5% |
+| 5% | obe | sve | 2076 | 1140 | 1.95 | +6.4% |
+| 5% | obe | P | 1110 | 623 | 1.93 | +8.2% |
+| 5% | obe | S | 543 | 280 | 1.99 | +1.9% |
+| 5% | obe | A | 423 | 237 | 1.94 | +7.4% |
+| 10% | preko | sve | 138 | 56 | 1.99 | -21.9% |
+| 10% | ispod | sve | 1559 | 868 | 1.96 | +8.9% |
+| 10% | obe | sve | 1697 | 924 | 1.96 | +6.4% |
+| 15% | preko | sve | 76 | 30 | 2.08 | -20.5% |
+| 15% | ispod | sve | 1211 | 695 | 1.97 | +12.8% |
+| 15% | obe | sve | 1287 | 725 | 1.98 | +10.9% |
 
 ## Raspon: koliko učinaka upada u procenjeni raspon (svi igrači, kola 7 do 9)
 
 | stavka | učinaka | u rasponu 25. do 75. percentil | u rasponu 10. do 90. percentil |
 |---|---|---|---|
-| poeni | 697 | 53.8% | 83.5% |
-| skokovi | 697 | 62.1% | 87.2% |
-| asistencije | 697 | 75.6% | 90.7% |
+| poeni | 830 | 54.2% | 83.7% |
+| skokovi | 830 | 62.0% | 87.6% |
+| asistencije | 830 | 75.4% | 91.0% |
 
 Kod celih brojeva raspon sa krajevima uključenim prirodno hvata nešto više od 50% i 80%.

@@ -1,0 +1,84 @@
+Granica sa ishodom: 3059 {4: 267, 5: 297, 6: 276, 7: 462, 8: 298, 9: 307, 10: 1152}
+
+1) MODEL SAM
+  P: očekivano 9.38, stvarno 9.58, granica 9.57 | preko: model 0.419, tržište 0.501, stvarno 0.465
+  S: očekivano 3.73, stvarno 3.78, granica 3.85 | preko: model 0.433, tržište 0.515, stvarno 0.461
+  A: očekivano 2.92, stvarno 3.02, granica 3.11 | preko: model 0.418, tržište 0.511, stvarno 0.426
+  model − tržište (razlika verovatnoće za preko) i šta se desilo:
+   -1.00..-0.15: n= 780 model 0.312 tržište 0.518 stvarno 0.429
+   -0.15..-0.07: n= 971 model 0.400 tržište 0.507 stvarno 0.438
+   -0.07..-0.02: n= 511 model 0.456 tržište 0.501 stvarno 0.479
+   -0.02..+0.02: n= 353 model 0.499 tržište 0.500 stvarno 0.484
+   +0.02..+0.07: n= 268 model 0.543 tržište 0.501 stvarno 0.507
+   +0.07..+0.15: n= 145 model 0.598 tržište 0.497 stvarno 0.490
+   +0.15..+1.00: n=  31 model 0.657 tržište 0.468 stvarno 0.355
+  očekivanje modela vs granica (mu − l) i stvarno preko:
+   -9..-3: n=  75 model 0.238 tržište 0.472 stvarno 0.360
+   -3..-1.5: n= 276 model 0.292 tržište 0.484 stvarno 0.388
+   -1.5..-0.5: n= 674 model 0.337 tržište 0.497 stvarno 0.423
+   -0.5..+0.5: n=1268 model 0.433 tržište 0.508 stvarno 0.449
+   +0.5..+1.5: n= 548 model 0.534 tržište 0.527 stvarno 0.544
+   +1.5..+3: n= 195 model 0.571 tržište 0.517 stvarno 0.477
+   +3..+9: n=  23 model 0.657 tržište 0.527 stvarno 0.652
+
+2) VARIJANTE (walk-forward, kola [6, 7, 8, 9, 10], n=2495) — manji log gubitak je bolji
+  tržište (fer kvota)              0.6877 (+0.0000 vs tržište) po kolima: 6:+0.0 7:+0.0 8:+0.0 9:+0.0 10:+0.0
+  model sam                        0.7000 (+0.0123 vs tržište) po kolima: 6:-0.7 7:+16.5 8:+26.9 9:+9.2 10:+10.7
+  SADAŠNJI spoj (vreme + Platt)    0.6888 (+0.0011 vs tržište) po kolima: 6:+10.4 7:-0.2 8:+5.0 9:-5.3 10:+0.2
+  spoj bez Platt-a                 0.6884 (+0.0008 vs tržište) po kolima: 6:+10.4 7:-1.2 8:+3.6 9:-5.1 10:+0.1
+  spoj bez vremenskih težina       0.6883 (+0.0006 vs tržište) po kolima: 6:+10.4 7:-2.3 8:+5.5 9:-5.9 10:-0.0
+  fiksno 20% model                 0.6860 (-0.0017 vs tržište) po kolima: 6:+12.7 7:-4.8 8:-0.0 9:-4.2 10:-3.7
+  fiksno 30% model                 0.6859 (-0.0017 vs tržište) po kolima: 6:+11.3 7:-4.4 8:+0.8 9:-5.1 10:-3.6
+  fiksno 40% model                 0.6864 (-0.0013 vs tržište) po kolima: 6:+10.2 7:-3.3 8:+2.1 9:-5.5 10:-3.0
+  sadašnji, odstupanje × 0,5       0.6850 (-0.0027 vs tržište) po kolima: 6:-3.1 7:-6.2 8:-0.6 9:-4.1 10:-1.3
+  sadašnji, odstupanje × 0,7       0.6858 (-0.0019 vs tržište) po kolima: 6:+0.3 7:-5.2 8:+0.9 9:-4.9 10:-1.0
+
+3) IZBOR (prednost ≥ prag, verovatnoća ≥ 54%, najbolja prednost po igrač-stavka-strana)
+  SADAŠNJI spoj (vreme + Platt)    prednost ≥4%: 407/746 55% povr. +2.7%  | PLUS 10/20 50% povr. -6.3%  | MINUS 397/726 55% povr. +3.0%
+  SADAŠNJI spoj (vreme + Platt)    prednost ≥6%: 339/616 55% povr. +4.4%  | PLUS 1/4 25% povr. -52.0%   | MINUS 338/612 55% povr. +4.8%
+  SADAŠNJI spoj (vreme + Platt)    prednost ≥8%: 272/490 56% povr. +6.3%  | PLUS 1/3 33% povr. -36.0%   | MINUS 271/487 56% povr. +6.6%
+  spoj bez Platt-a                 prednost ≥4%: 368/689 53% povr. +0.4%  | PLUS 16/36 44% povr. -16.1% | MINUS 352/653 54% povr. +1.4%
+  spoj bez Platt-a                 prednost ≥6%: 299/564 53% povr. +0.7%  | PLUS 4/10 40% povr. -23.0%  | MINUS 295/554 53% povr. +1.2%
+  spoj bez Platt-a                 prednost ≥8%: 240/441 54% povr. +4.2%  | PLUS 1/3 33% povr. -36.0%   | MINUS 239/438 55% povr. +4.5%
+  fiksno 30% model                 prednost ≥4%: 402/726 55% povr. +3.9%  | PLUS 4/5 80% povr. +45.8%   | MINUS 398/721 55% povr. +3.6%
+  fiksno 30% model                 prednost ≥6%: 296/533 56% povr. +5.0%  | PLUS 1/1 100% povr. +92.0%  | MINUS 295/532 55% povr. +4.9%
+  fiksno 30% model                 prednost ≥8%: 217/386 56% povr. +7.0%  | PLUS —                      | MINUS 217/386 56% povr. +7.0%
+  sadašnji, odstupanje × 0,7       prednost ≥4%: 293/532 55% povr. +1.9%  | PLUS 1/3 33% povr. -36.0%   | MINUS 292/529 55% povr. +2.2%
+  sadašnji, odstupanje × 0,7       prednost ≥6%: 209/386 54% povr. +1.2%  | PLUS 1/1 100% povr. +92.0%  | MINUS 208/385 54% povr. +1.0%
+  sadašnji, odstupanje × 0,7       prednost ≥8%: 135/240 56% povr. +6.0%  | PLUS —                      | MINUS 135/240 56% povr. +6.0%
+  sadašnji, odstupanje × 0,5       prednost ≥4%: 186/333 56% povr. +2.2%  | PLUS 1/1 100% povr. +92.0%  | MINUS 185/332 56% povr. +1.9%
+  sadašnji, odstupanje × 0,5       prednost ≥6%: 97/165 59% povr. +7.8%   | PLUS —                      | MINUS 97/165 59% povr. +7.8%
+  sadašnji, odstupanje × 0,5       prednost ≥8%: 39/66 59% povr. +10.6%   | PLUS —                      | MINUS 39/66 59% povr. +10.6%
+
+  sadašnji spoj, prednost ≥4%, po pojasu verovatnoće:
+   54%–56%: 72/137 53% povr. +3.1% | PLUS 6/14 43% povr. -18.5% | MINUS 66/123 54% povr. +5.5%
+   56%–60%: 154/270 57% povr. +10.5% | PLUS 4/6 67% povr. +22.0% | MINUS 150/264 57% povr. +10.3%
+   60%–65%: 100/194 52% povr. -4.0% | PLUS — | MINUS 100/194 52% povr. -4.0%
+   65%–100%: 81/145 56% povr. -3.2% | PLUS — | MINUS 81/145 56% povr. -3.2%
+  po prednosti:
+   4%–6%: 68/130 52% povr. -5.4% | PLUS 9/16 56% povr. +5.1% | MINUS 59/114 52% povr. -6.9%
+   6%–8%: 67/126 53% povr. -2.8% | PLUS 0/1 0% povr. -100.0% | MINUS 67/125 54% povr. -2.0%
+   8%–12%: 138/250 55% povr. +4.3% | PLUS 1/3 33% povr. -36.0% | MINUS 137/247 55% povr. +4.8%
+   12%–100%: 134/240 56% povr. +8.3% | PLUS — | MINUS 134/240 56% povr. +8.3%
+  po kolu: {6: '130/251 52% povr. -0.5%', 7: '106/188 56% povr. +8.8%', 8: '72/126 57% povr. +5.4%', 9: '47/83 57% povr. +0.4%', 10: '52/98 53% povr. -2.1%'}
+
+  kalibracija sadašnjeg spoja (izabrana strana):
+   50%–54%: n=1039 predviđeno 0.518 stvarno 0.534 tržište 0.502
+   54%–58%: n= 615 predviđeno 0.559 stvarno 0.567 tržište 0.508
+   58%–62%: n= 459 predviđeno 0.599 stvarno 0.599 tržište 0.526
+   62%–70%: n= 335 predviđeno 0.651 stvarno 0.546 tržište 0.543
+   70%–100%: n=  47 predviđeno 0.728 stvarno 0.638 tržište 0.559
+
+4) STABILNOST: varijante po kolu i broj po danu (prednost na fer te kladionice)
+  SADAŠNJI spoj (vreme + Platt)  ≥4%: 424/786 54% povr. +1.9%  71.5/dan | po kolu: 6: 131/255 51% povr. -1.3%, 7: 112/197 57% povr. +10.2%, 8: 74/137 54% povr. -0.1%, 9: 50/90 56% povr. -0.4%, 10: 57/107 53% povr. -1.2%
+  sadašnji, odstupanje × 0,5     ≥4%: 199/360 55% povr. +1.7%  32.7/dan | po kolu: 6: 84/156 54% povr. +0.2%, 7: 63/108 58% povr. +8.9%, 8: 32/55 58% povr. +1.6%, 9: 10/17 59% povr. +6.1%, 10: 10/24 42% povr. -23.7%
+  sadašnji, odstupanje × 0,5     ≥5%: 147/273 54% povr. -0.4%  24.8/dan | po kolu: 6: 68/127 54% povr. -0.4%, 7: 47/85 55% povr. +4.0%, 8: 26/46 57% povr. -0.5%, 9: 2/4 50% povr. -6.2%, 10: 4/11 36% povr. -32.8%
+  sadašnji, odstupanje × 0,5     ≥6%: 103/178 58% povr. +6.6%  16.2/dan | po kolu: 6: 50/88 57% povr. +5.3%, 7: 34/60 57% povr. +6.1%, 8: 16/24 67% povr. +15.9%, 9: 2/3 67% povr. +25.0%, 10: 1/3 33% povr. -35.0%
+  sadašnji, odstupanje × 0,7     ≥6%: 227/416 55% povr. +2.9%  37.8/dan | po kolu: 6: 103/187 55% povr. +5.3%, 7: 69/124 56% povr. +5.5%, 8: 36/66 55% povr. -2.6%, 9: 9/16 56% povr. +4.3%, 10: 10/23 43% povr. -16.9%
+  fiksno 30% model               ≥6%: 309/557 55% povr. +5.3%  50.6/dan | po kolu: 6: 138/258 53% povr. +2.7%, 7: 92/160 57% povr. +7.7%, 8: 33/57 58% povr. +8.0%, 9: 32/60 53% povr. +1.4%, 10: 14/22 64% povr. +22.0%
+
+  kalibracija posle skupljanja × 0,5 (izabrana strana):
+   50%–53%: n=1228 predviđeno 0.513 stvarno 0.520
+   53%–56%: n= 603 predviđeno 0.543 stvarno 0.561
+   56%–60%: n= 374 predviđeno 0.579 stvarno 0.599
+   60%–100%: n= 290 predviđeno 0.625 stvarno 0.610
