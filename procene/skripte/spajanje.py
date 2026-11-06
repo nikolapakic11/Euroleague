@@ -25,8 +25,8 @@ KVOTA_MIN = 1.50
 # i izbor po kalibrisanoj verovatnoći su tamo bili lošiji, pa se ne koriste.
 # Za prikaz se verovatnoća kalibriše (kal, Platt po stavci), jer je spojena previše samouverena.
 PRAG = {'u': 0.53, 'o': 0.53}
-MIN_UT, MAX_UT = 6, 6   # odluka 4.11.2026: 6 predloga po utakmici je minimum (dopuna, izbor_utakmice)
-PLUS_MIN = 2          # odluka 4.11.2026: bar 2 PLUS po utakmici (stranica je za ljude, ne samo minusi)
+MIN_UT, MAX_UT = 0, 6   # od 6.11.2026 bez dopune: po utakmici do 6 koji prolaze prag (bazen za izbor dana, predlozi.izbor_dana)
+PLUS_MIN = 0          # od 6.11.2026 PLUS nije obavezan po utakmici; poželjan PLUS se dodaje u izboru dana (DAN_PLUS)
 PLUS_POD = 0.45       # obavezni PLUS ne ide ispod ove spojene verovatnoće
 MAX_ISTA = 2          # najviše 2 predloga iste stavke i strane po utakmici (raznovrsnost)
 MAX_TIM = 4           # najviše 4 predloga iz istog tima po utakmici
@@ -68,20 +68,29 @@ def preko_kal(w, kal, s, pm, tr):
     return kalibrisi(preko(w, s, pm, tr), kal, s)
 
 
-def podesi(R, l2=1.0):
+# Odluka 6.11.2026 (provera_2026-11-06.md, deo 5): stopa „preko“ raste kroz sezonu (kola 4–5 oko 39%, kola 8–10
+# oko 49%), a podešavanje na svim kolima jednako je vuklo verovatnoću ka ispod (walk-forward: predviđeno preko 42%,
+# stvarno 47%). Zato novija kola imaju veću težinu (ZABORAV po kolu unazad), a slobodni član se pomera tako da
+# prosečna predviđena verovatnoća za preko bude jednaka stvarnoj na poslednjih POMAK_KOLA kola.
+ZABORAV = 0.55
+POMAK_KOLA = 2
+
+
+def podesi(R, l2=1.0, tez=None):
     d = 5
     w = [0.0] * d
+    tez = tez or [1.0] * len(R)
     for _ in range(40):
         g = [0.0] * d
         H = [[0.0] * d for _ in range(d)]
-        for r in R:
+        for r, t in zip(R, tez):
             x = x_vek(r['s'], r['pm'], r['tr'])
             p = 1 / (1 + math.exp(-sum(a * b for a, b in zip(w, x))))
             y = r['preko']
             for i in range(d):
-                g[i] += (y - p) * x[i]
+                g[i] += t * (y - p) * x[i]
                 for j in range(d):
-                    H[i][j] += p * (1 - p) * x[i] * x[j]
+                    H[i][j] += t * p * (1 - p) * x[i] * x[j]
         for i in range(1, d):
             g[i] -= l2 * w[i]; H[i][i] += l2
         A = [H[i][:] + [g[i]] for i in range(d)]
@@ -93,6 +102,21 @@ def podesi(R, l2=1.0):
                     f = A[q][c] / A[c][c]
                     A[q] = [a - f * b for a, b in zip(A[q], A[c])]
         w = [a + A[i][d] / A[i][i] for i, a in enumerate(w)]
+    return [round(a, 4) for a in w]
+
+
+def podesi_vreme(R, l2=1.0):
+    """podesi sa težinom novijih kola (ZABORAV) i pomerenim slobodnim članom prema poslednjih POMAK_KOLA kola."""
+    if not R:
+        return [0.0] * 5
+    kmax = max(r['kolo'] for r in R)
+    w = podesi(R, l2, [ZABORAV ** (kmax - r['kolo']) for r in R])
+    Y = [r for r in R if r['kolo'] > kmax - POMAK_KOLA]
+    if Y and POMAK_KOLA:
+        c = sum(r['preko'] for r in Y) / len(Y)
+        for _ in range(20):
+            m = sum(preko(w, r['s'], r['pm'], r['tr']) for r in Y) / len(Y)
+            w[0] += (lg(c) - lg(m)) * 0.8
     return [round(a, 4) for a in w]
 
 
@@ -189,10 +213,10 @@ def predlozi_unazad(w, R, g_od, kal=None):
 
 def main():
     R = ucitaj(os.path.join(PROCENE, 'provera', 'granice.json'))
-    w_sve = podesi(R)
+    w_sve = podesi_vreme(R)
     tr = [r for r in R if r['kolo'] <= 6]
     te = [r for r in R if r['kolo'] >= 7]
-    w_tr = podesi(tr)
+    w_tr = podesi_vreme(tr)
     from model import Baza
     B = Baza()
     g_idx = {(x['k'], x['dan']): x['g'] for x in B.rows}
@@ -214,7 +238,7 @@ def main():
         ranije = [r for r in R if r['kolo'] < k]
         if len(ranije) < 300:
             continue
-        w_k = podesi(ranije)
+        w_k = podesi_vreme(ranije)
         wf += [dict(s=r['s'], p=preko(w_k, r['s'], r['pm'], r['tr']), y=r['preko']) for r in R if r['kolo'] == k]
     kal = {s: platt([x for x in wf if x['s'] == s]) for s in 'PSA'}
 

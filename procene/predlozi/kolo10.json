@@ -1763,7 +1763,7 @@
    "prosao": true
   }
  ],
- "osvezeno": "05.11.2026. 22:32",
+ "osvezeno": "06.11.2026. 10:42",
  "utakmice": [
   {
    "g": 91,
@@ -1920,8 +1920,12 @@
    "sastav": null,
    "objava": "2026-11-06T12:00:00+01:00",
    "rok": "2026-11-06T16:30:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Soccerbet": "2026-11-06T09:42:08+00:00"
+   }
   },
   {
    "g": 100,
@@ -1934,8 +1938,12 @@
    "sastav": null,
    "objava": "2026-11-06T12:00:00+01:00",
    "rok": "2026-11-06T16:30:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Soccerbet": "2026-11-06T09:42:08+00:00"
+   }
   },
   {
    "g": 98,
@@ -1948,8 +1956,12 @@
    "sastav": null,
    "objava": "2026-11-06T12:00:00+01:00",
    "rok": "2026-11-06T16:30:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Soccerbet": "2026-11-06T09:42:08+00:00"
+   }
   },
   {
    "g": 99,
@@ -1962,8 +1974,12 @@
    "sastav": null,
    "objava": "2026-11-06T12:00:00+01:00",
    "rok": "2026-11-06T16:30:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Soccerbet": "2026-11-06T09:42:08+00:00"
+   }
   }
  ],
  "uklonjeni": [

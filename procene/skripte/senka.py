@@ -37,7 +37,7 @@ def w_varijanta(B):
         h = [x[r['s']] for x in B.byk.get(r['k'], []) if x['dan'] < r['dan']]
         pros = st.mean(h) if len(h) >= 3 else None
         X.append(dict(r, pm=pm_varijanta(r['s'], r['mu'], r['var'], pros, r['l'])))
-    return S.podesi(X)
+    return S.podesi_vreme(X)
 
 
 def kandidati(u, varijanta, w):
