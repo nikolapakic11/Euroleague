@@ -4,6 +4,46 @@
    "k": "conor morgan",
    "s": "S",
    "razlog": "Nikola 6.11.: model ga vodi kao centra (4,6 skokova), a ove sezone hvata 2,9"
+  },
+  {
+   "k": "jonas valanciunas",
+   "s": "S",
+   "razlog": "dubinska analiza 6.11.: model ga vuče ka proseku centara (nema prošlu sezonu u Evroligi), a skuplja 8,1 u proseku; preko 8,5 u 3 od 8, minuti rastu (23, 29)"
+  },
+  {
+   "k": "scottie wilbekin",
+   "s": "A",
+   "razlog": "dubinska analiza 6.11.: Walker sada vodi loptu (5 asistencija u 9. kolu), kvota 1,55 bez prostora"
+  },
+  {
+   "k": "saben lee",
+   "s": "A",
+   "razlog": "dubinska analiza 6.11.: Williams-Goss povređen, Lee je prvi plejmejker; ispod 4,5 samo 3 od 6, oko 50%"
+  },
+  {
+   "k": "jaron blossomgame",
+   "s": "P",
+   "razlog": "dubinska analiza 6.11.: vratio se Musa (krilo, 26,7 min prošle sezone), Blossomgame veoma nestalan (0, 2, 1 u 3 od 8)"
+  },
+  {
+   "k": "lonnie walker",
+   "s": "A",
+   "razlog": "Nikola 6.11.: za Walkera poeni, ne asistencije"
+  },
+  {
+   "k": "tyson carter",
+   "s": "A",
+   "razlog": "dubinska analiza 6.11.: kvota 1,50, gotovo bez vrednosti (68% × 1,50)"
+  },
+  {
+   "k": "anthony brown",
+   "s": "P",
+   "razlog": "dubinska analiza 6.11.: dolaskom Walkera pao na 13 min i 3 poena u 9. kolu; uloga se smanjuje"
+  },
+  {
+   "k": "jonas valanciunas",
+   "s": "P",
+   "razlog": "dubinska analiza 6.11.: poslednje 3 utakmice 15, 17, 16 poena, minuti rastu (23, 29); model ga vuče ka proseku centara"
   }
  ],
  "dodati": {
@@ -13,6 +53,12 @@
     "s": "P",
     "strana": "o",
     "razlog": "Nikola 6.11.: umesto Morgana; prednost 3,9 poena (tik ispod 4), forma 5/7, kvota 1,90; treći iz Žalgirisa"
+   },
+   {
+    "k": "lonnie walker",
+    "s": "P",
+    "strana": "o",
+    "razlog": "Nikola 6.11.: prva opcija Bešiktaša posle dolaska (30 poena u 9. kolu, 15,2 u Makabiju prošle sezone); ručno 26 min, model 17,5 naspram 15,5 kod Mozzarta"
    }
   ]
  }

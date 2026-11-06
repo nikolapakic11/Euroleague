@@ -35,6 +35,11 @@ Zakazani zadaci su isključeni (odluka 5.11.2026): ništa se ne pokreće samo. S
 
 ## Pravila objave (dogovoreno)
 
+- Dubinska analiza svakog predloga pre objave (Nikola, 6.11.2026: „krem de la krem“): za svakog kandidata poslednjih 8
+  utakmica (minuti i stavka), domaća liga, ranije protiv istog protivnika, odbrana protivnika po poziciji, ko se vraća ili
+  nedostaje u oba tima (izveštaj o povredama, vesti, novi igrači), razlika granica među kladionicama. Izbaciti
+  (`procene/podaci/iskljuceni.json`, sa razlogom) sve gde kontekst ide protiv ili je oko 50%; bolje manje, a sigurnije.
+
 - Konsultacija pre objave (odluka 6.11.2026): kad Nikola pošalje ponude, pokreni `dan.py`, pokaži mu predloge za dan
   u razgovoru (sa razlozima i upozorenjima) i objavi na sajt i artefakt TEK kad on potvrdi.
 
@@ -89,6 +94,10 @@ Zakazani zadaci su isključeni (odluka 5.11.2026): ništa se ne pokreće samo. S
 - Sistemski tiketi na Admiralu se ne isplate (ogroman ulog za 7/10 i slično).
 
 ## Otvoreno
+
+- Model skuplja učinak po minutu ka proseku pozicije kad igrač nema prošlu sezonu u Evroligi (dolasci iz NBA, svi igrači
+  Bešiktaša). 6.11.: Morgan precenjen (vučen ka centrima, 4,6 naspram 2,9), Valančiunas potcenjen (6,3 naspram 8,1).
+  Proveriti slabije skupljanje za takve igrače ili spoljnu prethodnu statistiku (NBA, domaće lige) i predložiti Nikoli.
 
 - Senka (odluka 5.11.2026): od kola 11 `senka.py` uporedo beleži predloge po varijanti „skupljanje samo nadole“
   (model ispod proseka igrača: 0,7·model + 0,3·prosek) u `procene/senka/`, bez prikaza. Posle 3 kola sa ishodima

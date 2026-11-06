@@ -25,7 +25,7 @@ KVOTA_MIN = 1.50
 # i izbor po kalibrisanoj verovatnoći su tamo bili lošiji, pa se ne koriste.
 # Za prikaz se verovatnoća kalibriše (kal, Platt po stavci), jer je spojena previše samouverena.
 PRAG = {'u': 0.50, 'o': 0.50}   # od 6.11.2026 bazen: strana koju spoj vidi kao verovatniju; izbor dana odlučuje (predlozi.izbor_dana)
-MIN_UT, MAX_UT = 0, 12  # od 6.11.2026 bez dopune: po utakmici do 6 koji prolaze prag (bazen za izbor dana, predlozi.izbor_dana)
+MIN_UT, MAX_UT = 0, 40  # od 6.11.2026 bez dopune: po utakmici do 6 koji prolaze prag (bazen za izbor dana, predlozi.izbor_dana)
 PLUS_MIN = 0          # od 6.11.2026 PLUS nije obavezan po utakmici; poželjan PLUS se dodaje u izboru dana (DAN_PLUS)
 PLUS_POD = 0.45       # obavezni PLUS ne ide ispod ove spojene verovatnoće
 MAX_ISTA = 12         # od 6.11.2026 bez ograničenja u bazenu (raznovrsnost se gleda u izboru dana)
@@ -142,11 +142,11 @@ def izbor_utakmice(kand):
     izabrani, igraci, ista, timovi = [], set(), collections.Counter(), collections.Counter()
 
     def moze(c):
-        return (c['igr'] not in igraci and ista[(c['s'], c['strana'])] < MAX_ISTA
+        return ((c['igr'], c['s']) not in igraci and ista[(c['s'], c['strana'])] < MAX_ISTA
                 and (not c.get('tim') or timovi[c['tim']] < MAX_TIM))
 
     def uzmi(c):
-        izabrani.append(c); igraci.add(c['igr']); ista[(c['s'], c['strana'])] += 1
+        izabrani.append(c); igraci.add((c['igr'], c['s'])); ista[(c['s'], c['strana'])] += 1   # od 6.11.: bazen po igraču i stavci
         if c.get('tim'):
             timovi[c['tim']] += 1
 
@@ -167,7 +167,7 @@ def izbor_utakmice(kand):
         for c in red:
             if len(izabrani) >= MIN_UT:
                 break
-            if c['igr'] in igraci:
+            if (c['igr'], c['s']) in igraci:
                 continue
             if korak != 'prag' and c['pp'] < PRAG[c['strana']]:
                 continue

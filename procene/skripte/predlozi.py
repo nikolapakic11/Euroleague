@@ -123,14 +123,19 @@ def izbor_dana(P, B=None, ranije=()):
         P = [p for p in P if p['forma'][1] < 4 or p['forma'][0] / p['forma'][1] >= DAN_FORMA_MIN]
 
     def moze(p, izab):
-        return (sum(q['g'] == p['g'] for q in izab) < DAN_PO_UT and sum(q['tim'] == p['tim'] for q in izab) < DAN_PO_TIMU
+        return (all(q['k'] != p['k'] for q in izab) and sum(q['g'] == p['g'] for q in izab) < DAN_PO_UT and sum(q['tim'] == p['tim'] for q in izab) < DAN_PO_TIMU
                 and sum((q['s'], q['strana']) == (p['s'], p['strana']) for q in izab) < DAN_PO_STAVCI
                 and (p['kvota'] >= DAN_NISKA or sum(q['kvota'] < DAN_NISKA for q in izab) < DAN_NISKE_MAX))
     izab = []
-    for p in P:
+    for p in P:                                   # prvo svi koji prolaze prag
         if len(izab) >= DAN_MAX:
             break
-        if ((ocena(p) >= DAN_PREDNOST and p['pp'] >= DAN_PRAG) or len(izab) < DAN_NAJMANJE) and moze(p, izab):
+        if ocena(p) >= DAN_PREDNOST and p['pp'] >= DAN_PRAG and moze(p, izab):
+            izab.append(p)
+    for p in P:                                   # dopuna do najmanjeg broja, najbolji preostali
+        if len(izab) >= DAN_NAJMANJE:
+            break
+        if p not in izab and moze(p, izab):
             izab.append(p)
     for p in P:                                   # poželjan PLUS, ako je dovoljno dobar
         if sum(q['strana'] == 'o' for q in izab) >= DAN_PLUS:
