@@ -298,7 +298,9 @@ def main():
         objavljive = {u['g'] for u in tabla['utakmice'] if u['g'] in R and sad_bg >= R[u['g']][0]}
         for u in tabla['utakmice']:
             g = u['g']
-            if str(g) not in konacno and g not in pocele and g in R and sad_bg >= R[g][1] and any(p['g'] == g for p in st['predlozi']):
+            # od 6.11.2026: posle roka se zaključava svaka objavljena utakmica, i ona bez predloga (inače bi naknadno
+            # pokretanje dopunilo predloge koji nisu bili na listi u trenutku roka)
+            if str(g) not in konacno and g not in pocele and g in R and sad_bg >= R[g][1] and g in objavljive:
                 konacno[str(g)] = fmt(R[g][1])
         zamrznute = pocele | {int(g) for g in konacno}
         zadrzi = [p for p in st['predlozi'] if p['g'] in zamrznute]          # zaključani

@@ -1906,7 +1906,7 @@
    "upisano": "06.11.2026. 15:35",
    "prvi_put": "06.11.2026. 11:21",
    "zatv": 1.6,
-   "zatv_fer": 1.544
+   "zatv_fer": 1.548
   },
   {
    "g": 98,
@@ -2451,7 +2451,7 @@
    "zatv_fer": 1.855
   }
  ],
- "osvezeno": "06.11.2026. 15:35",
+ "osvezeno": "06.11.2026. 16:50",
  "utakmice": [
   {
    "g": 91,
@@ -2615,10 +2615,10 @@
     "Soccerbet"
    ],
    "snimci": {
-    "Admiral": "2026-11-06T13:16:22.172Z",
-    "MaxBet": "2026-11-06T13:11:58.879Z",
-    "Mozzart": "2026-11-06T13:14:34Z",
-    "Soccerbet": "2026-11-06T13:14:05+00:00"
+    "Admiral": "2026-11-06T15:41:53.530Z",
+    "MaxBet": "2026-11-06T15:42:04.584Z",
+    "Mozzart": "2026-11-06T15:49:27Z",
+    "Soccerbet": "2026-11-06T15:44:05+00:00"
    }
   },
   {
@@ -2639,10 +2639,10 @@
     "Soccerbet"
    ],
    "snimci": {
-    "Admiral": "2026-11-06T13:16:22.172Z",
-    "MaxBet": "2026-11-06T13:11:58.879Z",
-    "Mozzart": "2026-11-06T13:14:34Z",
-    "Soccerbet": "2026-11-06T13:14:05+00:00"
+    "Admiral": "2026-11-06T15:41:53.530Z",
+    "MaxBet": "2026-11-06T15:42:04.584Z",
+    "Mozzart": "2026-11-06T15:49:27Z",
+    "Soccerbet": "2026-11-06T15:44:05+00:00"
    }
   },
   {
@@ -2663,10 +2663,10 @@
     "Soccerbet"
    ],
    "snimci": {
-    "Admiral": "2026-11-06T13:16:22.172Z",
-    "MaxBet": "2026-11-06T13:11:58.879Z",
-    "Mozzart": "2026-11-06T13:14:34Z",
-    "Soccerbet": "2026-11-06T13:14:05+00:00"
+    "Admiral": "2026-11-06T15:41:53.530Z",
+    "MaxBet": "2026-11-06T15:42:04.584Z",
+    "Mozzart": "2026-11-06T15:49:27Z",
+    "Soccerbet": "2026-11-06T15:44:05+00:00"
    }
   },
   {
@@ -2687,10 +2687,10 @@
     "Soccerbet"
    ],
    "snimci": {
-    "Admiral": "2026-11-06T13:16:22.172Z",
-    "MaxBet": "2026-11-06T13:11:58.879Z",
-    "Mozzart": "2026-11-06T13:14:34Z",
-    "Soccerbet": "2026-11-06T13:14:05+00:00"
+    "Admiral": "2026-11-06T15:41:53.530Z",
+    "MaxBet": "2026-11-06T15:42:04.584Z",
+    "Mozzart": "2026-11-06T15:49:27Z",
+    "Soccerbet": "2026-11-06T15:44:05+00:00"
    }
   }
  ],
@@ -3149,7 +3149,11 @@
   }
  ],
  "konacno": {
-  "91": "04.11.2026. 16:40"
+  "91": "04.11.2026. 16:40",
+  "97": "06.11.2026. 16:30",
+  "100": "06.11.2026. 16:30",
+  "98": "06.11.2026. 16:30",
+  "99": "06.11.2026. 16:30"
  },
  "ponuda": {
   "91": [
@@ -13053,33 +13057,33 @@
     "tim": "PAR",
     "pos": "G",
     "s": "P",
-    "l": 15.5,
+    "l": 16.5,
     "strana": "u",
-    "pp": 0.519,
-    "neodl": true,
-    "pm": 0.355,
+    "pp": 0.533,
+    "neodl": false,
+    "pm": 0.312,
     "fer": 0.5,
-    "mu": 15.01,
+    "mu": 15.7,
     "q": [
      7,
-     10,
-     15,
-     21,
-     28
+     11,
+     16,
+     22,
+     29
     ],
     "min": 28.0,
     "pros": 14.33,
     "p5": 10.8,
-    "u": 1.9,
-    "o": 1.9,
-    "knjiga": 2,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 4,
     "pred": null,
     "za": [
-     "Granica od 15,5 je viša od onoga što realno očekujemo, a to je oko 15 poena."
+     "Granica od 16,5 je viša od onoga što realno očekujemo, a to je 15 do 16 poena: češće ostaje ispod nego preko ove granice."
     ],
     "protiv": [
      "Kod Partizana ne igra Kevarrius Hayes, pa ostaje više minuta i lopti za ostale.",
-     "Ove sezone daje 14 do 15 poena po utakmici i granicu od 15,5 prebacio je u 5 od 9 utakmica."
+     "Jedna je od prvih opcija u napadu Partizana."
     ]
    },
    {
@@ -13108,7 +13112,7 @@
     "u": 2.35,
     "o": 1.55,
     "knjiga": 4,
-    "pred": null,
+    "pred": "o",
     "za": [
      "Granica od 2,5 je niža od onoga što realno očekujemo, a to je tri do četiri skoka, iz ovih razloga:",
      "Kod Partizana ne igra Kevarrius Hayes, pa ostaje više minuta i lopti za ostale.",
@@ -13199,11 +13203,11 @@
     "s": "P",
     "l": 9.5,
     "strana": "o",
-    "pp": 0.53,
-    "neodl": false,
+    "pp": 0.529,
+    "neodl": true,
     "pm": 0.482,
-    "fer": 0.511,
-    "mu": 9.92,
+    "fer": 0.51,
+    "mu": 9.9,
     "q": [
      3,
      6,
@@ -13216,8 +13220,8 @@
     "p5": 10.6,
     "u": 2,
     "o": 1.9,
-    "knjiga": 2,
-    "pred": null,
+    "knjiga": 3,
+    "pred": "o",
     "za": [
      "Granica od 9,5 je niža od onoga što realno očekujemo, a to je oko deset poena, iz ovih razloga:",
      "Kod Partizana ne igra Kevarrius Hayes, pa ostaje više minuta i lopti za ostale.",
@@ -13494,11 +13498,11 @@
     "s": "S",
     "l": 4.5,
     "strana": "o",
-    "pp": 0.551,
+    "pp": 0.535,
     "neodl": false,
     "pm": 0.456,
-    "fer": 0.555,
-    "mu": 4.94,
+    "fer": 0.541,
+    "mu": 4.81,
     "q": [
      2,
      3,
@@ -13792,7 +13796,7 @@
     "u": 2,
     "o": 1.75,
     "knjiga": 4,
-    "pred": null,
+    "pred": "u",
     "za": [
      "Ove sezone daje četiri do pet asistencija po utakmici; ispod 4,5 je ostao u 5 od 9 utakmica.",
      "Partizan ne dozvoljava laku igru dodavanjem; protiv njih se deli malo asistencija.",
@@ -14045,7 +14049,7 @@
     "u": 1.82,
     "o": 2.01,
     "knjiga": 3,
-    "pred": null,
+    "pred": "o",
     "za": [
      "Ove sezone daje oko pet poena po utakmici; ispod 5,5 je ostao u 5 od 9 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Iii i Madar.",
