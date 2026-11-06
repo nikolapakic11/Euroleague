@@ -707,7 +707,7 @@ function statIgraci(ST){
 function crtajKako(){
   const pr=D.pravilo||{};
   let h=`<div class="blok"><h2>Pravila</h2><ul>${[
-   'Predlozi za dan: iz svih utakmica tog dana svi dovoljno dobri (verovatnoća bar 58%), najmanje 4, najviše 12; najviše 4 iz iste utakmice, 2 iz istog tima i jedan po igraču. PLUS nije obavezan, ali kad ga nema, dodaju se do 2 najbolja PLUS ako imaju bar 56%.',
+   'Predlozi za dan: iz svih utakmica tog dana biramo one gde je naša procena najviše iznad onoga što kažu kvote kladionica (bar 4 poena procenta prednosti i bar 54% verovatnoće), a ne samo najverovatnije, jer bi to uvek bile najniže kvote. Najmanje 4, najviše 12; najviše 4 iz iste utakmice, 2 iz istog tima, 3 sa kvotom ispod 1,65 i jedan po igraču. PLUS nije obavezan, ali se dodaju do 2 najbolja PLUS kad imaju prednost.',
    'Predlozi i procene za utakmicu objavljuju se od 12h na dan utakmice. Do konačnog roka su preliminarni: sat pre prve utakmice tog dana ako ona počinje pre 18h (npr. u 17h, konačni u 16h), inače sat i po pre nje (prva u 20:45, konačni u 19:15). Konačni predlozi se posle toga ne menjaju; učinak se računa samo za njih.',
    'Verovatnoća spaja procenu modela i kvote sve četiri kladionice i podešena je prema stvarnim ishodima ranijih granica, tako da prikazani procenat odgovara tome koliko često takvi predlozi zaista prolaze. Isto pravilo važi za PLUS i MINUS.',
    'Nivo: <b>jak</b> (bar 62%), <b>solidan</b> (56 do 62%), <b>nagoveštaj</b> (ispod 56%, verovatnije nego suprotno, ali tesno).',
