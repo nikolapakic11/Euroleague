@@ -1,6 +1,6 @@
 {
 "v": 1,
-"savedAt": 1793956365546,
+"savedAt": 1793957658623,
 "tickets": [
 {
 "id": "adm7579167865",
@@ -71511,7 +71511,8 @@
 "line": 10.5,
 "odds": 1.92
 }
-]
+],
+"refund": 300
 },
 {
 "id": "r10d2-07",
@@ -71641,7 +71642,8 @@
 "line": 17.5,
 "odds": 1.92
 }
-]
+],
+"refund": 100
 },
 {
 "id": "r10d2-09",
@@ -72746,7 +72748,8 @@
 "line": 3.5,
 "odds": 1.85
 }
-]
+],
+"refund": 100
 },
 {
 "id": "r10d2-26",
@@ -156313,7 +156316,8 @@
 "Kolo 9, 30.10.2026: 90 minus tiketa (7.000 svežeg novca, plan cp-r9d2-90) + 10 tiketa r9d2-g (500, plusevi greškom uplaćeni kao minusi). Dobitna jedna osmica r9d2-22 (kvota 130,5, isplata sa bonusom 16% oko 15.138). Nijedan tiket sa tačno jednim promašajem, pa bez povraćaja (čeka potvrdu). Svi g tiketi pali; da su uplaćeni kao plusevi, ni jedan ne bi prošao (najbolji 5 od 6). Jedinstveni parovi na tiketima 41 od 81 (51%), Balcerowski P nije igrao. Tikete oborili Okobo S (3, 24 tiketa), Carsen Edwards A (4, 24), Osetkowski A1,5 (2, 24), Micić P (15, 24), Diarra S (7, 24), Frazier P (15, 24), Moore P (13, 24), Valančiunas P (16, 19), Punter P (18, 18), Lesor S (11, 16), Santos S (5, 16). Lista 15 minusa 9 od 15; lista 10 pluseva 5 od 10; 12 plus predloga 7 od 12. Free bet mix i dve mix osmice pale. Rezultati: Dubai – Hapoel 97:83, ASVEL – Baskonija 94:79, Žalgiris – Partizan 87:80, Barselona – Valensija 98:94, Efes – Panatinaikos 83:68, Virtus – Bešiktaš 101:103, Olimpijakos – Milano 84:78. minLog i ctx2 osveženi sa utakmicama 84 do 90.",
 "Kolo 10, 4.11.2026: odigrana samo utakmica Real – Panatinaikos 112:115 posle produžetka; Nikola nije igrao minuse. Cela Admiralova ponuda za tu utakmicu: minusi 15 od 33 (poeni 6 od 16, skokovi 7 od 12, asistencije 2 od 5), visok rezultat zbog produžetka (Nunn 33, Feliz 27, Abalde 23). Zapisnik 91 ubačen u bazu; minLog, ctx2 i tabela tačnih granica (sada 1.770 minusa iz ponude, 8.10. do 4.11.) osveženi.",
 "Kolo 10, 5.11.2026: uplaćeno 45 tiketa po planu cp-r10d2-45 (35 osmica po 100, 10 desetki po 50, ukupno 4.000), sve svež novac (uplata 4.000). Na računu ostalo oko 150 din.",
-"Kolo 10, 5.11.2026: 45 tiketa (35 osmica po 100 i 10 desetki po 50 din, 4.000 din svežeg novca, plan cp-r10d2). Nijedan nije prošao. Tačno jedan promašaj imaju r10d2-06 (8 parova), r10d2-08 i r10d2-25 (po 7 parova koji se računaju, Washington vraćen jer nije u zapisniku), pa čekaju povraćaj (iznos sa PDF-a). Ostalih 42 palo. Parova 380 na tiketima: prošlo 191, palo 177, vraćeno 12 (Washington P 16,5, 12 tiketa); jedinstvenih parova 49, prošlo 24 (49%). Oborili su Rhoden P, Brizuela P, Both Tut Gach P (16 na 7,5), Brooks P, Robinson A, Taylor S i Simmons A (svaki na 12 tiketa), zatim Micić A (10), Martin P (9), Clyburn P (9), Hifi A (8). Opet su najviše ponavljani parovi pali (od 14 parova sa po 12 tiketa pala 7), a ostali su prošli bolje. Rezultati: Fener – Baskonija 84:65, Hapoel – Barselona 90:93, Asvel – Bajern 95:99, Efes – Pariz 90:95, Milano – Valensija 73:84 (zapisnik 96 upisan dok je feed Evrolige još označavao utakmicu kao u toku, rezultat po četvrtinama nepromenjen; proveriti). minLog i ctx2 osveženi sa utakmicama 92 do 96."
+"Kolo 10, 5.11.2026: 45 tiketa (35 osmica po 100 i 10 desetki po 50 din, 4.000 din svežeg novca, plan cp-r10d2). Nijedan nije prošao. Tačno jedan promašaj imaju r10d2-06 (8 parova), r10d2-08 i r10d2-25 (po 7 parova koji se računaju, Washington vraćen jer nije u zapisniku), pa čekaju povraćaj (iznos sa PDF-a). Ostalih 42 palo. Parova 380 na tiketima: prošlo 191, palo 177, vraćeno 12 (Washington P 16,5, 12 tiketa); jedinstvenih parova 49, prošlo 24 (49%). Oborili su Rhoden P, Brizuela P, Both Tut Gach P (16 na 7,5), Brooks P, Robinson A, Taylor S i Simmons A (svaki na 12 tiketa), zatim Micić A (10), Martin P (9), Clyburn P (9), Hifi A (8). Opet su najviše ponavljani parovi pali (od 14 parova sa po 12 tiketa pala 7), a ostali su prošli bolje. Rezultati: Fener – Baskonija 84:65, Hapoel – Barselona 90:93, Asvel – Bajern 95:99, Efes – Pariz 90:95, Milano – Valensija 73:84 (zapisnik 96 upisan dok je feed Evrolige još označavao utakmicu kao u toku, rezultat po četvrtinama nepromenjen; proveriti). minLog i ctx2 osveženi sa utakmicama 92 do 96.",
+"Kolo 10, 5.11.2026: povraćaj ukupno 500 din na 3 tiketa sa jednim promašajem (r10d2-06 300, r10d2-08 100, r10d2-25 100), tačno po pravilu kvote ostalih parova (73,1 x3, 36,9 x1, 38,1 x1); zbir se poklapa sa iznosom koji je Nikola potvrdio. Stanje na računu oko 650 din."
 ]
 },
 "offerSnaps": [
