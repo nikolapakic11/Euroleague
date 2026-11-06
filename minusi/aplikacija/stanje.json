@@ -1,6 +1,6 @@
 {
 "v": 1,
-"savedAt": 1793961041239,
+"savedAt": 1794001432752,
 "tickets": [
 {
 "id": "adm7579167865",
@@ -74514,7 +74514,8 @@
 "line": 2.5,
 "odds": 1.67
 }
-]
+],
+"refund": 200
 },
 {
 "id": "r10d3-06",
@@ -74969,7 +74970,8 @@
 "line": 3.5,
 "odds": 1.7
 }
-]
+],
+"refund": 200
 },
 {
 "id": "r10d3-13",
@@ -75229,7 +75231,8 @@
 "line": 7.5,
 "odds": 1.92
 }
-]
+],
+"refund": 200
 },
 {
 "id": "r10d3-17",
@@ -75424,7 +75427,8 @@
 "line": 13.5,
 "odds": 1.84
 }
-]
+],
+"refund": 300
 },
 {
 "id": "r10d3-20",
@@ -76074,7 +76078,8 @@
 "line": 2.5,
 "odds": 1.85
 }
-]
+],
+"refund": 200
 },
 {
 "id": "r10d3-30",
@@ -84262,6 +84267,355 @@
 "actual": 3,
 "dnp": false,
 "min": "16:34"
+},
+"10|lonnie walker iv|P|16.5": {
+"actual": 7,
+"dnp": false,
+"min": "21:55"
+},
+"10|marcus carr|S|2.5": {
+"actual": 1,
+"dnp": false,
+"min": "20:39"
+},
+"10|jaylen hoard|S|4.5": {
+"actual": 6,
+"dnp": false,
+"min": "25:30"
+},
+"10|scottie wilbekin|P|13.5": {
+"actual": 0,
+"dnp": false,
+"min": "08:18"
+},
+"10|alessandro pajola|A|4.5": {
+"actual": 5,
+"dnp": false,
+"min": "19:12"
+},
+"10|wendell moore jr.|P|11.5": {
+"actual": 15,
+"dnp": false,
+"min": "28:04"
+},
+"10|yam madar|A|4.5": {
+"actual": 4,
+"dnp": false,
+"min": "21:26"
+},
+"10|mckinley wright iv|P|10.5": {
+"actual": 16,
+"dnp": false,
+"min": "28:19"
+},
+"10|dwayne bacon|A|2.5": {
+"actual": 5,
+"dnp": false,
+"min": "28:11"
+},
+"10|bo klintman|P|5.5": {
+"actual": 7,
+"dnp": false,
+"min": "15:28"
+},
+"10|jimmy clark iii|P|13.5": {
+"actual": 8,
+"dnp": false,
+"min": "23:12"
+},
+"10|christian koloko|P|7.5": {
+"actual": 6,
+"dnp": false,
+"min": "21:12"
+},
+"10|semi ojeleye|P|8.5": {
+"actual": 2,
+"dnp": false,
+"min": "15:45"
+},
+"10|azuolas tubelis|P|10.5": {
+"actual": 14,
+"dnp": false,
+"min": "16:22"
+},
+"10|jordan nwora|P|14.5": {
+"actual": 18,
+"dnp": false,
+"min": "25:15"
+},
+"10|oshae brissett|P|8.5": {
+"actual": 7,
+"dnp": false,
+"min": "23:52"
+},
+"10|sasha vezenkov|P|18.5": {
+"actual": 27,
+"dnp": false,
+"min": "33:47"
+},
+"10|jaylen nowell|P|11.5": {
+"actual": 4,
+"dnp": false,
+"min": "19:23"
+},
+"10|saben lee|A|4.5": {
+"actual": 3,
+"dnp": false,
+"min": "21:22"
+},
+"10|tyson ward|P|9.5": {
+"actual": 3,
+"dnp": false,
+"min": "21:30"
+},
+"10|dwayne bacon|P|15.5": {
+"actual": 13,
+"dnp": false,
+"min": "28:11"
+},
+"10|mfiondu kabengele|P|14.5": {
+"actual": 16,
+"dnp": false,
+"min": "21:39"
+},
+"10|luca vildoza|A|3.5": {
+"actual": 1,
+"dnp": false,
+"min": "04:22"
+},
+"10|chris jones|S|2.5": {
+"actual": 2,
+"dnp": false,
+"min": "21:35"
+},
+"10|jimmy clark iii|A|3.5": {
+"actual": 6,
+"dnp": false,
+"min": "23:12"
+},
+"10|bonzie colson|S|3.5": {
+"actual": 3,
+"dnp": false,
+"min": "22:16"
+},
+"10|anthony brown|P|7.5": {
+"actual": 10,
+"dnp": false,
+"min": "28:29"
+},
+"10|sterling brown|P|10.5": {
+"actual": 7,
+"dnp": false,
+"min": "21:04"
+},
+"10|robert franks|P|5.5": {
+"actual": 11,
+"dnp": false,
+"min": "18:17"
+},
+"10|bonzie colson|P|10.5": {
+"actual": 8,
+"dnp": false,
+"min": "22:16"
+},
+"10|ognjen dobric|P|3.5": {
+"actual": 3,
+"dnp": false,
+"min": "08:45"
+},
+"10|elie okobo|S|2.5": {
+"actual": 0,
+"dnp": false,
+"min": "19:49"
+},
+"10|aliou diarra|S|6.5": {
+"actual": 7,
+"dnp": false,
+"min": "19:08"
+},
+"10|carlik jones|A|6.5": {
+"actual": 7,
+"dnp": false,
+"min": "24:04"
+},
+"10|codi miller-mcintyre|P|10.5": {
+"actual": 0,
+"dnp": false,
+"min": "21:02"
+},
+"10|jared butler|P|10.5": {
+"actual": 4,
+"dnp": false,
+"min": "13:50"
+},
+"10|nick weiler babb|P|3.5": {
+"actual": 3,
+"dnp": false,
+"min": "18:25"
+},
+"10|derrick alston jr|S|2.5": {
+"actual": 0,
+"dnp": false,
+"min": "16:54"
+},
+"10|yam madar|P|12.5": {
+"actual": 10,
+"dnp": false,
+"min": "21:26"
+},
+"10|keaton wallace|P|4.5": {
+"actual": 6,
+"dnp": false,
+"min": "14:37"
+},
+"10|chima moneke|P|10.5": {
+"actual": 2,
+"dnp": false,
+"min": "19:26"
+},
+"10|trent frazier|A|2.5": {
+"actual": 3,
+"dnp": false,
+"min": "21:43"
+},
+"10|evan fournier|P|12.5": {
+"actual": 12,
+"dnp": false,
+"min": "27:09"
+},
+"10|carsen edwards|P|15.5": {
+"actual": 11,
+"dnp": false,
+"min": "21:56"
+},
+"10|tyson carter|P|7.5": {
+"actual": 7,
+"dnp": false,
+"min": "26:10"
+},
+"10|dustin sleva|P|5.5": {
+"actual": 5,
+"dnp": false,
+"min": "21:50"
+},
+"10|jonas valanciunas|P|14.5": {
+"actual": 12,
+"dnp": false,
+"min": "19:49"
+},
+"10|ebuka izundu|P|4.5": {
+"actual": 2,
+"dnp": false,
+"min": "12:03"
+},
+"10|mbaye ndiaye|P|7.5": {
+"actual": 3,
+"dnp": false,
+"min": "12:12"
+},
+"10|dzanan musa|P|9.5": {
+"actual": 8,
+"dnp": false,
+"min": "18:57"
+},
+"10|carlik jones|P|15.5": {
+"actual": 7,
+"dnp": false,
+"min": "24:04"
+},
+"10|lamar stevens|S|4.5": {
+"actual": 8,
+"dnp": false,
+"min": "27:49"
+},
+"10|lamar stevens|P|9.5": {
+"actual": 14,
+"dnp": false,
+"min": "27:49"
+},
+"10|kevarrius hayes|P|10.5": {
+"actual": null,
+"dnp": true
+},
+"10|filip petrusev|P|7.5": {
+"actual": 3,
+"dnp": false,
+"min": "13:35"
+},
+"10|marius grigonis|P|5.5": {
+"actual": 13,
+"dnp": false,
+"min": "18:28"
+},
+"10|conor morgan|P|6.5": {
+"actual": 0,
+"dnp": false,
+"min": "08:52"
+},
+"10|oshae brissett|S|4.5": {
+"actual": 7,
+"dnp": false,
+"min": "23:52"
+},
+"10|derrick alston jr|P|13.5": {
+"actual": 2,
+"dnp": false,
+"min": "16:54"
+},
+"10|roman sorkin|P|12.5": {
+"actual": 0,
+"dnp": false,
+"min": "04:35"
+},
+"10|ethan thompson|P|10.5": {
+"actual": 16,
+"dnp": false,
+"min": "27:55"
+},
+"10|elie okobo|P|11.5": {
+"actual": 10,
+"dnp": false,
+"min": "19:49"
+},
+"10|kostas papanikolaou|P|3.5": {
+"actual": 0,
+"dnp": false,
+"min": "05:37"
+},
+"10|rasheed bello|P|4.5": {
+"actual": 2,
+"dnp": false,
+"min": "16:42"
+},
+"10|wendell moore jr.|S|3.5": {
+"actual": 5,
+"dnp": false,
+"min": "28:04"
+},
+"10|nikola tanaskovic|P|7.5": {
+"actual": 11,
+"dnp": false,
+"min": "27:20"
+},
+"10|sasha vezenkov|S|5.5": {
+"actual": 6,
+"dnp": false,
+"min": "33:47"
+},
+"10|jaron blossomgame|P|4.5": {
+"actual": 9,
+"dnp": false,
+"min": "19:11"
+},
+"10|aliou diarra|P|9.5": {
+"actual": 19,
+"dnp": false,
+"min": "19:08"
+},
+"10|mckinley wright iv|S|2.5": {
+"actual": 2,
+"dnp": false,
+"min": "28:19"
 }
 },
 "players": {
@@ -159058,7 +159412,8 @@
 "Kolo 10, 5.11.2026: uplaćeno 45 tiketa po planu cp-r10d2-45 (35 osmica po 100, 10 desetki po 50, ukupno 4.000), sve svež novac (uplata 4.000). Na računu ostalo oko 150 din.",
 "Kolo 10, 5.11.2026: 45 tiketa (35 osmica po 100 i 10 desetki po 50 din, 4.000 din svežeg novca, plan cp-r10d2). Nijedan nije prošao. Tačno jedan promašaj imaju r10d2-06 (8 parova), r10d2-08 i r10d2-25 (po 7 parova koji se računaju, Washington vraćen jer nije u zapisniku), pa čekaju povraćaj (iznos sa PDF-a). Ostalih 42 palo. Parova 380 na tiketima: prošlo 191, palo 177, vraćeno 12 (Washington P 16,5, 12 tiketa); jedinstvenih parova 49, prošlo 24 (49%). Oborili su Rhoden P, Brizuela P, Both Tut Gach P (16 na 7,5), Brooks P, Robinson A, Taylor S i Simmons A (svaki na 12 tiketa), zatim Micić A (10), Martin P (9), Clyburn P (9), Hifi A (8). Opet su najviše ponavljani parovi pali (od 14 parova sa po 12 tiketa pala 7), a ostali su prošli bolje. Rezultati: Fener – Baskonija 84:65, Hapoel – Barselona 90:93, Asvel – Bajern 95:99, Efes – Pariz 90:95, Milano – Valensija 73:84 (zapisnik 96 upisan dok je feed Evrolige još označavao utakmicu kao u toku, rezultat po četvrtinama nepromenjen; proveriti). minLog i ctx2 osveženi sa utakmicama 92 do 96.",
 "Kolo 10, 5.11.2026: povraćaj ukupno 500 din na 3 tiketa sa jednim promašajem (r10d2-06 300, r10d2-08 100, r10d2-25 100), tačno po pravilu kvote ostalih parova (73,1 x3, 36,9 x1, 38,1 x1); zbir se poklapa sa iznosom koji je Nikola potvrdio. Stanje na računu oko 650 din.",
-"Kolo 10, 6.11.2026: odigrano 40 tiketa po planu cp-r10d3-40 (ponuda od 10:59): 30 osmica po 100 i 10 desetki po 50 din, ukupno 3.500 din; Nikola uplatio 3.000 din svežeg novca, ostalih 500 iz povraćaja (desetke upisane kao igrane iz dobitka). Pretpostavka da je plan odigran bez izmena. Pravilo kvote: najmanja 1,60, najviše jedna ispod 1,65, ostale 1,75+ (danas sve 1,65+). Procene: model 0,19 / kladionica 0,17 / 57% 0,37 dobitnih tiketa. Stanje na računu posle uplate oko 150 din."
+"Kolo 10, 6.11.2026: odigrano 40 tiketa po planu cp-r10d3-40 (ponuda od 10:59): 30 osmica po 100 i 10 desetki po 50 din, ukupno 3.500 din; Nikola uplatio 3.000 din svežeg novca, ostalih 500 iz povraćaja (desetke upisane kao igrane iz dobitka). Pretpostavka da je plan odigran bez izmena. Pravilo kvote: najmanja 1,60, najviše jedna ispod 1,65, ostale 1,75+ (danas sve 1,65+). Procene: model 0,19 / kladionica 0,17 / 57% 0,37 dobitnih tiketa. Stanje na računu posle uplate oko 150 din.",
+"Kolo 10, 6.11.2026 (BES-ZAL 67:83, VIR-DUB 75:93, PAR-TEL 88:67, OLY-RED 57:62): 40 tiketa (30 osmica po 100 + 10 desetki po 50 din, 3.500 din), nijedan nije prošao. 5 osmica sa tačno jednim promašajem (r10d3-05 Brown, -12 Carlik Jones, -16 Klintman, -19 Carlik Jones, -29 Bacon) = povraćaj po pravilu kvote ostalih parova (55,8 / 60,6 / 60,0 / 80,2 / 65,8 -> 200+200+200+300+200 = 1.100 din), iznos potvrditi iz PDF-a. Hayes nije igrao (kvota 1). Brissett je igrao 24 min (7 poena, 7 skokova): ranije greška u preseku zbog razlike u imenu u zapisniku. Svi promašaji dolazili od Brown (10 tiketa), Pajola, Hoard, Carlik Jones, Wright IV, Klintman, Nwora, Vezenkov, Kabengele."
 ]
 },
 "offerSnaps": [
@@ -171544,7 +171899,7 @@
 }
 ],
 "minLog": {
-"at": "2026-11-05",
+"at": "2026-11-06",
 "season": "E2026",
 "m": {
 "jacob toppin": [
