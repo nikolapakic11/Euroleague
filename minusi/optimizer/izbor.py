@@ -7,7 +7,7 @@ sys.path.insert(0,os.path.join(os.path.dirname(os.path.abspath(__file__)),'..'))
 from putanje import BAZA
 ap=argparse.ArgumentParser(); ap.add_argument('pool'); ap.add_argument('ponuda'); ap.add_argument('izlaz')
 ap.add_argument('--najmanja',type=float,default=1.60); ap.add_argument('--sa-zatamnjenim',action='store_true'); a=ap.parse_args()
-NAME2CODE={'Dubai':'DUB','Hapoel Tel-Aviv':'HTA','Hapoel Tel Aviv':'HTA','Anadolu Efes':'IST','Panathinaikos':'PAN','Zalgiris Kaunas':'ZAL','Partizan':'PAR','Lyon-Villeurbanne':'ASV','Asvel':'ASV','Baskonia':'BAS','Olympiacos':'OLY','Olimpia Milano':'MIL','Armani Milano':'MIL','Barcelona':'BAR','Valencia':'PAM','Virtus Bologna':'VIR','Besiktas':'BES','Bayern':'MUN','Bayern Munich':'MUN','Crvena Zvezda':'RED','Maccabi Tel Aviv':'TEL','Paris':'PRS','Real Madrid':'MAD','Fenerbahce':'ULK'}
+NAME2CODE={'Dubai':'DUB','Hapoel Tel-Aviv':'HTA','Hapoel Tel Aviv':'HTA','Anadolu Efes':'IST','Panathinaikos':'PAN','Zalgiris Kaunas':'ZAL','Partizan':'PAR','Lyon-Villeurbanne':'ASV','Asvel':'ASV','Baskonia':'BAS','Olympiacos':'OLY','Olimpia Milano':'MIL','Armani Milano':'MIL','Barcelona':'BAR','Valencia':'PAM','Virtus Bologna':'VIR','Besiktas':'BES','Bayern':'MUN','Bayern Munich':'MUN','Crvena Zvezda':'RED','Crvena zvezda':'RED','Maccabi Tel Aviv':'TEL','Paris':'PRS','Real Madrid':'MAD','Fenerbahce':'ULK'}
 STAT={'Poeni':'P','Skokovi':'S','Asistencije':'A'}
 off=json.load(open(a.ponuda,encoding='utf8'))['picks']; pool=json.load(open(a.pool,encoding='utf8'))['pool']
 G=json.load(open(BAZA+'/games.json'))['data']
