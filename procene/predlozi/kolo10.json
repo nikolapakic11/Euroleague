@@ -1775,11 +1775,11 @@
    "l": 3.5,
    "kl": "admiral",
    "kvota": 1.6,
-   "pp": 0.645,
-   "ev": 0.031,
+   "pp": 0.646,
+   "ev": 0.034,
    "nivo": "jak",
    "rang": 2,
-   "fer": 0.5747,
+   "fer": 0.5761,
    "ostale": [
     {
      "kl": "maxbet",
@@ -1804,7 +1804,7 @@
     {
      "kl": "maxbet",
      "l": 3.5,
-     "u": 2.15,
+     "u": 2.2,
      "o": 1.6
     },
     {
@@ -1843,7 +1843,7 @@
      "l": 3.5,
      "k": 1.6,
      "kl": "admiral",
-     "p": 0.645,
+     "p": 0.646,
      "vrsta": "granica"
     },
     {
@@ -1903,10 +1903,10 @@
     7
    ],
    "rang_dan": 1,
-   "upisano": "06.11.2026. 12:30",
+   "upisano": "06.11.2026. 14:15",
    "prvi_put": "06.11.2026. 11:21",
    "zatv": 1.6,
-   "zatv_fer": 1.551
+   "zatv_fer": 1.548
   },
   {
    "g": 98,
@@ -2025,7 +2025,7 @@
     7
    ],
    "rang_dan": 2,
-   "upisano": "06.11.2026. 12:30",
+   "upisano": "06.11.2026. 14:15",
    "prvi_put": "06.11.2026. 11:21",
    "zatv": 1.8,
    "zatv_fer": 1.743
@@ -2043,11 +2043,11 @@
    "l": 9.5,
    "kl": "admiral",
    "kvota": 1.8,
-   "pp": 0.574,
-   "ev": 0.033,
+   "pp": 0.572,
+   "ev": 0.03,
    "nivo": "solidan",
-   "rang": 7,
-   "fer": 0.5303,
+   "rang": 8,
+   "fer": 0.529,
    "ostale": [
     {
      "kl": "maxbet",
@@ -2055,7 +2055,7 @@
     },
     {
      "kl": "soccerbet",
-     "k": 1.77
+     "k": 1.78
     }
    ],
    "knjige": [
@@ -2080,17 +2080,17 @@
     {
      "kl": "soccerbet",
      "l": 9.5,
-     "u": 1.77,
-     "o": 2.02
+     "u": 1.78,
+     "o": 2
     }
    ],
    "soft": {
     "l": 9.5,
     "k": 1.8,
     "kl": "admiral",
-    "p": 0.574,
+    "p": 0.572,
     "vrsta": "granica",
-    "ev": 0.033,
+    "ev": 0.03,
     "isti": true
    },
    "opseg": [
@@ -2105,7 +2105,7 @@
      "l": 9.5,
      "k": 1.8,
      "kl": "admiral",
-     "p": 0.574,
+     "p": 0.572,
      "vrsta": "granica"
     }
    ],
@@ -2145,10 +2145,10 @@
     7
    ],
    "rang_dan": 3,
-   "upisano": "06.11.2026. 12:30",
+   "upisano": "06.11.2026. 14:15",
    "prvi_put": "06.11.2026. 12:30",
    "zatv": 1.8,
-   "zatv_fer": 1.743
+   "zatv_fer": 1.747
   },
   {
    "g": 97,
@@ -2164,10 +2164,10 @@
    "kl": "mozzart",
    "kvota": 1.9,
    "pp": 0.556,
-   "ev": 0.056,
+   "ev": 0.057,
    "nivo": "nagoveštaj",
    "rang": 14,
-   "fer": 0.5174,
+   "fer": 0.5181,
    "ostale": [
     {
      "kl": "admiral",
@@ -2175,7 +2175,7 @@
     },
     {
      "kl": "maxbet",
-     "k": 1.81
+     "k": 1.8
     },
     {
      "kl": "soccerbet",
@@ -2192,8 +2192,8 @@
     {
      "kl": "maxbet",
      "l": 4.5,
-     "u": 1.98,
-     "o": 1.81
+     "u": 1.99,
+     "o": 1.8
     },
     {
      "kl": "mozzart",
@@ -2275,10 +2275,10 @@
     7
    ],
    "rang_dan": 4,
-   "upisano": "06.11.2026. 12:30",
+   "upisano": "06.11.2026. 14:15",
    "prvi_put": "06.11.2026. 11:21",
    "zatv": 1.9,
-   "zatv_fer": 1.8
+   "zatv_fer": 1.797
   },
   {
    "g": 97,
@@ -2352,9 +2352,9 @@
     },
     {
      "l": 14.5,
-     "k": 1.55,
+     "k": 1.53,
      "kl": "soccerbet",
-     "p": 0.63,
+     "p": 0.638,
      "vrsta": "granica"
     },
     {
@@ -2442,7 +2442,7 @@
    ],
    "rucno": true,
    "rang_dan": 5,
-   "upisano": "06.11.2026. 12:30",
+   "upisano": "06.11.2026. 14:15",
    "prvi_put": "06.11.2026. 11:55",
    "promena": "novo",
    "ranije": null,
@@ -2451,7 +2451,7 @@
    "zatv_fer": 1.855
   }
  ],
- "osvezeno": "06.11.2026. 12:30",
+ "osvezeno": "06.11.2026. 14:15",
  "utakmice": [
   {
    "g": 91,
@@ -2616,9 +2616,9 @@
    ],
    "snimci": {
     "Admiral": "2026-11-06T09:59:40.325Z",
-    "MaxBet": "2026-11-06T10:02:29.576Z",
-    "Mozzart": "2026-11-06T10:09:50Z",
-    "Soccerbet": "2026-11-06T10:07:54+00:00"
+    "MaxBet": "2026-11-06T13:11:58.879Z",
+    "Mozzart": "2026-11-06T13:14:34Z",
+    "Soccerbet": "2026-11-06T13:14:05+00:00"
    }
   },
   {
@@ -2640,9 +2640,9 @@
    ],
    "snimci": {
     "Admiral": "2026-11-06T09:59:40.325Z",
-    "MaxBet": "2026-11-06T10:02:29.576Z",
-    "Mozzart": "2026-11-06T10:09:50Z",
-    "Soccerbet": "2026-11-06T10:07:54+00:00"
+    "MaxBet": "2026-11-06T13:11:58.879Z",
+    "Mozzart": "2026-11-06T13:14:34Z",
+    "Soccerbet": "2026-11-06T13:14:05+00:00"
    }
   },
   {
@@ -2664,9 +2664,9 @@
    ],
    "snimci": {
     "Admiral": "2026-11-06T09:59:40.325Z",
-    "MaxBet": "2026-11-06T10:02:29.576Z",
-    "Mozzart": "2026-11-06T10:09:50Z",
-    "Soccerbet": "2026-11-06T10:07:54+00:00"
+    "MaxBet": "2026-11-06T13:11:58.879Z",
+    "Mozzart": "2026-11-06T13:14:34Z",
+    "Soccerbet": "2026-11-06T13:14:05+00:00"
    }
   },
   {
@@ -2688,9 +2688,9 @@
    ],
    "snimci": {
     "Admiral": "2026-11-06T09:59:40.325Z",
-    "MaxBet": "2026-11-06T10:02:29.576Z",
-    "Mozzart": "2026-11-06T10:09:50Z",
-    "Soccerbet": "2026-11-06T10:07:54+00:00"
+    "MaxBet": "2026-11-06T13:11:58.879Z",
+    "Mozzart": "2026-11-06T13:14:34Z",
+    "Soccerbet": "2026-11-06T13:14:05+00:00"
    }
   }
  ],
@@ -10147,7 +10147,7 @@
     "s": "S",
     "l": 2.5,
     "strana": "u",
-    "pp": 0.601,
+    "pp": 0.602,
     "mu": 2.49,
     "q": [
      0,
@@ -10180,7 +10180,7 @@
     "s": "A",
     "l": 2.5,
     "strana": "u",
-    "pp": 0.594,
+    "pp": 0.595,
     "mu": 2.82,
     "q": [
      1,
@@ -10345,7 +10345,7 @@
     "s": "P",
     "l": 10.5,
     "strana": "o",
-    "pp": 0.553,
+    "pp": 0.554,
     "mu": 12.28,
     "q": [
      4,
@@ -10410,7 +10410,7 @@
     "s": "P",
     "l": 15.5,
     "strana": "o",
-    "pp": 0.513,
+    "pp": 0.514,
     "mu": 14.83,
     "q": [
      5,
@@ -10505,7 +10505,7 @@
     "s": "S",
     "l": 8.5,
     "strana": "u",
-    "pp": 0.654,
+    "pp": 0.653,
     "mu": 6.26,
     "q": [
      2,
@@ -10536,7 +10536,7 @@
     "s": "P",
     "l": 5.5,
     "strana": "o",
-    "pp": 0.581,
+    "pp": 0.58,
     "mu": 7.69,
     "q": [
      2,
@@ -10550,7 +10550,7 @@
     "p5": 5.8,
     "u": 2.02,
     "o": 1.8,
-    "knjiga": 3,
+    "knjiga": 2,
     "pred": "o",
     "za": [
      "Granica od 5,5 je niža od onoga što realno očekujemo, a to je sedam do osam poena: u poslednjim utakmicama daje više nego inače."
@@ -10568,7 +10568,7 @@
     "s": "A",
     "l": 4.5,
     "strana": "u",
-    "pp": 0.582,
+    "pp": 0.57,
     "mu": 3.29,
     "q": [
      1,
@@ -10633,7 +10633,7 @@
     "s": "P",
     "l": 10.5,
     "strana": "u",
-    "pp": 0.509,
+    "pp": 0.508,
     "mu": 9.93,
     "q": [
      3,
@@ -10736,7 +10736,7 @@
     "s": "P",
     "l": 18.5,
     "strana": "u",
-    "pp": 0.516,
+    "pp": 0.515,
     "mu": 16.19,
     "q": [
      6,
@@ -10770,7 +10770,7 @@
     "s": "S",
     "l": 5.5,
     "strana": "o",
-    "pp": 0.507,
+    "pp": 0.541,
     "mu": 5.63,
     "q": [
      2,
@@ -10782,7 +10782,7 @@
     "min": 26.6,
     "pros": 6.0,
     "p5": 6.4,
-    "u": 1.9,
+    "u": 2.15,
     "o": 1.8,
     "knjiga": 4,
     "pred": null,
@@ -10804,7 +10804,7 @@
     "s": "P",
     "l": 12.5,
     "strana": "u",
-    "pp": 0.524,
+    "pp": 0.523,
     "mu": 10.89,
     "q": [
      3,
@@ -10900,7 +10900,7 @@
     "s": "P",
     "l": 10.5,
     "strana": "u",
-    "pp": 0.508,
+    "pp": 0.507,
     "mu": 9.97,
     "q": [
      3,
@@ -10968,7 +10968,7 @@
     "s": "A",
     "l": 5.5,
     "strana": "o",
-    "pp": 0.522,
+    "pp": 0.523,
     "mu": 4.34,
     "q": [
      1,
@@ -11002,7 +11002,7 @@
     "s": "P",
     "l": 9.5,
     "strana": "u",
-    "pp": 0.574,
+    "pp": 0.572,
     "mu": 7.35,
     "q": [
      2,
@@ -11069,7 +11069,7 @@
     "s": "A",
     "l": 2.5,
     "strana": "o",
-    "pp": 0.529,
+    "pp": 0.53,
     "mu": 1.85,
     "q": [
      0,
@@ -11102,7 +11102,7 @@
     "s": "P",
     "l": 7.5,
     "strana": "u",
-    "pp": 0.512,
+    "pp": 0.513,
     "mu": 6.13,
     "q": [
      1,
@@ -11114,7 +11114,7 @@
     "min": 18.0,
     "pros": 9.22,
     "p5": 7.6,
-    "u": 2.02,
+    "u": 2,
     "o": 1.92,
     "knjiga": 3,
     "pred": "u",
@@ -11330,7 +11330,7 @@
     "s": "P",
     "l": 14.5,
     "strana": "u",
-    "pp": 0.514,
+    "pp": 0.515,
     "mu": 13.76,
     "q": [
      5,
@@ -11343,7 +11343,7 @@
     "pros": 14.67,
     "p5": 15.4,
     "u": 1.92,
-    "o": 1.99,
+    "o": 2,
     "knjiga": 3,
     "pred": "o",
     "za": [
@@ -11441,7 +11441,7 @@
     "min": 20.6,
     "pros": 4.33,
     "p5": 3.8,
-    "u": 1.98,
+    "u": 1.97,
     "o": 1.75,
     "knjiga": 4,
     "pred": null,
@@ -11491,7 +11491,7 @@
     "s": "P",
     "l": 7.5,
     "strana": "o",
-    "pp": 0.541,
+    "pp": 0.537,
     "mu": 9.0,
     "q": [
      2,
@@ -11503,9 +11503,9 @@
     "min": 19.4,
     "pros": 8.78,
     "p5": 9.6,
-    "u": 2,
+    "u": 1.97,
     "o": 1.9,
-    "knjiga": 4,
+    "knjiga": 2,
     "pred": "o",
     "za": [
      "Granica od 7,5 je niža od onoga što realno očekujemo, a to je oko devet poena, iz ovih razloga:",
@@ -11556,7 +11556,7 @@
     "s": "A",
     "l": 4.5,
     "strana": "o",
-    "pp": 0.569,
+    "pp": 0.568,
     "mu": 4.44,
     "q": [
      1,
@@ -11588,7 +11588,7 @@
     "s": "P",
     "l": 6.5,
     "strana": "o",
-    "pp": 0.565,
+    "pp": 0.567,
     "mu": 8.65,
     "q": [
      2,
@@ -11600,7 +11600,7 @@
     "min": 17.4,
     "pros": 8.78,
     "p5": 9.8,
-    "u": 1.99,
+    "u": 2,
     "o": 1.85,
     "knjiga": 2,
     "pred": "o",
@@ -11653,7 +11653,7 @@
     "s": "P",
     "l": 10.5,
     "strana": "u",
-    "pp": 0.517,
+    "pp": 0.518,
     "mu": 10.43,
     "q": [
      3,
@@ -11785,9 +11785,9 @@
     "tim": "RED",
     "pos": "F",
     "s": "P",
-    "l": 6.5,
-    "strana": "o",
-    "pp": 0.523,
+    "l": 7.5,
+    "strana": "u",
+    "pp": 0.528,
     "mu": 6.32,
     "q": [
      1,
@@ -11799,16 +11799,17 @@
     "min": 14.3,
     "pros": 9.0,
     "p5": 9.0,
-    "u": 2.02,
-    "o": 1.8,
-    "knjiga": 2,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 4,
     "pred": null,
     "za": [
-     "Ove sezone daje oko devet poena po utakmici i granicu od 6,5 prebacio je u 1 od 2 utakmice."
-    ],
-    "protiv": [
+     "Granica od 7,5 je viša od onoga što realno očekujemo, a to je šest do sedam poena, iz ovih razloga:",
      "Olimpijakos dobro brani krila; to je i jedna od najboljih odbrana u ligi.",
      "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
+    ],
+    "protiv": [
+     "Ove sezone daje oko devet poena po utakmici i granicu od 7,5 prebacio je u 1 od 2 utakmice."
     ]
    },
    {
@@ -11984,7 +11985,7 @@
     "s": "P",
     "l": 12.5,
     "strana": "o",
-    "pp": 0.501,
+    "pp": 0.5,
     "mu": 11.06,
     "q": [
      4,
@@ -12536,7 +12537,7 @@
     "s": "A",
     "l": 3.5,
     "strana": "o",
-    "pp": 0.645,
+    "pp": 0.646,
     "mu": 4.33,
     "q": [
      1,
@@ -12778,7 +12779,7 @@
     "p5": 10.8,
     "u": 1.92,
     "o": 1.92,
-    "knjiga": 4,
+    "knjiga": 3,
     "pred": "u",
     "za": [
      "Granica od 15,5 je viša od onoga što realno očekujemo, a to je oko 13 poena."
@@ -12876,7 +12877,7 @@
     "p5": 5.5,
     "u": 1.92,
     "o": 1.92,
-    "knjiga": 2,
+    "knjiga": 1,
     "pred": null,
     "za": [
      "Granica od 5,5 je niža od onoga što realno očekujemo, a to je oko osam poena: protiv Makabija krila postižu više."
@@ -12907,7 +12908,7 @@
     "p5": 10.6,
     "u": 1.92,
     "o": 1.92,
-    "knjiga": 3,
+    "knjiga": 2,
     "pred": "o",
     "za": [
      "Granica od 9,5 je niža od onoga što realno očekujemo, a to je oko deset poena, iz ovih razloga:",
@@ -12925,8 +12926,8 @@
     "pos": "F",
     "s": "S",
     "l": 4.5,
-    "strana": "u",
-    "pp": 0.515,
+    "strana": "o",
+    "pp": 0.524,
     "mu": 3.77,
     "q": [
      1,
@@ -12938,18 +12939,18 @@
     "min": 20.5,
     "pros": 4.57,
     "p5": 4.8,
-    "u": 1.97,
+    "u": 2.3,
     "o": 1.75,
     "knjiga": 4,
-    "pred": "u",
+    "pred": null,
     "za": [
-     "Granica od 4,5 je viša od onoga što realno očekujemo, a to je oko četiri skoka, iz ovih razloga:",
-     "Makabi dobro zatvara skok: protiv njih se hvata malo odbijenih lopti.",
-     "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
+     "Ove sezone daje četiri do pet skokova po utakmici i granicu od 4,5 prebacio je u 4 od 7 utakmica.",
+     "Glavni je skakač Partizana: niko u timu ne hvata više odbijenih lopti.",
+     "Kod kuće hvata više skokova nego u gostima (pet do šest skokova naspram oko četiri skoka), a sada igra kod kuće."
     ],
     "protiv": [
-     "Ove sezone daje četiri do pet skokova po utakmici i granicu od 4,5 prebacio je u 4 od 7 utakmica.",
-     "Glavni je skakač Partizana: niko u timu ne hvata više odbijenih lopti."
+     "Granica od 4,5 je viša od onoga što realno očekujemo, a to je oko četiri skoka.",
+     "Makabi dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
     ]
    },
    {
@@ -13027,7 +13028,7 @@
     "s": "P",
     "l": 8.5,
     "strana": "o",
-    "pp": 0.519,
+    "pp": 0.521,
     "mu": 8.38,
     "q": [
      2,
@@ -13042,7 +13043,7 @@
     "u": 2,
     "o": 1.85,
     "knjiga": 4,
-    "pred": null,
+    "pred": "o",
     "za": [
      "Protiv Makabija bekovi postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi.",
      "U poslednjim utakmicama igra više nego ranije (30, 18 i 23 minuta).",
@@ -13109,7 +13110,7 @@
     "p5": 11.6,
     "u": 1.92,
     "o": 1.92,
-    "knjiga": 4,
+    "knjiga": 2,
     "pred": "u",
     "za": [
      "Granica od 10,5 je viša od onoga što realno očekujemo, a to je osam do devet poena, iz ovih razloga:",
@@ -13129,7 +13130,7 @@
     "s": "S",
     "l": 4.5,
     "strana": "o",
-    "pp": 0.585,
+    "pp": 0.584,
     "mu": 4.21,
     "q": [
      1,
@@ -13143,7 +13144,7 @@
     "p5": 4.8,
     "u": 2.3,
     "o": 1.55,
-    "knjiga": 4,
+    "knjiga": 2,
     "pred": null,
     "za": [
      "U poslednjim utakmicama igra više nego ranije (33, 24 i 16 minuta).",
@@ -13195,9 +13196,9 @@
     "tim": "PAR",
     "pos": "C",
     "s": "P",
-    "l": 7.5,
-    "strana": "o",
-    "pp": 0.508,
+    "l": 9.5,
+    "strana": "u",
+    "pp": 0.534,
     "mu": 7.97,
     "q": [
      2,
@@ -13209,16 +13210,17 @@
     "min": 18.4,
     "pros": 7.44,
     "p5": 7.4,
-    "u": 1.92,
-    "o": 1.92,
-    "knjiga": 4,
-    "pred": "o",
+    "u": 1.9,
+    "o": 1.95,
+    "knjiga": 3,
+    "pred": "u",
     "za": [
-     "Granica od 7,5 je niža od onoga što realno očekujemo, a to je oko osam poena: u poslednjim utakmicama daje više nego inače."
+     "Granica od 9,5 je viša od onoga što realno očekujemo, a to je oko osam poena, iz ovih razloga:",
+     "Ove sezone daje sedam do osam poena po utakmici; ispod 9,5 je ostao u 8 od 9 utakmica.",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Jones i Stevens."
     ],
     "protiv": [
-     "Ove sezone daje sedam do osam poena po utakmici; ispod 7,5 je ostao u 6 od 9 utakmica.",
-     "Nije među prvim opcijama u napadu; više šuteva dobijaju Jones i Stevens."
+     "U poslednje tri utakmice: 4, 6 i 19 poena, više nego inače."
     ]
    },
    {
@@ -13227,9 +13229,9 @@
     "tim": "PAR",
     "pos": "C",
     "s": "S",
-    "l": 3.5,
+    "l": 4.5,
     "strana": "o",
-    "pp": 0.629,
+    "pp": 0.546,
     "mu": 4.34,
     "q": [
      1,
@@ -13241,18 +13243,16 @@
     "min": 18.4,
     "pros": 3.67,
     "p5": 3.8,
-    "u": 2.3,
-    "o": 1.55,
-    "knjiga": 4,
+    "u": 2.2,
+    "o": 1.75,
+    "knjiga": 3,
     "pred": "o",
     "za": [
-     "Granica od 3,5 je niža od onoga što realno očekujemo, a to je četiri do pet skokova, iz ovih razloga:",
-     "Ove sezone daje tri do četiri skoka po utakmici i granicu od 3,5 prebacio je u 6 od 9 utakmica.",
      "Kod kuće hvata više skokova nego u gostima (oko pet skokova naspram oko tri skoka), a sada igra kod kuće."
     ],
     "protiv": [
-     "Makabi dobro zatvara skok: protiv njih se hvata malo odbijenih lopti.",
-     "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
+     "Ove sezone daje tri do četiri skoka po utakmici; ispod 4,5 je ostao u 6 od 9 utakmica.",
+     "Makabi dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
     ]
    },
    {
@@ -13296,7 +13296,7 @@
     "s": "P",
     "l": 8.5,
     "strana": "u",
-    "pp": 0.539,
+    "pp": 0.541,
     "mu": 7.69,
     "q": [
      2,
@@ -13359,7 +13359,7 @@
     "s": "P",
     "l": 8.5,
     "strana": "u",
-    "pp": 0.526,
+    "pp": 0.529,
     "mu": 8.55,
     "q": [
      2,
@@ -13486,7 +13486,7 @@
     "s": "A",
     "l": 4.5,
     "strana": "u",
-    "pp": 0.51,
+    "pp": 0.512,
     "mu": 3.53,
     "q": [
      1,
@@ -13718,7 +13718,7 @@
     "s": "P",
     "l": 4.5,
     "strana": "o",
-    "pp": 0.554,
+    "pp": 0.551,
     "mu": 5.84,
     "q": [
      1,
@@ -13732,7 +13732,7 @@
     "p5": 3.6,
     "u": 2.01,
     "o": 1.85,
-    "knjiga": 4,
+    "knjiga": 2,
     "pred": "o",
     "za": [
      "Granica od 4,5 je niža od onoga što realno očekujemo, a to je oko šest poena: češće je preko nego ispod ove granice."
