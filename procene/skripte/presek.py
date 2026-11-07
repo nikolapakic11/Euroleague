@@ -46,7 +46,7 @@ def main():
                     igr[(u['g'], i['k'], s)] = (u, st, i, x)
                     pr = x.get('pred')
                     if pr:
-                        kand.append(dict(g=u['g'], dan=u['dan'], k=i['k'], ime=i['ime'], tim=st['tim'], s=s, strana=pr['strana'],
+                        kand.append(dict(g=u['g'], dan=u['dan'], k=i['k'], ime=i['ime'], tim=st['tim'], prot=st['prot'], s=s, strana=pr['strana'],
                                          l=pr['l'], kl=pr['kl'], kvota=pr['kvota'], pp=pr['pp'], nivo=pr['nivo'], fer=pr.get('fer')))
     izab = PR.izbor_dana([dict(c) for c in kand], B)
     print(f'\nPREDLOZI ({len(izab)}; pravilo: prednost ≥{PR.DAN_PREDNOST:.0%}, verovatnoća ≥{PR.DAN_PRAG:.0%}, najmanje {PR.DAN_NAJMANJE}, najviše {PR.DAN_MAX}, PLUS do {PR.DAN_PLUS})')
@@ -62,6 +62,9 @@ def main():
         print(f"  {p['pp']:.0%} (tržište {p['fer']:.0%}) {'PLUS ' if o else 'MINUS'} {p['ime']} ({p['tim']}–{st['prot']}) {SN[p['s']]} {'preko' if o else 'ispod'} {p['l']} @ {p['kvota']} {p['kl']}"
               f"\n       očekivano {x['mu']} (raspon {x['q'][1]}–{x['q'][3]}), prosek {x['pros']}, posl. 5 {x['posl']}, min {i['min']}, forma {p['forma'][0]}/{p['forma'][1]}"
               f"\n       kladionice: {kn}" + (f"\n       {'; '.join(dod)}" if dod else ''))
+    for d, L in PR.IZBACENI_MM.items():
+        if L:
+            print(f'\nMINUS koje je izbacio minus-model (ne slaže se, msig < {PR.MSIG_PRAG}): ' + '; '.join(f"{c['ime']} {SN[c['s']]} {c['l']} {c['pp']:.0%}/{c['fer']:.0%} @{c['kvota']}" for c in L))
     van_izb = sorted([c for c in kand if not any(c['k'] == q['k'] and c['s'] == q['s'] for q in izab)], key=lambda c: -(c['pp'] - c['fer']))
     for strana, ime in (('o', 'PLUS'), ('u', 'MINUS')):
         L = [c for c in van_izb if c['strana'] == strana][:5]

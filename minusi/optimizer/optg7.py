@@ -66,7 +66,12 @@ def scen(key,M,s,rho=0.02,rg=0.02,rp=0.35):
         y=math.sqrt(rho)*Z[ti[x['t']]]+math.sqrt(rg)*G[gi[x['g']]]+math.sqrt(rp)*PL[pid[i]]+math.sqrt(1-rho-rg-rp)*rng.standard_normal(M); H[i]=y<ND.inv_cdf(x[key])
     return H
 M=30000; Ht=scen('pr',M,SEED+100)
-hv=[np.all(Ht[t],axis=0) for t in tk]; cw=np.sum(hv,axis=0)
+# kv (od 7.11.2026): dobitak tiketa se broji sa težinom (proizvod kvota / 1,9 po paru)^kv; 0 = kao ranije (broj dobitnih
+# tiketa), 1 = očekivana isplata. Provera (spoj/provera/izvestaj.md): parovi birani po vrednosti prolaze češće i plaćaju više.
+KV=CFG.get('kv',0)
+def wt(t): return math.prod(P[i]['u']/1.9 for i in t)**KV if KV else 1.0
+wts=[wt(t) for t in tk]
+hv=[np.all(Ht[t],axis=0) for t in tk]; cw=np.sum([w*h for w,h in zip(wts,hv)],axis=0)
 def J(cw): return cw.mean()+(cw>0).mean()
 cur=J(cw); t0=time.time(); it=0
 sig=lambda t:tuple(sorted(t)); sigs=collections.Counter(sig(t) for t in tk)
@@ -80,9 +85,9 @@ while time.time()-t0<SECS:
         if not ok: add(old,1); continue
         ta=tk[a][:]; ta[j]=q
         if sigs[sig(ta)]: add(old,1); continue
-        ha=np.all(Ht[ta],axis=0); nc=cw-hv[a]+ha; nv=J(nc)
+        ha=np.all(Ht[ta],axis=0); wa=wt(ta); nc=cw-wts[a]*hv[a]+wa*ha; nv=J(nc)
         if nv>=cur:
-            sigs[sig(tk[a])]-=1; add(q,1); tk[a]=ta; hv[a]=ha; cw=nc; cur=nv; sigs[sig(ta)]+=1
+            sigs[sig(tk[a])]-=1; add(q,1); tk[a]=ta; hv[a]=ha; wts[a]=wa; cw=nc; cur=nv; sigs[sig(ta)]+=1
         else: add(old,1)
     else:
         a=R.randrange(NF,N); b=R.randrange(NF,N)
@@ -95,15 +100,16 @@ while time.time()-t0<SECS:
         if not ok: continue
         ta=tk[a][:]; ta[i]=y; tb=tk[b][:]; tb[j]=x
         if sig(ta)==sig(tb) or sigs[sig(ta)] or sigs[sig(tb)]: continue
-        ha=np.all(Ht[ta],axis=0); hb=np.all(Ht[tb],axis=0)
-        nc=cw-hv[a]-hv[b]+ha+hb; nv=J(nc)
+        ha=np.all(Ht[ta],axis=0); hb=np.all(Ht[tb],axis=0); wa=wt(ta); wb=wt(tb)
+        nc=cw-wts[a]*hv[a]-wts[b]*hv[b]+wa*ha+wb*hb; nv=J(nc)
         if nv>=cur:
-            sigs[sig(tk[a])]-=1; sigs[sig(tk[b])]-=1; tk[a],tk[b]=ta,tb; hv[a],hv[b]=ha,hb; cw=nc; cur=nv; sigs[sig(ta)]+=1; sigs[sig(tb)]+=1
+            sigs[sig(tk[a])]-=1; sigs[sig(tk[b])]-=1; tk[a],tk[b]=ta,tb; hv[a],hv[b]=ha,hb; wts[a],wts[b]=wa,wb; cw=nc; cur=nv; sigs[sig(ta)]+=1; sigs[sig(tb)]+=1
 def ev(key,s=9,M=200000):
-    H=scen(key,M,s); w2=np.zeros(M); ref=np.zeros(M); bys=collections.defaultdict(float)
+    H=scen(key,M,s); w2=np.zeros(M); ref=np.zeros(M); isp=np.zeros(M); bys=collections.defaultdict(float)
     for t in tk:
-        hh=H[t].sum(axis=0); win=hh==len(t); w2+=win; ref+=hh==len(t)-1; bys[len(t)]+=win.mean()
-    return dict(p1=round(float((w2>=1).mean()),3), ew=round(float(w2.mean()),3), bys={k:round(v,3) for k,v in bys.items()}, ref=round(float(ref.mean()),2))
+        hh=H[t].sum(axis=0); win=hh==len(t); w2+=win; ref+=hh==len(t)-1; bys[len(t)]+=win.mean(); isp+=win*math.prod(P[i]['u'] for i in t)
+    # isplata: očekivani povraćaj po ulogu 1 na svakom tiketu (1,0 = izlaz na nulu; bez povraćaja i bonusa)
+    return dict(p1=round(float((w2>=1).mean()),3), ew=round(float(w2.mean()),3), bys={k:round(v,3) for k,v in bys.items()}, ref=round(float(ref.mean()),2), isplata=round(float(isp.mean()/len(tk)),3))
 print('iters',it,'est',ev('pr'),'market',ev('fair'))
 uc=collections.Counter(P[i]['p'] for t in tk for i in t); print('player tickets',sorted(uc.items(),key=lambda x:-x[1]))
 pc2=collections.Counter(i for t in tk for i in t); print('pairs used',len(pc2),'max pair',max(pc2.values()),'players used',len(uc))

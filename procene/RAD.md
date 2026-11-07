@@ -10,8 +10,8 @@ Ovaj fajl je sažetak kako se radi iz dana u dan i šta je dogovoreno sa Nikolom
 
 ## Granice
 
-- Pišeš samo u `procene/` i u `baza/ponude/<kladionica>/` kad Nikola pošalje ponudu ili je ti povučeš.
-- `minusi/` je Nikolina lična igra: ne koristi se i ne menja (izuzetak: pomoćnici za tikete, samo za čitanje, kad on traži).
+- Od 7.11.2026 minusi i procene se vode u jednom razgovoru (CLAUDE.md). Logika modela se deli preko `spoj/` (README tamo).
+- Na sajt i u `procene/` nikad ne idu Nikolini tiketi, rezultati tiketa, ulozi ni pravila povraćaja iz `minusi/`.
 - Javni sajt: repozitorijum `nikolapakic11/evroliga-plus-minus` (GitHub Pages), pravi ga `procene/skripte/sajt.py`.
 - Pre svakog slanja: `git pull --rebase`, pa `git push`. Na kraju commit poruke atribucija koju sesija traži.
 
@@ -49,6 +49,12 @@ Zakazani zadaci su isključeni (odluka 5.11.2026): ništa se ne pokreće samo. S
   PREKO na najnižoj granici je prolazio (20/33, najčešće Mozzart sa granicom za 1 nižom), ISPOD na najvišoj nije
   (14/33); kad granica u toku dana padne, ishod je češće ispod (15/19). Pratiti i proveriti kad uzorak poraste. Izbaciti
   (`procene/podaci/iskljuceni.json`, sa razlogom) sve gde kontekst ide protiv ili je oko 50%; bolje manje, a sigurnije.
+
+- Slaganje sa minus-modelom (od 7.11.2026, `predlozi.DAN_MINUS_SLAGANJE`): MINUS ulazi samo kad i minus-model vidi ispod bar
+  prosečno (`msig` ≥ 0,35, `spoj/minus_model.py`). Provera (`spoj/provera/izvestaj.md`): kandidati sa kojima se slaže 62–64%,
+  izbačeni oko 52%, i u kolima 5–7 i u 8–10. Posebno pomaže kod igrača bez prošle sezone u Evroligi (model procena ih vuče
+  ka proseku pozicije). Izbačeni se beleže u `spoj/dnevnik/izbaceni_<dan>.json`, a `presek.py` ih ispisuje. Ručno dodati ne
+  zavise od ovog uslova. PLUS bez promene: ni minus-model okrenut ni spoj ne nalaze pluseve koji se isplate.
 
 - Konsultacija pre objave (odluka 6.11.2026): kad Nikola pošalje ponude, pokreni `dan.py`, pokaži mu predloge za dan
   u razgovoru (sa razlozima i upozorenjima) i objavi na sajt i artefakt TEK kad on potvrdi.

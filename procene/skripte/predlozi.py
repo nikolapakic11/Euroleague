@@ -96,6 +96,28 @@ DAN_PO_UT, DAN_PO_TIMU, DAN_PO_STAVCI = 4, 2, 12
 DAN_NISKA, DAN_NISKE_MAX = 1.65, 3   # najviše 3 predloga sa kvotom ispod 1,65 za dan (Nikola, 6.11.: ne sme sve najniže kvote)
 DAN_FORMA_N, DAN_FORMA_MIN = 7, 0.5            # u poslednjih 7 utakmica bar polovina na stranu predloga
 DAN_ZADRZI = 0.02                              # već objavljen predlog ostaje dok ga novi ne nadmaši za bar 2 poena procenta
+# Slaganje sa minus-modelom (od 7.11.2026, objedinjeni projekti; provera spoj/provera/izvestaj.md): MINUS ulazi samo
+# kad i minus-model (prepis Generatora iz aplikacije za minuse, spoj/minus_model.py) vidi ispod bar prosečno
+# (msig >= MSIG_PRAG, medijana). Kandidati po ovom pravilu sa kojima se minus-model nije slagao prolazili su ~52%
+# (kola 5-7 i 8-10 posebno), a oni sa kojima se slaže 63-64% i 62-63%. Minus-model posebno ispravlja igrače bez prošle
+# sezone u Evroligi, gde model procena greši. PLUS bez promene (minus-model okrenut za plus nema vrednost).
+DAN_MINUS_SLAGANJE = True
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'spoj'))
+from minus_model import MinusModel, MSIG_PRAG
+_MM = {}
+IZBACENI_MM = {}                               # dan -> MINUS kandidati koje je izbacio minus-model (za proveru)
+
+
+def minus_signal(B, p):
+    """msig minus-modela za MINUS kandidata p (k, dan, tim, prot, s, l, fer); None ako nema podataka."""
+    if not p.get('prot'):
+        return None
+    mm = _MM.get(id(B))
+    if mm is None:
+        mm = _MM[id(B)] = MinusModel(B)
+    fu = p.get('fer') or min(0.9, 1 / p['kvota'] / 1.05)
+    r = mm.procena(p['k'], p['dan'], p['tim'], p['prot'], p['s'], p['l'], fu)
+    return r['msig'] if r else None
 
 
 def forma(B, p):
@@ -132,6 +154,16 @@ def izbor_dana(P, B=None, ranije=()):
         for p in P:
             p['forma'] = list(forma(B, p))
         P = [p for p in P if p['forma'][1] < 4 or p['forma'][0] / p['forma'][1] >= DAN_FORMA_MIN]
+    P_rucno = list(P)                            # ručno dodati ne zavise od minus-modela
+    if B is not None and DAN_MINUS_SLAGANJE:
+        for p in P:
+            if p['strana'] == 'u':
+                p['msig'] = minus_signal(B, p)
+        van_mm = [p for p in P if p['strana'] == 'u' and p.get('msig') is not None and p['msig'] < MSIG_PRAG]
+        if P:
+            IZBACENI_MM[P[0]['dan']] = [dict(k=p['k'], ime=p.get('ime'), tim=p['tim'], s=p['s'], l=p['l'], kvota=p['kvota'], kl=p.get('kl'),
+                                             pp=p['pp'], fer=p.get('fer'), msig=p['msig']) for p in van_mm]
+        P = [p for p in P if p not in van_mm]
 
     def moze(p, izab):
         return (all(q['k'] != p['k'] for q in izab) and sum(q['g'] == p['g'] for q in izab) < DAN_PO_UT and sum(q['tim'] == p['tim'] for q in izab) < DAN_PO_TIMU
@@ -144,8 +176,8 @@ def izbor_dana(P, B=None, ranije=()):
             break
         if ocena(p) >= DAN_PREDNOST and p['pp'] >= DAN_PRAG and moze(p, izab):
             izab.append(p)
-    for x in isk.get('dodati', {}).get(P[0]['dan'] if P else '', []):     # ručno dodati (Nikola)
-        for p in P:
+    for x in isk.get('dodati', {}).get(P_rucno[0]['dan'] if P_rucno else '', []):     # ručno dodati (Nikola)
+        for p in P_rucno:
             if p['k'] == x['k'] and p['s'] == x['s'] and p['strana'] == x.get('strana', p['strana']) and p not in izab:
                 p['rucno'] = True
                 izab.append(p)
@@ -318,6 +350,10 @@ def main():
         B_dan = Baza()
         ranije = [(p['k'], p['s'], p['strana'], p['l']) for p in st['predlozi'] if p['g'] not in zamrznute]
         novi = [q for d, L in po_danu.items() for q in izbor_dana(L, B_dan, ranije)]
+        for d, L in IZBACENI_MM.items():         # dnevnik za proveru slaganja (spoj/provera.py)
+            dput = os.path.join(PROCENE, '..', 'spoj', 'dnevnik', f'izbaceni_{d}.json')
+            os.makedirs(os.path.dirname(dput), exist_ok=True)
+            sacuvaj(dput, {'dan': d, 'upisano': sada, 'izbaceni': L})
         sada_konacno = [u['g'] for u in tabla['utakmice'] if u['g'] not in zamrznute and u['g'] in objavljive
                         and sad_bg >= R[u['g']][1] and u['snimci']]
         # promene u odnosu na prethodno osvežavanje (važe do početka utakmice)

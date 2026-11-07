@@ -2,11 +2,13 @@
 
 Korisnik je Nikola. Piše na srpskom i očekuje odgovore na srpskom (latinica).
 
-## Dva projekta, jedna baza
+## Dva projekta, jedna baza, jedan razgovor (od 7.11.2026)
 
 - `baza/`: javni podaci (zapisnici, raspored, statistika, ponude kladionica). Koriste je oba projekta.
 - `minusi/`: Nikolina lična igra (minusi na igrače Evrolige, AdmiralBet, MaxBet kao rezerva). Privatno.
-- `procene/`: novi projekat, procene igrača i poređenje kladionica. Ne sme da koristi ništa iz `minusi/` (tikete, rezultate tiketa, slaganje, pravila povraćaja, podešavanja modela). Podaci teku samo `baza/ → minusi/` i `baza/ → procene/`.
+- `procene/`: procene igrača, poređenje kladionica i javni sajt.
+- `spoj/`: zajednički deo oba modela (minus-model u Pythonu, signali, provera). Vidi `spoj/README.md`.
+- Od 7.11.2026 oba projekta se vode u **jednom razgovoru** i koriste oba modela (odluka Nikole). Logika modela sme u oba smera (preko `spoj/`). Nikolini tiketi, rezultati tiketa, ulozi i pravila povraćaja ostaju samo u `minusi/` i nikad ne idu u `procene/` ni na javni sajt.
 
 ## Baza
 
@@ -15,11 +17,11 @@ Korisnik je Nikola. Piše na srpskom i očekuje odgovore na srpskom (latinica).
 - `baza/skripte/build.py` pravi `rows.json` (igrač po utakmici), `ctx2.py <izlaz>` pravi kontekst (odbrana po poziciji `of`, tempo `lgp`/`tm`, igrači `pl`, dozvoljeno po timu `ta`).
 - Ponude: `baza/ponude/<kladionica>/<datum>_<snimak>.json`. Soccerbet je dostupan direktno (`https://www.soccerbet.rs/restapi/offer/sr/...`, odgovor je gzip); igrači Evrolige su liga „Evroliga Igrači“ u sportu B, kače se na dan utakmice. Admiral i MaxBet dolaze preko pomoćnika (bookmarklet) koje Nikola pokreće; Mozzart i MaxBet nisu dostupni iz radnog okruženja (403).
 
-## Rad u dva razgovora
+## Rad u jednom razgovoru
 
-- Minusi se rade u jednom razgovoru, procene u drugom. Oba rade na ovom repozitorijumu.
-- Razgovor za minuse posle svakog kola ažurira `baza/` (zapisnici, raspored, rows, ctx2, Admiral ponude) i `minusi/`, pa šalje na GitHub.
-- Razgovor za procene na početku rada uradi `git pull`, čita `baza/`, a piše samo u `procene/` i u `baza/ponude/mozzart/` i `baza/ponude/soccerbet/`. Ne menja ostatak `baza/` i nikad ne dira `minusi/`.
+- Ranije su minusi i procene rađeni u dva razgovora; od 7.11.2026 sve ide kroz jedan. Na početku rada `git pull`.
+- Posle svakog kola: `baza/` (zapisnici, raspored, rows, ctx2, ponude), pa `minusi/` i `procene/`, pa `python3 spoj/provera.py` (provera spoja na novim ishodima).
+- Dnevni tok za minuse: `minusi/optimizer/TOK.md`. Za procene: `procene/RAD.md`.
 - Pre svakog slanja: `git pull --rebase`, pa `git push`.
 
 ## Minusi

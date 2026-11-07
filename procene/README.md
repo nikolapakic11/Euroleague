@@ -23,7 +23,7 @@ Provera mehanizma izbora i razlozi za trenutno pravilo: `procene/provera/izbor_2
 
 U pozadini (odluka 4.11.2026): prikupljaju se domaće utakmice ekipa između kola Evrolige i minuti igrača u njima (`domace.py`). Posle nekoliko kola proveriti obrazac: da li domaća utakmica dan ili dva pre kola, ili mnogo minuta u njoj, menja minute i učinak u Evroligi, i da li to vredi uneti u model. Do tada se ništa od toga ne prikazuje.
 
-Ovaj folder koristi samo `baza/`. Ništa iz `minusi/`.
+Ovaj folder koristi `baza/` i zajednički `spoj/` (minus-model, od 7.11.2026). Nikolini tiketi i rezultati iz `minusi/` ne ulaze ovde.
 
 ## Kako se radi
 
