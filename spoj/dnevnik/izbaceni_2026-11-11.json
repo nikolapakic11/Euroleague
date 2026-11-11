@@ -1,0 +1,66 @@
+{
+ "dan": "2026-11-11",
+ "upisano": "11.11.2026. 12:21",
+ "izbaceni": [
+  {
+   "k": "talen horton tucker",
+   "ime": "Talen Horton Tucker",
+   "tim": "ULK",
+   "s": "P",
+   "l": 14.5,
+   "kvota": 1.99,
+   "kl": "admiral",
+   "pp": 0.541,
+   "fer": 0.4819,
+   "msig": 0.1714
+  },
+  {
+   "k": "talen horton tucker",
+   "ime": "Talen Horton Tucker",
+   "tim": "ULK",
+   "s": "S",
+   "l": 3.5,
+   "kvota": 2.03,
+   "kl": "mozzart",
+   "pp": 0.511,
+   "fer": 0.4586,
+   "msig": 0.3238
+  },
+  {
+   "k": "marcus bingham",
+   "ime": "Marcus Bingham",
+   "tim": "ULK",
+   "s": "P",
+   "l": 6.5,
+   "kvota": 1.92,
+   "kl": "admiral",
+   "pp": 0.539,
+   "fer": 0.5,
+   "msig": 0.1366
+  },
+  {
+   "k": "talen horton tucker",
+   "ime": "Talen Horton Tucker",
+   "tim": "ULK",
+   "s": "A",
+   "l": 2.5,
+   "kvota": 1.85,
+   "kl": "admiral",
+   "pp": 0.538,
+   "fer": 0.5,
+   "msig": 0.1534
+  },
+  {
+   "k": "wade baldwin",
+   "ime": "Wade Baldwin Iv",
+   "tim": "ULK",
+   "s": "A",
+   "l": 4.5,
+   "kvota": 1.85,
+   "kl": "admiral",
+   "pp": 0.531,
+   "fer": 0.5,
+   "msig": 0.207
+  }
+ ]
+}

@@ -1,13 +1,13 @@
 {
  "w": [
-  -0.047,
+  -0.0209,
   0.3,
   0.7,
   0.0,
   0.0
  ],
  "kal": {},
- "n_wf": 2495,
+ "n_wf": 2618,
  "w_kola_4_6": [
   -0.1912,
   0.3,
@@ -15,7 +15,7 @@
   0.0,
   0.0
  ],
- "n_granica": 3059,
+ "n_granica": 3182,
  "pravilo": {
   "kvota_min": 1.5,
   "prag_minus": 0.5,
@@ -36,45 +36,45 @@
  },
  "test": {
   "kola_7_9": {
-   "utakmica": 38,
-   "predloga": 1014,
+   "utakmica": 39,
+   "predloga": 1037,
    "ukupno": {
-    "n": 1014,
-    "prosao": 571,
-    "dobit": 44.09,
+    "n": 1037,
+    "prosao": 578,
+    "dobit": 35.14,
     "pp": 0.576
    },
    "po_strani": {
     "minus": {
-     "n": 918,
-     "prosao": 509,
-     "dobit": 40.9,
+     "n": 940,
+     "prosao": 516,
+     "dobit": 32.95,
      "pp": 0.581
     },
     "plus": {
-     "n": 96,
+     "n": 97,
      "prosao": 62,
-     "dobit": 3.19,
+     "dobit": 2.19,
      "pp": 0.531
     }
    },
    "po_nivou": {
     "jak": {
-     "n": 149,
+     "n": 151,
      "prosao": 88,
-     "dobit": -0.12,
+     "dobit": -2.12,
      "pp": 0.647
     },
     "nagoveštaj": {
-     "n": 356,
-     "prosao": 202,
-     "dobit": 29.14,
+     "n": 364,
+     "prosao": 205,
+     "dobit": 27.89,
      "pp": 0.532
     },
     "solidan": {
-     "n": 509,
-     "prosao": 281,
-     "dobit": 15.07,
+     "n": 522,
+     "prosao": 285,
+     "dobit": 9.37,
      "pp": 0.586
     }
    },
@@ -98,10 +98,10 @@
      "pp": 0.583
     },
     "10": {
-     "n": 237,
-     "prosao": 133,
-     "dobit": 10.74,
-     "pp": 0.567
+     "n": 260,
+     "prosao": 140,
+     "dobit": 1.79,
+     "pp": 0.568
     }
    }
   },
@@ -170,8 +170,8 @@
    }
   },
   "opis": "koeficijenti spajanja iz kola 4–6; kola 7–9 su van podešavanja, kola 4–6 su u periodu podešavanja. Admiral i MaxBet, jedna kladionica po danu, samo glavne granice",
-  "ll_spojeno": 0.685,
-  "ll_kvote": 0.6864,
-  "ll_model": 0.7003
+  "ll_spojeno": 0.6877,
+  "ll_kvote": 0.6884,
+  "ll_model": 0.7022
  }
 }

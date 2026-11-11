@@ -1,12 +1,6 @@
 {
  "ASV": [
   [
-   1794079800,
-   "FRANCE: LNB",
-   "Pau-Orthez",
-   true
-  ],
-  [
    1794765600,
    "FRANCE: LNB",
    "Le Mans",
@@ -17,6 +11,12 @@
    "FRANCE: LNB",
    "JL Bourg",
    true
+  ],
+  [
+   1796238000,
+   "FRANCE: French Cup",
+   "Hyeres-Toulon",
+   false
   ],
   [
    1796571000,
@@ -50,12 +50,6 @@
   ]
  ],
  "BAR": [
-  [
-   1794135600,
-   "SPAIN: ACB",
-   "Breogan",
-   true
-  ],
   [
    1794758400,
    "SPAIN: ACB",
@@ -97,15 +91,15 @@
    "SPAIN: ACB",
    "Real Madrid",
    true
+  ],
+  [
+   1798999200,
+   "SPAIN: ACB",
+   "Baskonia",
+   true
   ]
  ],
  "BAS": [
-  [
-   1794081600,
-   "SPAIN: ACB",
-   "Forca Lleida",
-   false
-  ],
   [
    1794765600,
    "SPAIN: ACB",
@@ -147,15 +141,15 @@
    "SPAIN: ACB",
    "Breogan",
    true
+  ],
+  [
+   1798999200,
+   "SPAIN: ACB",
+   "Barcelona",
+   false
   ]
  ],
  "BES": [
-  [
-   1794240000,
-   "TURKEY: Super Lig",
-   "Karsiyaka",
-   false
-  ],
   [
    1794754800,
    "TURKEY: Super Lig",
@@ -197,15 +191,15 @@
    "TURKEY: Super Lig",
    "Petkim Spor",
    false
+  ],
+  [
+   1799424000,
+   "TURKEY: Super Lig",
+   "Tofas",
+   true
   ]
  ],
  "DUB": [
-  [
-   1794250800,
-   "EUROPE: AdmiralBet ABA League",
-   "Mega Basket",
-   false
-  ],
   [
    1794733200,
    "EUROPE: AdmiralBet ABA League",
@@ -213,7 +207,7 @@
    true
   ],
   [
-   1795366800,
+   1795372200,
    "EUROPE: AdmiralBet ABA League",
    "Partizan Mozzart Bet",
    false
@@ -247,15 +241,15 @@
    "EUROPE: AdmiralBet ABA League",
    "Cluj-Napoca",
    true
+  ],
+  [
+   1799600400,
+   "EUROPE: AdmiralBet ABA League",
+   "Mega Basket",
+   true
   ]
  ],
  "HTA": [
-  [
-   1794250500,
-   "ISRAEL: League Cup - Play Offs",
-   "Maccabi Tel Aviv",
-   false
-  ],
   [
    1794673800,
    "ISRAEL: Super League",
@@ -269,19 +263,19 @@
    true
   ],
   [
-   1796576400,
+   1796490900,
    "ISRAEL: Super League",
    "Nes Ziona",
    false
   ],
   [
-   1796662800,
+   1796661000,
    "ISRAEL: Super League",
    "Ironi Eilat",
    false
   ],
   [
-   1797181200,
+   1797095700,
    "ISRAEL: Super League",
    "Hapoel HaEmek",
    false
@@ -297,15 +291,15 @@
    "ISRAEL: Super League",
    "Galil Elyon",
    true
+  ],
+  [
+   1798995600,
+   "ISRAEL: Super League",
+   "Maccabi Ironi Ramat Gan",
+   true
   ]
  ],
  "IST": [
-  [
-   1794141000,
-   "TURKEY: Super Lig",
-   "Tofas",
-   true
-  ],
   [
    1794763800,
    "TURKEY: Super Lig",
@@ -347,15 +341,15 @@
    "TURKEY: Super Lig",
    "Karsiyaka",
    true
+  ],
+  [
+   1799424000,
+   "TURKEY: Super Lig",
+   "Bursaspor",
+   false
   ]
  ],
  "MAD": [
-  [
-   1794160800,
-   "SPAIN: ACB",
-   "Murcia",
-   true
-  ],
   [
    1794765600,
    "SPAIN: ACB",
@@ -397,15 +391,15 @@
    "SPAIN: ACB",
    "Barcelona",
    false
+  ],
+  [
+   1798920000,
+   "SPAIN: ACB",
+   "Tenerife",
+   true
   ]
  ],
  "MIL": [
-  [
-   1794153600,
-   "ITALY: Lega A",
-   "Trento",
-   true
-  ],
   [
    1794762900,
    "ITALY: Lega A",
@@ -443,19 +437,19 @@
    true
   ],
   [
-   1799002800,
+   1798905600,
    "ITALY: Lega A",
    "Varese",
    true
+  ],
+  [
+   1799607600,
+   "ITALY: Lega A",
+   "BC Roma",
+   false
   ]
  ],
  "MUN": [
-  [
-   1794157200,
-   "GERMANY: BBL",
-   "Wurzburg",
-   false
-  ],
   [
    1794756600,
    "GERMANY: BBL",
@@ -497,15 +491,15 @@
    "GERMANY: BBL",
    "Ludwigsburg",
    true
+  ],
+  [
+   1798898400,
+   "GERMANY: BBL",
+   "Ulm",
+   true
   ]
  ],
  "OLY": [
-  [
-   1794151800,
-   "GREECE: Basket League",
-   "Maroussi",
-   false
-  ],
   [
    1794756600,
    "GREECE: Basket League",
@@ -547,15 +541,15 @@
    "GREECE: Basket League",
    "Panathinaikos",
    false
+  ],
+  [
+   1799593200,
+   "GREECE: Basket League",
+   "Vikos",
+   true
   ]
  ],
  "PAM": [
-  [
-   1794137400,
-   "SPAIN: ACB",
-   "San Pablo Burgos",
-   false
-  ],
   [
    1794740400,
    "SPAIN: ACB",
@@ -597,15 +591,15 @@
    "SPAIN: ACB",
    "Basquet Girona",
    false
+  ],
+  [
+   1798909200,
+   "SPAIN: ACB",
+   "Obradoiro CAB",
+   false
   ]
  ],
  "PAN": [
-  [
-   1794135600,
-   "GREECE: Basket League",
-   "AEK Athens",
-   false
-  ],
   [
    1794740400,
    "GREECE: Basket League",
@@ -647,15 +641,15 @@
    "GREECE: Basket League",
    "Olympiacos",
    true
+  ],
+  [
+   1799593200,
+   "GREECE: Basket League",
+   "Maroussi",
+   false
   ]
  ],
  "PAR": [
-  [
-   1794139200,
-   "EUROPE: AdmiralBet ABA League",
-   "Studentski Centar",
-   true
-  ],
   [
    1794677400,
    "EUROPE: AdmiralBet ABA League",
@@ -663,7 +657,7 @@
    false
   ],
   [
-   1795366800,
+   1795372200,
    "EUROPE: AdmiralBet ABA League",
    "Dubai",
    true
@@ -697,15 +691,15 @@
    "EUROPE: AdmiralBet ABA League",
    "Studentski Centar",
    false
+  ],
+  [
+   1799510400,
+   "EUROPE: AdmiralBet ABA League",
+   "Vienna Basket",
+   false
   ]
  ],
  "PRS": [
-  [
-   1794151800,
-   "FRANCE: LNB",
-   "JL Bourg",
-   true
-  ],
   [
    1794684600,
    "FRANCE: LNB",
@@ -717,6 +711,12 @@
    "FRANCE: LNB",
    "Gravelines-Dunkerque",
    true
+  ],
+  [
+   1796238000,
+   "FRANCE: French Cup",
+   "Cholet",
+   false
   ],
   [
    1796580000,
@@ -751,19 +751,13 @@
  ],
  "RED": [
   [
-   1794243600,
-   "EUROPE: AdmiralBet ABA League",
-   "Slovan Bratislava",
-   true
-  ],
-  [
    1794763800,
    "EUROPE: AdmiralBet ABA League",
    "Cedevita Olimpija",
    true
   ],
   [
-   1795366800,
+   1795348800,
    "EUROPE: AdmiralBet ABA League",
    "Cibona",
    true
@@ -797,15 +791,15 @@
    "EUROPE: AdmiralBet ABA League",
    "Cibona",
    false
+  ],
+  [
+   1799600400,
+   "EUROPE: AdmiralBet ABA League",
+   "KK Krka Novo mesto",
+   true
   ]
  ],
  "TEL": [
-  [
-   1794250500,
-   "ISRAEL: League Cup - Play Offs",
-   "Hapoel Tel Aviv",
-   true
-  ],
   [
    1794682500,
    "ISRAEL: Super League",
@@ -819,13 +813,13 @@
    true
   ],
   [
-   1796576400,
+   1796669700,
    "ISRAEL: Super League",
    "Maccabi Ashdod",
    false
   ],
   [
-   1797181200,
+   1797188100,
    "ISRAEL: Super League",
    "Maccabi Ironi Ramat Gan",
    false
@@ -847,15 +841,15 @@
    "ISRAEL: Super League",
    "Hapoel Beer Sheva",
    false
+  ],
+  [
+   1798995600,
+   "ISRAEL: Super League",
+   "Ironi Eilat",
+   false
   ]
  ],
  "ULK": [
-  [
-   1794072600,
-   "TURKEY: Super Lig",
-   "Bursaspor",
-   false
-  ],
   [
    1794763800,
    "TURKEY: Super Lig",
@@ -897,15 +891,15 @@
    "TURKEY: Super Lig",
    "Galatasaray",
    true
+  ],
+  [
+   1799424000,
+   "TURKEY: Super Lig",
+   "Esenler Erokspor",
+   false
   ]
  ],
  "VIR": [
-  [
-   1794250800,
-   "ITALY: Lega A",
-   "Verona",
-   true
-  ],
   [
    1794765600,
    "ITALY: Lega A",
@@ -943,19 +937,19 @@
    true
   ],
   [
-   1799002800,
+   1798974000,
    "ITALY: Lega A",
    "Basket Napoli",
    false
+  ],
+  [
+   1799607600,
+   "ITALY: Lega A",
+   "Cantu",
+   true
   ]
  ],
  "ZAL": [
-  [
-   1794149400,
-   "LITHUANIA: LKL",
-   "Juventus",
-   false
-  ],
   [
    1794754200,
    "LITHUANIA: LKL",
@@ -997,6 +991,12 @@
    "LITHUANIA: LKL",
    "Siauliai",
    false
+  ],
+  [
+   1800802200,
+   "LITHUANIA: LKL",
+   "Gargzdai",
+   true
   ]
  ]
 }
