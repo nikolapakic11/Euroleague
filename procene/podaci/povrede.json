@@ -1,6 +1,6 @@
 {
  "kolo": 11,
- "at": "11.11.2026. 12:19",
+ "at": "11.11.2026. 14:07",
  "izvori": [
   "https://www.eurohoops.net/en/euroleague/2033031/injury-report-round-11-partizans-vildoza-jekiri-gtd-hayes-out/"
  ],
@@ -32,7 +32,7 @@
   "tadas sedekerskis": {
    "tim": "BAS",
    "stanje": "van",
-   "tekst": "Out: Out after suffering a right thigh muscle injury in Round 7. Expected return in late November. LDLC ASVEL Villeurbanne | Eurohoops: Tadas Sedekerskis last played in Round 7",
+   "tekst": "Out: Out after suffering a right thigh muscle injury in Round 7. Expected return in late November. | Eurohoops: Tadas Sedekerskis last played in Round 7",
    "izvor": "basketnews"
   },
   "rodions kurucs": {
@@ -67,7 +67,7 @@
   "tyler dorsey": {
    "tim": "OLY",
    "stanje": "van",
-   "tekst": "Out: Expected to be out until Round 14 after receiving one-month suspension by the club (10.22) | Eurohoops: Tyler Dorsey last played in Round 5 after being suspended by the club",
+   "tekst": "Out: Expected to be out until Round 12 after receiving one-month suspension by the club | Eurohoops: Tyler Dorsey last played in Round 5 after being suspended by the club",
    "izvor": "basketnews"
   },
   "jean montero": {
@@ -309,13 +309,13 @@
   "kenan kamenjas": {
    "tim": "DUB",
    "stanje": "van",
-   "tekst": "Out: Out indefinitely, as he's not included in official Euroleague roster",
+   "tekst": "Out: Out indefinitely, as he's on his way to Baskonia and not included in official Dubai's Euroleague roster",
    "izvor": "basketnews"
   },
   "kosta kondic": {
    "tim": "DUB",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Round 10 (coach's decision). DNP in the domestic league (11.09)",
+   "stanje": "van",
+   "tekst": "Out: Ruled out for Round 11 after DNP in Round 10 (hip/psoas muscle injury)",
    "izvor": "basketnews"
   },
   "klemen prepelic": {
@@ -362,8 +362,8 @@
   },
   "chris silva": {
    "tim": "ULK",
-   "stanje": "upitan",
-   "tekst": "Doubtful: DNP in Round 10 (coach's decision). DNP in the domestic league (11.07) Hapoel IBI Tel Aviv",
+   "stanje": "van",
+   "tekst": "Out: Finalizes agreement to join Partizan after DNP in Round 10 and the domestic league (coach's decision) Hapoel IBI Tel Aviv",
    "izvor": "basketnews"
   },
   "oz blayzer": {
@@ -459,7 +459,7 @@
   "kostas papanikolaou": {
    "tim": "OLY",
    "stanje": "upitan",
-   "tekst": "Doubtful: Missed domestic league game due to tendonitis (11.08), likely to be out for a week",
+   "tekst": "Uncertain: Missed domestic league game due to tendonitis (11.08), likely to be out for a week",
    "izvor": "basketnews"
   },
   "panagiotis kalaitzakis": {

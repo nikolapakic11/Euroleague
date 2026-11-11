@@ -57,17 +57,46 @@ def naginje(x):
                 neodl=neodl)
 
 
+def rucni_pred(x, strana, l=None):
+    """Predlog za ručno dodatu stavku (Nikola) koju tabla nije izabrala: granica l (ili najčešća glavna), najbolja kvota
+    za stranu, verovatnoća iz spoja (prosek kladionica na toj granici). Od 11.11.2026."""
+    L = [z for z in x['linije'] if z.get('m', 1)]
+    if l is None and L:
+        c = collections.Counter(z['l'] for z in L)
+        l = sorted(c, key=lambda v: (-c[v], v))[0]
+    Z = [z for z in L if z['l'] == l]
+    if not Z:
+        return None
+    po = sum(z['pc'] for z in Z) / len(Z)
+    fer_o = sum(z.get('trk', z['tr']) for z in Z) / len(Z)
+    kv = lambda z: z['o'] if strana == 'o' else z['u']
+    b = max(Z, key=kv)
+    pp = po if strana == 'o' else 1 - po
+    red_kl = {k: n for n, k in enumerate(('admiral', 'maxbet', 'mozzart', 'soccerbet'))}
+    return dict(strana=strana, pp=round(pp, 3), ps=round(pp, 3), ev=round(pp * kv(b) - 1, 3), kvota=kv(b),
+                fer=round(fer_o if strana == 'o' else 1 - fer_o, 4), l=l, kl=b['kl'], nivo=spajanje.nivo(pp), rang=None,
+                ostale=sorted([dict(kl=z['kl'], k=kv(z)) for z in Z if z['kl'] != b['kl']], key=lambda t: -t['k']),
+                knjige=sorted([dict(kl=z['kl'], l=z['l'], u=z['u'], o=z['o']) for z in L], key=lambda t: red_kl.get(t['kl'], 9)),
+                opseg=[], soft=None, rucno=True)
+
+
 def izaberi(tabla, K=None):
-    """Predlozi su već izabrani u tabli (tabla.py, pravilo spajanje.izbor_utakmice); ovde se samo prepisuju, uz analizu."""
+    """Predlozi su već izabrani u tabli (tabla.py, pravilo spajanje.izbor_utakmice); ovde se samo prepisuju, uz analizu.
+    Ručno dodati (iskljuceni.json, "dodati") ulaze i kad ih tabla nije izabrala (rucni_pred)."""
     out = []
+    dod = iskljuceni().get('dodati', {})
     for u in tabla['utakmice']:
         if u['pocela']:
             continue
+        rucni = {(x['k'], x['s']): x for x in dod.get(u['dan'], [])}
         for st in u['strane']:
             tudja = next(x for x in u['strane'] if x is not st)
             for i in st['igraci']:
                 for s in 'PSA':
                     pr = i['s'][s].get('pred')
+                    x_r = rucni.get((i['k'], s))
+                    if x_r and (not pr or pr['strana'] != x_r.get('strana', pr['strana']) or (x_r.get('l') is not None and pr['l'] != x_r['l'])):
+                        pr = rucni_pred(i['s'][s], x_r.get('strana', 'u'), x_r.get('l')) or pr
                     if not pr:
                         continue
                     z = next((z for z in i['s'][s]['linije'] if z['kl'] == pr['kl'] and z['l'] == pr['l']), {})
@@ -149,12 +178,12 @@ def izbor_dana(P, B=None, ranije=()):
     ocena = lambda p: pred(p) + (DAN_ZADRZI if ist(p) in ranije else 0)
     isk = iskljuceni()
     van = lambda p: any(x['k'] == p['k'] and x.get('s', p['s']) == p['s'] for x in isk.get(p['dan'], []) if isinstance(x, dict))
+    P_rucno = list(P)                            # ručno dodati ulaze bez praga, forme i minus-modela (od 11.11.2026)
     P = sorted([p for p in P if p.get('nivo') != 'slab' and not van(p)], key=lambda p: -ocena(p))
     if B is not None:
-        for p in P:
+        for p in P_rucno:
             p['forma'] = list(forma(B, p))
         P = [p for p in P if p['forma'][1] < 4 or p['forma'][0] / p['forma'][1] >= DAN_FORMA_MIN]
-    P_rucno = list(P)                            # ručno dodati ne zavise od minus-modela
     if B is not None and DAN_MINUS_SLAGANJE:
         for p in P:
             if p['strana'] == 'u':

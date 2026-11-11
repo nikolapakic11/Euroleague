@@ -76,6 +76,29 @@
     "strana": "u",
     "razlog": "fundamenti 6.11.: vraća se Fournier (Bartzokas: spreman); Ward sa Fournierom 11, 10, 1, 9, 5, 7 poena (ispod 9,5 u 4 od 6), bez njega 11, 13, 14 uz 24–34 min; Zvezda prima najmanje u ligi (77). Uslov: Fournier u sastavu od 12"
    }
+  ],
+  "2026-11-11": [
+   {
+    "k": "jared rhoden",
+    "s": "A",
+    "strana": "u",
+    "l": 2.5,
+    "razlog": "Nikola 11.11.: najjači signal dana (minus-model +0,83, procena 60% naspram 53% tržišta); Fener dozvoljava najmanje asistencija u ligi (15,5); ispod u 5 od poslednjih 8; Parizu se vraćaju Ntilikina, Hommes i Tarpey"
+   },
+   {
+    "k": "aj lawson",
+    "s": "P",
+    "strana": "u",
+    "l": 10.5,
+    "razlog": "Nikola 11.11.: oba modela ispod; Partizan prima 79 (druga odbrana lige); vraćaju se Duarte i Kurucs; poslednje dve 7 i 5; kvota 2,02"
+   },
+   {
+    "k": "nikola tanaskovic",
+    "s": "P",
+    "strana": "o",
+    "l": 8.5,
+    "razlog": "Nikola 11.11.: PLUS koji najviše obećava; Hayes van, bez njega Tanasković 27 min i 11 poena (6.11.), 29 min i 19 poena 30.10.; ručno 24 min (Jekiri se možda vraća); minus-model jasno preko (−0,48)"
+   }
   ]
  }
 }
