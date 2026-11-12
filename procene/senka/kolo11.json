@@ -782,7 +782,7 @@
   },
   "103": {
    "dan": "2026-11-12",
-   "upisano": "12.11.2026. 10:17",
+   "upisano": "12.11.2026. 16:16",
    "sada": [
     {
      "ime": "Jimmy Clark Iii",
@@ -791,9 +791,9 @@
      "s": "S",
      "strana": "u",
      "l": 2.5,
-     "kl": "admiral",
-     "k": 1.6,
-     "pp": 0.6292,
+     "kl": "mozzart",
+     "k": 1.65,
+     "pp": 0.627,
      "rang": 1
     },
     {
@@ -803,22 +803,10 @@
      "s": "S",
      "strana": "u",
      "l": 2.5,
-     "kl": "admiral",
-     "k": 1.6,
-     "pp": 0.5887,
+     "kl": "mozzart",
+     "k": 1.65,
+     "pp": 0.5864,
      "rang": 2
-    },
-    {
-     "ime": "Bonzie Colson",
-     "igr": "bonzie colson",
-     "tim": "TEL",
-     "s": "P",
-     "strana": "u",
-     "l": 10.5,
-     "kl": "admiral",
-     "k": 1.8,
-     "pp": 0.5857,
-     "rang": 3
     },
     {
      "ime": "Dan Oturu",
@@ -830,6 +818,18 @@
      "kl": "admiral",
      "k": 1.85,
      "pp": 0.5844,
+     "rang": 3
+    },
+    {
+     "ime": "Zach Leday",
+     "igr": "zach leday",
+     "tim": "HTA",
+     "s": "S",
+     "strana": "u",
+     "l": 4.5,
+     "kl": "maxbet",
+     "k": 1.85,
+     "pp": 0.5769,
      "rang": 4
     },
     {
@@ -845,15 +845,15 @@
      "rang": 5
     },
     {
-     "ime": "Zach Leday",
-     "igr": "zach leday",
-     "tim": "HTA",
-     "s": "S",
+     "ime": "Yam Madar",
+     "igr": "yam madar",
+     "tim": "TEL",
+     "s": "P",
      "strana": "u",
-     "l": 4.5,
+     "l": 12.5,
      "kl": "admiral",
-     "k": 1.85,
-     "pp": 0.5676,
+     "k": 2,
+     "pp": 0.5681,
      "rang": 6
     },
     {
@@ -863,21 +863,21 @@
      "s": "P",
      "strana": "u",
      "l": 12.5,
-     "kl": "admiral",
-     "k": 1.84,
-     "pp": 0.5676,
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5662,
      "rang": 7
     },
     {
-     "ime": "Yam Madar",
-     "igr": "yam madar",
+     "ime": "Keaton Wallace",
+     "igr": "keaton wallace",
      "tim": "TEL",
      "s": "P",
      "strana": "u",
-     "l": 12.5,
+     "l": 6.5,
      "kl": "admiral",
-     "k": 2,
-     "pp": 0.5668,
+     "k": 1.92,
+     "pp": 0.5589999999999999,
      "rang": 8
     },
     {
@@ -889,20 +889,8 @@
      "l": 13.5,
      "kl": "admiral",
      "k": 1.99,
-     "pp": 0.5541,
+     "pp": 0.5553,
      "rang": 9
-    },
-    {
-     "ime": "Zach Leday",
-     "igr": "zach leday",
-     "tim": "HTA",
-     "s": "P",
-     "strana": "u",
-     "l": 10.5,
-     "kl": "admiral",
-     "k": 1.83,
-     "pp": 0.5518000000000001,
-     "rang": 10
     },
     {
      "ime": "Jaylen Hoard",
@@ -913,7 +901,19 @@
      "l": 9.5,
      "kl": "admiral",
      "k": 2,
-     "pp": 0.5513,
+     "pp": 0.5528,
+     "rang": 10
+    },
+    {
+     "ime": "Zach Leday",
+     "igr": "zach leday",
+     "tim": "HTA",
+     "s": "P",
+     "strana": "u",
+     "l": 10.5,
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5503,
      "rang": 11
     },
     {
@@ -929,18 +929,6 @@
      "rang": 12
     },
     {
-     "ime": "Elijah Bryant",
-     "igr": "elijah bryant",
-     "tim": "HTA",
-     "s": "P",
-     "strana": "u",
-     "l": 15.5,
-     "kl": "admiral",
-     "k": 1.82,
-     "pp": 0.5441,
-     "rang": 13
-    },
-    {
      "ime": "Roman Sorkin",
      "igr": "roman sorkin",
      "tim": "TEL",
@@ -949,8 +937,44 @@
      "l": 9.5,
      "kl": "admiral",
      "k": 2,
-     "pp": 0.5409999999999999,
+     "pp": 0.5425,
+     "rang": 13
+    },
+    {
+     "ime": "Elijah Bryant",
+     "igr": "elijah bryant",
+     "tim": "HTA",
+     "s": "P",
+     "strana": "u",
+     "l": 15.5,
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5421,
      "rang": 14
+    },
+    {
+     "ime": "Bonzie Colson",
+     "igr": "bonzie colson",
+     "tim": "TEL",
+     "s": "P",
+     "strana": "u",
+     "l": 9.5,
+     "kl": "admiral",
+     "k": 2,
+     "pp": 0.5388,
+     "rang": 15
+    },
+    {
+     "ime": "Jimmy Clark Iii",
+     "igr": "jimmy clark",
+     "tim": "TEL",
+     "s": "A",
+     "strana": "o",
+     "l": 3.5,
+     "kl": "maxbet",
+     "k": 1.65,
+     "pp": 0.5365,
+     "rang": 16
     },
     {
      "ime": "Amir Coffey",
@@ -959,10 +983,10 @@
      "s": "P",
      "strana": "o",
      "l": 5.5,
-     "kl": "admiral",
-     "k": 1.79,
-     "pp": 0.5374,
-     "rang": 15
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5339,
+     "rang": 17
     },
     {
      "ime": "Antonio Blakeney",
@@ -974,19 +998,7 @@
      "kl": "soccerbet",
      "k": 1.9,
      "pp": 0.5323,
-     "rang": 16
-    },
-    {
-     "ime": "Jimmy Clark Iii",
-     "igr": "jimmy clark",
-     "tim": "TEL",
-     "s": "A",
-     "strana": "o",
-     "l": 3.5,
-     "kl": "admiral",
-     "k": 1.65,
-     "pp": 0.5321,
-     "rang": 17
+     "rang": 18
     },
     {
      "ime": "Elijah Bryant",
@@ -998,19 +1010,19 @@
      "kl": "admiral",
      "k": 1.85,
      "pp": 0.5293,
-     "rang": 18
+     "rang": 19
     },
     {
-     "ime": "Keaton Wallace",
-     "igr": "keaton wallace",
+     "ime": "O'Shae J Brissett",
+     "igr": "o shae j brissett",
      "tim": "TEL",
      "s": "P",
      "strana": "u",
-     "l": 5.5,
-     "kl": "admiral",
-     "k": 1.92,
-     "pp": 0.5283,
-     "rang": 19
+     "l": 8.5,
+     "kl": "maxbet",
+     "k": 1.98,
+     "pp": 0.5288999999999999,
+     "rang": 20
     },
     {
      "ime": "Elijah Bryant",
@@ -1022,7 +1034,7 @@
      "kl": "admiral",
      "k": 1.65,
      "pp": 0.5271,
-     "rang": 20
+     "rang": 21
     },
     {
      "ime": "Yam Madar",
@@ -1033,19 +1045,7 @@
      "l": 4.5,
      "kl": "admiral",
      "k": 2.15,
-     "pp": 0.524,
-     "rang": 21
-    },
-    {
-     "ime": "O'Shae J Brissett",
-     "igr": "o shae j brissett",
-     "tim": "TEL",
-     "s": "P",
-     "strana": "u",
-     "l": 8.5,
-     "kl": "admiral",
-     "k": 2,
-     "pp": 0.5234,
+     "pp": 0.5259,
      "rang": 22
     },
     {
@@ -1069,9 +1069,9 @@
      "s": "S",
      "strana": "u",
      "l": 2.5,
-     "kl": "admiral",
-     "k": 1.6,
-     "pp": 0.6271403544376626,
+     "kl": "mozzart",
+     "k": 1.65,
+     "pp": 0.6247990340735847,
      "rang": 1
     },
     {
@@ -1081,9 +1081,9 @@
      "s": "S",
      "strana": "u",
      "l": 2.5,
-     "kl": "admiral",
-     "k": 1.6,
-     "pp": 0.6143702508893594,
+     "kl": "mozzart",
+     "k": 1.65,
+     "pp": 0.6121125403102154,
      "rang": 2
     },
     {
@@ -1099,15 +1099,15 @@
      "rang": 3
     },
     {
-     "ime": "Dan Oturu",
-     "igr": "dan oturu",
-     "tim": "HTA",
+     "ime": "Keaton Wallace",
+     "igr": "keaton wallace",
+     "tim": "TEL",
      "s": "P",
      "strana": "u",
-     "l": 12.5,
+     "l": 6.5,
      "kl": "admiral",
-     "k": 1.84,
-     "pp": 0.5806093576021129,
+     "k": 1.92,
+     "pp": 0.5812767054510277,
      "rang": 4
     },
     {
@@ -1117,10 +1117,22 @@
      "s": "P",
      "strana": "u",
      "l": 10.5,
-     "kl": "admiral",
-     "k": 1.8,
-     "pp": 0.5769162736847285,
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5803197974283982,
      "rang": 5
+    },
+    {
+     "ime": "Dan Oturu",
+     "igr": "dan oturu",
+     "tim": "HTA",
+     "s": "P",
+     "strana": "u",
+     "l": 12.5,
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5791605993628164,
+     "rang": 6
     },
     {
      "ime": "Dan Oturu",
@@ -1132,19 +1144,19 @@
      "kl": "admiral",
      "k": 1.85,
      "pp": 0.575450530523399,
-     "rang": 6
+     "rang": 7
     },
     {
-     "ime": "Keaton Wallace",
-     "igr": "keaton wallace",
-     "tim": "TEL",
-     "s": "P",
+     "ime": "Zach Leday",
+     "igr": "zach leday",
+     "tim": "HTA",
+     "s": "S",
      "strana": "u",
-     "l": 5.5,
-     "kl": "admiral",
-     "k": 1.92,
-     "pp": 0.5686130696058029,
-     "rang": 7
+     "l": 4.5,
+     "kl": "maxbet",
+     "k": 1.85,
+     "pp": 0.5624818528386621,
+     "rang": 8
     },
     {
      "ime": "Elijah Bryant",
@@ -1153,10 +1165,10 @@
      "s": "P",
      "strana": "u",
      "l": 15.5,
-     "kl": "admiral",
-     "k": 1.82,
-     "pp": 0.5615840634537709,
-     "rang": 8
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5596497392611179,
+     "rang": 9
     },
     {
      "ime": "Antonio Blakeney",
@@ -1167,19 +1179,7 @@
      "l": 13.5,
      "kl": "soccerbet",
      "k": 1.9,
-     "pp": 0.5600940229422917,
-     "rang": 9
-    },
-    {
-     "ime": "Zach Leday",
-     "igr": "zach leday",
-     "tim": "HTA",
-     "s": "P",
-     "strana": "u",
-     "l": 10.5,
-     "kl": "admiral",
-     "k": 1.83,
-     "pp": 0.5577110978604818,
+     "pp": 0.5595067836794134,
      "rang": 10
     },
     {
@@ -1191,19 +1191,19 @@
      "l": 9.5,
      "kl": "admiral",
      "k": 2,
-     "pp": 0.5552074808196789,
+     "pp": 0.5568979795324505,
      "rang": 11
     },
     {
-     "ime": "Bonzie Colson",
-     "igr": "bonzie colson",
-     "tim": "TEL",
-     "s": "S",
+     "ime": "Zach Leday",
+     "igr": "zach leday",
+     "tim": "HTA",
+     "s": "P",
      "strana": "u",
-     "l": 3.5,
-     "kl": "admiral",
+     "l": 10.5,
+     "kl": "mozzart",
      "k": 1.85,
-     "pp": 0.5545908730261555,
+     "pp": 0.556314559181958,
      "rang": 12
     },
     {
@@ -1215,20 +1215,32 @@
      "l": 12.5,
      "kl": "admiral",
      "k": 2,
-     "pp": 0.5538469582930733,
+     "pp": 0.5550640948150445,
      "rang": 13
     },
     {
-     "ime": "Zach Leday",
-     "igr": "zach leday",
-     "tim": "HTA",
+     "ime": "Bonzie Colson",
+     "igr": "bonzie colson",
+     "tim": "TEL",
      "s": "S",
+     "strana": "u",
+     "l": 3.5,
+     "kl": "admiral",
+     "k": 1.85,
+     "pp": 0.5545908730261555,
+     "rang": 14
+    },
+    {
+     "ime": "Yam Madar",
+     "igr": "yam madar",
+     "tim": "TEL",
+     "s": "A",
      "strana": "u",
      "l": 4.5,
      "kl": "admiral",
-     "k": 1.85,
-     "pp": 0.5529090257578495,
-     "rang": 14
+     "k": 2.15,
+     "pp": 0.5493638301385193,
+     "rang": 15
     },
     {
      "ime": "Jaylen Hoard",
@@ -1240,18 +1252,6 @@
      "kl": "admiral",
      "k": 2.2,
      "pp": 0.5476904058552151,
-     "rang": 15
-    },
-    {
-     "ime": "Yam Madar",
-     "igr": "yam madar",
-     "tim": "TEL",
-     "s": "A",
-     "strana": "u",
-     "l": 4.5,
-     "kl": "admiral",
-     "k": 2.15,
-     "pp": 0.5475763758023031,
      "rang": 16
     },
     {
@@ -1263,7 +1263,7 @@
      "l": 9.5,
      "kl": "admiral",
      "k": 2,
-     "pp": 0.5450005594313663,
+     "pp": 0.5466791581942558,
      "rang": 17
     },
     {
@@ -1275,20 +1275,8 @@
      "l": 13.5,
      "kl": "admiral",
      "k": 1.99,
-     "pp": 0.5409708710959853,
+     "pp": 0.54208302170961,
      "rang": 18
-    },
-    {
-     "ime": "Jimmy Clark Iii",
-     "igr": "jimmy clark",
-     "tim": "TEL",
-     "s": "A",
-     "strana": "u",
-     "l": 3.5,
-     "kl": "admiral",
-     "k": 2.1,
-     "pp": 0.5356553510488344,
-     "rang": 19
     },
     {
      "ime": "O'Shae J Brissett",
@@ -1297,9 +1285,21 @@
      "s": "P",
      "strana": "u",
      "l": 8.5,
-     "kl": "admiral",
-     "k": 2,
-     "pp": 0.5352882868352349,
+     "kl": "maxbet",
+     "k": 1.98,
+     "pp": 0.540951659790236,
+     "rang": 19
+    },
+    {
+     "ime": "Jimmy Clark Iii",
+     "igr": "jimmy clark",
+     "tim": "TEL",
+     "s": "A",
+     "strana": "u",
+     "l": 3.5,
+     "kl": "mozzart",
+     "k": 2.2,
+     "pp": 0.5307265638873475,
      "rang": 20
     },
     {
@@ -1330,7 +1330,7 @@
   },
   "107": {
    "dan": "2026-11-12",
-   "upisano": "12.11.2026. 10:17",
+   "upisano": "12.11.2026. 16:16",
    "sada": [
     {
      "ime": "Dzanan Musa",
@@ -1339,9 +1339,9 @@
      "s": "A",
      "strana": "u",
      "l": 3.5,
-     "kl": "admiral",
-     "k": 1.58,
-     "pp": 0.6202,
+     "kl": "mozzart",
+     "k": 1.6,
+     "pp": 0.6201,
      "rang": 1
     },
     {
@@ -1351,9 +1351,9 @@
      "s": "S",
      "strana": "u",
      "l": 6.5,
-     "kl": "admiral",
-     "k": 1.55,
-     "pp": 0.6201,
+     "kl": "mozzart",
+     "k": 1.6,
+     "pp": 0.6179,
      "rang": 2
     },
     {
@@ -1363,9 +1363,9 @@
      "s": "S",
      "strana": "u",
      "l": 4.5,
-     "kl": "admiral",
-     "k": 1.58,
-     "pp": 0.6073999999999999,
+     "kl": "mozzart",
+     "k": 1.6,
+     "pp": 0.6069,
      "rang": 3
     },
     {
@@ -1375,9 +1375,9 @@
      "s": "S",
      "strana": "u",
      "l": 7.5,
-     "kl": "admiral",
-     "k": 1.68,
-     "pp": 0.5866,
+     "kl": "mozzart",
+     "k": 1.7,
+     "pp": 0.5857,
      "rang": 4
     },
     {
@@ -1393,15 +1393,15 @@
      "rang": 5
     },
     {
-     "ime": "Elie Okobo",
-     "igr": "elie okobo",
+     "ime": "Dwayne Bacon",
+     "igr": "dwayne bacon",
      "tim": "DUB",
-     "s": "A",
-     "strana": "u",
-     "l": 4.5,
-     "kl": "admiral",
-     "k": 1.6,
-     "pp": 0.5716,
+     "s": "S",
+     "strana": "o",
+     "l": 3.5,
+     "kl": "mozzart",
+     "k": 1.55,
+     "pp": 0.5808,
      "rang": 6
     },
     {
@@ -1417,16 +1417,28 @@
      "rang": 7
     },
     {
+     "ime": "Elie Okobo",
+     "igr": "elie okobo",
+     "tim": "DUB",
+     "s": "A",
+     "strana": "u",
+     "l": 4.5,
+     "kl": "mozzart",
+     "k": 1.65,
+     "pp": 0.5692999999999999,
+     "rang": 8
+    },
+    {
      "ime": "Mbaye Ndiaye",
      "igr": "mbaye ndiaye",
      "tim": "OLY",
      "s": "P",
      "strana": "u",
      "l": 6.5,
-     "kl": "admiral",
-     "k": 2,
-     "pp": 0.5635,
-     "rang": 8
+     "kl": "maxbet",
+     "k": 1.99,
+     "pp": 0.5691999999999999,
+     "rang": 9
     },
     {
      "ime": "Codi Miller-Mcintyre",
@@ -1435,10 +1447,10 @@
      "s": "P",
      "strana": "u",
      "l": 9.5,
-     "kl": "admiral",
-     "k": 1.92,
+     "kl": "mozzart",
+     "k": 1.9,
      "pp": 0.5621,
-     "rang": 9
+     "rang": 10
     },
     {
      "ime": "Sasha Vezenkov",
@@ -1448,9 +1460,21 @@
      "strana": "u",
      "l": 20.5,
      "kl": "admiral",
-     "k": 1.91,
-     "pp": 0.5617,
-     "rang": 10
+     "k": 1.92,
+     "pp": 0.5610999999999999,
+     "rang": 11
+    },
+    {
+     "ime": "Codi Miller-Mcintyre",
+     "igr": "codi miller mcintyre",
+     "tim": "OLY",
+     "s": "A",
+     "strana": "u",
+     "l": 5.5,
+     "kl": "admiral",
+     "k": 2.1,
+     "pp": 0.5606,
+     "rang": 12
     },
     {
      "ime": "Tyrique Jones",
@@ -1459,22 +1483,10 @@
      "s": "S",
      "strana": "o",
      "l": 2.5,
-     "kl": "admiral",
-     "k": 1.5,
-     "pp": 0.5571,
-     "rang": 11
-    },
-    {
-     "ime": "Codi Miller-Mcintyre",
-     "igr": "codi miller mcintyre",
-     "tim": "OLY",
-     "s": "S",
-     "strana": "o",
-     "l": 2.5,
-     "kl": "admiral",
-     "k": 1.57,
-     "pp": 0.5534,
-     "rang": 12
+     "kl": "mozzart",
+     "k": 1.55,
+     "pp": 0.5548,
+     "rang": 13
     },
     {
      "ime": "Filip Petrusev",
@@ -1486,18 +1498,6 @@
      "kl": "admiral",
      "k": 1.85,
      "pp": 0.5532,
-     "rang": 13
-    },
-    {
-     "ime": "Codi Miller-Mcintyre",
-     "igr": "codi miller mcintyre",
-     "tim": "OLY",
-     "s": "A",
-     "strana": "u",
-     "l": 5.5,
-     "kl": "admiral",
-     "k": 2.1,
-     "pp": 0.5526,
      "rang": 14
     },
     {
@@ -1513,6 +1513,18 @@
      "rang": 15
     },
     {
+     "ime": "Codi Miller-Mcintyre",
+     "igr": "codi miller mcintyre",
+     "tim": "OLY",
+     "s": "S",
+     "strana": "o",
+     "l": 2.5,
+     "kl": "mozzart",
+     "k": 1.6,
+     "pp": 0.5523,
+     "rang": 16
+    },
+    {
      "ime": "Tornike Shengelia",
      "igr": "tornike shengelia",
      "tim": "DUB",
@@ -1522,18 +1534,6 @@
      "kl": "admiral",
      "k": 1.92,
      "pp": 0.5482,
-     "rang": 16
-    },
-    {
-     "ime": "Tyson Ward",
-     "igr": "tyson ward",
-     "tim": "OLY",
-     "s": "S",
-     "strana": "u",
-     "l": 3.5,
-     "kl": "admiral",
-     "k": 1.85,
-     "pp": 0.5469999999999999,
      "rang": 17
     },
     {
@@ -1545,8 +1545,20 @@
      "l": 13.5,
      "kl": "soccerbet",
      "k": 1.98,
-     "pp": 0.5458000000000001,
+     "pp": 0.5470999999999999,
      "rang": 18
+    },
+    {
+     "ime": "Tyson Ward",
+     "igr": "tyson ward",
+     "tim": "OLY",
+     "s": "S",
+     "strana": "u",
+     "l": 3.5,
+     "kl": "admiral",
+     "k": 1.85,
+     "pp": 0.5469999999999999,
+     "rang": 19
     },
     {
      "ime": "Dzanan Musa",
@@ -1558,18 +1570,6 @@
      "kl": "admiral",
      "k": 1.75,
      "pp": 0.5443,
-     "rang": 19
-    },
-    {
-     "ime": "Cory Joseph",
-     "igr": "cory joseph",
-     "tim": "OLY",
-     "s": "P",
-     "strana": "u",
-     "l": 4.5,
-     "kl": "admiral",
-     "k": 1.82,
-     "pp": 0.5343,
      "rang": 20
     },
     {
@@ -1581,19 +1581,19 @@
      "l": 3.5,
      "kl": "admiral",
      "k": 1.7,
-     "pp": 0.5343,
+     "pp": 0.5349,
      "rang": 21
     },
     {
-     "ime": "Elie Okobo",
-     "igr": "elie okobo",
-     "tim": "DUB",
+     "ime": "Cory Joseph",
+     "igr": "cory joseph",
+     "tim": "OLY",
      "s": "P",
      "strana": "u",
-     "l": 10.5,
-     "kl": "admiral",
-     "k": 1.83,
-     "pp": 0.5265,
+     "l": 4.5,
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5334,
      "rang": 22
     },
     {
@@ -1605,19 +1605,19 @@
      "l": 14.5,
      "kl": "admiral",
      "k": 1.99,
-     "pp": 0.5241,
+     "pp": 0.5259,
      "rang": 23
     },
     {
-     "ime": "Jaron Blossomgame",
-     "igr": "jaron blossomgame",
+     "ime": "Elie Okobo",
+     "igr": "elie okobo",
      "tim": "DUB",
      "s": "P",
      "strana": "u",
-     "l": 5.5,
-     "kl": "admiral",
-     "k": 1.83,
-     "pp": 0.5192,
+     "l": 10.5,
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.525,
      "rang": 24
     }
    ],
@@ -1629,9 +1629,9 @@
      "s": "A",
      "strana": "u",
      "l": 3.5,
-     "kl": "admiral",
-     "k": 1.58,
-     "pp": 0.655296701240192,
+     "kl": "mozzart",
+     "k": 1.6,
+     "pp": 0.6552583598883878,
      "rang": 1
     },
     {
@@ -1641,9 +1641,9 @@
      "s": "A",
      "strana": "u",
      "l": 4.5,
-     "kl": "admiral",
-     "k": 1.6,
-     "pp": 0.6327060660238918,
+     "kl": "mozzart",
+     "k": 1.65,
+     "pp": 0.6302605532126597,
      "rang": 2
     },
     {
@@ -1653,9 +1653,9 @@
      "s": "S",
      "strana": "u",
      "l": 4.5,
-     "kl": "admiral",
-     "k": 1.58,
-     "pp": 0.628431410246872,
+     "kl": "mozzart",
+     "k": 1.6,
+     "pp": 0.6273041641444499,
      "rang": 3
     },
     {
@@ -1665,9 +1665,9 @@
      "s": "S",
      "strana": "u",
      "l": 6.5,
-     "kl": "admiral",
-     "k": 1.55,
-     "pp": 0.6213105168184159,
+     "kl": "mozzart",
+     "k": 1.6,
+     "pp": 0.6190395789603201,
      "rang": 4
     },
     {
@@ -1677,10 +1677,34 @@
      "s": "P",
      "strana": "u",
      "l": 4.5,
-     "kl": "admiral",
-     "k": 1.82,
-     "pp": 0.5915265008825963,
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.590391231570139,
      "rang": 5
+    },
+    {
+     "ime": "Codi Miller-Mcintyre",
+     "igr": "codi miller mcintyre",
+     "tim": "OLY",
+     "s": "P",
+     "strana": "u",
+     "l": 9.5,
+     "kl": "mozzart",
+     "k": 1.9,
+     "pp": 0.5877875946987383,
+     "rang": 6
+    },
+    {
+     "ime": "Codi Miller-Mcintyre",
+     "igr": "codi miller mcintyre",
+     "tim": "OLY",
+     "s": "A",
+     "strana": "u",
+     "l": 5.5,
+     "kl": "admiral",
+     "k": 2.1,
+     "pp": 0.585219155102233,
+     "rang": 7
     },
     {
      "ime": "Tyson Ward",
@@ -1692,7 +1716,7 @@
      "kl": "admiral",
      "k": 1.92,
      "pp": 0.5791510717260475,
-     "rang": 6
+     "rang": 8
     },
     {
      "ime": "Mfiondu Kabengele",
@@ -1701,34 +1725,22 @@
      "s": "S",
      "strana": "u",
      "l": 7.5,
-     "kl": "admiral",
-     "k": 1.68,
-     "pp": 0.5760717204716241,
-     "rang": 7
-    },
-    {
-     "ime": "Codi Miller-Mcintyre",
-     "igr": "codi miller mcintyre",
-     "tim": "OLY",
-     "s": "A",
-     "strana": "u",
-     "l": 5.5,
-     "kl": "admiral",
-     "k": 2.1,
-     "pp": 0.575426333444212,
-     "rang": 8
-    },
-    {
-     "ime": "Codi Miller-Mcintyre",
-     "igr": "codi miller mcintyre",
-     "tim": "OLY",
-     "s": "P",
-     "strana": "u",
-     "l": 9.5,
-     "kl": "admiral",
-     "k": 1.92,
-     "pp": 0.5708590945515009,
+     "kl": "mozzart",
+     "k": 1.7,
+     "pp": 0.575114827171247,
      "rang": 9
+    },
+    {
+     "ime": "Dwayne Bacon",
+     "igr": "dwayne bacon",
+     "tim": "DUB",
+     "s": "S",
+     "strana": "o",
+     "l": 3.5,
+     "kl": "mozzart",
+     "k": 1.55,
+     "pp": 0.5705971434516642,
+     "rang": 10
     },
     {
      "ime": "Dzanan Musa",
@@ -1740,7 +1752,7 @@
      "kl": "admiral",
      "k": 1.75,
      "pp": 0.5705498342098421,
-     "rang": 10
+     "rang": 11
     },
     {
      "ime": "Tornike Shengelia",
@@ -1752,7 +1764,7 @@
      "kl": "admiral",
      "k": 1.92,
      "pp": 0.5697224611497027,
-     "rang": 11
+     "rang": 12
     },
     {
      "ime": "Donta Hall",
@@ -1764,7 +1776,7 @@
      "kl": "admiral",
      "k": 1.92,
      "pp": 0.5689679401320107,
-     "rang": 12
+     "rang": 13
     },
     {
      "ime": "Filip Petrusev",
@@ -1776,18 +1788,6 @@
      "kl": "admiral",
      "k": 1.85,
      "pp": 0.559694368925483,
-     "rang": 13
-    },
-    {
-     "ime": "Jaron Blossomgame",
-     "igr": "jaron blossomgame",
-     "tim": "DUB",
-     "s": "P",
-     "strana": "u",
-     "l": 5.5,
-     "kl": "admiral",
-     "k": 1.83,
-     "pp": 0.5589105910173523,
      "rang": 14
     },
     {
@@ -1798,20 +1798,20 @@
      "strana": "u",
      "l": 20.5,
      "kl": "admiral",
-     "k": 1.91,
-     "pp": 0.5576884870116439,
+     "k": 1.92,
+     "pp": 0.556999009269694,
      "rang": 15
     },
     {
-     "ime": "Tyrique Jones",
-     "igr": "tyrique jones",
-     "tim": "OLY",
-     "s": "S",
-     "strana": "o",
-     "l": 2.5,
-     "kl": "admiral",
-     "k": 1.5,
-     "pp": 0.5548338615414908,
+     "ime": "Jaron Blossomgame",
+     "igr": "jaron blossomgame",
+     "tim": "DUB",
+     "s": "P",
+     "strana": "u",
+     "l": 5.5,
+     "kl": "mozzart",
+     "k": 1.9,
+     "pp": 0.5551434341416865,
      "rang": 16
     },
     {
@@ -1827,6 +1827,18 @@
      "rang": 17
     },
     {
+     "ime": "Tyrique Jones",
+     "igr": "tyrique jones",
+     "tim": "OLY",
+     "s": "S",
+     "strana": "o",
+     "l": 2.5,
+     "kl": "mozzart",
+     "k": 1.55,
+     "pp": 0.5515981461660575,
+     "rang": 18
+    },
+    {
      "ime": "Tyson Ward",
      "igr": "tyson ward",
      "tim": "OLY",
@@ -1836,7 +1848,7 @@
      "kl": "admiral",
      "k": 1.85,
      "pp": 0.550022173356317,
-     "rang": 18
+     "rang": 19
     },
     {
      "ime": "Tyrique Jones",
@@ -1848,7 +1860,7 @@
      "kl": "admiral",
      "k": 1.92,
      "pp": 0.5497786909587947,
-     "rang": 19
+     "rang": 20
     },
     {
      "ime": "Mckinley Wright Iv",
@@ -1857,10 +1869,10 @@
      "s": "A",
      "strana": "u",
      "l": 3.5,
-     "kl": "admiral",
-     "k": 2,
-     "pp": 0.547807004529691,
-     "rang": 20
+     "kl": "mozzart",
+     "k": 2.03,
+     "pp": 0.5464226050309647,
+     "rang": 21
     },
     {
      "ime": "Dwayne Bacon",
@@ -1869,21 +1881,9 @@
      "s": "A",
      "strana": "u",
      "l": 2.5,
-     "kl": "admiral",
-     "k": 2,
-     "pp": 0.5457476964942494,
-     "rang": 21
-    },
-    {
-     "ime": "Elie Okobo",
-     "igr": "elie okobo",
-     "tim": "DUB",
-     "s": "P",
-     "strana": "u",
-     "l": 10.5,
-     "kl": "admiral",
-     "k": 1.83,
-     "pp": 0.5448509846600595,
+     "kl": "mozzart",
+     "k": 2.03,
+     "pp": 0.5453767733805277,
      "rang": 22
     },
     {
@@ -1895,7 +1895,7 @@
      "l": 13.5,
      "kl": "soccerbet",
      "k": 1.98,
-     "pp": 0.5422490895586471,
+     "pp": 0.5436570521640428,
      "rang": 23
     },
     {
@@ -1905,29 +1905,17 @@
      "s": "S",
      "strana": "o",
      "l": 2.5,
-     "kl": "admiral",
-     "k": 1.57,
-     "pp": 0.5398761679990581,
+     "kl": "mozzart",
+     "k": 1.6,
+     "pp": 0.5382717322803724,
      "rang": 24
     }
    ]
   },
   "105": {
    "dan": "2026-11-12",
-   "upisano": "12.11.2026. 10:17",
+   "upisano": "12.11.2026. 16:16",
    "sada": [
-    {
-     "ime": "Neal Sako",
-     "igr": "neal sako",
-     "tim": "PAM",
-     "s": "S",
-     "strana": "u",
-     "l": 7.5,
-     "kl": "admiral",
-     "k": 1.7,
-     "pp": 0.6507000000000001,
-     "rang": 1
-    },
     {
      "ime": "Vladimir Lucic",
      "igr": "vladimir lucic",
@@ -1935,22 +1923,22 @@
      "s": "S",
      "strana": "u",
      "l": 3.5,
-     "kl": "admiral",
-     "k": 1.53,
-     "pp": 0.6466000000000001,
-     "rang": 2
+     "kl": "mozzart",
+     "k": 1.55,
+     "pp": 0.646,
+     "rang": 1
     },
     {
-     "ime": "Tj Shorts",
-     "igr": "tj shorts",
-     "tim": "PAM",
-     "s": "P",
+     "ime": "Rokas Jokubaitis",
+     "igr": "rokas jokubaitis",
+     "tim": "MUN",
+     "s": "A",
      "strana": "u",
-     "l": 18.5,
+     "l": 4.5,
      "kl": "admiral",
-     "k": 1.86,
-     "pp": 0.5943,
-     "rang": 3
+     "k": 1.85,
+     "pp": 0.6141,
+     "rang": 2
     },
     {
      "ime": "Austin Wiley",
@@ -1962,7 +1950,7 @@
      "kl": "admiral",
      "k": 1.95,
      "pp": 0.5892999999999999,
-     "rang": 4
+     "rang": 3
     },
     {
      "ime": "Andreas Obst",
@@ -1973,8 +1961,8 @@
      "l": 2.5,
      "kl": "admiral",
      "k": 1.68,
-     "pp": 0.5844,
-     "rang": 5
+     "pp": 0.5862,
+     "rang": 4
     },
     {
      "ime": "Austin Wiley",
@@ -1983,10 +1971,10 @@
      "s": "P",
      "strana": "u",
      "l": 8.5,
-     "kl": "admiral",
-     "k": 1.83,
-     "pp": 0.5780000000000001,
-     "rang": 6
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5765,
+     "rang": 5
     },
     {
      "ime": "Johannes Thiemann",
@@ -1995,22 +1983,10 @@
      "s": "S",
      "strana": "u",
      "l": 4.5,
-     "kl": "admiral",
-     "k": 1.67,
-     "pp": 0.5656,
-     "rang": 7
-    },
-    {
-     "ime": "Kameron Taylor",
-     "igr": "kameron taylor",
-     "tim": "PAM",
-     "s": "P",
-     "strana": "u",
-     "l": 13.5,
-     "kl": "admiral",
-     "k": 1.92,
-     "pp": 0.5605,
-     "rang": 8
+     "kl": "mozzart",
+     "k": 1.7,
+     "pp": 0.5644,
+     "rang": 6
     },
     {
      "ime": "Rokas Jokubaitis",
@@ -2019,46 +1995,10 @@
      "s": "P",
      "strana": "u",
      "l": 8.5,
-     "kl": "admiral",
-     "k": 1.83,
-     "pp": 0.5599000000000001,
-     "rang": 9
-    },
-    {
-     "ime": "Kameron Taylor",
-     "igr": "kameron taylor",
-     "tim": "PAM",
-     "s": "S",
-     "strana": "u",
-     "l": 4.5,
-     "kl": "admiral",
-     "k": 1.75,
-     "pp": 0.5588,
-     "rang": 10
-    },
-    {
-     "ime": "Dylan Osetkowski",
-     "igr": "dylan osetkowski",
-     "tim": "PAM",
-     "s": "P",
-     "strana": "u",
-     "l": 7.5,
-     "kl": "admiral",
-     "k": 1.92,
-     "pp": 0.5528,
-     "rang": 11
-    },
-    {
-     "ime": "Vladimir Lucic",
-     "igr": "vladimir lucic",
-     "tim": "MUN",
-     "s": "P",
-     "strana": "u",
-     "l": 7.5,
-     "kl": "admiral",
-     "k": 1.82,
-     "pp": 0.5509999999999999,
-     "rang": 12
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5584,
+     "rang": 7
     },
     {
      "ime": "Tj Shorts",
@@ -2069,32 +2009,20 @@
      "l": 1.5,
      "kl": "admiral",
      "k": 1.67,
-     "pp": 0.5492,
-     "rang": 13
+     "pp": 0.5533,
+     "rang": 8
     },
     {
-     "ime": "Josep Puerto",
-     "igr": "josep puerto",
-     "tim": "PAM",
+     "ime": "Vladimir Lucic",
+     "igr": "vladimir lucic",
+     "tim": "MUN",
      "s": "P",
      "strana": "u",
-     "l": 4.5,
-     "kl": "admiral",
+     "l": 7.5,
+     "kl": "maxbet",
      "k": 1.81,
-     "pp": 0.5406,
-     "rang": 14
-    },
-    {
-     "ime": "Tj Shorts",
-     "igr": "tj shorts",
-     "tim": "PAM",
-     "s": "A",
-     "strana": "u",
-     "l": 5.5,
-     "kl": "admiral",
-     "k": 1.9,
-     "pp": 0.5396000000000001,
-     "rang": 15
+     "pp": 0.5522,
+     "rang": 9
     },
     {
      "ime": "Andreas Obst",
@@ -2106,31 +2034,7 @@
      "kl": "admiral",
      "k": 1.92,
      "pp": 0.5377000000000001,
-     "rang": 16
-    },
-    {
-     "ime": "Jasiel Rivero",
-     "igr": "jasiel rivero",
-     "tim": "PAM",
-     "s": "P",
-     "strana": "u",
-     "l": 6.5,
-     "kl": "admiral",
-     "k": 2.04,
-     "pp": 0.5357000000000001,
-     "rang": 17
-    },
-    {
-     "ime": "Dylan Osetkowski",
-     "igr": "dylan osetkowski",
-     "tim": "PAM",
-     "s": "S",
-     "strana": "u",
-     "l": 3.5,
-     "kl": "admiral",
-     "k": 2,
-     "pp": 0.5285,
-     "rang": 18
+     "rang": 10
     },
     {
      "ime": "Johannes Thiemann",
@@ -2142,43 +2046,19 @@
      "kl": "admiral",
      "k": 1.58,
      "pp": 0.5266,
-     "rang": 19
+     "rang": 11
     },
     {
-     "ime": "Kameron Taylor",
-     "igr": "kameron taylor",
-     "tim": "PAM",
-     "s": "A",
-     "strana": "u",
-     "l": 2.5,
-     "kl": "admiral",
-     "k": 2,
-     "pp": 0.5135000000000001,
-     "rang": 20
-    },
-    {
-     "ime": "Neal Sako",
-     "igr": "neal sako",
+     "ime": "Armoni Brooks",
+     "igr": "armoni brooks",
      "tim": "PAM",
      "s": "P",
-     "strana": "u",
-     "l": 7.5,
-     "kl": "admiral",
-     "k": 2.04,
-     "pp": 0.5133,
-     "rang": 21
-    },
-    {
-     "ime": "Rokas Jokubaitis",
-     "igr": "rokas jokubaitis",
-     "tim": "MUN",
-     "s": "A",
-     "strana": "u",
-     "l": 3.5,
-     "kl": "admiral",
-     "k": 2.15,
-     "pp": 0.5111,
-     "rang": 22
+     "strana": "o",
+     "l": 15.5,
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5028,
+     "rang": 12
     },
     {
      "ime": "Johannes Thiemann",
@@ -2188,12 +2068,24 @@
      "strana": "u",
      "l": 7.5,
      "kl": "admiral",
-     "k": 2.02,
-     "pp": 0.501,
-     "rang": 23
+     "k": 2.04,
+     "pp": 0.5017,
+     "rang": 13
     }
    ],
    "senka": [
+    {
+     "ime": "Rokas Jokubaitis",
+     "igr": "rokas jokubaitis",
+     "tim": "MUN",
+     "s": "A",
+     "strana": "u",
+     "l": 4.5,
+     "kl": "admiral",
+     "k": 1.85,
+     "pp": 0.6651841189704872,
+     "rang": 1
+    },
     {
      "ime": "Vladimir Lucic",
      "igr": "vladimir lucic",
@@ -2201,10 +2093,10 @@
      "s": "S",
      "strana": "u",
      "l": 3.5,
-     "kl": "admiral",
-     "k": 1.53,
-     "pp": 0.6568595635869271,
-     "rang": 1
+     "kl": "mozzart",
+     "k": 1.55,
+     "pp": 0.6554908380164237,
+     "rang": 2
     },
     {
      "ime": "Andreas Obst",
@@ -2215,19 +2107,7 @@
      "l": 2.5,
      "kl": "admiral",
      "k": 1.68,
-     "pp": 0.6322366931622307,
-     "rang": 2
-    },
-    {
-     "ime": "Neal Sako",
-     "igr": "neal sako",
-     "tim": "PAM",
-     "s": "S",
-     "strana": "u",
-     "l": 7.5,
-     "kl": "admiral",
-     "k": 1.7,
-     "pp": 0.6314317301353136,
+     "pp": 0.6342109722975438,
      "rang": 3
     },
     {
@@ -2237,22 +2117,10 @@
      "s": "P",
      "strana": "u",
      "l": 8.5,
-     "kl": "admiral",
-     "k": 1.83,
-     "pp": 0.587360911501609,
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5858949026872421,
      "rang": 4
-    },
-    {
-     "ime": "Johannes Thiemann",
-     "igr": "johannes thiemann",
-     "tim": "MUN",
-     "s": "S",
-     "strana": "u",
-     "l": 4.5,
-     "kl": "admiral",
-     "k": 1.67,
-     "pp": 0.5808925078378138,
-     "rang": 5
     },
     {
      "ime": "Vladimir Lucic",
@@ -2261,34 +2129,22 @@
      "s": "P",
      "strana": "u",
      "l": 7.5,
-     "kl": "admiral",
-     "k": 1.82,
-     "pp": 0.5792260629585544,
+     "kl": "maxbet",
+     "k": 1.81,
+     "pp": 0.5805311241067915,
+     "rang": 5
+    },
+    {
+     "ime": "Johannes Thiemann",
+     "igr": "johannes thiemann",
+     "tim": "MUN",
+     "s": "S",
+     "strana": "u",
+     "l": 4.5,
+     "kl": "mozzart",
+     "k": 1.7,
+     "pp": 0.5802019844897863,
      "rang": 6
-    },
-    {
-     "ime": "Tj Shorts",
-     "igr": "tj shorts",
-     "tim": "PAM",
-     "s": "P",
-     "strana": "u",
-     "l": 18.5,
-     "kl": "admiral",
-     "k": 1.86,
-     "pp": 0.5780707811182713,
-     "rang": 7
-    },
-    {
-     "ime": "Tj Shorts",
-     "igr": "tj shorts",
-     "tim": "PAM",
-     "s": "A",
-     "strana": "u",
-     "l": 5.5,
-     "kl": "admiral",
-     "k": 1.9,
-     "pp": 0.5761432809635729,
-     "rang": 8
     },
     {
      "ime": "Rokas Jokubaitis",
@@ -2297,70 +2153,10 @@
      "s": "P",
      "strana": "u",
      "l": 8.5,
-     "kl": "admiral",
-     "k": 1.83,
-     "pp": 0.5720159936923006,
-     "rang": 9
-    },
-    {
-     "ime": "Kameron Taylor",
-     "igr": "kameron taylor",
-     "tim": "PAM",
-     "s": "A",
-     "strana": "u",
-     "l": 2.5,
-     "kl": "admiral",
-     "k": 2,
-     "pp": 0.5690229152789921,
-     "rang": 10
-    },
-    {
-     "ime": "Josep Puerto",
-     "igr": "josep puerto",
-     "tim": "PAM",
-     "s": "P",
-     "strana": "u",
-     "l": 4.5,
-     "kl": "admiral",
-     "k": 1.81,
-     "pp": 0.5683264693060588,
-     "rang": 11
-    },
-    {
-     "ime": "Dylan Osetkowski",
-     "igr": "dylan osetkowski",
-     "tim": "PAM",
-     "s": "P",
-     "strana": "u",
-     "l": 7.5,
-     "kl": "admiral",
-     "k": 1.92,
-     "pp": 0.567944822561935,
-     "rang": 12
-    },
-    {
-     "ime": "Kameron Taylor",
-     "igr": "kameron taylor",
-     "tim": "PAM",
-     "s": "S",
-     "strana": "u",
-     "l": 4.5,
-     "kl": "admiral",
-     "k": 1.75,
-     "pp": 0.5644980054875446,
-     "rang": 13
-    },
-    {
-     "ime": "Kameron Taylor",
-     "igr": "kameron taylor",
-     "tim": "PAM",
-     "s": "P",
-     "strana": "u",
-     "l": 13.5,
-     "kl": "admiral",
-     "k": 1.92,
-     "pp": 0.5620630863186512,
-     "rang": 14
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5705496199930522,
+     "rang": 7
     },
     {
      "ime": "Austin Wiley",
@@ -2372,7 +2168,7 @@
      "kl": "admiral",
      "k": 1.95,
      "pp": 0.559422004670321,
-     "rang": 15
+     "rang": 8
     },
     {
      "ime": "Andreas Obst",
@@ -2384,43 +2180,7 @@
      "kl": "admiral",
      "k": 1.92,
      "pp": 0.554529028076407,
-     "rang": 16
-    },
-    {
-     "ime": "Jasiel Rivero",
-     "igr": "jasiel rivero",
-     "tim": "PAM",
-     "s": "P",
-     "strana": "u",
-     "l": 6.5,
-     "kl": "admiral",
-     "k": 2.04,
-     "pp": 0.5468574944139797,
-     "rang": 17
-    },
-    {
-     "ime": "Rokas Jokubaitis",
-     "igr": "rokas jokubaitis",
-     "tim": "MUN",
-     "s": "A",
-     "strana": "u",
-     "l": 3.5,
-     "kl": "admiral",
-     "k": 2.15,
-     "pp": 0.5433587003658771,
-     "rang": 18
-    },
-    {
-     "ime": "Neal Sako",
-     "igr": "neal sako",
-     "tim": "PAM",
-     "s": "P",
-     "strana": "u",
-     "l": 7.5,
-     "kl": "admiral",
-     "k": 2.04,
-     "pp": 0.5337834627186244,
-     "rang": 19
+     "rang": 9
     },
     {
      "ime": "Johannes Thiemann",
@@ -2432,31 +2192,7 @@
      "kl": "admiral",
      "k": 2.2,
      "pp": 0.5305386253978085,
-     "rang": 20
-    },
-    {
-     "ime": "Armoni Brooks",
-     "igr": "armoni brooks",
-     "tim": "PAM",
-     "s": "P",
-     "strana": "u",
-     "l": 15.5,
-     "kl": "admiral",
-     "k": 2.02,
-     "pp": 0.522801177365392,
-     "rang": 21
-    },
-    {
-     "ime": "Dylan Osetkowski",
-     "igr": "dylan osetkowski",
-     "tim": "PAM",
-     "s": "S",
-     "strana": "u",
-     "l": 3.5,
-     "kl": "admiral",
-     "k": 2,
-     "pp": 0.5161563864185412,
-     "rang": 22
+     "rang": 10
     },
     {
      "ime": "Johannes Thiemann",
@@ -2466,15 +2202,27 @@
      "strana": "u",
      "l": 7.5,
      "kl": "admiral",
-     "k": 2.02,
-     "pp": 0.51243694352894,
-     "rang": 23
+     "k": 2.04,
+     "pp": 0.5131709289829648,
+     "rang": 11
+    },
+    {
+     "ime": "Tj Shorts",
+     "igr": "tj shorts",
+     "tim": "PAM",
+     "s": "S",
+     "strana": "o",
+     "l": 1.5,
+     "kl": "admiral",
+     "k": 1.67,
+     "pp": 0.5120298465195302,
+     "rang": 12
     }
    ]
   },
   "104": {
    "dan": "2026-11-12",
-   "upisano": "12.11.2026. 10:17",
+   "upisano": "12.11.2026. 16:16",
    "sada": [
     {
      "ime": "Marius Grigonis",
@@ -2483,10 +2231,22 @@
      "s": "A",
      "strana": "u",
      "l": 2.5,
-     "kl": "admiral",
-     "k": 1.6,
-     "pp": 0.634,
+     "kl": "mozzart",
+     "k": 1.65,
+     "pp": 0.6317999999999999,
      "rang": 1
+    },
+    {
+     "ime": "Carsen Edwards",
+     "igr": "carsen edwards",
+     "tim": "ZAL",
+     "s": "A",
+     "strana": "u",
+     "l": 2.5,
+     "kl": "admiral",
+     "k": 1.68,
+     "pp": 0.5846,
+     "rang": 2
     },
     {
      "ime": "Carsen Edwards",
@@ -2495,10 +2255,10 @@
      "s": "P",
      "strana": "u",
      "l": 15.5,
-     "kl": "admiral",
-     "k": 1.82,
-     "pp": 0.5791999999999999,
-     "rang": 2
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5771999999999999,
+     "rang": 3
     },
     {
      "ime": "Jonas Valanciunas",
@@ -2510,7 +2270,7 @@
      "kl": "admiral",
      "k": 1.95,
      "pp": 0.5692999999999999,
-     "rang": 3
+     "rang": 4
     },
     {
      "ime": "Sterling Brown",
@@ -2522,7 +2282,7 @@
      "kl": "admiral",
      "k": 1.92,
      "pp": 0.5665,
-     "rang": 4
+     "rang": 5
     },
     {
      "ime": "Marius Grigonis",
@@ -2531,21 +2291,9 @@
      "s": "P",
      "strana": "u",
      "l": 7.5,
-     "kl": "admiral",
-     "k": 1.83,
-     "pp": 0.5662,
-     "rang": 5
-    },
-    {
-     "ime": "Carsen Edwards",
-     "igr": "carsen edwards",
-     "tim": "ZAL",
-     "s": "A",
-     "strana": "u",
-     "l": 2.5,
-     "kl": "admiral",
+     "kl": "mozzart",
      "k": 1.85,
-     "pp": 0.5445,
+     "pp": 0.5647,
      "rang": 6
     },
     {
@@ -2555,9 +2303,9 @@
      "s": "S",
      "strana": "o",
      "l": 2.5,
-     "kl": "admiral",
-     "k": 1.57,
-     "pp": 0.5427,
+     "kl": "mozzart",
+     "k": 1.6,
+     "pp": 0.5438,
      "rang": 7
     },
     {
@@ -2581,7 +2329,7 @@
      "l": 12.5,
      "kl": "admiral",
      "k": 2.02,
-     "pp": 0.5389999999999999,
+     "pp": 0.5418000000000001,
      "rang": 9
     },
     {
@@ -2605,8 +2353,20 @@
      "l": 2.5,
      "kl": "admiral",
      "k": 1.7,
-     "pp": 0.5291,
+     "pp": 0.5297,
      "rang": 11
+    },
+    {
+     "ime": "Azuolas Tubelis",
+     "igr": "azuolas tubelis",
+     "tim": "ZAL",
+     "s": "P",
+     "strana": "u",
+     "l": 11.5,
+     "kl": "maxbet",
+     "k": 1.9,
+     "pp": 0.5281,
+     "rang": 12
     },
     {
      "ime": "Dustin Sleva",
@@ -2616,32 +2376,20 @@
      "strana": "u",
      "l": 5.5,
      "kl": "admiral",
-     "k": 1.87,
-     "pp": 0.5238,
-     "rang": 12
-    },
-    {
-     "ime": "Azuolas Tubelis",
-     "igr": "azuolas tubelis",
-     "tim": "ZAL",
-     "s": "P",
-     "strana": "o",
-     "l": 10.5,
-     "kl": "admiral",
-     "k": 1.8,
-     "pp": 0.5174,
+     "k": 1.86,
+     "pp": 0.5239,
      "rang": 13
     },
     {
-     "ime": "Jonas Valanciunas",
-     "igr": "jonas valanciunas",
+     "ime": "Arnas Butkevicius",
+     "igr": "arnas butkevicius",
      "tim": "ZAL",
-     "s": "S",
+     "s": "P",
      "strana": "u",
-     "l": 7.5,
-     "kl": "admiral",
-     "k": 2.2,
-     "pp": 0.5142,
+     "l": 4.5,
+     "kl": "maxbet",
+     "k": 1.9,
+     "pp": 0.5144,
      "rang": 14
     }
    ],
@@ -2653,9 +2401,9 @@
      "s": "A",
      "strana": "u",
      "l": 2.5,
-     "kl": "admiral",
-     "k": 1.6,
-     "pp": 0.6761290594128733,
+     "kl": "mozzart",
+     "k": 1.65,
+     "pp": 0.6735146951412844,
      "rang": 1
     },
     {
@@ -2666,8 +2414,8 @@
      "strana": "u",
      "l": 2.5,
      "kl": "admiral",
-     "k": 1.85,
-     "pp": 0.5993080733988665,
+     "k": 1.68,
+     "pp": 0.637558237218798,
      "rang": 2
     },
     {
@@ -2689,9 +2437,9 @@
      "s": "P",
      "strana": "u",
      "l": 7.5,
-     "kl": "admiral",
-     "k": 1.83,
-     "pp": 0.5700933399163838,
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5685428123968503,
      "rang": 4
     },
     {
@@ -2701,9 +2449,9 @@
      "s": "P",
      "strana": "u",
      "l": 15.5,
-     "kl": "admiral",
-     "k": 1.82,
-     "pp": 0.56955414459177,
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5675977252308664,
      "rang": 5
     },
     {
@@ -2713,9 +2461,9 @@
      "s": "P",
      "strana": "u",
      "l": 4.5,
-     "kl": "admiral",
-     "k": 1.92,
-     "pp": 0.5649376958739327,
+     "kl": "maxbet",
+     "k": 1.9,
+     "pp": 0.5671608394034191,
      "rang": 6
     },
     {
@@ -2726,8 +2474,8 @@
      "strana": "u",
      "l": 5.5,
      "kl": "admiral",
-     "k": 1.87,
-     "pp": 0.5612705293446874,
+     "k": 1.86,
+     "pp": 0.5613519212041869,
      "rang": 7
     },
     {
@@ -2739,8 +2487,20 @@
      "l": 6.5,
      "kl": "admiral",
      "k": 1.89,
-     "pp": 0.5585088650296941,
+     "pp": 0.5597354401134822,
      "rang": 8
+    },
+    {
+     "ime": "Azuolas Tubelis",
+     "igr": "azuolas tubelis",
+     "tim": "ZAL",
+     "s": "P",
+     "strana": "u",
+     "l": 11.5,
+     "kl": "maxbet",
+     "k": 1.9,
+     "pp": 0.5575037645161522,
+     "rang": 9
     },
     {
      "ime": "Sterling Brown",
@@ -2752,7 +2512,7 @@
      "kl": "admiral",
      "k": 1.92,
      "pp": 0.5561737781431254,
-     "rang": 9
+     "rang": 10
     },
     {
      "ime": "Azuolas Tubelis",
@@ -2764,7 +2524,7 @@
      "kl": "admiral",
      "k": 1.6,
      "pp": 0.5462820081754788,
-     "rang": 10
+     "rang": 11
     },
     {
      "ime": "Jonas Valanciunas",
@@ -2775,19 +2535,7 @@
      "l": 12.5,
      "kl": "admiral",
      "k": 2.02,
-     "pp": 0.5370264065967214,
-     "rang": 11
-    },
-    {
-     "ime": "Arnas Butkevicius",
-     "igr": "arnas butkevicius",
-     "tim": "ZAL",
-     "s": "S",
-     "strana": "u",
-     "l": 3.5,
-     "kl": "admiral",
-     "k": 1.85,
-     "pp": 0.5326042256624243,
+     "pp": 0.5398833952979012,
      "rang": 12
     },
     {
@@ -2797,16 +2545,16 @@
      "s": "S",
      "strana": "o",
      "l": 2.5,
-     "kl": "admiral",
-     "k": 1.57,
-     "pp": 0.5292487952733499,
+     "kl": "mozzart",
+     "k": 1.6,
+     "pp": 0.5298839056227591,
      "rang": 13
     }
    ]
   },
   "106": {
    "dan": "2026-11-12",
-   "upisano": "12.11.2026. 10:17",
+   "upisano": "12.11.2026. 16:16",
    "sada": [
     {
      "ime": "Tyson Carter",
@@ -2857,16 +2605,28 @@
      "rang": 4
     },
     {
+     "ime": "Dejan Davidovac",
+     "igr": "dejan davidovac",
+     "tim": "RED",
+     "s": "P",
+     "strana": "u",
+     "l": 3.5,
+     "kl": "admiral",
+     "k": 1.8,
+     "pp": 0.571,
+     "rang": 5
+    },
+    {
      "ime": "Jordan Nwora",
      "igr": "jordan nwora",
      "tim": "RED",
      "s": "P",
      "strana": "u",
      "l": 15.5,
-     "kl": "admiral",
-     "k": 1.84,
-     "pp": 0.5718,
-     "rang": 5
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5707,
+     "rang": 6
     },
     {
      "ime": "Chris Jones",
@@ -2878,7 +2638,7 @@
      "kl": "admiral",
      "k": 1.85,
      "pp": 0.5608,
-     "rang": 6
+     "rang": 7
     },
     {
      "ime": "Jordan Nwora",
@@ -2888,9 +2648,9 @@
      "strana": "u",
      "l": 1.5,
      "kl": "admiral",
-     "k": 1.7,
-     "pp": 0.5605,
-     "rang": 7
+     "k": 1.72,
+     "pp": 0.5598000000000001,
+     "rang": 8
     },
     {
      "ime": "Andres Feliz",
@@ -2899,10 +2659,10 @@
      "s": "S",
      "strana": "o",
      "l": 2.5,
-     "kl": "admiral",
-     "k": 1.57,
-     "pp": 0.5578,
-     "rang": 8
+     "kl": "mozzart",
+     "k": 1.6,
+     "pp": 0.555,
+     "rang": 9
     },
     {
      "ime": "Chris Jones",
@@ -2911,22 +2671,22 @@
      "s": "P",
      "strana": "u",
      "l": 9.5,
-     "kl": "admiral",
-     "k": 1.8,
-     "pp": 0.5568,
-     "rang": 9
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5541,
+     "rang": 10
     },
     {
-     "ime": "Jordan Nwora",
-     "igr": "jordan nwora",
+     "ime": "Christian Koloko",
+     "igr": "christian koloko",
      "tim": "RED",
-     "s": "S",
-     "strana": "o",
-     "l": 4.5,
-     "kl": "maxbet",
-     "k": 1.53,
-     "pp": 0.5408,
-     "rang": 10
+     "s": "P",
+     "strana": "u",
+     "l": 6.5,
+     "kl": "mozzart",
+     "k": 1.95,
+     "pp": 0.5435,
+     "rang": 11
     },
     {
      "ime": "Tyson Carter",
@@ -2938,7 +2698,19 @@
      "kl": "admiral",
      "k": 1.6,
      "pp": 0.5403,
-     "rang": 11
+     "rang": 12
+    },
+    {
+     "ime": "Jordan Nwora",
+     "igr": "jordan nwora",
+     "tim": "RED",
+     "s": "S",
+     "strana": "o",
+     "l": 4.5,
+     "kl": "mozzart",
+     "k": 1.55,
+     "pp": 0.5403,
+     "rang": 13
     },
     {
      "ime": "Timothe Luwawu-Cabarrot",
@@ -2948,9 +2720,9 @@
      "strana": "o",
      "l": 2.5,
      "kl": "admiral",
-     "k": 1.57,
-     "pp": 0.5281,
-     "rang": 12
+     "k": 1.7,
+     "pp": 0.5175,
+     "rang": 14
     },
     {
      "ime": "Alberto Abalde",
@@ -2959,33 +2731,9 @@
      "s": "S",
      "strana": "o",
      "l": 2.5,
-     "kl": "admiral",
-     "k": 1.57,
-     "pp": 0.5194,
-     "rang": 13
-    },
-    {
-     "ime": "Chima Moneke",
-     "igr": "chima moneke",
-     "tim": "RED",
-     "s": "A",
-     "strana": "u",
-     "l": 1.5,
-     "kl": "admiral",
-     "k": 1.85,
-     "pp": 0.5179,
-     "rang": 14
-    },
-    {
-     "ime": "Nick Weiler-Babb",
-     "igr": "nick weiler babb",
-     "tim": "RED",
-     "s": "A",
-     "strana": "o",
-     "l": 3.5,
-     "kl": "admiral",
-     "k": 1.65,
-     "pp": 0.5175,
+     "kl": "mozzart",
+     "k": 1.6,
+     "pp": 0.5166,
      "rang": 15
     }
    ],
@@ -3010,9 +2758,21 @@
      "strana": "u",
      "l": 1.5,
      "kl": "admiral",
-     "k": 1.7,
-     "pp": 0.6398316718580708,
+     "k": 1.72,
+     "pp": 0.6380290831504021,
      "rang": 2
+    },
+    {
+     "ime": "Dejan Davidovac",
+     "igr": "dejan davidovac",
+     "tim": "RED",
+     "s": "P",
+     "strana": "u",
+     "l": 3.5,
+     "kl": "admiral",
+     "k": 1.8,
+     "pp": 0.6057594516394278,
+     "rang": 3
     },
     {
      "ime": "Chris Jones",
@@ -3024,7 +2784,7 @@
      "kl": "admiral",
      "k": 1.85,
      "pp": 0.6038626815460244,
-     "rang": 3
+     "rang": 4
     },
     {
      "ime": "Chima Moneke",
@@ -3035,8 +2795,8 @@
      "l": 1.5,
      "kl": "admiral",
      "k": 1.85,
-     "pp": 0.5997624689654648,
-     "rang": 4
+     "pp": 0.6001191484309822,
+     "rang": 5
     },
     {
      "ime": "Nick Weiler-Babb",
@@ -3048,7 +2808,7 @@
      "kl": "admiral",
      "k": 1.72,
      "pp": 0.5801426317554108,
-     "rang": 5
+     "rang": 6
     },
     {
      "ime": "Chris Jones",
@@ -3057,10 +2817,22 @@
      "s": "P",
      "strana": "u",
      "l": 9.5,
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5749883321342192,
+     "rang": 7
+    },
+    {
+     "ime": "Ognjen Dobric",
+     "igr": "ognjen dobric",
+     "tim": "RED",
+     "s": "P",
+     "strana": "u",
+     "l": 3.5,
      "kl": "admiral",
-     "k": 1.8,
-     "pp": 0.5778844083984017,
-     "rang": 6
+     "k": 1.92,
+     "pp": 0.5739354049285922,
+     "rang": 8
     },
     {
      "ime": "Chima Moneke",
@@ -3072,7 +2844,7 @@
      "kl": "admiral",
      "k": 1.87,
      "pp": 0.5669462759519197,
-     "rang": 7
+     "rang": 9
     },
     {
      "ime": "Jordan Nwora",
@@ -3081,10 +2853,10 @@
      "s": "P",
      "strana": "u",
      "l": 15.5,
-     "kl": "admiral",
-     "k": 1.84,
-     "pp": 0.5667626710636149,
-     "rang": 8
+     "kl": "mozzart",
+     "k": 1.85,
+     "pp": 0.5657219795291127,
+     "rang": 10
     },
     {
      "ime": "Jordan Nwora",
@@ -3093,10 +2865,10 @@
      "s": "S",
      "strana": "o",
      "l": 4.5,
-     "kl": "maxbet",
-     "k": 1.53,
-     "pp": 0.559492380233383,
-     "rang": 9
+     "kl": "mozzart",
+     "k": 1.55,
+     "pp": 0.5591953089172439,
+     "rang": 11
     },
     {
      "ime": "Chris Jones",
@@ -3108,30 +2880,6 @@
      "kl": "admiral",
      "k": 1.85,
      "pp": 0.5586336984265913,
-     "rang": 10
-    },
-    {
-     "ime": "Nick Weiler-Babb",
-     "igr": "nick weiler babb",
-     "tim": "RED",
-     "s": "P",
-     "strana": "u",
-     "l": 3.5,
-     "kl": "admiral",
-     "k": 2.02,
-     "pp": 0.5487163397664104,
-     "rang": 11
-    },
-    {
-     "ime": "Tyson Carter",
-     "igr": "tyson carter",
-     "tim": "RED",
-     "s": "P",
-     "strana": "u",
-     "l": 7.5,
-     "kl": "admiral",
-     "k": 1.92,
-     "pp": 0.5402506265072411,
      "rang": 12
     },
     {
@@ -3141,10 +2889,22 @@
      "s": "S",
      "strana": "o",
      "l": 2.5,
-     "kl": "admiral",
-     "k": 1.57,
-     "pp": 0.5398634614595095,
+     "kl": "mozzart",
+     "k": 1.6,
+     "pp": 0.5372848907006565,
      "rang": 13
+    },
+    {
+     "ime": "Alberto Abalde",
+     "igr": "alberto abalde",
+     "tim": "MAD",
+     "s": "S",
+     "strana": "o",
+     "l": 2.5,
+     "kl": "mozzart",
+     "k": 1.6,
+     "pp": 0.5183128863851846,
+     "rang": 14
     },
     {
      "ime": "Timothe Luwawu-Cabarrot",
@@ -3154,20 +2914,8 @@
      "strana": "o",
      "l": 2.5,
      "kl": "admiral",
-     "k": 1.57,
-     "pp": 0.5260091305424737,
-     "rang": 14
-    },
-    {
-     "ime": "Alberto Abalde",
-     "igr": "alberto abalde",
-     "tim": "MAD",
-     "s": "S",
-     "strana": "o",
-     "l": 2.5,
-     "kl": "admiral",
-     "k": 1.57,
-     "pp": 0.5228010196432001,
+     "k": 1.7,
+     "pp": 0.511542321301779,
      "rang": 15
     }
    ]
