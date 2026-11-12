@@ -22,3 +22,13 @@ Nikola je odredio da se ponavljanje ograničava čak i po cenu slabijih parova: 
 U optg7 cfg: `maxu = pmax = ceil(0.15 * broj_tiketa)` (40 tiketa → 6; 30 → 5; 20 → 3), `tcap` 2, `gcaps` 3 za osmice i 4 za desetke.
 Razlog: 6.11. su Brown, Hoard, Pajola (po 10 tiketa) i Wright IV, Kabengele, Diarra (po 9) srušili 35 od 40 tiketa, iako je cela ponuda pogodila 58,5%.
 Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih tiketa za ~8% (0,189 → 0,174, model), a deljenje igrača među tiketima pada sa 19% na 12%. Zato se isplati.
+
+## Novi parametri i pravila izbora (od 12.11.2026; analiza `spoj/analiza/IZVESTAJ_2026-11-12.md`)
+- `izbor.py` sada računa `pr` naučenim spojem (`signali.spoj2`, težine `spoj/tezine.json`): tržište + oba modela + izostanci u timu
+  + granica prema proseku igrača + kazna za poene 7,5–10,5. Stari spoj je u `pr1`.
+- Filteri: tim kome fali 35+ minuta rotacije (izveštaj o povredama `procene/podaci/povrede.json`, `--van`/`--igra` za vesti dana),
+  osim poena 3–5. strelca; `--ranija <ponuda>` izbacuje minuse kojima je granica podignuta od ranijeg snimka.
+- Bazen: `--vrh 0.38` (nivo A = oba modela u najjačih 30% dana, plus najboljih 38% po vrednosti). Manji bazen znači više ponavljanja:
+  za tikete od 8 parova i ponavljanje do 20% treba oko 40 parova; desetke i dvanaestice traže više.
+- Posle svakog kola: `python3 spoj/provera.py && python3 spoj/analiza/prep.py && python3 spoj/tezine.py` (nove težine).
+- Dužine: osnova su osmice; desetke i dvanaestice samo po Nikolinoj želji, po 50 din, iz istog bazena.

@@ -472,7 +472,7 @@
    "prosao": true
   }
  ],
- "osvezeno": "12.11.2026. 00:04",
+ "osvezeno": "12.11.2026. 10:17",
  "utakmice": [
   {
    "g": 102,
@@ -533,8 +533,16 @@
    "sastav": null,
    "objava": "2026-11-12T12:00:00+01:00",
    "rok": "2026-11-12T18:35:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Admiral": "2026-11-12T09:12:46.896Z",
+    "MaxBet": "2026-11-12T09:12:54.508Z",
+    "Soccerbet": "2026-11-12T09:16:52+00:00"
+   }
   },
   {
    "g": 107,
@@ -547,8 +555,16 @@
    "sastav": null,
    "objava": "2026-11-12T12:00:00+01:00",
    "rok": "2026-11-12T18:35:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Admiral": "2026-11-12T09:12:46.896Z",
+    "MaxBet": "2026-11-12T09:12:54.508Z",
+    "Soccerbet": "2026-11-12T09:16:52+00:00"
+   }
   },
   {
    "g": 105,
@@ -561,8 +577,16 @@
    "sastav": null,
    "objava": "2026-11-12T12:00:00+01:00",
    "rok": "2026-11-12T18:35:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Admiral": "2026-11-12T09:12:46.896Z",
+    "MaxBet": "2026-11-12T09:12:54.508Z",
+    "Soccerbet": "2026-11-12T09:16:52+00:00"
+   }
   },
   {
    "g": 104,
@@ -575,8 +599,16 @@
    "sastav": null,
    "objava": "2026-11-12T12:00:00+01:00",
    "rok": "2026-11-12T18:35:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Admiral": "2026-11-12T09:12:46.896Z",
+    "MaxBet": "2026-11-12T09:12:54.508Z",
+    "Soccerbet": "2026-11-12T09:16:52+00:00"
+   }
   },
   {
    "g": 106,
@@ -589,8 +621,16 @@
    "sastav": null,
    "objava": "2026-11-12T12:00:00+01:00",
    "rok": "2026-11-12T18:35:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Admiral": "2026-11-12T09:12:46.896Z",
+    "MaxBet": "2026-11-12T09:12:54.508Z",
+    "Soccerbet": "2026-11-12T09:16:52+00:00"
+   }
   },
   {
    "g": 109,
