@@ -5,3 +5,5 @@ node_modules/
 *.png
 *.gif
 spoj/provera/skup.json
+spoj/analiza/F.json
+spoj/analiza/MV.json
