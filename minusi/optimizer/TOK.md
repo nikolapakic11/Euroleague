@@ -32,3 +32,9 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
   za tikete od 8 parova i ponavljanje do 20% treba oko 40 parova; desetke i dvanaestice traže više.
 - Posle svakog kola: `python3 spoj/provera.py && python3 spoj/analiza/prep.py && python3 spoj/tezine.py` (nove težine).
 - Dužine: osnova su osmice; desetke i dvanaestice samo po Nikolinoj želji, po 50 din, iz istog bazena.
+
+## Hibrid raspored (osnova od 12.11.2026, odluka Nikole)
+- `optg7.py` ključ `"jezgro"` (podrazumevano trećina tiketa, najkraći): ti tiketi smeju samo najjače parove (nivo A + najboljih
+  `"jtop"` po vrednosti, podrazumevano četvrtina bazena); ostali tiketi su mešani. `"jezgro": 0` vraća stari raspored.
+- Provera unazad (`spoj/analiza/raspored.py`, 16 odigranih dana, isti parovi, samo drugi raspored): isplata/ulog 1,78 (hibrid)
+  prema 1,12 (raspršeno) i 1,45 (čisti slojevi); prednost dolazi iz 3 dana, ređi dobitni dani. Pratiti 2–3 kola.

@@ -8,11 +8,19 @@ GCS={int(k):v for k,v in CFG['gcaps'].items()}; TCAP=CFG.get('tcap',3)
 MAXU=CFG['maxu']; PMAX=CFG['pmax']; K=CFG.get('k',10); SEED=CFG.get('seed',1); SECS=CFG.get('secs',60)
 R=random.Random(SEED)
 FIX=CFG.get('fixed',[]); NF=len(FIX); LOCK=set(CFG.get('lock',[])); LOWU=CFG.get('lowu',0); LOWMAX=CFG.get('lowmax',99); OTH=CFG.get('lowothers',0)
+# Hibrid (od 12.11.2026, osnova; provera unazad 16 dana: isplata/ulog 1,78 prema 1,12 kod raspršenog): 'jezgro' tiketa
+# (najkraći, podrazumevano trećina) sme da uzima samo najjače parove: nivo A + najboljih 'jtop' po vrednosti (pr×kvota);
+# ostali tiketi su mešani. cfg: "jezgro": broj tiketa jezgra (podrazumevano N//3, 0 = isključeno), "jtop": veličina bazena jezgra.
+NJ=CFG.get('jezgro',N//3); JTOP=CFG.get('jtop',max(12,n//4))
+_rv=sorted(range(n),key=lambda i:-P[i]['pr']*P[i]['u'])
+COREPOOL=set(_rv[:JTOP])|{i for i in range(n) if P[i].get('nivo')=='A'}
+CORE=set(sorted(range(NF,N),key=lambda k:(SIZES[k],k))[:NJ])
 pm=np.mean([x['pr'] for x in P]); w=[math.exp(K*(x['pr']-pm)) for x in P]
 players=sorted({x['p'] for x in P}); pid=[players.index(x['p']) for x in P]
 use=[0]*n; puse=[0]*len(players)
-def legal(t,i,L,skip=-1):
+def legal(t,i,L,skip=-1,kk=None):
     if i in LOCK: return False
+    if kk in CORE and i not in COREPOOL: return False
     if puse[pid[i]]-pfix[pid[i]]>=PNEW: return False
     if OTH:  # ako je u tiketu kvota ispod LOWU, sve ostale moraju biti >= OTH
         ot=[P[j]['u'] for k,j in enumerate(t) if k!=skip]
@@ -33,13 +41,13 @@ for k,t in enumerate(FIX):
     tk[k]=list(t)
     for i in t: add(i,1)
 pfix=puse[:]; PNEW=CFG.get('pnew',10**6)
-order=sorted(range(NF,N),key=lambda k:-SIZES[k])
+order=sorted(range(NF,N),key=lambda k:(k not in CORE,-SIZES[k]))
 for k in order:
     L=SIZES[k]
     for att in range(3000):
         t=[]
         for _ in range(L):
-            c=[i for i in range(n) if legal(t,i,L)]
+            c=[i for i in range(n) if legal(t,i,L,kk=k)]
             if not c: break
             ws=[w[i]**0.5*((MAXU-use[i])/MAXU)*((PMAX-puse[pid[i]])/PMAX)**3 for i in c]
             r=R.random()*sum(ws); pick=c[-1]
@@ -81,7 +89,7 @@ while time.time()-t0<SECS:
         a=R.randrange(NF,N); j=R.randrange(SIZES[a]); q=R.randrange(n); old=tk[a][j]
         if q==old: continue
         add(old,-1)
-        ok=legal(tk[a],q,SIZES[a],skip=j)
+        ok=legal(tk[a],q,SIZES[a],skip=j,kk=a)
         if not ok: add(old,1); continue
         ta=tk[a][:]; ta[j]=q
         if sigs[sig(ta)]: add(old,1); continue
@@ -95,7 +103,7 @@ while time.time()-t0<SECS:
         i=R.randrange(SIZES[a]); j=R.randrange(SIZES[b]); x=tk[a][i]; y=tk[b][j]
         if x==y: continue
         add(x,-1); add(y,-1)
-        ok=legal(tk[a],y,SIZES[a],skip=i) and legal(tk[b],x,SIZES[b],skip=j)
+        ok=legal(tk[a],y,SIZES[a],skip=i,kk=a) and legal(tk[b],x,SIZES[b],skip=j,kk=b)
         add(x,1); add(y,1)
         if not ok: continue
         ta=tk[a][:]; ta[i]=y; tb=tk[b][:]; tb[j]=x
