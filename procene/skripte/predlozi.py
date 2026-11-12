@@ -97,6 +97,12 @@ def izaberi(tabla, K=None):
                     x_r = rucni.get((i['k'], s))
                     if x_r and (not pr or pr['strana'] != x_r.get('strana', pr['strana']) or (x_r.get('l') is not None and pr['l'] != x_r['l'])):
                         pr = rucni_pred(i['s'][s], x_r.get('strana', 'u'), x_r.get('l')) or pr
+                    iz_k = False
+                    if not pr and s in 'PA' and i['s'][s].get('linije') and not i.get('ne_igra'):
+                        pr = rucni_pred(i['s'][s], 'o')        # kandidat samo za PLUS kad timu fali rotacija (PLUS_IZ_*)
+                        if pr:
+                            pr['rucno'] = False
+                            iz_k = True
                     if not pr:
                         continue
                     z = next((z for z in i['s'][s]['linije'] if z['kl'] == pr['kl'] and z['l'] == pr['l']), {})
@@ -106,7 +112,10 @@ def izaberi(tabla, K=None):
                                     nivo=pr['nivo'], rang=pr['rang'], fer=pr.get('fer'), ostale=pr.get('ostale', []), knjige=pr.get('knjige', []), soft=pr.get('soft'),
                                     opseg=pr.get('opseg', []), q=i['s'][s]['q'], mu=i['s'][s]['mu'], min=i['min'],
                                     pm=z.get('pm'), tr=z.get('tr'), l0=z.get('l0'), vatra=i['s'][s].get('vatra'),
-                                    pos=i['pos'], of=i['s'][s]['of'], analiza=an))
+                                    pos=i['pos'], of=i['s'][s]['of'], analiza=an, iz_kand=iz_k))
+                    if iz_k and out[-1]['pm'] is None:
+                        Z = [z for z in i['s'][s]['linije'] if z.get('m', 1) and z['l'] == pr['l']]
+                        out[-1]['pm'] = round(sum(z['pm'] for z in Z) / len(Z), 4) if Z else None
     return out
 
 
@@ -131,6 +140,12 @@ DAN_ZADRZI = 0.02                              # već objavljen predlog ostaje d
 # (kola 5-7 i 8-10 posebno), a oni sa kojima se slaže 63-64% i 62-63%. Minus-model posebno ispravlja igrače bez prošle
 # sezone u Evroligi, gde model procena greši. PLUS bez promene (minus-model okrenut za plus nema vrednost).
 DAN_MINUS_SLAGANJE = True
+# PLUS kad timu fali rotacija (od 12.11.2026, spoj/analiza/IZVESTAJ_plus_izostanci.md): poeni ili asistencije PLUS
+# ulaze bez praga i bez forme kad timu fali bar PLUS_IZ_MIN minuta rotacije (izveštaj o povredama + ko nije igrao) i
+# model procena (pm, bez mešanja sa tržištem) vidi preko više od tržišta. Kola 6-10: 53 granice, preko 73,6%,
+# tržište 50,8%; uz pm >= 50%: 45 granica, 82%; bez izostanaka isto pravilo 48,7%. Skokovi ne. Najviše PLUS_IZ_MAX dnevno.
+PLUS_IZ_MIN, PLUS_IZ_MAX = 40, 2
+_SIG = {}
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'spoj'))
 from minus_model import MinusModel, MSIG_PRAG
 _MM = {}
@@ -147,6 +162,34 @@ def minus_signal(B, p):
     fu = p.get('fer') or min(0.9, 1 / p['kvota'] / 1.05)
     r = mm.procena(p['k'], p['dan'], p['tim'], p['prot'], p['s'], p['l'], fu)
     return r['msig'] if r else None
+
+
+def plus_izostanci(P, van=lambda p: False):
+    """PLUS kandidati (poeni, asistencije) iz timova kojima fali bar PLUS_IZ_MIN minuta rotacije, gde model procena
+    vidi preko više od tržišta; poređani po razlici. Upisuje izostanci_tim i plus_iz u predlog."""
+    import signali
+    if 'S' not in _SIG:
+        _SIG['S'] = signali.Signali()
+        try:
+            pp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'podaci', 'povrede.json')
+            _SIG['pov'] = {k: dict(v) for k, v in ucitaj(pp)['igraci'].items()}
+        except Exception:
+            _SIG['pov'] = {}
+    S, pov = _SIG['S'], _SIG['pov']
+    out = []
+    for p in P:
+        if p['strana'] != 'o' or p['s'] not in ('P', 'A') or van(p) or p.get('pm') is None or p.get('fer') is None:
+            continue
+        kljuc = (p['tim'], p['dan'])
+        if kljuc not in _SIG:
+            _SIG[kljuc] = signali.izostanci(S, p['tim'], p['dan'], pov)
+        iz = {k: m for k, m in _SIG[kljuc].items() if k != p['k']}
+        miss = sum(iz.values())
+        if miss >= PLUS_IZ_MIN and p['pm'] > p['fer'] and p['pm'] >= 0.5 and p['kvota'] >= 1.6:
+            p['plus_iz'] = True
+            p['izostanci_tim'] = round(miss)
+            out.append(p)
+    return sorted(out, key=lambda p: -(p['pm'] - p['fer']))
 
 
 def forma(B, p):
@@ -179,7 +222,7 @@ def izbor_dana(P, B=None, ranije=()):
     isk = iskljuceni()
     van = lambda p: any(x['k'] == p['k'] and x.get('s', p['s']) == p['s'] for x in isk.get(p['dan'], []) if isinstance(x, dict))
     P_rucno = list(P)                            # ručno dodati ulaze bez praga, forme i minus-modela (od 11.11.2026)
-    P = sorted([p for p in P if p.get('nivo') != 'slab' and not van(p)], key=lambda p: -ocena(p))
+    P = sorted([p for p in P if p.get('nivo') != 'slab' and not van(p) and not p.get('iz_kand')], key=lambda p: -ocena(p))
     if B is not None:
         for p in P_rucno:
             p['forma'] = list(forma(B, p))
@@ -211,6 +254,13 @@ def izbor_dana(P, B=None, ranije=()):
                 p['rucno'] = True
                 izab.append(p)
                 break
+    if B is not None and P_rucno:                 # PLUS kad timu fali rotacija (PLUS_IZ_*)
+        for p in plus_izostanci(P_rucno, van):
+            if sum(bool(q.get('plus_iz')) for q in izab) >= PLUS_IZ_MAX:
+                break
+            if p not in izab and all(q['k'] != p['k'] for q in izab) and sum(q['g'] == p['g'] for q in izab) < DAN_PO_UT \
+                    and sum(q['tim'] == p['tim'] for q in izab) < DAN_PO_TIMU:
+                izab.append(p)
     for p in P:                                   # dopuna do najmanjeg broja, najbolji preostali
         if len(izab) >= DAN_NAJMANJE:
             break
@@ -509,7 +559,7 @@ def main():
     # zaključavanje delova stranice po paketu (za sada je sve otvoreno)
     # na javnu stranicu idu samo polja koja stranica koristi (bez internih verovatnoća, CLV i sl.)
     JAVNO = ('g', 'dan', 'vreme', 'k', 'ime', 'tim', 'prot', 's', 'strana', 'l', 'kl', 'kvota', 'pp', 'ev', 'nivo', 'rang', 'rang_dan', 'knjige', 'opseg',
-             'q', 'mu', 'min', 'l0', 'vatra', 'pos', 'of', 'analiza', 'promena', 'ranije', 'promena_u', 'prvi_put', 'ishod', 'prosao', 'nije_igrao')
+             'q', 'mu', 'min', 'l0', 'vatra', 'pos', 'of', 'analiza', 'promena', 'ranije', 'promena_u', 'prvi_put', 'plus_iz', 'izostanci_tim', 'ishod', 'prosao', 'nije_igrao')
     # cela ponuda: razlozi samo za tekuće i prethodno kolo (veličina stranice); brojke za sva kola
     JAVNO_PON = ('k', 'ime', 'tim', 'pos', 's', 'l', 'strana', 'pp', 'mu', 'q', 'min', 'pros', 'p5', 'u', 'o', 'pred',
                  'ishod', 'min_st', 'prosao', 'nije_igrao')

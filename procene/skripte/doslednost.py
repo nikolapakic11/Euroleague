@@ -44,7 +44,9 @@ for i in (D.get('igraci') or {}).get('igraci', []):
             greske.append(f'{id_}: očekivanje {mu} van raspona {q}')
 for k in D['kola']:
     for p in k['predlozi']:
-        if p.get('mu') is not None and p.get('ishod') is None and (p['strana'] == 'o') != (p['mu'] > p['l']):
+        # PLUS kad timu fali rotacija (predlozi.PLUS_IZ_*): dozvoljeno očekivanje do 0,1 ispod granice (celobrojni ishodi)
+        tol = 0.1 if p.get('plus_iz') else 0
+        if p.get('mu') is not None and p.get('ishod') is None and (p['strana'] == 'o') != (p['mu'] + tol > p['l']):
             greske.append(f"predlog {p['ime']} {p['s']} {p['strana']} {p['l']}: očekivanje {p['mu']} na drugoj strani")
 print(f'proverenih stavki: {n}, nedoslednosti: {len(greske)}')
 for g in greske:

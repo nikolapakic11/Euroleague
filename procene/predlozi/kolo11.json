@@ -558,13 +558,14 @@
     "Dolazi sa klupe i igra 20 do 21 minut.",
     "Real dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
    ],
+   "iz_kand": false,
    "forma": [
     4,
     7
    ],
    "msig": 0.543,
    "rang_dan": 1,
-   "upisano": "12.11.2026. 16:17",
+   "upisano": "12.11.2026. 16:31",
    "prvi_put": "12.11.2026. 11:10",
    "zatv": 1.72,
    "zatv_fer": 1.644
@@ -663,13 +664,14 @@
    "analiza": [
     "Granica od 5,5 je viša od onoga što realno očekujemo, a to je oko pet asistencija: češće ostaje ispod nego preko ove granice."
    ],
+   "iz_kand": false,
    "forma": [
     4,
     7
    ],
    "msig": 0.4731,
    "rang_dan": 2,
-   "upisano": "12.11.2026. 16:17",
+   "upisano": "12.11.2026. 16:31",
    "prvi_put": "12.11.2026. 11:10",
    "zatv": 1.85,
    "zatv_fer": 1.679
@@ -770,13 +772,14 @@
     "Ove sezone daje oko šest skokova po utakmici; ispod 6,5 je ostao u 7 od 10 utakmica.",
     "Makabi dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
    ],
+   "iz_kand": false,
    "forma": [
     5,
     7
    ],
    "msig": 0.352,
    "rang_dan": 3,
-   "upisano": "12.11.2026. 16:17",
+   "upisano": "12.11.2026. 16:31",
    "prvi_put": "12.11.2026. 11:10",
    "zatv": 1.85,
    "zatv_fer": 1.711
@@ -867,19 +870,112 @@
     "Milano ne dozvoljava laku igru dodavanjem; protiv njih se deli malo asistencija.",
     "U gostima deli manje asistencija nego kod kuće (jedna do dve asistencije naspram oko tri asistencije), a sada igra u gostima."
    ],
+   "iz_kand": false,
    "forma": [
     4,
     7
    ],
    "msig": 0.709,
    "rang_dan": 4,
-   "upisano": "12.11.2026. 16:17",
+   "upisano": "12.11.2026. 16:31",
    "prvi_put": "12.11.2026. 11:10",
    "zatv": 1.95,
    "zatv_fer": 1.757
+  },
+  {
+   "g": 107,
+   "dan": "2026-11-12",
+   "vreme": "12.11. 20:15",
+   "k": "donta hall",
+   "ime": "Donta Hall",
+   "tim": "OLY",
+   "prot": "DUB",
+   "s": "P",
+   "strana": "o",
+   "l": 4.5,
+   "kl": "admiral",
+   "kvota": 1.92,
+   "pp": 0.503,
+   "ev": -0.033,
+   "nivo": "nagoveštaj",
+   "rang": null,
+   "fer": 0.5,
+   "ostale": [
+    {
+     "kl": "maxbet",
+     "k": 1.9
+    },
+    {
+     "kl": "mozzart",
+     "k": 1.9
+    },
+    {
+     "kl": "soccerbet",
+     "k": 1.9
+    }
+   ],
+   "knjige": [
+    {
+     "kl": "admiral",
+     "l": 4.5,
+     "u": 1.92,
+     "o": 1.92
+    },
+    {
+     "kl": "maxbet",
+     "l": 4.5,
+     "u": 1.9,
+     "o": 1.9
+    },
+    {
+     "kl": "mozzart",
+     "l": 4.5,
+     "u": 1.9,
+     "o": 1.9
+    },
+    {
+     "kl": "soccerbet",
+     "l": 4.5,
+     "u": 1.9,
+     "o": 1.9
+    }
+   ],
+   "soft": null,
+   "opseg": [],
+   "q": [
+    1,
+    2,
+    4,
+    8,
+    12
+   ],
+   "mu": 4.47,
+   "min": 15.5,
+   "pm": 0.5713,
+   "tr": 0.5,
+   "l0": null,
+   "vatra": null,
+   "pos": "C",
+   "of": 1.144,
+   "analiza": [
+    "Protiv Dubaija centri postižu više nego protiv većine ekipa.",
+    "U poslednje tri utakmice: 14, 4 i 4 poena, više nego inače."
+   ],
+   "iz_kand": true,
+   "forma": [
+    2,
+    7
+   ],
+   "plus_iz": true,
+   "izostanci_tim": 51,
+   "rang_dan": 5,
+   "upisano": "12.11.2026. 16:31",
+   "prvi_put": "12.11.2026. 16:30",
+   "zatv": 1.92,
+   "zatv_fer": 1.986
   }
  ],
- "osvezeno": "12.11.2026. 16:17",
+ "osvezeno": "12.11.2026. 16:31",
  "utakmice": [
   {
    "g": 102,
@@ -1116,21 +1212,21 @@
   },
   {
    "g": 107,
-   "k": "donta hall",
-   "ime": "Donta Hall",
+   "k": "cory joseph",
+   "ime": "Cory Joseph",
    "tim": "OLY",
    "prot": "DUB",
    "s": "P",
    "strana": "o",
    "l": 4.5,
    "kl": "admiral",
-   "kvota": 1.92,
-   "pp": 0.503,
+   "kvota": 2,
+   "pp": 0.467,
    "nivo": "nagoveštaj",
-   "mu": 4.47,
-   "opis": "poeni preko 4,5 · 1,92 Admiral",
-   "od": "12.11.2026. 16:17",
-   "u": "12.11.2026. 16:17",
+   "mu": 4.12,
+   "opis": "poeni preko 4,5 · 2,00 Admiral",
+   "od": "12.11.2026. 16:30",
+   "u": "12.11.2026. 16:30",
    "vrsta": "povučen",
    "zamena": null
   }
