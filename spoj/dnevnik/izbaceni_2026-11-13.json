@@ -1,0 +1,42 @@
+{
+ "dan": "2026-11-13",
+ "upisano": "13.11.2026. 12:12",
+ "izbaceni": [
+  {
+   "k": "jae crowder",
+   "ime": "Jae Crowder",
+   "tim": "ASV",
+   "s": "A",
+   "l": 3.5,
+   "kvota": 1.85,
+   "kl": "maxbet",
+   "pp": 0.6297,
+   "fer": 0.5068,
+   "msig": 0.2835
+  },
+  {
+   "k": "mathias lessort",
+   "ime": "Mathias Lessort",
+   "tim": "PAN",
+   "s": "S",
+   "l": 7.5,
+   "kvota": 1.9,
+   "kl": "admiral",
+   "pp": 0.6144,
+   "fer": 0.4865,
+   "msig": 0.3125
+  },
+  {
+   "k": "santi yusta",
+   "ime": "Santi Yusta",
+   "tim": "IST",
+   "s": "P",
+   "l": 5.5,
+   "kvota": 1.92,
+   "kl": "admiral",
+   "pp": 0.5815,
+   "fer": 0.5,
+   "msig": -0.1048
+  }
+ ]
+}
