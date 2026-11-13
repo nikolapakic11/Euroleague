@@ -323,3 +323,54 @@ if '--skokovi' in sys.argv:
         for nm, hh in (('prva pol.', H1), ('druga pol.', H2)):
             q = [x for x in S_ if b0 <= x['p3'] < b1 and x['kolo'] in hh]; print(f"    skokovi ispod p3 {b0}-{b1} {nm}: n{len(q):3} {sum(x['y'] for x in q) / max(1, len(q)):.1%}", end=' |')
         print()
+if '--fund' in sys.argv:
+    print('\n=== fundamenti protivnika (sve pre dana) ===')
+    G = json.load(open('baza/games.json'))['data']
+    dom = {}
+    for g in G: dom[(g['date'][:10], g['local']['club']['code'])] = 1; dom[(g['date'][:10], g['road']['club']['code'])] = 0
+    tim_d = collections.defaultdict(dict)          # tim -> dan -> (opp, P, S, A dozvoljeno, dom)
+    for t, D in byteam.items():
+        for d, L in D.items():
+            opp = L[0]['opp']; O = byteam[opp].get(d, [])
+            tim_d[opp][d] = dict(P=sum(r['P'] for r in L), S=sum(r['S'] for r in L), A=sum(r['A'] for r in L), dom=dom.get((d, opp)))
+    poz_d = collections.defaultdict(list)          # (opp, pos, s) -> [(dan, vrednost po min, min, dom protivnika)]
+    for r in rows:
+        if r['min'] > 0:
+            for s_ in 'PSA': poz_d[(r['opp'], r['pos'], s_)].append((r['dan'], r[s_], r['min'], dom.get((r['dan'], r['opp']))))
+    lgs = collections.defaultdict(list)
+    for t, D in tim_d.items():
+        for d, v in D.items():
+            for s_ in 'PSA': lgs[s_].append((d, v[s_]))
+    for x in FA:
+        d, o, s_ = x['dan'], x['opp'], x['s']
+        pre = [v for dd, v in tim_d[o].items() if dd < d]
+        lg_ = [v for dd, v in lgs[s_] if dd < d]
+        x['opp_s'] = (sum(v[s_] for v in pre) / len(pre)) / (sum(lg_) / len(lg_)) if len(pre) >= 3 and lg_ else 1.0
+        od = dom.get((d, o))
+        pre_m = [v for v in pre if v['dom'] == od]
+        x['opp_s_mesto'] = (sum(v[s_] for v in pre_m) / len(pre_m)) / (sum(lg_) / len(lg_)) if len(pre_m) >= 3 and lg_ else x['opp_s']
+        P_ = [(v, m) for dd, v, m, _ in poz_d[(o, x['pos'], s_)] if dd < d]
+        L_ = [(v, m) for (oo, pp, ss), lst in poz_d.items() if pp == x['pos'] and ss == s_ for dd, v, m, _ in lst if dd < d]
+        x['opp_poz'] = (sum(v for v, m in P_) / sum(m for v, m in P_)) / (sum(v for v, m in L_) / sum(m for v, m in L_)) if sum(m for v, m in P_) > 150 else 1.0
+        P2 = [(v, m) for dd, v, m, dm in poz_d[(o, x['pos'], s_)] if dd < d and dm == od]
+        x['opp_poz_mesto'] = (sum(v for v, m in P2) / sum(m for v, m in P2)) / (sum(v for v, m in L_) / sum(m for v, m in L_)) if sum(m for v, m in P2) > 100 else x['opp_poz']
+        x['dom_i'] = 1 - od if od is not None else 0.5
+    for f in ('opp_s', 'opp_s_mesto', 'opp_poz', 'opp_poz_mesto', 'dom_i'):
+        L = sorted([x for x in F], key=lambda x: x[f]); n = len(L)
+        res = [sum(x['y'] - x['p3'] for x in t) / len(t) for t in (L[:n // 3], L[n // 3:2 * n // 3], L[2 * n // 3:])]
+        st2 = []
+        for kk in (H1, H2):
+            Lk = [x for x in L if x['kolo'] in kk]; m = len(Lk)
+            st2.append(sum(x['y'] - x['p3'] for x in Lk[2 * m // 3:]) / max(1, m - 2 * m // 3) - sum(x['y'] - x['p3'] for x in Lk[:m // 3]) / max(1, m // 3))
+        print(f"  {f:14} donja {res[0]:+.3f} srednja {res[1]:+.3f} gornja {res[2]:+.3f} | gornja−donja po polovinama {st2[0]:+.3f} {st2[1]:+.3f} [{L[n // 3][f]:.2f}/{L[2 * n // 3][f]:.2f}]  (+ = više ispod nego što model misli)")
+    E = BASE + ['mt', 'hot', 'tempo', 'minsd']
+    for x in FA: x['X'].update(mt=clip(x['mintrend'], -8, 8), minsd=clip(x['minsd'], 0, 10))
+    S8 = [x for x in F if x['kolo'] >= 8]
+    for nm, extra in (('bez fundamenata', []), ('+ protivnik stavka', ['os']), ('+ protivnik pozicija', ['op']), ('+ protivnik pozicija, isto mesto', ['opm']), ('+ sve tri', ['os', 'op', 'opm'])):
+        for x in FA: x['X'].update(os=clip(x['opp_s'], .8, 1.2), op=clip(x['opp_poz'], .7, 1.3), opm=clip(x['opp_poz_mesto'], .7, 1.3))
+        loro(E + extra, 'pt')
+        for k in [k for k in kola if k >= 8]:
+            T_ = uci([x for x in F if x['kolo'] < k], E + extra)
+            for x in FA:
+                if x['kolo'] == k: x['ft'] = pr(T_, x)
+        print(f"  {nm:34} logloss bez kola {ll('pt', F):.4f} | unapred {ll('ft', S8):.4f} | sajt-pravilo top4 {rep(vrhS(4, maxS=0, uslov=U, key='pt'))[:13]}")

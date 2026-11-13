@@ -45,3 +45,5 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
   spuštena od ranijeg snimka (`--ranija`; polje `spustena`). Posle kola: `provera.py`, `analiza/prep.py`, `tezine.py`.
 - Nalaz za tikete (nije primenjeno, odluka Nikole): skokovi ispod koje spoj najviše ceni ne prolaze češće od ostalih;
   asistencije ispod su najjače. Po verovatnoći (ne po vrednosti) vrh prolazi ~68% uz kvotu ~1,80.
+
+- Svako jutro posle dana sa utakmicama: `python3 spoj/posle_kola.py` (zapisnici, baza, ponovno učenje spoja, provera pravila, učinak sajta). `load.py` sada sam osvežava statistiku timova, raspored i povrede u aplikaciji.

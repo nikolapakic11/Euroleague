@@ -141,3 +141,5 @@ Zakazani zadaci su isključeni (odluka 5.11.2026): ništa se ne pokreće samo. S
 - `presek.py --dan D` pokazuje isti izbor pre objave i sledeće kandidate po spoju.
 - PLUS se ne povlači zato što je kladionica podigla granicu (Theis 12.11.). Pravilo „PLUS kad timu fali rotacija“
   od 12.11. je ukinuto: izostanke sada meri spoj.
+
+- Svako jutro: `python3 spoj/posle_kola.py` pre `dan.py --jutro`; ispisuje i učinak sajta po pravilu od 13.11. i upozorava kad padne ispod očekivanog.
