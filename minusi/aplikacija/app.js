@@ -1047,11 +1047,11 @@
     }
 
     if (sec === 'timovi') {
-      var CT = {}; var canonT = function(n){ var k = deacc(n); if (!CT[k]) CT[k] = n; return CT[k]; };
+      var TK = {}; sp.forEach(function(e){ if (e.team) { var k0 = nkey(e.team), o = TK[k0] = TK[k0] || {names: {}}; o.names[e.team] = (o.names[e.team] || 0) + 1; } }); var rootOf = function(k){ var r = k; Object.keys(TK).forEach(function(k2){ if (k2.length > r.length && k2.indexOf(r + ' ') === 0) r = k2; }); return r; }; var NM = {}; Object.keys(TK).forEach(function(k){ var r = rootOf(k), m = NM[r] = NM[r] || {}; Object.keys(TK[k].names).forEach(function(n){ m[n] = (m[n] || 0) + TK[k].names[n]; }); }); var canonT = function(n){ var m = NM[rootOf(nkey(n))]; if (!m) return n; return Object.keys(m).sort(function(a, b){ return m[b] - m[a] || b.length - a.length; })[0]; };
       var teams = group(sp, function(e){ return e.team ? canonT(e.team) : null; }).sort(function(a, b){ return b.n - a.n; });
       var tRows = teams.map(function(x){
         var v = verdict(x), sub = {};
-        ['P','S','A'].forEach(function(st){ sub[st] = group(sp.filter(function(e){ return deacc(e.team || '') === deacc(String(x.k)) && e.stat === st; }), function(){ return 'x'; })[0]; });
+        ['P','S','A'].forEach(function(st){ sub[st] = group(sp.filter(function(e){ return e.team && canonT(e.team) === String(x.k) && e.stat === st; }), function(){ return 'x'; })[0]; });
         return [esc(x.k), rateCell(x), rateCell(sub.P), rateCell(sub.S), rateCell(sub.A), '<span class="tag ' + v[0] + '">' + v[1] + '</span>'];
       });
       var noTeam = sp.filter(function(e){ return !e.team; }).length;
