@@ -1,13 +1,13 @@
 {
  "w": [
-  -0.0727,
+  -0.1055,
   0.3,
   0.7,
   0.0,
   0.0
  ],
  "kal": {},
- "n_wf": 2808,
+ "n_wf": 3481,
  "w_kola_4_6": [
   -0.1912,
   0.3,
@@ -15,7 +15,7 @@
   0.0,
   0.0
  ],
- "n_granica": 3372,
+ "n_granica": 4045,
  "pravilo": {
   "kvota_min": 1.5,
   "prag_minus": 0.5,
@@ -36,45 +36,45 @@
  },
  "test": {
   "kola_7_9": {
-   "utakmica": 41,
-   "predloga": 1086,
+   "utakmica": 46,
+   "predloga": 1224,
    "ukupno": {
-    "n": 1086,
-    "prosao": 607,
-    "dobit": 41.44,
+    "n": 1224,
+    "prosao": 680,
+    "dobit": 38.72,
     "pp": 0.576
    },
    "po_strani": {
     "minus": {
-     "n": 987,
-     "prosao": 545,
-     "dobit": 41.25,
+     "n": 1112,
+     "prosao": 612,
+     "dobit": 42.08,
      "pp": 0.581
     },
     "plus": {
-     "n": 99,
-     "prosao": 62,
-     "dobit": 0.19,
-     "pp": 0.531
+     "n": 112,
+     "prosao": 68,
+     "dobit": -3.36,
+     "pp": 0.529
     }
    },
    "po_nivou": {
     "jak": {
-     "n": 158,
-     "prosao": 93,
-     "dobit": -0.26,
-     "pp": 0.647
+     "n": 177,
+     "prosao": 108,
+     "dobit": 6.04,
+     "pp": 0.648
     },
     "nagoveštaj": {
-     "n": 379,
-     "prosao": 212,
-     "dobit": 27.45,
-     "pp": 0.532
+     "n": 435,
+     "prosao": 240,
+     "dobit": 25.39,
+     "pp": 0.533
     },
     "solidan": {
-     "n": 549,
-     "prosao": 302,
-     "dobit": 14.25,
+     "n": 612,
+     "prosao": 332,
+     "dobit": 7.29,
      "pp": 0.586
     }
    },
@@ -104,10 +104,10 @@
      "pp": 0.568
     },
     "11": {
-     "n": 49,
-     "prosao": 29,
-     "dobit": 6.3,
-     "pp": 0.579
+     "n": 187,
+     "prosao": 102,
+     "dobit": 3.58,
+     "pp": 0.575
     }
    }
   },
@@ -176,8 +176,8 @@
    }
   },
   "opis": "koeficijenti spajanja iz kola 4–6; kola 7–9 su van podešavanja, kola 4–6 su u periodu podešavanja. Admiral i MaxBet, jedna kladionica po danu, samo glavne granice",
-  "ll_spojeno": 0.6851,
-  "ll_kvote": 0.6892,
-  "ll_model": 0.696
+  "ll_spojeno": 0.684,
+  "ll_kvote": 0.6893,
+  "ll_model": 0.6962
  }
 }

@@ -568,7 +568,9 @@
    "upisano": "12.11.2026. 16:31",
    "prvi_put": "12.11.2026. 11:10",
    "zatv": 1.72,
-   "zatv_fer": 1.644
+   "zatv_fer": 1.644,
+   "ishod": 2,
+   "prosao": true
   },
   {
    "g": 106,
@@ -674,7 +676,9 @@
    "upisano": "12.11.2026. 16:31",
    "prvi_put": "12.11.2026. 11:10",
    "zatv": 1.85,
-   "zatv_fer": 1.679
+   "zatv_fer": 1.679,
+   "ishod": 3,
+   "prosao": true
   },
   {
    "g": 103,
@@ -782,7 +786,9 @@
    "upisano": "12.11.2026. 16:31",
    "prvi_put": "12.11.2026. 11:10",
    "zatv": 1.85,
-   "zatv_fer": 1.711
+   "zatv_fer": 1.711,
+   "ishod": 8,
+   "prosao": false
   },
   {
    "g": 104,
@@ -880,7 +886,9 @@
    "upisano": "12.11.2026. 16:31",
    "prvi_put": "12.11.2026. 11:10",
    "zatv": 1.95,
-   "zatv_fer": 1.757
+   "zatv_fer": 1.757,
+   "ishod": 2,
+   "prosao": false
   },
   {
    "g": 107,
@@ -972,10 +980,12 @@
    "upisano": "12.11.2026. 16:31",
    "prvi_put": "12.11.2026. 16:30",
    "zatv": 1.92,
-   "zatv_fer": 1.986
+   "zatv_fer": 1.986,
+   "ishod": 0,
+   "prosao": false
   }
  ],
- "osvezeno": "12.11.2026. 16:31",
+ "osvezeno": "13.11.2026. 09:51",
  "utakmice": [
   {
    "g": 102,
@@ -1031,7 +1041,7 @@
    "gost": "HTA",
    "vreme": "12.11. 20:05",
    "dan": "2026-11-12",
-   "pocela": false,
+   "pocela": true,
    "pocetak": "2026-11-12T19:05:00+00:00",
    "sastav": null,
    "objava": "2026-11-12T10:30:00+01:00",
@@ -1055,7 +1065,7 @@
    "gost": "DUB",
    "vreme": "12.11. 20:15",
    "dan": "2026-11-12",
-   "pocela": false,
+   "pocela": true,
    "pocetak": "2026-11-12T19:15:00+00:00",
    "sastav": null,
    "objava": "2026-11-12T10:30:00+01:00",
@@ -1079,7 +1089,7 @@
    "gost": "MUN",
    "vreme": "12.11. 20:30",
    "dan": "2026-11-12",
-   "pocela": false,
+   "pocela": true,
    "pocetak": "2026-11-12T19:30:00+00:00",
    "sastav": null,
    "objava": "2026-11-12T10:30:00+01:00",
@@ -1103,7 +1113,7 @@
    "gost": "ZAL",
    "vreme": "12.11. 20:30",
    "dan": "2026-11-12",
-   "pocela": false,
+   "pocela": true,
    "pocetak": "2026-11-12T19:30:00+00:00",
    "sastav": null,
    "objava": "2026-11-12T10:30:00+01:00",
@@ -1127,7 +1137,7 @@
    "gost": "RED",
    "vreme": "12.11. 21:00",
    "dan": "2026-11-12",
-   "pocela": false,
+   "pocela": true,
    "pocetak": "2026-11-12T20:00:00+00:00",
    "sastav": null,
    "objava": "2026-11-12T10:30:00+01:00",
@@ -1156,8 +1166,12 @@
    "sastav": null,
    "objava": "2026-11-13T12:00:00+01:00",
    "rok": "2026-11-13T17:00:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Soccerbet": "2026-11-13T08:51:17+00:00"
+   }
   },
   {
    "g": 110,
@@ -1170,8 +1184,12 @@
    "sastav": null,
    "objava": "2026-11-13T12:00:00+01:00",
    "rok": "2026-11-13T17:00:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Soccerbet": "2026-11-13T08:51:17+00:00"
+   }
   },
   {
    "g": 108,
@@ -1184,8 +1202,12 @@
    "sastav": null,
    "objava": "2026-11-13T12:00:00+01:00",
    "rok": "2026-11-13T17:00:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Soccerbet": "2026-11-13T08:51:17+00:00"
+   }
   }
  ],
  "konacno": {},
@@ -1208,7 +1230,9 @@
    "od": "12.11.2026. 11:10",
    "u": "12.11.2026. 16:16",
    "vrsta": "povučen",
-   "zamena": null
+   "zamena": null,
+   "ishod": 10,
+   "prosao": true
   },
   {
    "g": 107,
@@ -1228,7 +1252,9 @@
    "od": "12.11.2026. 16:30",
    "u": "12.11.2026. 16:30",
    "vrsta": "povučen",
-   "zamena": null
+   "zamena": null,
+   "ishod": 12,
+   "prosao": true
   }
  ],
  "ponuda": {
@@ -3608,7 +3634,10 @@
      "Ove sezone daje oko osam poena po utakmici; ispod 9,5 je ostao u 6 od 10 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Iii i Madar."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 8,
+    "min_st": 26,
+    "prosao": true
    },
    {
     "k": "jaylen hoard",
@@ -3642,7 +3671,10 @@
     ],
     "protiv": [
      "Ove sezone daje oko četiri skoka po utakmici; ispod 4,5 je ostao u 7 od 10 utakmica."
-    ]
+    ],
+    "ishod": 1,
+    "min_st": 26,
+    "prosao": false
    },
    {
     "k": "jaylen hoard",
@@ -3677,7 +3709,10 @@
     "protiv": [
      "Ove sezone daje jedna do dve asistencije po utakmici; ispod 1,5 je ostao u 5 od 10 utakmica.",
      "Nije glavni organizator; loptu kod Makabija uglavnom vode Madar i Iii."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 26,
+    "prosao": true
    },
    {
     "k": "o shae j brissett",
@@ -3711,7 +3746,10 @@
      "Ove sezone daje osam do devet poena po utakmici; ispod 8,5 je ostao u 7 od 10 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Iii i Madar."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 4,
+    "min_st": 18,
+    "prosao": true
    },
    {
     "k": "o shae j brissett",
@@ -3747,7 +3785,10 @@
     "protiv": [
      "Glavni je skakač Makabija: niko u timu ne hvata više odbijenih lopti.",
      "U poslednje tri utakmice: 7, 4 i 7 skokova, više nego inače."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 18,
+    "prosao": false
    },
    {
     "k": "yam madar",
@@ -3781,7 +3822,10 @@
     ],
     "protiv": [
      "Jedna je od prvih opcija u napadu Makabija."
-    ]
+    ],
+    "ishod": 10,
+    "min_st": 12,
+    "prosao": true
    },
    {
     "k": "yam madar",
@@ -3816,7 +3860,10 @@
     "protiv": [
      "Prvi je organizator igre Makabija: lopta je najčešće u njegovim rukama.",
      "Kod kuće deli više asistencija nego u gostima (oko šest asistencija naspram tri do četiri asistencije), a sada igra kod kuće."
-    ]
+    ],
+    "ishod": 7,
+    "min_st": 12,
+    "prosao": false
    },
    {
     "k": "jimmy clark",
@@ -3851,7 +3898,10 @@
     "protiv": [
      "Jedna je od prvih opcija u napadu Makabija.",
      "U poslednjim utakmicama igra više nego ranije (24, 28 i 23 minuta)."
-    ]
+    ],
+    "ishod": 14,
+    "min_st": 29,
+    "prosao": false
    },
    {
     "k": "jimmy clark",
@@ -3888,7 +3938,10 @@
     "protiv": [
      "U poslednjim utakmicama igra više nego ranije (24, 28 i 23 minuta).",
      "Protiv Hapoela se skače: dozvoljavaju dosta odbijenih lopti."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 29,
+    "prosao": false
    },
    {
     "k": "jimmy clark",
@@ -3921,7 +3974,10 @@
      "Ove sezone daje tri do četiri asistencije po utakmici i granicu od 3,5 prebacio je u 5 od 10 utakmica.",
      "U poslednjim utakmicama igra više nego ranije (24, 28 i 23 minuta)."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 4,
+    "min_st": 29,
+    "prosao": true
    },
    {
     "k": "bonzie colson",
@@ -3956,7 +4012,10 @@
     "protiv": [
      "Ove sezone daje 10 do 11 poena po utakmici i granicu od 9,5 prebacio je u 6 od 10 utakmica.",
      "Kod kuće postiže više poena nego u gostima (oko 16 poena naspram šest do sedam poena), a sada igra kod kuće."
-    ]
+    ],
+    "ishod": 14,
+    "min_st": 20,
+    "prosao": false
    },
    {
     "k": "bonzie colson",
@@ -3992,7 +4051,10 @@
     ],
     "protiv": [
      "Protiv Hapoela se skače: dozvoljavaju dosta odbijenih lopti."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 20,
+    "prosao": false
    },
    {
     "k": "daniel theis",
@@ -4027,7 +4089,10 @@
     "protiv": [
      "Ove sezone daje oko osam poena po utakmici i granicu od 7,5 prebacio je u 6 od 8 utakmica.",
      "Protiv Hapoela centri postižu više nego protiv većine ekipa."
-    ]
+    ],
+    "ishod": 10,
+    "min_st": 26,
+    "prosao": false
    },
    {
     "k": "roman sorkin",
@@ -4061,7 +4126,10 @@
     ],
     "protiv": [
      "Ove sezone daje oko deset poena po utakmici i granicu od 9,5 prebacio je u 6 od 10 utakmica."
-    ]
+    ],
+    "ishod": 9,
+    "min_st": 15,
+    "prosao": true
    },
    {
     "k": "keaton wallace",
@@ -4097,7 +4165,10 @@
     ],
     "protiv": [
      "Kod kuće postiže više poena nego u gostima (oko šest poena naspram oko četiri poena), a sada igra kod kuće."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 15,
+    "prosao": true
    },
    {
     "k": "elijah bryant",
@@ -4134,7 +4205,10 @@
     "protiv": [
      "Jedna je od prvih opcija u napadu Hapoela.",
      "Protiv Makabija bekovi postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi."
-    ]
+    ],
+    "ishod": 12,
+    "min_st": 31,
+    "prosao": true
    },
    {
     "k": "elijah bryant",
@@ -4171,7 +4245,10 @@
     "protiv": [
      "Ove sezone daje pet do šest skokova po utakmici i granicu od 4,5 prebacio je u 5 od 10 utakmica.",
      "Igra velike minute, 28 do 29 minuta po utakmici."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 31,
+    "prosao": false
    },
    {
     "k": "elijah bryant",
@@ -4207,7 +4284,10 @@
     "protiv": [
      "Ove sezone daje oko četiri asistencije po utakmici; ispod 3,5 je ostao u 7 od 10 utakmica.",
      "Na raspolaganju je ponovo i Vasilije Micic i Tomas Satoransky, pa minuti na njegovoj poziciji mogu da budu podeljeni."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 31,
+    "prosao": true
    },
    {
     "k": "vasilije micic",
@@ -4244,7 +4324,10 @@
     "protiv": [
      "Jedna je od prvih opcija u napadu Hapoela.",
      "Protiv Makabija bekovi postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi."
-    ]
+    ],
+    "ishod": 14,
+    "min_st": 24,
+    "prosao": true
    },
    {
     "k": "vasilije micic",
@@ -4281,7 +4364,10 @@
     "protiv": [
      "Ove sezone daje dva do tri skoka po utakmici i granicu od 2,5 prebacio je u 5 od 9 utakmica.",
      "U gostima hvata više skokova nego kod kuće (tri do četiri skoka naspram oko dva skoka), a sada igra u gostima."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 24,
+    "prosao": false
    },
    {
     "k": "vasilije micic",
@@ -4317,7 +4403,10 @@
     "protiv": [
      "Prvi je organizator igre Hapoela: lopta je najčešće u njegovim rukama.",
      "Protiv Makabija lopta dobro kruži; dozvoljavaju dosta asistencija."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 24,
+    "prosao": true
    },
    {
     "k": "antonio blakeney",
@@ -4354,7 +4443,10 @@
     "protiv": [
      "Protiv Makabija bekovi postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi.",
      "U poslednje tri utakmice: 35, 11 i 7 poena, više nego inače."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 8,
+    "prosao": true
    },
    {
     "k": "antonio blakeney",
@@ -4388,7 +4480,10 @@
      "Ove sezone daje oko dva skoka po utakmici; ispod 2,5 je ostao u 6 od 10 utakmica.",
      "Kao bek retko ide u skok; odbijene lopte kod Hapoela uglavnom hvataju Oturu i Bryant."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 2,
+    "min_st": 8,
+    "prosao": true
    },
    {
     "k": "amir coffey",
@@ -4425,7 +4520,10 @@
     "protiv": [
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Bryant i Micic.",
      "Na raspolaganju je ponovo i Vasilije Micic i Tomas Satoransky, pa minuti na njegovoj poziciji mogu da budu podeljeni."
-    ]
+    ],
+    "ishod": 13,
+    "min_st": 33,
+    "prosao": true
    },
    {
     "k": "zach leday",
@@ -4462,7 +4560,10 @@
     "protiv": [
      "Ove sezone daje oko 11 poena po utakmici i granicu od 10,5 prebacio je u 5 od 10 utakmica.",
      "Protiv Makabija krila postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi."
-    ]
+    ],
+    "ishod": 0,
+    "min_st": 14,
+    "prosao": true
    },
    {
     "k": "zach leday",
@@ -4496,7 +4597,10 @@
      "U poslednje tri utakmice: 3, 0 i 5 skokova, manje nego inače.",
      "Makabi dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 3,
+    "min_st": 14,
+    "prosao": true
    },
    {
     "k": "dan oturu",
@@ -4532,7 +4636,10 @@
     ],
     "protiv": [
      "U poslednje tri utakmice: 20, 14 i 11 poena, više nego inače."
-    ]
+    ],
+    "ishod": 13,
+    "min_st": 27,
+    "prosao": false
    },
    {
     "k": "dan oturu",
@@ -4568,7 +4675,10 @@
     ],
     "protiv": [
      "Glavni je skakač Hapoela: niko u timu ne hvata više odbijenih lopti."
-    ]
+    ],
+    "ishod": 8,
+    "min_st": 27,
+    "prosao": false
    },
    {
     "k": "ish wainright",
@@ -4605,7 +4715,10 @@
     "protiv": [
      "Protiv Makabija krila postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi.",
      "U poslednje tri utakmice: 6, 11 i 6 poena, više nego inače."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 15,
+    "prosao": true
    },
    {
     "k": "tai odiase",
@@ -4642,7 +4755,10 @@
     "protiv": [
      "Ove sezone daje oko šest poena po utakmici i granicu od 4,5 prebacio je u 6 od 9 utakmica.",
      "U poslednje tri utakmice: 13, 9 i 4 poena, više nego inače."
-    ]
+    ],
+    "ishod": 8,
+    "min_st": 13,
+    "prosao": false
    }
   ],
   "107": [
@@ -4681,7 +4797,10 @@
     "protiv": [
      "Otkad se vratio Fournier (1 utakmice), igra oko 34 minuta i daje 27 poena po utakmici, naspram 18,2 ranije; procena to uzima u obzir.",
      "Jedna je od prvih opcija u napadu Olimpijakosa."
-    ]
+    ],
+    "ishod": 20,
+    "min_st": 21,
+    "prosao": true
    },
    {
     "k": "sasha vezenkov",
@@ -4718,7 +4837,10 @@
     "protiv": [
      "Glavni je skakač Olimpijakosa: niko u timu ne hvata više odbijenih lopti.",
      "Igra velike minute, 28 do 29 minuta po utakmici."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 21,
+    "prosao": true
    },
    {
     "k": "evan fournier",
@@ -4755,7 +4877,10 @@
     "protiv": [
      "U poslednjim utakmicama igra više nego ranije (37, 24 i 27 minuta).",
      "U poslednje tri utakmice: 23, 6 i 12 poena, više nego inače."
-    ]
+    ],
+    "ishod": 28,
+    "min_st": 26,
+    "prosao": false
    },
    {
     "k": "evan fournier",
@@ -4792,7 +4917,10 @@
     "protiv": [
      "Nije glavni organizator; loptu kod Olimpijakosa uglavnom vode Miller-Mcintyre i Ward.",
      "Dubai ne dozvoljava laku igru dodavanjem; protiv njih se deli malo asistencija."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 26,
+    "prosao": true
    },
    {
     "k": "tyson ward",
@@ -4829,7 +4957,10 @@
     "protiv": [
      "U poslednjim utakmicama igra više nego ranije (30, 34 i 22 minuta).",
      "U poslednje tri utakmice: 13, 14 i 3 poena, više nego inače."
-    ]
+    ],
+    "ishod": 7,
+    "min_st": 24,
+    "prosao": true
    },
    {
     "k": "tyson ward",
@@ -4865,7 +4996,10 @@
     ],
     "protiv": [
      "U poslednjim utakmicama igra više nego ranije (30, 34 i 22 minuta)."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 24,
+    "prosao": false
    },
    {
     "k": "tyson ward",
@@ -4900,7 +5034,10 @@
     "protiv": [
      "Otkad se vratio Fournier (1 utakmice), igra oko 22 minuta i daje 0 asistencija po utakmici, naspram 1,9 ranije; procena to uzima u obzir.",
      "Ove sezone daje jedna do dve asistencije po utakmici; ispod 1,5 je ostao u 6 od 10 utakmica."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 24,
+    "prosao": true
    },
    {
     "k": "codi miller mcintyre",
@@ -4937,7 +5074,10 @@
     "protiv": [
      "U poslednje tri utakmice: 9, 24 i 0 poena, više nego inače.",
      "Kod kuće postiže više poena nego u gostima (oko 11 poena naspram oko šest poena), a sada igra kod kuće."
-    ]
+    ],
+    "ishod": 10,
+    "min_st": 20,
+    "prosao": false
    },
    {
     "k": "codi miller mcintyre",
@@ -4974,7 +5114,10 @@
     "protiv": [
      "Kao bek retko ide u skok; odbijene lopte kod Olimpijakosa uglavnom hvataju Milutinov i Vezenkov.",
      "Dubai dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 20,
+    "prosao": false
    },
    {
     "k": "codi miller mcintyre",
@@ -5010,7 +5153,10 @@
     ],
     "protiv": [
      "Prvi je organizator igre Olimpijakosa: lopta je najčešće u njegovim rukama."
-    ]
+    ],
+    "ishod": 7,
+    "min_st": 20,
+    "prosao": false
    },
    {
     "k": "cory joseph",
@@ -5047,7 +5193,10 @@
     "protiv": [
      "Otkad se vratio Fournier (1 utakmice), igra oko 19 minuta i daje 5 poena po utakmici, naspram 3,8 ranije; procena to uzima u obzir.",
      "U poslednjim utakmicama igra više nego ranije (24, 17 i 19 minuta)."
-    ]
+    ],
+    "ishod": 12,
+    "min_st": 25,
+    "prosao": false
    },
    {
     "k": "mbaye ndiaye",
@@ -5083,7 +5232,10 @@
     ],
     "protiv": [
      "Ove sezone daje osam do devet poena po utakmici i granicu od 6,5 prebacio je u 6 od 10 utakmica."
-    ]
+    ],
+    "ishod": 11,
+    "min_st": 19,
+    "prosao": false
    },
    {
     "k": "donta hall",
@@ -5119,7 +5271,10 @@
     "protiv": [
      "Ove sezone daje oko četiri poena po utakmici; ispod 4,5 je ostao u 7 od 9 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Vezenkov i Fournier."
-    ]
+    ],
+    "ishod": 0,
+    "min_st": 3,
+    "prosao": false
    },
    {
     "k": "donta hall",
@@ -5155,7 +5310,10 @@
     ],
     "protiv": [
      "Otkad se vratio Fournier (1 utakmice), igra oko 20 minuta i daje 4 skoka po utakmici, naspram 3,4 ranije; procena to uzima u obzir."
-    ]
+    ],
+    "ishod": 0,
+    "min_st": 3,
+    "prosao": true
    },
    {
     "k": "tyrique jones",
@@ -5192,7 +5350,10 @@
     "protiv": [
      "Ove sezone daje oko šest poena po utakmici i granicu od 4,5 prebacio je u 5 od 10 utakmica.",
      "Protiv Dubaija centri postižu više nego protiv većine ekipa."
-    ]
+    ],
+    "ishod": 8,
+    "min_st": 19,
+    "prosao": false
    },
    {
     "k": "tyrique jones",
@@ -5227,7 +5388,10 @@
     "protiv": [
      "Otkad se vratio Fournier (1 utakmice), igra oko 8 minuta i daje 1 skok po utakmici, naspram 3,3 ranije; procena to uzima u obzir.",
      "Ove sezone daje oko tri skoka po utakmici; ispod 2,5 je ostao u 6 od 10 utakmica."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 19,
+    "prosao": true
    },
    {
     "k": "dwayne bacon",
@@ -5264,7 +5428,10 @@
     "protiv": [
      "Ove sezone daje 16 do 17 poena po utakmici i granicu od 14,5 prebacio je u 5 od 10 utakmica.",
      "Jedna je od prvih opcija u napadu Dubaija."
-    ]
+    ],
+    "ishod": 20,
+    "min_st": 30,
+    "prosao": false
    },
    {
     "k": "dwayne bacon",
@@ -5301,7 +5468,10 @@
     "protiv": [
      "Glavni skakač Dubaija je Kabengele, pa za njega ostaje manje odbijenih lopti.",
      "U gostima hvata manje skokova nego kod kuće (dva do tri skoka naspram oko šest skokova), a sada igra u gostima."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 30,
+    "prosao": false
    },
    {
     "k": "dwayne bacon",
@@ -5337,7 +5507,10 @@
     ],
     "protiv": [
      "Nije glavni organizator; loptu kod Dubaija uglavnom vode Okobo i Iv."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 30,
+    "prosao": false
    },
    {
     "k": "elie okobo",
@@ -5373,7 +5546,10 @@
     ],
     "protiv": [
      "U gostima postiže više poena nego kod kuće (oko 14 poena naspram oko deset poena), a sada igra u gostima."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 27,
+    "prosao": true
    },
    {
     "k": "elie okobo",
@@ -5408,7 +5584,10 @@
     "protiv": [
      "Kao bek retko ide u skok; odbijene lopte kod Dubaija uglavnom hvataju Kabengele i Bacon.",
      "U gostima hvata manje skokova nego kod kuće (oko jednog skoka naspram oko tri skoka), a sada igra u gostima."
-    ]
+    ],
+    "ishod": 1,
+    "min_st": 27,
+    "prosao": false
    },
    {
     "k": "elie okobo",
@@ -5443,7 +5622,10 @@
     "protiv": [
      "Prvi je organizator igre Dubaija: lopta je najčešće u njegovim rukama.",
      "Protiv Olimpijakosa lopta dobro kruži; dozvoljavaju dosta asistencija."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 27,
+    "prosao": true
    },
    {
     "k": "mckinley wright",
@@ -5480,7 +5662,10 @@
     "protiv": [
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Bacon i Kabengele.",
      "Olimpijakos dobro brani bekove; to je i jedna od najboljih odbrana u ligi."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 22,
+    "prosao": false
    },
    {
     "k": "mckinley wright",
@@ -5515,7 +5700,10 @@
     ],
     "protiv": [
      "U poslednjim utakmicama igra više nego ranije (32, 27 i 28 minuta)."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 22,
+    "prosao": true
    },
    {
     "k": "mckinley wright",
@@ -5551,7 +5739,10 @@
     "protiv": [
      "Ove sezone daje tri do četiri asistencije po utakmici; ispod 3,5 je ostao u 6 od 10 utakmica.",
      "Nije glavni organizator; loptu kod Dubaija uglavnom vode Okobo i Musa."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 22,
+    "prosao": false
    },
    {
     "k": "mfiondu kabengele",
@@ -5586,7 +5777,10 @@
     "protiv": [
      "Ove sezone daje 14 do 15 poena po utakmici i granicu od 13,5 prebacio je u 6 od 10 utakmica.",
      "Jedna je od prvih opcija u napadu Dubaija."
-    ]
+    ],
+    "ishod": 12,
+    "min_st": 26,
+    "prosao": true
    },
    {
     "k": "mfiondu kabengele",
@@ -5621,7 +5815,10 @@
     "protiv": [
      "Glavni je skakač Dubaija: niko u timu ne hvata više odbijenih lopti.",
      "U poslednje tri utakmice: 13, 7 i 9 skokova, više nego inače."
-    ]
+    ],
+    "ishod": 6,
+    "min_st": 26,
+    "prosao": true
    },
    {
     "k": "dzanan musa",
@@ -5655,7 +5852,10 @@
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Bacon i Kabengele.",
      "Olimpijakos dobro brani bekove; to je i jedna od najboljih odbrana u ligi."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 9,
+    "min_st": 24,
+    "prosao": false
    },
    {
     "k": "dzanan musa",
@@ -5689,7 +5889,10 @@
      "Kao bek retko ide u skok; odbijene lopte kod Dubaija uglavnom hvataju Kabengele i Bacon.",
      "U poslednjim utakmicama igra manje nego ranije (14, 17 i 19 minuta)."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 7,
+    "min_st": 24,
+    "prosao": false
    },
    {
     "k": "dzanan musa",
@@ -5726,7 +5929,10 @@
     "protiv": [
      "Ove sezone daje tri do četiri asistencije po utakmici i granicu od 3,5 prebacio je u 2 od 3 utakmice.",
      "Protiv Olimpijakosa lopta dobro kruži; dozvoljavaju dosta asistencija."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 24,
+    "prosao": true
    },
    {
     "k": "jaron blossomgame",
@@ -5763,7 +5969,10 @@
     "protiv": [
      "Ove sezone daje šest do sedam poena po utakmici i granicu od 5,5 prebacio je u 6 od 10 utakmica.",
      "U gostima postiže više poena nego kod kuće (oko osam poena naspram oko pet poena), a sada igra u gostima."
-    ]
+    ],
+    "ishod": 6,
+    "min_st": 19,
+    "prosao": false
    },
    {
     "k": "tornike shengelia",
@@ -5799,7 +6008,10 @@
     ],
     "protiv": [
      "U poslednje tri utakmice: 8, 9 i 14 poena, više nego inače."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 13,
+    "prosao": true
    },
    {
     "k": "filip petrusev",
@@ -5836,7 +6048,10 @@
     "protiv": [
      "Ove sezone daje oko osam poena po utakmici i granicu od 6,5 prebacio je u 5 od 9 utakmica.",
      "U poslednje tri utakmice: 8, 20 i 3 poena, više nego inače."
-    ]
+    ],
+    "ishod": 8,
+    "min_st": 13,
+    "prosao": false
    },
    {
     "k": "filip petrusev",
@@ -5870,7 +6085,10 @@
      "Glavni skakač Dubaija je Kabengele, pa za njega ostaje manje odbijenih lopti.",
      "Dolazi sa klupe i igra oko 15 minuta."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 4,
+    "min_st": 13,
+    "prosao": false
    }
   ],
   "105": [
@@ -5909,7 +6127,10 @@
     "protiv": [
      "Kod Valensije ne igra Nikola Mirotic, pa ostaje više minuta i lopti za ostale.",
      "U poslednje tri utakmice: 16, 10 i 17 poena, više nego inače."
-    ]
+    ],
+    "ishod": 7,
+    "min_st": 16,
+    "prosao": true
    },
    {
     "k": "kameron taylor",
@@ -5945,7 +6166,10 @@
     ],
     "protiv": [
      "Kod Valensije ne igra Nikola Mirotic, pa ostaje više minuta i lopti za ostale."
-    ]
+    ],
+    "ishod": 1,
+    "min_st": 16,
+    "prosao": true
    },
    {
     "k": "kameron taylor",
@@ -5981,7 +6205,10 @@
     "protiv": [
      "Kod Valensije ne igra Nikola Mirotic, pa ostaje više minuta i lopti za ostale.",
      "Protiv Bajerna lopta dobro kruži; dozvoljavaju dosta asistencija."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 16,
+    "prosao": true
    },
    {
     "k": "tj shorts",
@@ -6018,7 +6245,10 @@
     "protiv": [
      "Kod Valensije ne igra Nikola Mirotic, pa ostaje više minuta i lopti za ostale.",
      "Jedna je od prvih opcija u napadu Valensije."
-    ]
+    ],
+    "ishod": 14,
+    "min_st": 22,
+    "prosao": true
    },
    {
     "k": "tj shorts",
@@ -6054,7 +6284,10 @@
     "protiv": [
      "Kao bek retko ide u skok; odbijene lopte kod Valensije uglavnom hvataju Sako i Taylor.",
      "Bajern dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
-    ]
+    ],
+    "ishod": 1,
+    "min_st": 22,
+    "prosao": false
    },
    {
     "k": "tj shorts",
@@ -6090,7 +6323,10 @@
     "protiv": [
      "Kod Valensije ne igra Nikola Mirotic, pa ostaje više minuta i lopti za ostale.",
      "Prvi je organizator igre Valensije: lopta je najčešće u njegovim rukama."
-    ]
+    ],
+    "ishod": 10,
+    "min_st": 22,
+    "prosao": false
    },
    {
     "k": "armoni brooks",
@@ -6126,7 +6362,10 @@
     ],
     "protiv": [
      "Ove sezone daje oko 15 poena po utakmici; ispod 15,5 je ostao u 5 od 10 utakmica."
-    ]
+    ],
+    "ishod": 14,
+    "min_st": 17,
+    "prosao": false
    },
    {
     "k": "armoni brooks",
@@ -6163,7 +6402,10 @@
     "protiv": [
      "Kod Valensije ne igra Nikola Mirotic, pa ostaje više minuta i lopti za ostale.",
      "Ove sezone daje oko četiri skoka po utakmici i granicu od 3,5 prebacio je u 5 od 10 utakmica."
-    ]
+    ],
+    "ishod": 1,
+    "min_st": 17,
+    "prosao": true
    },
    {
     "k": "dylan osetkowski",
@@ -6199,7 +6441,10 @@
     ],
     "protiv": [
      "Kod Valensije ne igra Nikola Mirotic, pa ostaje više minuta i lopti za ostale."
-    ]
+    ],
+    "ishod": 9,
+    "min_st": 17,
+    "prosao": false
    },
    {
     "k": "dylan osetkowski",
@@ -6236,7 +6481,10 @@
     "protiv": [
      "Kod Valensije ne igra Nikola Mirotic, pa ostaje više minuta i lopti za ostale.",
      "Ove sezone daje tri do četiri skoka po utakmici i granicu od 3,5 prebacio je u 6 od 10 utakmica."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 17,
+    "prosao": true
    },
    {
     "k": "neal sako",
@@ -6273,7 +6521,10 @@
     "protiv": [
      "Kod Valensije ne igra Nikola Mirotic, pa ostaje više minuta i lopti za ostale.",
      "Protiv Bajerna centri postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi."
-    ]
+    ],
+    "ishod": 11,
+    "min_st": 18,
+    "prosao": false
    },
    {
     "k": "neal sako",
@@ -6310,7 +6561,10 @@
     "protiv": [
      "Kod Valensije ne igra Nikola Mirotic, pa ostaje više minuta i lopti za ostale.",
      "Glavni je skakač Valensije: niko u timu ne hvata više odbijenih lopti."
-    ]
+    ],
+    "ishod": 7,
+    "min_st": 18,
+    "prosao": true
    },
    {
     "k": "jasiel rivero",
@@ -6346,7 +6600,10 @@
     ],
     "protiv": [
      "Kod Valensije ne igra Nikola Mirotic, pa ostaje više minuta i lopti za ostale."
-    ]
+    ],
+    "ishod": 10,
+    "min_st": 21,
+    "prosao": false
    },
    {
     "k": "josep puerto",
@@ -6383,7 +6640,10 @@
     "protiv": [
      "Kod Valensije ne igra Nikola Mirotic, pa ostaje više minuta i lopti za ostale.",
      "Ove sezone daje pet do šest poena po utakmici i granicu od 4,5 prebacio je u 7 od 10 utakmica."
-    ]
+    ],
+    "ishod": 10,
+    "min_st": 21,
+    "prosao": false
    },
    {
     "k": "andreas obst",
@@ -6419,7 +6679,10 @@
     ],
     "protiv": [
      "Jedna je od prvih opcija u napadu Bajerna."
-    ]
+    ],
+    "ishod": 22,
+    "min_st": 28,
+    "prosao": false
    },
    {
     "k": "andreas obst",
@@ -6454,7 +6717,10 @@
     "protiv": [
      "Kao bek retko ide u skok; odbijene lopte kod Bajerna uglavnom hvataju Wiley i Thiemann.",
      "Na raspolaganju je ponovo i Duane Washington, pa minuti na njegovoj poziciji mogu da budu podeljeni."
-    ]
+    ],
+    "ishod": 1,
+    "min_st": 28,
+    "prosao": false
    },
    {
     "k": "andreas obst",
@@ -6488,7 +6754,10 @@
      "Ove sezone daje dve do tri asistencije po utakmici; ispod 2,5 je ostao u 7 od 10 utakmica.",
      "Nije glavni organizator; loptu kod Bajerna uglavnom vode Jokubaitis i Washington."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 5,
+    "min_st": 28,
+    "prosao": false
    },
    {
     "k": "duane washington",
@@ -6525,7 +6794,10 @@
     "protiv": [
      "Ove sezone daje oko 15 poena po utakmici i granicu od 14,5 prebacio je u 6 od 8 utakmica.",
      "Jedna je od prvih opcija u napadu Bajerna."
-    ]
+    ],
+    "ishod": 13,
+    "min_st": 21,
+    "prosao": true
    },
    {
     "k": "duane washington",
@@ -6560,7 +6832,10 @@
     "protiv": [
      "Dolazi sa klupe i igra oko 20 minuta.",
      "U gostima deli manje asistencija nego kod kuće (oko dve asistencije naspram oko četiri asistencije), a sada igra u gostima."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 21,
+    "prosao": false
    },
    {
     "k": "johannes thiemann",
@@ -6593,7 +6868,10 @@
      "Ove sezone daje oko devet poena po utakmici; ispod 7,5 je ostao u 6 od 10 utakmica.",
      "Valensija dobro brani centre."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 6,
+    "min_st": 24,
+    "prosao": true
    },
    {
     "k": "johannes thiemann",
@@ -6629,7 +6907,10 @@
     ],
     "protiv": [
      "Ove sezone daje četiri do pet skokova po utakmici i granicu od 4,5 prebacio je u 6 od 10 utakmica."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 24,
+    "prosao": false
    },
    {
     "k": "johannes thiemann",
@@ -6664,7 +6945,10 @@
     ],
     "protiv": [
      "Nije glavni organizator; loptu kod Bajerna uglavnom vode Jokubaitis i Washington."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 24,
+    "prosao": true
    },
    {
     "k": "rokas jokubaitis",
@@ -6701,7 +6985,10 @@
     "protiv": [
      "U poslednjim utakmicama igra više nego ranije (21, 15 i 28 minuta).",
      "U poslednje tri utakmice: 17, 0 i 13 poena, više nego inače."
-    ]
+    ],
+    "ishod": 10,
+    "min_st": 22,
+    "prosao": false
    },
    {
     "k": "rokas jokubaitis",
@@ -6737,7 +7024,10 @@
     "protiv": [
      "Ove sezone daje tri do četiri asistencije po utakmici i granicu od 3,5 prebacio je u 5 od 9 utakmica.",
      "Prvi je organizator igre Bajerna: lopta je najčešće u njegovim rukama."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 22,
+    "prosao": true
    },
    {
     "k": "vladimir lucic",
@@ -6774,7 +7064,10 @@
     "protiv": [
      "Protiv Valensije krila postižu više nego protiv većine ekipa.",
      "U poslednje tri utakmice: 0, 12 i 18 poena, više nego inače."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 23,
+    "prosao": true
    },
    {
     "k": "vladimir lucic",
@@ -6811,7 +7104,10 @@
     "protiv": [
      "Kod Valensije na njegovoj poziciji ne igra Nikola Mirotic, pa manje je visokih koji se bore za skok.",
      "U gostima hvata više skokova nego kod kuće (oko tri skoka naspram jedan do dva skoka), a sada igra u gostima."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 23,
+    "prosao": true
    },
    {
     "k": "austin wiley",
@@ -6848,7 +7144,10 @@
     "protiv": [
      "U poslednje tri utakmice: 10, 2 i 22 poena, više nego inače.",
      "U gostima postiže više poena nego kod kuće (oko devet poena naspram oko šest poena), a sada igra u gostima."
-    ]
+    ],
+    "ishod": 10,
+    "min_st": 18,
+    "prosao": false
    },
    {
     "k": "austin wiley",
@@ -6885,7 +7184,10 @@
     "protiv": [
      "Glavni je skakač Bajerna: niko u timu ne hvata više odbijenih lopti.",
      "U poslednje tri utakmice: 8, 5 i 9 skokova, više nego inače."
-    ]
+    ],
+    "ishod": 9,
+    "min_st": 18,
+    "prosao": false
    },
    {
     "k": "justinian jessup",
@@ -6922,7 +7224,10 @@
     "protiv": [
      "U poslednjim utakmicama igra više nego ranije (17, 19 i 19 minuta).",
      "U poslednje tri utakmice: 15, 6 i 14 poena, više nego inače."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 9,
+    "prosao": true
    }
   ],
   "104": [
@@ -6960,7 +7265,10 @@
     ],
     "protiv": [
      "Kod Milana ne igra Devin Booker, pa ostaje više minuta i lopti za ostale."
-    ]
+    ],
+    "ishod": 11,
+    "min_st": 19,
+    "prosao": false
    },
    {
     "k": "devon hall",
@@ -6995,7 +7303,10 @@
     "protiv": [
      "Ove sezone daje dva do tri skoka po utakmici; ispod 2,5 je ostao u 6 od 10 utakmica.",
      "Kao bek retko ide u skok; odbijene lopte kod Milana uglavnom hvataju Wright i Peters."
-    ]
+    ],
+    "ishod": 0,
+    "min_st": 19,
+    "prosao": false
    },
    {
     "k": "devon hall",
@@ -7032,7 +7343,10 @@
     "protiv": [
      "Kod Milana ne igra Devin Booker, pa ostaje više minuta i lopti za ostale.",
      "Prvi je organizator igre Milana: lopta je najčešće u njegovim rukama."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 19,
+    "prosao": true
    },
    {
     "k": "moses wright",
@@ -7069,7 +7383,10 @@
     "protiv": [
      "Kod Milana ne igra Devin Booker, pa ostaje više minuta i lopti za ostale.",
      "Jedna je od prvih opcija u napadu Milana."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 20,
+    "prosao": true
    },
    {
     "k": "moses wright",
@@ -7106,7 +7423,10 @@
     "protiv": [
      "Kod Milana ne igra Devin Booker, pa ostaje više minuta i lopti za ostale.",
      "Glavni je skakač Milana: niko u timu ne hvata više odbijenih lopti."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 20,
+    "prosao": true
    },
    {
     "k": "leandro bolmaro",
@@ -7143,7 +7463,10 @@
     "protiv": [
      "Kod Milana ne igra Devin Booker, pa ostaje više minuta i lopti za ostale.",
      "Kod kuće postiže više poena nego u gostima (oko 13 poena naspram oko pet poena), a sada igra kod kuće."
-    ]
+    ],
+    "ishod": 12,
+    "min_st": 25,
+    "prosao": false
    },
    {
     "k": "leandro bolmaro",
@@ -7179,7 +7502,10 @@
     ],
     "protiv": [
      "Kod Milana ne igra Devin Booker, pa ostaje više minuta i lopti za ostale."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 25,
+    "prosao": true
    },
    {
     "k": "leandro bolmaro",
@@ -7214,7 +7540,10 @@
     ],
     "protiv": [
      "Nije glavni organizator; loptu kod Milana uglavnom vode Hall i Cole."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 25,
+    "prosao": false
    },
    {
     "k": "alec peters",
@@ -7251,7 +7580,10 @@
     "protiv": [
      "Kod Milana ne igra Devin Booker, pa ostaje više minuta i lopti za ostale.",
      "Ove sezone daje oko devet poena po utakmici i granicu od 9,5 prebacio je u 5 od 9 utakmica."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 25,
+    "prosao": true
    },
    {
     "k": "alec peters",
@@ -7286,7 +7618,10 @@
     "protiv": [
      "Ove sezone daje oko četiri skoka po utakmici; ispod 3,5 je ostao u 6 od 9 utakmica.",
      "Glavni skakač Milana je Wright, pa za njega ostaje manje odbijenih lopti."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 25,
+    "prosao": true
    },
    {
     "k": "rj cole",
@@ -7323,7 +7658,10 @@
     "protiv": [
      "Kod Milana ne igra Devin Booker, pa ostaje više minuta i lopti za ostale.",
      "Jedna je od prvih opcija u napadu Milana."
-    ]
+    ],
+    "ishod": 10,
+    "min_st": 16,
+    "prosao": false
    },
    {
     "k": "rj cole",
@@ -7358,7 +7696,10 @@
     "protiv": [
      "Kod Milana ne igra Devin Booker, pa ostaje više minuta i lopti za ostale.",
      "Kod kuće deli više asistencija nego u gostima (četiri do pet asistencija naspram jedna do dve asistencije), a sada igra kod kuće."
-    ]
+    ],
+    "ishod": 1,
+    "min_st": 16,
+    "prosao": true
    },
    {
     "k": "marko guduric",
@@ -7394,7 +7735,10 @@
     ],
     "protiv": [
      "Kod Milana ne igra Devin Booker, pa ostaje više minuta i lopti za ostale."
-    ]
+    ],
+    "ishod": 20,
+    "min_st": 24,
+    "prosao": false
    },
    {
     "k": "marko guduric",
@@ -7430,7 +7774,10 @@
     ],
     "protiv": [
      "Kod Milana ne igra Devin Booker, pa ostaje više minuta i lopti za ostale."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 24,
+    "prosao": true
    },
    {
     "k": "darius thompson",
@@ -7467,7 +7814,10 @@
     "protiv": [
      "Kod Milana ne igra Devin Booker, pa ostaje više minuta i lopti za ostale.",
      "Kod kuće postiže više poena nego u gostima (oko šest poena naspram oko pet poena), a sada igra kod kuće."
-    ]
+    ],
+    "ishod": 8,
+    "min_st": 22,
+    "prosao": false
    },
    {
     "k": "jason burnell",
@@ -7504,7 +7854,10 @@
     "protiv": [
      "Kod Milana ne igra Devin Booker, pa ostaje više minuta i lopti za ostale.",
      "Ove sezone daje oko šest poena po utakmici i granicu od 5,5 prebacio je u 5 od 10 utakmica."
-    ]
+    ],
+    "ishod": 0,
+    "min_st": 4,
+    "prosao": true
    },
    {
     "k": "jason burnell",
@@ -7540,7 +7893,10 @@
     ],
     "protiv": [
      "Kod Milana ne igra Devin Booker, pa ostaje više minuta i lopti za ostale."
-    ]
+    ],
+    "ishod": 0,
+    "min_st": 4,
+    "prosao": true
    },
    {
     "k": "carsen edwards",
@@ -7577,7 +7933,10 @@
     "protiv": [
      "Ove sezone daje 15 do 16 poena po utakmici i granicu od 15,5 prebacio je u 7 od 10 utakmica.",
      "Jedna je od prvih opcija u napadu Žalgirisa."
-    ]
+    ],
+    "ishod": 14,
+    "min_st": 19,
+    "prosao": true
    },
    {
     "k": "carsen edwards",
@@ -7611,7 +7970,10 @@
      "Ove sezone daje dve do tri asistencije po utakmici; ispod 2,5 je ostao u 7 od 10 utakmica.",
      "Nije glavni organizator; loptu kod Žalgirisa uglavnom vode Lee i Evans."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 3,
+    "min_st": 19,
+    "prosao": false
    },
    {
     "k": "azuolas tubelis",
@@ -7644,7 +8006,10 @@
      "Ove sezone daje 11 do 12 poena po utakmici i granicu od 10,5 prebacio je u 5 od 10 utakmica.",
      "Protiv Milana krila postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 15,
+    "min_st": 26,
+    "prosao": true
    },
    {
     "k": "azuolas tubelis",
@@ -7680,7 +8045,10 @@
     ],
     "protiv": [
      "Glavni skakač Žalgirisa je Valanciunas, pa za njega ostaje manje odbijenih lopti."
-    ]
+    ],
+    "ishod": 8,
+    "min_st": 26,
+    "prosao": true
    },
    {
     "k": "jonas valanciunas",
@@ -7715,7 +8083,10 @@
     "protiv": [
      "Jedna je od prvih opcija u napadu Žalgirisa.",
      "Protiv Milana centri postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi."
-    ]
+    ],
+    "ishod": 17,
+    "min_st": 25,
+    "prosao": false
    },
    {
     "k": "jonas valanciunas",
@@ -7748,7 +8119,10 @@
     "protiv": [
      "Ove sezone daje osam do devet skokova po utakmici i granicu od 7,5 prebacio je u 7 od 10 utakmica.",
      "Glavni je skakač Žalgirisa: niko u timu ne hvata više odbijenih lopti."
-    ]
+    ],
+    "ishod": 20,
+    "min_st": 25,
+    "prosao": false
    },
    {
     "k": "jonas valanciunas",
@@ -7784,7 +8158,10 @@
     ],
     "protiv": [
      "Ove sezone daje oko dve asistencije po utakmici i granicu od 1,5 prebacio je u 5 od 10 utakmica."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 25,
+    "prosao": false
    },
    {
     "k": "saben lee",
@@ -7818,7 +8195,10 @@
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Edwards i Valanciunas.",
      "Milano dobro brani bekove."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 9,
+    "min_st": 17,
+    "prosao": false
    },
    {
     "k": "saben lee",
@@ -7853,7 +8233,10 @@
     "protiv": [
      "Ove sezone daje četiri do pet asistencija po utakmici i granicu od 3,5 prebacio je u 4 od 7 utakmica.",
      "Prvi je organizator igre Žalgirisa: lopta je najčešće u njegovim rukama."
-    ]
+    ],
+    "ishod": 1,
+    "min_st": 17,
+    "prosao": true
    },
    {
     "k": "arnas butkevicius",
@@ -7889,7 +8272,10 @@
     "protiv": [
      "Ove sezone daje četiri do pet poena po utakmici i granicu od 4,5 prebacio je u 6 od 10 utakmica.",
      "Protiv Milana krila postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 22,
+    "prosao": true
    },
    {
     "k": "arnas butkevicius",
@@ -7924,7 +8310,10 @@
     "protiv": [
      "Ove sezone daje oko četiri skoka po utakmici i granicu od 3,5 prebacio je u 5 od 10 utakmica.",
      "U poslednjim utakmicama igra više nego ranije (20, 28 i 22 minuta)."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 22,
+    "prosao": false
    },
    {
     "k": "sterling brown",
@@ -7960,7 +8349,10 @@
     ],
     "protiv": [
      "Ove sezone daje 10 do 11 poena po utakmici i granicu od 10,5 prebacio je u 5 od 10 utakmica."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 16,
+    "prosao": true
    },
    {
     "k": "dustin sleva",
@@ -7997,7 +8389,10 @@
     "protiv": [
      "Ove sezone daje oko šest poena po utakmici i granicu od 5,5 prebacio je u 5 od 10 utakmica.",
      "Protiv Milana krila postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 10,
+    "prosao": true
    },
    {
     "k": "marius grigonis",
@@ -8034,7 +8429,10 @@
     "protiv": [
      "Ove sezone daje oko osam poena po utakmici i granicu od 7,5 prebacio je u 5 od 10 utakmica.",
      "U poslednje tri utakmice: 12, 4 i 13 poena, više nego inače."
-    ]
+    ],
+    "ishod": 13,
+    "min_st": 23,
+    "prosao": false
    },
    {
     "k": "marius grigonis",
@@ -8068,7 +8466,10 @@
      "Ove sezone daje jedna do dve asistencije po utakmici; ispod 2,5 je ostao u 8 od 10 utakmica.",
      "Nije glavni organizator; loptu kod Žalgirisa uglavnom vode Lee i Evans."
     ],
-    "protiv": []
+    "protiv": [],
+    "ishod": 2,
+    "min_st": 23,
+    "prosao": true
    }
   ],
   "106": [
@@ -8107,7 +8508,10 @@
     "protiv": [
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "Bez odsutnih saigrača trebalo bi da igra 25 do 26 minuta, a inače igra 21 do 22 minuta."
-    ]
+    ],
+    "ishod": 11,
+    "min_st": 23,
+    "prosao": true
    },
    {
     "k": "andres feliz",
@@ -8144,7 +8548,10 @@
     "protiv": [
      "Kao bek retko ide u skok; odbijene lopte kod Reala uglavnom hvataju Tavares i Okeke.",
      "Na raspolaganju je ponovo i Sergio Llull, pa minuti na njegovoj poziciji mogu da budu podeljeni."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 23,
+    "prosao": true
    },
    {
     "k": "andres feliz",
@@ -8181,7 +8588,10 @@
     "protiv": [
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "Bez odsutnih saigrača trebalo bi da igra 25 do 26 minuta, a inače igra 21 do 22 minuta."
-    ]
+    ],
+    "ishod": 7,
+    "min_st": 23,
+    "prosao": false
    },
    {
     "k": "sergio llull",
@@ -8217,7 +8627,10 @@
     "protiv": [
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "Ove sezone daje oko osam poena po utakmici i granicu od 6,5 prebacio je u 1 od 1 utakmice."
-    ]
+    ],
+    "ishod": 7,
+    "min_st": 17,
+    "prosao": false
    },
    {
     "k": "walter tavares",
@@ -8254,7 +8667,10 @@
     "protiv": [
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "U poslednje tri utakmice: 10, 14 i 13 poena, više nego inače."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 16,
+    "prosao": true
    },
    {
     "k": "walter tavares",
@@ -8290,7 +8706,10 @@
     "protiv": [
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "Glavni je skakač Reala: niko u timu ne hvata više odbijenih lopti."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 16,
+    "prosao": true
    },
    {
     "k": "alberto abalde",
@@ -8327,7 +8746,10 @@
     "protiv": [
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "U poslednje tri utakmice: 8, 8 i 23 poena, više nego inače."
-    ]
+    ],
+    "ishod": 8,
+    "min_st": 17,
+    "prosao": true
    },
    {
     "k": "alberto abalde",
@@ -8364,7 +8786,10 @@
     "protiv": [
      "Ove sezone daje dva do tri skoka po utakmici; ispod 2,5 je ostao u 6 od 10 utakmica.",
      "Glavni skakač Reala je Tavares, pa za njega ostaje manje odbijenih lopti."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 17,
+    "prosao": false
    },
    {
     "k": "alberto abalde",
@@ -8401,7 +8826,10 @@
     "protiv": [
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "U poslednje tri utakmice: 5, 1 i 5 asistencija, više nego inače."
-    ]
+    ],
+    "ishod": 1,
+    "min_st": 17,
+    "prosao": true
    },
    {
     "k": "timothe luwawu cabarrot",
@@ -8437,7 +8865,10 @@
     ],
     "protiv": [
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale."
-    ]
+    ],
+    "ishod": 22,
+    "min_st": 18,
+    "prosao": false
    },
    {
     "k": "timothe luwawu cabarrot",
@@ -8473,7 +8904,10 @@
     "protiv": [
      "Ove sezone daje jedan do dva skoka po utakmici; ispod 2,5 je ostao u 7 od 10 utakmica.",
      "Glavni skakač Reala je Tavares, pa za njega ostaje manje odbijenih lopti."
-    ]
+    ],
+    "ishod": 1,
+    "min_st": 18,
+    "prosao": false
    },
    {
     "k": "timothe luwawu cabarrot",
@@ -8509,7 +8943,10 @@
     ],
     "protiv": [
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale."
-    ]
+    ],
+    "ishod": 0,
+    "min_st": 18,
+    "prosao": true
    },
    {
     "k": "chuma okeke",
@@ -8546,7 +8983,10 @@
     "protiv": [
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "Ove sezone daje oko sedam poena po utakmici i granicu od 5,5 prebacio je u 7 od 9 utakmica."
-    ]
+    ],
+    "ishod": 9,
+    "min_st": 17,
+    "prosao": false
    },
    {
     "k": "chuma okeke",
@@ -8583,7 +9023,10 @@
     "protiv": [
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "U poslednje tri utakmice: 2, 7 i 5 skokova, više nego inače."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 17,
+    "prosao": true
    },
    {
     "k": "jaime pradilla",
@@ -8620,7 +9063,10 @@
     "protiv": [
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "Kod kuće postiže više poena nego u gostima (šest do sedam poena naspram tri do četiri poena), a sada igra kod kuće."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 20,
+    "prosao": true
    },
    {
     "k": "jaime pradilla",
@@ -8657,7 +9103,10 @@
     "protiv": [
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "Protiv Zvezde se skače: dozvoljavaju dosta odbijenih lopti."
-    ]
+    ],
+    "ishod": 8,
+    "min_st": 20,
+    "prosao": false
    },
    {
     "k": "damian jones",
@@ -8694,7 +9143,10 @@
     "protiv": [
      "Kod Reala ne igraju Theo Maledon, Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "U poslednje tri utakmice: 13, 6 i 15 poena, više nego inače."
-    ]
+    ],
+    "ishod": 0,
+    "min_st": 4,
+    "prosao": true
    },
    {
     "k": "jordan nwora",
@@ -8731,7 +9183,10 @@
     "protiv": [
      "Jedna je od prvih opcija u napadu Zvezde.",
      "Kod Reala na njegovoj poziciji ne igra Mikael Jantunen, pa manje je onih koji ga čuvaju."
-    ]
+    ],
+    "ishod": 12,
+    "min_st": 20,
+    "prosao": true
    },
    {
     "k": "jordan nwora",
@@ -8767,7 +9222,10 @@
     ],
     "protiv": [
      "Real dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 20,
+    "prosao": false
    },
    {
     "k": "jordan nwora",
@@ -8802,7 +9260,10 @@
     ],
     "protiv": [
      "U poslednje tri utakmice: 3, 2 i 2 asistencije, više nego inače."
-    ]
+    ],
+    "ishod": 1,
+    "min_st": 20,
+    "prosao": true
    },
    {
     "k": "semi ojeleye",
@@ -8839,7 +9300,10 @@
     "protiv": [
      "Ove sezone daje osam do devet poena po utakmici i granicu od 6,5 prebacio je u 7 od 10 utakmica.",
      "Kod Reala na njegovoj poziciji ne igra Mikael Jantunen, pa manje je onih koji ga čuvaju."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 16,
+    "prosao": true
    },
    {
     "k": "chima moneke",
@@ -8876,7 +9340,10 @@
     "protiv": [
      "Jedna je od prvih opcija u napadu Zvezde.",
      "Kod Reala na njegovoj poziciji ne igra Mikael Jantunen, pa manje je onih koji ga čuvaju."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 18,
+    "prosao": true
    },
    {
     "k": "chima moneke",
@@ -8912,7 +9379,10 @@
     ],
     "protiv": [
      "Kod Reala na njegovoj poziciji ne igra Mikael Jantunen, pa manje je visokih koji se bore za skok."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 18,
+    "prosao": false
    },
    {
     "k": "chima moneke",
@@ -8947,7 +9417,10 @@
     ],
     "protiv": [
      "U poslednje tri utakmice: 3, 5 i 1 asistencija, više nego inače."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 18,
+    "prosao": false
    },
    {
     "k": "nick weiler babb",
@@ -8984,7 +9457,10 @@
     "protiv": [
      "Ove sezone daje oko dva poena po utakmici; ispod 3,5 je ostao u 9 od 10 utakmica.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Nwora i Moneke."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 13,
+    "prosao": false
    },
    {
     "k": "nick weiler babb",
@@ -9020,7 +9496,10 @@
     ],
     "protiv": [
      "Ove sezone daje tri do četiri skoka po utakmici i granicu od 3,5 prebacio je u 5 od 10 utakmica."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 13,
+    "prosao": true
    },
    {
     "k": "nick weiler babb",
@@ -9055,7 +9534,10 @@
     "protiv": [
      "Ove sezone daje oko četiri asistencije po utakmici; ispod 3,5 je ostao u 6 od 10 utakmica.",
      "Nije glavni organizator; loptu kod Zvezde uglavnom vode Jones i Butler."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 13,
+    "prosao": false
    },
    {
     "k": "chris jones",
@@ -9090,7 +9572,10 @@
     "protiv": [
      "Protiv Reala bekovi postižu više nego protiv većine ekipa.",
      "Kod Reala na njegovoj poziciji ne igraju Theo Maledon i Facundo Campazzo, pa manje je onih koji ga čuvaju."
-    ]
+    ],
+    "ishod": 8,
+    "min_st": 18,
+    "prosao": true
    },
    {
     "k": "chris jones",
@@ -9126,7 +9611,10 @@
     ],
     "protiv": [
      "U gostima hvata više skokova nego kod kuće (oko tri skoka naspram oko dva skoka), a sada igra u gostima."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 18,
+    "prosao": false
    },
    {
     "k": "chris jones",
@@ -9160,7 +9648,10 @@
     ],
     "protiv": [
      "Prvi je organizator igre Zvezde: lopta je najčešće u njegovim rukama."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 18,
+    "prosao": true
    },
    {
     "k": "tyson carter",
@@ -9196,7 +9687,10 @@
     "protiv": [
      "Protiv Reala bekovi postižu više nego protiv većine ekipa.",
      "U poslednjim utakmicama igra više nego ranije (22, 22 i 26 minuta)."
-    ]
+    ],
+    "ishod": 18,
+    "min_st": 21,
+    "prosao": false
    },
    {
     "k": "tyson carter",
@@ -9232,7 +9726,10 @@
     "protiv": [
      "Kao bek retko ide u skok; odbijene lopte kod Zvezde uglavnom hvataju Nwora i Moneke.",
      "Real dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
-    ]
+    ],
+    "ishod": 0,
+    "min_st": 21,
+    "prosao": false
    },
    {
     "k": "tyson carter",
@@ -9268,7 +9765,10 @@
     ],
     "protiv": [
      "U poslednjim utakmicama igra više nego ranije (22, 22 i 26 minuta)."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 21,
+    "prosao": false
    },
    {
     "k": "christian koloko",
@@ -9304,7 +9804,10 @@
     ],
     "protiv": [
      "Kod Reala na njegovoj poziciji ne igra Mikael Jantunen, pa manje je onih koji ga čuvaju."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 15,
+    "prosao": true
    },
    {
     "k": "jared butler",
@@ -9340,7 +9843,10 @@
     "protiv": [
      "Ove sezone daje devet do deset poena po utakmici i granicu od 9,5 prebacio je u 5 od 10 utakmica.",
      "Protiv Reala bekovi postižu više nego protiv većine ekipa."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 13,
+    "prosao": true
    },
    {
     "k": "david kramer",
@@ -9377,7 +9883,10 @@
     "protiv": [
      "Protiv Reala bekovi postižu više nego protiv većine ekipa.",
      "U poslednjim utakmicama igra više nego ranije (27, 13 i 16 minuta)."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 14,
+    "prosao": false
    },
    {
     "k": "dejan davidovac",
@@ -9413,7 +9922,10 @@
     ],
     "protiv": [
      "Kod Reala na njegovoj poziciji ne igra Mikael Jantunen, pa manje je onih koji ga čuvaju."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 15,
+    "prosao": false
    },
    {
     "k": "ognjen dobric",
@@ -9449,7 +9961,10 @@
     ],
     "protiv": [
      "Kod Reala na njegovoj poziciji ne igra Mikael Jantunen, pa manje je onih koji ga čuvaju."
-    ]
+    ],
+    "ishod": 9,
+    "min_st": 21,
+    "prosao": false
    }
   ]
  }
