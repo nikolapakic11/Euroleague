@@ -47,3 +47,5 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
   asistencije ispod su najjače. Po verovatnoći (ne po vrednosti) vrh prolazi ~68% uz kvotu ~1,80.
 
 - Svako jutro posle dana sa utakmicama: `python3 spoj/posle_kola.py` (zapisnici, baza, ponovno učenje spoja, provera pravila, učinak sajta). `load.py` sada sam osvežava statistiku timova, raspored i povrede u aplikaciji.
+
+- Svaki plan koji pošalješ Nikoli dodaj i u aplikaciju: `python3 -I minusi/uzivo/dodaj_plan.py <plan.txt> <sel.json> --oznaka "..." --kolo N`, pa objavi aplikaciju. Ručni generator u aplikaciji je isključen (GEN_OFF), kartica se zove „Ponuda i planovi“.

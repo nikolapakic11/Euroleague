@@ -762,7 +762,7 @@
   }
   function tabs(){
     var pend = picks(true).filter(function(e){ return e.status === 'pending'; }).length;
-    var t = [['novi','Novi tiket',''],['rezultati','Unos rezultata', pend ? String(pend) : ''],['tiketi','Tiketi', String(state.tickets.length)],['analiza','Analiza',''],['generator','Generator','']];
+    var t = [['novi','Novi tiket',''],['rezultati','Unos rezultata', pend ? String(pend) : ''],['tiketi','Tiketi', String(state.tickets.length)],['analiza','Analiza',''],['generator','Ponuda i planovi','']];
     return '<nav class="tabs" role="tablist">' + t.map(function(x){
       return '<button role="tab" data-act="tab" data-v="' + x[0] + '" aria-selected="' + (ui.tab === x[0]) + '">' + x[1] + (x[2] ? '<span class="count">' + x[2] + '</span>' : '') + '</button>';
     }).join('') + '</nav>';
@@ -1862,8 +1862,8 @@
     return h + '</section>';
   }
   function claudePlansHtml(){
-    var L = state.claudePlans || []; if (!L.length) return '';
-    return '<section class="panel"><h2>Planovi od Claude-a</h2><p class="hint">Gotovi planovi koje je Claude složio i proverio simulacijom. Učitaj plan, pogledaj ga u delu 5. Plan, pa ga kopiraj u Admiral pomoćnika kao i obično.</p>' +
+    var L = (state.claudePlans || []).slice().reverse(); if (!L.length) return '<section class="panel"><h2>Planovi od Claude-a</h2><p class="hint">Još nema planova. Zatraži ih u razgovoru sa Claude-om.</p></section>';
+    return '<section class="panel"><h2>Planovi od Claude-a</h2><p class="hint">Planove slaže Claude u razgovoru, po spojenom modelu (oba modela, izostanci, kretanje granica). Učitaj plan, pogledaj tikete i simulaciju u delu „Plan“, pa ga kopiraj u Admiral pomoćnika. Najnoviji planovi su na vrhu.</p>' +
       L.map(function(cp){ return '<div class="q"><div><b>' + esc(cp.label) + '</b><div class="hint" style="margin:2px 0 0">' + esc(cp.desc || '') + (cp.stats ? ' Bar jedan dobitni tiket: oko ' + pct(cp.stats.app) + ' po proceni aplikacije, ' + pct(cp.stats.market) + ' po kvotama kladionice.' : '') + '</div></div><div class="acts"><button class="btn sm primary" data-act="loadCP" data-v="' + esc(cp.id) + '">Učitaj ovaj plan</button></div></div>'; }).join('') + '</section>';
   }
   function linesHtml(){
@@ -2004,6 +2004,7 @@
     var tag = x.cls === 'A' ? '<span class="tag dobro">više tiketa</span>' : x.cls === 'C' ? '<span class="tag lose">malo tiketa</span>' : '<span class="tag neutral">srednje</span>';
     return tag + '<br><small style="color:var(--muted)">' + esc(bits.join(', ')) + '</small>' + (kb.length ? '<br><small class="' + (a.dz > 0.02 ? 'pos' : a.dz < -0.02 ? 'neg' : '') + '" title="Kontekst utakmice: ' + (a.dz > 0 ? '+' : '') + fmt(a.dz * 100 / 4, 1) + ' procentnih poena šanse">' + esc('Kontekst: ' + kb.join(', ')) + '</small>' : '');
   }
+  var GEN_OFF = true;
   function viewGen(){
     var g = genCfg(), off = getOffer(), pool = poolList();
     var nPlayers = {}; (off && off.picks || []).forEach(function(x){ nPlayers[x.p] = 1; });
@@ -2011,14 +2012,15 @@
     var h = '<section class="panel"><h2>1. Ponuda</h2><p class="hint">' + offTxt + ' Novu ponudu preuzmeš dugmetom „Kopiraj ponudu“ u Admiral pomoćniku (uputstvo je na dnu) i nalepiš ovde.</p>' +
       '<textarea id="offerBox" placeholder="Nalepi ponudu iz Admiral pomoćnika"></textarea><div class="btns"><button class="btn" data-act="loadOffer">Učitaj ponudu</button></div></section>';
 
-    h += '<section class="panel"><h2>2. Primeri</h2><p class="hint">Klik na primer popunjava podešavanja ispod. Posle ih možeš menjati.</p>' +
+    // od 13.11.2026 tikete slaže Claude u razgovoru (spojeni model), pa se ručni generator ne prikazuje (GEN_OFF)
+    if (!GEN_OFF) h += '<section class="panel"><h2>2. Primeri</h2><p class="hint">Klik na primer popunjava podešavanja ispod. Posle ih možeš menjati.</p>' +
       Object.keys(PRESETS).map(function(k){ var p = PRESETS[k]; return '<div style="display:flex;gap:10px;align-items:baseline;padding:6px 0;border-top:1px solid var(--line)"><button class="btn sm" data-act="preset" data-v="' + k + '">' + p.label + '</button><span class="hint" style="margin:0">' + p.desc + '</span></div>'; }).join('') + '</section>';
 
     h += claudePlansHtml();
     h += offerMovesHtml();
     h += linesHtml();
-    h += aiHtml();
-    h += '<section class="panel"><h2>3. Podešavanja</h2>' +
+    if (!GEN_OFF) h += aiHtml();
+    if (!GEN_OFF) h += '<section class="panel"><h2>3. Podešavanja</h2>' +
       '<div style="margin-bottom:12px"><div class="legs-head" style="display:grid;grid-template-columns:1fr 1fr 36px;gap:8px"><span>Parova po tiketu</span><span>Broj tiketa</span><span></span></div>' +
       g.mix.map(function(m, i){ return '<div style="display:grid;grid-template-columns:1fr 1fr 36px;gap:8px;margin-bottom:6px"><input type="text" inputmode="numeric" aria-label="Parova po tiketu" data-gm="legs" data-i="' + i + '" value="' + esc(m.legs) + '"><input type="text" inputmode="numeric" aria-label="Broj tiketa" data-gm="n" data-i="' + i + '" value="' + esc(m.n) + '"><button class="x" aria-label="Ukloni red" data-act="delMix" data-i="' + i + '">×</button></div>'; }).join('') +
       '<div class="btns" style="margin-top:4px"><button class="btn sm" data-act="addMix">Dodaj red</button><span class="hint" id="mixSum" style="margin:0;align-self:center">' + mixSummary(g) + '</span></div></div>' +
@@ -2069,7 +2071,7 @@
         '<p class="hint" style="margin-top:10px">Tačan izveštaj o povredama Evroliga ne objavljuje u obliku koji aplikacija može da pročita, pa je ovo procena. Za sigurniju listu pitaj Claude-a u razgovoru pre kola da proveri vesti.</p></section>';
     }
 
-    if (pool.length) {
+    if (pool.length && !GEN_OFF) {
       var UNIT = {P: 'poena', S: 'skokova', A: 'asist.'};
       var rows = pool.map(function(x){
         var on = !g.excl[x.k], fo = !!g.forced[x.k], A = x.avg, mnO = num(g.minOdds), mxO = num(g.maxOdds);
