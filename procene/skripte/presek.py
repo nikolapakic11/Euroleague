@@ -69,7 +69,7 @@ def main():
     van_izb = sorted([c for c in kand if c.get('ps') is not None and c['kvota'] >= PR.SAJT_KVOTA and c.get('podoban', True)
                       and not any(c['k'] == q['k'] for q in izab)], key=lambda c: -c['ps'])
     for strana, ime in (('o', 'PLUS'), ('u', 'MINUS')):
-        L = [c for c in van_izb if c['strana'] == strana and (strana == 'u' or c['s'] in 'PA')][:6]
+        L = [c for c in van_izb if c['strana'] == strana and (c['s'] in 'PA' or (strana == 'u' and PR.SAJT_MINUS_SKOKOVI > 0))][:6]
         if L:
             print(f'\nSledeći {ime} po spoju (nisu ušli): ' + '; '.join(
                 f"{c['ime']} {SN[c['s']]} {c['l']} {c['ps']:.0%} @{c['kvota']}" + (' [minus-model ne]' if strana == 'u' and c.get('msig') is not None and c['msig'] < PR.MSIG_PRAG else '')

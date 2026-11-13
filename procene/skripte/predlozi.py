@@ -179,16 +179,18 @@ DAN_ZADRZI = 0.02                              # već objavljen predlog ostaje d
 # sezone u Evroligi, gde model procena greši. PLUS bez promene (minus-model okrenut za plus nema vrednost).
 DAN_MINUS_SLAGANJE = True
 # IZBOR ZA SAJT PO NAUČENOM SPOJU (od 13.11.2026, spoj/analiza/IZVESTAJ_2026-11-13.md). Do tada: MINUS po prednosti
-# modela procena nad tržištem (uz slaganje minus-modela), PLUS po prednosti modela procena. Provera na kolima 4–11
-# (17 dana, procena uvek bez tog kola): staro pravilo MINUS 62%, PLUS 47% (na sajtu 5/13); novo MINUS 4 dnevno 83%
-# (strogo unapred, kola 8+: 71–75%), PLUS najbolji dnevno 13/17. Realno očekivanje: MINUS 65–70%, PLUS oko 60%.
+# modela procena nad tržištem (uz slaganje minus-modela), PLUS po prednosti modela procena (na sajtu: MINUS 9/15, PLUS 5/13).
 #  MINUS: verovatnoća po spoju (signali.spoj2: tržište + oba modela + izostanci + granica prema proseku + trend minuta,
-#         forma, tempo, kolebanje minuta), poređano po VEROVATNOĆI (ne po prednosti: po prednosti idu više kvote i 60%,
-#         po verovatnoći 68%); uslovi: kvota ≥ 1,60, minus-model se slaže, timu ne fali 35+ minuta rotacije; najviše 4
-#         dnevno, 2 po utakmici, 2 po timu, 1 na skokove (skokovi ispod u vrhu: 64% prema 77% asistencije i 66% poeni).
-#  PLUS:  samo poeni i asistencije (skokovi preko ne prolaze), verovatnoća za preko po spoju ≥ 55%; jedan dnevno,
-#         drugi samo ako ima ≥ 65%. Spoj za preko najviše gura: saigrači koji fale, granica iznad proseka igrača
-#         (kladionica je podigla jer mu raste uloga), minuti u padu u poslednje 3.
+#         forma, tempo, kolebanje minuta), poređano po VEROVATNOĆI, ne po prednosti (po prednosti idu više kvote i ~60%,
+#         po verovatnoći ~68%, uz sličan povraćaj). Uslovi: kvota ≥ 1,60, minus-model se slaže (msig ≥ 0,35), timu ne
+#         fali 35+ minuta rotacije. Najviše 4 dnevno, 2 po utakmici, 2 po timu. Bez skokova: skokovi ispod koje spoj
+#         najviše ceni ne prolaze češće od ostalih (druga polovina sezone 45–51%), asistencije 77%, poeni 66%.
+#  PLUS:  samo poeni i asistencije, verovatnoća za preko po spoju ≥ 55%; jedan dnevno, drugi samo uz ≥ 65%.
+#         Po prednosti modela procena najbolji PLUS dana prolazi 47%, po spoju 13/17. Spoj za preko najviše gura:
+#         saigrači koji fale, granica iznad proseka igrača (kladionica je digla jer mu raste uloga), minuti u padu.
+# Provera (kola 4–11, 17 dana): staro pravilo MINUS 62%; novo 88% bez tog kola i 24/28 strogo unapred, ali su pravila
+# birana na istim podacima, pa su te brojke precenjene. Na sačuvanim tablama kola 10–11 (5 dana) novo pravilo: MINUS
+# 13/18, PLUS 2/4. Realno očekivanje: MINUS 65–70%, PLUS oko 60%. Pratiti; preispitati posle 40 novih predloga.
 SAJT_SPOJ = True
 SAJT_MINUS_N, SAJT_MINUS_PRAG, SAJT_MINUS_SKOKOVI, SAJT_PO_UT = 4, 0.58, 0, 2
 SAJT_PLUS_PRAG, SAJT_PLUS_DRUGI = 0.55, 0.65

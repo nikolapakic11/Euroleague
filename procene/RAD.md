@@ -131,3 +131,13 @@ Zakazani zadaci su isključeni (odluka 5.11.2026): ništa se ne pokreće samo. S
 - Minuti tima: svođenje na 200 se NE uvodi (provera u `procene/provera/minuti_tima.md`); prati se pravilo „tim sa
   pretrpanom rotacijom (zbir preko 225) bez MINUS-a“, pa pitati Nikolu jednostavnim rečima.
 - Presek tiketa i predloga posle utakmica: ishodi se upisuju sa `dopuna.py` + `predlozi.py` (radi i dok je utakmica završena a zapisnik još „uživo“).
+
+## Izbor za sajt od 13.11.2026
+
+- Predloge bira naučeni spoj (`signali.spoj2`), ne više prednost modela procena: pravilo i brojke su u `predlozi.py`
+  (`SAJT_*`) i `spoj/analiza/IZVESTAJ_2026-11-13.md`. MINUS do 4 dnevno po verovatnoći (bez skokova, minus-model se
+  slaže, tim bez 35+ min izostanaka); PLUS samo poeni/asistencije uz ≥ 55%, jedan dnevno (drugi uz ≥ 65%).
+- Prikaz igrača sa objavljenim predlogom (strana, verovatnoća, očekivanje) prati predlog (`primeni_spoj`).
+- `presek.py --dan D` pokazuje isti izbor pre objave i sledeće kandidate po spoju.
+- PLUS se ne povlači zato što je kladionica podigla granicu (Theis 12.11.). Pravilo „PLUS kad timu fali rotacija“
+  od 12.11. je ukinuto: izostanke sada meri spoj.

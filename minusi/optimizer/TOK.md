@@ -38,3 +38,10 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
   `"jtop"` po vrednosti, podrazumevano četvrtina bazena); ostali tiketi su mešani. `"jezgro": 0` vraća stari raspored.
 - Provera unazad (`spoj/analiza/raspored.py`, 16 odigranih dana, isti parovi, samo drugi raspored): isplata/ulog 1,78 (hibrid)
   prema 1,12 (raspršeno) i 1,45 (čisti slojevi); prednost dolazi iz 3 dana, ređi dobitni dani. Pratiti 2–3 kola.
+
+## Od 13.11.2026
+
+- `pr` u `izbor.py` (spoj2) ima i trend minuta, formu, tempo i kolebanje minuta (mali dobitak) i dodatak kad je granica
+  spuštena od ranijeg snimka (`--ranija`; polje `spustena`). Posle kola: `provera.py`, `analiza/prep.py`, `tezine.py`.
+- Nalaz za tikete (nije primenjeno, odluka Nikole): skokovi ispod koje spoj najviše ceni ne prolaze češće od ostalih;
+  asistencije ispod su najjače. Po verovatnoći (ne po vrednosti) vrh prolazi ~68% uz kvotu ~1,80.
