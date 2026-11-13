@@ -1,149 +1,149 @@
-=== 1. ISPOD: N najboljih po danu, razni načini rangiranja (Admiral, kola 4–11, 17 dana) ===
-sve Admiral granice ispod, kvota ≥1,60: 54.7% (n=2126, kv 1.94, povr +5.6%)
-  spoj: verovatnoća × kvota    top4 60.6% (n= 66, kv 2.11, povr +27.7%) | top8 60.2% (n=118, kv 2.10, povr +25.7%) | top15 60.9% (n=225, kv 2.06, povr +25.3%)
-  spoj: verovatnoća            top4 68.2% (n= 66, kv 1.78, povr +21.2%) | top8 67.8% (n=118, kv 1.80, povr +22.7%) | top15 68.4% (n=225, kv 1.82, povr +25.0%)
-  samo procene (1−pm)          top4 63.6% (n= 66, kv 1.86, povr +19.1%) | top8 61.0% (n=118, kv 1.87, povr +14.8%) | top15 63.6% (n=225, kv 1.86, povr +18.5%)
-  procene prednost (tr−pm)     top4 59.1% (n= 66, kv 2.01, povr +18.0%) | top8 55.9% (n=118, kv 2.00, povr +11.4%) | top15 58.2% (n=225, kv 1.98, povr +15.5%)
-  samo minus-model (msig)      top4 65.2% (n= 66, kv 2.00, povr +29.1%) | top8 56.8% (n=118, kv 1.97, povr +11.3%) | top15 61.8% (n=225, kv 1.96, povr +20.4%)
-  tržište (najniža kvota)      top4 66.7% (n= 66, kv 1.62, povr +7.8%) | top8 57.6% (n=118, kv 1.64, povr -6.0%) | top15 59.6% (n=225, kv 1.68, povr -0.2%)
-  sajt-pravilo (procene prednost + msig≥0,35): top4 62.1% (n= 66, kv 1.99, povr +24.1%) | top8 62.3% (n=114, kv 1.97, povr +23.0%)
-  po stavci, spoj vrednost top8: {'P': '62.5% (n= 32, kv 1.94, povr +21.4%)', 'S': '52.3% (n= 44, kv 2.21, povr +16.4%)', 'A': '66.7% (n= 42, kv 2.09, povr +38.8%)'}
+=== 1. ISPOD: N najboljih po danu, razni načini rangiranja (Admiral, kola 4–11, 18 dana) ===
+sve Admiral granice ispod, kvota ≥1,60: 54.6% (n=2215, kv 1.94, povr +5.4%)
+  spoj: verovatnoća × kvota    top4 58.6% (n= 70, kv 2.11, povr +23.0%) | top8 59.7% (n=124, kv 2.09, povr +24.8%) | top15 59.9% (n=237, kv 2.06, povr +23.3%)
+  spoj: verovatnoća            top4 67.1% (n= 70, kv 1.78, povr +19.2%) | top8 66.1% (n=124, kv 1.80, povr +19.2%) | top15 68.4% (n=237, kv 1.82, povr +24.7%)
+  samo procene (1−pm)          top4 62.9% (n= 70, kv 1.85, povr +17.5%) | top8 60.5% (n=124, kv 1.86, povr +13.6%) | top15 63.3% (n=237, kv 1.86, povr +17.9%)
+  procene prednost (tr−pm)     top4 55.7% (n= 70, kv 2.01, povr +11.2%) | top8 54.8% (n=124, kv 2.00, povr +8.9%) | top15 57.8% (n=237, kv 1.98, povr +14.4%)
+  samo minus-model (msig)      top4 62.9% (n= 70, kv 2.00, povr +25.1%) | top8 55.6% (n=124, kv 1.98, povr +9.9%) | top15 60.8% (n=237, kv 1.97, povr +18.6%)
+  tržište (najniža kvota)      top4 64.3% (n= 70, kv 1.62, povr +4.0%) | top8 56.5% (n=124, kv 1.64, povr -7.9%) | top15 59.5% (n=237, kv 1.68, povr -0.2%)
+  sajt-pravilo (procene prednost + msig≥0,35): top4 60.0% (n= 70, kv 1.98, povr +19.5%) | top8 60.8% (n=120, kv 1.97, povr +20.0%)
+  po stavci, spoj vrednost top8: {'P': '62.9% (n= 35, kv 1.94, povr +22.1%)', 'S': '52.3% (n= 44, kv 2.22, povr +18.0%)', 'A': '64.4% (n= 45, kv 2.09, povr +33.6%)'}
 
 === 2. Ostatak (ishod − spoj) po novim signalima, sve Admiral granice; + znači češće ISPOD nego što spoj misli ===
-  mintrend   n 2227 donja -0.037 srednja +0.019 gornja +0.019 | gornja−donja: prva pol. +0.083, druga pol. +0.065  [-0.14 / 0.76]
-  hot        n 2227 donja -0.021 srednja +0.001 gornja +0.022 | gornja−donja: prva pol. +0.036, druga pol. +0.059  [-0.11 / 0.18]
-  rest       n 2227 donja -0.037 srednja +0.011 gornja +0.027 | gornja−donja: prva pol. +0.027, druga pol. +0.081  [5.00 / 6.00]
-  dom        n 2227 donja -0.008 srednja +0.020 gornja -0.011 | gornja−donja: prva pol. -0.004, druga pol. +0.035  [0.00 / 1.00]
-  mdiff      n 2227 donja -0.001 srednja -0.002 gornja +0.004 | gornja−donja: prva pol. -0.026, druga pol. +0.037  [-4.25 / 4.25]
-  st         n 2227 donja +0.016 srednja -0.003 gornja -0.012 | gornja−donja: prva pol. +0.002, druga pol. -0.067  [0.38 / 0.86]
-  am         n 2227 donja -0.003 srednja +0.000 gornja +0.004 | gornja−donja: prva pol. +0.009, druga pol. +0.004  [19.41 / 22.46]
-  rang       n 2227 donja +0.010 srednja -0.012 gornja +0.003 | gornja−donja: prva pol. -0.027, druga pol. +0.013  [2.00 / 5.00]
-  retmin     n 2227 donja +0.016 srednja -0.021 gornja +0.006 | gornja−donja: prva pol. -0.047, druga pol. +0.079  [0.00 / 10.81]
-  mcv        n 2201 donja -0.013 srednja -0.001 gornja +0.015 | gornja−donja: prva pol. +0.006, druga pol. +0.035  [0.14 / 0.21]
-  n          n 2227 donja +0.025 srednja -0.032 gornja +0.008 | gornja−donja: prva pol. -0.055, druga pol. +0.068  [5.00 / 7.00]
-  emp        n 2227 donja -0.002 srednja -0.008 gornja +0.012 | gornja−donja: prva pol. +0.013, druga pol. +0.022  [0.45 / 0.58]
-  emp5       n 2227 donja -0.006 srednja +0.004 gornja +0.004 | gornja−donja: prva pol. +0.031, druga pol. +0.016  [0.43 / 0.57]
-  minsd      n 2227 donja -0.027 srednja +0.019 gornja +0.009 | gornja−donja: prva pol. +0.033, druga pol. +0.052  [3.06 / 4.31]
-  propusteno n 2227 donja +0.012 srednja -0.030 gornja +0.019 | gornja−donja: prva pol. -0.032, druga pol. +0.081  [0.00 / 0.00]
-  dozv       n 2227 donja +0.006 srednja -0.027 gornja +0.021 | gornja−donja: prva pol. -0.012, druga pol. +0.046  [0.94 / 1.04]
-  tempo      n 2227 donja +0.030 srednja -0.009 gornja -0.020 | gornja−donja: prva pol. -0.043, druga pol. -0.043  [170.00 / 175.69]
-  st_last    n 2227 donja +0.008 srednja -0.011 gornja +0.004 | gornja−donja: prva pol. +0.020, druga pol. -0.000  [0.00 / 0.00]
-  lean       n 2227 donja -0.003 srednja +0.008 gornja -0.005 | gornja−donja: prva pol. +0.030, druga pol. -0.033  [0.48 / 0.50]
-  perm       n 2227 donja +0.007 srednja -0.014 gornja +0.009 | gornja−donja: prva pol. -0.024, druga pol. +0.024  [0.19 / 0.39]
-  ldev       n  671 donja -0.033 srednja -0.005 gornja +0.058 | gornja−donja: prva pol. -0.085, druga pol. +0.090  [0.00 / 0.00]
-  nbk        n 2227 donja +0.016 srednja -0.017 gornja +0.002 | gornja−donja: prva pol. -0.044, druga pol. +0.062  [1.00 / 1.00]
-  dl         n 1011 donja -0.006 srednja -0.034 gornja +0.051 | gornja−donja: prva pol. +0.000, druga pol. +0.057  [0.00 / 0.00]
-  df         n 1011 donja -0.004 srednja -0.015 gornja +0.030 | gornja−donja: prva pol. +0.000, druga pol. +0.033  [0.00 / 0.00]
-  l          n 2227 donja +0.002 srednja +0.006 gornja -0.006 | gornja−donja: prva pol. -0.014, druga pol. +0.002  [3.50 / 7.50]
-  u          n 2227 donja -0.000 srednja +0.005 gornja -0.004 | gornja−donja: prva pol. -0.045, druga pol. +0.037  [1.87 / 1.95]
+  mintrend   n 2320 donja -0.033 srednja +0.017 gornja +0.019 | gornja−donja: prva pol. +0.082, druga pol. +0.067  [-0.15 / 0.78]
+  hot        n 2320 donja -0.017 srednja +0.002 gornja +0.017 | gornja−donja: prva pol. +0.035, druga pol. +0.042  [-0.11 / 0.18]
+  rest       n 2320 donja -0.031 srednja +0.012 gornja +0.022 | gornja−donja: prva pol. +0.027, druga pol. +0.078  [5.00 / 6.00]
+  dom        n 2320 donja -0.010 srednja +0.019 gornja -0.006 | gornja−donja: prva pol. -0.004, druga pol. +0.050  [0.00 / 1.00]
+  mdiff      n 2320 donja -0.003 srednja -0.006 gornja +0.012 | gornja−donja: prva pol. -0.026, druga pol. +0.047  [-4.25 / 4.25]
+  st         n 2320 donja +0.017 srednja -0.002 gornja -0.012 | gornja−donja: prva pol. +0.001, druga pol. -0.061  [0.38 / 0.83]
+  am         n 2320 donja -0.001 srednja +0.001 gornja +0.003 | gornja−donja: prva pol. +0.004, druga pol. +0.005  [19.42 / 22.48]
+  rang       n 2320 donja +0.013 srednja -0.007 gornja -0.003 | gornja−donja: prva pol. -0.027, druga pol. +0.007  [2.00 / 5.00]
+  retmin     n 2320 donja +0.013 srednja -0.013 gornja +0.002 | gornja−donja: prva pol. -0.047, druga pol. +0.072  [0.00 / 12.05]
+  mcv        n 2294 donja -0.012 srednja +0.001 gornja +0.014 | gornja−donja: prva pol. +0.009, druga pol. +0.022  [0.14 / 0.21]
+  n          n 2320 donja +0.027 srednja -0.039 gornja +0.014 | gornja−donja: prva pol. -0.056, druga pol. +0.058  [5.00 / 7.00]
+  emp        n 2320 donja +0.002 srednja -0.010 gornja +0.011 | gornja−donja: prva pol. +0.015, druga pol. +0.009  [0.45 / 0.58]
+  emp5       n 2320 donja -0.008 srednja +0.011 gornja -0.000 | gornja−donja: prva pol. +0.033, druga pol. +0.013  [0.43 / 0.57]
+  minsd      n 2320 donja -0.027 srednja +0.018 gornja +0.012 | gornja−donja: prva pol. +0.035, druga pol. +0.041  [3.09 / 4.35]
+  propusteno n 2320 donja +0.010 srednja -0.026 gornja +0.019 | gornja−donja: prva pol. -0.033, druga pol. +0.086  [0.00 / 0.00]
+  dozv       n 2320 donja +0.001 srednja -0.020 gornja +0.022 | gornja−donja: prva pol. -0.011, druga pol. +0.060  [0.94 / 1.04]
+  tempo      n 2320 donja +0.027 srednja -0.012 gornja -0.012 | gornja−donja: prva pol. -0.043, druga pol. -0.014  [170.25 / 175.69]
+  st_last    n 2320 donja +0.008 srednja -0.009 gornja +0.003 | gornja−donja: prva pol. +0.019, druga pol. -0.002  [0.00 / 0.00]
+  lean       n 2320 donja -0.003 srednja +0.006 gornja +0.001 | gornja−donja: prva pol. +0.029, druga pol. -0.020  [0.48 / 0.50]
+  perm       n 2320 donja +0.009 srednja -0.013 gornja +0.008 | gornja−donja: prva pol. -0.026, druga pol. +0.016  [0.19 / 0.39]
+  ldev       n  764 donja -0.023 srednja +0.010 gornja +0.036 | gornja−donja: prva pol. -0.082, druga pol. +0.061  [0.00 / 0.00]
+  nbk        n 2320 donja +0.013 srednja -0.018 gornja +0.007 | gornja−donja: prva pol. -0.045, druga pol. +0.083  [1.00 / 1.00]
+  dl         n 1104 donja -0.004 srednja -0.021 gornja +0.039 | gornja−donja: prva pol. +0.000, druga pol. +0.043  [0.00 / 0.00]
+  df         n 1104 donja -0.010 srednja -0.011 gornja +0.035 | gornja−donja: prva pol. +0.000, druga pol. +0.045  [0.00 / 0.00]
+  l          n 2320 donja +0.006 srednja +0.001 gornja -0.004 | gornja−donja: prva pol. -0.018, druga pol. +0.007  [3.50 / 7.50]
+  u          n 2320 donja -0.001 srednja +0.009 gornja -0.005 | gornja−donja: prva pol. -0.044, druga pol. +0.033  [1.87 / 1.95]
 
 === 3. Prošireni spoj: + trend minuta, forma, tempo, kolebanje minuta, odmor ===
-  p2                           logloss 0.6781 | po verovatnoći: top4 68.2% (n= 66, kv 1.78, povr +21.2%) | top8 67.8% (n=118, kv 1.80, povr +22.7%) | top15 68.4% (n=225, kv 1.82, povr +25.0%)
-                               po vrednosti:   top8 60.2% (n=118, kv 2.10, povr +25.7%) | top15 60.9% (n=225, kv 2.06, povr +25.3%) | top30 56.3% (n=449, kv 2.02, povr +13.1%)
-  p3 (+mt,hot,tempo,minsd)     logloss 0.6764 | po verovatnoći: top4 66.7% (n= 66, kv 1.80, povr +21.1%) | top8 64.4% (n=118, kv 1.80, povr +16.6%) | top15 68.9% (n=225, kv 1.83, povr +26.1%)
-                               po vrednosti:   top8 66.1% (n=118, kv 2.10, povr +39.5%) | top15 60.9% (n=225, kv 2.06, povr +25.9%) | top30 57.7% (n=449, kv 2.02, povr +16.0%)
-  p4 (+rest)                   logloss 0.6754 | po verovatnoći: top4 65.2% (n= 66, kv 1.81, povr +19.2%) | top8 65.3% (n=118, kv 1.80, povr +18.0%) | top15 69.8% (n=225, kv 1.83, povr +27.7%)
-                               po vrednosti:   top8 66.9% (n=118, kv 2.10, povr +41.3%) | top15 60.9% (n=225, kv 2.05, povr +25.2%) | top30 58.1% (n=449, kv 2.02, povr +17.1%)
-  p5 (+mt,tempo)               logloss 0.6760 | po verovatnoći: top4 65.2% (n= 66, kv 1.78, povr +17.0%) | top8 65.3% (n=118, kv 1.80, povr +17.7%) | top15 68.0% (n=225, kv 1.82, povr +24.2%)
-                               po vrednosti:   top8 61.9% (n=118, kv 2.10, povr +30.1%) | top15 60.4% (n=225, kv 2.07, povr +25.0%) | top30 57.7% (n=449, kv 2.02, povr +15.9%)
-  težine p3 (sva kola): {'pu': 0.163, 'ms': 0.109, 'mm': -0.179, 'zl': -0.121, 'pmid': -0.11, 'mt': 0.116, 'hot': 0.056, 'tempo': -0.05, 'minsd': 0.04}
+  p2                           logloss 0.6787 | po verovatnoći: top4 67.1% (n= 70, kv 1.78, povr +19.2%) | top8 66.1% (n=124, kv 1.80, povr +19.2%) | top15 68.4% (n=237, kv 1.82, povr +24.7%)
+                               po vrednosti:   top8 59.7% (n=124, kv 2.09, povr +24.8%) | top15 59.9% (n=237, kv 2.06, povr +23.3%) | top30 56.0% (n=473, kv 2.02, povr +12.5%)
+  p3 (+mt,hot,tempo,minsd)     logloss 0.6780 | po verovatnoći: top4 67.1% (n= 70, kv 1.79, povr +21.2%) | top8 65.3% (n=124, kv 1.80, povr +18.3%) | top15 68.4% (n=237, kv 1.83, povr +24.8%)
+                               po vrednosti:   top8 65.3% (n=124, kv 2.10, povr +37.8%) | top15 59.1% (n=237, kv 2.07, povr +22.1%) | top30 58.4% (n=473, kv 2.02, povr +17.4%)
+  p4 (+rest)                   logloss 0.6769 | po verovatnoći: top4 67.1% (n= 70, kv 1.80, povr +22.2%) | top8 66.1% (n=124, kv 1.80, povr +19.8%) | top15 68.4% (n=237, kv 1.82, povr +24.6%)
+                               po vrednosti:   top8 64.5% (n=124, kv 2.10, povr +35.8%) | top15 59.5% (n=237, kv 2.06, povr +22.7%) | top30 57.7% (n=473, kv 2.02, povr +16.2%)
+  p5 (+mt,tempo)               logloss 0.6778 | po verovatnoći: top4 65.7% (n= 70, kv 1.79, povr +18.2%) | top8 65.3% (n=124, kv 1.80, povr +17.4%) | top15 67.5% (n=237, kv 1.82, povr +23.2%)
+                               po vrednosti:   top8 61.3% (n=124, kv 2.10, povr +29.0%) | top15 60.8% (n=237, kv 2.07, povr +25.8%) | top30 57.1% (n=473, kv 2.01, povr +14.7%)
+  težine p3 (sva kola): {'pu': 0.147, 'ms': 0.121, 'mm': -0.164, 'zl': -0.121, 'pmid': -0.092, 'mt': 0.102, 'hot': 0.041, 'tempo': -0.036, 'minsd': 0.042}
   strogo unapred (uči samo na ranijim kolima), kola 8+:
-    f2: logloss 0.6889 | po verovatnoći top4 58.8% (n= 34, kv 1.78, povr +5.9%) | top8 65.0% (n= 60, kv 1.79, povr +16.6%) | po vrednosti top15 58.8% (n=114, kv 2.06, povr +20.2%)
-    f3: logloss 0.6881 | po verovatnoći top4 64.7% (n= 34, kv 1.80, povr +17.5%) | top8 58.3% (n= 60, kv 1.80, povr +6.1%) | po vrednosti top15 58.8% (n=114, kv 2.06, povr +20.2%)
-  po stavci (p3, po verovatnoći, top8): {'P': '66.7% (n= 24, kv 1.91, povr +29.4%)', 'S': '54.3% (n= 46, kv 1.73, povr -6.1%)', 'A': '72.9% (n= 48, kv 1.81, povr +31.9%)'}
-  po kolu (p3, po verovatnoći, top4): {4: '100.0', 5: '62.5%', 6: '62.5%', 7: '62.5%', 8: '62.5%', 9: '62.5%', 10: '50.0%', 11: '75.0%'}
+    f2: logloss 0.6891 | po verovatnoći top4 57.9% (n= 38, kv 1.78, povr +4.2%) | top8 63.6% (n= 66, kv 1.79, povr +14.5%) | po vrednosti top15 58.7% (n=126, kv 2.06, povr +20.2%)
+    f3: logloss 0.6901 | po verovatnoći top4 63.2% (n= 38, kv 1.81, povr +15.3%) | top8 57.6% (n= 66, kv 1.80, povr +5.0%) | po vrednosti top15 58.7% (n=126, kv 2.06, povr +20.3%)
+  po stavci (p3, po verovatnoći, top8): {'P': '69.2% (n= 26, kv 1.92, povr +34.0%)', 'S': '53.3% (n= 45, kv 1.72, povr -8.0%)', 'A': '73.6% (n= 53, kv 1.80, povr +32.9%)'}
+  po kolu (p3, po verovatnoći, top4): {4: '100.0', 5: '62.5%', 6: '62.5%', 7: '75.0%', 8: '62.5%', 9: '75.0%', 10: '40.0%', 11: '66.7%'}
 
 === 4. Kretanje granice u toku dana (Admiral, prvi → poslednji snimak) ===
-  granica podignuta  n  41 ispod (na poslednjoj granici) 56.1%, spoj očekuje 50.7%
-  granica ista       n 948 ispod (na poslednjoj granici) 53.8%, spoj očekuje 54.0%
-  granica spuštena   n  22 ispod (na poslednjoj granici) 68.2%, spoj očekuje 53.2%
-  ista granica, kvota na ispod pala (tržište ide ka ispod) n  25 ispod 52.0%, spoj očekuje 55.2%
-  ista granica, bez promene                                n 890 ispod 54.4%, spoj očekuje 54.0%
-  ista granica, kvota na preko pala (tržište ide ka preko) n  33 ispod 39.4%, spoj očekuje 52.0%
+  granica podignuta  n  44 ispod (na poslednjoj granici) 59.1%, spoj očekuje 51.0%
+  granica ista       n1036 ispod (na poslednjoj granici) 53.7%, spoj očekuje 53.9%
+  granica spuštena   n  24 ispod (na poslednjoj granici) 70.8%, spoj očekuje 52.7%
+  ista granica, kvota na ispod pala (tržište ide ka ispod) n  29 ispod 48.3%, spoj očekuje 55.3%
+  ista granica, bez promene                                n 972 ispod 54.3%, spoj očekuje 53.9%
+  ista granica, kvota na preko pala (tržište ide ka preko) n  35 ispod 40.0%, spoj očekuje 52.3%
 
 === 5. PREKO ===
-  sve Admiral granice preko, kvota ≥1,60: 43.9% (n=2020, kv 1.91, povr -16.5%)
-  spoj p3: verovatnoća preko   top1 76.5% (n= 17, kv 1.88, povr +43.1%) | top2 58.8% (n= 34, kv 1.88, povr +9.7%) | top4 53.0% (n= 66, kv 1.87, povr -1.8%) | top8 55.9% (n=118, kv 1.88, povr +4.2%)
-  spoj p3: vrednost            top1 70.6% (n= 17, kv 1.97, povr +39.9%) | top2 55.9% (n= 34, kv 1.99, povr +9.4%) | top4 54.5% (n= 66, kv 1.96, povr +6.9%) | top8 49.2% (n=118, kv 1.95, povr -4.4%)
-  procene pm                   top1 70.6% (n= 17, kv 1.84, povr +24.9%) | top2 61.8% (n= 34, kv 1.81, povr +7.9%) | top4 47.0% (n= 66, kv 1.81, povr -17.4%) | top8 46.6% (n=118, kv 1.83, povr -16.5%)
-  procene prednost pm−tr       top1 47.1% (n= 17, kv 2.00, povr -14.3%) | top2 38.2% (n= 34, kv 1.96, povr -30.0%) | top4 47.0% (n= 66, kv 2.00, povr -7.2%) | top8 48.3% (n=118, kv 1.96, povr -6.1%)
-  minus-model obrnuto          top1 35.3% (n= 17, kv 1.92, povr -32.6%) | top2 47.1% (n= 34, kv 1.93, povr -8.6%) | top4 47.0% (n= 66, kv 1.92, povr -9.3%) | top8 44.9% (n=118, kv 1.91, povr -14.4%)
-  samo poeni/asistencije, p3 verovatnoća: top2 64.7% (n= 34, kv 1.89, povr +20.7%) | top4 57.6% (n= 66, kv 1.88, povr +7.3%)
-  izostanci ≥40, P/A, pm>tr, pm≥0,5 (pravilo od 12.11.) 70.8% (n= 24, kv 1.89, povr +32.9%) | kola 4-7 66.7% n6 | 8-10 75.0% n16 | 11 50.0% n2
-  isto + igrač u posl. 3 igrao ≥15 min u proseku       68.2% (n= 22, kv 1.88, povr +27.5%) | kola 4-7 66.7% n6 | 8-10 73.3% n15 | 11  0.0% n1
-  minuti u padu (mintrend ≤ −3)                        45.6% (n= 57, kv 1.91, povr -13.7%) | kola 4-7 54.5% n11 | 8-10 45.2% n42 | 11 25.0% n4
-  hladan (hot ≤ −0,5)                                  50.0% (n=232, kv 1.90, povr -5.1%) | kola 4-7 49.5% n91 | 8-10 50.4% n115 | 11 50.0% n26
-  granica ispod proseka (zline ≤ −0,3)                 40.6% (n=342, kv 1.84, povr -25.3%) | kola 4-7 39.5% n248 | 8-10 42.0% n81 | 11 53.8% n13
-  zline ≤ −0,3 i izostanci ≥ 25                        43.2% (n= 88, kv 1.84, povr -19.7%) | kola 4-7 43.6% n39 | 8-10 41.5% n41 | 11 50.0% n8
-  zline ≤ −0,3 i pm ≥ 0,5                              47.4% (n=133, kv 1.82, povr -14.4%) | kola 4-7 46.8% n94 | 8-10 51.4% n35 | 11 25.0% n4
-  spoj p3 preko ≥ 0,55                                 55.2% (n=203, kv 1.87, povr +2.7%) | kola 4-7 62.1% n66 | 8-10 55.6% n108 | 11 37.9% n29
-  spoj p3 preko ≥ 0,58                                 53.3% (n=107, kv 1.87, povr -1.1%) | kola 4-7 60.7% n28 | 8-10 55.0% n60 | 11 36.8% n19
-  spoj p3 preko ≥ 0,55 i P/A                           57.4% (n=169, kv 1.89, povr +7.8%) | kola 4-7 62.7% n59 | 8-10 58.1% n86 | 11 41.7% n24
-  granica spuštena u toku dana                         31.8% (n= 22, kv 1.88, povr -40.1%) | kola 4-7 n=0 n0 | 8-10 25.0% n12 | 11 40.0% n10
-  granica podignuta u toku dana                        43.9% (n= 41, kv 1.94, povr -16.0%) | kola 4-7 n=0 n0 | 8-10 51.9% n27 | 11 28.6% n14
+  sve Admiral granice preko, kvota ≥1,60: 43.9% (n=2104, kv 1.91, povr -16.5%)
+  spoj p3: verovatnoća preko   top1 66.7% (n= 18, kv 1.89, povr +25.1%) | top2 58.3% (n= 36, kv 1.87, povr +8.7%) | top4 50.0% (n= 70, kv 1.87, povr -6.8%) | top8 54.0% (n=124, kv 1.86, povr +0.4%)
+  spoj p3: vrednost            top1 66.7% (n= 18, kv 1.97, povr +32.2%) | top2 47.2% (n= 36, kv 1.98, povr -7.8%) | top4 48.6% (n= 70, kv 1.96, povr -5.7%) | top8 46.8% (n=124, kv 1.95, povr -9.5%)
+  procene pm                   top1 66.7% (n= 18, kv 1.84, povr +18.0%) | top2 61.1% (n= 36, kv 1.82, povr +7.5%) | top4 47.1% (n= 70, kv 1.81, povr -16.6%) | top8 46.8% (n=124, kv 1.83, povr -15.8%)
+  procene prednost pm−tr       top1 44.4% (n= 18, kv 1.99, povr -19.1%) | top2 38.9% (n= 36, kv 1.96, povr -28.2%) | top4 47.1% (n= 70, kv 2.00, povr -6.8%) | top8 48.4% (n=124, kv 1.96, povr -5.9%)
+  minus-model obrnuto          top1 38.9% (n= 18, kv 1.93, povr -25.3%) | top2 50.0% (n= 36, kv 1.93, povr -3.2%) | top4 50.0% (n= 70, kv 1.92, povr -3.5%) | top8 47.6% (n=124, kv 1.91, povr -9.2%)
+  samo poeni/asistencije, p3 verovatnoća: top2 61.1% (n= 36, kv 1.88, povr +14.0%) | top4 51.4% (n= 70, kv 1.88, povr -3.8%)
+  izostanci ≥40, P/A, pm>tr, pm≥0,5 (pravilo od 12.11.) 70.4% (n= 27, kv 1.90, povr +33.0%) | kola 4-7 66.7% n6 | 8-10 75.0% n16 | 11 60.0% n5
+  isto + igrač u posl. 3 igrao ≥15 min u proseku       69.6% (n= 23, kv 1.89, povr +30.8%) | kola 4-7 66.7% n6 | 8-10 73.3% n15 | 11 50.0% n2
+  minuti u padu (mintrend ≤ −3)                        42.4% (n= 66, kv 1.92, povr -19.5%) | kola 4-7 54.5% n11 | 8-10 45.2% n42 | 11 23.1% n13
+  hladan (hot ≤ −0,5)                                  49.2% (n=248, kv 1.90, povr -6.7%) | kola 4-7 49.5% n91 | 8-10 50.4% n115 | 11 45.2% n42
+  granica ispod proseka (zline ≤ −0,3)                 41.0% (n=351, kv 1.84, povr -24.6%) | kola 4-7 39.5% n248 | 8-10 42.0% n81 | 11 54.5% n22
+  zline ≤ −0,3 i izostanci ≥ 25                        44.7% (n= 94, kv 1.84, povr -16.9%) | kola 4-7 43.6% n39 | 8-10 41.5% n41 | 11 57.1% n14
+  zline ≤ −0,3 i pm ≥ 0,5                              48.9% (n=137, kv 1.82, povr -11.3%) | kola 4-7 46.8% n94 | 8-10 51.4% n35 | 11 62.5% n8
+  spoj p3 preko ≥ 0,55                                 52.6% (n=194, kv 1.86, povr -2.6%) | kola 4-7 58.9% n56 | 8-10 55.4% n92 | 11 39.1% n46
+  spoj p3 preko ≥ 0,58                                 52.9% (n= 87, kv 1.87, povr -1.2%) | kola 4-7 61.9% n21 | 8-10 59.0% n39 | 11 37.0% n27
+  spoj p3 preko ≥ 0,55 i P/A                           54.3% (n=162, kv 1.88, povr +2.1%) | kola 4-7 60.0% n50 | 8-10 58.3% n72 | 11 40.0% n40
+  granica spuštena u toku dana                         29.2% (n= 24, kv 1.88, povr -45.1%) | kola 4-7 n=0 n0 | 8-10 25.0% n12 | 11 33.3% n12
+  granica podignuta u toku dana                        40.9% (n= 44, kv 1.94, povr -21.8%) | kola 4-7 n=0 n0 | 8-10 51.9% n27 | 11 23.5% n17
 
 === 6. Kako bi izgledao sajt: 4 ISPOD po verovatnoći (p3) + PLUS ===
-  ispod:  66.7% (n= 66, kv 1.80, povr +21.1%) | dana sa bar 3 od 4: 9 od 17 | dana sa 2: 5 | dana sa ≤1: 3
+  ispod:  67.1% (n= 70, kv 1.79, povr +21.2%) | dana sa bar 3 od 4: 9 od 18 | dana sa 2: 7 | dana sa ≤1: 2
 
 === 7. Dodatne provere ===
-  ISPOD P: top15/dan 65.8% (n= 79, kv 1.91, povr +26.6%) [prva pol. 67.4%, druga 63.6%] | top40/dan 61.5% (n=265, kv 1.91, povr +17.7%) | sve 53.7% (n=1099, kv 1.92, povr +2.9%)
-  ISPOD S: top15/dan 63.9% (n= 72, kv 1.74, povr +10.6%) [prva pol. 77.8%, druga 55.6%] | top40/dan 61.0% (n=177, kv 1.82, povr +10.5%) | sve 54.4% (n=597, kv 1.98, povr +7.1%)
-  ISPOD A: top15/dan 77.0% (n= 74, kv 1.82, povr +40.7%) [prva pol. 81.6%, druga 72.2%] | top40/dan 67.6% (n=145, kv 1.83, povr +24.0%) | sve 57.4% (n=430, kv 1.95, povr +10.5%)
-  ISPOD top4 bez skokova                71.2% (n= 66, kv 1.85, povr +32.6%) | top8 69.5% (n=118, kv 1.86, povr +29.3%)
-  ISPOD top4 skokovi samo ako p3 ≥ 0,66 68.2% (n= 66, kv 1.81, povr +24.3%) | top8 64.4% (n=118, kv 1.82, povr +17.7%)
-  PREKO p2 sve stavke top1 52.9% [37.5% / 66.7%] | top2 61.8% (n= 34, kv 1.87, povr +13.1%) [56.2% / 66.7%] | top3 62.0% (n= 50,
-  PREKO p2 P/A        top1 52.9% [37.5% / 66.7%] | top2 64.7% (n= 34, kv 1.89, povr +20.0%) [56.2% / 72.2%] | top3 62.0% (n= 50,
-  PREKO p3 sve stavke top1 76.5% [75.0% / 77.8%] | top2 58.8% (n= 34, kv 1.88, povr +9.7%) [56.2% / 61.1%] | top3 54.0% (n= 50,
-  PREKO p3 P/A        top1 76.5% [75.0% / 77.8%] | top2 64.7% (n= 34, kv 1.89, povr +20.7%) [62.5% / 66.7%] | top3 58.0% (n= 50,
-  PREKO strogo unapred f2 kola 8+: P/A top1 66.7% (n=  9, kv 1.88, povr +23.8%) | top2 72.2% (n= 18, kv 1.88, povr +34.2%) | prag ≥0,55 P/A 54.5% (n=134, kv 1.89, povr +2.7%)
-  PREKO strogo unapred f3 kola 8+: P/A top1 77.8% (n=  9, kv 1.87, povr +43.9%) | top2 61.1% (n= 18, kv 1.88, povr +13.7%) | prag ≥0,55 P/A 53.0% (n=134, kv 1.89, povr +0.1%)
-  PREKO P/A top2 uz prag 0.52: 64.7% (n= 34, kv 1.89, povr +20.7%) dana 17
-  PREKO P/A top2 uz prag 0.55: 63.6% (n= 33, kv 1.89, povr +18.5%) dana 17
-  PREKO P/A top2 uz prag 0.58: 63.3% (n= 30, kv 1.88, povr +17.6%) dana 17
-  PREKO P/A top2 uz prag 0.6: 67.9% (n= 28, kv 1.88, povr +26.0%) dana 16
-  šta gura PREKO (prosek osobina, top2 P/A prema svima): {'pu': (0.22, 0.37), 'ms': (-0.05, 0.31), 'mm': (2.1, 1.18), 'zl': (0.43, 0.01), 'mt': (-1.22, 0.39), 'hot': (-0.11, 0.04)}
+  ISPOD P: top15/dan 63.0% (n= 81, kv 1.91, povr +20.9%) [prva pol. 65.9%, druga 59.5%] | top40/dan 61.4% (n=280, kv 1.91, povr +17.4%) | sve 53.6% (n=1143, kv 1.92, povr +2.8%)
+  ISPOD S: top15/dan 66.7% (n= 75, kv 1.74, povr +15.4%) [prva pol. 79.3%, druga 58.7%] | top40/dan 61.1% (n=180, kv 1.79, povr +9.7%) | sve 54.4% (n=623, kv 1.98, povr +7.0%)
+  ISPOD A: top15/dan 75.3% (n= 81, kv 1.82, povr +37.6%) [prva pol. 84.2%, druga 67.4%] | top40/dan 66.9% (n=157, kv 1.83, povr +22.4%) | sve 57.2% (n=449, kv 1.95, povr +10.0%)
+  ISPOD top4 bez skokova                71.4% (n= 70, kv 1.85, povr +32.2%) | top8 69.4% (n=124, kv 1.85, povr +28.6%)
+  ISPOD top4 skokovi samo ako p3 ≥ 0,66 67.1% (n= 70, kv 1.81, povr +21.9%) | top8 65.3% (n=124, kv 1.82, povr +19.5%)
+  PREKO p2 sve stavke top1 50.0% [37.5% / 60.0%] | top2 58.3% (n= 36, kv 1.87, povr +7.5%) [62.5% / 55.0%] | top3 60.4% (n= 53,
+  PREKO p2 P/A        top1 55.6% [50.0% / 60.0%] | top2 55.6% (n= 36, kv 1.88, povr +3.0%) [50.0% / 60.0%] | top3 60.4% (n= 53,
+  PREKO p3 sve stavke top1 66.7% [62.5% / 70.0%] | top2 58.3% (n= 36, kv 1.87, povr +8.7%) [68.8% / 50.0%] | top3 52.8% (n= 53,
+  PREKO p3 P/A        top1 66.7% [62.5% / 70.0%] | top2 61.1% (n= 36, kv 1.88, povr +14.0%) [68.8% / 55.0%] | top3 54.7% (n= 53,
+  PREKO strogo unapred f2 kola 8+: P/A top1 60.0% (n= 10, kv 1.87, povr +11.4%) | top2 65.0% (n= 20, kv 1.87, povr +20.8%) | prag ≥0,55 P/A 53.4% (n=146, kv 1.89, povr +0.7%)
+  PREKO strogo unapred f3 kola 8+: P/A top1 70.0% (n= 10, kv 1.87, povr +29.5%) | top2 55.0% (n= 20, kv 1.88, povr +2.4%) | prag ≥0,55 P/A 51.3% (n=150, kv 1.89, povr -2.9%)
+  PREKO P/A top2 uz prag 0.52: 61.1% (n= 36, kv 1.88, povr +14.0%) dana 18
+  PREKO P/A top2 uz prag 0.55: 60.0% (n= 35, kv 1.88, povr +11.8%) dana 18
+  PREKO P/A top2 uz prag 0.58: 61.3% (n= 31, kv 1.87, povr +13.8%) dana 17
+  PREKO P/A top2 uz prag 0.6: 59.3% (n= 27, kv 1.88, povr +10.5%) dana 15
+  šta gura PREKO (prosek osobina, top2 P/A prema svima): {'pu': (0.22, 0.37), 'ms': (-0.05, 0.31), 'mm': (2.16, 1.21), 'zl': (0.4, 0.01), 'mt': (-1.35, 0.38), 'hot': (-0.08, 0.04)}
   Kretanje, sve četiri kladionice (ishod prema poslednjoj granici):
-    granica podignuta                  n  95 preko 52.6% (povr preko -0.7%, povr ispod -12.3%) | bez Admirala n  54 preko 59.3% (p
-    granica spuštena                   n  56 preko 39.3% (povr preko -27.2%, povr ispod +18.1%) | bez Admirala n  33 preko 42.4% (p
-    ista, tržište ka preko (≥1,5 pp)   n  59 preko 54.2% (povr preko -7.8%, povr ispod -10.3%) | bez Admirala n  25 preko 48.0% (p
-    ista, tržište ka preko (≥3 pp)     n  31 preko 45.2% (povr preko -27.7%, povr ispod +3.9%) | bez Admirala n  17 preko 47.1% (p
-    ista, tržište ka ispod (≥1,5 pp)   n  43 preko 46.5% (povr preko -7.2%, povr ispod -3.3%) | bez Admirala n  18 preko 44.4% (p
-    ista, bez promene                  n2171 preko 45.7% (povr preko -15.3%, povr ispod +3.2%) | bez Admirala n1272 preko 45.8% (p
+    granica podignuta                  n  99 preko 50.5% (povr preko -4.7%, povr ispod -8.4%) | bez Admirala n  55 preko 58.2% (p
+    granica spuštena                   n  58 preko 37.9% (povr preko -29.7%, povr ispod +20.6%) | bez Admirala n  33 preko 42.4% (p
+    ista, tržište ka preko (≥1,5 pp)   n  61 preko 54.1% (povr preko -8.2%, povr ispod -10.1%) | bez Admirala n  25 preko 48.0% (p
+    ista, tržište ka preko (≥3 pp)     n  32 preko 46.9% (povr preko -24.9%, povr ispod +0.7%) | bez Admirala n  17 preko 47.1% (p
+    ista, tržište ka ispod (≥1,5 pp)   n  47 preko 48.9% (povr preko -2.4%, povr ispod -7.7%) | bez Admirala n  18 preko 44.4% (p
+    ista, bez promene                  n2345 preko 45.8% (povr preko -15.3%, povr ispod +3.1%) | bez Admirala n1364 preko 45.9% (p
   12.11. po novom izboru: ISPOD [('andres feliz', 'A', 5.5, 1.85, 0.71, 'pao'), ('rj cole', 'A', 3.5, 2.1, 0.71, 'prošao'), ('jonas valanciunas', 'A', 1.5, 1.95, 0.71, 'pao'), ('mckinley wright', 'S', 2.5, 1.75, 0.68, 'prošao')]
   12.11. PREKO P/A [('daniel theis', 'P', 7.5, 1.83, 0.66, 'prošao'), ('jared butler', 'P', 9.5, 1.8, 0.66, 'pao')]
   11.11. ISPOD [('jared rhoden', 'A', 2.5, 0.72, 'prošao'), ('alize johnson', 'S', 4.5, 0.66, 'prošao'), ('kenneth faried', 'S', 8.5, 0.61, 'prošao'), ('stefan joksimovic', 'P', 7.5, 0.61, 'prošao')] PREKO [('chris duarte', 'P', 8.5, 0.66, 'prošao'), ('robert franks', 'P', 8.5, 0.63, 'pao')]
 
 === 8. Pravila za sajt (p3) ===
-  ISPOD top4, skokovi ≤1                   68.2% (n= 66, kv 1.83, povr +25.3%) | prosečna procena 69.5% | dana ≥75%: 9, 50%: 6, <50%: 2
-  ISPOD top4, skokovi ≤1, msig≥0,35        74.2% (n= 66, kv 1.82, povr +35.2%) | prosečna procena 69.0% | dana ≥75%: 12, 50%: 3, <50%: 2
-  ISPOD top4, skokovi ≤1, forma5 ≥ 0,5     65.2% (n= 66, kv 1.78, povr +15.8%) | prosečna procena 67.6% | dana ≥75%: 8, 50%: 7, <50%: 2
-  ISPOD top4, skokovi ≤1, kvota ≥1,70      69.7% (n= 66, kv 1.89, povr +32.6%) | prosečna procena 68.8% | dana ≥75%: 10, 50%: 5, <50%: 2
-  ISPOD top5, skokovi ≤1                   67.9% (n= 81, kv 1.83, povr +25.1%) | prosečna procena 68.8% | dana ≥75%: 8, 50%: 0, <50%: 6
-  ISPOD top6, skokovi ≤2                   67.7% (n= 96, kv 1.82, povr +23.7%) | prosečna procena 68.6% | dana ≥75%: 7, 50%: 3, <50%: 4
-  ISPOD top4, skokovi ≤1, izostanci <35    73.3% (n= 60, kv 1.82, povr +33.8%) | prosečna procena 70.0% | dana ≥75%: 11, 50%: 4, <50%: 1
-  ISPOD top4 po p2, skokovi ≤1             72.7% (n= 66, kv 1.80, povr +30.7%) | prosečna procena 67.9% | dana ≥75%: 12, 50%: 3, <50%: 2
-  kalibracija ISPOD p3 0.5-0.55: n 430 stvarno 47.4%
-  kalibracija ISPOD p3 0.55-0.6: n 522 stvarno 60.9%
-  kalibracija ISPOD p3 0.6-0.65: n 340 stvarno 62.1%
-  kalibracija ISPOD p3 0.65-0.7: n 172 stvarno 62.8%
-  kalibracija ISPOD p3 0.7-1: n  52 stvarno 73.1%
-  kalibracija PREKO p3 0.5-0.55: n 298 stvarno 51.0% | P/A 50.2% n247
-  kalibracija PREKO p3 0.55-0.6: n 137 stvarno 54.7% | P/A 57.8% n109
-  kalibracija PREKO p3 0.6-0.65: n  53 stvarno 50.9% | P/A 52.1% n48
-  kalibracija PREKO p3 0.65-1: n  13 stvarno 76.9% | P/A 75.0% n12
-  PREKO P/A top1                       76.5% (n= 17, kv 1.88, povr +43.1%) | prosečna procena 64.9% | dana ≥75%: 13, 50%: 0, <50%: 4
-  PREKO P/A top2, jedan po timu        52.9% (n= 34, kv 1.88, povr -1.9%) | prosečna procena 62.7% | dana ≥75%: 4, 50%: 10, <50%: 3
-  PREKO P/A top2, prag 0,58            60.7% (n= 28, kv 1.88, povr +12.6%) | prosečna procena 64.1% | dana ≥75%: 7, 50%: 7, <50%: 3
-  PREKO P/A top2, pm ≥ 0,45            63.6% (n= 33, kv 1.88, povr +19.3%) | prosečna procena 61.1% | dana ≥75%: 8, 50%: 6, <50%: 3
-  PREKO P/A top2, izostanci ≥ 25       56.7% (n= 30, kv 1.89, povr +5.5%) | prosečna procena 62.6% | dana ≥75%: 6, 50%: 6, <50%: 4
-  PREKO P/A top2, minuti posl.3 ≥ 15   47.1% (n= 34, kv 1.87, povr -13.1%) | prosečna procena 61.2% | dana ≥75%: 3, 50%: 10, <50%: 4
-  PREKO P/A top2, kvota ≥ 1,70         52.9% (n= 34, kv 1.89, povr -1.0%) | prosečna procena 62.6% | dana ≥75%: 4, 50%: 10, <50%: 3
-  PREKO P/A top3                       52.0% (n= 50, kv 1.89, povr -2.9%) | prosečna procena 61.4% | dana ≥75%: 2, 50%: 1, <50%: 7
-  SAJT ukupno (4 ispod + 2 preko): 63/100 = 63.0% | po danu: ['1/4', '2/6', '2/6', '3/6', '3/6', '4/6', '4/6', '4/6', '4/6', '4/6', '4/6', '4/6', '4/6', '5/6', '5/6', '5/6', '5/6']
+  ISPOD top4, skokovi ≤1                   68.6% (n= 70, kv 1.82, povr +25.6%) | prosečna procena 68.6% | dana ≥75%: 10, 50%: 6, <50%: 2
+  ISPOD top4, skokovi ≤1, msig≥0,35        72.9% (n= 70, kv 1.81, povr +32.5%) | prosečna procena 68.2% | dana ≥75%: 12, 50%: 4, <50%: 2
+  ISPOD top4, skokovi ≤1, forma5 ≥ 0,5     64.3% (n= 70, kv 1.79, povr +14.7%) | prosečna procena 66.9% | dana ≥75%: 9, 50%: 6, <50%: 3
+  ISPOD top4, skokovi ≤1, kvota ≥1,70      70.0% (n= 70, kv 1.89, povr +32.9%) | prosečna procena 67.8% | dana ≥75%: 11, 50%: 5, <50%: 2
+  ISPOD top5, skokovi ≤1                   70.9% (n= 86, kv 1.82, povr +29.8%) | prosečna procena 67.9% | dana ≥75%: 9, 50%: 0, <50%: 4
+  ISPOD top6, skokovi ≤2                   66.7% (n=102, kv 1.81, povr +21.6%) | prosečna procena 67.6% | dana ≥75%: 6, 50%: 3, <50%: 4
+  ISPOD top4, skokovi ≤1, izostanci <35    73.4% (n= 64, kv 1.81, povr +33.4%) | prosečna procena 69.0% | dana ≥75%: 11, 50%: 5, <50%: 1
+  ISPOD top4 po p2, skokovi ≤1             71.4% (n= 70, kv 1.80, povr +28.3%) | prosečna procena 67.4% | dana ≥75%: 12, 50%: 4, <50%: 2
+  kalibracija ISPOD p3 0.5-0.55: n 494 stvarno 47.4%
+  kalibracija ISPOD p3 0.55-0.6: n 563 stvarno 60.9%
+  kalibracija ISPOD p3 0.6-0.65: n 357 stvarno 62.2%
+  kalibracija ISPOD p3 0.65-0.7: n 155 stvarno 61.9%
+  kalibracija ISPOD p3 0.7-1: n  40 stvarno 80.0%
+  kalibracija PREKO p3 0.5-0.55: n 294 stvarno 51.7% | P/A 51.2% n246
+  kalibracija PREKO p3 0.55-0.6: n 137 stvarno 51.8% | P/A 55.0% n109
+  kalibracija PREKO p3 0.6-0.65: n  45 stvarno 55.6% | P/A 53.7% n41
+  kalibracija PREKO p3 0.65-1: n  12 stvarno 50.0% | P/A 50.0% n12
+  PREKO P/A top1                       66.7% (n= 18, kv 1.89, povr +25.1%) | prosečna procena 63.9% | dana ≥75%: 12, 50%: 0, <50%: 6
+  PREKO P/A top2, jedan po timu        52.8% (n= 36, kv 1.88, povr -2.1%) | prosečna procena 62.0% | dana ≥75%: 5, 50%: 9, <50%: 4
+  PREKO P/A top2, prag 0,58            62.1% (n= 29, kv 1.87, povr +15.3%) | prosečna procena 63.5% | dana ≥75%: 8, 50%: 6, <50%: 3
+  PREKO P/A top2, pm ≥ 0,45            54.3% (n= 35, kv 1.88, povr +1.5%) | prosečna procena 60.5% | dana ≥75%: 6, 50%: 8, <50%: 4
+  PREKO P/A top2, izostanci ≥ 25       53.1% (n= 32, kv 1.88, povr -1.4%) | prosečna procena 62.0% | dana ≥75%: 6, 50%: 7, <50%: 4
+  PREKO P/A top2, minuti posl.3 ≥ 15   52.8% (n= 36, kv 1.87, povr -2.4%) | prosečna procena 60.5% | dana ≥75%: 5, 50%: 9, <50%: 4
+  PREKO P/A top2, kvota ≥ 1,70         52.8% (n= 36, kv 1.88, povr -1.2%) | prosečna procena 62.0% | dana ≥75%: 5, 50%: 9, <50%: 4
+  PREKO P/A top3                       45.3% (n= 53, kv 1.88, povr -15.5%) | prosečna procena 60.9% | dana ≥75%: 2, 50%: 1, <50%: 10
+  SAJT ukupno (4 ispod + 2 preko): 67/106 = 63.2% | po danu: ['1/4', '2/6', '2/6', '2/6', '3/6', '3/6', '4/6', '4/6', '4/6', '4/6', '4/6', '4/6', '4/6', '5/6', '5/6', '5/6', '5/6', '6/6']
 
 === 9. Konačno pravilo za sajt ===
-  ISPOD (top4 po verovatnoći, msig≥0,35, izostanci<35, skokovi ≤1): 83.3% (n= 60, kv 1.81, povr +51.5%) | dana ≥75%: 13, 50%: 3, <50%: 0 | po polovinama 90.6% 75.0% | po stavci {'P': '81.2% (n= 16,', 'S': '63.6% (n= 11,', 'A': '90.9% (n= 33,'}
-  isto, strogo unapred kola 8+: f2 71.4% (n= 28, kv 1.79, povr +29.1%) | f3 75.0% (n= 28, kv 1.81, povr +36.1%)
-  PREKO (P/A, najbolji po danu uz ≥0,55; drugi samo uz ≥0,65): 73.7% (n= 19, kv 1.88, povr +38.2%) | prvi 76.5% (n= 17, | drugi 50.0% (n=  2,
-  SAJT ukupno: 64/79 = 81.0% | dana iznad 50%: 16 od 17, tačno 50%: 1, ispod: 0
-  staro pravilo sajta (procene prednost, msig≥0,35, pm ispod ≥0,54), top4: 62.1% (n= 66, kv 1.99, povr +24.1%) | PREKO po prednosti procena top1 47.1% (n= 17, kv 2.00, povr -14.3%)
+  ISPOD (top4 po verovatnoći, msig≥0,35, izostanci<35, skokovi ≤1): 79.7% (n= 64, kv 1.81, povr +44.2%) | dana ≥75%: 13, 50%: 3, <50%: 1 | po polovinama 90.6% 68.8% | po stavci {'P': '77.8% (n= 18,', 'S': '63.6% (n= 11,', 'A': '85.7% (n= 35,'}
+  isto, strogo unapred kola 8+: f2 68.8% (n= 32, kv 1.80, povr +24.4%) | f3 68.8% (n= 32, kv 1.82, povr +25.4%)
+  PREKO (P/A, najbolji po danu uz ≥0,55; drugi samo uz ≥0,65): 60.0% (n= 20, kv 1.88, povr +12.6%) | prvi 66.7% (n= 18, | drugi  0.0% (n=  2,
+  SAJT ukupno: 63/84 = 75.0% | dana iznad 50%: 16 od 18, tačno 50%: 1, ispod: 1
+  staro pravilo sajta (procene prednost, msig≥0,35, pm ispod ≥0,54), top4: 60.0% (n= 70, kv 1.98, povr +19.5%) | PREKO po prednosti procena top1 44.4% (n= 18, kv 1.99, povr -19.1%)
