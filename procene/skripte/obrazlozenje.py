@@ -290,8 +290,26 @@ def razlozi(i, s, l, u, moja, tudja, K):
                       t=f"Otkad se vratio {ko} ({pv['n']} {utak(pv['n'])}), igra oko {round(pv['min_sa'])} minuta i daje {zr(vs)} {imenica(round(vs), s)} po utakmici, "
                         f"naspram {zr(vb)} ranije; procena to uzima u obzir.",
                       kr=f"otkad se vratio {ko}, {'manje' if manje else 'više'} učestvuje"))
+    # od 13.11.2026: saigrač koji se vraća posle izostanka (bilo koja pozicija) -> stvarni učinak igrača sa njim i bez njega
+    # ove sezone (Malcolm: sa Dozierom 23 min i 7,7 poena, bez njega 30 min i 14,8)
+    vraca_sv = [j for j in moja['igraci'] if j['k'] != i['k'] and j.get('izvestaj') == 'igra' and j['odsutan'] >= 1 and j['min'] >= 10]
+    split_dodat = False
+    for j in vraca_sv[:2]:
+        dj = {r['dan'] for r in K.B.byk.get(j['k'], []) if r['min'] > 0 and r['dan'] < u['dan']}
+        G = [r for r in K.B.byk.get(i['k'], []) if r['min'] > 0 and r['dan'] < u['dan']]
+        sa, bez = [r for r in G if r['dan'] in dj], [r for r in G if r['dan'] not in dj]
+        if len(sa) >= 3 and len(bez) >= 3:
+            vs, vb = sum(r[s] for r in sa) / len(sa), sum(r[s] for r in bez) / len(bez)
+            ms, mb = sum(r['min'] for r in sa) / len(sa), sum(r['min'] for r in bez) / len(bez)
+            if abs(vs - vb) >= max(1.0 if s == 'P' else 0.6, 0.2 * max(vb, 1)):
+                manje = vs < vb
+                T.append(dict(p=1, d=-1 if manje else 1,
+                              t=f"Vraća se {j['ime']}, koji je propustio poslednje {'tri' if j['odsutan'] == 3 else j['odsutan']} {utak(j['odsutan'])}. Ove sezone, kad je {prezime(j['ime'])} igrao, "
+                                f"{prezime(i['ime'])} je imao oko {round(ms)} minuta i {zr(round(vs, 1))} {imenica(round(vs), s)}; bez njega oko {round(mb)} minuta i {zr(round(vb, 1))}.",
+                              kr=f"vraća se {prezime(j['ime'])}, pa {'manje' if manje else 'više'} prostora"))
+                split_dodat = True
     vraca = [j for j in moja['igraci'] if j['k'] != i['k'] and j.get('izvestaj') == 'igra' and j['odsutan'] >= 1 and j['pos'] == poz and j['min'] >= 12]
-    if vraca and not pv:
+    if vraca and not pv and not split_dodat:
         T.append(dict(p=3, d=-1, t=f"Na raspolaganju je ponovo i {spisak([j['ime'] for j in vraca[:2]])}, pa minuti na njegovoj poziciji mogu da budu podeljeni.",
                       kr='minuti na njegovoj poziciji mogu da budu podeljeni'))
     # 6) raspored: domaća utakmica pre dva-tri dana sa velikom minutažom

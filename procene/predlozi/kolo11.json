@@ -1080,9 +1080,10 @@
     7
    ],
    "rang_dan": 1,
-   "upisano": "13.11.2026. 12:12",
+   "upisano": "13.11.2026. 12:49",
    "prvi_put": "13.11.2026. 12:12",
    "promena": "novo",
+   "ranije": null,
    "promena_u": "13.11.2026. 12:12",
    "zatv": 1.85,
    "zatv_fer": 1.992
@@ -1182,7 +1183,7 @@
     7
    ],
    "rang_dan": 2,
-   "upisano": "13.11.2026. 12:12",
+   "upisano": "13.11.2026. 12:49",
    "prvi_put": "13.11.2026. 12:11",
    "zatv": 1.99,
    "zatv_fer": 2.082
@@ -1302,7 +1303,9 @@
    "pos": "F",
    "of": 0.978,
    "analiza": [
-    "Granica od 11,5 je viša od onoga što realno očekujemo, a to je osam do devet poena: češće ostaje ispod nego preko ove granice."
+    "Granica od 11,5 je viša od onoga što realno očekujemo, a to je osam do devet poena, iz ovih razloga:",
+    "Vraća se Pj Dozier, koji je propustio poslednje tri utakmice. Ove sezone, kad je Dozier igrao, Malcolm je imao oko 23 minuta i 7,7 poena; bez njega oko 30 minuta i 14,8.",
+    "Ove sezone daje 10 do 11 poena po utakmici; ispod 11,5 je ostao u 5 od 10 utakmica."
    ],
    "iz_kand": false,
    "mu_m": 10.16,
@@ -1319,9 +1322,10 @@
     7
    ],
    "rang_dan": 3,
-   "upisano": "13.11.2026. 12:12",
+   "upisano": "13.11.2026. 12:49",
    "prvi_put": "13.11.2026. 12:12",
    "promena": "novo",
+   "ranije": null,
    "promena_u": "13.11.2026. 12:12",
    "zatv": 1.92,
    "zatv_fer": 1.747
@@ -1437,7 +1441,7 @@
     7
    ],
    "rang_dan": 4,
-   "upisano": "13.11.2026. 12:12",
+   "upisano": "13.11.2026. 12:49",
    "prvi_put": "13.11.2026. 12:11",
    "zatv": 1.68,
    "zatv_fer": 1.495
@@ -1565,7 +1569,7 @@
     7
    ],
    "rang_dan": 5,
-   "upisano": "13.11.2026. 12:12",
+   "upisano": "13.11.2026. 12:49",
    "prvi_put": "13.11.2026. 12:11",
    "zatv": 2.01,
    "zatv_fer": 1.822
@@ -1693,13 +1697,13 @@
     7
    ],
    "rang_dan": 6,
-   "upisano": "13.11.2026. 12:12",
+   "upisano": "13.11.2026. 12:49",
    "prvi_put": "13.11.2026. 12:11",
    "zatv": 1.92,
    "zatv_fer": 1.734
   }
  ],
- "osvezeno": "13.11.2026. 12:12",
+ "osvezeno": "13.11.2026. 12:49",
  "utakmice": [
   {
    "g": 102,
@@ -10773,6 +10777,7 @@
      "U poslednje tri utakmice: 3, 11 i 10 poena, manje nego inače."
     ],
     "protiv": [
+     "Vraća se Pj Dozier, koji je propustio poslednje tri utakmice. Ove sezone, kad je Dozier igrao, Saric je imao oko 26 minuta i 12,7 poena; bez njega oko 27 minuta i 9,5.",
      "Kod kuće postiže više poena nego u gostima (oko 13 poena naspram devet do deset poena), a sada igra kod kuće."
     ]
    },
@@ -10844,6 +10849,7 @@
      "Kod kuće deli više asistencija nego u gostima (tri do četiri asistencije naspram oko jedne asistencije), a sada igra kod kuće."
     ],
     "protiv": [
+     "Vraća se Pj Dozier, koji je propustio poslednje tri utakmice. Ove sezone, kad je Dozier igrao, Saric je imao oko 26 minuta i 1,5 asistencije; bez njega oko 27 minuta i 3.",
      "Nije glavni organizator; loptu kod Efesa uglavnom vode Payne i Strazel."
     ]
    },
@@ -10875,7 +10881,9 @@
     "knjiga": 4,
     "pred": "u",
     "za": [
-     "Granica od 11,5 je viša od onoga što realno očekujemo, a to je osam do devet poena: češće ostaje ispod nego preko ove granice."
+     "Granica od 11,5 je viša od onoga što realno očekujemo, a to je osam do devet poena, iz ovih razloga:",
+     "Vraća se Pj Dozier, koji je propustio poslednje tri utakmice. Ove sezone, kad je Dozier igrao, Malcolm je imao oko 23 minuta i 7,7 poena; bez njega oko 30 minuta i 14,8.",
+     "Ove sezone daje 10 do 11 poena po utakmici; ispod 11,5 je ostao u 5 od 10 utakmica."
     ],
     "protiv": [
      "U poslednjim utakmicama igra više nego ranije (26, 31 i 32 minuta).",
@@ -10910,6 +10918,7 @@
     "knjiga": 4,
     "pred": null,
     "za": [
+     "Vraća se Pj Dozier, koji je propustio poslednje tri utakmice. Ove sezone, kad je Dozier igrao, Malcolm je imao oko 23 minuta i 3,2 skoka; bez njega oko 30 minuta i 5,8.",
      "Glavni skakač Efesa je Saric, pa za njega ostaje manje odbijenih lopti."
     ],
     "protiv": [
@@ -11020,10 +11029,10 @@
     "pred": null,
     "za": [
      "Nije glavni organizator; loptu kod Efesa uglavnom vode Payne i Strazel.",
-     "Na raspolaganju je ponovo i Pj Dozier, pa minuti na njegovoj poziciji mogu da budu podeljeni.",
      "Kod kuće deli manje asistencija nego u gostima (oko dve asistencije naspram oko tri asistencije), a sada igra kod kuće."
     ],
     "protiv": [
+     "Vraća se Pj Dozier, koji je propustio poslednje tri utakmice. Ove sezone, kad je Dozier igrao, Loyd je imao oko 23 minuta i 2,7 asistencije; bez njega oko 27 minuta i 2.",
      "Ove sezone daje dve do tri asistencije po utakmici i granicu od 2,5 prebacio je u 6 od 10 utakmica."
     ]
    },
@@ -11056,10 +11065,11 @@
     "pred": null,
     "za": [
      "Granica od 10,5 je viša od onoga što realno očekujemo, a to je oko devet poena, iz ovih razloga:",
-     "Na raspolaganju je ponovo i Pj Dozier, pa minuti na njegovoj poziciji mogu da budu podeljeni.",
-     "U poslednje tri utakmice: 12, 8 i 4 poena, manje nego inače."
+     "U poslednje tri utakmice: 12, 8 i 4 poena, manje nego inače.",
+     "Kod kuće postiže manje poena nego u gostima (oko devet poena naspram 12 do 13 poena), a sada igra kod kuće."
     ],
     "protiv": [
+     "Vraća se Pj Dozier, koji je propustio poslednje tri utakmice. Ove sezone, kad je Dozier igrao, Strazel je imao oko 24 minuta i 13,3 poena; bez njega oko 22 minuta i 7.",
      "Ove sezone daje oko 11 poena po utakmici i granicu od 10,5 prebacio je u 6 od 10 utakmica."
     ]
    },
@@ -11091,8 +11101,8 @@
     "knjiga": 4,
     "pred": null,
     "za": [
-     "Ove sezone daje oko četiri asistencije po utakmici; ispod 4,5 je ostao u 5 od 10 utakmica.",
-     "Na raspolaganju je ponovo i Pj Dozier, pa minuti na njegovoj poziciji mogu da budu podeljeni."
+     "Vraća se Pj Dozier, koji je propustio poslednje tri utakmice. Ove sezone, kad je Dozier igrao, Strazel je imao oko 24 minuta i 3,2 asistencije; bez njega oko 22 minuta i 5,5.",
+     "Ove sezone daje oko četiri asistencije po utakmici; ispod 4,5 je ostao u 5 od 10 utakmica."
     ],
     "protiv": [
      "U poslednje tri utakmice: 5, 6 i 5 asistencija, više nego inače.",
@@ -11127,7 +11137,7 @@
     "knjiga": 4,
     "pred": null,
     "za": [
-     "Granica od 15,5 je viša od onoga što realno očekujemo, a to je 14 do 15 poena: minuti na njegovoj poziciji mogu da budu podeljeni."
+     "Granica od 15,5 je viša od onoga što realno očekujemo, a to je 14 do 15 poena: vraća se Dozier, pa manje prostora."
     ],
     "protiv": [
      "Ove sezone daje 17 do 18 poena po utakmici i granicu od 15,5 prebacio je u 4 od 7 utakmica.",
@@ -11162,8 +11172,8 @@
     "knjiga": 4,
     "pred": null,
     "za": [
-     "Ove sezone daje četiri do pet asistencija po utakmici; ispod 4,5 je ostao u 5 od 7 utakmica.",
-     "Na raspolaganju je ponovo i Pj Dozier, pa minuti na njegovoj poziciji mogu da budu podeljeni."
+     "Vraća se Pj Dozier, koji je propustio poslednje tri utakmice. Ove sezone, kad je Dozier igrao, Payne je imao oko 18 minuta i 3,7 asistencije; bez njega oko 24 minuta i 5.",
+     "Ove sezone daje četiri do pet asistencija po utakmici; ispod 4,5 je ostao u 5 od 7 utakmica."
     ],
     "protiv": [
      "Prvi je organizator igre Efesa: lopta je najčešće u njegovim rukama.",
@@ -11199,8 +11209,8 @@
     "pred": null,
     "za": [
      "Granica od 9,5 je viša od onoga što realno očekujemo, a to je osam do devet poena, iz ovih razloga:",
-     "Ove sezone daje sedam do osam poena po utakmici; ispod 9,5 je ostao u 7 od 10 utakmica.",
-     "Nije među prvim opcijama u napadu; više šuteva dobijaju Payne i Saric."
+     "Vraća se Pj Dozier, koji je propustio poslednje tri utakmice. Ove sezone, kad je Dozier igrao, Fernando je imao oko 21 minuta i 5,7 poena; bez njega oko 18 minuta i 10,2.",
+     "Ove sezone daje sedam do osam poena po utakmici; ispod 9,5 je ostao u 7 od 10 utakmica."
     ],
     "protiv": [
      "U poslednje tri utakmice: 8, 15 i 14 poena, više nego inače.",
@@ -11271,8 +11281,8 @@
     "pred": null,
     "za": [
      "Granica od 5,5 je viša od onoga što realno očekujemo, a to je oko pet poena, iz ovih razloga:",
-     "Ove sezone daje oko šest poena po utakmici; ispod 5,5 je ostao u 5 od 9 utakmica.",
-     "Nije među prvim opcijama u napadu; više šuteva dobijaju Payne i Saric."
+     "Vraća se Pj Dozier, koji je propustio poslednje tri utakmice. Ove sezone, kad je Dozier igrao, Yusta je imao oko 11 minuta i 3,4 poena; bez njega oko 15 minuta i 9.",
+     "Ove sezone daje oko šest poena po utakmici; ispod 5,5 je ostao u 5 od 9 utakmica."
     ],
     "protiv": [
      "U poslednje tri utakmice: 15, 6 i 2 poena, više nego inače."
