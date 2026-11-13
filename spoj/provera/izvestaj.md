@@ -1,46 +1,46 @@
 # Spoj minus-modela i modela procena: provera
 
-Granica sa ishodom: 3372 (admiral, maxbet, mozzart, soccerbet), kola 4-11. Čist test (posle podešavanja minus-modela): kola 8-11. Rang se računa unutar dana.
+Granica sa ishodom: 4045 (admiral, maxbet, mozzart, soccerbet), kola 4-11. Čist test (posle podešavanja minus-modela): kola 8-11. Rang se računa unutar dana.
 
 ## Admiral, kola 8-11: ISPOD
 
 | izbor | granica | prošlo | prosečna kvota | povraćaj na ulog |
 |---|---|---|---|---|
-| uvek ispod | 942 | 52.7% | 1.92 | +0.4% |
-| samo minus-model, najjačih 30% dana | 286 | 53.8% | 1.94 | +3.5% |
-| samo procene, najjačih 30% dana | 286 | 57.3% | 1.97 | +12.7% |
-| **oba se slažu (oba u najjačih 30%)** | 126 | 61.9% | 1.98 | +21.9% |
-| minus da, procene ne | 160 | 47.5% | 1.90 | -11.0% |
-| procene da, minus ne | 160 | 53.8% | 1.95 | +5.5% |
+| uvek ispod | 1103 | 53.1% | 1.92 | +1.2% |
+| samo minus-model, najjačih 30% dana | 335 | 55.2% | 1.93 | +5.9% |
+| samo procene, najjačih 30% dana | 335 | 58.2% | 1.96 | +14.0% |
+| **oba se slažu (oba u najjačih 30%)** | 146 | 63.0% | 1.98 | +23.6% |
+| minus da, procene ne | 189 | 49.2% | 1.90 | -7.8% |
+| procene da, minus ne | 189 | 54.5% | 1.95 | +6.6% |
 
 ## Admiral, kola 8-11: PREKO
 
 | izbor | granica | prošlo | prosečna kvota | povraćaj na ulog |
 |---|---|---|---|---|
-| uvek preko | 942 | 47.3% | 1.88 | -11.8% |
-| minus-model okrenut, najjačih 30% ka preko | 279 | 46.2% | 1.90 | -12.2% |
-| procene, najjačih 30% ka preko | 279 | 49.8% | 1.92 | -6.2% |
-| oba se slažu za preko | 107 | 46.7% | 1.94 | -9.9% |
+| uvek preko | 1103 | 46.9% | 1.88 | -12.7% |
+| minus-model okrenut, najjačih 30% ka preko | 327 | 47.7% | 1.90 | -9.6% |
+| procene, najjačih 30% ka preko | 327 | 48.6% | 1.92 | -8.2% |
+| oba se slažu za preko | 125 | 46.4% | 1.94 | -10.3% |
 
 ## Sve kladionice, kola 8-11: ISPOD
 
 | izbor | granica | prošlo | prosečna kvota | povraćaj na ulog |
 |---|---|---|---|---|
-| uvek ispod | 2070 | 53.4% | 1.92 | +1.4% |
-| samo minus-model, najjačih 30% dana | 626 | 57.7% | 1.93 | +10.4% |
-| samo procene, najjačih 30% dana | 626 | 58.5% | 1.97 | +15.0% |
-| **oba se slažu (oba u najjačih 30%)** | 276 | 66.3% | 1.98 | +29.8% |
-| minus da, procene ne | 350 | 50.9% | 1.89 | -4.9% |
-| procene da, minus ne | 350 | 52.3% | 1.96 | +3.3% |
+| uvek ispod | 2743 | 54.2% | 1.92 | +2.9% |
+| samo minus-model, najjačih 30% dana | 828 | 59.3% | 1.92 | +12.9% |
+| samo procene, najjačih 30% dana | 828 | 59.5% | 1.96 | +16.1% |
+| **oba se slažu (oba u najjačih 30%)** | 351 | 65.2% | 1.96 | +26.8% |
+| minus da, procene ne | 477 | 54.9% | 1.89 | +2.7% |
+| procene da, minus ne | 477 | 55.3% | 1.95 | +8.3% |
 
 ## Sve kladionice, kola 8-11: PREKO
 
 | izbor | granica | prošlo | prosečna kvota | povraćaj na ulog |
 |---|---|---|---|---|
-| uvek preko | 2070 | 46.6% | 1.88 | -13.6% |
-| minus-model okrenut, najjačih 30% ka preko | 619 | 46.5% | 1.90 | -12.0% |
-| procene, najjačih 30% ka preko | 619 | 51.4% | 1.92 | -3.4% |
-| oba se slažu za preko | 253 | 47.4% | 1.94 | -8.8% |
+| uvek preko | 2743 | 45.8% | 1.88 | -15.2% |
+| minus-model okrenut, najjačih 30% ka preko | 820 | 47.7% | 1.89 | -10.1% |
+| procene, najjačih 30% ka preko | 820 | 48.5% | 1.92 | -8.4% |
+| oba se slažu za preko | 333 | 45.9% | 1.94 | -11.6% |
 
 ## Minusi (Admiral, kvota ispod ≥ 1,60), kola 5-7: najboljih 25% dana
 
@@ -56,11 +56,11 @@ Granica sa ishodom: 3372 (admiral, maxbet, mozzart, soccerbet), kola 4-11. Čist
 
 | izbor | granica | prošlo | prosečna kvota | povraćaj na ulog |
 |---|---|---|---|---|
-| sve | 889 | 52.0% | 1.95 | +0.6% |
-| ranije: po verovatnoći (tržište + 0,15·minus) | 223 | 54.3% | 1.77 | -3.9% |
-| ranije, po vrednosti (verovatnoća × kvota) | 223 | 52.9% | 1.97 | +4.2% |
-| novo: + 0,30·procene, po verovatnoći | 223 | 54.3% | 1.82 | -1.1% |
-| **novo: + 0,30·procene, po vrednosti** | 223 | 57.4% | 2.01 | +15.1% |
+| sve | 1041 | 52.4% | 1.94 | +1.3% |
+| ranije: po verovatnoći (tržište + 0,15·minus) | 261 | 56.3% | 1.77 | -0.4% |
+| ranije, po vrednosti (verovatnoća × kvota) | 261 | 54.0% | 1.98 | +6.5% |
+| novo: + 0,30·procene, po verovatnoći | 261 | 56.3% | 1.82 | +2.4% |
+| **novo: + 0,30·procene, po vrednosti** | 261 | 56.7% | 2.01 | +13.4% |
 
 ## Procene (sajt): MINUS kandidati po pravilu (prednost ≥ 6%, ≥ 54%), kola 5-7
 
@@ -74,7 +74,7 @@ Granica sa ishodom: 3372 (admiral, maxbet, mozzart, soccerbet), kola 4-11. Čist
 
 | izbor | granica | prošlo | prosečna kvota | povraćaj na ulog |
 |---|---|---|---|---|
-| svi kandidati | 155 | 61.3% | 1.88 | +15.3% |
-| **minus-model se slaže (msig ≥ 0.35)** | 98 | 64.3% | 1.87 | +20.0% |
-| izbačeni (minus-model se ne slaže) | 57 | 56.1% | 1.89 | +7.3% |
+| svi kandidati | 180 | 62.2% | 1.88 | +16.8% |
+| **minus-model se slaže (msig ≥ 0.35)** | 115 | 64.3% | 1.87 | +19.8% |
+| izbačeni (minus-model se ne slaže) | 65 | 58.5% | 1.89 | +11.6% |
 

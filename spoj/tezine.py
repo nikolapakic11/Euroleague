@@ -8,9 +8,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import signali
 from signali import lgt, osobine
 F = [x for x in json.load(open(os.path.join(signali.KOREN, 'spoj', 'analiza', 'F.json'))) if x['izvor'] == 'admiral']
-FE = ['pu', 'ms', 'mm', 'zl', 'pmid']
+FE = ['pu', 'ms', 'mm', 'zl', 'pmid', 'mt', 'hot', 'tempo', 'minsd']
 for x in F:
-    x['X'] = osobine(x['pm'], x['tr'], x['msig'], x['missmin'], x['zline'], x['s'], x['l']); x['Lq'] = lgt(1 - x['tr']); x['y'] = 1 - x['preko']
+    x['X'] = osobine(x['pm'], x['tr'], x['msig'], x['missmin'], x['zline'], x['s'], x['l'], x); x['Lq'] = lgt(1 - x['tr']); x['y'] = 1 - x['preko']
 sg = lambda z: 1 / (1 + math.exp(-z))
 
 

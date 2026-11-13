@@ -70,14 +70,15 @@ for x in pool:
         if tc not in IZ: IZ[tc]=signali.izostanci(SIG,tc,d0,POV)
         miss=round(sum(v for kk,v in IZ[tc].items() if kk!=k),1); van_tim=sorted(IZ[tc],key=lambda kk:-IZ[tc][kk])
         zl=signali.zline(SIG,k,d0,s,x['l']); rg=signali.rang_u_timu(SIG,k,tc,d0,s)
-        pr=signali.spoj2(fair,pm,msig,miss,zl,s,x['l'])
+        ro=RAN.get((x['p'],s)); spu=bool(ro and x['l']<ro['l'])     # granica spuštena od ranijeg snimka: ispod prolazi češće
+        pr=signali.spoj2(fair,pm,msig,miss,zl,s,x['l'],signali.dodatne(SIG,k,tc,opp,d0,s),spu)
         if miss>=signali.IZOSTANCI_PRAG and not (s=='P' and rg and 3<=rg<=5): filt='izostanci'
         ro=RAN.get((x['p'],s))
         if ro:
             f0=(1/ro['o'])/((1/ro['u'])+(1/ro['o']))
             if x['l']>ro['l'] or (x['l']==ro['l'] and (1-fair)-f0>=0.03): filt='granica podignuta'
     sel.append({'c':o['c'],'p':x['p'],'t':o['t'],'s':s,'l':x['l'],'u':o['u'],'o':o['o'],'pr':round(pr,4),'pr1':round(pr1,4),'pr_staro':round(prc,4),'pm':round(pm,4) if pm is not None else None,'pr_app':pa,'fair':round(fair,4),
-                'msig':msig,'pu':round(lg(1-pm)-lg(fair),3) if pm is not None else None,'miss':miss,'zl':round(zl,2) if zl is not None else None,'rang':rg,'filt':filt,'g':g,'time':o['time'],'cls':s,'role':x['role'],'star':x['star']})
+                'msig':msig,'pu':round(lg(1-pm)-lg(fair),3) if pm is not None else None,'miss':miss,'zl':round(zl,2) if zl is not None else None,'rang':rg,'spustena':(spu if SIG and k else False),'filt':filt,'g':g,'time':o['time'],'cls':s,'role':x['role'],'star':x['star']})
 # nivo A: oba modela u najjačih 30% dana (rang unutar dana), bez filtera
 import collections
 byd=collections.defaultdict(list)

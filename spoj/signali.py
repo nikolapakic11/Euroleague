@@ -117,13 +117,52 @@ def zline(S, k, dan, s, l):
     return (l - avg) / max(sd, 0.8)
 
 
-def osobine(pm_preko, tr_preko, msig, missmin, zl, s, l):
+# Dodatni signali (od 13.11.2026; spoj/analiza/IZVESTAJ_2026-11-13.md): trend minuta, forma, tempo utakmice, kolebanje
+# minuta. Sva četiri imaju isti smer u obe polovine sezone; težine su male i uče se sa ostalima (spoj/tezine.py).
+_TEMPO = {}
+
+
+def _tempo_tima(S, tim, dan):
+    kljuc = (id(S), tim, dan)
+    if kljuc not in _TEMPO:
+        po_danu = _c.defaultdict(lambda: [0, None])
+        for r in S.B.rows:
+            if r['team'] == tim and r['dan'] < dan:
+                po_danu[r['dan']][0] += r['P']; po_danu[r['dan']][1] = r['opp']
+        v = []
+        for d, (pts, opp) in po_danu.items():
+            v.append(pts + sum(r['P'] for r in S.B.rows if r['team'] == opp and r['dan'] == d))
+        _TEMPO[kljuc] = sum(v) / len(v) if v else 165.0
+    return _TEMPO[kljuc]
+
+
+def dodatne(S, k, tim, prot, dan, s):
+    """Dodatni signali za igrača pre dana: mintrend (minuti u poslednje 3 prema proseku), hot (stavka u poslednje 3
+    prema proseku, u rasipanjima), tempo (prosečan zbir poena u utakmicama oba tima), minsd (kolebanje minuta)."""
+    g = [r for r in S.B.byk.get(k, []) if r['dan'] < dan and r['min'] > 0]
+    out = dict(mintrend=None, hot=None, minsd=None,
+               tempo=(_tempo_tima(S, tim, dan) + _tempo_tima(S, prot, dan)) / 2 if tim and prot else None)
+    if len(g) < 2:
+        return out
+    v = [r[s] for r in g]; avg = sum(v) / len(v); sd = _st.pstdev(v) if len(v) > 2 else max(1, avg ** .5)
+    mn = [r['min'] for r in g]; l3 = g[-3:]
+    out['mintrend'] = sum(r['min'] for r in l3) / len(l3) - sum(mn) / len(mn)
+    out['hot'] = (sum(r[s] for r in l3) / len(l3) - avg) / max(sd, 0.8)
+    out['minsd'] = _st.pstdev(mn) if len(mn) > 2 else 5.0
+    return out
+
+
+def osobine(pm_preko, tr_preko, msig, missmin, zl, s, l, dod=None):
     """Osobine za naučeni spoj (isto u učenju i u primeni). Nedostajuća vrednost -> None (uzima se prosek)."""
+    d = dod or {}
+    kl = lambda v, a, b: max(a, min(b, v)) if v is not None else None
     return dict(pu=(lgt(1 - pm_preko) - lgt(1 - tr_preko)) if pm_preko is not None else None,
                 ms=msig,
                 mm=(min(missmin, 60) / 20.0) if missmin is not None else None,
                 zl=max(-2.0, min(2.0, zl)) if zl is not None else None,
-                pmid=1.0 if (s == 'P' and 6.5 < l <= 10.5) else 0.0)
+                pmid=1.0 if (s == 'P' and 6.5 < l <= 10.5) else 0.0,
+                mt=kl(d.get('mintrend'), -8, 8), hot=kl(d.get('hot'), -2, 2), tempo=kl(d.get('tempo'), 150, 190),
+                minsd=kl(d.get('minsd'), 0, 10))
 
 
 _TEZ = None
@@ -136,11 +175,14 @@ def tezine():
     return _TEZ
 
 
-def spoj2(fer_ispod, pm_preko, msig, missmin, zl, s, l):
+SPUSTENA_BONUS = 0.15        # granica spuštena u toku dana: ispod prolazi češće (61%, n=56, sve kladionice); dodatak u logitu
+
+
+def spoj2(fer_ispod, pm_preko, msig, missmin, zl, s, l, dod=None, spustena=False):
     """Verovatnoća ISPOD po naučenim težinama: tržište + slobodni član (poslednja 4 kola) + oba modela + novi parametri."""
     T = tezine()
-    X = osobine(pm_preko, 1 - fer_ispod, msig, missmin, zl, s, l)
-    z = lgt(fer_ispod) + T['b']
+    X = osobine(pm_preko, 1 - fer_ispod, msig, missmin, zl, s, l, dod)
+    z = lgt(fer_ispod) + T['b'] + (SPUSTENA_BONUS if spustena else 0)
     for f in T['osobine']:
         x = X.get(f)
         if x is None:

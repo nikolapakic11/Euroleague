@@ -15,7 +15,7 @@ import argparse, collections, datetime as dt, glob, json, os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 import model
 import obrazlozenje as OB
-from model import Baza
+from model import Baza, verovatnoca_preko, percentili, raspodela
 from zajedno import PROCENE, BG, ucitaj, sacuvaj
 import spajanje
 
@@ -40,6 +40,8 @@ def broj_tacaka(pp):
 
 def naginje(x):
     """Strana na koju naginje igrač u stavci, na najčešćoj glavnoj granici: dict(strana, l, pp, knjige) ili None."""
+    if x.get('ng_spoj'):                        # objavljen predlog izabran po spoju: prikaz igrača prati predlog
+        return dict(x['ng_spoj'])
     L = [z for z in x['linije'] if z.get('m', 1)]
     if not L:
         return None
@@ -80,42 +82,78 @@ def rucni_pred(x, strana, l=None):
                 opseg=[], soft=None, rucno=True)
 
 
-def izaberi(tabla, K=None):
+def podoban(i):
+    """Isti uslov kao u tabli: igra, nije upitan, nije izostao iz poslednjih utakmica (osim ako ga izveštaj potvrđuje),
+    ima bar 3 utakmice (novajlija sa prošlom sezonom ili ručno zadatim minutima: 2)."""
+    potvrdjen = i.get('izvestaj') == 'igra'
+    return not (i['ne_igra'] or i.get('upitan') or (i['odsutan'] > 0 and not potvrdjen)
+                or (i['n'] < 3 and not ((i.get('novajlija') or i.get('rucno_min')) and i['n'] >= 2)))
+
+
+def uskladi(s, mu0, var0, l, cilj):
+    """Očekivanje (sredina raspodele) i raspon koji odgovaraju verovatnoći za PREKO = cilj na granici l; isti postupak
+    kao u tabli (oblik raspodele modela, pomeren). Vraća (mu, q)."""
+    vr = lambda m: max(var0 * m / mu0 if mu0 > 0 else var0, m * 1.0001)
+    lo, hi = 0.05, max(3 * l + 3, mu0 * 3 + 3)
+    for _ in range(40):
+        md = (lo + hi) / 2
+        if verovatnoca_preko(s, md, vr(md), l) < cilj:
+            lo = md
+        else:
+            hi = md
+    sr = (lo + hi) / 2
+    var_o = round(vr(sr), 2)
+    pmf = raspodela(sr, var_o)
+    F, j = 0.0, 0
+    while j < len(pmf) and F + pmf[j] < 0.5:
+        F += pmf[j]; j += 1
+    med = j - 0.5 + ((0.5 - F) / pmf[j] if j < len(pmf) and pmf[j] > 0 else 0.5)
+    return round(med, 2), percentili(sr, var_o)
+
+
+def izaberi(tabla, K=None, sve=False):
     """Predlozi su već izabrani u tabli (tabla.py, pravilo spajanje.izbor_utakmice); ovde se samo prepisuju, uz analizu.
     Ručno dodati (iskljuceni.json, "dodati") ulaze i kad ih tabla nije izabrala (rucni_pred)."""
     out = []
     dod = iskljuceni().get('dodati', {})
     for u in tabla['utakmice']:
-        if u['pocela']:
+        if u['pocela'] and not sve:
             continue
         rucni = {(x['k'], x['s']): x for x in dod.get(u['dan'], [])}
         for st in u['strane']:
             tudja = next(x for x in u['strane'] if x is not st)
             for i in st['igraci']:
                 for s in 'PSA':
-                    pr = i['s'][s].get('pred')
+                    pr0 = i['s'][s].get('pred')
                     x_r = rucni.get((i['k'], s))
-                    if x_r and (not pr or pr['strana'] != x_r.get('strana', pr['strana']) or (x_r.get('l') is not None and pr['l'] != x_r['l'])):
-                        pr = rucni_pred(i['s'][s], x_r.get('strana', 'u'), x_r.get('l')) or pr
-                    iz_k = False
-                    if not pr and s in 'PA' and i['s'][s].get('linije') and not i.get('ne_igra'):
-                        pr = rucni_pred(i['s'][s], 'o')        # kandidat samo za PLUS kad timu fali rotacija (PLUS_IZ_*)
-                        if pr:
-                            pr['rucno'] = False
-                            iz_k = True
-                    if not pr:
-                        continue
-                    z = next((z for z in i['s'][s]['linije'] if z['kl'] == pr['kl'] and z['l'] == pr['l']), {})
-                    an = OB.analiza(i, s, pr, u, st, tudja, K, broj_tacaka(pr['pp'])) if K else []
-                    out.append(dict(g=u['g'], dan=u['dan'], vreme=u['vreme'], k=i['k'], ime=i['ime'], tim=st['tim'], prot=st['prot'],
-                                    s=s, strana=pr['strana'], l=pr['l'], kl=pr['kl'], kvota=pr['kvota'], pp=pr['pp'], ev=pr['ev'],
-                                    nivo=pr['nivo'], rang=pr['rang'], fer=pr.get('fer'), ostale=pr.get('ostale', []), knjige=pr.get('knjige', []), soft=pr.get('soft'),
-                                    opseg=pr.get('opseg', []), q=i['s'][s]['q'], mu=i['s'][s]['mu'], min=i['min'],
-                                    pm=z.get('pm'), tr=z.get('tr'), l0=z.get('l0'), vatra=i['s'][s].get('vatra'),
-                                    pos=i['pos'], of=i['s'][s]['of'], analiza=an, iz_kand=iz_k))
-                    if iz_k and out[-1]['pm'] is None:
-                        Z = [z for z in i['s'][s]['linije'] if z.get('m', 1) and z['l'] == pr['l']]
-                        out[-1]['pm'] = round(sum(z['pm'] for z in Z) / len(Z), 4) if Z else None
+                    if x_r and (not pr0 or pr0['strana'] != x_r.get('strana', pr0['strana']) or (x_r.get('l') is not None and pr0['l'] != x_r['l'])):
+                        pr0 = rucni_pred(i['s'][s], x_r.get('strana', 'u'), x_r.get('l')) or pr0
+                    kand = [(pr0, False)] if pr0 else []
+                    # od 13.11.2026: izbor za sajt ide po naučenom spoju (izbor_dana), pa su kandidati obe strane svake
+                    # stavke na najčešćoj glavnoj granici (skokovi samo ispod); iz_kand = tabla ga nije izabrala
+                    if i['s'][s].get('linije') and podoban(i):
+                        for strana in ('u', 'o'):
+                            if (strana == 'o' and s == 'S') or (pr0 and pr0['strana'] == strana):
+                                continue
+                            gk = rucni_pred(i['s'][s], strana)
+                            if gk:
+                                gk['rucno'] = False
+                                kand.append((gk, True))
+                    for pr, iz_k in kand:
+                        z = next((z for z in i['s'][s]['linije'] if z['kl'] == pr['kl'] and z['l'] == pr['l']), {})
+                        an = OB.analiza(i, s, pr, u, st, tudja, K, broj_tacaka(pr['pp'])) if K and not iz_k else []
+                        out.append(dict(g=u['g'], dan=u['dan'], vreme=u['vreme'], k=i['k'], ime=i['ime'], tim=st['tim'], prot=st['prot'],
+                                        s=s, strana=pr['strana'], l=pr['l'], kl=pr['kl'], kvota=pr['kvota'], pp=pr['pp'], ev=pr['ev'],
+                                        nivo=pr['nivo'], rang=pr['rang'], fer=pr.get('fer'), ostale=pr.get('ostale', []), knjige=pr.get('knjige', []), soft=pr.get('soft'),
+                                        opseg=pr.get('opseg', []), q=i['s'][s]['q'], mu=i['s'][s]['mu'], min=i['min'],
+                                        pm=z.get('pm'), tr=z.get('tr'), l0=z.get('l0'), vatra=i['s'][s].get('vatra'),
+                                        pos=i['pos'], of=i['s'][s]['of'], analiza=an, iz_kand=iz_k,
+                                        mu_m=i['s'][s].get('mu_m', i['s'][s]['mu']), var=i['s'][s].get('var'),
+                                        podoban=podoban(i), novi_saigrac=bool(i.get('novi_saigrac'))))
+                        Z = [zz for zz in i['s'][s]['linije'] if zz.get('m', 1) and zz['l'] == pr['l'] and zz.get('pm') is not None]
+                        if Z:                              # model procena i tržište: prosek kladionica na toj granici (verovatnoća PREKO)
+                            out[-1]['pm'] = round(sum(zz['pm'] for zz in Z) / len(Z), 4)
+                            out[-1]['fer_o'] = round(sum(zz.get('trk', zz['tr']) for zz in Z) / len(Z), 4)
     return out
 
 
@@ -140,11 +178,21 @@ DAN_ZADRZI = 0.02                              # već objavljen predlog ostaje d
 # (kola 5-7 i 8-10 posebno), a oni sa kojima se slaže 63-64% i 62-63%. Minus-model posebno ispravlja igrače bez prošle
 # sezone u Evroligi, gde model procena greši. PLUS bez promene (minus-model okrenut za plus nema vrednost).
 DAN_MINUS_SLAGANJE = True
-# PLUS kad timu fali rotacija (od 12.11.2026, spoj/analiza/IZVESTAJ_plus_izostanci.md): poeni ili asistencije PLUS
-# ulaze bez praga i bez forme kad timu fali bar PLUS_IZ_MIN minuta rotacije (izveštaj o povredama + ko nije igrao) i
-# model procena (pm, bez mešanja sa tržištem) vidi preko više od tržišta. Kola 6-10: 53 granice, preko 73,6%,
-# tržište 50,8%; uz pm >= 50%: 45 granica, 82%; bez izostanaka isto pravilo 48,7%. Skokovi ne. Najviše PLUS_IZ_MAX dnevno.
-PLUS_IZ_MIN, PLUS_IZ_MAX = 40, 2
+# IZBOR ZA SAJT PO NAUČENOM SPOJU (od 13.11.2026, spoj/analiza/IZVESTAJ_2026-11-13.md). Do tada: MINUS po prednosti
+# modela procena nad tržištem (uz slaganje minus-modela), PLUS po prednosti modela procena. Provera na kolima 4–11
+# (17 dana, procena uvek bez tog kola): staro pravilo MINUS 62%, PLUS 47% (na sajtu 5/13); novo MINUS 4 dnevno 83%
+# (strogo unapred, kola 8+: 71–75%), PLUS najbolji dnevno 13/17. Realno očekivanje: MINUS 65–70%, PLUS oko 60%.
+#  MINUS: verovatnoća po spoju (signali.spoj2: tržište + oba modela + izostanci + granica prema proseku + trend minuta,
+#         forma, tempo, kolebanje minuta), poređano po VEROVATNOĆI (ne po prednosti: po prednosti idu više kvote i 60%,
+#         po verovatnoći 68%); uslovi: kvota ≥ 1,60, minus-model se slaže, timu ne fali 35+ minuta rotacije; najviše 4
+#         dnevno, 2 po utakmici, 2 po timu, 1 na skokove (skokovi ispod u vrhu: 64% prema 77% asistencije i 66% poeni).
+#  PLUS:  samo poeni i asistencije (skokovi preko ne prolaze), verovatnoća za preko po spoju ≥ 55%; jedan dnevno,
+#         drugi samo ako ima ≥ 65%. Spoj za preko najviše gura: saigrači koji fale, granica iznad proseka igrača
+#         (kladionica je podigla jer mu raste uloga), minuti u padu u poslednje 3.
+SAJT_SPOJ = True
+SAJT_MINUS_N, SAJT_MINUS_PRAG, SAJT_MINUS_SKOKOVI, SAJT_PO_UT = 4, 0.58, 0, 2
+SAJT_PLUS_PRAG, SAJT_PLUS_DRUGI = 0.55, 0.65
+SAJT_KVOTA = 1.60
 _SIG = {}
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'spoj'))
 from minus_model import MinusModel, MSIG_PRAG
@@ -164,32 +212,112 @@ def minus_signal(B, p):
     return r['msig'] if r else None
 
 
-def plus_izostanci(P, van=lambda p: False):
-    """PLUS kandidati (poeni, asistencije) iz timova kojima fali bar PLUS_IZ_MIN minuta rotacije, gde model procena
-    vidi preko više od tržišta; poređani po razlici. Upisuje izostanci_tim i plus_iz u predlog."""
+def spoj_ocene(P, B):
+    """Svakom kandidatu upisuje ps (verovatnoća njegove strane po naučenom spoju), msig i izostanci_tim."""
     import signali
-    if 'S' not in _SIG:
-        _SIG['S'] = signali.Signali()
+    if _SIG.get('B') is not B:
+        _SIG.clear()
+        _SIG['B'] = B
+        _SIG['S'] = signali.Signali(B)
         try:
             pp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'podaci', 'povrede.json')
             _SIG['pov'] = {k: dict(v) for k, v in ucitaj(pp)['igraci'].items()}
         except Exception:
             _SIG['pov'] = {}
     S, pov = _SIG['S'], _SIG['pov']
-    out = []
     for p in P:
-        if p['strana'] != 'o' or p['s'] not in ('P', 'A') or van(p) or p.get('pm') is None or p.get('fer') is None:
+        p['ps'] = None
+        fo = p.get('fer_o')
+        if fo is None and p.get('fer') is not None:
+            fo = p['fer'] if p['strana'] == 'o' else 1 - p['fer']
+        if fo is None or not p.get('prot'):
             continue
+        fu = min(max(1 - fo, 0.02), 0.98)
+        r = S.minus(p['k'], p['dan'], p['tim'], p['prot'], p['s'], p['l'], fu)
+        p['msig'] = r['msig'] if r else None
         kljuc = (p['tim'], p['dan'])
         if kljuc not in _SIG:
             _SIG[kljuc] = signali.izostanci(S, p['tim'], p['dan'], pov)
-        iz = {k: m for k, m in _SIG[kljuc].items() if k != p['k']}
-        miss = sum(iz.values())
-        if miss >= PLUS_IZ_MIN and p['pm'] > p['fer'] and p['pm'] >= 0.5 and p['kvota'] >= 1.6:
-            p['plus_iz'] = True
-            p['izostanci_tim'] = round(miss)
-            out.append(p)
-    return sorted(out, key=lambda p: -(p['pm'] - p['fer']))
+        miss = sum(m for k, m in _SIG[kljuc].items() if k != p['k'])
+        spu = p.get('l0') is not None and p['l'] < p['l0']
+        pu = signali.spoj2(fu, p.get('pm'), p['msig'], miss, signali.zline(S, p['k'], p['dan'], p['s'], p['l']), p['s'], p['l'],
+                           signali.dodatne(S, p['k'], p['tim'], p['prot'], p['dan'], p['s']), spu)
+        p['ps'] = round(pu if p['strana'] == 'u' else 1 - pu, 4)
+        p['izostanci_tim'] = round(miss)
+
+
+def izbor_spoj(P, B, ranije, van, isk):
+    """Izbor dana po naučenom spoju (SAJT_*). P: kandidati oba smera; vraća izabrane sa pp = verovatnoća po spoju."""
+    import signali
+    ist = lambda p: (p['k'], p['s'], p['strana'], p['l'])
+    spoj_ocene(P, B)
+    K = [p for p in P if not van(p) and p.get('ps') is not None and p['kvota'] >= SAJT_KVOTA and p.get('podoban', True)]
+    oc = lambda p: p['ps'] + (DAN_ZADRZI if ist(p) in ranije else 0)
+    M = sorted([p for p in K if p['strana'] == 'u' and oc(p) >= SAJT_MINUS_PRAG], key=lambda p: -oc(p))
+    van_mm = [p for p in M if p.get('msig') is not None and p['msig'] < MSIG_PRAG]
+    if P:
+        IZBACENI_MM[P[0]['dan']] = [dict(k=p['k'], ime=p.get('ime'), tim=p['tim'], s=p['s'], l=p['l'], kvota=p['kvota'], kl=p.get('kl'),
+                                         pp=p['ps'], fer=p.get('fer'), msig=p['msig']) for p in van_mm[:15]]
+    M = [p for p in M if p not in van_mm and p.get('izostanci_tim', 0) < signali.IZOSTANCI_PRAG]
+    izab = []
+    for p in M:
+        if len(izab) >= SAJT_MINUS_N:
+            break
+        if (all(q['k'] != p['k'] for q in izab) and sum(q['g'] == p['g'] for q in izab) < SAJT_PO_UT
+                and sum(q['tim'] == p['tim'] for q in izab) < DAN_PO_TIMU
+                and (p['s'] != 'S' or sum(q['s'] == 'S' for q in izab) < SAJT_MINUS_SKOKOVI)):
+            izab.append(p)
+    O = sorted([p for p in K if p['strana'] == 'o' and p['s'] in 'PA' and oc(p) >= SAJT_PLUS_PRAG and not p.get('novi_saigrac')],
+               key=lambda p: -oc(p))
+    npl = 0
+    for p in O:
+        if npl >= 2 or (npl == 1 and p['ps'] < SAJT_PLUS_DRUGI):
+            break
+        if all(q['k'] != p['k'] for q in izab) and not any(q['strana'] == 'o' and q['tim'] == p['tim'] for q in izab):
+            izab.append(p)
+            npl += 1
+    for p in izab:
+        p['spoj'] = True
+        p['pp'] = round(p['ps'], 3)
+        p['nivo'] = spajanje.nivo(p['pp'])
+        p['ev'] = round(p['pp'] * p['kvota'] - 1, 3)
+        if p.get('var') and p.get('mu_m') is not None:      # prikazano očekivanje odgovara verovatnoći predloga
+            p['mu'], p['q'] = uskladi(p['s'], p['mu_m'], p['var'], p['l'], p['pp'] if p['strana'] == 'o' else 1 - p['pp'])
+    for x in isk.get('dodati', {}).get(P[0]['dan'] if P else '', []):     # ručno dodati (Nikola)
+        for p in P:
+            if (p['k'] == x['k'] and p['s'] == x['s'] and p['strana'] == x.get('strana', 'u')
+                    and (x.get('l') is None or p['l'] == x['l']) and p not in izab):
+                p['rucno'] = True
+                izab.append(p)
+                break
+    for p in izab:
+        p['forma'] = list(forma(B, p))
+    izab.sort(key=lambda p: -p['pp'])
+    for i, p in enumerate(izab, 1):
+        p['rang_dan'] = i
+    return izab
+
+
+def primeni_spoj(tabla, P):
+    """Objavljeni predlozi izabrani po spoju određuju prikaz tog igrača u tabli (strana, verovatnoća, očekivanje, raspon),
+    da stranica svuda govori isto. Menja tablu u memoriji."""
+    M = {(p['g'], p['k'], p['s']): p for p in P if p.get('spoj') and p.get('ishod') is None}
+    for u in tabla['utakmice']:
+        for st in u['strane']:
+            for i in st['igraci']:
+                for s in 'PSA':
+                    p = M.get((u['g'], i['k'], s))
+                    if not p:
+                        continue
+                    x = i['s'][s]
+                    Z = [z for z in x['linije'] if z.get('m', 1) and z['l'] == p['l']]
+                    x['mu'], x['q'] = p['mu'], p['q']
+                    x['ng_spoj'] = dict(strana=p['strana'], l=p['l'], pp=p['pp'], neodl=False,
+                                        pm=round(sum(z.get('pm', z['pc']) for z in Z) / len(Z), 3) if Z else p.get('pm'),
+                                        fer=round(sum(z.get('trk', z.get('tr', z['pc'])) for z in Z) / len(Z), 3) if Z else p.get('fer_o'))
+                    x['pred'] = dict(strana=p['strana'], pp=p['pp'], ps=p['pp'], ev=p['ev'], kvota=p['kvota'], fer=p.get('fer'), l=p['l'],
+                                     kl=p['kl'], nivo=p['nivo'], rang=p.get('rang'), ostale=p.get('ostale', []), knjige=p.get('knjige', []),
+                                     opseg=p.get('opseg', []), soft=p.get('soft'))
 
 
 def forma(B, p):
@@ -222,6 +350,8 @@ def izbor_dana(P, B=None, ranije=()):
     isk = iskljuceni()
     van = lambda p: any(x['k'] == p['k'] and x.get('s', p['s']) == p['s'] for x in isk.get(p['dan'], []) if isinstance(x, dict))
     P_rucno = list(P)                            # ručno dodati ulaze bez praga, forme i minus-modela (od 11.11.2026)
+    if SAJT_SPOJ and B is not None:
+        return izbor_spoj(P_rucno, B, ranije, van, isk)
     P = sorted([p for p in P if p.get('nivo') != 'slab' and not van(p) and not p.get('iz_kand')], key=lambda p: -ocena(p))
     if B is not None:
         for p in P_rucno:
@@ -254,13 +384,6 @@ def izbor_dana(P, B=None, ranije=()):
                 p['rucno'] = True
                 izab.append(p)
                 break
-    if B is not None and P_rucno:                 # PLUS kad timu fali rotacija (PLUS_IZ_*)
-        for p in plus_izostanci(P_rucno, van):
-            if sum(bool(q.get('plus_iz')) for q in izab) >= PLUS_IZ_MAX:
-                break
-            if p not in izab and all(q['k'] != p['k'] for q in izab) and sum(q['g'] == p['g'] for q in izab) < DAN_PO_UT \
-                    and sum(q['tim'] == p['tim'] for q in izab) < DAN_PO_TIMU:
-                izab.append(p)
     for p in P:                                   # dopuna do najmanjeg broja, najbolji preostali
         if len(izab) >= DAN_NAJMANJE:
             break
@@ -351,7 +474,9 @@ def igraci_kola(kolo):
     sad_bg = dt.datetime.now(dt.timezone.utc).astimezone(BG)
     ut, out = [], []
     pk = os.path.join(PROCENE, 'predlozi', f'kolo{kolo}.json')
-    objavljeni = {(p['k'], p['s'], p['dan']) for p in (ucitaj(pk).get('predlozi', []) if os.path.exists(pk) else [])}
+    obj_L = ucitaj(pk).get('predlozi', []) if os.path.exists(pk) else []
+    objavljeni = {(p['k'], p['s'], p['dan']) for p in obj_L}
+    primeni_spoj(t, obj_L)
     for u in t['utakmice']:
         # pre objave (12:00 na dan utakmice) nema procena: samo prosek, poslednje utakmice i granice kladionica
         skr = u['g'] in R and sad_bg < R[u['g']][0]
@@ -429,6 +554,14 @@ def main():
         B_dan = Baza()
         ranije = [(p['k'], p['s'], p['strana'], p['l']) for p in st['predlozi'] if p['g'] not in zamrznute]
         novi = [q for d, L in po_danu.items() for q in izbor_dana(L, B_dan, ranije)]
+        # predlozi po spoju: tabla u memoriji dobija isti prikaz (strana, očekivanje), pa se obrazloženje piše nad tim
+        idx = {(u['g'], i['k']): (u, st_i, i) for u in tabla['utakmice'] for st_i in u['strane'] for i in st_i['igraci']}
+        primeni_spoj(tabla, zadrzi + novi)
+        for p in novi:
+            if p.get('spoj') and (p['g'], p['k']) in idx:
+                u, st_i, i = idx[(p['g'], p['k'])]
+                tudja = next(x for x in u['strane'] if x is not st_i)
+                p['analiza'] = OB.analiza(i, p['s'], i['s'][p['s']]['pred'], u, st_i, tudja, K_ob, broj_tacaka(p['pp']))
         for d, L in IZBACENI_MM.items():         # dnevnik za proveru slaganja (spoj/provera.py)
             dput = os.path.join(PROCENE, '..', 'spoj', 'dnevnik', f'izbaceni_{d}.json')
             os.makedirs(os.path.dirname(dput), exist_ok=True)

@@ -44,12 +44,11 @@ def main():
                 for s in 'PSA':
                     x = i['s'][s]
                     igr[(u['g'], i['k'], s)] = (u, st, i, x)
-                    pr = x.get('pred')
-                    if pr:
-                        kand.append(dict(g=u['g'], dan=u['dan'], k=i['k'], ime=i['ime'], tim=st['tim'], prot=st['prot'], s=s, strana=pr['strana'],
-                                         l=pr['l'], kl=pr['kl'], kvota=pr['kvota'], pp=pr['pp'], nivo=pr['nivo'], fer=pr.get('fer')))
-    izab = PR.izbor_dana([dict(c) for c in kand], B)
-    print(f'\nPREDLOZI ({len(izab)}; pravilo: prednost ≥{PR.DAN_PREDNOST:.0%}, verovatnoća ≥{PR.DAN_PRAG:.0%}, najmanje {PR.DAN_NAJMANJE}, najviše {PR.DAN_MAX}, PLUS do {PR.DAN_PLUS})')
+    # od 13.11.2026: isti kandidati (obe strane) i isto pravilo po spoju kao predlozi.py
+    kand = [c for c in PR.izaberi(T, None, sve=True) if c['dan'] == a.dan]
+    izab = PR.izbor_dana(kand, B)
+    print(f'\nPREDLOZI ({len(izab)}; pravilo po spoju: MINUS do {PR.SAJT_MINUS_N} po verovatnoći (≥{PR.SAJT_MINUS_PRAG:.0%}, minus-model se slaže, bez timova sa izostancima), '
+          f'PLUS poeni/asistencije ≥{PR.SAJT_PLUS_PRAG:.0%}, drugi samo ≥{PR.SAJT_PLUS_DRUGI:.0%})')
     for p in izab:
         u, st, i, x = igr[(p['g'], p['k'], p['s'])]
         o = p['strana'] == 'o'
@@ -60,16 +59,21 @@ def main():
         if i.get('odsustvo'):
             dod.append('odsustvo ' + ', '.join(i['odsustvo']['ko']))
         print(f"  {p['pp']:.0%} (tržište {p['fer']:.0%}) {'PLUS ' if o else 'MINUS'} {p['ime']} ({p['tim']}–{st['prot']}) {SN[p['s']]} {'preko' if o else 'ispod'} {p['l']} @ {p['kvota']} {p['kl']}"
-              f"\n       očekivano {x['mu']} (raspon {x['q'][1]}–{x['q'][3]}), prosek {x['pros']}, posl. 5 {x['posl']}, min {i['min']}, forma {p['forma'][0]}/{p['forma'][1]}"
+              f"\n       očekivano {p.get('mu', x['mu'])} (raspon {(p.get('q') or x['q'])[1]}–{(p.get('q') or x['q'])[3]}), prosek {x['pros']}, posl. 5 {x['posl']}, min {i['min']}, forma {p['forma'][0]}/{p['forma'][1]}"
+              f"\n       model procena za preko {p.get('pm')}, minus-model {p.get('msig')}, timu fali {p.get('izostanci_tim')} min" + (' (ručno dodat)' if p.get('rucno') else '') +
+              f""
               f"\n       kladionice: {kn}" + (f"\n       {'; '.join(dod)}" if dod else ''))
     for d, L in PR.IZBACENI_MM.items():
         if L:
             print(f'\nMINUS koje je izbacio minus-model (ne slaže se, msig < {PR.MSIG_PRAG}): ' + '; '.join(f"{c['ime']} {SN[c['s']]} {c['l']} {c['pp']:.0%}/{c['fer']:.0%} @{c['kvota']}" for c in L))
-    van_izb = sorted([c for c in kand if not any(c['k'] == q['k'] and c['s'] == q['s'] for q in izab)], key=lambda c: -(c['pp'] - c['fer']))
+    van_izb = sorted([c for c in kand if c.get('ps') is not None and c['kvota'] >= PR.SAJT_KVOTA and c.get('podoban', True)
+                      and not any(c['k'] == q['k'] for q in izab)], key=lambda c: -c['ps'])
     for strana, ime in (('o', 'PLUS'), ('u', 'MINUS')):
-        L = [c for c in van_izb if c['strana'] == strana][:5]
+        L = [c for c in van_izb if c['strana'] == strana and (strana == 'u' or c['s'] in 'PA')][:6]
         if L:
-            print(f'\nNajbliži {ime} ispod praga: ' + '; '.join(f"{c['ime']} {SN[c['s']]} {c['l']} {c['pp']:.0%}/{c['fer']:.0%} @{c['kvota']}" for c in L))
+            print(f'\nSledeći {ime} po spoju (nisu ušli): ' + '; '.join(
+                f"{c['ime']} {SN[c['s']]} {c['l']} {c['ps']:.0%} @{c['kvota']}" + (' [minus-model ne]' if strana == 'u' and c.get('msig') is not None and c['msig'] < PR.MSIG_PRAG else '')
+                + (f" [fali {c['izostanci_tim']} min]" if strana == 'u' and c.get('izostanci_tim', 0) >= 35 else '') for c in L))
 
 
 def dodaci(dan):

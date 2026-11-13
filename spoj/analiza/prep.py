@@ -34,6 +34,7 @@ for x in D:
     f['dom']=home.get((dan,team)); f['n']=n; f['avg']=avg; f['zline']=(x['l']-avg)/max(sd,0.8); f['hot']=(a3-avg)/max(sd,0.8); f['mintrend']=m3-am; f['am']=am
     f['emp']=(sum(1 for t in v if t<x['l'])+1)/(n+2); f['st']=sum(r['st'] for r in g)/n; f['pos']=td['pos']
     f['mdiff']=margin(team,dan)-margin(opp,dan)
+    dz=signali.dodatne(S,k,team,opp,dan,s); f['mintrend']=dz['mintrend']; f['hot']=dz['hot']; f['tempo']=dz['tempo']; f['minsd']=dz['minsd']
     pd=team_pre(team,dan); f['rest']=dd(dan,pd[-1]) if pd else 9
     # rotacija tima pre dana: prosečni minuti po igraču
     pre=collections.defaultdict(list)
