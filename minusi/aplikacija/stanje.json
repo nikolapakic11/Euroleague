@@ -1,6 +1,6 @@
 {
 "v": 1,
-"savedAt": 1794659721653,
+"savedAt": 1794660283185,
 "tickets": [
 {
 "id": "adm7579167865",
@@ -85080,7 +85080,8 @@
 "line": 2.5,
 "odds": 1.65
 }
-]
+],
+"refund": 250
 },
 {
 "id": "r11d4-43",
@@ -85870,7 +85871,8 @@
 "line": 12.5,
 "odds": 1.8
 }
-]
+],
+"refund": 250
 },
 {
 "id": "r11d4-53",
@@ -171553,7 +171555,8 @@
 "Kolo 10, 6.11.2026 (BES-ZAL 67:83, VIR-DUB 75:93, PAR-TEL 88:67, OLY-RED 57:62): 40 tiketa (30 osmica po 100 + 10 desetki po 50 din, 3.500 din), nijedan nije prošao. 5 osmica sa tačno jednim promašajem (r10d3-05 Brown, -12 Carlik Jones, -16 Klintman, -19 Carlik Jones, -29 Bacon) = povraćaj po pravilu kvote ostalih parova (55,8 / 60,6 / 60,0 / 80,2 / 65,8 -> 200+200+200+300+200 = 1.100 din), iznos potvrditi iz PDF-a. Hayes nije igrao (kvota 1). Brissett je igrao 24 min (7 poena, 7 skokova): ranije greška u preseku zbog razlike u imenu u zapisniku. Svi promašaji dolazili od Brown (10 tiketa), Pajola, Hoard, Carlik Jones, Wright IV, Klintman, Nwora, Vezenkov, Kabengele.",
 "Kolo 11, 12.11.2026: 37 tiketa, 3.000 din (2.174 svež novac + 826 iz povraćaja 11.11.); 28. tiket (desetka) greškom 100 din, 38. (dvanaestica) nije odigran.",
 "Kolo 11, 13.11.2026: 62 tiketa (5.113 din, sve Admiral), bez dobitka. Dva tiketa od 10 parova (r11d4-42, r11d4-52) sa jednim promašajem: povraćaj, iznos prepisati sa PDF-a. Stavke 23 od 35 (66%), po pojavljivanju na tiketima 63%; skokovi 9/10, asistencije 4/7, poeni 10/18. Efes–Virtus 103:91 oborio 6 od 14 stavki; od 8 stavki sa 24 tiketa palo 5 (Washington A, Carr A, Malcolm P, Alston P, Yabusele S). Lekcija: previše tiketa na istom jezgru i jednoj utakmici.",
-"Stalno pravilo od 14.11.2026 (odluka Nikole): RAVNOMERNA RASPODELA. Model bira skup igrača/parova za kolo, a svaki igrač ide na približno isti broj tiketa (prosek ±10%), bez forsiranja „najsigurnijih“. Analiza 24 odigrana dana (isti parovi, isti tiketi i ulozi): kako je odigrano 155% vraćeno, ravnomerno 206%; pet najzastupljenijih parova po danu prošlo je 51%, svi parovi 57%. Da igrač ne bi bio na više od ~25–30% tiketa, bazen treba bar oko prosečne dužine tiketa / 0,25 igrača (osmice ≥32, desetke ≥40). Nalaz za dužine (isti budžet, ravnomerno): osmice 220%, sedmice 193%, šestice 165% (osmice bolje od šestica u 16 od 23 dana), desetke po 50 223% (kao osmice). Jezgro (hibrid od 12.11.) više nije podrazumevano: uz ravnomernu raspodelu bilo je bolje samo u 7 od 23 dana."
+"Stalno pravilo od 14.11.2026 (odluka Nikole): RAVNOMERNA RASPODELA. Model bira skup igrača/parova za kolo, a svaki igrač ide na približno isti broj tiketa (prosek ±10%), bez forsiranja „najsigurnijih“. Analiza 24 odigrana dana (isti parovi, isti tiketi i ulozi): kako je odigrano 155% vraćeno, ravnomerno 206%; pet najzastupljenijih parova po danu prošlo je 51%, svi parovi 57%. Da igrač ne bi bio na više od ~25–30% tiketa, bazen treba bar oko prosečne dužine tiketa / 0,25 igrača (osmice ≥32, desetke ≥40). Nalaz za dužine (isti budžet, ravnomerno): osmice 220%, sedmice 193%, šestice 165% (osmice bolje od šestica u 16 od 23 dana), desetke po 50 223% (kao osmice). Jezgro (hibrid od 12.11.) više nije podrazumevano: uz ravnomernu raspodelu bilo je bolje samo u 7 od 23 dana.",
+"Povraćaj na tiketima od 50 din (13.11, r11d4-42 i r11d4-52, po 10 parova): po 250 din = 5x uloga. Do sada: tiketi od 9 i 10 parova uvek 5x uloga (najviše 500), tiketi od 7–8 parova 1x do 5x (prosek oko 2,5x, viši kod veće ukupne kvote)."
 ]
 },
 "offerSnaps": [

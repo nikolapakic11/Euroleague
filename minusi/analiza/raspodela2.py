@@ -46,11 +46,11 @@ def slozi_jezgro(sizes, info, target, prob, udeo=1/3):
         out[i] = t
     return [out[i] for i in range(len(sizes))]
 
-def vrednuj(P, stakes, info, ref=rd.REF):
+def vrednuj(P, stakes, info, ref=None):
     s = 0
     for t, st in zip(P, stakes):
         v = rd.isplata(t, st, info)
-        s += v[0] if v[1] != 'povraćaj' else st * ref
+        s += v[0] if (v[1] != 'povraćaj' or ref is None) else st * ref
     return s
 
 tot = collections.defaultdict(float); dani = 0; perday = collections.defaultdict(list)
@@ -61,6 +61,8 @@ VAR = {
     'sve sedmice po 100': (7, 100),
     'sve šestice po 100': (6, 100),
     'sve desetke po 50': (10, 50),
+    'sve devetke po 50': (9, 50),
+    'sve osmice po 50': (8, 50),
 }
 for d in sorted(rd.dani):
     T = rd.dani[d]
@@ -99,7 +101,7 @@ def _bs(a,b):
     d=[x-y for x,y in zip(perday[a],perday[b])]
     bs=sorted(sum(_r.choice(d) for _ in d) for _ in range(10000))
     return f"{a} - {b}: bolje {sum(x>0 for x in d)}/{len(d)} dana, razlika {sum(d):.0f}, 90% raspon {bs[500]:.0f}..{bs[9500]:.0f}, P(<0) {sum(v<0 for v in bs)/1e4:.3f}"
-print(f"dana {dani}, ulog {tot['ulog']:.0f}; povraćaj: prosečan ({rd.REF:.2f}x uloga) / bez povraćaja / povraćaj = ulog")
+print(f"dana {dani}, ulog {tot['ulog']:.0f}; povraćaj: po dužini ({rd.REF8:.2f}x za 7-8 parova, {rd.REF9:.2f}x za 9+) / bez povraćaja / povraćaj = ulog")
 for nm in VAR:
     if nm not in tot: continue
     pd = perday[nm]

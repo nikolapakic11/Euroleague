@@ -61,3 +61,6 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
 - Dužine (`minusi/analiza/raspodela2.py`, isti budžet, ravnomerno, 23 dana): osmice 220%, sedmice 193%, šestice 165%, desetke po 50 223%.
   Osmice > šestice u 16/23 dana (pouzdano), osmice > sedmice 13/23; desetke ≈ osmice. Osnova ostaju osmice, šestice izbegavati.
 - Jezgro uz ravnomerno: 232% prema 216%, ali bolje samo 7/23 dana (P<0 ≈ 0,42), pa nije podrazumevano.
+- Povraćaj (14.11.): proporcionalan ulogu. Tiketi od 9–10 parova do sada uvek 5x uloga (50 din → 250, 100 → 500), od 7–8 parova 1x–5x (prosek 2,5x).
+  Sa tim (raspodela2.py): desetke po 50 229%, devetke po 50 231%, osmice po 50 215%, osmice po 100 207–220%, šestice 162%.
+  Desetke nad osmicama bolje u 10/23 dana (P<0 ≈ 0,10): blaga prednost, nije sigurna. Šum simulacije je oko ±10 procentnih poena.

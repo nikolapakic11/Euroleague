@@ -40,7 +40,11 @@ def status(k, line):
     return 'hit' if r['actual'] < line else 'miss'
 
 refs = [t['refund'] / t['stake'] for t in S['tickets'] if t.get('refund')]
-REF = sum(refs) / len(refs)  # povraćaj po dinaru uloga
+REF = sum(refs) / len(refs)  # povraćaj po dinaru uloga (ukupni prosek)
+_r8 = [t['refund'] / t['stake'] for t in S['tickets'] if t.get('refund') and len(t['legs']) <= 8]
+_r9 = [t['refund'] / t['stake'] for t in S['tickets'] if t.get('refund') and len(t['legs']) >= 9]
+REF8 = sum(_r8) / len(_r8); REF9 = sum(_r9) / len(_r9) if _r9 else 5.0
+def refm(nv): return REF9 if nv >= 9 else REF8   # 9+ parova: do sada uvek 5x uloga
 
 def isplata(legs, stake, info):
     """legs: lista ključeva; info[k] = (kvota, status, igrač)"""
@@ -53,7 +57,7 @@ def isplata(legs, stake, info):
         if st == 'miss': m += 1
         else: o *= q
     if m == 0: return stake * o * (1 + bon(nv)), 'dobitak', 0
-    if m == 1 and nv >= 7: return stake * REF, 'povraćaj', stake
+    if m == 1 and nv >= 7: return stake * refm(nv), 'povraćaj', stake
     return 0.0, ('jedan' if m == 1 else 'pao'), 0
 
 def slozi(sizes, info, target):
