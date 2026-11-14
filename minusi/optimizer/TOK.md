@@ -49,3 +49,6 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
 - Svako jutro posle dana sa utakmicama: `python3 spoj/posle_kola.py` (zapisnici, baza, ponovno učenje spoja, provera pravila, učinak sajta). `load.py` sada sam osvežava statistiku timova, raspored i povrede u aplikaciji.
 
 - Svaki plan koji pošalješ Nikoli dodaj i u aplikaciju: `python3 -I minusi/uzivo/dodaj_plan.py <plan.txt> <sel.json> --oznaka "..." --kolo N`, pa objavi aplikaciju. Ručni generator u aplikaciji je isključen (GEN_OFF), kartica se zove „Ponuda i planovi“.
+
+## Raspodela parova (analiza 14.11.2026)
+`python3 minusi/analiza/raspodela.py --n 200 --izlaz minusi/analiza/raspodela_rezultat.txt`: isti odigrani parovi, isti tiketi i ulozi, samo drugačija izloženost. Na 24 dana (107.893 din): stvarno 155% vraćeno, ista izloženost nasumično 163%, ublaženo (koren) 184%, ravnomerno 206%. Pet najzastupljenijih parova po danu prošlo je 51%, svi parovi 57%. Zaključak: unutar užeg izbora rang ne razlikuje sigurnije od manje sigurnih parova; ravnomerna raspodela daje bolji prosek i manji raspon gubitka.
