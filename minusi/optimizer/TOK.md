@@ -33,7 +33,7 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
 - Posle svakog kola: `python3 spoj/provera.py && python3 spoj/analiza/prep.py && python3 spoj/tezine.py` (nove težine).
 - Dužine: osnova su osmice; desetke i dvanaestice samo po Nikolinoj želji, po 50 din, iz istog bazena.
 
-## Hibrid raspored (osnova od 12.11.2026, odluka Nikole)
+## Hibrid raspored (od 12.11.2026; od 14.11. ZAMENJEN ravnomernom raspodelom, jezgro podrazumevano 0)
 - `optg7.py` ključ `"jezgro"` (podrazumevano trećina tiketa, najkraći): ti tiketi smeju samo najjače parove (nivo A + najboljih
   `"jtop"` po vrednosti, podrazumevano četvrtina bazena); ostali tiketi su mešani. `"jezgro": 0` vraća stari raspored.
 - Provera unazad (`spoj/analiza/raspored.py`, 16 odigranih dana, isti parovi, samo drugi raspored): isplata/ulog 1,78 (hibrid)
@@ -52,3 +52,12 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
 
 ## Raspodela parova (analiza 14.11.2026)
 `python3 minusi/analiza/raspodela.py --n 200 --izlaz minusi/analiza/raspodela_rezultat.txt`: isti odigrani parovi, isti tiketi i ulozi, samo drugačija izloženost. Na 24 dana (107.893 din): stvarno 155% vraćeno, ista izloženost nasumično 163%, ublaženo (koren) 184%, ravnomerno 206%. Pet najzastupljenijih parova po danu prošlo je 51%, svi parovi 57%. Zaključak: unutar užeg izbora rang ne razlikuje sigurnije od manje sigurnih parova; ravnomerna raspodela daje bolji prosek i manji raspon gubitka.
+
+## STALNO PRAVILO od 14.11.2026: ravnomerna raspodela (odluka Nikole)
+- `optg7.py` podrazumevano radi ravnomerno (`"ravnomerno": 1`): svaki IGRAČ ide na približno isti broj tiketa (prosek ±`tol`, podrazumevano 10%);
+  njegove stavke dele tu kvotu. `maxu`/`pmax` iz cfg se tada zanemaruju, jezgro je 0. `"ravnomerno": 0` vraća staro.
+- Veličina bazena: igrač je na (zbir dužina / broj igrača) tiketa. Da bude ≤25–30% tiketa: osmice ≥32 igrača, desetke ≥40. Optimizer upozorava preko 32%.
+  Kad je ponuda mala (dan sa 3 utakmice), radije manje tiketa nego veće ponavljanje.
+- Dužine (`minusi/analiza/raspodela2.py`, isti budžet, ravnomerno, 23 dana): osmice 220%, sedmice 193%, šestice 165%, desetke po 50 223%.
+  Osmice > šestice u 16/23 dana (pouzdano), osmice > sedmice 13/23; desetke ≈ osmice. Osnova ostaju osmice, šestice izbegavati.
+- Jezgro uz ravnomerno: 232% prema 216%, ali bolje samo 7/23 dana (P<0 ≈ 0,42), pa nije podrazumevano.

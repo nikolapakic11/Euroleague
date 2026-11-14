@@ -11,7 +11,20 @@ FIX=CFG.get('fixed',[]); NF=len(FIX); LOCK=set(CFG.get('lock',[])); LOWU=CFG.get
 # Hibrid (od 12.11.2026, osnova; provera unazad 16 dana: isplata/ulog 1,78 prema 1,12 kod raspršenog): 'jezgro' tiketa
 # (najkraći, podrazumevano trećina) sme da uzima samo najjače parove: nivo A + najboljih 'jtop' po vrednosti (pr×kvota);
 # ostali tiketi su mešani. cfg: "jezgro": broj tiketa jezgra (podrazumevano N//3, 0 = isključeno), "jtop": veličina bazena jezgra.
-NJ=CFG.get('jezgro',N//3); JTOP=CFG.get('jtop',max(12,n//4))
+# Ravnomerna raspodela (od 14.11.2026, stalno pravilo, odluka Nikole; analiza minusi/analiza/raspodela.py i raspodela2.py):
+# svaki par iz bazena ide na približno isti broj tiketa (prosek ± 'tol', podrazumevano 10%, po igraču). Unutar užeg bazena rang ne
+# razlikuje sigurnije parove (5 najzastupljenijih po danu 51% naspram 57% svih), a ravnomerno je na 24 dana vratilo 206%
+# uloga prema 155% kako je odigrano. Jezgro je tada podrazumevano isključeno (nije postojano: bolje u 7 od 23 dana).
+# "ravnomerno": 0 vraća staro ponašanje (maxu/pmax iz cfg, jezgro trećina tiketa).
+RAV=CFG.get('ravnomerno',1)
+NJ=CFG.get('jezgro',0 if RAV else N//3); JTOP=CFG.get('jtop',max(12,n//4))
+MINU=0; PMIN=0
+if RAV:
+    # ravnomerno po IGRAČU (njegove stavke dele jednu kvotu), da isti igrač ne bude na mnogo tiketa preko više stavki
+    _slots=sum(SIZES[NF:]); _np=len({x['p'] for x in P}); _avg=_slots/_np; TOL=CFG.get('tol',0.1)
+    PMAX=max(1,math.ceil(_avg*(1+TOL))); PMIN=max(0,math.floor(_avg*(1-TOL))); MAXU=PMAX
+    print(f'ravnomerno: {_np} igrača ({n} stavki), {_slots} mesta, prosek {_avg:.1f} po igraču ({_avg/max(1,N-NF):.0%} tiketa), dozvoljeno {PMIN}-{PMAX}')
+    if _avg/max(1,N-NF)>0.32: print('UPOZORENJE: bazen je mali, svaki igrač bi bio na više od 32% tiketa; dodaj igrače ili smanji broj/dužinu tiketa')
 _rv=sorted(range(n),key=lambda i:-P[i]['pr']*P[i]['u'])
 COREPOOL=set(_rv[:JTOP])|{i for i in range(n) if P[i].get('nivo')=='A'}
 CORE=set(sorted(range(NF,N),key=lambda k:(SIZES[k],k))[:NJ])
@@ -49,7 +62,8 @@ for k in order:
         for _ in range(L):
             c=[i for i in range(n) if legal(t,i,L,kk=k)]
             if not c: break
-            ws=[w[i]**0.5*((MAXU-use[i])/MAXU)*((PMAX-puse[pid[i]])/PMAX)**3 for i in c]
+            if RAV: ws=[(max(0.05,PMAX-puse[pid[i]]))**3*w[i]**0.25 for i in c]
+            else: ws=[w[i]**0.5*((MAXU-use[i])/MAXU)*((PMAX-puse[pid[i]])/PMAX)**3 for i in c]
             r=R.random()*sum(ws); pick=c[-1]
             for i,x in zip(c,ws):
                 r-=x
@@ -88,6 +102,7 @@ while time.time()-t0<SECS:
     if R.random()<0.5:
         a=R.randrange(NF,N); j=R.randrange(SIZES[a]); q=R.randrange(n); old=tk[a][j]
         if q==old: continue
+        if pid[q]!=pid[old] and puse[pid[old]]-1<PMIN: continue
         add(old,-1)
         ok=legal(tk[a],q,SIZES[a],skip=j,kk=a)
         if not ok: add(old,1); continue
@@ -119,6 +134,7 @@ def ev(key,s=9,M=200000):
     # isplata: očekivani povraćaj po ulogu 1 na svakom tiketu (1,0 = izlaz na nulu; bez povraćaja i bonusa)
     return dict(p1=round(float((w2>=1).mean()),3), ew=round(float(w2.mean()),3), bys={k:round(v,3) for k,v in bys.items()}, ref=round(float(ref.mean()),2), isplata=round(float(isp.mean()/len(tk)),3))
 print('iters',it,'est',ev('pr'),'market',ev('fair'))
+_u=collections.Counter(P[i]['p'] for t in tk for i in t); print('ponavljanje igrača: najmanje',min(_u.get(p,0) for p in players),'najviše',max(_u.values()),'neiskorišćenih',sum(1 for p in players if not _u.get(p)))
 uc=collections.Counter(P[i]['p'] for t in tk for i in t); print('player tickets',sorted(uc.items(),key=lambda x:-x[1]))
 pc2=collections.Counter(i for t in tk for i in t); print('pairs used',len(pc2),'max pair',max(pc2.values()),'players used',len(uc))
 ov=[len({pid[i] for i in a}&{pid[i] for i in b})/min(len(a),len(b)) for x,a in enumerate(tk) for b in tk[x+1:]]
