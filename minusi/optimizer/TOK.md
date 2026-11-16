@@ -64,3 +64,10 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
 - Povraćaj (14.11.): proporcionalan ulogu. Tiketi od 9–10 parova do sada uvek 5x uloga (50 din → 250, 100 → 500), od 7–8 parova 1x–5x (prosek 2,5x).
   Sa tim (raspodela2.py): desetke po 50 229%, devetke po 50 231%, osmice po 50 215%, osmice po 100 207–220%, šestice 162%.
   Desetke nad osmicama bolje u 10/23 dana (P<0 ≈ 0,10): blaga prednost, nije sigurna. Šum simulacije je oko ±10 procentnih poena.
+
+## Kolo 12, utorak 17.11.2026: plan (odluka Nikole 16.11.)
+- Budžet 11.000 din, dva talasa, ravnomerno (optg7 podrazumevano). Bonus 14 parova 46% (potvrđeno), najmanji ulog 20 din (igramo ≥50), najveći dobitak 25 mil.
+- Talas 1 (ujutru, prva ponuda): 50 osmica po 100 + 60 desetki po 50 (deo može devetke po 50) = 8.000.
+- Talas 2 (popodne, posle zvaničnog izveštaja o povredama i nove ponude): 40 dvanaestica po 50 + 20 četrnaestica po 50 = 3.000; prednost spuštenim granicama.
+- Za četrnaestice treba bar ~56 igrača u bazenu (≤25% tiketa po igraču); ako ih nema, prvo smanjiti četrnaestice.
+- Šanse po tiketu (model 57–60% / do sada stvarno): osmica 1/69–1/47 / 1/97, desetka 1/180–1/115 / 1/276, dvanaestica 1/460–1/270, četrnaestica 1/1130–1/620 (`minusi/analiza/plan_sim.py`).
