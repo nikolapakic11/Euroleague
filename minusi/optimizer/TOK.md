@@ -76,3 +76,6 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
 - Redosled: prvo parovi gde se i minus-model slaže (`msig` ≥ 0,35, isto kao pravilo sajta) i forma nije protiv (ispod granice bar u polovini poslednjih 8), po verovatnoći spoja; ostali („samo model“) u drugom redu.
 - Razlog: Vajli 17.11. bio prvi samo po spoju (69%) iako se minus-model nije slagao (0,29). Na vrhu dana (oko 3 po utakmici, kola 4–11, van uzorka) slaganje 69,1% (n=191), neslaganje 63,6% (n=44).
 - Provereno i odbačeno: slabije skupljanje ka proseku pozicije za igrače bez prošle sezone (K_NOVI 10–40) i zamena stvarnim učinkom po minutu kad odstupa >20% kvare procenu (log verovatnoća, kola 4–11), pa model ostaje kakav jeste.
+- Od 17.11.2026 (odluka Nikole): kad za duge tikete (12, 14) nema dovoljno igrača, bazen se širi igračima van modela, ali sa manjom težinom
+  (`"tezine_igraca"` u cfg optg7: oba modela 1,0, jedan model 0,8, van modela 0,4). Bolje da igrač van modela bude na nekoliko tiketa
+  nego da isti igrači budu na još više tiketa.

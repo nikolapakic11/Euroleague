@@ -31,6 +31,15 @@ CORE=set(sorted(range(NF,N),key=lambda k:(SIZES[k],k))[:NJ])
 pm=np.mean([x['pr'] for x in P]); w=[math.exp(K*(x['pr']-pm)) for x in P]
 players=sorted({x['p'] for x in P}); pid=[players.index(x['p']) for x in P]
 use=[0]*n; puse=[0]*len(players)
+# granice po igraču; "tezine_igraca" {ime: težina} (od 17.11.2026): u ravnomernom režimu igrač dobija mesta srazmerno težini
+# (npr. 1 za igrače koje podržavaju oba modela, 0,4 za dopunu van modela, da budu na nekoliko tiketa)
+PMAXA=[PMAX]*len(players); PMINA=[PMIN]*len(players)
+if RAV and CFG.get('tezine_igraca'):
+    _tw=[CFG['tezine_igraca'].get(pl,1.0) for pl in players]; _sw=sum(_tw)
+    for j,wj in enumerate(_tw):
+        _t=_slots*wj/_sw; PMAXA[j]=max(1,math.ceil(_t*(1+TOL))); PMINA[j]=max(0,math.floor(_t*(1-TOL)))
+    MAXU=max(PMAXA)
+    print('težine igrača: granice od',min(PMAXA),'do',max(PMAXA),'po igraču')
 def legal(t,i,L,skip=-1,kk=None):
     if i in LOCK: return False
     if kk in CORE and i not in COREPOOL: return False
@@ -40,7 +49,7 @@ def legal(t,i,L,skip=-1,kk=None):
         if P[i]['u']<LOWU and any(u<OTH for u in ot): return False
         if P[i]['u']<OTH and any(u<LOWU for u in ot): return False
     if P[i]['u']<LOWU and sum(1 for k,j in enumerate(t) if k!=skip and P[j]['u']<LOWU)>=LOWMAX: return False
-    if use[i]>=MAXU or puse[pid[i]]>=PMAX: return False
+    if use[i]>=MAXU or puse[pid[i]]>=PMAXA[pid[i]]: return False
     tc=gc=0
     for k,j in enumerate(t):
         if k==skip: continue
@@ -62,7 +71,7 @@ for k in order:
         for _ in range(L):
             c=[i for i in range(n) if legal(t,i,L,kk=k)]
             if not c: break
-            if RAV: ws=[(max(0.05,PMAX-puse[pid[i]]))**3*w[i]**0.25 for i in c]
+            if RAV: ws=[(max(0.05,PMAXA[pid[i]]-puse[pid[i]]))**3*w[i]**0.25 for i in c]
             else: ws=[w[i]**0.5*((MAXU-use[i])/MAXU)*((PMAX-puse[pid[i]])/PMAX)**3 for i in c]
             r=R.random()*sum(ws); pick=c[-1]
             for i,x in zip(c,ws):
@@ -77,7 +86,7 @@ for k in order:
         for i in range(n): rem[(P[i]['g'],P[i]['p'])]=max(rem[(P[i]['g'],P[i]['p'])],0)
         byp={}
         for i in range(n):
-            if use[i]<MAXU: byp[P[i]['p']]=(P[i]['g'],PMAX-puse[pid[i]])
+            if use[i]<MAXU: byp[P[i]['p']]=(P[i]['g'],PMAXA[pid[i]]-puse[pid[i]])
         print(sorted(byp.items(),key=lambda x:x[1]))
         sys.exit(1)
 teamsL=sorted({x['t'] for x in P}); ti={t:i for i,t in enumerate(teamsL)}
@@ -102,7 +111,7 @@ while time.time()-t0<SECS:
     if R.random()<0.5:
         a=R.randrange(NF,N); j=R.randrange(SIZES[a]); q=R.randrange(n); old=tk[a][j]
         if q==old: continue
-        if pid[q]!=pid[old] and puse[pid[old]]-1<PMIN: continue
+        if pid[q]!=pid[old] and puse[pid[old]]-1<PMINA[pid[old]]: continue
         add(old,-1)
         ok=legal(tk[a],q,SIZES[a],skip=j,kk=a)
         if not ok: add(old,1); continue
