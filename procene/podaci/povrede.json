@@ -1,6 +1,6 @@
 {
  "kolo": 12,
- "at": "17.11.2026. 10:02",
+ "at": "17.11.2026. 14:00",
  "izvori": [
   "https://www.eurohoops.net/en/euroleague/2036247/injury-report-round-12-willis-gtd-melli-key-milutinov-out/"
  ],
@@ -126,8 +126,8 @@
   },
   "yoan makoundou": {
    "tim": "BAR",
-   "stanje": "upitan",
-   "tekst": "Uncertain: Left knee injury | Eurohoops: Yoan Makoundou has not played so far this season as he recovers from a knee injury.",
+   "stanje": "van",
+   "tekst": "Out: Left knee injury | Eurohoops: Yoan Makoundou has not played so far this season as he recovers from a knee injury.",
    "izvor": "basketnews"
   },
   "joel ayayi": {
@@ -400,7 +400,13 @@
   "tobias jensen": {
    "tim": "MUN",
    "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Round 11 (coach's decision). Played in the domestic league (11.15) FC Barcelona",
+   "tekst": "Uncertain: DNP in Round 11 (coach's decision). Played in the domestic league (11.15)",
+   "izvor": "basketnews"
+  },
+  "austin wiley": {
+   "tim": "MUN",
+   "stanje": "igra",
+   "tekst": "Expected: Traveled for Round 12 after playing only 10 seconds in domestic league FC Barcelona",
    "izvor": "basketnews"
   },
   "abdu kone": {
@@ -495,8 +501,8 @@
   },
   "juhann begarin": {
    "tim": "ASV",
-   "stanje": "upitan",
-   "tekst": "Doubtful: DNP in Rounds 8-11 (undisclosed injury). DNP in the domestic league (11.15)",
+   "stanje": "van",
+   "tekst": "Out: Didn't travel for Round 12 and 13 after DNP in Rounds 8-11 (undisclosed injury)",
    "izvor": "basketnews"
   },
   "joel bolomboy": {
@@ -507,8 +513,14 @@
   },
   "myles cale": {
    "tim": "ASV",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Rounds 10-11 (coach's decision). DNP in the domestic league (11.15)",
+   "stanje": "van",
+   "tekst": "Out: Didn't travel for Round 12 and 13 after DNP in Rounds 10-11 (coach's decision)",
+   "izvor": "basketnews"
+  },
+  "yves pons": {
+   "tim": "ASV",
+   "stanje": "van",
+   "tekst": "Out: Didn't travel for Round 12 and 13 (undisclosed injury)",
    "izvor": "basketnews"
   },
   "lorenz sanz": {
@@ -517,10 +529,16 @@
    "tekst": "Doubtful: DNP in Rounds 10-11 (coach's decision). DNP in the domestic league (11.15) Maccabi Rapyd Tel Aviv",
    "izvor": "basketnews"
   },
+  "kamar baldwin": {
+   "tim": "MUN",
+   "stanje": "igra",
+   "tekst": "Expected: Expected to make his Maccabi debut in Round 12",
+   "izvor": "basketnews"
+  },
   "o shae j brissett": {
    "tim": "TEL",
-   "stanje": "upitan",
-   "tekst": "Uncertain: Back injury in Round 11. DNP in the domestic league (11.14)",
+   "stanje": "igra",
+   "tekst": "Expected: Expected to be ready for Round 12 (back injury in Round 11). DNP in the domestic league (11.14)",
    "izvor": "basketnews"
   },
   "amit ebo": {
@@ -610,8 +628,8 @@
   "daniel hackett": {
    "tim": "VIR",
    "stanje": "igra",
-   "tekst": "Daniel Hackett was ruled out for Round 11 but is listed as available for Round 12",
-   "izvor": "eurohoops"
+   "tekst": "Expected: Ruled out for Round 11 (undisclosed). Played in the domestic league (11.15) Zalgiris Kaunas",
+   "izvor": "basketnews"
   }
  },
  "timovi": {
