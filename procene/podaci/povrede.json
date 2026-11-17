@@ -1,6 +1,6 @@
 {
  "kolo": 12,
- "at": "17.11.2026. 15:28",
+ "at": "17.11.2026. 16:06",
  "izvori": [
   "https://www.eurohoops.net/en/euroleague/2036247/injury-report-round-12-willis-gtd-melli-key-milutinov-out/"
  ],
@@ -285,20 +285,26 @@
   },
   "ruzgar fenemen": {
    "tim": "IST",
-   "stanje": "upitan",
-   "tekst": "Doubtful: DNP in Rounds 1-11 (coach's decision)",
+   "stanje": "van",
+   "tekst": "Out: Not included in 12-man roster after DNP in Rounds 1-11 (coach's decision)",
+   "izvor": "basketnews"
+  },
+  "erkan yilmaz": {
+   "tim": "IST",
+   "stanje": "van",
+   "tekst": "Out: Not included in 12-man roster (coach's decision)",
    "izvor": "basketnews"
   },
   "darius karutasu": {
    "tim": "IST",
-   "stanje": "upitan",
-   "tekst": "Doubtful: DNP in Rounds 1-11 (coach's decision). DNP in the domestic league (11.15)",
+   "stanje": "van",
+   "tekst": "Out: Not included in 12-man roster after DNP in Rounds 1-11 (coach's decision)",
    "izvor": "basketnews"
   },
   "david mutaf": {
    "tim": "IST",
-   "stanje": "upitan",
-   "tekst": "Doubtful: DNP in Rounds 1-11 (coach's decision). Played in the domestic league (11.15) Armani Olimpia Milan",
+   "stanje": "igra",
+   "tekst": "Ready: Included in 12-man roster DNP in Rounds 1-11 (coach's decision) Armani Olimpia Milan",
    "izvor": "basketnews"
   },
   "nicola akele": {
@@ -357,8 +363,8 @@
   },
   "justin anderson": {
    "tim": "DUB",
-   "stanje": "igra",
-   "tekst": "Expected: DNP in Rounds 1-11 but played in domestic league on November 9 (hamstring). Was not registered for ABA League game (11.15)",
+   "stanje": "van",
+   "tekst": "Out: Not included in 12 man roster after DNP in Rounds 1-11.",
    "izvor": "basketnews"
   },
   "davis bertans": {
@@ -370,19 +376,25 @@
   "kosta kondic": {
    "tim": "DUB",
    "stanje": "van",
-   "tekst": "Out: DNP in Round 10-11 (hip/psoas muscle injury). DNP in the domestic league (11.15)",
+   "tekst": "Out: Ruled out for Round 12 after DNP in Round 10-11 (hip/psoas muscle injury). DNP in the domestic league (11.15)",
+   "izvor": "basketnews"
+  },
+  "davion mintz": {
+   "tim": "DUB",
+   "stanje": "van",
+   "tekst": "Out: Not included in 12-man roster (coach's decision)",
    "izvor": "basketnews"
   },
   "klemen prepelic": {
    "tim": "DUB",
-   "stanje": "upitan",
-   "tekst": "Uncertain: Was included in 12-man roster in Round 11 but DNP, after DNP in Rounds 8-10 (coach's decision). DNP in the domestic league (11.15)",
+   "stanje": "van",
+   "tekst": "Out: Not included in 12-man roster after DNP in Rounds 8-11 (coach's decision)",
    "izvor": "basketnews"
   },
   "thomas walkup": {
    "tim": "DUB",
    "stanje": "igra",
-   "tekst": "Expected: DNP in Rounds 7-11 (back injury); returned to action in ABA League on Sunday (11.15) FC Bayern Munich",
+   "tekst": "Ready: Included in 12-man roster after DNP in Rounds 7-11 (back injury) FC Bayern Munich",
    "izvor": "basketnews"
   },
   "kilian fischer": {
