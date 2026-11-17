@@ -4,7 +4,10 @@ async def main():
     async with async_playwright() as p:
         b=await p.chromium.launch(); pg=await b.new_page(viewport={'width':1400,'height':1000})
         errs=[]; pg.on('pageerror',lambda e:errs.append(str(e)))
-        await pg.goto('file://'+os.path.abspath(sys.argv[1])); await pg.wait_for_timeout(1200)
+        # ručni generator je u aplikaciji sakriven (GEN_OFF); za bazen ga privremeno uključujemo u kopiji
+        src=open(sys.argv[1],encoding='utf8').read().replace('var GEN_OFF = true;','var GEN_OFF = false;')
+        tmp=os.path.abspath(sys.argv[1])+'.gen.html'; open(tmp,'w',encoding='utf8').write(src)
+        await pg.goto('file://'+tmp); await pg.wait_for_timeout(1200)
         await pg.click('button[data-act="tab"][data-v="generator"]'); await pg.wait_for_timeout(2000)
         for k in (sys.argv[3].split(',') if len(sys.argv)>3 and sys.argv[3] else []):
             el=await pg.query_selector(f'input[data-abs="{k}"]')

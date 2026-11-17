@@ -1,0 +1,76 @@
+{
+ "at": "2026-11-17T09:00:03Z",
+ "src": "Admiral, kvote utakmica 17.11. u 10:00 (glavni zbir i zbir timova)",
+ "games": {
+  "DUB-IST": {
+   "total": 175.5,
+   "hTot": 91.5,
+   "aTot": 83.5,
+   "ml1": 1.29,
+   "ml2": 3.65
+  },
+  "TEL-OLY": {
+   "total": 174.5,
+   "hTot": 83.5,
+   "aTot": 90.5,
+   "ml1": 3.35,
+   "ml2": 1.33
+  },
+  "ULK-ASV": {
+   "total": 166.5,
+   "hTot": 89.5,
+   "aTot": 77.5,
+   "ml1": 1.13,
+   "ml2": 6.2
+  },
+  "ZAL-MUN": {
+   "total": 172.5,
+   "hTot": 90.5,
+   "aTot": 81.5,
+   "ml1": 1.22,
+   "ml2": 4.4
+  },
+  "MIL-RED": {
+   "total": 166.5,
+   "hTot": 82.5,
+   "aTot": 84.5,
+   "ml1": 2.09,
+   "ml2": 1.75
+  },
+  "BAR-PRS": {
+   "total": 186.5,
+   "hTot": 95.5,
+   "aTot": 90.5,
+   "ml1": 1.37,
+   "ml2": 3.15
+  },
+  "BAS-HTA": {
+   "total": 179.5,
+   "hTot": 86.5,
+   "aTot": 93.5,
+   "ml1": 3.6,
+   "ml2": 1.29
+  },
+  "PAR-PAM": {
+   "total": 175.5,
+   "hTot": 87.5,
+   "aTot": 88.5,
+   "ml1": 2,
+   "ml2": 1.82
+  },
+  "VIR-PAN": {
+   "total": 170.5,
+   "hTot": 81.5,
+   "aTot": 89.5,
+   "ml1": 3.8,
+   "ml2": 1.27
+  },
+  "BES-MAD": {
+   "total": 177.5,
+   "hTot": 85.5,
+   "aTot": 91.5,
+   "ml1": 3,
+   "ml2": 1.39
+  }
+ }
+}

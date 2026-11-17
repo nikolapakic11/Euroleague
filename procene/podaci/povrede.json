@@ -1,32 +1,292 @@
 {
  "kolo": 12,
- "at": "2026-11-16T10:23:57.146334+00:00",
+ "at": "17.11.2026. 10:02",
  "izvori": [
-  "https://basketnews.com/leagues/25-euroleague/injured.html"
+  "https://www.eurohoops.net/en/euroleague/2036247/injury-report-round-12-willis-gtd-melli-key-milutinov-out/"
  ],
  "igraci": {
+  "bruno fernando": {
+   "tim": "IST",
+   "stanje": "van",
+   "tekst": "Out: Could be out until Round 15-17 as he's set to miss 3-4 weeks with calf injury (11.14) | Eurohoops: Bruno Fernando is out for 3-4 weeks after a calf injury sustained in Round 11",
+   "izvor": "basketnews"
+  },
+  "mike james": {
+   "tim": "IST",
+   "stanje": "van",
+   "tekst": "Out: Suffered an Achilles tendon injury in Round 3, underwent surgery | Eurohoops: Mike James suffered an Achilles injury in Round 3 that will see him sidelined for 7-9 months",
+   "izvor": "basketnews"
+  },
   "isaia cordinier": {
    "tim": "IST",
    "stanje": "van",
-   "tekst": "Out: Out indefinitely (rehab after surgery)",
+   "tekst": "Out: Out indefinitely (rehab after surgery) | Eurohoops: Isaia Cordinier remains sidelined after undergoing surgery in May, as was announced on May 18.",
+   "izvor": "basketnews"
+  },
+  "pj dozier": {
+   "tim": "IST",
+   "stanje": "igra",
+   "tekst": "PJ Dozier returned to action in Round 11"
+  },
+  "jean montero": {
+   "tim": "OLY",
+   "stanje": "van",
+   "tekst": "Out: Underwent a left knee meniscus injury, expected to be sidelined until the end of April. | Eurohoops: Jean Montero last played in Round 6",
+   "izvor": "basketnews"
+  },
+  "tyler dorsey": {
+   "tim": "OLY",
+   "stanje": "van",
+   "tekst": "Out: Ruled out for Round 12 (fitness) after DNP in Rounds 6-11 (suspension) | Eurohoops: Tyler Dorsey last played in Round 5 after being suspended by the club",
+   "izvor": "basketnews"
+  },
+  "nikola milutinov": {
+   "tim": "OLY",
+   "stanje": "van",
+   "tekst": "Out: Ruled out for Round 12 (fractured index finger, 11.14) | Eurohoops: Nikola Milutinov, Jean Montero and Tyler Dorsey are ruled out for",
+   "izvor": "basketnews"
+  },
+  "kostas papanikolaou": {
+   "tim": "OLY",
+   "stanje": "igra",
+   "tekst": "Expected: Played in domestic league (11.15) after DNP in Round 11 (tendonitis) | Eurohoops: Kostas Papanikolaou was ruled out for Round 11",
+   "izvor": "basketnews"
+  },
+  "bryant dunston": {
+   "tim": "OLY",
+   "stanje": "upitan",
+   "tekst": "Game-time: Traveled for Round 12 after DNP in Round 9-11 (coach's decision). DNP in the domestic league (11.15) | Eurohoops: Bryant Dunston was unavailable in Round 11",
+   "izvor": "basketnews"
+  },
+  "georgios bourneles": {
+   "tim": "OLY",
+   "stanje": "upitan",
+   "tekst": "Doubtful: DNP in Rounds 1-11 (coach's decision). DNP in the domestic league (11.15) | Eurohoops: Antonios Karagiannidis, George Papas and Georgios Bourneles were also out in Round 11",
+   "izvor": "basketnews"
+  },
+  "antonis karagiannidis": {
+   "tim": "OLY",
+   "stanje": "van",
+   "tekst": "Out: Didn't travel for Round 12 after DNP in Rounds 1-11 (coach's decision) | Eurohoops: Antonios Karagiannidis, George Papas and Georgios Bourneles were also out in Round 11",
+   "izvor": "basketnews"
+  },
+  "nigel williams goss": {
+   "tim": "ZAL",
+   "stanje": "van",
+   "tekst": "Out: Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14. Player status color guide Ready The player is fully ready to play. Expected The player is expected to play, but it's not confirmed. Questionable There is a 50-50 chance about the player's availability. Game-time | Eurohoops: Nigel Williams-Goss last played in Round 6",
+   "izvor": "basketnews"
+  },
+  "dovydas giedraitis": {
+   "tim": "ZAL",
+   "stanje": "upitan",
+   "tekst": "Uncertain: DNP in Rounds 8-11 (coach's decision). Played in the domestic league (11.15) | Eurohoops: Dovydas Giedraitis last played in Round 7",
+   "izvor": "basketnews"
+  },
+  "deividas sirvydis": {
+   "tim": "ZAL",
+   "stanje": "upitan",
+   "tekst": "Uncertain: DNP in Rounds 8-11 (coach's decision). Played in the domestic league (11.15) | Eurohoops: Deividas Sirvydis last played in Round 6",
+   "izvor": "basketnews"
+  },
+  "marek blazevic": {
+   "tim": "ZAL",
+   "stanje": "upitan",
+   "tekst": "Uncertain: DNP in Rounds 8-11 (coach's decision).Played in the domestic league (11.15) | Eurohoops: Marek Blazevic last played in Round 7.",
+   "izvor": "basketnews"
+  },
+  "sertac sanli": {
+   "tim": "ULK",
+   "stanje": "upitan",
+   "tekst": "Uncertain: DNP in Rounds 10-11 (ankle injury). Played in the domestic league (11.15) Hapoel IBI Tel Aviv | Eurohoops: Sertac Sanli, who was a game-time decision for Round 11, did not play either",
+   "izvor": "basketnews"
+  },
+  "umoja gibson": {
+   "tim": "BAR",
+   "stanje": "van",
+   "tekst": "Out: Suffered a muscle strain of his left abdominal wall in Round 11. Out for around three weeks until Round 15 | Eurohoops: Umoja Gibson suffered an injury in Round 11 and is out for three weeks, Barcelona announced on November 15",
+   "izvor": "basketnews"
+  },
+  "juan nunez": {
+   "tim": "BAR",
+   "stanje": "upitan",
+   "tekst": "Game-time: DNP in Rounds 9-11 (right ankle sprain). Only registered in the domestic league game (11.15) | Eurohoops: Juan Nunez last played in Round 8",
+   "izvor": "basketnews"
+  },
+  "kevin punter": {
+   "tim": "BAR",
+   "stanje": "van",
+   "tekst": "Out: Suffered an ankle sprain in domestic league game (11.08), set to be out for six weeks until Round 18 | Eurohoops: Kevin Punter has suffered a sprain to his left ankle and is expected to be out until the end of December",
+   "izvor": "basketnews"
+  },
+  "tosan evbuomwan": {
+   "tim": "BAR",
+   "stanje": "van",
+   "tekst": "Out: Suffered oblique muscle tear (11.09), set to be out for around three weeks until Round 14 | Eurohoops: Tosan Evbuomwan has a tear in the oblique muscle of his abdominal wall and is expected to be out until early December",
+   "izvor": "basketnews"
+  },
+  "yoan makoundou": {
+   "tim": "BAR",
+   "stanje": "upitan",
+   "tekst": "Uncertain: Left knee injury | Eurohoops: Yoan Makoundou has not played so far this season as he recovers from a knee injury.",
+   "izvor": "basketnews"
+  },
+  "joel ayayi": {
+   "tim": "PRS",
+   "stanje": "upitan",
+   "tekst": "Uncertain: DNP in Round 11 (coach's decision). Played in the domestic league (11.14) | Eurohoops: Joel Ayayi last played in Round 10",
+   "izvor": "basketnews"
+  },
+  "daulton hommes": {
+   "tim": "PRS",
+   "stanje": "upitan",
+   "tekst": "Uncertain: DNP in Round 11 (coach's decision). Played in the domestic league (11.14) | Eurohoops: Daulton Hommes last played in Round 8, but he has played in Paris’s last two French League games",
+   "izvor": "basketnews"
+  },
+  "maozinha pereira": {
+   "tim": "PRS",
+   "stanje": "upitan",
+   "tekst": "Uncertain: DNP in Round 11 (coach's decision). DNP in the domestic league (11.14) Partizan Mozzart Bet Belgrade | Eurohoops: Maozinha Pereira last played in Round 10, but he has played in Paris’s last two French League games.",
+   "izvor": "basketnews"
+  },
+  "devin booker": {
+   "tim": "MIL",
+   "stanje": "van",
+   "tekst": "Out: Out for up to three months (11.06). | Eurohoops: Devin Booker remains Milan’s only absentee for its game against",
+   "izvor": "basketnews"
+  },
+  "johnathan motley": {
+   "tim": "RED",
+   "stanje": "van",
+   "tekst": "Out: Ruled out for Round 12 after DNP in Round 11 (illness) | Eurohoops: Johnathan Motley “could not practice due to a virus and is out of the team for this game,” coach Ibon Navarro said ahead of Round 11",
+   "izvor": "basketnews"
+  },
+  "stefan miljenovic": {
+   "tim": "RED",
+   "stanje": "van",
+   "tekst": "Out: Out indefinitely after undergoing ankle surgery on Nov. 10 | Eurohoops: Stefan Miljenovic had ankle surgery before Round 11",
+   "izvor": "basketnews"
+  },
+  "ebuka izundu": {
+   "tim": "RED",
+   "stanje": "upitan",
+   "tekst": "Ebuka Izundu last played in Round 10"
+  },
+  "rodions kurucs": {
+   "tim": "BAS",
+   "stanje": "igra",
+   "tekst": "Rodions Kurucs returned to action in Round 11"
+  },
+  "kenneth faried": {
+   "tim": "BAS",
+   "stanje": "van",
+   "tekst": "Out: Out indefinitely with a left thigh injury | Eurohoops: Kenneth Faried suffered a left thigh injury in Round 11",
+   "izvor": "basketnews"
+  },
+  "marcio santos": {
+   "tim": "BAS",
+   "stanje": "upitan",
+   "tekst": "Uncertain: Out indefinitely (left calf tear). DNP in the domestic league (11.15) | Eurohoops: Marcio Santos last played in Round 9",
+   "izvor": "basketnews"
+  },
+  "tadas sedekerskis": {
+   "tim": "BAS",
+   "stanje": "van",
+   "tekst": "Out: Out after suffering a right thigh muscle injury in Round 7. Expected return in late November. | Eurohoops: Tadas Sedekerskis last played in Round 7.",
+   "izvor": "basketnews"
+  },
+  "ethan thompson": {
+   "tim": "PAR",
+   "stanje": "van",
+   "tekst": "Out: Ruled out for Round 12 after suffering a hip injury in Round 11. | Eurohoops: Derek Willis is a game-time decision while Ethan Thompson and Kevarrius Hayes are ruled out for Partizan’s game against",
+   "izvor": "basketnews"
+  },
+  "kevarrius hayes": {
+   "tim": "PAR",
+   "stanje": "van",
+   "tekst": "Out: Ruled out for Round 12 after DNP in Rounds 10-11 (shoulder injury) | Eurohoops: Derek Willis is a game-time decision while Ethan Thompson and Kevarrius Hayes are ruled out for Partizan’s game against",
+   "izvor": "basketnews"
+  },
+  "derek willis": {
+   "tim": "PAR",
+   "stanje": "van",
+   "tekst": "Out: Ruled out for Round 12 after DNP in Rounds 1-11 (ankle injury) Real Madrid | Eurohoops: Derek Willis is a game-time decision while Ethan Thompson and Kevarrius Hayes are ruled out for Partizan’s game against",
+   "izvor": "basketnews"
+  },
+  "nathan reuvers": {
+   "tim": "PAM",
+   "stanje": "van",
+   "tekst": "Out: Ruled out for Round 12 after DNP in Rounds 8-11 (foot bone injury) Virtus Bologna | Eurohoops: Nate Reuvers (foot) last played in Round 7",
+   "izvor": "basketnews"
+  },
+  "nikola mirotic": {
+   "tim": "PAM",
+   "stanje": "van",
+   "tekst": "Out: Ruled out for Round 12 after DNP in Rounds 9-11 ( muscle injury ) | Eurohoops: Nikola Mirotic last played in Round 8 due to injury",
+   "izvor": "basketnews"
+  },
+  "yankuba sima": {
+   "tim": "PAM",
+   "stanje": "upitan",
+   "tekst": "Yankuba Sima has not played in the EuroLeague this season."
+  },
+  "davide casarin": {
+   "tim": "VIR",
+   "stanje": "van",
+   "tekst": "Out: Out for eight weeks and at least until Round 21 (bone bruise, 11.09) | Eurohoops: Davide Casarin is Virtus’s only absentee for its game against",
+   "izvor": "basketnews"
+  },
+  "eleftherios mantzoukas": {
+   "tim": "PAN",
+   "stanje": "van",
+   "tekst": "Out: Didn't travel for Round 12 after DNP in Rounds 9-11 (coach's decision) | Eurohoops: Lefteris Mantzoukas has been ruled out for the last two rounds",
+   "izvor": "basketnews"
+  },
+  "panagiotis kalaitzakis": {
+   "tim": "PAN",
+   "stanje": "upitan",
+   "tekst": "Game-time: Traveled for Round 12 after DNP in Rounds 10-11 (coach's decision) | Eurohoops: Panagiotis Kalaitzakis last played in Round 9",
+   "izvor": "basketnews"
+  },
+  "dimitris moraitis": {
+   "tim": "PAN",
+   "stanje": "van",
+   "tekst": "Out: Didn't travel for Round 12 after DNP in Rounds 8-11 (coach's decision) | Eurohoops: Dimitris Moraitis last played in Round 6",
+   "izvor": "basketnews"
+  },
+  "theo maledon": {
+   "tim": "MAD",
+   "stanje": "igra",
+   "tekst": "Ready: Played in domestic league (11.15) after being out due to a right knee sprain (10.30) Valencia Basket | Eurohoops: Theo Maledon sprained his knee in Round 9 and missed the last two rounds",
+   "izvor": "basketnews"
+  },
+  "mikael jantunen": {
+   "tim": "MAD",
+   "stanje": "van",
+   "tekst": "Out: Out indefinitely after a complete rupture of the plantar fascia in left foot (10.30) | Eurohoops: Mikael Jantunen ruptured his plantar fascia in Round 9 and has been out ever since",
+   "izvor": "basketnews"
+  },
+  "facundo campazzo": {
+   "tim": "MAD",
+   "stanje": "van",
+   "tekst": "Out: Out indefinitely after suffering a left hamstring injury in a domestic league game (11.01) | Eurohoops: Facundo Campazzo is dealing with a hamstring injury",
+   "izvor": "basketnews"
+  },
+  "gabriel deck": {
+   "tim": "MAD",
+   "stanje": "van",
+   "tekst": "Out: Underwent left shoulder surgery on October 14, expected to be out until mid-February/mid-March. | Eurohoops: Gaby Deck (shoulder) last played in Round 3, with coach Pedro Martinez saying ahead of Round 4: “The injury is more serious than we thought.” Usman Ga",
+   "izvor": "basketnews"
+  },
+  "usman garuba": {
+   "tim": "MAD",
+   "stanje": "van",
+   "tekst": "Out: Out indefinitely with a torn ACL | Eurohoops: Gaby Deck (shoulder) last played in Round 3, with coach Pedro Martinez saying ahead of Round 4: “The injury is more serious than we thought.” Usman Ga",
    "izvor": "basketnews"
   },
   "ruzgar fenemen": {
    "tim": "IST",
    "stanje": "upitan",
    "tekst": "Doubtful: DNP in Rounds 1-11 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "bruno fernando": {
-   "tim": "IST",
-   "stanje": "van",
-   "tekst": "Out: To miss 3-4 weeks with calf injury (11.14)",
-   "izvor": "basketnews"
-  },
-  "mike james": {
-   "tim": "IST",
-   "stanje": "van",
-   "tekst": "Out: Suffered an Achilles tendon injury in Round 3, underwent surgery",
    "izvor": "basketnews"
   },
   "darius karutasu": {
@@ -44,13 +304,7 @@
   "nicola akele": {
    "tim": "MIL",
    "stanje": "igra",
-   "tekst": "Expected: Played 1 minute in Round 12 after DNP in Rounds 2-10 (coach's decision). Played in the domestic league (11.15)",
-   "izvor": "basketnews"
-  },
-  "devin booker": {
-   "tim": "MIL",
-   "stanje": "van",
-   "tekst": "Out: Out for up to three months (11.06).",
+   "tekst": "Expected: Played 1 minute in Round 11 after DNP in Rounds 2-10 (coach's decision). Played in the domestic league (11.15)",
    "izvor": "basketnews"
   },
   "diego flaccadori": {
@@ -89,16 +343,10 @@
    "tekst": "Uncertain: DNP in Round 9-11 (coach's decision). Played in the domestic league (11.15)",
    "izvor": "basketnews"
   },
-  "stefan miljenovic": {
+  "chima moneke": {
    "tim": "RED",
    "stanje": "van",
-   "tekst": "Out: Out indefinitely after undergoing ankle surgery on Nov. 10",
-   "izvor": "basketnews"
-  },
-  "johnathan motley": {
-   "tim": "RED",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Round 11 (illness) after DNP in Round 10 (coach's decision). DNP in the domestic league (11.15)",
+   "tekst": "Out: Reportedly did not travel with the team to Milan for Round 12 (coach's decision)",
    "izvor": "basketnews"
   },
   "awudu abass": {
@@ -109,8 +357,8 @@
   },
   "justin anderson": {
    "tim": "DUB",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Rounds 1-11 but played in domestic league on November 9 (hamstring). Was not registered for ABA League game (11.15)",
+   "stanje": "igra",
+   "tekst": "Expected: DNP in Rounds 1-11 but played in domestic league on November 9 (hamstring). Was not registered for ABA League game (11.15)",
    "izvor": "basketnews"
   },
   "davis bertans": {
@@ -121,8 +369,8 @@
   },
   "kosta kondic": {
    "tim": "DUB",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Round 10-11 (hip/psoas muscle injury). DNP in the domestic league (11.15)",
+   "stanje": "van",
+   "tekst": "Out: DNP in Round 10-11 (hip/psoas muscle injury). DNP in the domestic league (11.15)",
    "izvor": "basketnews"
   },
   "klemen prepelic": {
@@ -134,7 +382,7 @@
   "thomas walkup": {
    "tim": "DUB",
    "stanje": "igra",
-   "tekst": "Ready: DNP in Rounds 7-11 (back injury); returned to action in ABA League on Sunday (11.15) FC Bayern Munich",
+   "tekst": "Expected: DNP in Rounds 7-11 (back injury); returned to action in ABA League on Sunday (11.15) FC Bayern Munich",
    "izvor": "basketnews"
   },
   "kilian fischer": {
@@ -155,40 +403,10 @@
    "tekst": "Uncertain: DNP in Round 11 (coach's decision). Played in the domestic league (11.15) FC Barcelona",
    "izvor": "basketnews"
   },
-  "tosan evbuomwan": {
-   "tim": "BAR",
-   "stanje": "van",
-   "tekst": "Out: Suffered oblique muscle tear (11.09), set to be out for around three weeks until Round 14",
-   "izvor": "basketnews"
-  },
-  "umoja gibson": {
-   "tim": "BAR",
-   "stanje": "van",
-   "tekst": "Out: Suffered muscle strain of his left abdominal wall in Round 11. Out for around three weeks",
-   "izvor": "basketnews"
-  },
   "abdu kone": {
    "tim": "BAR",
-   "stanje": "igra",
-   "tekst": "Expected: Only included in 12-man roster for Round 11. DNP in Rounds 1-10 (coach's decision). Played in the domestic league (11.15)",
-   "izvor": "basketnews"
-  },
-  "yoan makoundou": {
-   "tim": "BAR",
    "stanje": "upitan",
-   "tekst": "Uncertain: Left knee injury",
-   "izvor": "basketnews"
-  },
-  "juan nunez": {
-   "tim": "BAR",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Rounds 9-11 (right ankle sprain). Only registered in the domestic league game (11.15)",
-   "izvor": "basketnews"
-  },
-  "kevin punter": {
-   "tim": "BAR",
-   "stanje": "van",
-   "tekst": "Out: Suffered ankle sprain in domestic league game (11.08), set to be out for six weeks until Round 16",
+   "tekst": "Uncertain: Only included in 12-man roster for Round 11. DNP in Rounds 1-10 (coach's decision). Played in the domestic league (11.15)",
    "izvor": "basketnews"
   },
   "agustin ubal": {
@@ -205,8 +423,8 @@
   },
   "braxton key": {
    "tim": "ULK",
-   "stanje": "upitan",
-   "tekst": "Uncertain: Dislocated finger suffered in Istanbul derby (11.15)",
+   "stanje": "van",
+   "tekst": "Out: Ruled out for Round 12 after suffering a dislocated finger and a tear in domestic league (11.15)",
    "izvor": "basketnews"
   },
   "melih mahmutoglu": {
@@ -215,10 +433,10 @@
    "tekst": "Doubtful: DNP in Rounds 1-11 (coach's decision). DNP in the domestic league (11.15)",
    "izvor": "basketnews"
   },
-  "sertac sanli": {
+  "nicolo melli": {
    "tim": "ULK",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Rounds 10-11 (ankle injury). Played in the domestic league (11.15) Hapoel IBI Tel Aviv",
+   "stanje": "van",
+   "tekst": "Out: Out indefinitely after DNP in Round 11 (meniscus injury). Might require surgery, the extent of the injury will be confirmed after additional tests",
    "izvor": "basketnews"
   },
   "oz blayzer": {
@@ -229,8 +447,8 @@
   },
   "bruno caboclo": {
    "tim": "HTA",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Round 11 (coach's decision). DNP in the domestic league (11.14)",
+   "stanje": "van",
+   "tekst": "Out: Ruled out for Round 12 and doubtful for Round 13, after DNP in Round 11 (minor calf tear)",
    "izvor": "basketnews"
   },
   "khadeen carrington": {
@@ -269,34 +487,22 @@
    "tekst": "Uncertain: DNP in Round 11 (coach's decision). DNP in the domestic league (11.14) Kosner Baskonia Vitoria-Gasteiz",
    "izvor": "basketnews"
   },
-  "kenneth faried": {
-   "tim": "BAS",
-   "stanje": "van",
-   "tekst": "Out: Out indefinitely with a left thigh injury",
-   "izvor": "basketnews"
-  },
   "kenan kamenjas": {
    "tim": "DUB",
    "stanje": "igra",
    "tekst": "Expected: DNP in Round 11 (new signing). Played in the domestic league (11.15)",
    "izvor": "basketnews"
   },
-  "marcio santos": {
-   "tim": "BAS",
-   "stanje": "upitan",
-   "tekst": "Uncertain: Out indefinitely (left calf tear). DNP in the domestic league (11.15)",
-   "izvor": "basketnews"
-  },
-  "tadas sedekerskis": {
-   "tim": "BAS",
-   "stanje": "van",
-   "tekst": "Out: Out after suffering a right thigh muscle injury in Round 7. Expected return in late November.",
-   "izvor": "basketnews"
-  },
   "juhann begarin": {
    "tim": "ASV",
    "stanje": "upitan",
    "tekst": "Doubtful: DNP in Rounds 8-11 (undisclosed injury). DNP in the domestic league (11.15)",
+   "izvor": "basketnews"
+  },
+  "joel bolomboy": {
+   "tim": "ASV",
+   "stanje": "van",
+   "tekst": "Out: Won't play in Rounds 12-13 after a broken nose in Round 11. Will miss at least 10 days",
    "izvor": "basketnews"
   },
   "myles cale": {
@@ -335,100 +541,22 @@
    "tekst": "Expected: Broken nose in Round 11. Played in the domestic league (11.14) Olympiacos Piraeus",
    "izvor": "basketnews"
   },
-  "georgios bourneles": {
-   "tim": "OLY",
-   "stanje": "upitan",
-   "tekst": "Doubtful: DNP in Rounds 1-11 (coach's decision). DNP in the domestic league (11.15)",
-   "izvor": "basketnews"
-  },
-  "tyler dorsey": {
-   "tim": "OLY",
-   "stanje": "van",
-   "tekst": "Out: DNP in Rounds 6-11 (suspension), TBD if he'll play after suspension",
-   "izvor": "basketnews"
-  },
-  "bryant dunston": {
-   "tim": "OLY",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Round 9-11 (coach's decision). DNP in the domestic league (11.15)",
-   "izvor": "basketnews"
-  },
-  "antonis karagiannidis": {
-   "tim": "OLY",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Rounds 1-11 (coach's decision). DNP in the domestic league (11.15)",
-   "izvor": "basketnews"
-  },
-  "nikola milutinov": {
-   "tim": "OLY",
-   "stanje": "van",
-   "tekst": "Out: Fractured distal phalanx of the index finger (11.14)",
-   "izvor": "basketnews"
-  },
-  "jean montero": {
-   "tim": "OLY",
-   "stanje": "van",
-   "tekst": "Out: Underwent a left knee meniscus injury, expected to be sidelined until the end of April.",
-   "izvor": "basketnews"
-  },
-  "kostas papanikolaou": {
-   "tim": "OLY",
-   "stanje": "igra",
-   "tekst": "Expected: Played in domestic league (11.15) after DNP in Round 11 (tendonitis)",
-   "izvor": "basketnews"
-  },
-  "panagiotis kalaitzakis": {
-   "tim": "PAN",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Rounds 10-11 (coach's decision). Played in the domestic league (11.15)",
-   "izvor": "basketnews"
-  },
   "ioannis kouzeloglou": {
    "tim": "PAN",
    "stanje": "van",
    "tekst": "Out: Out indefinitely, as he's not included in official Euroleague roster",
    "izvor": "basketnews"
   },
-  "eleftherios mantzoukas": {
-   "tim": "PAN",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Rounds 9-11 (coach's decision). DNP in the domestic league (11.15)",
-   "izvor": "basketnews"
-  },
-  "dimitris moraitis": {
-   "tim": "PAN",
-   "stanje": "upitan",
-   "tekst": "Doubtful: DNP in Rounds 8-11 (coach's decision). Played in the domestic league (11.15)",
-   "izvor": "basketnews"
-  },
   "nikolaos rogkavopoulos": {
    "tim": "PAN",
    "stanje": "igra",
-   "tekst": "Ready: Practiced ahead of Round 11, but DNP in Rounds 7-11 (hamstring injury). Returned to action in the domestic league (11.15)",
+   "tekst": "Ready: Traveled for Round 12 after DNP in Rounds 7-11 (hamstring injury). Returned to action in the domestic league (11.15)",
    "izvor": "basketnews"
   },
   "iason varvaritis": {
    "tim": "PAN",
-   "stanje": "upitan",
-   "tekst": "Doubtful: DNP in Rounds 1-11 (coach's decision) Paris Basketball",
-   "izvor": "basketnews"
-  },
-  "joel ayayi": {
-   "tim": "PRS",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Round 11 (coach's decision). Played in the domestic league (11.14)",
-   "izvor": "basketnews"
-  },
-  "daulton hommes": {
-   "tim": "PRS",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Round 11 (coach's decision). Played in the domestic league (11.14)",
-   "izvor": "basketnews"
-  },
-  "maozinha pereira": {
-   "tim": "PRS",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Round 11 (coach's decision). DNP in the domestic league (11.14) Partizan Mozzart Bet Belgrade",
+   "stanje": "van",
+   "tekst": "Out: Didn't travel for Round 12 after DNP in Rounds 1-11 (coach's decision) Paris Basketball",
    "izvor": "basketnews"
   },
   "kyle allman": {
@@ -443,10 +571,10 @@
    "tekst": "Doubtful: DNP in Rounds 2-11 (coach's decision)",
    "izvor": "basketnews"
   },
-  "kevarrius hayes": {
+  "joffrey lauvergne": {
    "tim": "PAR",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Rounds 10-11 (minor shoulder injury). DNP in the domestic league (11.14)",
+   "stanje": "van",
+   "tekst": "Out: Out indefinitely, as he has been deregistered from EuroLeague roster",
    "izvor": "basketnews"
   },
   "chris silva": {
@@ -458,67 +586,13 @@
   "lamar stevens": {
    "tim": "PAR",
    "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Round 11 (illness). DNP in the domestic league (11.14)",
-   "izvor": "basketnews"
-  },
-  "ethan thompson": {
-   "tim": "PAR",
-   "stanje": "upitan",
-   "tekst": "Uncertain: Suffered a hip injury in Round 11. DNP in the domestic league (11.14)",
-   "izvor": "basketnews"
-  },
-  "derek willis": {
-   "tim": "PAR",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Rounds 1-11, but returned to practices (ankle injury). DNP in the domestic league (11.14) Real Madrid",
-   "izvor": "basketnews"
-  },
-  "facundo campazzo": {
-   "tim": "MAD",
-   "stanje": "van",
-   "tekst": "Out: Out indefinitely after suffering a left hamstring injury in a domestic league game (11.01)",
-   "izvor": "basketnews"
-  },
-  "gabriel deck": {
-   "tim": "MAD",
-   "stanje": "van",
-   "tekst": "Out: Underwent left shoulder surgery on October 14, expected to be out until mid-February/mid-March.",
-   "izvor": "basketnews"
-  },
-  "usman garuba": {
-   "tim": "MAD",
-   "stanje": "van",
-   "tekst": "Out: Out indefinitely with a torn ACL",
-   "izvor": "basketnews"
-  },
-  "mikael jantunen": {
-   "tim": "MAD",
-   "stanje": "van",
-   "tekst": "Out: Out indefinitely after a complete rupture of the plantar fascia in left foot (10.30)",
-   "izvor": "basketnews"
-  },
-  "theo maledon": {
-   "tim": "MAD",
-   "stanje": "igra",
-   "tekst": "Ready: Played in domestic league (11.15) after being out due to a right knee sprain (10.30) Valencia Basket",
+   "tekst": "Game-time: DNP in Round 11 (illness). DNP in the domestic league (11.14)",
    "izvor": "basketnews"
   },
   "lucas mari": {
    "tim": "PAM",
    "stanje": "upitan",
    "tekst": "Uncertain: DNP in Round 11 (coach's decision). Played in the domestic league (11.15)",
-   "izvor": "basketnews"
-  },
-  "nikola mirotic": {
-   "tim": "PAM",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Rounds 9-11.DNP in the domestic league (11.15) ( muscle injury )",
-   "izvor": "basketnews"
-  },
-  "nathan reuvers": {
-   "tim": "PAM",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Rounds 8-11 (foot bone injury). DNP in the domestic league (11.15) Virtus Bologna",
    "izvor": "basketnews"
   },
   "matteo baiocchi": {
@@ -533,43 +607,65 @@
    "tekst": "Expected: DNP in Rounds 8-11 (leg contusion). Played in the domestic league (11.15)",
    "izvor": "basketnews"
   },
-  "davide casarin": {
-   "tim": "VIR",
-   "stanje": "van",
-   "tekst": "Out: Out for eight weeks and at least until Round 21 (bone bruise, 11.09)",
-   "izvor": "basketnews"
-  },
   "daniel hackett": {
    "tim": "VIR",
    "stanje": "igra",
    "tekst": "Expected: Ruled out for Round 11 (undisclosed). Played in the domestic league (11.15) Zalgiris Kaunas",
    "izvor": "basketnews"
-  },
-  "marek blazevic": {
-   "tim": "ZAL",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Rounds 8-11 (coach's decision).Played in the domestic league (11.15)",
-   "izvor": "basketnews"
-  },
-  "dovydas giedraitis": {
-   "tim": "ZAL",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Rounds 8-11 (coach's decision). Played in the domestic league (11.15)",
-   "izvor": "basketnews"
-  },
-  "deividas sirvydis": {
-   "tim": "ZAL",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Rounds 8-11 (coach's decision). Played in the domestic league (11.15)",
-   "izvor": "basketnews"
-  },
-  "nigel williams goss": {
-   "tim": "ZAL",
-   "stanje": "van",
-   "tekst": "Out: Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14. Player status color guide Ready The player is fully ready to play. Expected The player is expected to play, but it's not confirmed. Questionable There is a 50-50 chance about the player's availability. Game-time",
-   "izvor": "basketnews"
   }
  },
- "timovi": {},
- "napomena": "16.11: samo BasketNews (Eurohoops izveštaj za kolo 12 još nije izašao)"
+ "timovi": {
+  "DUB": {
+   "bez_izvestaja": true
+  },
+  "TEL": {
+   "bez_izvestaja": true
+  },
+  "ZAL": {
+   "bez_izvestaja": true
+  },
+  "MUN": {
+   "bez_izvestaja": true
+  },
+  "ASV": {
+   "bez_izvestaja": true
+  },
+  "BAR": {
+   "bez_izvestaja": true
+  },
+  "PRS": {
+   "bez_izvestaja": true
+  },
+  "BAS": {
+   "bez_izvestaja": true
+  },
+  "HTA": {
+   "bez_izvestaja": true
+  },
+  "BES": {
+   "bez_izvestaja": true
+  },
+  "MAD": {
+   "bez_izvestaja": true
+  }
+ },
+ "novi": {
+  "rolands smits": {
+   "tim": "BAS",
+   "ime": "Rolands Smits",
+   "tekst": "New signing Rolands Smits has been registered",
+   "pos": "C"
+  },
+  "kenan kamenjas": {
+   "tim": "BAS",
+   "ime": "Kenan Kamenjas",
+   "tekst": "New signing Kenan Kamenjas has been registered",
+   "pos": "C"
+  },
+  "chris silva": {
+   "tim": "PAM",
+   "ime": "Chris Silva",
+   "tekst": "New signing Chris Silva has been registered"
+  }
+ }
 }
