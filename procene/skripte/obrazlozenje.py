@@ -85,7 +85,7 @@ def zr(x):
 
 
 def prezime(puno):
-    w = [x for x in str(puno).split() if x.rstrip('.') not in ('Jr', 'Sr', 'II', 'III', 'IV')]
+    w = [x for x in str(puno).split() if x.rstrip('.').lower() not in ('jr', 'sr', 'ii', 'iii', 'iv')]
     return w[-1] if w else puno
 
 

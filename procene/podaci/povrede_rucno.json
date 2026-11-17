@@ -10,5 +10,17 @@
    "tim": "PAR",
    "izvor": "6.11.: Telegraf, Mondo, B92, Arena sport, Meridian sport: lakša povreda ramena posle ABA meča sa Klužom, propušta Makabi; nestao iz ponude MaxBeta, Mozzarta i Admirala"
   }
+ },
+ "12": {
+  "daniel hackett": {
+   "stanje": "igra",
+   "tim": "VIR",
+   "izvor": "17.11.: zvanični izveštaj (Eurohoops): „Daniel Hackett was ruled out for Round 11 but is listed as available for Round 12“"
+  },
+  "tommaso baldasso": {
+   "stanje": "igra",
+   "tim": "VIR",
+   "izvor": "17.11.: zvanični izveštaj: Casarin je jedini odsutni u Virtusu"
+  }
  }
 }
