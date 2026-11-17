@@ -71,3 +71,8 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
 - Talas 2 (popodne, posle zvaničnog izveštaja o povredama i nove ponude): 40 dvanaestica po 50 + 20 četrnaestica po 50 = 3.000; prednost spuštenim granicama.
 - Za četrnaestice treba bar ~56 igrača u bazenu (≤25% tiketa po igraču); ako ih nema, prvo smanjiti četrnaestice.
 - Šanse po tiketu (model 57–60% / do sada stvarno): osmica 1/69–1/47 / 1/97, desetka 1/180–1/115 / 1/276, dvanaestica 1/460–1/270, četrnaestica 1/1130–1/620 (`minusi/analiza/plan_sim.py`).
+
+## Lista 20 najboljih minusa (od 17.11.2026)
+- Redosled: prvo parovi gde se i minus-model slaže (`msig` ≥ 0,35, isto kao pravilo sajta) i forma nije protiv (ispod granice bar u polovini poslednjih 8), po verovatnoći spoja; ostali („samo model“) u drugom redu.
+- Razlog: Vajli 17.11. bio prvi samo po spoju (69%) iako se minus-model nije slagao (0,29). Na vrhu dana (oko 3 po utakmici, kola 4–11, van uzorka) slaganje 69,1% (n=191), neslaganje 63,6% (n=44).
+- Provereno i odbačeno: slabije skupljanje ka proseku pozicije za igrače bez prošle sezone (K_NOVI 10–40) i zamena stvarnim učinkom po minutu kad odstupa >20% kvare procenu (log verovatnoća, kola 4–11), pa model ostaje kakav jeste.
