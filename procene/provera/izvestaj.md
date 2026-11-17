@@ -1,6 +1,6 @@
 # Provera modela raspona na ponudama
 
-Parametri: kola 3-6, 836 učinaka, log ver -5417.3. Ponude: admiral, maxbet, mozzart, soccerbet, 2026-10-08 do 2026-11-13. Granica sa ishodom: 4452 (igrač nije igrao: 52, ne računa se).
+Parametri: kola 3-6, 836 učinaka, log ver -5417.3. Ponude: admiral, maxbet, mozzart, soccerbet, 2026-10-08 do 2026-11-13. Granica sa ishodom: 4452 (igrač nije igrao: 984, ne računa se).
 
 Manji log gubitak i Brier znače bolje. „Kvote kažu“ je verovatnoća iz kvota bez marže. Kola 7 do 9 su van perioda podešavanja (pravi test).
 
