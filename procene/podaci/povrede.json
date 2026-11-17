@@ -1,6 +1,6 @@
 {
  "kolo": 12,
- "at": "17.11.2026. 14:00",
+ "at": "17.11.2026. 15:28",
  "izvori": [
   "https://www.eurohoops.net/en/euroleague/2036247/injury-report-round-12-willis-gtd-melli-key-milutinov-out/"
  ],
@@ -256,7 +256,7 @@
   "theo maledon": {
    "tim": "MAD",
    "stanje": "igra",
-   "tekst": "Ready: Played in domestic league (11.15) after being out due to a right knee sprain (10.30) Valencia Basket | Eurohoops: Theo Maledon sprained his knee in Round 9 and missed the last two rounds",
+   "tekst": "Expected: Played in domestic league (11.15) after being out due to a right knee sprain (10.30) | Eurohoops: Theo Maledon sprained his knee in Round 9 and missed the last two rounds",
    "izvor": "basketnews"
   },
   "mikael jantunen": {
@@ -327,8 +327,8 @@
   },
   "jaylen nowell": {
    "tim": "BES",
-   "stanje": "upitan",
-   "tekst": "Uncertain: Out indefinitely after undergoing surgery on his broken nose (11.10)",
+   "stanje": "van",
+   "tekst": "Out: Out indefinitely after undergoing surgery on his broken nose (11.10)",
    "izvor": "basketnews"
   },
   "berk ugurlu": {
@@ -397,10 +397,22 @@
    "tekst": "Uncertain: DNP in Round 10-11 (coach's decision). Played in the domestic league (11.15)",
    "izvor": "basketnews"
   },
+  "justus hollatz": {
+   "tim": "MUN",
+   "stanje": "van",
+   "tekst": "Out: Ruled out for Round 12 (undisclosed)",
+   "izvor": "basketnews"
+  },
   "tobias jensen": {
    "tim": "MUN",
    "stanje": "upitan",
    "tekst": "Uncertain: DNP in Round 11 (coach's decision). Played in the domestic league (11.15)",
+   "izvor": "basketnews"
+  },
+  "vladimir lucic": {
+   "tim": "MUN",
+   "stanje": "van",
+   "tekst": "Out: Ruled out for Round 12 (undisclosed)",
    "izvor": "basketnews"
   },
   "austin wiley": {
