@@ -1,6 +1,6 @@
 {
 "v": 1,
-"savedAt": 1794953454845,
+"savedAt": 1795030415232,
 "tickets": [
 {
 "id": "adm7579167865",
@@ -100653,6 +100653,138 @@
 "odds": 1.92
 }
 ]
+},
+{
+"id": "r12d2-1",
+"date": "2026-11-18",
+"round": "12",
+"stake": 300,
+"fund": "novi",
+"legs": [
+{
+"p": "Wenyen Gabriel",
+"team": "Besiktas",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Eugene Omoruyi",
+"team": "Besiktas",
+"stat": "A",
+"line": 2.5,
+"odds": 1.75
+},
+{
+"p": "Lonnie Walker IV",
+"team": "Besiktas",
+"stat": "P",
+"line": 14.5,
+"odds": 1.99
+},
+{
+"p": "Theo Maledon",
+"team": "Real Madrid",
+"stat": "A",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Chuma Okeke",
+"team": "Real Madrid",
+"stat": "P",
+"line": 6.5,
+"odds": 1.92
+}
+]
+},
+{
+"id": "r12d2-2",
+"date": "2026-11-18",
+"round": "12",
+"stake": 300,
+"fund": "novi",
+"legs": [
+{
+"p": "Wenyen Gabriel",
+"team": "Besiktas",
+"stat": "S",
+"line": 4.5,
+"odds": 1.9
+},
+{
+"p": "Devon Dotson",
+"team": "Besiktas",
+"stat": "A",
+"line": 3.5,
+"odds": 1.7
+},
+{
+"p": "Scottie Wilbekin",
+"team": "Besiktas",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Chuma Okeke",
+"team": "Real Madrid",
+"stat": "P",
+"line": 6.5,
+"odds": 1.92
+},
+{
+"p": "Lonnie Walker IV",
+"team": "Besiktas",
+"stat": "P",
+"line": 14.5,
+"odds": 1.99
+}
+]
+},
+{
+"id": "r12d2-3",
+"date": "2026-11-18",
+"round": "12",
+"stake": 300,
+"fund": "novi",
+"legs": [
+{
+"p": "Eugene Omoruyi",
+"team": "Besiktas",
+"stat": "P",
+"line": 10.5,
+"odds": 1.92
+},
+{
+"p": "Theo Maledon",
+"team": "Real Madrid",
+"stat": "A",
+"line": 5.5,
+"odds": 1.85
+},
+{
+"p": "Devon Dotson",
+"team": "Besiktas",
+"stat": "A",
+"line": 3.5,
+"odds": 1.7
+},
+{
+"p": "Scottie Wilbekin",
+"team": "Besiktas",
+"stat": "A",
+"line": 2.5,
+"odds": 1.85
+},
+{
+"p": "Andres Feliz",
+"team": "Real Madrid",
+"stat": "A",
+"line": 4.5,
+"odds": 1.65
+}
+]
 }
 ],
 "results": {
@@ -109704,6 +109836,51 @@
 "actual": 33,
 "dnp": false,
 "min": "32:49"
+},
+"12|wenyen gabriel|S|4.5": {
+"actual": 7,
+"dnp": false,
+"min": "19:06"
+},
+"12|eugene omoruyi|A|2.5": {
+"actual": 6,
+"dnp": false,
+"min": "24:17"
+},
+"12|lonnie walker iv|P|14.5": {
+"actual": 15,
+"dnp": false,
+"min": "24:02"
+},
+"12|theo maledon|A|5.5": {
+"actual": 3,
+"dnp": false,
+"min": "24:39"
+},
+"12|chuma okeke|P|6.5": {
+"actual": 1,
+"dnp": false,
+"min": "15:07"
+},
+"12|devon dotson|A|3.5": {
+"actual": 1,
+"dnp": false,
+"min": "25:17"
+},
+"12|scottie wilbekin|A|2.5": {
+"actual": 5,
+"dnp": false,
+"min": "27:26"
+},
+"12|eugene omoruyi|P|10.5": {
+"actual": 0,
+"dnp": false,
+"min": "24:17"
+},
+"12|andres feliz|A|4.5": {
+"actual": 2,
+"dnp": false,
+"min": "24:55"
 }
 },
 "players": {
@@ -214019,7 +214196,8 @@
 "Plan za kolo 12, utorak 17.11.2026 (9 utakmica), budžet 11.000 din, dva talasa, ravnomerna raspodela: ujutru 50 osmica po 100 + 60 desetki po 50 (deo može devetke po 50) = 8.000; popodne posle zvaničnog izveštaja o povredama i nove ponude 40 dvanaestica po 50 + 20 četrnaestica po 50 = 3.000, prednost parovima kojima je granica spuštena tokom dana. Četvrtak (kolo 13) poseban budžet, odluka posle utorka.",
 "Kolo 12, 17.11.2026, talas 1: odigrano 110 tiketa po planu plan_admiral_110_17nov_talas1 (50 osmica po 100 + 60 desetki po 50, ukupno 8.000 din, ponuda od 09:57), ravnomerna raspodela (46 igrača, svaki na 19–24 tiketa). Upisano kao svež novac; kvote iz ponude.",
 "Kolo 12, 17.11.2026, talas 2: odigrano 60 tiketa po planu plan_admiral_60_17nov_talas2b (40 dvanaestica + 20 četrnaestica po 50, ukupno 3.000 din, ponuda od 15:27), težine po modelima (oba 1,0, jedan 0,8, van 0,4). Lučić (Bajern) van za kolo 12 – u talasu 1 je na 24 tiketa (par se računa po kvoti 1). Ukupno za dan 170 tiketa, 11.000 din.",
-"Kolo 12, 17.11.2026: 170 tiketa (11.000 din: talas 1 110 tiketa 8.000, talas 2 60 tiketa 3.000), bez dobitnog tiketa. Parovi 57 od 111 (51%), vraćeno 5 (Krouder, Mils i Lučić nisu igrali, Vajli DNP). Četiri tiketa sa jednim promašajem za povraćaj: r12d1-10, r12d1-14, r12d1-21 (po 200 din po pravilu kvote) i r12d1-49 (500 din) – iznose prepisati sa PDF-a. Ponuda je cela prošla 52% minusa, naš izbor 50–53% (bez prednosti tog dana). Najgore: Dubai–Efes 5/13 (iako je bilo malo poena, 155), Žalgiris–Bajern 5/13 (117:114 posle produžetka), Makabi–Olimpijakos 4/11 (produžetak); skokovi na tiketima 9/29 (31%, inače oko 56%). Sajt 5/5."
+"Kolo 12, 17.11.2026: 170 tiketa (11.000 din: talas 1 110 tiketa 8.000, talas 2 60 tiketa 3.000), bez dobitnog tiketa. Parovi 57 od 111 (51%), vraćeno 5 (Krouder, Mils i Lučić nisu igrali, Vajli DNP). Četiri tiketa sa jednim promašajem za povraćaj: r12d1-10, r12d1-14, r12d1-21 (po 200 din po pravilu kvote) i r12d1-49 (500 din) – iznose prepisati sa PDF-a. Ponuda je cela prošla 52% minusa, naš izbor 50–53% (bez prednosti tog dana). Najgore: Dubai–Efes 5/13 (iako je bilo malo poena, 155), Žalgiris–Bajern 5/13 (117:114 posle produžetka), Makabi–Olimpijakos 4/11 (produžetak); skokovi na tiketima 9/29 (31%, inače oko 56%). Sajt 5/5.",
+"18.11. Bešiktaš–Real (83:79), 3 tiketa po 300 din, po 5 parova iz jedne utakmice (Nikolin zahtev). T3 4/5 (pao samo Wilbekin, 5 asist. na 2,5), T1 i T2 2/5. Parovi na tiketima 5/9. Real (izostanci, filter bi ih izbacio) 3/3, Bešiktaš 2/6: Gabriel 7 skokova, Omoruyi 6 asist., Walker 15 na 14,5. Cela ponuda ispod 14/29 (48%), naš vrh po proceni 1/3. Bešiktaš: Jeffries 20 poena van ponude."
 ]
 },
 "offerSnaps": [
@@ -225615,7 +225793,7 @@
 }
 ],
 "minLog": {
-"at": "2026-11-17",
+"at": "2026-11-18",
 "season": "E2026",
 "m": {
 "jacob toppin": [
