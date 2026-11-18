@@ -542,7 +542,10 @@ def main():
             g = u['g']
             # od 6.11.2026: posle roka se zaključava svaka objavljena utakmica, i ona bez predloga (inače bi naknadno
             # pokretanje dopunilo predloge koji nisu bili na listi u trenutku roka)
-            if str(g) not in konacno and g not in pocele and g in R and sad_bg >= R[g][1] and g in objavljive:
+            # 18.11.2026: utakmica za koju do roka nije bilo ponude (ništa objavljeno) ne zaključava se ovde; nju
+            # zaključava sada_konacno ispod, sa predlozima prvog osvežavanja posle roka (Beşiktaš–Real, ponude u 17:17)
+            if str(g) not in konacno and g not in pocele and g in R and sad_bg >= R[g][1] and g in objavljive \
+                    and str(g) in st.get('ponuda', {}):
                 konacno[str(g)] = fmt(R[g][1])
         zamrznute = pocele | {int(g) for g in konacno}
         zadrzi = [p for p in st['predlozi'] if p['g'] in zamrznute]          # zaključani

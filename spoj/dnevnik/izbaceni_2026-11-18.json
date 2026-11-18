@@ -1,0 +1,30 @@
+{
+ "dan": "2026-11-18",
+ "upisano": "18.11.2026. 17:24",
+ "izbaceni": [
+  {
+   "k": "andres feliz",
+   "ime": "Andres Feliz",
+   "tim": "MAD",
+   "s": "A",
+   "l": 4.5,
+   "kvota": 1.65,
+   "kl": "admiral",
+   "pp": 0.6056,
+   "fer": 0.5556,
+   "msig": 0.3462
+  },
+  {
+   "k": "wenyen gabriel",
+   "ime": "Wenyen Gabriel",
+   "tim": "BES",
+   "s": "S",
+   "l": 4.5,
+   "kvota": 1.9,
+   "kl": "admiral",
+   "pp": 0.5884,
+   "fer": 0.4865,
+   "msig": -0.0299
+  }
+ ]
+}

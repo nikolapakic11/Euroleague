@@ -3647,6 +3647,110 @@
      "prosao": true
     }
    ]
+  },
+  "120": {
+   "dan": "2026-11-18",
+   "upisano": "18.11.2026. 17:23",
+   "sada": [
+    {
+     "ime": "Lonnie Walker Iv",
+     "igr": "lonnie walker",
+     "tim": "BES",
+     "s": "A",
+     "strana": "o",
+     "l": 1.5,
+     "kl": "admiral",
+     "k": 1.65,
+     "pp": 0.5576,
+     "rang": 1
+    },
+    {
+     "ime": "Conor Morgan",
+     "igr": "conor morgan",
+     "tim": "BES",
+     "s": "S",
+     "strana": "o",
+     "l": 2.5,
+     "kl": "admiral",
+     "k": 1.85,
+     "pp": 0.5405,
+     "rang": 2
+    },
+    {
+     "ime": "Alberto Abalde",
+     "igr": "alberto abalde",
+     "tim": "MAD",
+     "s": "P",
+     "strana": "o",
+     "l": 5.5,
+     "kl": "admiral",
+     "k": 1.92,
+     "pp": 0.5387,
+     "rang": 3
+    },
+    {
+     "ime": "Conor Morgan",
+     "igr": "conor morgan",
+     "tim": "BES",
+     "s": "P",
+     "strana": "o",
+     "l": 4.5,
+     "kl": "admiral",
+     "k": 1.79,
+     "pp": 0.5281,
+     "rang": 4
+    },
+    {
+     "ime": "Andres Feliz",
+     "igr": "andres feliz",
+     "tim": "MAD",
+     "s": "S",
+     "strana": "o",
+     "l": 2.5,
+     "kl": "admiral",
+     "k": 1.7,
+     "pp": 0.5259,
+     "rang": 5
+    },
+    {
+     "ime": "Eugene Omoruyi",
+     "igr": "eugene omoruyi",
+     "tim": "BES",
+     "s": "S",
+     "strana": "o",
+     "l": 3.5,
+     "kl": "admiral",
+     "k": 1.7,
+     "pp": 0.5246,
+     "rang": 6
+    },
+    {
+     "ime": "Alberto Abalde",
+     "igr": "alberto abalde",
+     "tim": "MAD",
+     "s": "A",
+     "strana": "o",
+     "l": 1.5,
+     "kl": "admiral",
+     "k": 1.75,
+     "pp": 0.5136,
+     "rang": 7
+    }
+   ],
+   "senka": [
+    {
+     "ime": "Lonnie Walker Iv",
+     "igr": "lonnie walker",
+     "tim": "BES",
+     "s": "A",
+     "strana": "o",
+     "l": 1.5,
+     "kl": "admiral",
+     "k": 1.65,
+     "pp": 0.5145427044416437,
+     "rang": 1
+    }
+   ]
   }
  },
  "w": [
