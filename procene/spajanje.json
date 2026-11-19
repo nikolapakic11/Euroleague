@@ -1,13 +1,13 @@
 {
  "w": [
-  -0.0993,
+  -0.1226,
   0.3,
   0.7,
   0.0,
   0.0
  ],
  "kal": {},
- "n_wf": 4784,
+ "n_wf": 5686,
  "w_kola_4_6": [
   -0.1912,
   0.3,
@@ -15,7 +15,7 @@
   0.0,
   0.0
  ],
- "n_granica": 5348,
+ "n_granica": 6250,
  "pravilo": {
   "kvota_min": 1.5,
   "prag_minus": 0.5,
@@ -36,45 +36,45 @@
  },
  "test": {
   "kola_7_9": {
-   "utakmica": 58,
-   "predloga": 1524,
+   "utakmica": 65,
+   "predloga": 1709,
    "ukupno": {
-    "n": 1524,
-    "prosao": 842,
-    "dobit": 37.74,
-    "pp": 0.576
+    "n": 1709,
+    "prosao": 955,
+    "dobit": 61.49,
+    "pp": 0.575
    },
    "po_strani": {
     "minus": {
-     "n": 1384,
-     "prosao": 759,
-     "dobit": 45.71,
+     "n": 1550,
+     "prosao": 859,
+     "dobit": 67.0,
      "pp": 0.58
     },
     "plus": {
-     "n": 140,
-     "prosao": 83,
-     "dobit": -7.97,
+     "n": 159,
+     "prosao": 96,
+     "dobit": -5.51,
      "pp": 0.529
     }
    },
    "po_nivou": {
     "jak": {
-     "n": 217,
-     "prosao": 135,
-     "dobit": 10.62,
+     "n": 239,
+     "prosao": 150,
+     "dobit": 13.78,
      "pp": 0.647
     },
     "nagoveštaj": {
-     "n": 546,
-     "prosao": 292,
-     "dobit": 14.73,
+     "n": 637,
+     "prosao": 343,
+     "dobit": 21.42,
      "pp": 0.533
     },
     "solidan": {
-     "n": 761,
-     "prosao": 415,
-     "dobit": 12.39,
+     "n": 833,
+     "prosao": 462,
+     "dobit": 26.29,
      "pp": 0.586
     }
    },
@@ -110,10 +110,16 @@
      "pp": 0.574
     },
     "12": {
-     "n": 223,
-     "prosao": 118,
-     "dobit": -5.42,
-     "pp": 0.574
+     "n": 250,
+     "prosao": 136,
+     "dobit": 0.64,
+     "pp": 0.572
+    },
+    "13": {
+     "n": 158,
+     "prosao": 95,
+     "dobit": 17.69,
+     "pp": 0.571
     }
    }
   },
@@ -182,8 +188,8 @@
    }
   },
   "opis": "koeficijenti spajanja iz kola 4–6; kola 7–9 su van podešavanja, kola 4–6 su u periodu podešavanja. Admiral i MaxBet, jedna kladionica po danu, samo glavne granice",
-  "ll_spojeno": 0.6838,
+  "ll_spojeno": 0.6808,
   "ll_kvote": 0.6862,
-  "ll_model": 0.6994
+  "ll_model": 0.6939
  }
 }

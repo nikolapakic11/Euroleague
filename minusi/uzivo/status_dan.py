@@ -49,8 +49,9 @@ def nadji(ime):
         if ww and w and ww[-1] == w[-1] and ww[0][:3] == w[0][:3]: return v
     return None
 
+OPSTE = {'aviv', 'basketball', 'basket', 'club', 'sport'}   # 19.11.2026: „Hapoel Tel-Aviv“ se kačio na Makabi preko „aviv“
 def igra_tima(tim):
-    w = [x for x in nk(tim).replace(',', ' ').split() if len(x) >= 4]
+    w = [x for x in nk(tim).replace(',', ' ').split() if len(x) >= 4 and x not in OPSTE]
     for tn, g in TIM.items():
         if any(x in tn.split() for x in w): return g
     return None
