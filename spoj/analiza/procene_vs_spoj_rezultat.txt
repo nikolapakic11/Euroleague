@@ -1,0 +1,87 @@
+=== 1. Minusi po danu (Admiral, jedan po igraču, najviše 2 po utakmici, kvota ≥1,60) ===
+-- sva kola (n=2615, dana 20) --
+  spoj p3 (bez tog kola)       top4 60.5% (n= 76, kv 1.75, povr +6.0%) | top8 61.2% (n=134, kv 1.77, povr +8.4%) | top15 66.0% (n=256, kv 1.80, povr +19.4%)
+  procene sam (1−pm)           top4 63.2% (n= 76, kv 1.85, povr +17.8%) | top8 59.7% (n=134, kv 1.86, povr +12.0%) | top15 62.5% (n=256, kv 1.86, povr +16.2%)
+  procene prednost (tr−pm)     top4 55.3% (n= 76, kv 2.00, povr +9.8%) | top8 53.0% (n=134, kv 1.99, povr +5.0%) | top15 56.6% (n=256, kv 1.98, povr +11.9%)
+  tržište (1−tr)               top4 61.8% (n= 76, kv 1.62, povr -0.1%) | top8 55.2% (n=134, kv 1.64, povr -9.9%) | top15 59.4% (n=256, kv 1.68, povr -0.5%)
+-- kola 8+ (n=1491, dana 12) --
+  spoj p3 (bez tog kola)       top4 54.5% (n= 44, kv 1.75, povr -3.5%) | top8 55.3% (n= 76, kv 1.77, povr -1.7%) | top15 60.0% (n=145, kv 1.81, povr +9.0%)
+  procene sam (1−pm)           top4 56.8% (n= 44, kv 1.86, povr +6.7%) | top8 57.9% (n= 76, kv 1.87, povr +9.9%) | top15 60.7% (n=145, kv 1.86, povr +13.5%)
+  procene prednost (tr−pm)     top4 47.7% (n= 44, kv 2.00, povr -4.5%) | top8 46.1% (n= 76, kv 1.98, povr -9.8%) | top15 52.4% (n=145, kv 1.99, povr +3.7%)
+  tržište (1−tr)               top4 54.5% (n= 44, kv 1.62, povr -11.9%) | top8 51.3% (n= 76, kv 1.63, povr -16.6%) | top15 57.2% (n=145, kv 1.67, povr -4.3%)
+  spoj f3 (samo ranija kola)   top4 59.1% (n= 44, kv 1.81, povr +7.0%) | top8 53.9% (n= 76, kv 1.79, povr -2.1%) | top15 60.0% (n=145, kv 1.83, povr +10.9%)
+-- kola 10+ (n=886, dana 8) --
+  spoj p3 (bez tog kola)       top4 39.3% (n= 28, kv 1.77, povr -28.9%) | top8 45.7% (n= 46, kv 1.80, povr -15.8%) | top15 59.1% (n= 88, kv 1.82, povr +9.5%)
+  procene sam (1−pm)           top4 64.3% (n= 28, kv 1.87, povr +22.3%) | top8 56.5% (n= 46, kv 1.88, povr +8.0%) | top15 59.1% (n= 88, kv 1.87, povr +11.6%)
+  procene prednost (tr−pm)     top4 57.1% (n= 28, kv 1.97, povr +12.5%) | top8 50.0% (n= 46, kv 1.97, povr -2.2%) | top15 55.7% (n= 88, kv 1.98, povr +9.0%)
+  tržište (1−tr)               top4 50.0% (n= 28, kv 1.62, povr -19.2%) | top8 47.8% (n= 46, kv 1.63, povr -22.4%) | top15 60.2% (n= 88, kv 1.67, povr +0.8%)
+  spoj f3 (samo ranija kola)   top4 53.6% (n= 28, kv 1.82, povr -1.0%) | top8 50.0% (n= 46, kv 1.81, povr -6.8%) | top15 59.1% (n= 88, kv 1.85, povr +11.3%)
+
+  pragovi (svi parovi iznad praga, kvota ≥1,60):
+    spoj p3 (bez tog kola)   ≥0.55: 61.1% (n=1165, kv 1.88, povr +14.8%)
+    spoj p3 (bez tog kola)   ≥0.58: 62.2% (n=767, kv 1.86, povr +15.4%)
+    spoj p3 (bez tog kola)   ≥0.60: 62.1% (n=525, kv 1.84, povr +14.3%)
+    spoj p3 (bez tog kola)   ≥0.65: 63.7% (n=146, kv 1.79, povr +14.1%)
+    procene sam (1−pm)       ≥0.55: 56.5% (n=1572, kv 1.91, povr +7.6%)
+    procene sam (1−pm)       ≥0.58: 57.1% (n=1296, kv 1.90, povr +8.4%)
+    procene sam (1−pm)       ≥0.60: 58.1% (n=1096, kv 1.90, povr +9.9%)
+    procene sam (1−pm)       ≥0.65: 59.6% (n=604, kv 1.88, povr +11.5%)
+
+  slaganje: oba jaka (p3≥0,55 i 1−pm≥0,55) / samo spoj / samo procene, kvota ≥1,60:
+    oba            61.2% (n=941, kv 1.88, povr +14.8%)
+    samo spoj      60.7% (n=224, kv 1.90, povr +14.5%)
+    samo procene   49.4% (n=631, kv 1.96, povr -3.3%)
+
+=== 2. Izostanci: novi (igrač propustio 0–2 utakmice pre ove) naspram starih (3+) ===
+  -- sve stavke --
+    tim bez većih izostanaka (<20 min)             n=1186 ispod 56.8% | tržište 49.3% | spoj 56.5% | razlika od tržišta +7.5%
+    novi izostanci ≥35 min                         n= 552 ispod 51.6% | tržište 49.3% | spoj 50.3% | razlika od tržišta +2.3%
+    samo stari izostanci ≥35 min (novi <20)        n=  63 ispod 49.2% | tržište 48.6% | spoj 53.1% | razlika od tržišta +0.6%
+    ukupno ≥35 (kao filter)                        n= 739 ispod 50.9% | tržište 49.4% | spoj 51.3% | razlika od tržišta +1.5%
+  -- poeni --
+    tim bez većih izostanaka (<20 min)             n= 600 ispod 55.3% | tržište 50.0% | spoj 55.4% | razlika od tržišta +5.3%
+    novi izostanci ≥35 min                         n= 277 ispod 50.9% | tržište 50.1% | spoj 49.1% | razlika od tržišta +0.8%
+    samo stari izostanci ≥35 min (novi <20)        n=  30 ispod 60.0% | tržište 49.9% | spoj 52.8% | razlika od tržišta +10.1%
+    ukupno ≥35 (kao filter)                        n= 364 ispod 51.4% | tržište 50.1% | spoj 50.0% | razlika od tržišta +1.3%
+  -- skokovi i asistencije --
+    tim bez većih izostanaka (<20 min)             n= 586 ispod 58.4% | tržište 48.6% | spoj 57.6% | razlika od tržišta +9.8%
+    novi izostanci ≥35 min                         n= 275 ispod 52.4% | tržište 48.6% | spoj 51.6% | razlika od tržišta +3.8%
+    samo stari izostanci ≥35 min (novi <20)        n=  33 ispod 39.4% | tržište 47.5% | spoj 53.4% | razlika od tržišta -8.1%
+    ukupno ≥35 (kao filter)                        n= 375 ispod 50.4% | tržište 48.8% | spoj 52.6% | razlika od tržišta +1.6%
+
+  jaki po spoju (p3 ≥0,55, kvota ≥1,60) u timovima sa izostancima:
+    novi ≥35                                       n= 125 ispod 58.4% | tržište 50.9% | spoj 58.9% | razlika od tržišta +7.5%
+    samo stari ≥35                                 n=  24 ispod 54.2% | tržište 49.0% | spoj 59.3% | razlika od tržišta +5.1%
+    bez izostanaka                                 n= 642 ispod 62.6% | tržište 50.1% | spoj 60.6% | razlika od tržišta +12.5%
+
+=== 3. Mešavine za rangiranje (minusi po danu) ===
+-- sva kola --
+  spoj p3                      top4 60.5% (n= 76, kv 1.75, povr +6.0%) | top8 61.2% (n=134, kv 1.77, povr +8.4%) | top15 66.0% (n=256, kv 1.80, povr +19.4%)
+  procene sam                  top4 63.2% (n= 76, kv 1.85, povr +17.8%) | top8 59.7% (n=134, kv 1.86, povr +12.0%) | top15 62.5% (n=256, kv 1.86, povr +16.2%)
+  prosek p3 i procena          top4 68.4% (n= 76, kv 1.82, povr +25.1%) | top8 64.2% (n=134, kv 1.82, povr +17.3%) | top15 64.5% (n=256, kv 1.83, povr +18.4%)
+  manji od dva (oba moraju)    top4 61.8% (n= 76, kv 1.78, povr +10.3%) | top8 63.4% (n=134, kv 1.79, povr +14.0%) | top15 65.6% (n=256, kv 1.82, povr +19.9%)
+  p3, uslov procene ≥0,55      top4 61.8% (n= 76, kv 1.76, povr +8.8%) | top8 61.9% (n=134, kv 1.77, povr +10.1%) | top15 64.8% (n=256, kv 1.81, povr +18.0%)
+-- kola 8+ --
+  spoj p3                      top4 54.5% (n= 44, kv 1.75, povr -3.5%) | top8 55.3% (n= 76, kv 1.77, povr -1.7%) | top15 60.0% (n=145, kv 1.81, povr +9.0%)
+  procene sam                  top4 56.8% (n= 44, kv 1.86, povr +6.7%) | top8 57.9% (n= 76, kv 1.87, povr +9.9%) | top15 60.7% (n=145, kv 1.86, povr +13.5%)
+  prosek p3 i procena          top4 61.4% (n= 44, kv 1.82, povr +13.3%) | top8 60.5% (n= 76, kv 1.81, povr +10.7%) | top15 60.7% (n=145, kv 1.82, povr +11.5%)
+  manji od dva (oba moraju)    top4 50.0% (n= 44, kv 1.78, povr -9.7%) | top8 53.9% (n= 76, kv 1.79, povr -2.1%) | top15 60.7% (n=145, kv 1.82, povr +11.2%)
+  p3, uslov procene ≥0,55      top4 54.5% (n= 44, kv 1.75, povr -3.5%) | top8 55.3% (n= 76, kv 1.77, povr -1.7%) | top15 57.9% (n=145, kv 1.81, povr +5.6%)
+-- kola 10+ --
+  spoj p3                      top4 39.3% (n= 28, kv 1.77, povr -28.9%) | top8 45.7% (n= 46, kv 1.80, povr -15.8%) | top15 59.1% (n= 88, kv 1.82, povr +9.5%)
+  procene sam                  top4 64.3% (n= 28, kv 1.87, povr +22.3%) | top8 56.5% (n= 46, kv 1.88, povr +8.0%) | top15 59.1% (n= 88, kv 1.87, povr +11.6%)
+  prosek p3 i procena          top4 60.7% (n= 28, kv 1.84, povr +13.2%) | top8 60.9% (n= 46, kv 1.83, povr +13.1%) | top15 59.1% (n= 88, kv 1.84, povr +10.4%)
+  manji od dva (oba moraju)    top4 35.7% (n= 28, kv 1.77, povr -34.9%) | top8 45.7% (n= 46, kv 1.81, povr -14.9%) | top15 59.1% (n= 88, kv 1.83, povr +10.7%)
+  p3, uslov procene ≥0,55      top4 39.3% (n= 28, kv 1.77, povr -28.9%) | top8 45.7% (n= 46, kv 1.80, povr -15.8%) | top15 56.8% (n= 88, kv 1.83, povr +5.7%)
+
+=== 4. Prosek (p3 + procene)/2: pragovi, kvota ≥1,60 ===
+  sva kola  ≥0.55: 57.8% (n=1403, kv 1.89, povr +9.3%) | po danu 70.2
+  sva kola  ≥0.58: 59.8% (n=1023, kv 1.88, povr +12.2%) | po danu 51.1
+  sva kola  ≥0.60: 60.2% (n=773, kv 1.87, povr +12.3%) | po danu 38.6
+  sva kola  ≥0.62: 61.3% (n=532, kv 1.86, povr +13.7%) | po danu 26.6
+  sva kola  ≥0.65: 65.5% (n=275, kv 1.84, povr +20.0%) | po danu 13.8
+  kola 10+  ≥0.55: 55.0% (n=453, kv 1.88, povr +3.2%) | po danu 56.6
+  kola 10+  ≥0.58: 57.9% (n=323, kv 1.87, povr +8.3%) | po danu 40.4
+  kola 10+  ≥0.60: 60.6% (n=236, kv 1.87, povr +13.8%) | po danu 29.5
+  kola 10+  ≥0.62: 62.7% (n=158, kv 1.86, povr +17.7%) | po danu 19.8
+  kola 10+  ≥0.65: 60.5% (n= 81, kv 1.85, povr +14.1%) | po danu 10.1

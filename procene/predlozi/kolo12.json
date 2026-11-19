@@ -667,7 +667,9 @@
    "upisano": "18.11.2026. 17:24",
    "prvi_put": "18.11.2026. 17:24",
    "zatv": 1.79,
-   "zatv_fer": 1.894
+   "zatv_fer": 1.894,
+   "ishod": 5,
+   "prosao": true
   }
  ],
  "konacno": {
@@ -11439,7 +11441,10 @@
     "protiv": [
      "Kod Bešiktaša ne igra Jaylen Nowell, pa ostaje više minuta i lopti za ostale.",
      "Ove sezone daje 13 do 14 poena po utakmici i granicu od 11,5 prebacio je u 7 od 11 utakmica."
-    ]
+    ],
+    "ishod": 15,
+    "min_st": 27,
+    "prosao": false
    },
    {
     "k": "scottie wilbekin",
@@ -11475,7 +11480,10 @@
     "protiv": [
      "Kod Bešiktaša ne igra Jaylen Nowell, pa ostaje više minuta i lopti za ostale.",
      "Ove sezone daje oko tri asistencije po utakmici i granicu od 2,5 prebacio je u 6 od 11 utakmica."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 27,
+    "prosao": false
    },
    {
     "k": "anthony brown",
@@ -11512,7 +11520,10 @@
     "protiv": [
      "Kod Bešiktaša ne igra Jaylen Nowell, pa ostaje više minuta i lopti za ostale.",
      "Ove sezone daje osam do devet poena po utakmici i granicu od 6,5 prebacio je u 8 od 11 utakmica."
-    ]
+    ],
+    "ishod": 0,
+    "min_st": 8,
+    "prosao": true
    },
    {
     "k": "devon dotson",
@@ -11549,7 +11560,10 @@
     "protiv": [
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Walker i Wilbekin.",
      "U poslednje tri utakmice: 9, 8 i 6 poena, manje nego inače."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 25,
+    "prosao": false
    },
    {
     "k": "devon dotson",
@@ -11584,7 +11598,10 @@
     "protiv": [
      "Kod Bešiktaša ne igra Jaylen Nowell, pa ostaje više minuta i lopti za ostale.",
      "Ove sezone daje tri do četiri asistencije po utakmici i granicu od 3,5 prebacio je u 5 od 9 utakmica."
-    ]
+    ],
+    "ishod": 1,
+    "min_st": 25,
+    "prosao": true
    },
    {
     "k": "lonnie walker",
@@ -11621,7 +11638,10 @@
     "protiv": [
      "Kod Bešiktaša ne igra Jaylen Nowell, pa ostaje više minuta i lopti za ostale.",
      "Jedna je od prvih opcija u napadu Bešiktaša."
-    ]
+    ],
+    "ishod": 15,
+    "min_st": 24,
+    "prosao": false
    },
    {
     "k": "lonnie walker",
@@ -11656,7 +11676,10 @@
     "protiv": [
      "Ove sezone daje oko dve asistencije po utakmici; ispod 1,5 je ostao u 3 od 4 utakmice.",
      "Nije glavni organizator; loptu kod Bešiktaša uglavnom vode Dotson i Wilbekin."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 24,
+    "prosao": true
    },
    {
     "k": "eugene omoruyi",
@@ -11693,7 +11716,10 @@
     "protiv": [
      "Kod Bešiktaša ne igra Jaylen Nowell, pa ostaje više minuta i lopti za ostale.",
      "Otkad se vratio Walker i Dotson (2 utakmice), igra oko 24 minuta i daje 13,5 poena po utakmici, naspram 9,6 ranije; procena to uzima u obzir."
-    ]
+    ],
+    "ishod": 0,
+    "min_st": 24,
+    "prosao": true
    },
    {
     "k": "eugene omoruyi",
@@ -11730,7 +11756,10 @@
     "protiv": [
      "Ove sezone daje oko tri skoka po utakmici; ispod 3,5 je ostao u 6 od 11 utakmica.",
      "Glavni skakač Bešiktaša je Zizic, pa za njega ostaje manje odbijenih lopti."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 24,
+    "prosao": false
    },
    {
     "k": "eugene omoruyi",
@@ -11765,7 +11794,10 @@
     "protiv": [
      "Kod Bešiktaša ne igra Jaylen Nowell, pa ostaje više minuta i lopti za ostale.",
      "Otkad se vratio Walker i Dotson (2 utakmice), igra oko 24 minuta i daje 4,5 asistencije po utakmici, naspram 2,3 ranije; procena to uzima u obzir."
-    ]
+    ],
+    "ishod": 6,
+    "min_st": 24,
+    "prosao": false
    },
    {
     "k": "wenyen gabriel",
@@ -11802,7 +11834,10 @@
     "protiv": [
      "Kod Bešiktaša ne igra Jaylen Nowell, pa ostaje više minuta i lopti za ostale.",
      "Otkad se vratio Walker i Dotson (2 utakmice), igra oko 23 minuta i daje 14,5 poena po utakmici, naspram 6,3 ranije; procena to uzima u obzir."
-    ]
+    ],
+    "ishod": 11,
+    "min_st": 19,
+    "prosao": false
    },
    {
     "k": "wenyen gabriel",
@@ -11839,7 +11874,10 @@
     "protiv": [
      "Kod Bešiktaša ne igra Jaylen Nowell, pa ostaje više minuta i lopti za ostale.",
      "Otkad se vratio Walker i Dotson (2 utakmice), igra oko 23 minuta i daje 6,5 skokova po utakmici, naspram 2,8 ranije; procena to uzima u obzir."
-    ]
+    ],
+    "ishod": 7,
+    "min_st": 19,
+    "prosao": false
    },
    {
     "k": "conor morgan",
@@ -11876,7 +11914,10 @@
     "protiv": [
      "Otkad se vratio Walker i Dotson (2 utakmice), igra oko 14 minuta i daje 3 poena po utakmici, naspram 8,4 ranije; procena to uzima u obzir.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Walker i Wilbekin."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 13,
+    "prosao": true
    },
    {
     "k": "conor morgan",
@@ -11913,7 +11954,10 @@
     "protiv": [
      "Glavni skakač Bešiktaša je Zizic, pa za njega ostaje manje odbijenih lopti.",
      "Dolazi sa klupe i igra oko 18 minuta."
-    ]
+    ],
+    "ishod": 4,
+    "min_st": 13,
+    "prosao": true
    },
    {
     "k": "theo maledon",
@@ -11948,7 +11992,10 @@
     "protiv": [
      "Kod Reala ne igraju Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "Ove sezone daje 16 do 17 poena po utakmici i granicu od 15,5 prebacio je u 5 od 9 utakmica."
-    ]
+    ],
+    "ishod": 22,
+    "min_st": 25,
+    "prosao": false
    },
    {
     "k": "theo maledon",
@@ -11984,7 +12031,10 @@
     ],
     "protiv": [
      "U gostima hvata manje skokova nego kod kuće (tri do četiri skoka naspram četiri do pet skokova), a sada igra u gostima."
-    ]
+    ],
+    "ishod": 6,
+    "min_st": 25,
+    "prosao": true
    },
    {
     "k": "theo maledon",
@@ -12021,7 +12071,10 @@
     "protiv": [
      "Kod Reala ne igraju Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "Prvi je organizator igre Reala: lopta je najčešće u njegovim rukama."
-    ]
+    ],
+    "ishod": 3,
+    "min_st": 25,
+    "prosao": true
    },
    {
     "k": "andres feliz",
@@ -12058,7 +12111,10 @@
     "protiv": [
      "Kod Reala ne igraju Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "Jedna je od prvih opcija u napadu Reala."
-    ]
+    ],
+    "ishod": 13,
+    "min_st": 25,
+    "prosao": false
    },
    {
     "k": "andres feliz",
@@ -12094,7 +12150,10 @@
     "protiv": [
      "Kao bek retko ide u skok; odbijene lopte kod Reala uglavnom hvataju Tavares i Maledon.",
      "Na raspolaganju je ponovo i Theo Maledon, pa minuti na njegovoj poziciji mogu da budu podeljeni."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 25,
+    "prosao": true
    },
    {
     "k": "andres feliz",
@@ -12130,7 +12189,10 @@
     ],
     "protiv": [
      "Kod Reala ne igraju Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 25,
+    "prosao": true
    },
    {
     "k": "walter tavares",
@@ -12167,7 +12229,10 @@
     "protiv": [
      "Kod Reala ne igraju Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "Ove sezone daje oko deset poena po utakmici i granicu od 9,5 prebacio je u 6 od 11 utakmica."
-    ]
+    ],
+    "ishod": 5,
+    "min_st": 27,
+    "prosao": true
    },
    {
     "k": "walter tavares",
@@ -12204,7 +12269,10 @@
     "protiv": [
      "Kod Reala ne igraju Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "Glavni je skakač Reala: niko u timu ne hvata više odbijenih lopti."
-    ]
+    ],
+    "ishod": 8,
+    "min_st": 27,
+    "prosao": false
    },
    {
     "k": "alberto abalde",
@@ -12241,7 +12309,10 @@
     "protiv": [
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Maledon i Feliz.",
      "Dolazi sa klupe i igra oko 18 minuta."
-    ]
+    ],
+    "ishod": 7,
+    "min_st": 25,
+    "prosao": true
    },
    {
     "k": "alberto abalde",
@@ -12277,7 +12348,10 @@
     "protiv": [
      "Ove sezone daje jedna do dve asistencije po utakmici; ispod 1,5 je ostao u 7 od 11 utakmica.",
      "Nije glavni organizator; loptu kod Reala uglavnom vode Maledon i Feliz."
-    ]
+    ],
+    "ishod": 0,
+    "min_st": 25,
+    "prosao": false
    },
    {
     "k": "timothe luwawu cabarrot",
@@ -12314,7 +12388,10 @@
     "protiv": [
      "Kod Reala ne igraju Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "Protiv Bešiktaša krila postižu više nego protiv većine ekipa."
-    ]
+    ],
+    "ishod": 8,
+    "min_st": 21,
+    "prosao": true
    },
    {
     "k": "chuma okeke",
@@ -12350,7 +12427,10 @@
     ],
     "protiv": [
      "Kod Reala ne igraju Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale."
-    ]
+    ],
+    "ishod": 1,
+    "min_st": 15,
+    "prosao": true
    },
    {
     "k": "chuma okeke",
@@ -12387,7 +12467,10 @@
     "protiv": [
      "Kod Reala ne igraju Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "U poslednje tri utakmice: 7, 5 i 4 skoka, više nego inače."
-    ]
+    ],
+    "ishod": 1,
+    "min_st": 15,
+    "prosao": true
    },
    {
     "k": "jaime pradilla",
@@ -12424,7 +12507,10 @@
     "protiv": [
      "Kod Reala ne igraju Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "Protiv Bešiktaša krila postižu više nego protiv većine ekipa."
-    ]
+    ],
+    "ishod": 2,
+    "min_st": 19,
+    "prosao": true
    },
    {
     "k": "gabriele procida",
@@ -12461,7 +12547,10 @@
     "protiv": [
      "Kod Reala ne igraju Facundo Campazzo i Mikael Jantunen, pa ostaje više minuta i lopti za ostale.",
      "Protiv Bešiktaša krila postižu više nego protiv većine ekipa."
-    ]
+    ],
+    "ishod": 0,
+    "min_st": 8,
+    "prosao": true
    }
   ]
  },
