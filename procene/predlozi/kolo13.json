@@ -114,7 +114,7 @@
     6
    ],
    "rang_dan": 1,
-   "upisano": "19.11.2026. 13:53",
+   "upisano": "19.11.2026. 14:29",
    "prvi_put": "19.11.2026. 12:38",
    "zatv": 1.6,
    "zatv_fer": 1.553
@@ -242,7 +242,7 @@
     7
    ],
    "rang_dan": 2,
-   "upisano": "19.11.2026. 13:53",
+   "upisano": "19.11.2026. 14:29",
    "prvi_put": "19.11.2026. 12:38",
    "zatv": 1.86,
    "zatv_fer": 1.647
@@ -370,7 +370,7 @@
     7
    ],
    "rang_dan": 3,
-   "upisano": "19.11.2026. 13:53",
+   "upisano": "19.11.2026. 14:29",
    "prvi_put": "19.11.2026. 12:38",
    "zatv": 1.92,
    "zatv_fer": 1.791
@@ -484,10 +484,127 @@
     7
    ],
    "rang_dan": 4,
-   "upisano": "19.11.2026. 13:53",
+   "upisano": "19.11.2026. 14:29",
    "prvi_put": "19.11.2026. 12:38",
    "zatv": 1.85,
    "zatv_fer": 1.608
+  },
+  {
+   "g": 125,
+   "dan": "2026-11-19",
+   "vreme": "19.11. 21:00",
+   "k": "tj shorts",
+   "ime": "Tj Shorts",
+   "tim": "PAM",
+   "prot": "VIR",
+   "s": "A",
+   "strana": "u",
+   "l": 6.5,
+   "kl": "admiral",
+   "kvota": 1.85,
+   "pp": 0.62,
+   "ev": 0.148,
+   "nivo": "jak",
+   "rang": 4,
+   "fer": 0.5,
+   "ostale": [
+    {
+     "kl": "maxbet",
+     "k": 1.85
+    },
+    {
+     "kl": "mozzart",
+     "k": 1.85
+    },
+    {
+     "kl": "soccerbet",
+     "k": 1.85
+    }
+   ],
+   "knjige": [
+    {
+     "kl": "admiral",
+     "l": 6.5,
+     "u": 1.85,
+     "o": 1.85
+    },
+    {
+     "kl": "maxbet",
+     "l": 6.5,
+     "u": 1.85,
+     "o": 1.85
+    },
+    {
+     "kl": "mozzart",
+     "l": 6.5,
+     "u": 1.85,
+     "o": 1.85
+    },
+    {
+     "kl": "soccerbet",
+     "l": 6.5,
+     "u": 1.85,
+     "o": 1.85
+    }
+   ],
+   "soft": {
+    "l": 6.5,
+    "k": 1.85,
+    "kl": "admiral",
+    "p": 0.62,
+    "vrsta": "granica",
+    "ev": 0.147,
+    "isti": true
+   },
+   "opseg": [
+    {
+     "l": 6.5,
+     "k": 1.85,
+     "kl": "admiral",
+     "p": 0.62,
+     "vrsta": "granica"
+    }
+   ],
+   "q": [
+    2,
+    4,
+    6,
+    8,
+    10
+   ],
+   "mu": 5.57,
+   "min": 23.2,
+   "pm": 0.2131,
+   "tr": 0.5,
+   "l0": null,
+   "vatra": null,
+   "pos": "G",
+   "of": 0.975,
+   "analiza": [
+    "Granica od 6,5 je viša od onoga što realno očekujemo, a to je pet do šest asistencija: u većini utakmica ostaje ispod ove granice."
+   ],
+   "iz_kand": false,
+   "mu_m": 4.63,
+   "var": 6.38,
+   "podoban": true,
+   "novi_saigrac": false,
+   "fer_o": 0.5,
+   "ps": 0.6005,
+   "msig": 0.5851,
+   "izostanci_tim": 33,
+   "rucno": true,
+   "forma": [
+    5,
+    7
+   ],
+   "rang_dan": 5,
+   "upisano": "19.11.2026. 14:29",
+   "prvi_put": "19.11.2026. 14:28",
+   "promena": "novo",
+   "ranije": null,
+   "promena_u": "19.11.2026. 14:28",
+   "zatv": 1.85,
+   "zatv_fer": 1.612
   },
   {
    "g": 123,
@@ -639,15 +756,270 @@
     2,
     7
    ],
-   "rang_dan": 5,
-   "upisano": "19.11.2026. 13:53",
+   "rang_dan": 6,
+   "upisano": "19.11.2026. 14:29",
    "prvi_put": "19.11.2026. 12:38",
    "zatv": 1.92,
    "zatv_fer": 1.944
+  },
+  {
+   "g": 124,
+   "dan": "2026-11-19",
+   "vreme": "19.11. 20:00",
+   "k": "duane washington",
+   "ime": "Duane Washington",
+   "tim": "MUN",
+   "prot": "BAS",
+   "s": "P",
+   "strana": "u",
+   "l": 17.5,
+   "kl": "admiral",
+   "kvota": 1.86,
+   "pp": 0.592,
+   "ev": 0.101,
+   "nivo": "solidan",
+   "rang": null,
+   "fer": 0.5151,
+   "ostale": [
+    {
+     "kl": "mozzart",
+     "k": 1.85
+    },
+    {
+     "kl": "maxbet",
+     "k": 1.84
+    },
+    {
+     "kl": "soccerbet",
+     "k": 1.84
+    }
+   ],
+   "knjige": [
+    {
+     "kl": "admiral",
+     "l": 17.5,
+     "u": 1.86,
+     "o": 1.98
+    },
+    {
+     "kl": "maxbet",
+     "l": 17.5,
+     "u": 1.84,
+     "o": 1.96
+    },
+    {
+     "kl": "mozzart",
+     "l": 17.5,
+     "u": 1.85,
+     "o": 1.95
+    },
+    {
+     "kl": "soccerbet",
+     "l": 17.5,
+     "u": 1.84,
+     "o": 1.96
+    }
+   ],
+   "soft": null,
+   "opseg": [],
+   "q": [
+    6,
+    10,
+    15,
+    22,
+    29
+   ],
+   "mu": 15.32,
+   "min": 20.7,
+   "pm": 0.3171,
+   "tr": 0.4844,
+   "l0": null,
+   "vatra": null,
+   "pos": "G",
+   "of": 1.02,
+   "analiza": [
+    "Granica od 17,5 je viša od onoga što realno očekujemo, a to je 15 do 16 poena, iz ovih razloga:",
+    "Ove sezone daje oko 16 poena po utakmici; ispod 17,5 je ostao u 5 od 10 utakmica.",
+    "Dolazi sa klupe i igra 20 do 21 minut."
+   ],
+   "iz_kand": false,
+   "mu_m": 14.76,
+   "var": 73.37,
+   "podoban": false,
+   "novi_saigrac": false,
+   "fer_o": 0.4849,
+   "ps": 0.6064,
+   "msig": 0.4481,
+   "izostanci_tim": 30,
+   "rucno": true,
+   "forma": [
+    5,
+    7
+   ],
+   "rang_dan": 7,
+   "upisano": "19.11.2026. 14:29",
+   "prvi_put": "19.11.2026. 14:28",
+   "zatv": 1.86,
+   "zatv_fer": 1.689
+  },
+  {
+   "g": 123,
+   "dan": "2026-11-19",
+   "vreme": "19.11. 20:30",
+   "k": "moses wright",
+   "ime": "Moses Wright",
+   "tim": "MIL",
+   "prot": "ULK",
+   "s": "P",
+   "strana": "u",
+   "l": 12.5,
+   "kl": "admiral",
+   "kvota": 1.99,
+   "pp": 0.569,
+   "ev": 0.131,
+   "nivo": "solidan",
+   "rang": 5,
+   "fer": 0.4819,
+   "ostale": [
+    {
+     "kl": "maxbet",
+     "k": 1.97
+    },
+    {
+     "kl": "soccerbet",
+     "k": 1.97
+    },
+    {
+     "kl": "mozzart",
+     "k": 1.95
+    }
+   ],
+   "knjige": [
+    {
+     "kl": "admiral",
+     "l": 12.5,
+     "u": 1.99,
+     "o": 1.84
+    },
+    {
+     "kl": "maxbet",
+     "l": 12.5,
+     "u": 1.97,
+     "o": 1.82
+    },
+    {
+     "kl": "mozzart",
+     "l": 12.5,
+     "u": 1.95,
+     "o": 1.85
+    },
+    {
+     "kl": "soccerbet",
+     "l": 12.5,
+     "u": 1.97,
+     "o": 1.82
+    }
+   ],
+   "soft": {
+    "l": 12.5,
+    "k": 1.99,
+    "kl": "admiral",
+    "p": 0.569,
+    "vrsta": "granica",
+    "ev": 0.132,
+    "isti": true
+   },
+   "opseg": [
+    {
+     "l": 10.5,
+     "k": 2.5,
+     "kl": "soccerbet",
+     "p": 0.457,
+     "vrsta": "granica"
+    },
+    {
+     "l": 12.5,
+     "k": 1.99,
+     "kl": "admiral",
+     "p": 0.569,
+     "vrsta": "granica"
+    },
+    {
+     "l": 14.5,
+     "k": 1.52,
+     "kl": "soccerbet",
+     "p": 0.684,
+     "vrsta": "granica"
+    }
+   ],
+   "q": [
+    4,
+    7,
+    11,
+    16,
+    22
+   ],
+   "mu": 11.22,
+   "min": 22.4,
+   "pm": 0.3192,
+   "tr": 0.5196,
+   "l0": null,
+   "vatra": null,
+   "pos": "C",
+   "of": 1.03,
+   "analiza": [
+    "Granica od 12,5 je viša od onoga što realno očekujemo, a to je oko 11 poena, iz ovih razloga:",
+    "Ove sezone daje 11 do 12 poena po utakmici; ispod 12,5 je ostao u 8 od 12 utakmica.",
+    "U poslednje tri utakmice: 6, 5 i 10 poena, manje nego inače.",
+    "Obe ekipe igraju sporo, pa će napada biti manje nego obično.",
+    "Kod kuće postiže manje poena nego u gostima (devet do deset poena naspram oko 14 poena), a sada igra kod kuće."
+   ],
+   "iz_kand": false,
+   "mu_m": 10.5,
+   "var": 43.61,
+   "podoban": true,
+   "novi_saigrac": false,
+   "fer_o": 0.5181,
+   "ps": 0.5912,
+   "msig": 0.5491,
+   "izostanci_tim": 16,
+   "rucno": true,
+   "forma": [
+    5,
+    7
+   ],
+   "rang_dan": 8,
+   "upisano": "19.11.2026. 14:29",
+   "prvi_put": "19.11.2026. 14:29",
+   "promena": "novo",
+   "promena_u": "19.11.2026. 14:29",
+   "zatv": 1.99,
+   "zatv_fer": 1.759
   }
  ],
  "konacno": {},
- "uklonjeni": [],
+ "uklonjeni": [
+  {
+   "g": 123,
+   "k": "darius thompson",
+   "ime": "Darius Thompson",
+   "tim": "MIL",
+   "prot": "ULK",
+   "s": "A",
+   "strana": "u",
+   "l": 3.5,
+   "kl": "admiral",
+   "kvota": 2.1,
+   "pp": 0.535,
+   "nivo": "nagoveštaj",
+   "mu": 3.26,
+   "opis": "asist. ispod 3,5 · 2,10 Admiral",
+   "od": "19.11.2026. 14:28",
+   "u": "19.11.2026. 14:29",
+   "vrsta": "povučen",
+   "zamena": null
+  }
+ ],
  "ponuda": {
   "122": [
    {
@@ -4441,7 +4813,7 @@
     "u": 1.99,
     "o": 1.85,
     "knjiga": 4,
-    "pred": null,
+    "pred": "u",
     "za": [
      "Granica od 12,5 je viša od onoga što realno očekujemo, a to je oko 11 poena, iz ovih razloga:",
      "Ove sezone daje 11 do 12 poena po utakmici; ispod 12,5 je ostao u 8 od 12 utakmica.",
@@ -6722,7 +7094,7 @@
     "u": 1.85,
     "o": 1.85,
     "knjiga": 4,
-    "pred": null,
+    "pred": "u",
     "za": [
      "Granica od 6,5 je viša od onoga što realno očekujemo, a to je pet do šest asistencija: u većini utakmica ostaje ispod ove granice."
     ],
@@ -7422,7 +7794,7 @@
    }
   ]
  },
- "osvezeno": "19.11.2026. 13:53",
+ "osvezeno": "19.11.2026. 14:29",
  "utakmice": [
   {
    "g": 122,
