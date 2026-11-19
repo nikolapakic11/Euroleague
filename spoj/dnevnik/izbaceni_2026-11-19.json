@@ -1,6 +1,6 @@
 {
  "dan": "2026-11-19",
- "upisano": "19.11.2026. 12:38",
+ "upisano": "19.11.2026. 13:53",
  "izbaceni": [
   {
    "k": "rasheed bello",
@@ -80,11 +80,11 @@
    "tim": "HTA",
    "s": "P",
    "l": 12.5,
-   "kvota": 1.85,
-   "kl": "mozzart",
-   "pp": 0.6401,
-   "fer": 0.526,
-   "msig": 0.2258
+   "kvota": 1.92,
+   "kl": "admiral",
+   "pp": 0.6359,
+   "fer": 0.5188,
+   "msig": 0.2316
   },
   {
    "k": "johannes thiemann",
@@ -129,10 +129,10 @@
    "s": "S",
    "l": 3.5,
    "kvota": 1.93,
-   "kl": "admiral",
-   "pp": 0.6091,
-   "fer": 0.4804,
-   "msig": 0.2599
+   "kl": "maxbet",
+   "pp": 0.6095,
+   "fer": 0.4811,
+   "msig": 0.2593
   },
   {
    "k": "mckinley wright",

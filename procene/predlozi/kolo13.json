@@ -114,7 +114,7 @@
     6
    ],
    "rang_dan": 1,
-   "upisano": "19.11.2026. 12:38",
+   "upisano": "19.11.2026. 13:53",
    "prvi_put": "19.11.2026. 12:38",
    "zatv": 1.6,
    "zatv_fer": 1.553
@@ -242,7 +242,7 @@
     7
    ],
    "rang_dan": 2,
-   "upisano": "19.11.2026. 12:38",
+   "upisano": "19.11.2026. 13:53",
    "prvi_put": "19.11.2026. 12:38",
    "zatv": 1.86,
    "zatv_fer": 1.647
@@ -370,7 +370,7 @@
     7
    ],
    "rang_dan": 3,
-   "upisano": "19.11.2026. 12:38",
+   "upisano": "19.11.2026. 13:53",
    "prvi_put": "19.11.2026. 12:38",
    "zatv": 1.92,
    "zatv_fer": 1.791
@@ -484,7 +484,7 @@
     7
    ],
    "rang_dan": 4,
-   "upisano": "19.11.2026. 12:38",
+   "upisano": "19.11.2026. 13:53",
    "prvi_put": "19.11.2026. 12:38",
    "zatv": 1.85,
    "zatv_fer": 1.608
@@ -640,7 +640,7 @@
     7
    ],
    "rang_dan": 5,
-   "upisano": "19.11.2026. 12:38",
+   "upisano": "19.11.2026. 13:53",
    "prvi_put": "19.11.2026. 12:38",
    "zatv": 1.92,
    "zatv_fer": 1.944
@@ -906,11 +906,11 @@
     "s": "A",
     "l": 3.5,
     "strana": "u",
-    "pp": 0.52,
+    "pp": 0.509,
     "neodl": true,
     "pm": 0.571,
-    "fer": 0.477,
-    "mu": 3.34,
+    "fer": 0.493,
+    "mu": 3.4,
     "q": [
      1,
      2,
@@ -921,7 +921,7 @@
     "min": 22.4,
     "pros": 4.0,
     "p5": 4.2,
-    "u": 1.77,
+    "u": 2,
     "o": 1.95,
     "knjiga": 4,
     "pred": null,
@@ -939,23 +939,23 @@
     "s": "P",
     "l": 11.5,
     "strana": "u",
-    "pp": 0.564,
+    "pp": 0.567,
     "neodl": false,
     "pm": 0.34,
-    "fer": 0.514,
-    "mu": 10.3,
+    "fer": 0.511,
+    "mu": 10.26,
     "q": [
      4,
      6,
      10,
-     16,
+     15,
      21
     ],
     "min": 21.2,
     "pros": 11.58,
     "p5": 10.4,
     "u": 1.98,
-    "o": 1.92,
+    "o": 1.97,
     "knjiga": 4,
     "pred": null,
     "za": [
@@ -1577,11 +1577,11 @@
     "s": "P",
     "l": 9.5,
     "strana": "u",
-    "pp": 0.527,
+    "pp": 0.529,
     "neodl": true,
     "pm": 0.437,
-    "fer": 0.524,
-    "mu": 9.01,
+    "fer": 0.521,
+    "mu": 8.98,
     "q": [
      3,
      5,
@@ -1594,7 +1594,7 @@
     "p5": 8.4,
     "u": 2,
     "o": 1.85,
-    "knjiga": 3,
+    "knjiga": 2,
     "pred": null,
     "za": [
      "Granica od 9,5 je viša od onoga što realno očekujemo, a to je oko devet poena, iz ovih razloga:",
@@ -1686,7 +1686,7 @@
     "s": "P",
     "l": 7.5,
     "strana": "u",
-    "pp": 0.532,
+    "pp": 0.533,
     "neodl": false,
     "pm": 0.44,
     "fer": 0.515,
@@ -1701,9 +1701,9 @@
     "min": 15.7,
     "pros": 8.27,
     "p5": 9.8,
-    "u": 1.98,
-    "o": 1.86,
-    "knjiga": 4,
+    "u": 1.96,
+    "o": 1.85,
+    "knjiga": 3,
     "pred": null,
     "za": [
      "Granica od 7,5 je viša od onoga što realno očekujemo, a to je oko sedam poena, iz ovih razloga:",
@@ -2184,11 +2184,11 @@
     "s": "P",
     "l": 7.5,
     "strana": "u",
-    "pp": 0.526,
+    "pp": 0.528,
     "neodl": true,
     "pm": 0.429,
-    "fer": 0.528,
-    "mu": 7.08,
+    "fer": 0.526,
+    "mu": 7.07,
     "q": [
      2,
      4,
@@ -2199,7 +2199,7 @@
     "min": 18.0,
     "pros": 8.75,
     "p5": 11.2,
-    "u": 2.04,
+    "u": 2.02,
     "o": 1.85,
     "knjiga": 4,
     "pred": null,
@@ -2293,11 +2293,11 @@
     "s": "S",
     "l": 3.5,
     "strana": "u",
-    "pp": 0.529,
+    "pp": 0.53,
     "neodl": true,
     "pm": 0.44,
-    "fer": 0.52,
-    "mu": 3.34,
+    "fer": 0.519,
+    "mu": 3.33,
     "q": [
      1,
      2,
@@ -2689,11 +2689,11 @@
     "s": "P",
     "l": 13.5,
     "strana": "u",
-    "pp": 0.565,
+    "pp": 0.563,
     "neodl": false,
     "pm": 0.405,
-    "fer": 0.483,
-    "mu": 12.2,
+    "fer": 0.487,
+    "mu": 12.25,
     "q": [
      5,
      8,
@@ -2704,7 +2704,7 @@
     "min": 23.2,
     "pros": 13.75,
     "p5": 12.0,
-    "u": 1.92,
+    "u": 1.98,
     "o": 2,
     "knjiga": 4,
     "pred": null,
@@ -2758,10 +2758,10 @@
     "s": "A",
     "l": 4.5,
     "strana": "u",
-    "pp": 0.531,
+    "pp": 0.53,
     "neodl": false,
     "pm": 0.52,
-    "fer": 0.482,
+    "fer": 0.484,
     "mu": 4.25,
     "q": [
      2,
@@ -3268,11 +3268,11 @@
     "s": "A",
     "l": 2.5,
     "strana": "o",
-    "pp": 0.521,
+    "pp": 0.523,
     "neodl": true,
     "pm": 0.505,
-    "fer": 0.563,
-    "mu": 2.56,
+    "fer": 0.566,
+    "mu": 2.57,
     "q": [
      1,
      1,
@@ -3283,7 +3283,7 @@
     "min": 20.7,
     "pros": 2.9,
     "p5": 2.6,
-    "u": 2.1,
+    "u": 2.15,
     "o": 1.65,
     "knjiga": 4,
     "pred": null,
@@ -3644,14 +3644,14 @@
     "min": 25.9,
     "pros": 9.0,
     "p5": 10.2,
-    "u": 1.92,
-    "o": 1.92,
-    "knjiga": 3,
+    "u": 1.9,
+    "o": 1.9,
+    "knjiga": 2,
     "pred": null,
     "za": [],
     "protiv": [
      "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
-     "Otkad se vratio Kurucs, Duarte i Kamenjas (1 utakmice), igra oko 28 minuta i daje 15 poena po utakmici, naspram 8,5 ranije; procena to uzima u obzir."
+     "Otkad se vratio Kamenjas, Duarte i Kurucs (1 utakmice), igra oko 28 minuta i daje 15 poena po utakmici, naspram 8,5 ranije; procena to uzima u obzir."
     ]
    },
    {
@@ -3683,7 +3683,7 @@
     "pred": null,
     "za": [
      "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
-     "Otkad se vratio Kurucs, Duarte i Kamenjas (1 utakmice), igra oko 28 minuta i daje 3 skoka po utakmici, naspram 2,1 ranije; procena to uzima u obzir.",
+     "Otkad se vratio Kamenjas, Duarte i Kurucs (1 utakmice), igra oko 28 minuta i daje 3 skoka po utakmici, naspram 2,1 ranije; procena to uzima u obzir.",
      "U poslednje tri utakmice: 3, 5 i 3 skoka, više nego inače."
     ],
     "protiv": [
@@ -3720,7 +3720,7 @@
     "pred": null,
     "za": [
      "Granica od 11,5 je viša od onoga što realno očekujemo, a to je oko deset poena, iz ovih razloga:",
-     "Otkad se vratio Kurucs, Duarte i Kamenjas (1 utakmice), igra oko 18 minuta i daje 8 poena po utakmici, naspram 11,5 ranije; procena to uzima u obzir.",
+     "Otkad se vratio Kamenjas, Duarte i Kurucs (1 utakmice), igra oko 18 minuta i daje 8 poena po utakmici, naspram 11,5 ranije; procena to uzima u obzir.",
      "Ove sezone daje oko 11 poena po utakmici; ispod 11,5 je ostao u 6 od 12 utakmica."
     ],
     "protiv": [
@@ -3756,7 +3756,7 @@
     "knjiga": 4,
     "pred": null,
     "za": [
-     "Otkad se vratio Kurucs, Duarte i Kamenjas (1 utakmice), igra oko 18 minuta i daje 1 skok po utakmici, naspram 3 ranije; procena to uzima u obzir.",
+     "Otkad se vratio Kamenjas, Duarte i Kurucs (1 utakmice), igra oko 18 minuta i daje 1 skok po utakmici, naspram 3 ranije; procena to uzima u obzir.",
      "Bajern dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
     ],
     "protiv": [
@@ -3871,7 +3871,7 @@
     ],
     "protiv": [
      "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
-     "Otkad se vratio Kurucs, Duarte i Kamenjas (1 utakmice), igra oko 22 minuta i daje 7 asistencija po utakmici, naspram 2,9 ranije; procena to uzima u obzir."
+     "Otkad se vratio Kamenjas, Duarte i Kurucs (1 utakmice), igra oko 22 minuta i daje 7 asistencija po utakmici, naspram 2,9 ranije; procena to uzima u obzir."
     ]
    },
    {
@@ -4077,7 +4077,7 @@
     "p5": 2.4,
     "u": 2.35,
     "o": 1.5,
-    "knjiga": 3,
+    "knjiga": 2,
     "pred": null,
     "za": [
      "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
@@ -4118,7 +4118,7 @@
     "pred": null,
     "za": [
      "Granica od 6,5 je viša od onoga što realno očekujemo, a to je oko šest poena, iz ovih razloga:",
-     "Otkad se vratio Kurucs, Duarte i Kamenjas (1 utakmice), igra oko 18 minuta i daje 4 poena po utakmici, naspram 7 ranije; procena to uzima u obzir.",
+     "Otkad se vratio Kamenjas, Duarte i Kurucs (1 utakmice), igra oko 18 minuta i daje 4 poena po utakmici, naspram 7 ranije; procena to uzima u obzir.",
      "Nije među prvim opcijama u napadu; više šuteva dobijaju Lawson i Duarte."
     ],
     "protiv": [
@@ -4160,7 +4160,7 @@
     ],
     "protiv": [
      "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
-     "Otkad se vratio Kurucs, Duarte i Kamenjas (1 utakmice), igra oko 21 minuta i daje 9 poena po utakmici, naspram 6 ranije; procena to uzima u obzir."
+     "Otkad se vratio Kamenjas, Duarte i Kurucs (1 utakmice), igra oko 21 minuta i daje 9 poena po utakmici, naspram 6 ranije; procena to uzima u obzir."
     ]
    }
   ],
@@ -4893,11 +4893,11 @@
     "s": "P",
     "l": 10.5,
     "strana": "o",
-    "pp": 0.502,
+    "pp": 0.504,
     "neodl": true,
     "pm": 0.544,
-    "fer": 0.52,
-    "mu": 10.44,
+    "fer": 0.523,
+    "mu": 10.47,
     "q": [
      3,
      6,
@@ -4908,7 +4908,7 @@
     "min": 24.6,
     "pros": 11.83,
     "p5": 12.6,
-    "u": 2,
+    "u": 2.04,
     "o": 1.85,
     "knjiga": 4,
     "pred": null,
@@ -5223,12 +5223,12 @@
     "pos": "G",
     "s": "A",
     "l": 2.5,
-    "strana": "u",
-    "pp": 0.502,
+    "strana": "o",
+    "pp": 0.509,
     "neodl": true,
     "pm": 0.635,
-    "fer": 0.473,
-    "mu": 2.44,
+    "fer": 0.49,
+    "mu": 2.5,
     "q": [
      1,
      1,
@@ -5239,18 +5239,17 @@
     "min": 18.8,
     "pros": 2.5,
     "p5": 2.8,
-    "u": 1.75,
+    "u": 2,
     "o": 1.95,
     "knjiga": 4,
     "pred": null,
     "za": [
-     "Ove sezone daje dve do tri asistencije po utakmici; ispod 2,5 je ostao u 7 od 12 utakmica.",
-     "Nije glavni organizator; loptu kod Fenerbahčea uglavnom vode Baldwin i Tucker.",
-     "Obe ekipe igraju sporo, pa će napada biti manje nego obično."
-    ],
-    "protiv": [
      "Kod Fenerbahčea ne igraju Braxton Key i Nicolo Melli, pa ostaje više minuta i lopti za ostale.",
      "U poslednje tri utakmice: 4, 2 i 7 asistencija, više nego inače."
+    ],
+    "protiv": [
+     "Ove sezone daje dve do tri asistencije po utakmici; ispod 2,5 je ostao u 7 od 12 utakmica.",
+     "Nije glavni organizator; loptu kod Fenerbahčea uglavnom vode Baldwin i Tucker."
     ]
    },
    {
@@ -5335,23 +5334,23 @@
     "s": "P",
     "l": 4.5,
     "strana": "u",
-    "pp": 0.506,
+    "pp": 0.502,
     "neodl": true,
     "pm": 0.562,
-    "fer": 0.5,
-    "mu": 4.39,
+    "fer": 0.506,
+    "mu": 4.43,
     "q": [
      1,
      2,
      4,
-     7,
+     8,
      11
     ],
     "min": 15.6,
     "pros": 3.67,
     "p5": 3.7,
-    "u": 1.92,
-    "o": 1.92,
+    "u": 2.01,
+    "o": 1.9,
     "knjiga": 4,
     "pred": null,
     "za": [
@@ -5730,33 +5729,32 @@
     "tim": "PRS",
     "pos": "G",
     "s": "A",
-    "l": 2.5,
-    "strana": "u",
-    "pp": 0.596,
+    "l": 1.5,
+    "strana": "o",
+    "pp": 0.577,
     "neodl": false,
-    "pm": 0.422,
-    "fer": 0.431,
-    "mu": 2.06,
+    "pm": 0.663,
+    "fer": 0.574,
+    "mu": 1.77,
     "q": [
      0,
      1,
      2,
      3,
-     5
+     4
     ],
     "min": 20.2,
     "pros": 2.18,
     "p5": 0.8,
-    "u": 1.65,
-    "o": 2.15,
+    "u": 2.2,
+    "o": 1.65,
     "knjiga": 3,
     "pred": null,
-    "za": [
-     "Granica od 2,5 je viša od onoga što realno očekujemo, a to je oko dve asistencije, iz ovih razloga:",
-     "Ove sezone daje oko dve asistencije po utakmici; ispod 2,5 je ostao u 9 od 11 utakmica.",
+    "za": [],
+    "protiv": [
+     "Ove sezone daje oko dve asistencije po utakmici; ispod 1,5 je ostao u 6 od 11 utakmica.",
      "Nije glavni organizator; loptu kod Pariza uglavnom vode Hifi i Ayayi."
-    ],
-    "protiv": []
+    ]
    },
    {
     "k": "tj warren",
@@ -6376,11 +6374,11 @@
     "s": "P",
     "l": 12.5,
     "strana": "u",
-    "pp": 0.573,
+    "pp": 0.568,
     "neodl": false,
     "pm": 0.4,
-    "fer": 0.474,
-    "mu": 11.06,
+    "fer": 0.481,
+    "mu": 11.15,
     "q": [
      4,
      7,
@@ -6391,7 +6389,7 @@
     "min": 21.3,
     "pros": 11.25,
     "p5": 14.0,
-    "u": 1.85,
+    "u": 1.92,
     "o": 2.02,
     "knjiga": 4,
     "pred": null,
@@ -6523,11 +6521,11 @@
     "s": "P",
     "l": 13.5,
     "strana": "u",
-    "pp": 0.554,
+    "pp": 0.553,
     "neodl": false,
     "pm": 0.363,
-    "fer": 0.518,
-    "mu": 12.37,
+    "fer": 0.519,
+    "mu": 12.39,
     "q": [
      5,
      8,
@@ -6538,7 +6536,7 @@
     "min": 23.5,
     "pros": 11.75,
     "p5": 13.0,
-    "u": 1.99,
+    "u": 2,
     "o": 1.85,
     "knjiga": 4,
     "pred": null,
@@ -6815,11 +6813,11 @@
     "s": "P",
     "l": 7.5,
     "strana": "u",
-    "pp": 0.562,
+    "pp": 0.567,
     "neodl": false,
     "pm": 0.335,
-    "fer": 0.52,
-    "mu": 6.66,
+    "fer": 0.512,
+    "mu": 6.59,
     "q": [
      2,
      4,
@@ -6830,8 +6828,8 @@
     "min": 16.8,
     "pros": 6.25,
     "p5": 8.0,
-    "u": 2,
-    "o": 1.85,
+    "u": 1.99,
+    "o": 1.97,
     "knjiga": 4,
     "pred": null,
     "za": [
@@ -7424,7 +7422,7 @@
    }
   ]
  },
- "osvezeno": "19.11.2026. 12:38",
+ "osvezeno": "19.11.2026. 13:53",
  "utakmice": [
   {
    "g": 122,
@@ -7444,10 +7442,10 @@
     "Soccerbet"
    ],
    "snimci": {
-    "Admiral": "2026-11-19T11:28:02.645Z",
+    "Admiral": "2026-11-19T12:51:30.355Z",
     "MaxBet": "2026-11-19T11:28:10.026Z",
     "Mozzart": "2026-11-19T11:36:04Z",
-    "Soccerbet": "2026-11-19T11:38:15+00:00"
+    "Soccerbet": "2026-11-19T12:53:50+00:00"
    }
   },
   {
@@ -7468,10 +7466,10 @@
     "Soccerbet"
    ],
    "snimci": {
-    "Admiral": "2026-11-19T11:28:02.645Z",
+    "Admiral": "2026-11-19T12:51:30.355Z",
     "MaxBet": "2026-11-19T11:28:10.026Z",
     "Mozzart": "2026-11-19T11:36:04Z",
-    "Soccerbet": "2026-11-19T11:38:15+00:00"
+    "Soccerbet": "2026-11-19T12:53:50+00:00"
    }
   },
   {
@@ -7492,10 +7490,10 @@
     "Soccerbet"
    ],
    "snimci": {
-    "Admiral": "2026-11-19T11:28:02.645Z",
+    "Admiral": "2026-11-19T12:51:30.355Z",
     "MaxBet": "2026-11-19T11:28:10.026Z",
     "Mozzart": "2026-11-19T11:36:04Z",
-    "Soccerbet": "2026-11-19T11:38:15+00:00"
+    "Soccerbet": "2026-11-19T12:53:50+00:00"
    }
   },
   {
@@ -7516,10 +7514,10 @@
     "Soccerbet"
    ],
    "snimci": {
-    "Admiral": "2026-11-19T11:28:02.645Z",
+    "Admiral": "2026-11-19T12:51:30.355Z",
     "MaxBet": "2026-11-19T11:28:10.026Z",
     "Mozzart": "2026-11-19T11:36:04Z",
-    "Soccerbet": "2026-11-19T11:38:15+00:00"
+    "Soccerbet": "2026-11-19T12:53:50+00:00"
    }
   },
   {
@@ -7540,10 +7538,10 @@
     "Soccerbet"
    ],
    "snimci": {
-    "Admiral": "2026-11-19T11:28:02.645Z",
+    "Admiral": "2026-11-19T12:51:30.355Z",
     "MaxBet": "2026-11-19T11:28:10.026Z",
     "Mozzart": "2026-11-19T11:36:04Z",
-    "Soccerbet": "2026-11-19T11:38:15+00:00"
+    "Soccerbet": "2026-11-19T12:53:50+00:00"
    }
   },
   {
@@ -7564,10 +7562,10 @@
     "Soccerbet"
    ],
    "snimci": {
-    "Admiral": "2026-11-19T11:28:02.645Z",
+    "Admiral": "2026-11-19T12:51:30.355Z",
     "MaxBet": "2026-11-19T11:28:10.026Z",
     "Mozzart": "2026-11-19T11:36:04Z",
-    "Soccerbet": "2026-11-19T11:38:15+00:00"
+    "Soccerbet": "2026-11-19T12:53:50+00:00"
    }
   },
   {

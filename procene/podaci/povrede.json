@@ -1,6 +1,6 @@
 {
  "kolo": 13,
- "at": "19.11.2026. 12:36",
+ "at": "19.11.2026. 13:52",
  "izvori": [
   "https://www.eurohoops.net/en/euroleague/2037682/injury-report-round-13-smits-a-scratch-for-tonight/"
  ],
@@ -137,13 +137,13 @@
   "nikola milutinov": {
    "tim": "OLY",
    "stanje": "upitan",
-   "tekst": "Doubtful: DNP in Round 12 (fractured index finger, 11.14) | Eurohoops: Nikola Milutinov was ruled out for Round 12",
+   "tekst": "Game-time: DNP in Round 12 (fractured index finger, 11.14) | Eurohoops: Nikola Milutinov was ruled out for Round 12",
    "izvor": "basketnews"
   },
   "tyler dorsey": {
    "tim": "OLY",
    "stanje": "van",
-   "tekst": "Out: DNP in Round 12 (fitness) after DNP in Rounds 6-11 (suspension) | Eurohoops: Tyler Dorsey last played in Round 5 after being suspended by the club",
+   "tekst": "Out: Ruled out for Round 13 after DNP in Round 12 (fitness) and DNP in Rounds 6-11 (suspension) | Eurohoops: Tyler Dorsey last played in Round 5 after being suspended by the club",
    "izvor": "basketnews"
   },
   "jean montero": {
@@ -160,13 +160,13 @@
   "jared butler": {
    "tim": "RED",
    "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Round 12 (illness) | Eurohoops: Jared Butler was not on the gameday roster in Round 12",
+   "tekst": "Game-time: Navarro said he expects Butler to be ready for Round 13 after DNP in Round 12 (illness) | Eurohoops: Jared Butler was not on the gameday roster in Round 12",
    "izvor": "basketnews"
   },
   "chima moneke": {
    "tim": "RED",
-   "stanje": "upitan",
-   "tekst": "Uncertain: DNP in Round 12 (coach's decision) | Eurohoops: Chima Moneke was not on the gameday roster in Round 12",
+   "stanje": "van",
+   "tekst": "Out: Ruled out for Round 13 after DNP in Round 12 (coach's decision). Navarro says he expects Moneke to join the team soon. | Eurohoops: Chima Moneke was not on the gameday roster in Round 12",
    "izvor": "basketnews"
   },
   "johnathan motley": {
@@ -259,6 +259,12 @@
    "tekst": "Doubtful: DNP in Rounds 1-12 (coach's decision). DNP in the domestic league (11.15)",
    "izvor": "basketnews"
   },
+  "david kramer": {
+   "tim": "RED",
+   "stanje": "upitan",
+   "tekst": "Game-time: Face injury",
+   "izvor": "basketnews"
+  },
   "awudu abass": {
    "tim": "DUB",
    "stanje": "van",
@@ -274,13 +280,13 @@
   "davis bertans": {
    "tim": "DUB",
    "stanje": "van",
-   "tekst": "Out: DNP in Round 10-12 and is out indefinitely (hamstring injury)",
+   "tekst": "Out: Ruled out for Round 13 after DNP in Rounds 10-12 and is out indefinitely (hamstring injury)",
    "izvor": "basketnews"
   },
   "kosta kondic": {
    "tim": "DUB",
    "stanje": "van",
-   "tekst": "Out: DNP in Rounds 10-12 (hip/psoas muscle injury)",
+   "tekst": "Out: DNP in Rounds 10-12, out indefinitely (hip/psoas muscle injury)",
    "izvor": "basketnews"
   },
   "davion mintz": {
