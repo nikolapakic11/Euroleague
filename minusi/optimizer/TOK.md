@@ -79,3 +79,8 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
 - Od 17.11.2026 (odluka Nikole): kad za duge tikete (12, 14) nema dovoljno igrača, bazen se širi igračima van modela, ali sa manjom težinom
   (`"tezine_igraca"` u cfg optg7: oba modela 1,0, jedan model 0,8, van modela 0,4). Bolje da igrač van modela bude na nekoliko tiketa
   nego da isti igrači budu na još više tiketa.
+
+## Opseg poena igrača (Admiral specijal), 19.11.2026
+- Ponuda: Specijali → Evroliga → Opseg poena igrača, po igraču 2–3 opsega od 5 poena (npr. 15–20 za 3,00). Pomoćnik v3 ih ubacuje (stavka `s:"R"`, `r:"15-20"`, `c` = šifra igrača sa liste).
+- Kvote opsega su šablon po granici igrača (svi sa 11,5 imaju 2,50/3,10/4,30), ne zavise od kvota over/under ni od igrača. Zato su potcenjeni opsezi na strani na koju naginju tržište i naš model.
+- Istorija (`spoj/analiza/opseg_istorija.py`, kola 6+, procena samo iz ranijih kola, uz pretpostavku da je šablon isti i ranije): svi opsezi naslepo −5% do −21%; opsezi sa procenjenom vrednošću ≥ +20%: povrat +47% do +61% (n 52–134), 7 od 7 kola u plusu. Neprovereno: šablon u ranijim kolima, pravilo granice (da li 15 ulazi u 10–15), limiti. Igrati kao probu malim ulogom i pratiti.

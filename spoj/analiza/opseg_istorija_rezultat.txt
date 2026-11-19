@@ -1,0 +1,28 @@
+
+===== granica opsega: 10–15 znači 10–14 =====
+  -- naša procena (prosek spoja i procena): 1756 mogućih opsega u kolima 6+ --
+     svi opsezi naslepo: povrat -20.9%
+     procenjena vrednost ≥+0%: n= 212 | pogodak 30.2% (procena 34.2%) | prosečna kvota 3.49 | povrat  +5.5% | kola u plusu 5/7
+     procenjena vrednost ≥+10%: n= 112 | pogodak 30.4% (procena 34.7%) | prosečna kvota 3.75 | povrat +17.6% | kola u plusu 6/7
+     procenjena vrednost ≥+20%: n=  61 | pogodak 37.7% (procena 34.4%) | prosečna kvota 4.08 | povrat +57.0% | kola u plusu 7/7
+     procenjena vrednost ≥+30%: n=  41 | pogodak 36.6% (procena 34.3%) | prosečna kvota 4.29 | povrat +58.0% | kola u plusu 6/7
+  -- samo kvote over/under (tržište): 1774 mogućih opsega u kolima 6+ --
+     svi opsezi naslepo: povrat -21.4%
+     procenjena vrednost ≥+0%: n= 144 | pogodak 33.3% (procena 32.1%) | prosečna kvota 3.67 | povrat +23.6% | kola u plusu 6/7
+     procenjena vrednost ≥+10%: n=  71 | pogodak 35.2% (procena 31.8%) | prosečna kvota 4.04 | povrat +44.9% | kola u plusu 7/7
+     procenjena vrednost ≥+20%: n=  52 | pogodak 36.5% (procena 30.7%) | prosečna kvota 4.28 | povrat +59.2% | kola u plusu 7/7
+     procenjena vrednost ≥+30%: n=  31 | pogodak 38.7% (procena 30.0%) | prosečna kvota 4.50 | povrat +74.2% | kola u plusu 5/5
+
+===== granica opsega: 10–15 uključuje 15 =====
+  -- naša procena (prosek spoja i procena): 1756 mogućih opsega u kolima 6+ --
+     svi opsezi naslepo: povrat -5.2%
+     procenjena vrednost ≥+0%: n= 463 | pogodak 30.7% (procena 36.4%) | prosečna kvota 3.33 | povrat  +2.8% | kola u plusu 2/7
+     procenjena vrednost ≥+10%: n= 279 | pogodak 31.5% (procena 36.9%) | prosečna kvota 3.48 | povrat +10.4% | kola u plusu 6/7
+     procenjena vrednost ≥+20%: n= 134 | pogodak 38.8% (procena 37.8%) | prosečna kvota 3.72 | povrat +47.2% | kola u plusu 7/7
+     procenjena vrednost ≥+30%: n=  75 | pogodak 42.7% (procena 37.4%) | prosečna kvota 4.03 | povrat +75.1% | kola u plusu 7/7
+  -- samo kvote over/under (tržište): 1774 mogućih opsega u kolima 6+ --
+     svi opsezi naslepo: povrat -5.6%
+     procenjena vrednost ≥+0%: n= 453 | pogodak 31.3% (procena 35.0%) | prosečna kvota 3.36 | povrat  +6.8% | kola u plusu 5/7
+     procenjena vrednost ≥+10%: n= 221 | pogodak 35.3% (procena 35.7%) | prosečna kvota 3.53 | povrat +27.0% | kola u plusu 6/7
+     procenjena vrednost ≥+20%: n= 103 | pogodak 40.8% (procena 35.3%) | prosečna kvota 3.90 | povrat +61.1% | kola u plusu 7/7
+     procenjena vrednost ≥+30%: n=  52 | pogodak 42.3% (procena 35.0%) | prosečna kvota 4.28 | povrat +83.5% | kola u plusu 7/7
