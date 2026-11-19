@@ -40,6 +40,11 @@ if RAV and CFG.get('tezine_igraca'):
         _t=_slots*wj/_sw; PMAXA[j]=max(1,math.ceil(_t*(1+TOL))); PMINA[j]=max(0,math.floor(_t*(1-TOL)))
     MAXU=max(PMAXA)
     print('težine igrača: granice od',min(PMAXA),'do',max(PMAXA),'po igraču')
+# 19.11.2026 (Nikola): igrač najviše na maxpct tiketa (podrazumevano 22%), bez obzira na težinu
+_cap=max(1,int(CFG.get('maxpct',0.22)*len(CFG['sizes'])))
+if max(PMAXA)>_cap:
+    PMAXA=[min(x,_cap) for x in PMAXA]; PMINA=[min(x,_cap) for x in PMINA]; MAXU=min(MAXU,_cap)
+    print('granica ponavljanja:',_cap,'od',len(CFG['sizes']),'tiketa (maxpct',CFG.get('maxpct',0.22),')')
 def legal(t,i,L,skip=-1,kk=None):
     if i in LOCK: return False
     if kk in CORE and i not in COREPOOL: return False

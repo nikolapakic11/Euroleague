@@ -1,0 +1,30 @@
+{
+ "datum": "2026-11-19",
+ "ulog": 1000,
+ "tiketi": 10,
+ "dobitni": [
+  {
+   "tiket": 9,
+   "parovi": [
+    "Francisco 5-10 (6)",
+    "Obst 5-10 (6)",
+    "Shorts 15-20 (20)",
+    "Micić 5-10 (6)"
+   ],
+   "kvota": 267.3,
+   "dobitak": 26730
+  }
+ ],
+ "pravilo_granice": "gornja granica se računa (20 ulazi u 15-20)",
+ "igraci": {
+  "Nunn 15-20": 21,
+  "Washington 15-20": 23,
+  "Shorts 15-20": 20,
+  "Francisco 5-10": 6,
+  "Obst 5-10": 6,
+  "Micić 5-10": 6,
+  "Oturu 5-10": 8,
+  "Taylor 5-10": 15,
+  "Wright 5-10": 22
+ }
+}
