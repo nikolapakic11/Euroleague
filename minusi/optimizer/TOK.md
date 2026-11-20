@@ -94,3 +94,5 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
 - Izostanak igrača koji ne igra već 5 ili više utakmica tima zaredom (sezonska povreda, svađa, duga pauza: Mike James, Dorsey, Deck, Montero) više se ne računa u filter izostanaka (`spoj/signali.py`, `DUGO_ODSUTAN = 5`). Tim se navikao bez njega.
 - Raspored po dužinama: osmice što ravnomernije (ponavljanje ispod 20%) da na loš dan ne padnu sve i da redovno donose povraćaje; veći tiketi (desetke) sa više ponavljanja najjačih, kao bonus.
 - Plan za 20.11. (duplo kolo, izuzetak): 5.000 din = 80 osmica + 20 desetki po 50; ubacuju se i igrači koji su blizu praga modela; ostatak za opsege.
+- Statistika timova (Admiral, sva kola, minusi naspram tržišta): igrači Zvezde 61% (+11,8; skokovi 64%, asistencije 64%), najbolji tim u ligi; protiv odbrane Zvezde 57% (+7,9). Igrači Barse 46% (−3,2, među najgorima), ali protiv odbrane Barse 56% (+6,4). Odmor do 2 dana: minusi 51,9% naspram 55,6% sa 4+ dana (n=393), dakle u duplom kolu minusi ne prolaze češće.
+- 20.11.: desetke smeju 3 para iz dve utakmice (3+3+2+2); Barsa–Zvezda ulazi uprkos svežim izostancima (Zvezda punom težinom, Barsa manjom).
