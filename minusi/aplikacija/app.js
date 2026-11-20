@@ -652,6 +652,16 @@
     var bonus = t.bonus != null ? t.bonus : t.stake * odds * admBonusPct(nv);
     return {st: st, odds: st === 'won' ? odds : all, payout: st === 'won' ? t.stake * odds + bonus : (st === 'lost' ? (t.refund || 0) : 0)};
   }
+  /* opsezi poena (Admiral Specijali, od 20.11.2026): posebna lista state.opsezi, ulaze u bilans, ne u analizu parova.
+     tiket {id, date, round, stake, fund, freshAmt?, payout? (tačna isplata ako je poznata), legs:[{p, team, lo, hi, odds, actual?, dnp?}]};
+     gornja granica se računa (20 ulazi u 15–20) */
+  function opsezi(){ return Array.isArray(state.opsezi) ? state.opsezi : []; }
+  function opsegLeg(l){ if (l.dnp) return 'void'; if (l.actual == null) return 'pending'; return l.actual >= l.lo && l.actual <= l.hi ? 'hit' : 'miss'; }
+  function opsegInfo(t){
+    var st = 'won', odds = 1, nv = 0;
+    t.legs.forEach(function(l){ var s = opsegLeg(l); if (s === 'miss') st = 'lost'; else if (s === 'pending' && st !== 'lost') st = 'pending'; if (s !== 'void') { odds *= l.odds; nv++; } });
+    return {st: st, odds: odds, payout: st === 'won' ? (t.payout != null ? t.payout : t.stake * odds * (1 + admBonusPct(nv))) : 0};
+  }
   function roundDays(){
     var m = {}, out = {};
     state.tickets.forEach(function(t){ var r = String(t.round); (m[r] = m[r] || {})[t.date || ''] = 1; });
@@ -724,6 +734,15 @@
       if (i.st === 'pending') { o.pend += t.stake; return; }
       o.settled++; o.staked += t.stake; o.ret += i.payout; if (i.st === 'won') o.won++;
     });
+    var RDo = roundDays(); o.opN = 0; o.opSt = 0; o.opRet = 0;
+    opsezi().forEach(function(t){
+      if (!inScope(t, RDo)) return;
+      var i = opsegInfo(t), frA = t.freshAmt != null ? t.freshAmt : (t.fund === 'dobitak' ? 0 : t.stake);
+      o.total++; o.fresh += frA; o.reinv += t.stake - frA;
+      if (i.st === 'pending') { o.pend += t.stake; return; }
+      o.settled++; o.staked += t.stake; o.ret += i.payout; if (i.st === 'won') o.won++;
+      o.opN++; o.opSt += t.stake; o.opRet += i.payout;
+    });
     o.profit = o.ret - o.staked; o.roi = o.staked ? o.profit / o.staked : null;
     o.left = o.ret - o.reinv; o.roiOwn = o.fresh ? o.profit / o.fresh : null;
     var sp = settledPicks();
@@ -755,6 +774,7 @@
           '<div><dt>Igrano iz dobitka</dt><dd>' + fmt(s.reinv) + (s.reinv && (ui.scope || 'all') === 'all' ? ' <small>od dobitka ostalo ' + fmt(Math.max(0, s.left)) + '</small>' : '') + '</dd></div>' +
           '<div><dt>Vraćeno</dt><dd>' + fmt(s.ret) + '</dd></div>' +
           '<div><dt>Dobitni tiketi</dt><dd>' + s.won + ' <small>od ' + s.settled + '</small></dd></div>' +
+          (s.opN ? '<div><dt>Od toga opsezi</dt><dd class="' + (s.opRet > s.opSt ? 'pos' : s.opRet < s.opSt ? 'neg' : '') + '">' + signed(s.opRet - s.opSt) + ' <small>' + s.opN + ' tiketa</small></dd></div>' : '') +
           '<div><dt>U igri</dt><dd>' + fmt(s.pend) + ' <small>' + (s.total - s.settled) + ' tiketa</small></dd></div>' +
           '<div><dt>Pogođeni parovi</dt><dd>' + pct(s.prate) + '</dd></div>' +
         '</dl>' +
@@ -858,6 +878,16 @@
     '</section>';
   }
 
+  function opseziHtml(){
+    var RDo = roundDays(), L = opsezi().filter(function(t){ return inScope(t, RDo); });
+    if (!L.length) return '';
+    var STo = {won:'Dobitan', lost:'Gubitan', pending:'U igri'}, sSt = 0, sRet = 0;
+    var rows = L.map(function(t){
+      var i = opsegInfo(t); if (i.st !== 'pending') { sSt += t.stake; sRet += i.payout; }
+      return [fmtDate(t.date), t.legs.map(function(l){ var q = opsegLeg(l); return esc(l.p) + ' ' + l.lo + '–' + l.hi + (l.actual != null ? ' <small>(' + l.actual + ')</small>' : '') + (q === 'hit' ? ' ✓' : q === 'miss' ? ' ✗' : ''); }).join(', '), fmt(i.odds), fmt(t.stake, 0), STo[i.st], '<span class="' + cls(i.payout - t.stake) + '">' + (i.st === 'pending' ? '–' : signed(i.payout - t.stake)) + '</span>'];
+    });
+    return simpleTable('Opsezi poena', 'Admiral Specijali, opseg poena igrača. Vode se odvojeno od minusa i ne ulaze u analizu parova, ali ulaze u bilans gore. Gornja granica se računa (20 ulazi u 15–20). Ukupno ' + fmt(sSt, 0) + ' uloženo, ' + fmt(sRet) + ' vraćeno, bilans ' + signed(sRet - sSt) + '.', ['Datum','Parovi (postignuto)','Kvota','Ulog','Stanje','Bilans'], rows);
+  }
   function viewTickets(){
     if (!state.tickets.length) return '<section class="panel empty">Još nema tiketa.<br><button class="btn" data-act="tab" data-v="novi">Unesi prvi tiket</button></section>';
     var F = [['all','Svi'],['pending','U igri'],['won','Dobitni'],['lost','Gubitni']];
@@ -884,7 +914,7 @@
       '</button>' + body + '</article>';
     }).join('');
     var SO = [['nove','Najnovije'],['stare','Najstarije'],['kvotaV','Najveća kvota'],['kvotaM','Najmanja kvota'],['parovi','Najviše parova'],['pali','Najmanje palih parova'],['ulog','Najveći ulog'],['bilans','Najbolji bilans']];
-    return '<div class="filters">' + F.map(function(f){ return '<button class="btn sm' + (ui.tFilter === f[0] ? ' on' : '') + '" data-act="tFilter" data-v="' + f[0] + '">' + f[1] + '</button>'; }).join('') +
+    return opseziHtml() + '<div class="filters">' + F.map(function(f){ return '<button class="btn sm' + (ui.tFilter === f[0] ? ' on' : '') + '" data-act="tFilter" data-v="' + f[0] + '">' + f[1] + '</button>'; }).join('') +
       '<button class="btn sm" data-act="fundAll" data-v="dobitak" title="Važi za sve tikete koji su trenutno prikazani">Sve prikazane: iz dobitka</button><button class="btn sm" data-act="fundAll" data-v="novi" title="Važi za sve tikete koji su trenutno prikazani">Sve prikazane: svež novac</button>' +
       '<label class="f" style="flex-direction:row;align-items:center;gap:6px;margin-left:auto">Poređaj <select data-act="tSort" style="width:auto">' + SO.map(function(o){ return '<option value="' + o[0] + '"' + ((ui.tSort || 'nove') === o[0] ? ' selected' : '') + '>' + o[1] + '</option>'; }).join('') + '</select></label></div>' +
       (html || '<p class="empty">Nema tiketa u ovoj grupi.</p>') +
@@ -1095,6 +1125,7 @@
       parts.forEach(function(pt){
         var o = {t:0, st:0, ret:0, w:0, re:0};
         state.tickets.forEach(function(t){ if (String(t.round) !== r || !inScope(t, RDa) || !pt.f(t)) return; var i = ticketInfo(t); if (i.st === 'pending') return; o.t++; o.st += t.stake; o.ret += i.payout; if (i.st === 'won') o.w++; o.re += t.stake - (t.freshAmt != null ? t.freshAmt : (t.fund === 'dobitak' ? 0 : t.stake)); });
+        opsezi().forEach(function(t){ if (String(t.round) !== r || !inScope(t, RDa) || !pt.f(t)) return; var i = opsegInfo(t); if (i.st === 'pending') return; o.t++; o.st += t.stake; o.ret += i.payout; if (i.st === 'won') o.w++; o.re += t.stake - (t.freshAmt != null ? t.freshAmt : (t.fund === 'dobitak' ? 0 : t.stake)); });
         if (!o.t) return;
         var g = group(sp.filter(function(e){ return e.round === r && (!pt.day || e.day === pt.day); }), function(){ return 'x'; })[0];
         rs.push([(pt.day === 0 && days.length > 1 ? '<b>' : '') + esc(r) + (pt.lbl ? ', ' + esc(pt.lbl) : '') + (pt.day === 0 && days.length > 1 ? '</b>' : ''), '' + o.t, '' + o.w, fmt(o.st), fmt(o.re), fmt(o.ret), '<span class="' + cls(o.ret - o.st) + '">' + signed(o.ret - o.st) + '</span>', g ? pct(g.rate) : '–']);
