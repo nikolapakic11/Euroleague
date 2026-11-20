@@ -1,0 +1,54 @@
+{
+ "dan": "2026-11-20",
+ "upisano": "20.11.2026. 13:10",
+ "izbaceni": [
+  {
+   "k": "wenyen gabriel",
+   "ime": "Wenyen Gabriel",
+   "tim": "BES",
+   "s": "S",
+   "l": 5.5,
+   "kvota": 1.65,
+   "kl": "admiral",
+   "pp": 0.6634,
+   "fer": 0.5556,
+   "msig": 0.2918
+  },
+  {
+   "k": "david dejulius",
+   "ime": "David Dejulius",
+   "tim": "BES",
+   "s": "A",
+   "l": 2.5,
+   "kvota": 1.68,
+   "kl": "admiral",
+   "pp": 0.6148,
+   "fer": 0.5522,
+   "msig": 0.227
+  },
+  {
+   "k": "jordan loyd",
+   "ime": "Jordan Loyd",
+   "tim": "IST",
+   "s": "S",
+   "l": 3.5,
+   "kvota": 1.65,
+   "kl": "mozzart",
+   "pp": 0.607,
+   "fer": 0.5634,
+   "msig": 0.3329
+  },
+  {
+   "k": "chuma okeke",
+   "ime": "Chuma Okeke",
+   "tim": "MAD",
+   "s": "P",
+   "l": 5.5,
+   "kvota": 1.79,
+   "kl": "admiral",
+   "pp": 0.5916,
+   "fer": 0.5316,
+   "msig": 0.1946
+  }
+ ]
+}

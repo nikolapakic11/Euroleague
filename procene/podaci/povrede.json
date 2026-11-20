@@ -1,8 +1,9 @@
 {
  "kolo": 13,
- "at": "20.11.2026. 10:36",
+ "at": "20.11.2026. 13:09",
  "izvori": [
-  "https://www.eurohoops.net/en/euroleague/2037682/injury-report-round-13-smits-a-scratch-for-tonight/"
+  "https://www.eurohoops.net/en/euroleague/2037682/injury-report-round-13-smits-a-scratch-for-tonight/",
+  "https://www.eurohoops.net/en/euroleague/2038150/euroleague-updates-latest-injury-reports-before-final-round-13-games/"
  ],
  "igraci": {
   "william rayman": {
@@ -122,7 +123,7 @@
   "nikola milutinov": {
    "tim": "OLY",
    "stanje": "upitan",
-   "tekst": "Game-time: DNP in Round 12 (fractured index finger, 11.14) | Eurohoops: Nikola Milutinov was ruled out for Round 12",
+   "tekst": "Game-time: DNP in Round 12 (fractured index finger, 11.14) | Eurohoops: Nikola Milutinov was ruled out for Round 12 and will be evaluated on game day",
    "izvor": "basketnews"
   },
   "tyler dorsey": {
@@ -169,13 +170,13 @@
   "ethan thompson": {
    "tim": "PAR",
    "stanje": "van",
-   "tekst": "Out: Ruled out for Round 13 after DNP in Round 12 (hip injury) | Eurohoops: Ethan Thompson was ruled out for Round 12",
+   "tekst": "Out: Ruled out for Round 13 after DNP in Round 12 (hip injury) | Eurohoops: Ethan Thompson is out with a hip issue",
    "izvor": "basketnews"
   },
   "kevarrius hayes": {
    "tim": "PAR",
    "stanje": "upitan",
-   "tekst": "Game-time: Listed as game-time decision ahead of Round 13 after DNP in Rounds 10-12 (shoulder injury) | Eurohoops: Kevarrius Hayes last played in Round 9 due to a shoulder injury",
+   "tekst": "Game-time: Listed as game-time decision ahead of Round 13 after DNP in Rounds 10-12 (shoulder injury) | Eurohoops: Kevarrius Hayes last played in Round 9 due to a shoulder injury and will be a game-day decision",
    "izvor": "basketnews"
   },
   "derek willis": {
@@ -202,6 +203,41 @@
    "tekst": "Uncertain: Not included in 12-man roster in Round 12 after being ruled out for Round 11 (undisclosed). Played in the domestic league (11.15) Crvena Zvezda Meridianbet Belgrade | Eurohoops: Berk Ugurlu last played in Round 9",
    "izvor": "basketnews"
   },
+  "kevin punter": {
+   "tim": "BAR",
+   "stanje": "van",
+   "tekst": "Out: Suffered an ankle sprain in domestic league game (11.08), set to be out for six weeks until Round 18 Fenerbahce Beko Istanbul | Eurohoops: Killian Hayes is questionable while Umoja Gibson, Tosan Evbuomwan, Kevin Punter and Yoan Makoundou are ruled out for Barcelona’s game against",
+   "izvor": "basketnews"
+  },
+  "umoja gibson": {
+   "tim": "BAR",
+   "stanje": "van",
+   "tekst": "Out: Suffered a muscle strain of his left abdominal wall in Round 11. Out for around three weeks until Round 15 | Eurohoops: Killian Hayes is questionable while Umoja Gibson, Tosan Evbuomwan, Kevin Punter and Yoan Makoundou are ruled out for Barcelona’s game against",
+   "izvor": "basketnews"
+  },
+  "tosan evbuomwan": {
+   "tim": "BAR",
+   "stanje": "van",
+   "tekst": "Out: Suffered oblique muscle tear (11.09), set to be out for around three weeks until Round 14 | Eurohoops: Killian Hayes is questionable while Umoja Gibson, Tosan Evbuomwan, Kevin Punter and Yoan Makoundou are ruled out for Barcelona’s game against",
+   "izvor": "basketnews"
+  },
+  "yoan makoundou": {
+   "tim": "BAR",
+   "stanje": "upitan",
+   "tekst": "Uncertain: Left knee injury | Eurohoops: Killian Hayes is questionable while Umoja Gibson, Tosan Evbuomwan, Kevin Punter and Yoan Makoundou are ruled out for Barcelona’s game against",
+   "izvor": "basketnews"
+  },
+  "chris jones": {
+   "tim": "RED",
+   "stanje": "van",
+   "tekst": "Jared Butler and Chris Jones are game-time decisions, David Kramer will play through a broken nose in a protective mask and Chima Moneke will not play for Zvezda’s game at Barcelona on Friday, head coach Ibon Navarro has confirmed"
+  },
+  "david kramer": {
+   "tim": "RED",
+   "stanje": "upitan",
+   "tekst": "Game-time: Face injury | Eurohoops: Jared Butler and Chris Jones are game-time decisions, David Kramer will play through a broken nose in a protective mask and Chima Moneke will not play",
+   "izvor": "basketnews"
+  },
   "ruzgar fenemen": {
    "tim": "IST",
    "stanje": "upitan",
@@ -226,28 +262,10 @@
    "tekst": "Doubtful: DNP in Rounds 1-12 (coach's decision). DNP in the domestic league (11.15)",
    "izvor": "basketnews"
   },
-  "david kramer": {
-   "tim": "RED",
-   "stanje": "upitan",
-   "tekst": "Game-time: Face injury",
-   "izvor": "basketnews"
-  },
   "klemen prepelic": {
    "tim": "DUB",
    "stanje": "upitan",
    "tekst": "Doubtful: DNP in Rounds 8-13 (coach's decision) FC Bayern Munich",
-   "izvor": "basketnews"
-  },
-  "tosan evbuomwan": {
-   "tim": "BAR",
-   "stanje": "van",
-   "tekst": "Out: Suffered oblique muscle tear (11.09), set to be out for around three weeks until Round 14",
-   "izvor": "basketnews"
-  },
-  "umoja gibson": {
-   "tim": "BAR",
-   "stanje": "van",
-   "tekst": "Out: Suffered a muscle strain of his left abdominal wall in Round 11. Out for around three weeks until Round 15",
    "izvor": "basketnews"
   },
   "abdu kone": {
@@ -256,22 +274,10 @@
    "tekst": "Uncertain: DNP in Rounds 1-12 (coach's decision)",
    "izvor": "basketnews"
   },
-  "yoan makoundou": {
-   "tim": "BAR",
-   "stanje": "upitan",
-   "tekst": "Uncertain: Left knee injury",
-   "izvor": "basketnews"
-  },
   "juan nunez": {
    "tim": "BAR",
    "stanje": "upitan",
    "tekst": "Uncertain: Was registered in Round 12 but DNP after DNP in Rounds 9-11 (right ankle sprain)",
-   "izvor": "basketnews"
-  },
-  "kevin punter": {
-   "tim": "BAR",
-   "stanje": "van",
-   "tekst": "Out: Suffered an ankle sprain in domestic league game (11.08), set to be out for six weeks until Round 18 Fenerbahce Beko Istanbul",
    "izvor": "basketnews"
   },
   "juhann begarin": {
