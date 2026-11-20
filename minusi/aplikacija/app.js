@@ -639,7 +639,7 @@
     return 'void';
   }
   function legStatus(t, l){ return statusFrom(state.results[keyOf(t, l)], l.line); }
-  function admBonusPct(n){ var T = {4: 0.03, 5: 0.05, 6: 0.07, 7: 0.11, 8: 0.16, 9: 0.21, 10: 0.26}; return n > 10 ? 0.26 + 0.05 * (n - 10) : (T[n] || 0); }
+  function admBonusPct(n){ var T = {4: 0.03, 5: 0.04, 6: 0.07, 7: 0.11, 8: 0.16, 9: 0.21, 10: 0.26}; return n > 10 ? 0.26 + 0.05 * (n - 10) : (T[n] || 0); }
   function ticketInfo(t){
     var st = 'won', odds = 1, all = 1, nv = 0;
     t.legs.forEach(function(l){
