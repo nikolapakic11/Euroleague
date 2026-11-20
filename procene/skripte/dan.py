@@ -10,7 +10,7 @@ Redom:
   5. tabla.py --dnevnik i predlozi.py za tekuće kolo (i kolo današnjih utakmica, ako je drugo)
   6. predlozi.py (ishodi svih kola) i dnevnik.py za kola sa ishodima
   7. procene/tabla/aktuelno.html = tabla tekućeg kola
-  8. senka.py: uporedna varijanta predloga (bez prikaza), podsetnik kad ima 3 kola ishoda
+  8. (senka.py ugašena 20.11.2026)
 Na kraju ispisuje pregled: šta je urađeno, koje ponude postoje za danas i šta treba ručno.
 """
 import argparse, datetime as dt, glob, os, shutil, subprocess, sys
@@ -62,7 +62,7 @@ def main():
     for k in kola:
         ok, iz = pokreni('tabla.py', '--kolo', str(k), '--dnevnik')
         if ok:
-            pokreni('senka.py', '--kolo', str(k))       # uporedna varijanta, bez prikaza (odluka 5.11.2026)
+            # senka.py ugašena 20.11.2026 (Nikola): posle 3 kola senka −15,5 naspram +8,9
             ok2, iz2 = pokreni('predlozi.py', '--kolo', str(k))
             pregled += [f'Kolo {k}: ' + r for r in iz2 if r.startswith('kolo')]
     pokreni('predlozi.py')
@@ -102,16 +102,7 @@ def main():
             prva = min(u['utc'] for u in nepocete_danas).astimezone(BG).strftime('%H:%M')
             delovi = ([f'nema snimka za {", ".join(rucno)}'] if rucno else []) + ([f'osveži posle 14:00: {", ".join(stari)}'] if stari else [])
             pregled.append(f'RUČNO: {"; ".join(delovi)}; konačni predlozi u {rok.strftime("%H:%M")}, prva utakmica u {prva}.')
-    ok, iz = pokreni('senka.py', '--pregled')
-    if iz:
-        pregled.append('Senka: ' + iz[-1].replace('senka: ', ''))
-        try:
-            n_kola = int(iz[-1].split('kola sa ishodima ')[1].split(';')[0])
-        except (IndexError, ValueError):
-            n_kola = 0
-        if n_kola >= 3:
-            pregled.append('PODSETNIK: senka (skupljanje nadole) ima ishode iz ' + str(n_kola) + ' kola; predloži Nikoli odluku '
-                           '(uvesti ili odbaciti, procene/provera/provera_2026-11-05.md).')
+    # senka ugašena 20.11.2026 (odluka Nikole): kola 11–13 sadašnji model 235/418 +8,92, senka 213/402 −15,47
     print('\n=== PREGLED ===')
     print('\n'.join(pregled))
 

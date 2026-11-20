@@ -121,7 +121,7 @@ Zakazani zadaci su isključeni (odluka 5.11.2026): ništa se ne pokreće samo. S
   Bešiktaša). 6.11.: Morgan precenjen (vučen ka centrima, 4,6 naspram 2,9), Valančiunas potcenjen (6,3 naspram 8,1).
   Proveriti slabije skupljanje za takve igrače ili spoljnu prethodnu statistiku (NBA, domaće lige) i predložiti Nikoli.
 
-- Senka (odluka 5.11.2026): od kola 11 `senka.py` uporedo beleži predloge po varijanti „skupljanje samo nadole“
+- Senka (odluka 5.11.2026, **ugašena 20.11.2026** jer je posle kola 11–13 bila 213/402, −15,47, naspram sadašnjeg 235/418, +8,92; Nikola: „gasi je“): od kola 11 `senka.py` je uporedo beležio predloge po varijanti „skupljanje samo nadole“
   (model ispod proseka igrača: 0,7·model + 0,3·prosek) u `procene/senka/`, bez prikaza. Posle 3 kola sa ishodima
   (otprilike posle kola 13) PREGLED u `dan.py` ispisuje PODSETNIK: tada Nikoli pokaži poređenje i predloži odluku.
   Razlozi: `procene/provera/provera_2026-11-05.md`. Obavezni PLUS ostaje; filter poena za igrače sa malo minuta odbačen.

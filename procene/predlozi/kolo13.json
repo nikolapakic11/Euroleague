@@ -8376,7 +8376,7 @@
    }
   ]
  },
- "osvezeno": "19.11.2026. 23:19",
+ "osvezeno": "20.11.2026. 10:38",
  "utakmice": [
   {
    "g": 122,
@@ -8533,8 +8533,18 @@
    "sastav": null,
    "objava": "2026-11-20T12:00:00+01:00",
    "rok": "2026-11-20T17:00:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Mozzart",
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Admiral": "2026-11-20T09:28:50.046Z",
+    "MaxBet": "2026-11-20T09:29:09.036Z",
+    "Mozzart": "2026-11-20T09:36:43Z",
+    "Soccerbet": "2026-11-20T09:38:03+00:00"
+   }
   },
   {
    "g": 130,
@@ -8547,8 +8557,18 @@
    "sastav": null,
    "objava": "2026-11-20T12:00:00+01:00",
    "rok": "2026-11-20T17:00:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Mozzart",
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Admiral": "2026-11-20T09:28:50.046Z",
+    "MaxBet": "2026-11-20T09:29:09.036Z",
+    "Mozzart": "2026-11-20T09:36:43Z",
+    "Soccerbet": "2026-11-20T09:38:03+00:00"
+   }
   },
   {
    "g": 128,
@@ -8561,8 +8581,18 @@
    "sastav": null,
    "objava": "2026-11-20T12:00:00+01:00",
    "rok": "2026-11-20T17:00:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Mozzart",
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Admiral": "2026-11-20T09:28:50.046Z",
+    "MaxBet": "2026-11-20T09:29:09.036Z",
+    "Mozzart": "2026-11-20T09:36:43Z",
+    "Soccerbet": "2026-11-20T09:38:03+00:00"
+   }
   },
   {
    "g": 129,
@@ -8575,8 +8605,18 @@
    "sastav": null,
    "objava": "2026-11-20T12:00:00+01:00",
    "rok": "2026-11-20T17:00:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Mozzart",
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Admiral": "2026-11-20T09:28:50.046Z",
+    "MaxBet": "2026-11-20T09:29:09.036Z",
+    "Mozzart": "2026-11-20T09:36:43Z",
+    "Soccerbet": "2026-11-20T09:38:03+00:00"
+   }
   }
  ]
 }

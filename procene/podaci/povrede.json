@@ -1,15 +1,14 @@
 {
  "kolo": 13,
- "at": "19.11.2026. 23:19",
+ "at": "20.11.2026. 10:36",
  "izvori": [
   "https://www.eurohoops.net/en/euroleague/2037682/injury-report-round-13-smits-a-scratch-for-tonight/"
  ],
  "igraci": {
   "william rayman": {
    "tim": "TEL",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Round 12 (coach's decision) Olympiacos Piraeus | Eurohoops: Will Rayman was not on the gameday roster in Round 12",
-   "izvor": "basketnews"
+   "stanje": "upitan",
+   "tekst": "Will Rayman was not on the gameday roster in Round 12"
   },
   "iffe lundberg": {
    "tim": "TEL",
@@ -19,44 +18,37 @@
   "kenneth faried": {
    "tim": "BAS",
    "stanje": "van",
-   "tekst": "Out: Out indefinitely with a left thigh injury | Eurohoops: Kenneth Faried suffered a left thigh injury in Round 11",
-   "izvor": "basketnews"
+   "tekst": "Kenneth Faried suffered a left thigh injury in Round 11"
   },
   "marcio santos": {
    "tim": "BAS",
-   "stanje": "van",
-   "tekst": "Out: Out indefinitely (left calf tear) | Eurohoops: Marcio Santos last played in Round 9",
-   "izvor": "basketnews"
+   "stanje": "upitan",
+   "tekst": "Marcio Santos last played in Round 9"
   },
   "tadas sedekerskis": {
    "tim": "BAS",
-   "stanje": "van",
-   "tekst": "Out: Out after suffering a right thigh muscle injury in Round 7. Expected return in late November. | Eurohoops: Tadas Sedekerskis last played in Round 7.",
-   "izvor": "basketnews"
+   "stanje": "upitan",
+   "tekst": "Tadas Sedekerskis last played in Round 7."
   },
   "devin booker": {
    "tim": "MIL",
-   "stanje": "van",
-   "tekst": "Out: Out for up to three months (11.06). | Eurohoops: Devin Booker is Milan’s only absentee for its game against",
-   "izvor": "basketnews"
+   "stanje": "upitan",
+   "tekst": "Devin Booker is Milan’s only absentee for its game against"
   },
   "nicolo melli": {
    "tim": "ULK",
    "stanje": "van",
-   "tekst": "Out: Expected to be out for 6-8 weeks after undergoing surgery because of a meniscus. Estimated return is Round 19-21 Hapoel IBI Tel Aviv | Eurohoops: Nicolo Melli underwent surgery on his left knee to repair a torn meniscus ahead of Round 12",
-   "izvor": "basketnews"
+   "tekst": "Nicolo Melli underwent surgery on his left knee to repair a torn meniscus ahead of Round 12"
   },
   "braxton key": {
    "tim": "ULK",
    "stanje": "van",
-   "tekst": "Out: Expected to be out for 6-8 weeks after undergoing surgery because of a dislocated finger and a tear. Estimated return is Round 19-21 | Eurohoops: Braxton Key had an operation on a fractured finger on his right hand ahead of Round 12",
-   "izvor": "basketnews"
+   "tekst": "Braxton Key had an operation on a fractured finger on his right hand ahead of Round 12"
   },
   "onuralp bitim": {
    "tim": "ULK",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Rounds 1-12 (coach's decision) | Eurohoops: Onuralp Bitim was not on the gameday roster in Round 12",
-   "izvor": "basketnews"
+   "stanje": "upitan",
+   "tekst": "Onuralp Bitim was not on the gameday roster in Round 12"
   },
   "leopold cavaliere": {
    "tim": "PRS",
@@ -65,39 +57,33 @@
   },
   "joel ayayi": {
    "tim": "PRS",
-   "stanje": "igra",
-   "tekst": "Ready: Included in 12-man roster after DNP in Rounds 11-12 (coach's decision) | Eurohoops: Joel Ayayi last played in Round 10",
-   "izvor": "basketnews"
+   "stanje": "upitan",
+   "tekst": "Joel Ayayi last played in Round 10"
   },
   "daulton hommes": {
    "tim": "PRS",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Rounds 11-12 (coach's decision) | Eurohoops: Daulton Hommes last played in Round 8, but he has played in Paris’s last two French League games.",
-   "izvor": "basketnews"
+   "stanje": "upitan",
+   "tekst": "Daulton Hommes last played in Round 8, but he has played in Paris’s last two French League games."
   },
   "bruno caboclo": {
    "tim": "HTA",
-   "stanje": "van",
-   "tekst": "Out: Ruled out for Round 13, after DNP in Rounds 11-12 (minor calf tear) | Eurohoops: Bruno Caboclo last played in Round 10 and was not on the gameday roster in Round 11",
-   "izvor": "basketnews"
+   "stanje": "upitan",
+   "tekst": "Bruno Caboclo last played in Round 10 and was not on the gameday roster in Round 11"
   },
   "khadeen carrington": {
    "tim": "HTA",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Rounds 11-12 (coach's decision) | Eurohoops: Khadeen Carrington last played in Round 8",
-   "izvor": "basketnews"
+   "stanje": "upitan",
+   "tekst": "Khadeen Carrington last played in Round 8"
   },
   "nathan reuvers": {
    "tim": "PAM",
    "stanje": "van",
-   "tekst": "Out: Ruled out for Round 13 after DNP in Rounds 8-12 (foot bone injury) Virtus Bologna | Eurohoops: Nate Reuvers (foot) last played in Round 7",
-   "izvor": "basketnews"
+   "tekst": "Nate Reuvers (foot) last played in Round 7"
   },
   "nikola mirotic": {
    "tim": "PAM",
-   "stanje": "igra",
-   "tekst": "Ready: Included in 12-man roster after DNP in Rounds 9-12 ( muscle injury ) | Eurohoops: Nikola Mirotic last played in Round 8 due to injury",
-   "izvor": "basketnews"
+   "stanje": "van",
+   "tekst": "Nikola Mirotic last played in Round 8 due to injury"
   },
   "yankuba sima": {
    "tim": "PAM",
@@ -106,9 +92,8 @@
   },
   "davide casarin": {
    "tim": "VIR",
-   "stanje": "van",
-   "tekst": "Out: Out for eight weeks and at least until Round 21 (bone bruise, 11.09) | Eurohoops: Davide Casarin is Virtus’s only absentee for its game at",
-   "izvor": "basketnews"
+   "stanje": "upitan",
+   "tekst": "Davide Casarin is Virtus’s only absentee for its game at"
   },
   "bruno fernando": {
    "tim": "IST",
@@ -235,24 +220,6 @@
    "tekst": "Uncertain: DNP in Rounds 1-12 (coach's decision) Armani Olimpia Milan",
    "izvor": "basketnews"
   },
-  "nicola akele": {
-   "tim": "MIL",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Round 12 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "diego flaccadori": {
-   "tim": "MIL",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Rounds 2-12 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "stefano tonut": {
-   "tim": "MIL",
-   "stanje": "igra",
-   "tekst": "Ready: Included in 12-man roster after DNP in Round 12 (coach's decision) Besiktas Istanbul",
-   "izvor": "basketnews"
-  },
   "yagiz aksu": {
    "tim": "BES",
    "stanje": "upitan",
@@ -265,76 +232,10 @@
    "tekst": "Game-time: Face injury",
    "izvor": "basketnews"
   },
-  "awudu abass": {
-   "tim": "DUB",
-   "stanje": "van",
-   "tekst": "Out: Out indefinitely, as he's not included in official Euroleague roster",
-   "izvor": "basketnews"
-  },
-  "justin anderson": {
-   "tim": "DUB",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Rounds 1-12 (hamstring)",
-   "izvor": "basketnews"
-  },
-  "davis bertans": {
-   "tim": "DUB",
-   "stanje": "van",
-   "tekst": "Out: Ruled out for Round 13 after DNP in Rounds 10-12 and is out indefinitely (hamstring injury)",
-   "izvor": "basketnews"
-  },
-  "kosta kondic": {
-   "tim": "DUB",
-   "stanje": "van",
-   "tekst": "Out: DNP in Rounds 10-12, out indefinitely (hip/psoas muscle injury)",
-   "izvor": "basketnews"
-  },
-  "davion mintz": {
-   "tim": "DUB",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Round 12 (coach's decision)",
-   "izvor": "basketnews"
-  },
   "klemen prepelic": {
    "tim": "DUB",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Rounds 8-12 (coach's decision) FC Bayern Munich",
-   "izvor": "basketnews"
-  },
-  "kilian fischer": {
-   "tim": "MUN",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Rounds 2-12 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "niels giffey": {
-   "tim": "MUN",
-   "stanje": "igra",
-   "tekst": "Ready: Included in 12-man roster after DNP in Rounds 10-12 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "justus hollatz": {
-   "tim": "MUN",
-   "stanje": "igra",
-   "tekst": "Ready: Included in 12-man roster after DNP in Round 12 (undisclosed)",
-   "izvor": "basketnews"
-  },
-  "vladimir lucic": {
-   "tim": "MUN",
-   "stanje": "igra",
-   "tekst": "Ready: Included in 12-man roster after DNP in Round 12 (undisclosed)",
-   "izvor": "basketnews"
-  },
-  "miles norris": {
-   "tim": "MUN",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "austin wiley": {
-   "tim": "MUN",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Round 12 (undisclosed injury) FC Barcelona",
+   "stanje": "upitan",
+   "tekst": "Doubtful: DNP in Rounds 8-13 (coach's decision) FC Bayern Munich",
    "izvor": "basketnews"
   },
   "tosan evbuomwan": {
@@ -373,42 +274,6 @@
    "tekst": "Out: Suffered an ankle sprain in domestic league game (11.08), set to be out for six weeks until Round 18 Fenerbahce Beko Istanbul",
    "izvor": "basketnews"
   },
-  "melih mahmutoglu": {
-   "tim": "ULK",
-   "stanje": "igra",
-   "tekst": "Ready: Included in 12-man roster after playing in Round 12 following DNP in Rounds 1-11 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "oz blayzer": {
-   "tim": "HTA",
-   "stanje": "van",
-   "tekst": "Out: Out indefinitely, as he's not included in official Euroleague roster",
-   "izvor": "basketnews"
-  },
-  "tyler ennis": {
-   "tim": "HTA",
-   "stanje": "van",
-   "tekst": "Out: Joined team practices on November 19 after suffering a long-term injury in January 2026 (torn Achilles)",
-   "izvor": "basketnews"
-  },
-  "guy palatin": {
-   "tim": "HTA",
-   "stanje": "van",
-   "tekst": "Out: Out indefinitely, as he's not included in official Euroleague roster",
-   "izvor": "basketnews"
-  },
-  "bar timor": {
-   "tim": "HTA",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Rounds 7-12 (coach's decision) Kosner Baskonia Vitoria-Gasteiz",
-   "izvor": "basketnews"
-  },
-  "rolands smits": {
-   "tim": "BAS",
-   "stanje": "van",
-   "tekst": "Out: Illness LDLC ASVEL Villeurbanne",
-   "izvor": "basketnews"
-  },
   "juhann begarin": {
    "tim": "ASV",
    "stanje": "van",
@@ -439,18 +304,6 @@
    "tekst": "Out: DNP in Rounds 10-12 (coach's decision) Maccabi Rapyd Tel Aviv",
    "izvor": "basketnews"
   },
-  "amit ebo": {
-   "tim": "TEL",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Rounds 10-12 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "gur lavi": {
-   "tim": "TEL",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Rounds 1-12 (undisclosed injury)",
-   "izvor": "basketnews"
-  },
   "georgios bourneles": {
    "tim": "OLY",
    "stanje": "upitan",
@@ -473,60 +326,6 @@
    "tim": "OLY",
    "stanje": "upitan",
    "tekst": "Uncertain: DNP in Rounds 1-12 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "moustapha fall": {
-   "tim": "PAN",
-   "stanje": "igra",
-   "tekst": "Ready: Included in 12-man roster after DNP in Round 12 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "jerian grant": {
-   "tim": "PAN",
-   "stanje": "igra",
-   "tekst": "Ready: Included in 12-man roster after DNP in Round 12 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "panagiotis kalaitzakis": {
-   "tim": "PAN",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after playing 20 seconds in Round 12 and DNP in Rounds 10-11 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "ioannis kouzeloglou": {
-   "tim": "PAN",
-   "stanje": "van",
-   "tekst": "Out: Out indefinitely, as he's not included in official Euroleague roster",
-   "izvor": "basketnews"
-  },
-  "eleftherios mantzoukas": {
-   "tim": "PAN",
-   "stanje": "van",
-   "tekst": "Out: DNP in Rounds 9-12 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "dimitris moraitis": {
-   "tim": "PAN",
-   "stanje": "van",
-   "tekst": "Out: DNP in Rounds 8-12 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "nikolaos rogkavopoulos": {
-   "tim": "PAN",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after playing 6 minutes in Round 12 and DNP in Rounds 7-11 (hamstring injury)",
-   "izvor": "basketnews"
-  },
-  "iason varvaritis": {
-   "tim": "PAN",
-   "stanje": "van",
-   "tekst": "Out: DNP in Rounds 1-12 (coach's decision) Paris Basketball",
-   "izvor": "basketnews"
-  },
-  "maozinha pereira": {
-   "tim": "PRS",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after playing 1 minute in Round 12 following DNP in Round 11 (coach's decision) Partizan Mozzart Bet Belgrade",
    "izvor": "basketnews"
   },
   "uros danilovic": {
@@ -577,64 +376,10 @@
    "tekst": "Uncertain: Not included in 12-man roster in Round 12 (coach's decision)",
    "izvor": "basketnews"
   },
-  "lucas mari": {
-   "tim": "PAM",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Rounds 11-12 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "omari moore": {
-   "tim": "PAM",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "matteo baiocchi": {
-   "tim": "VIR",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Rounds 1-12 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "tommaso baldasso": {
-   "tim": "VIR",
-   "stanje": "igra",
-   "tekst": "Ready: Included in 12-man roster after playing 1 minute in Round 12 following DNPs in Rounds 8-11 (leg contusion)",
-   "izvor": "basketnews"
-  },
-  "francesco ferrari": {
-   "tim": "VIR",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster (coach's decision) Zalgiris Kaunas",
-   "izvor": "basketnews"
-  },
   "marek blazevic": {
    "tim": "ZAL",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Rounds 8-12 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "dovydas giedraitis": {
-   "tim": "ZAL",
-   "stanje": "igra",
-   "tekst": "Ready: Included in 12-man roster after playing 1 minute in Round 12 after DNP in Rounds 8-11 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "maodo lo": {
-   "tim": "ZAL",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Round 12 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "deividas sirvydis": {
-   "tim": "ZAL",
-   "stanje": "van",
-   "tekst": "Out: Not included in 12-man roster after DNP in Rounds 8-12 (coach's decision)",
-   "izvor": "basketnews"
-  },
-  "nigel williams goss": {
-   "tim": "ZAL",
-   "stanje": "van",
-   "tekst": "Out: Aggravated previous hamstring injury in Round 6. Expected to be out until Round 14. Player status color guide Ready The player is fully ready to play. Expected The player is expected to play, but it's not confirmed. Questionable There is a 50-50 chance about the player's availability. Game-time",
+   "stanje": "upitan",
+   "tekst": "Uncertain: DNP in Rounds 8-13 (coach's decision)",
    "izvor": "basketnews"
   }
  },
