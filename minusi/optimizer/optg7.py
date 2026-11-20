@@ -45,6 +45,9 @@ _cap=max(1,int(CFG.get('maxpct',0.22)*len(CFG['sizes'])))
 if max(PMAXA)>_cap:
     PMAXA=[min(x,_cap) for x in PMAXA]; PMINA=[min(x,_cap) for x in PMINA]; MAXU=min(MAXU,_cap)
     print('granica ponavljanja:',_cap,'od',len(CFG['sizes']),'tiketa (maxpct',CFG.get('maxpct',0.22),')')
+# 20.11.2026: "maxpuno" {dužina: broj} – najviše toliko utakmica na tiketu sme da dostigne svoj gcap
+# (desetke sa gcap 3 i maxpuno 2 → tačno 3+3+2+2 na 4 utakmice, bez 3+3+3+1)
+MFG={int(k):v for k,v in CFG.get('maxpuno',{}).items()}
 def legal(t,i,L,skip=-1,kk=None):
     if i in LOCK: return False
     if kk in CORE and i not in COREPOOL: return False
@@ -61,6 +64,9 @@ def legal(t,i,L,skip=-1,kk=None):
         if pid[j]==pid[i]: return False
         if P[j]['t']==P[i]['t']: tc+=1
         if P[j]['g']==P[i]['g']: gc+=1
+    if L in MFG and gc+1>=GCS[L].get(P[i]['g'],0):
+        cnt=collections.Counter(P[j]['g'] for k,j in enumerate(t) if k!=skip)
+        if sum(1 for gg,cn in cnt.items() if gg!=P[i]['g'] and cn>=GCS[L].get(gg,0))>=MFG[L]: return False
     return tc<TCAP and gc<GCS[L].get(P[i]['g'],0)
 def add(i,d): use[i]+=d; puse[pid[i]]+=d
 tk=[None]*N
