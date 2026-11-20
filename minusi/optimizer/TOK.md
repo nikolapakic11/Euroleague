@@ -96,3 +96,8 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
 - Plan za 20.11. (duplo kolo, izuzetak): 5.000 din = 80 osmica + 20 desetki po 50; ubacuju se i igrači koji su blizu praga modela; ostatak za opsege.
 - Statistika timova (Admiral, sva kola, minusi naspram tržišta): igrači Zvezde 61% (+11,8; skokovi 64%, asistencije 64%), najbolji tim u ligi; protiv odbrane Zvezde 57% (+7,9). Igrači Barse 46% (−3,2, među najgorima), ali protiv odbrane Barse 56% (+6,4). Odmor do 2 dana: minusi 51,9% naspram 55,6% sa 4+ dana (n=393), dakle u duplom kolu minusi ne prolaze češće.
 - 20.11.: desetke smeju 3 para iz dve utakmice (3+3+2+2); Barsa–Zvezda ulazi uprkos svežim izostancima (Zvezda punom težinom, Barsa manjom).
+
+## 20.11.2026: ishod (kolo 13, dan 2)
+- Minusi 0/60 (bez povraćaja). Cela Admiral ponuda ispod 59/115 (51%, asistencije 9/24): loš dan za minuse. Model po proceni: ≥0,62 21/31 (68%), 0,54–0,62 19/49 (39%). Naš plan: jedinstveni 29/60, po mestima 265/508 (52%). Ravnomernost sa tačno 2 para po utakmici na 4 utakmice traži oko 13 igrača po utakmici, pa ulaze igrači blizu praga, a oni su danas pali. Na danima sa 4 utakmice: manje osmica ili širi izbor samo do ~0,58.
+- Opsezi 0/37. Naših 16 opsega 6 prošlo (ravnomerno +1,1 jed), cela ponuda 17/56 (−4,1); jezgro 1/4 (Vezenkov 14 na 15–20, Carlik Jones 21 na 15–20). Donja granica i dalje neproverena. Stevens nije igrao: pretpostavljeno vraćanje para, nepotvrđeno.
+- Admiral bonus za 5 parova je 4% (ne 5%).
