@@ -89,3 +89,8 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
 - **Opseg: gornja granica se računa.** Shorts 20 poena na opsegu 15–20 je prošao (Nikolin tiket 9, 4 opsega, kvota 267,3, 100 din → isplaćeno 27.531 din, bonus oko 3% na 4 para). U `spoj/analiza/opseg*.py` važi tumačenje „sa gornjom“ (istorija: opsezi sa procenom ≥ +20% povrat oko +47%, n=134). Prvih 9 igrača opsega: 5 od 9 u opsegu (procena 30–40%).
 - **Ponavljanje igrača najviše oko 22% tiketa (Nikola: „definitivno mora manje, možda i manje od 25%“).** U `optg7.py` parametar `maxpct` (podrazumevano 0,22) seče granicu svakog igrača bez obzira na težinu. Za to treba širi bazen (više igrača sa težinom 0,4) ili manje dugih tiketa.
 - 19.11. minusi: nijedan dobitni od 74 iako po mestima 68% (asistencije 88%, skokovi 49%); pali su igrači sa 23 tiketa (Nunn, Washington, Wright). Parovi na 18+ tiketa 10/16, na 10–17 tiketa 9/12.
+
+## 20.11.2026: dugo odsutni i raspored po dužinama (Nikola)
+- Izostanak igrača koji ne igra već 5 ili više utakmica tima zaredom (sezonska povreda, svađa, duga pauza: Mike James, Dorsey, Deck, Montero) više se ne računa u filter izostanaka (`spoj/signali.py`, `DUGO_ODSUTAN = 5`). Tim se navikao bez njega.
+- Raspored po dužinama: osmice što ravnomernije (ponavljanje ispod 20%) da na loš dan ne padnu sve i da redovno donose povraćaje; veći tiketi (desetke) sa više ponavljanja najjačih, kao bonus.
+- Plan za 20.11. (duplo kolo, izuzetak): 5.000 din = 80 osmica + 20 desetki po 50; ubacuju se i igrači koji su blizu praga modela; ostatak za opsege.

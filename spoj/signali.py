@@ -69,15 +69,32 @@ def rotacija(S, tim, dan):
     return {k: sum(m) / len(m) for k, m in pre.items() if len(m) >= 3 and sum(m) / len(m) >= 10}
 
 
+DUGO_ODSUTAN = 5   # propuštenih utakmica tima zaredom posle kojih se izostanak više ne računa (20.11.2026)
+
+
 def izostanci(S, tim, dan, pov=None):
     """Minuti rotacije koji fale timu -> {k: minuti}. pov = {k: {stanje: van|upitan|igra, tekst}} (izveštaj o povredama).
     Bez izveštaja: igrač rotacije koji nije igrao poslednje dve utakmice tima računa se kao odsutan."""
     pov = pov or {}
     rot = rotacija(S, tim, dan)
-    dani = sorted({r['dan'] for r in S.B.rows if r['team'] == tim and r['dan'] < dan})[-2:]
+    svi_dani = sorted({r['dan'] for r in S.B.rows if r['team'] == tim and r['dan'] < dan})
+    dani = svi_dani[-2:]
     skoro = {r['k'] for r in S.B.rows if r['team'] == tim and r['dan'] in dani and r['min'] > 0}
+    igrao = _c.defaultdict(set)
+    for r in S.B.rows:
+        if r['team'] == tim and r['dan'] < dan and r['min'] > 0:
+            igrao[r['k']].add(r['dan'])
     out = {}
     for k, m in rot.items():
+        # 20.11.2026 (Nikola): ko ne igra već DUGO_ODSUTAN utakmica zaredom (sezonska povreda, svađa, duga pauza)
+        # ne računa se, tim se već navikao bez njega (npr. Mike James, Dorsey)
+        zaredom = 0
+        for d in reversed(svi_dani):
+            if d in igrao[k]:
+                break
+            zaredom += 1
+        if zaredom >= DUGO_ODSUTAN:
+            continue
         x = pov.get(k) or {}
         st, tx = x.get('stanje'), x.get('tekst', '') or ''
         if st == 'van':
