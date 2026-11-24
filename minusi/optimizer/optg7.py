@@ -42,9 +42,13 @@ if RAV and CFG.get('tezine_igraca'):
     print('težine igrača: granice od',min(PMAXA),'do',max(PMAXA),'po igraču')
 # 19.11.2026 (Nikola): igrač najviše na maxpct tiketa (podrazumevano 22%), bez obzira na težinu
 _cap=max(1,int(CFG.get('maxpct',0.22)*len(CFG['sizes'])))
-if max(PMAXA)>_cap:
-    PMAXA=[min(x,_cap) for x in PMAXA]; PMINA=[min(x,_cap) for x in PMINA]; MAXU=min(MAXU,_cap)
-    print('granica ponavljanja:',_cap,'od',len(CFG['sizes']),'tiketa (maxpct',CFG.get('maxpct',0.22),')')
+# 24.11.2026 (Nikola): "maxpct" = granica po STAVCI (igrač+stavka), "maxpct_igrac" = granica po igraču (sve njegove stavke zajedno);
+# bez "maxpct_igrac" obe su iste kao ranije
+_capi=max(1,int(CFG.get('maxpct_igrac',CFG.get('maxpct',0.22))*len(CFG['sizes'])))
+if max(PMAXA)>_capi:
+    PMAXA=[min(x,_capi) for x in PMAXA]; PMINA=[min(x,_capi) for x in PMINA]
+MAXU=min(MAXU,_cap)
+print('granica ponavljanja: stavka',MAXU,'| igrač',max(PMAXA),'od',len(CFG['sizes']),'tiketa (maxpct',CFG.get('maxpct',0.22),', maxpct_igrac',CFG.get('maxpct_igrac','='),')')
 # 20.11.2026: "maxpuno" {dužina: broj} – najviše toliko utakmica na tiketu sme da dostigne svoj gcap
 # (desetke sa gcap 3 i maxpuno 2 → tačno 3+3+2+2 na 4 utakmice, bez 3+3+3+1)
 MFG={int(k):v for k,v in CFG.get('maxpuno',{}).items()}
