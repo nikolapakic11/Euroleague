@@ -123,6 +123,15 @@
     "l": 12.5,
     "razlog": "Nikola 19.11.: više predloga; prosek spoja i procena 0,64, minus-model se slaže (0,55), Milano–Fenerbahče najniži zbir dana (165,5)"
    }
+  ],
+  "2026-11-24": [
+   {
+    "k": "trent forrest",
+    "s": "P",
+    "strana": "o",
+    "l": 4.5,
+    "razlog": "Nikola 24.11.: bar dva PLUS-a. Fenerbahçe bez Mellija i Keyja (42 minuta rotacije), Forrest preko 4,5 u 4 od poslednjih 5 (6, 1, 10, 7, 6), model procena 69% preko, spoj 54%, prednost +4 poena nad tržištem"
+   }
   ]
  },
  "2026-11-12": [
@@ -172,6 +181,13 @@
    "k": "dzanan musa",
    "s": "A",
    "razlog": "dubinska analiza 17.11.: tek 4 utakmice ove sezone, ispod 3,5 u 2 od 4; Volkap se vraća, ali to nije dovoljno uverljivo"
+  }
+ ],
+ "2026-11-24": [
+  {
+   "k": "kendrick nunn",
+   "s": "A",
+   "razlog": "izveštaj 14. kola: Sloukas van (koleno), Nunn preuzima više vođenja lopte; asistencije ispod 3,5 gube oslonac"
   }
  ]
 }

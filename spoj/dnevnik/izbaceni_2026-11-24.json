@@ -1,0 +1,138 @@
+{
+ "dan": "2026-11-24",
+ "upisano": "24.11.2026. 15:56",
+ "izbaceni": [
+  {
+   "k": "mouhamet diouf",
+   "ime": "Mouhamet Diouf",
+   "tim": "VIR",
+   "s": "P",
+   "l": 6.5,
+   "kvota": 1.92,
+   "kl": "admiral",
+   "pp": 0.6351,
+   "fer": 0.5,
+   "msig": 0.0145
+  },
+  {
+   "k": "jared rhoden",
+   "ime": "Jared Rhoden",
+   "tim": "PRS",
+   "s": "S",
+   "l": 3.5,
+   "kvota": 1.6,
+   "kl": "admiral",
+   "pp": 0.6271,
+   "fer": 0.5744,
+   "msig": 0.3401
+  },
+  {
+   "k": "josep puerto",
+   "ime": "Josep Puerto",
+   "tim": "PAM",
+   "s": "P",
+   "l": 5.5,
+   "kvota": 1.9,
+   "kl": "mozzart",
+   "pp": 0.626,
+   "fer": 0.5247,
+   "msig": 0.3246
+  },
+  {
+   "k": "daquan jeffries",
+   "ime": "Daquan Jeffries",
+   "tim": "BES",
+   "s": "P",
+   "l": 12.5,
+   "kvota": 1.8,
+   "kl": "admiral",
+   "pp": 0.6199,
+   "fer": 0.5285,
+   "msig": -0.0243
+  },
+  {
+   "k": "oscar da silva",
+   "ime": "Oscar Da Silva",
+   "tim": "MUN",
+   "s": "S",
+   "l": 4.5,
+   "kvota": 1.85,
+   "kl": "admiral",
+   "pp": 0.6171,
+   "fer": 0.5,
+   "msig": 0.1055
+  },
+  {
+   "k": "mouhamet diouf",
+   "ime": "Mouhamet Diouf",
+   "tim": "VIR",
+   "s": "S",
+   "l": 3.5,
+   "kvota": 1.85,
+   "kl": "admiral",
+   "pp": 0.6115,
+   "fer": 0.5,
+   "msig": -0.0478
+  },
+  {
+   "k": "jordan nwora",
+   "ime": "Jordan Nwora",
+   "tim": "RED",
+   "s": "S",
+   "l": 5.5,
+   "kvota": 1.65,
+   "kl": "admiral",
+   "pp": 0.5984,
+   "fer": 0.5559,
+   "msig": 0.2548
+  },
+  {
+   "k": "jimmy clark",
+   "ime": "Jimmy Clark Iii",
+   "tim": "TEL",
+   "s": "A",
+   "l": 4.5,
+   "kvota": 1.6,
+   "kl": "admiral",
+   "pp": 0.5939,
+   "fer": 0.5744,
+   "msig": 0.342
+  },
+  {
+   "k": "andreas obst",
+   "ime": "Andreas Obst",
+   "tim": "MUN",
+   "s": "A",
+   "l": 2.5,
+   "kvota": 1.95,
+   "kl": "mozzart",
+   "pp": 0.5919,
+   "fer": 0.4763,
+   "msig": 0.3424
+  },
+  {
+   "k": "scottie wilbekin",
+   "ime": "Scottie Wilbekin",
+   "tim": "BES",
+   "s": "P",
+   "l": 14.5,
+   "kvota": 2.01,
+   "kl": "admiral",
+   "pp": 0.5914,
+   "fer": 0.4806,
+   "msig": 0.296
+  },
+  {
+   "k": "rokas jokubaitis",
+   "ime": "Rokas Jokubaitis",
+   "tim": "MUN",
+   "s": "A",
+   "l": 4.5,
+   "kvota": 1.85,
+   "kl": "admiral",
+   "pp": 0.589,
+   "fer": 0.5,
+   "msig": 0.0495
+  }
+ ]
+}
