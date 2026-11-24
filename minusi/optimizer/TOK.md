@@ -101,3 +101,9 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
 - Minusi 0/60 (bez povraćaja). Cela Admiral ponuda ispod 59/115 (51%, asistencije 9/24): loš dan za minuse. Model po proceni: ≥0,62 21/31 (68%), 0,54–0,62 19/49 (39%). Naš plan: jedinstveni 29/60, po mestima 265/508 (52%). Ravnomernost sa tačno 2 para po utakmici na 4 utakmice traži oko 13 igrača po utakmici, pa ulaze igrači blizu praga, a oni su danas pali. Na danima sa 4 utakmice: manje osmica ili širi izbor samo do ~0,58.
 - Opsezi 0/37. Naših 16 opsega 6 prošlo (ravnomerno +1,1 jed), cela ponuda 17/56 (−4,1); jezgro 1/4 (Vezenkov 14 na 15–20, Carlik Jones 21 na 15–20). Donja granica i dalje neproverena. Stevens nije igrao: pretpostavljeno vraćanje para, nepotvrđeno.
 - Admiral bonus za 5 parova je 4% (ne 5%).
+
+## 24.11.2026: opsezi, granice i preseci
+- Admiral računa OBE granice opsega (Nikola 24.11.: „donja granica se računa, naravno“; Hifi 15 na 15–20). Za procenu opsega važi samo „obe“ (lo ≤ poeni ≤ hi); stroga varijanta se više ne koristi.
+- Preseci: rizične igrače i broj tiketa navoditi SAMO za žive tikete (bez promašaja); koliko je pali igrač bio na tiketima koji su već pali nije bitno.
+- Ponavljanje se broji po STAVCI (igrač+stavka): jedna stavka do ~18%, igrač ukupno sme više (optg7: maxpct po stavci, maxpct_igrac po igraču). Isti igrač ne može dva puta na isti tiket (Admiral ne dozvoljava). Slabiji igrači kao dopuna na 1–3 tiketa su poželjni.
+- Do 3 para po utakmici je u redu (istorija: parovi iz iste utakmice praktično nezavisni; izuzetak dva ispod poena iz istog tima 0,97).
