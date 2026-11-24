@@ -107,3 +107,9 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
 - Preseci: rizične igrače i broj tiketa navoditi SAMO za žive tikete (bez promašaja); koliko je pali igrač bio na tiketima koji su već pali nije bitno.
 - Ponavljanje se broji po STAVCI (igrač+stavka): jedna stavka do ~18%, igrač ukupno sme više (optg7: maxpct po stavci, maxpct_igrac po igraču). Isti igrač ne može dva puta na isti tiket (Admiral ne dozvoljava). Slabiji igrači kao dopuna na 1–3 tiketa su poželjni.
 - Do 3 para po utakmici je u redu (istorija: parovi iz iste utakmice praktično nezavisni; izuzetak dva ispod poena iz istog tima 0,97).
+
+## 24.11.2026: ishod (kolo 14, dan 1)
+- Minusi 0/56; dva tiketa sa jednim promašajem (r14d1-06 Wright P, r14d1-29 Shorts A 7 na 6,5) → povraćaj po pravilu 800. Cela Admiral ponuda ispod 103/175 (59%, ravnomerno +23,8 jed): dobar dan za minuse, a naš izbor 47/80 (59%), po mestima 292/501 (58%) – samo na nivou ponude.
+- Model po proceni: ≥0,62 24/39 (62%), 0,58–0,62 19/37 (51%). Drugi dan zaredom pojas 0,58–0,62 ispod proseka ponude (20.11. 0,54–0,62 39%). Predlog za sledeće kolo: pojas 0,58–0,62 sa težinom ~0,4 umesto 0,7, a širinu (manje ponavljanje) dobijati iz ≥0,62 iz svih utakmica i dopunskih igrača na 1–3 tiketa.
+- Opsezi: 1/18 dobitan (T4: Shorts 15 na 10–15, Yabusele 10 na 5–10, Hifi 15, Nwora 12 → ~7.546). Naših 18 opsega 9 prošlo (50%, ravnomerno +8,2 jed), cela ponuda 36/116 (31%, −9,0): izbor opsega drugi dan zaredom bolji od ponude. T17 pao samo na Shieldsu (26 na 15–20).
+- Dan: uloženo 6.000, vraćeno ~8.346 (plus ~2.346), sve zahvaljujući opsezima.

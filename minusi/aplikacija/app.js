@@ -886,7 +886,7 @@
       var i = opsegInfo(t); if (i.st !== 'pending') { sSt += t.stake; sRet += i.payout; }
       return [fmtDate(t.date), t.legs.map(function(l){ var q = opsegLeg(l); return esc(l.p) + ' ' + l.lo + '–' + l.hi + (l.actual != null ? ' <small>(' + l.actual + ')</small>' : '') + (q === 'hit' ? ' ✓' : q === 'miss' ? ' ✗' : ''); }).join(', '), fmt(i.odds), fmt(t.stake, 0), STo[i.st], '<span class="' + cls(i.payout - t.stake) + '">' + (i.st === 'pending' ? '–' : signed(i.payout - t.stake)) + '</span>'];
     });
-    return simpleTable('Opsezi poena', 'Admiral Specijali, opseg poena igrača. Vode se odvojeno od minusa i ne ulaze u analizu parova, ali ulaze u bilans gore. Gornja granica se računa (20 ulazi u 15–20). Ukupno ' + fmt(sSt, 0) + ' uloženo, ' + fmt(sRet) + ' vraćeno, bilans ' + signed(sRet - sSt) + '.', ['Datum','Parovi (postignuto)','Kvota','Ulog','Stanje','Bilans'], rows);
+    return simpleTable('Opsezi poena', 'Admiral Specijali, opseg poena igrača. Vode se odvojeno od minusa i ne ulaze u analizu parova, ali ulaze u bilans gore. Obe granice se računaju (20 ulazi u 15–20, a 15 u 15–20 i u 10–15). Ukupno ' + fmt(sSt, 0) + ' uloženo, ' + fmt(sRet) + ' vraćeno, bilans ' + signed(sRet - sSt) + '.', ['Datum','Parovi (postignuto)','Kvota','Ulog','Stanje','Bilans'], rows);
   }
   function viewTickets(){
     if (!state.tickets.length) return '<section class="panel empty">Još nema tiketa.<br><button class="btn" data-act="tab" data-v="novi">Unesi prvi tiket</button></section>';
