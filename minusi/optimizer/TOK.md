@@ -113,3 +113,9 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
 - Model po proceni: ≥0,62 24/39 (62%), 0,58–0,62 19/37 (51%). Drugi dan zaredom pojas 0,58–0,62 ispod proseka ponude (20.11. 0,54–0,62 39%). Predlog za sledeće kolo: pojas 0,58–0,62 sa težinom ~0,4 umesto 0,7, a širinu (manje ponavljanje) dobijati iz ≥0,62 iz svih utakmica i dopunskih igrača na 1–3 tiketa.
 - Opsezi: 1/18 dobitan (T4: Shorts 15 na 10–15, Yabusele 10 na 5–10, Hifi 15, Nwora 12 → ~7.546). Naših 18 opsega 9 prošlo (50%, ravnomerno +8,2 jed), cela ponuda 36/116 (31%, −9,0): izbor opsega drugi dan zaredom bolji od ponude. T17 pao samo na Shieldsu (26 na 15–20).
 - Dan: uloženo 6.000, vraćeno ~8.346 (plus ~2.346), sve zahvaljujući opsezima.
+
+## 25.11.2026: zašto tiketi ne prolaze (istorija 1.573 tiketa, `arhiva/kola/r14d2/ist.py`, `ist2.py`)
+- Parovi po mestima 56,5% (kvota 1,90, nula 52,7%); od 5.11. 56,9%. Kvalitet parova se nije pogoršao.
+- Osmice: dobitna 1 od ~134 (0,75%). Od 5.11. 314 osmica, očekivano ~3,5 dobitnih, stvarno 0 (nesreća, ~3%).
+- Isti parovi iz odigranih osmica na kraćim tiketima (sve kombinacije): 4 para 1 od 9 (+42%), 5 parova 1 od 17 (+48%), 6 parova 1 od 32 (+52%), osmica +44% bez povraćaja (povraćaji su do sada ~13% uloga osmica). Od 5.11.: 4 para +40%, 5 parova +39%, osmice −100% (+ povraćaji). Isti očekivani povraćaj, mnogo manje kolebanje → predlog: deo budžeta na petice.
+- Opsezi: 65 tiketa, ulog 5.732, isplata ~35.077 (2 dobitna) – najbolji deo, ali mali uzorak.
