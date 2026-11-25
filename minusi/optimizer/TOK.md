@@ -120,3 +120,11 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
 - Isti parovi iz odigranih osmica na kraćim tiketima (sve kombinacije): 4 para 1 od 9 (+42%), 5 parova 1 od 17 (+48%), 6 parova 1 od 32 (+52%), osmica +44% bez povraćaja (povraćaji su do sada ~13% uloga osmica). Od 5.11.: 4 para +40%, 5 parova +39%, osmice −100% (+ povraćaji). Isti očekivani povraćaj, mnogo manje kolebanje → predlog: deo budžeta na petice.
 - Opsezi: 65 tiketa, ulog 5.732, isplata ~35.077 (2 dobitna) – najbolji deo, ali mali uzorak.
 - 25.11.: Admiral NE dozvoljava kombinovanje opsega poena (Specijali) sa poenima/skokovima/asistencijama na istom tiketu – opsezi uvek posebni tiketi.
+
+## 25.11.2026: ishod (kolo 14, dan 2) – prva dobitna osmica posle 5.11.
+- Plan: 15×7 (113), 40×8 (100), 10×10 (50); stavka ≤9 (14%), igrač ≤13 (20%), težine skoro ravne (najbolja stavka + 0,1 po dodatnoj), filtrirani timovi po 5–6.
+- Ishod: r14d2-48 prošla (30.590), 6 tiketa sa jednim promašajem (povraćaj ~1.778). Cela ponuda 54%, naš izbor 57% (po mestima 56%).
+- Poređenje rasporeda sa nasumičnim rasporedom istih parova (`/tmp/cmp_dani.py`, kopija u arhiva/kola/r14d2): 20.11. (stavka do 28%) stvarno 0 čistih/0 sa jednim prema 0,28/2,1 nasumično; 24.11. (do 18%) 0/2 prema 0,57/3,3; 25.11. (do 14%) 1/6 prema 0,74/4,4. Ravniji raspored je jedini dan iznad nasumičnog – u skladu sa Nikolinom idejom, ali 3 dana je mali uzorak.
+- Cena ravnomernosti: pojas procene <0,54 bio je na 91 mestu i prošao samo 38%. Predlog: stavke <0,54 ograničiti na ~4–5 tiketa, a mesta popuniti širim izborom igrača.
+- Filtrirani timovi (Real, Baskonija, Partizan) u celoj ponudi ispod 23/42 (55%), isto kao ostali (54%) – filter danas nije pomogao; pratiti.
+- Opsezi: naših 45 prošlo 22% (−13,7 jed) prema 32% cele ponude – loš dan za model opsega.
