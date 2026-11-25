@@ -720,6 +720,740 @@
    "ishod": null,
    "prosao": null,
    "nije_igrao": true
+  },
+  {
+   "g": 137,
+   "dan": "2026-11-25",
+   "vreme": "25.11. 17:00",
+   "k": "dwayne bacon",
+   "ime": "Dwayne Bacon",
+   "tim": "DUB",
+   "prot": "PAR",
+   "s": "A",
+   "strana": "u",
+   "l": 2.5,
+   "kl": "mozzart",
+   "kvota": 1.7,
+   "pp": 0.721,
+   "ev": 0.226,
+   "nivo": "jak",
+   "rang": 1,
+   "fer": 0.5483,
+   "ostale": [
+    {
+     "kl": "admiral",
+     "k": 1.68
+    },
+    {
+     "kl": "maxbet",
+     "k": 1.68
+    },
+    {
+     "kl": "soccerbet",
+     "k": 1.68
+    }
+   ],
+   "knjige": [
+    {
+     "kl": "admiral",
+     "l": 2.5,
+     "u": 1.68,
+     "o": 2.05
+    },
+    {
+     "kl": "maxbet",
+     "l": 2.5,
+     "u": 1.68,
+     "o": 2.05
+    },
+    {
+     "kl": "mozzart",
+     "l": 2.5,
+     "u": 1.7,
+     "o": 2.03
+    },
+    {
+     "kl": "soccerbet",
+     "l": 2.5,
+     "u": 1.68,
+     "o": 2.05
+    }
+   ],
+   "soft": {
+    "l": 2.5,
+    "k": 1.7,
+    "kl": "mozzart",
+    "p": 0.601,
+    "vrsta": "granica",
+    "ev": 0.022,
+    "isti": true
+   },
+   "opseg": [
+    {
+     "l": 2.5,
+     "k": 1.7,
+     "kl": "mozzart",
+     "p": 0.601,
+     "vrsta": "granica"
+    }
+   ],
+   "q": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "mu": 1.58,
+   "min": 27.5,
+   "pm": 0.3248,
+   "tr": 0.4558,
+   "l0": null,
+   "vatra": null,
+   "pos": "F",
+   "of": 0.794,
+   "analiza": [
+    "Granica od 2,5 je viša od onoga što realno očekujemo, a to je jedna do dve asistencije, iz ovih razloga:",
+    "Ove sezone daje oko tri asistencije po utakmici; ispod 2,5 je ostao u 8 od 13 utakmica.",
+    "Nije glavni organizator; loptu kod Dubaija uglavnom vode Okobo i Musa.",
+    "Partizan ne dozvoljava laku igru dodavanjem; protiv njih se deli malo asistencija.",
+    "Obe ekipe igraju sporo, pa će napada biti manje nego obično."
+   ],
+   "iz_kand": false,
+   "mu_m": 1.99,
+   "var": 2.37,
+   "podoban": true,
+   "novi_saigrac": false,
+   "fer_o": 0.4517,
+   "ps": 0.7209,
+   "msig": 1.0375,
+   "izostanci_tim": 24,
+   "spoj": true,
+   "forma": [
+    5,
+    7
+   ],
+   "rang_dan": 1,
+   "upisano": "25.11.2026. 14:37",
+   "prvi_put": "25.11.2026. 14:36",
+   "zatv": 1.7,
+   "zatv_fer": 1.663
+  },
+  {
+   "g": 137,
+   "dan": "2026-11-25",
+   "vreme": "25.11. 17:00",
+   "k": "mfiondu kabengele",
+   "ime": "Mfiondu Kabengele",
+   "tim": "DUB",
+   "prot": "PAR",
+   "s": "P",
+   "strana": "u",
+   "l": 14.5,
+   "kl": "admiral",
+   "kvota": 2.02,
+   "pp": 0.688,
+   "ev": 0.39,
+   "nivo": "jak",
+   "rang": 5,
+   "fer": 0.476,
+   "ostale": [
+    {
+     "kl": "maxbet",
+     "k": 2
+    },
+    {
+     "kl": "soccerbet",
+     "k": 2
+    },
+    {
+     "kl": "mozzart",
+     "k": 1.95
+    }
+   ],
+   "knjige": [
+    {
+     "kl": "admiral",
+     "l": 14.5,
+     "u": 2.02,
+     "o": 1.81
+    },
+    {
+     "kl": "maxbet",
+     "l": 14.5,
+     "u": 2,
+     "o": 1.79
+    },
+    {
+     "kl": "mozzart",
+     "l": 14.5,
+     "u": 1.95,
+     "o": 1.85
+    },
+    {
+     "kl": "soccerbet",
+     "l": 14.5,
+     "u": 2,
+     "o": 1.79
+    }
+   ],
+   "soft": {
+    "l": 14.5,
+    "k": 2.02,
+    "kl": "admiral",
+    "p": 0.556,
+    "vrsta": "granica",
+    "ev": 0.123,
+    "isti": true
+   },
+   "opseg": [
+    {
+     "l": 12.5,
+     "k": 2.55,
+     "kl": "mozzart",
+     "p": 0.442,
+     "vrsta": "granica"
+    },
+    {
+     "l": 14.5,
+     "k": 2.02,
+     "kl": "admiral",
+     "p": 0.556,
+     "vrsta": "granica"
+    },
+    {
+     "l": 16.5,
+     "k": 1.55,
+     "kl": "mozzart",
+     "p": 0.664,
+     "vrsta": "granica"
+    }
+   ],
+   "q": [
+    4,
+    7,
+    11,
+    16,
+    22
+   ],
+   "mu": 10.81,
+   "min": 24.2,
+   "pm": 0.3143,
+   "tr": 0.5274,
+   "l0": null,
+   "vatra": null,
+   "pos": "C",
+   "of": 0.854,
+   "analiza": [
+    "Granica od 14,5 je viša od onoga što realno očekujemo, a to je oko 11 poena, iz ovih razloga:",
+    "Partizan dobro brani centre; to je i jedna od najboljih odbrana u ligi.",
+    "Obe ekipe igraju sporo, pa će napada biti manje nego obično."
+   ],
+   "iz_kand": false,
+   "mu_m": 12.13,
+   "var": 53.42,
+   "podoban": true,
+   "novi_saigrac": false,
+   "fer_o": 0.524,
+   "ps": 0.6876,
+   "msig": 0.9624,
+   "izostanci_tim": 24,
+   "spoj": true,
+   "forma": [
+    3,
+    7
+   ],
+   "rang_dan": 2,
+   "upisano": "25.11.2026. 14:37",
+   "prvi_put": "25.11.2026. 14:36",
+   "zatv": 2.02,
+   "zatv_fer": 1.8
+  },
+  {
+   "g": 139,
+   "dan": "2026-11-25",
+   "vreme": "25.11. 20:45",
+   "k": "keenan evans",
+   "ime": "Keenan Evans",
+   "tim": "ZAL",
+   "prot": "MAD",
+   "s": "A",
+   "strana": "u",
+   "l": 3.5,
+   "kl": "admiral",
+   "kvota": 2,
+   "pp": 0.688,
+   "ev": 0.376,
+   "nivo": "jak",
+   "rang": 3,
+   "fer": 0.4595,
+   "ostale": [
+    {
+     "kl": "maxbet",
+     "k": 2
+    },
+    {
+     "kl": "soccerbet",
+     "k": 2
+    }
+   ],
+   "knjige": [
+    {
+     "kl": "admiral",
+     "l": 3.5,
+     "u": 2,
+     "o": 1.7
+    },
+    {
+     "kl": "maxbet",
+     "l": 3.5,
+     "u": 2,
+     "o": 1.7
+    },
+    {
+     "kl": "soccerbet",
+     "l": 3.5,
+     "u": 2,
+     "o": 1.7
+    }
+   ],
+   "soft": {
+    "l": 3.5,
+    "k": 2,
+    "kl": "admiral",
+    "p": 0.586,
+    "vrsta": "granica",
+    "ev": 0.172,
+    "isti": true
+   },
+   "opseg": [
+    {
+     "l": 3.5,
+     "k": 2,
+     "kl": "admiral",
+     "p": 0.586,
+     "vrsta": "granica"
+    }
+   ],
+   "q": [
+    1,
+    1,
+    3,
+    4,
+    5
+   ],
+   "mu": 2.54,
+   "min": 19.2,
+   "pm": 0.2065,
+   "tr": 0.5405,
+   "l0": null,
+   "vatra": null,
+   "pos": "F",
+   "of": 1.139,
+   "analiza": [
+    "Granica od 3,5 je viša od onoga što realno očekujemo, a to je dve do tri asistencije: u gostima deli manje."
+   ],
+   "iz_kand": false,
+   "mu_m": 2.26,
+   "var": 2.75,
+   "podoban": true,
+   "novi_saigrac": false,
+   "fer_o": 0.5405,
+   "ps": 0.6875,
+   "msig": 0.6404,
+   "izostanci_tim": 0,
+   "spoj": true,
+   "forma": [
+    3,
+    6
+   ],
+   "rang_dan": 3,
+   "upisano": "25.11.2026. 14:37",
+   "prvi_put": "25.11.2026. 14:36",
+   "zatv": 2,
+   "zatv_fer": 1.707
+  },
+  {
+   "g": 140,
+   "dan": "2026-11-25",
+   "vreme": "25.11. 20:15",
+   "k": "evan fournier",
+   "ime": "Evan Fournier",
+   "tim": "OLY",
+   "prot": "HTA",
+   "s": "P",
+   "strana": "u",
+   "l": 17.5,
+   "kl": "mozzart",
+   "kvota": 1.85,
+   "pp": 0.682,
+   "ev": 0.262,
+   "nivo": "jak",
+   "rang": 4,
+   "fer": 0.5204,
+   "ostale": [
+    {
+     "kl": "maxbet",
+     "k": 1.82
+    },
+    {
+     "kl": "soccerbet",
+     "k": 1.82
+    },
+    {
+     "kl": "admiral",
+     "k": 1.8
+    }
+   ],
+   "knjige": [
+    {
+     "kl": "admiral",
+     "l": 17.5,
+     "u": 1.8,
+     "o": 2.02
+    },
+    {
+     "kl": "maxbet",
+     "l": 17.5,
+     "u": 1.82,
+     "o": 1.97
+    },
+    {
+     "kl": "mozzart",
+     "l": 17.5,
+     "u": 1.85,
+     "o": 1.95
+    },
+    {
+     "kl": "soccerbet",
+     "l": 17.5,
+     "u": 1.82,
+     "o": 1.97
+    }
+   ],
+   "soft": {
+    "l": 17.5,
+    "k": 1.85,
+    "kl": "mozzart",
+    "p": 0.592,
+    "vrsta": "granica",
+    "ev": 0.095,
+    "isti": true
+   },
+   "opseg": [
+    {
+     "l": 15.5,
+     "k": 2.29,
+     "kl": "mozzart",
+     "p": 0.486,
+     "vrsta": "granica"
+    },
+    {
+     "l": 17.5,
+     "k": 1.85,
+     "kl": "mozzart",
+     "p": 0.592,
+     "vrsta": "granica"
+    },
+    {
+     "l": 19.5,
+     "k": 1.55,
+     "kl": "mozzart",
+     "p": 0.677,
+     "vrsta": "granica"
+    }
+   ],
+   "q": [
+    5,
+    9,
+    13,
+    19,
+    26
+   ],
+   "mu": 13.44,
+   "min": 26.2,
+   "pm": 0.2975,
+   "tr": 0.4868,
+   "l0": null,
+   "vatra": {
+    "l3": [
+     28,
+     16,
+     17
+    ],
+    "a3": 20.3,
+    "ap": 11.4,
+    "pct": 78
+   },
+   "pos": "F",
+   "of": 1.001,
+   "analiza": [
+    "Granica od 17,5 je viša od onoga što realno očekujemo, a to je 13 do 14 poena, iz ovih razloga:",
+    "Vraća se Bryant Dunston, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Dunston igrao, Fournier je imao oko 25 minuta i 9,7 poena; bez njega oko 27 minuta i 16.",
+    "Ove sezone daje oko 14 poena po utakmici; ispod 17,5 je ostao u 7 od 10 utakmica."
+   ],
+   "iz_kand": false,
+   "mu_m": 14.35,
+   "var": 66.74,
+   "podoban": true,
+   "novi_saigrac": false,
+   "fer_o": 0.4796,
+   "ps": 0.6816,
+   "msig": 0.4883,
+   "izostanci_tim": 7,
+   "spoj": true,
+   "forma": [
+    5,
+    7
+   ],
+   "rang_dan": 4,
+   "upisano": "25.11.2026. 14:37",
+   "prvi_put": "25.11.2026. 14:36",
+   "zatv": 1.85,
+   "zatv_fer": 1.69
+  },
+  {
+   "g": 139,
+   "dan": "2026-11-25",
+   "vreme": "25.11. 20:45",
+   "k": "saben lee",
+   "ime": "Saben Lee",
+   "tim": "ZAL",
+   "prot": "MAD",
+   "s": "P",
+   "strana": "o",
+   "l": 4.5,
+   "kl": "admiral",
+   "kvota": 2,
+   "pp": 0.526,
+   "ev": 0.052,
+   "nivo": "nagoveštaj",
+   "rang": 14,
+   "fer": 0.4799,
+   "ostale": [
+    {
+     "kl": "maxbet",
+     "k": 1.98
+    },
+    {
+     "kl": "soccerbet",
+     "k": 1.98
+    },
+    {
+     "kl": "mozzart",
+     "k": 1.95
+    }
+   ],
+   "knjige": [
+    {
+     "kl": "admiral",
+     "l": 4.5,
+     "u": 1.83,
+     "o": 2
+    },
+    {
+     "kl": "maxbet",
+     "l": 4.5,
+     "u": 1.81,
+     "o": 1.98
+    },
+    {
+     "kl": "mozzart",
+     "l": 4.5,
+     "u": 1.85,
+     "o": 1.95
+    },
+    {
+     "kl": "soccerbet",
+     "l": 4.5,
+     "u": 1.81,
+     "o": 1.98
+    }
+   ],
+   "soft": {
+    "l": 4.5,
+    "k": 2,
+    "kl": "admiral",
+    "p": 0.526,
+    "vrsta": "granica",
+    "ev": 0.052,
+    "isti": true
+   },
+   "opseg": [
+    {
+     "l": 4.5,
+     "k": 2,
+     "kl": "admiral",
+     "p": 0.526,
+     "vrsta": "granica"
+    },
+    {
+     "l": 9.5,
+     "k": 6.6,
+     "kl": "soccerbet",
+     "p": 0.169,
+     "vrsta": "lestvica",
+     "n": 10
+    },
+    {
+     "l": 14.5,
+     "k": 19,
+     "kl": "soccerbet",
+     "p": 0.058,
+     "vrsta": "lestvica",
+     "n": 15
+    },
+    {
+     "l": 19.5,
+     "k": 50,
+     "kl": "soccerbet",
+     "p": 0.02,
+     "vrsta": "lestvica",
+     "n": 20
+    }
+   ],
+   "q": [
+    1,
+    2,
+    5,
+    8,
+    12
+   ],
+   "mu": 4.72,
+   "min": 19.0,
+   "pm": 0.6737,
+   "tr": 0.4778,
+   "l0": null,
+   "vatra": null,
+   "pos": "G",
+   "of": 1.037,
+   "analiza": [
+    "Vraća se Maodo Lo, koji je propustio poslednje tri utakmice. Ove sezone, kad je Lo igrao, Lee je imao oko 19 minuta i 6,5 poena; bez njega oko 19 minuta i 5.",
+    "Ove sezone daje pet do šest poena po utakmici i granicu od 4,5 prebacio je u 5 od 10 utakmica.",
+    "U gostima postiže više poena nego kod kuće (šest do sedam poena naspram četiri do pet poena), a sada igra u gostima."
+   ],
+   "iz_kand": false,
+   "mu_m": 7.49,
+   "var": 28.7,
+   "podoban": true,
+   "novi_saigrac": false,
+   "fer_o": 0.4799,
+   "ps": 0.4979,
+   "msig": 0.1438,
+   "izostanci_tim": 0,
+   "rucno": true,
+   "forma": [
+    4,
+    7
+   ],
+   "rang_dan": 5,
+   "upisano": "25.11.2026. 14:37",
+   "prvi_put": "25.11.2026. 14:37",
+   "promena": "novo",
+   "promena_u": "25.11.2026. 14:37",
+   "zatv": 2,
+   "zatv_fer": 1.901
+  },
+  {
+   "g": 137,
+   "dan": "2026-11-25",
+   "vreme": "25.11. 17:00",
+   "k": "nikola tanaskovic",
+   "ime": "Nikola Tanaskovic",
+   "tim": "PAR",
+   "prot": "DUB",
+   "s": "S",
+   "strana": "o",
+   "l": 3.5,
+   "kl": "maxbet",
+   "kvota": 2.3,
+   "pp": 0.449,
+   "ev": 0.032,
+   "nivo": "nagoveštaj",
+   "rang": null,
+   "fer": 0.4129,
+   "ostale": [
+    {
+     "kl": "soccerbet",
+     "k": 2.3
+    },
+    {
+     "kl": "mozzart",
+     "k": 2.29
+    },
+    {
+     "kl": "admiral",
+     "k": 2.05
+    }
+   ],
+   "knjige": [
+    {
+     "kl": "admiral",
+     "l": 3.5,
+     "u": 1.67,
+     "o": 2.05
+    },
+    {
+     "kl": "maxbet",
+     "l": 3.5,
+     "u": 1.53,
+     "o": 2.3
+    },
+    {
+     "kl": "mozzart",
+     "l": 3.5,
+     "u": 1.55,
+     "o": 2.29
+    },
+    {
+     "kl": "soccerbet",
+     "l": 3.5,
+     "u": 1.53,
+     "o": 2.3
+    }
+   ],
+   "soft": null,
+   "opseg": [],
+   "q": [
+    1,
+    2,
+    3,
+    5,
+    7
+   ],
+   "mu": 3.19,
+   "min": 20.0,
+   "pm": 0.5802,
+   "tr": 0.3995,
+   "l0": null,
+   "vatra": null,
+   "pos": "C",
+   "of": 0.888,
+   "analiza": [
+    "Kod Partizana ne igraju Lamar Stevens, Ethan Thompson i Luca Vildoza, pa ostaje više minuta i lopti za ostale.",
+    "Ove sezone daje oko četiri skoka po utakmici i granicu od 3,5 prebacio je u 9 od 13 utakmica."
+   ],
+   "iz_kand": false,
+   "mu_m": 4.5,
+   "var": 7.91,
+   "podoban": true,
+   "novi_saigrac": false,
+   "fer_o": 0.4129,
+   "ps": 0.4058,
+   "msig": 0.2167,
+   "izostanci_tim": 70,
+   "rucno": true,
+   "forma": [
+    5,
+    7
+   ],
+   "rang_dan": 6,
+   "upisano": "25.11.2026. 14:37",
+   "prvi_put": "25.11.2026. 14:37",
+   "promena": "novo",
+   "promena_u": "25.11.2026. 14:37",
+   "zatv": 2.3,
+   "zatv_fer": 2.229
   }
  ],
  "konacno": {
@@ -7948,9 +8682,4220 @@
     "min_st": 19,
     "prosao": true
    }
+  ],
+  "137": [
+   {
+    "k": "dwayne bacon",
+    "ime": "Dwayne Bacon",
+    "tim": "DUB",
+    "pos": "F",
+    "s": "P",
+    "l": 15.5,
+    "strana": "u",
+    "pp": 0.533,
+    "neodl": false,
+    "pm": 0.382,
+    "fer": 0.524,
+    "mu": 14.72,
+    "q": [
+     6,
+     10,
+     15,
+     21,
+     27
+    ],
+    "min": 27.5,
+    "pros": 16.46,
+    "p5": 16.2,
+    "u": 2.02,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 15,5 je viša od onoga što realno očekujemo, a to je 14 do 15 poena, iz ovih razloga:",
+     "Ove sezone daje 16 do 17 poena po utakmici; ispod 15,5 je ostao u 7 od 13 utakmica.",
+     "Partizan dobro brani krila; to je i jedna od najboljih odbrana u ligi."
+    ],
+    "protiv": [
+     "Jedna je od prvih opcija u napadu Dubaija.",
+     "Kod Partizana na njegovoj poziciji ne igraju Lamar Stevens i Ethan Thompson, pa manje je onih koji ga čuvaju."
+    ]
+   },
+   {
+    "k": "dwayne bacon",
+    "ime": "Dwayne Bacon",
+    "tim": "DUB",
+    "pos": "F",
+    "s": "S",
+    "l": 3.5,
+    "strana": "o",
+    "pp": 0.511,
+    "neodl": true,
+    "pm": 0.49,
+    "fer": 0.54,
+    "mu": 3.58,
+    "q": [
+     1,
+     2,
+     4,
+     5,
+     7
+    ],
+    "min": 27.5,
+    "pros": 3.85,
+    "p5": 3.6,
+    "u": 2,
+    "o": 1.72,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Protiv Partizana se skače: dozvoljavaju dosta odbijenih lopti.",
+     "Kod Partizana na njegovoj poziciji ne igraju Lamar Stevens i Ethan Thompson, pa manje je visokih koji se bore za skok.",
+     "Kod kuće hvata više skokova nego u gostima (pet do šest skokova naspram dva do tri skoka), a sada igra kod kuće."
+    ],
+    "protiv": [
+     "Ove sezone daje oko četiri skoka po utakmici; ispod 3,5 je ostao u 8 od 13 utakmica.",
+     "Glavni skakač Dubaija je Kabengele, pa za njega ostaje manje odbijenih lopti."
+    ]
+   },
+   {
+    "k": "dwayne bacon",
+    "ime": "Dwayne Bacon",
+    "tim": "DUB",
+    "pos": "F",
+    "s": "A",
+    "l": 2.5,
+    "strana": "u",
+    "pp": 0.721,
+    "neodl": false,
+    "pm": 0.325,
+    "fer": 0.452,
+    "mu": 1.58,
+    "q": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "min": 27.5,
+    "pros": 2.77,
+    "p5": 2.6,
+    "u": 1.7,
+    "o": 2.05,
+    "knjiga": 4,
+    "pred": "u",
+    "za": [
+     "Granica od 2,5 je viša od onoga što realno očekujemo, a to je jedna do dve asistencije, iz ovih razloga:",
+     "Ove sezone daje oko tri asistencije po utakmici; ispod 2,5 je ostao u 8 od 13 utakmica.",
+     "Nije glavni organizator; loptu kod Dubaija uglavnom vode Okobo i Musa."
+    ],
+    "protiv": []
+   },
+   {
+    "k": "elie okobo",
+    "ime": "Elie Okobo",
+    "tim": "DUB",
+    "pos": "G",
+    "s": "P",
+    "l": 8.5,
+    "strana": "o",
+    "pp": 0.5,
+    "neodl": true,
+    "pm": 0.483,
+    "fer": 0.528,
+    "mu": 8.42,
+    "q": [
+     3,
+     5,
+     8,
+     13,
+     18
+    ],
+    "min": 25.9,
+    "pros": 10.15,
+    "p5": 8.2,
+    "u": 2.04,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Ove sezone daje oko deset poena po utakmici i granicu od 8,5 prebacio je u 8 od 13 utakmica.",
+     "Kod Partizana na njegovoj poziciji ne igra Luca Vildoza, pa manje je onih koji ga čuvaju."
+    ],
+    "protiv": [
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Bacon i Kabengele.",
+     "Partizan dobro brani bekove; to je i jedna od najboljih odbrana u ligi."
+    ]
+   },
+   {
+    "k": "elie okobo",
+    "ime": "Elie Okobo",
+    "tim": "DUB",
+    "pos": "G",
+    "s": "A",
+    "l": 3.5,
+    "strana": "o",
+    "pp": 0.535,
+    "neodl": false,
+    "pm": 0.576,
+    "fer": 0.537,
+    "mu": 3.65,
+    "q": [
+     1,
+     2,
+     4,
+     5,
+     7
+    ],
+    "min": 25.9,
+    "pros": 4.31,
+    "p5": 3.8,
+    "u": 2,
+    "o": 1.75,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Ove sezone daje četiri do pet asistencija po utakmici i granicu od 3,5 prebacio je u 8 od 13 utakmica.",
+     "Prvi je organizator igre Dubaija: lopta je najčešće u njegovim rukama."
+    ],
+    "protiv": [
+     "Partizan ne dozvoljava laku igru dodavanjem; protiv njih se deli malo asistencija.",
+     "Obe ekipe igraju sporo, pa će napada biti manje nego obično."
+    ]
+   },
+   {
+    "k": "mckinley wright",
+    "ime": "Mckinley Wright Iv",
+    "tim": "DUB",
+    "pos": "G",
+    "s": "P",
+    "l": 8.5,
+    "strana": "u",
+    "pp": 0.522,
+    "neodl": true,
+    "pm": 0.409,
+    "fer": 0.528,
+    "mu": 8.11,
+    "q": [
+     3,
+     5,
+     8,
+     12,
+     17
+    ],
+    "min": 24.3,
+    "pros": 8.92,
+    "p5": 7.6,
+    "u": 2.04,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 8,5 je viša od onoga što realno očekujemo, a to je oko osam poena, iz ovih razloga:",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Bacon i Kabengele.",
+     "Partizan dobro brani bekove; to je i jedna od najboljih odbrana u ligi."
+    ],
+    "protiv": [
+     "Ove sezone daje oko devet poena po utakmici i granicu od 8,5 prebacio je u 7 od 13 utakmica.",
+     "Kod Partizana na njegovoj poziciji ne igra Luca Vildoza, pa manje je onih koji ga čuvaju."
+    ]
+   },
+   {
+    "k": "mckinley wright",
+    "ime": "Mckinley Wright Iv",
+    "tim": "DUB",
+    "pos": "G",
+    "s": "A",
+    "l": 3.5,
+    "strana": "u",
+    "pp": 0.578,
+    "neodl": false,
+    "pm": 0.44,
+    "fer": 0.434,
+    "mu": 3.05,
+    "q": [
+     1,
+     2,
+     3,
+     5,
+     6
+    ],
+    "min": 24.3,
+    "pros": 2.92,
+    "p5": 1.8,
+    "u": 1.65,
+    "o": 2.2,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 3,5 je viša od onoga što realno očekujemo, a to je oko tri asistencije, iz ovih razloga:",
+     "Ove sezone daje oko tri asistencije po utakmici; ispod 3,5 je ostao u 9 od 13 utakmica.",
+     "Nije glavni organizator; loptu kod Dubaija uglavnom vode Okobo i Musa."
+    ],
+    "protiv": []
+   },
+   {
+    "k": "mfiondu kabengele",
+    "ime": "Mfiondu Kabengele",
+    "tim": "DUB",
+    "pos": "C",
+    "s": "P",
+    "l": 14.5,
+    "strana": "u",
+    "pp": 0.688,
+    "neodl": false,
+    "pm": 0.314,
+    "fer": 0.524,
+    "mu": 10.81,
+    "q": [
+     4,
+     7,
+     11,
+     16,
+     22
+    ],
+    "min": 24.2,
+    "pros": 14.23,
+    "p5": 12.4,
+    "u": 2.02,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": "u",
+    "za": [
+     "Granica od 14,5 je viša od onoga što realno očekujemo, a to je oko 11 poena, iz ovih razloga:",
+     "Partizan dobro brani centre; to je i jedna od najboljih odbrana u ligi.",
+     "Obe ekipe igraju sporo, pa će napada biti manje nego obično."
+    ],
+    "protiv": [
+     "Ove sezone daje oko 14 poena po utakmici i granicu od 14,5 prebacio je u 7 od 13 utakmica.",
+     "Jedna je od prvih opcija u napadu Dubaija."
+    ]
+   },
+   {
+    "k": "mfiondu kabengele",
+    "ime": "Mfiondu Kabengele",
+    "tim": "DUB",
+    "pos": "C",
+    "s": "S",
+    "l": 8.5,
+    "strana": "u",
+    "pp": 0.556,
+    "neodl": false,
+    "pm": 0.362,
+    "fer": 0.5,
+    "mu": 7.94,
+    "q": [
+     4,
+     6,
+     8,
+     11,
+     14
+    ],
+    "min": 24.2,
+    "pros": 8.69,
+    "p5": 10.2,
+    "u": 1.85,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 8,5 je viša od onoga što realno očekujemo, a to je oko osam skokova: češće ostaje ispod nego preko ove granice."
+    ],
+    "protiv": [
+     "Glavni je skakač Dubaija: niko u timu ne hvata više odbijenih lopti.",
+     "U poslednjim utakmicama igra više nego ranije (26, 31 i 26 minuta)."
+    ]
+   },
+   {
+    "k": "dzanan musa",
+    "ime": "Dzanan Musa",
+    "tim": "DUB",
+    "pos": "G",
+    "s": "P",
+    "l": 9.5,
+    "strana": "u",
+    "pp": 0.554,
+    "neodl": false,
+    "pm": 0.323,
+    "fer": 0.522,
+    "mu": 8.59,
+    "q": [
+     3,
+     5,
+     9,
+     13,
+     18
+    ],
+    "min": 18.4,
+    "pros": 7.33,
+    "p5": 7.2,
+    "u": 2.01,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 9,5 je viša od onoga što realno očekujemo, a to je osam do devet poena, iz ovih razloga:",
+     "Ove sezone daje sedam do osam poena po utakmici; ispod 9,5 je ostao u 5 od 6 utakmica.",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Bacon i Kabengele."
+    ],
+    "protiv": [
+     "Kod Partizana na njegovoj poziciji ne igra Luca Vildoza, pa manje je onih koji ga čuvaju.",
+     "Kod kuće postiže više poena nego u gostima (osam do devet poena naspram šest do sedam poena), a sada igra kod kuće."
+    ]
+   },
+   {
+    "k": "jaron blossomgame",
+    "ime": "Jaron Blossomgame",
+    "tim": "DUB",
+    "pos": "F",
+    "s": "P",
+    "l": 5.5,
+    "strana": "o",
+    "pp": 0.503,
+    "neodl": true,
+    "pm": 0.493,
+    "fer": 0.528,
+    "mu": 5.47,
+    "q": [
+     1,
+     3,
+     5,
+     9,
+     14
+    ],
+    "min": 18.0,
+    "pros": 6.31,
+    "p5": 6.4,
+    "u": 2.04,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Ove sezone daje šest do sedam poena po utakmici i granicu od 5,5 prebacio je u 8 od 13 utakmica.",
+     "Kod Partizana na njegovoj poziciji ne igraju Lamar Stevens i Ethan Thompson, pa manje je onih koji ga čuvaju."
+    ],
+    "protiv": [
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Bacon i Kabengele.",
+     "Partizan dobro brani krila; to je i jedna od najboljih odbrana u ligi."
+    ]
+   },
+   {
+    "k": "filip petrusev",
+    "ime": "Filip Petrusev",
+    "tim": "DUB",
+    "pos": "C",
+    "s": "P",
+    "l": 8.5,
+    "strana": "u",
+    "pp": 0.565,
+    "neodl": false,
+    "pm": 0.303,
+    "fer": 0.515,
+    "mu": 7.51,
+    "q": [
+     2,
+     4,
+     8,
+     12,
+     17
+    ],
+    "min": 15.5,
+    "pros": 8.08,
+    "p5": 9.4,
+    "u": 2.01,
+    "o": 1.95,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 8,5 je viša od onoga što realno očekujemo, a to je sedam do osam poena, iz ovih razloga:",
+     "Ove sezone daje oko osam poena po utakmici; ispod 8,5 je ostao u 9 od 12 utakmica.",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Bacon i Kabengele."
+    ],
+    "protiv": []
+   },
+   {
+    "k": "filip petrusev",
+    "ime": "Filip Petrusev",
+    "tim": "DUB",
+    "pos": "C",
+    "s": "S",
+    "l": 3.5,
+    "strana": "o",
+    "pp": 0.521,
+    "neodl": true,
+    "pm": 0.382,
+    "fer": 0.6,
+    "mu": 3.65,
+    "q": [
+     1,
+     2,
+     4,
+     5,
+     7
+    ],
+    "min": 15.5,
+    "pros": 2.83,
+    "p5": 3.0,
+    "u": 2.3,
+    "o": 1.55,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Protiv Partizana se skače: dozvoljavaju dosta odbijenih lopti.",
+     "Kod kuće hvata više skokova nego u gostima (tri do četiri skoka naspram dva do tri skoka), a sada igra kod kuće."
+    ],
+    "protiv": [
+     "Ove sezone daje oko tri skoka po utakmici; ispod 3,5 je ostao u 9 od 12 utakmica.",
+     "Glavni skakač Dubaija je Kabengele, pa za njega ostaje manje odbijenih lopti."
+    ]
+   },
+   {
+    "k": "carlik jones",
+    "ime": "Carlik Jones",
+    "tim": "PAR",
+    "pos": "G",
+    "s": "P",
+    "l": 15.5,
+    "strana": "u",
+    "pp": 0.527,
+    "neodl": true,
+    "pm": 0.458,
+    "fer": 0.5,
+    "mu": 14.84,
+    "q": [
+     6,
+     10,
+     15,
+     21,
+     28
+    ],
+    "min": 32.0,
+    "pros": 14.92,
+    "p5": 14.4,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 15,5 je viša od onoga što realno očekujemo, a to je oko 15 poena, iz ovih razloga:",
+     "Obe ekipe igraju sporo, pa će napada biti manje nego obično.",
+     "U gostima postiže manje poena nego kod kuće (12 do 13 poena naspram oko 17 poena), a sada igra u gostima."
+    ],
+    "protiv": [
+     "Kod Partizana ne igraju Lamar Stevens, Ethan Thompson i Luca Vildoza, pa ostaje više minuta i lopti za ostale.",
+     "Otkad se vratio Marinkovic i Hayes (1 utakmice), igra oko 32 minuta i daje 21 poen po utakmici, naspram 14,4 ranije; procena to uzima u obzir."
+    ]
+   },
+   {
+    "k": "carlik jones",
+    "ime": "Carlik Jones",
+    "tim": "PAR",
+    "pos": "G",
+    "s": "S",
+    "l": 3.5,
+    "strana": "u",
+    "pp": 0.614,
+    "neodl": false,
+    "pm": 0.418,
+    "fer": 0.391,
+    "mu": 2.89,
+    "q": [
+     1,
+     2,
+     3,
+     4,
+     6
+    ],
+    "min": 32.0,
+    "pros": 2.92,
+    "p5": 3.2,
+    "u": 1.55,
+    "o": 2.55,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 3,5 je viša od onoga što realno očekujemo, a to je oko tri skoka, iz ovih razloga:",
+     "Ove sezone daje oko tri skoka po utakmici; ispod 3,5 je ostao u 7 od 13 utakmica.",
+     "Kao bek retko ide u skok; odbijene lopte kod Partizana uglavnom hvataju Franks i Hayes."
+    ],
+    "protiv": [
+     "Kod Partizana ne igraju Lamar Stevens, Ethan Thompson i Luca Vildoza, pa ostaje više minuta i lopti za ostale.",
+     "Bez odsutnih saigrača trebalo bi da igra oko 32 minuta, a inače igra oko 29 minuta."
+    ]
+   },
+   {
+    "k": "carlik jones",
+    "ime": "Carlik Jones",
+    "tim": "PAR",
+    "pos": "G",
+    "s": "A",
+    "l": 5.5,
+    "strana": "u",
+    "pp": 0.55,
+    "neodl": false,
+    "pm": 0.383,
+    "fer": 0.5,
+    "mu": 5.09,
+    "q": [
+     2,
+     3,
+     5,
+     7,
+     9
+    ],
+    "min": 32.0,
+    "pros": 5.77,
+    "p5": 5.8,
+    "u": 1.85,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 5,5 je viša od onoga što realno očekujemo, a to je oko pet asistencija, iz ovih razloga:",
+     "Otkad se vratio Marinkovic i Hayes (1 utakmice), igra oko 32 minuta i daje 4 asistencije po utakmici, naspram 5,9 ranije; procena to uzima u obzir.",
+     "Ove sezone daje oko šest asistencija po utakmici; ispod 5,5 je ostao u 8 od 13 utakmica."
+    ],
+    "protiv": [
+     "Kod Partizana ne igraju Lamar Stevens, Ethan Thompson i Luca Vildoza, pa ostaje više minuta i lopti za ostale.",
+     "Bez odsutnih saigrača trebalo bi da igra oko 32 minuta, a inače igra oko 29 minuta."
+    ]
+   },
+   {
+    "k": "vanja marinkovic",
+    "ime": "Vanja Marinkovic",
+    "tim": "PAR",
+    "pos": "F",
+    "s": "P",
+    "l": 7.5,
+    "strana": "u",
+    "pp": 0.514,
+    "neodl": true,
+    "pm": 0.441,
+    "fer": 0.525,
+    "mu": 7.24,
+    "q": [
+     2,
+     4,
+     7,
+     11,
+     16
+    ],
+    "min": 25.8,
+    "pros": 7.5,
+    "p5": 7.5,
+    "u": 2.02,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Jones i Jekiri.",
+     "Obe ekipe igraju sporo, pa će napada biti manje nego obično."
+    ],
+    "protiv": [
+     "Kod Partizana ne igraju Lamar Stevens, Ethan Thompson i Luca Vildoza, pa ostaje više minuta i lopti za ostale.",
+     "Bez odsutnih saigrača trebalo bi da igra oko 26 minuta, a inače igra 22 do 23 minuta."
+    ]
+   },
+   {
+    "k": "alessandro pajola",
+    "ime": "Alessandro Pajola",
+    "tim": "PAR",
+    "pos": "G",
+    "s": "P",
+    "l": 5.5,
+    "strana": "u",
+    "pp": 0.519,
+    "neodl": true,
+    "pm": 0.498,
+    "fer": 0.493,
+    "mu": 5.23,
+    "q": [
+     1,
+     3,
+     5,
+     9,
+     13
+    ],
+    "min": 25.6,
+    "pros": 5.0,
+    "p5": 5.8,
+    "u": 1.92,
+    "o": 2.0,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Ove sezone daje oko pet poena po utakmici; ispod 5,5 je ostao u 8 od 13 utakmica.",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Jones i Jekiri.",
+     "Obe ekipe igraju sporo, pa će napada biti manje nego obično."
+    ],
+    "protiv": [
+     "Kod Partizana ne igraju Lamar Stevens, Ethan Thompson i Luca Vildoza, pa ostaje više minuta i lopti za ostale.",
+     "Otkad se vratio Marinkovic i Hayes (1 utakmice), igra oko 29 minuta i daje 12 poena po utakmici, naspram 4,4 ranije; procena to uzima u obzir."
+    ]
+   },
+   {
+    "k": "alessandro pajola",
+    "ime": "Alessandro Pajola",
+    "tim": "PAR",
+    "pos": "G",
+    "s": "A",
+    "l": 3.5,
+    "strana": "o",
+    "pp": 0.556,
+    "neodl": false,
+    "pm": 0.603,
+    "fer": 0.556,
+    "mu": 3.79,
+    "q": [
+     1,
+     2,
+     4,
+     6,
+     8
+    ],
+    "min": 25.6,
+    "pros": 4.23,
+    "p5": 4.4,
+    "u": 2.1,
+    "o": 1.65,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Kod Partizana ne igraju Lamar Stevens, Ethan Thompson i Luca Vildoza, pa ostaje više minuta i lopti za ostale.",
+     "Otkad se vratio Marinkovic i Hayes (1 utakmice), igra oko 29 minuta i daje 8 asistencija po utakmici, naspram 3,9 ranije; procena to uzima u obzir.",
+     "Vraća se Kevarrius Hayes, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Hayes igrao, Pajola je imao oko 21 minuta i 4,4 asistencije; bez njega oko 21 minuta i 3,7."
+    ],
+    "protiv": [
+     "Ove sezone daje oko četiri asistencije po utakmici; ispod 3,5 je ostao u 7 od 13 utakmica.",
+     "Nije glavni organizator; loptu kod Partizana uglavnom vode Jones i Allman."
+    ]
+   },
+   {
+    "k": "robert franks",
+    "ime": "Robert Franks",
+    "tim": "PAR",
+    "pos": "F",
+    "s": "P",
+    "l": 7.5,
+    "strana": "u",
+    "pp": 0.54,
+    "neodl": false,
+    "pm": 0.424,
+    "fer": 0.495,
+    "mu": 6.89,
+    "q": [
+     2,
+     4,
+     7,
+     11,
+     16
+    ],
+    "min": 25.5,
+    "pros": 6.83,
+    "p5": 6.8,
+    "u": 2,
+    "o": 2.05,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 7,5 je viša od onoga što realno očekujemo, a to je oko sedam poena, iz ovih razloga:",
+     "Otkad se vratio Marinkovic i Hayes (1 utakmice), igra oko 29 minuta i daje 2 poena po utakmici, naspram 7,8 ranije; procena to uzima u obzir.",
+     "Vraća se Kevarrius Hayes, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Hayes igrao, Franks je imao oko 23 minuta i 4,3 poena; bez njega oko 19 minuta i 9,3."
+    ],
+    "protiv": [
+     "Kod Partizana ne igraju Lamar Stevens, Ethan Thompson i Luca Vildoza, pa ostaje više minuta i lopti za ostale.",
+     "Bez odsutnih saigrača trebalo bi da igra 25 do 26 minuta, a inače igra 22 do 23 minuta."
+    ]
+   },
+   {
+    "k": "robert franks",
+    "ime": "Robert Franks",
+    "tim": "PAR",
+    "pos": "F",
+    "s": "S",
+    "l": 5.5,
+    "strana": "u",
+    "pp": 0.639,
+    "neodl": false,
+    "pm": 0.292,
+    "fer": 0.413,
+    "mu": 4.45,
+    "q": [
+     2,
+     3,
+     4,
+     6,
+     9
+    ],
+    "min": 25.5,
+    "pros": 4.83,
+    "p5": 4.8,
+    "u": 1.65,
+    "o": 2.35,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 5,5 je viša od onoga što realno očekujemo, a to je četiri do pet skokova, iz ovih razloga:",
+     "Ove sezone daje oko pet skokova po utakmici; ispod 5,5 je ostao u 4 od 6 utakmica.",
+     "Dubai dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
+    ],
+    "protiv": [
+     "Kod Partizana ne igraju Lamar Stevens, Ethan Thompson i Luca Vildoza, pa ostaje više minuta i lopti za ostale.",
+     "Otkad se vratio Marinkovic i Hayes (1 utakmice), igra oko 29 minuta i daje 6 skokova po utakmici, naspram 4,6 ranije; procena to uzima u obzir."
+    ]
+   },
+   {
+    "k": "kevarrius hayes",
+    "ime": "Kevarrius Hayes",
+    "tim": "PAR",
+    "pos": "C",
+    "s": "P",
+    "l": 8.5,
+    "strana": "u",
+    "pp": 0.521,
+    "neodl": true,
+    "pm": 0.499,
+    "fer": 0.49,
+    "mu": 8.11,
+    "q": [
+     2,
+     5,
+     8,
+     13,
+     18
+    ],
+    "min": 22.0,
+    "pros": 9.6,
+    "p5": 12.4,
+    "u": 1.9,
+    "o": 2.02,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 8,5 je viša od onoga što realno očekujemo, a to je oko osam poena, iz ovih razloga:",
+     "Obe ekipe igraju sporo, pa će napada biti manje nego obično.",
+     "U gostima postiže manje poena nego kod kuće (oko osam poena naspram oko 12 poena), a sada igra u gostima."
+    ],
+    "protiv": [
+     "Kod Partizana ne igraju Lamar Stevens, Ethan Thompson i Luca Vildoza, pa ostaje više minuta i lopti za ostale.",
+     "Ove sezone daje devet do deset poena po utakmici i granicu od 8,5 prebacio je u 6 od 10 utakmica."
+    ]
+   },
+   {
+    "k": "tonye jekiri",
+    "ime": "Tonye Jekiri",
+    "tim": "PAR",
+    "pos": "C",
+    "s": "P",
+    "l": 9.5,
+    "strana": "u",
+    "pp": 0.544,
+    "neodl": false,
+    "pm": 0.42,
+    "fer": 0.493,
+    "mu": 8.74,
+    "q": [
+     3,
+     5,
+     9,
+     14,
+     19
+    ],
+    "min": 20.3,
+    "pros": 10.89,
+    "p5": 9.6,
+    "u": 1.9,
+    "o": 2,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 9,5 je viša od onoga što realno očekujemo, a to je osam do devet poena: obe ekipe igraju sporo."
+    ],
+    "protiv": [
+     "Kod Partizana ne igraju Lamar Stevens, Ethan Thompson i Luca Vildoza, pa ostaje više minuta i lopti za ostale.",
+     "Ove sezone daje oko 11 poena po utakmici i granicu od 9,5 prebacio je u 5 od 9 utakmica."
+    ]
+   },
+   {
+    "k": "tonye jekiri",
+    "ime": "Tonye Jekiri",
+    "tim": "PAR",
+    "pos": "C",
+    "s": "S",
+    "l": 4.5,
+    "strana": "o",
+    "pp": 0.506,
+    "neodl": true,
+    "pm": 0.491,
+    "fer": 0.532,
+    "mu": 4.57,
+    "q": [
+     2,
+     3,
+     5,
+     7,
+     9
+    ],
+    "min": 20.3,
+    "pros": 4.11,
+    "p5": 4.4,
+    "u": 1.97,
+    "o": 1.73,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Kod Partizana ne igraju Lamar Stevens, Ethan Thompson i Luca Vildoza, pa ostaje više minuta i lopti za ostale."
+    ],
+    "protiv": [
+     "Ove sezone daje oko četiri skoka po utakmici; ispod 4,5 je ostao u 5 od 9 utakmica.",
+     "Dubai dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
+    ]
+   },
+   {
+    "k": "nikola tanaskovic",
+    "ime": "Nikola Tanaskovic",
+    "tim": "PAR",
+    "pos": "C",
+    "s": "P",
+    "l": 5.5,
+    "strana": "u",
+    "pp": 0.504,
+    "neodl": true,
+    "pm": 0.556,
+    "fer": 0.491,
+    "mu": 5.39,
+    "q": [
+     1,
+     3,
+     5,
+     9,
+     14
+    ],
+    "min": 20.0,
+    "pros": 7.31,
+    "p5": 9.4,
+    "u": 1.92,
+    "o": 2.05,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Otkad se vratio Marinkovic i Hayes (1 utakmice), igra oko 15 minuta i daje 1 poen po utakmici, naspram 7,8 ranije; procena to uzima u obzir.",
+     "Vraća se Kevarrius Hayes, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Hayes igrao, Tanaskovic je imao oko 18 minuta i 6,8 poena; bez njega oko 25 minuta i 9.",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Jones i Jekiri."
+    ],
+    "protiv": [
+     "Kod Partizana ne igraju Lamar Stevens, Ethan Thompson i Luca Vildoza, pa ostaje više minuta i lopti za ostale.",
+     "Ove sezone daje sedam do osam poena po utakmici i granicu od 5,5 prebacio je u 9 od 13 utakmica."
+    ]
+   },
+   {
+    "k": "nikola tanaskovic",
+    "ime": "Nikola Tanaskovic",
+    "tim": "PAR",
+    "pos": "C",
+    "s": "S",
+    "l": 3.5,
+    "strana": "u",
+    "pp": 0.551,
+    "neodl": false,
+    "pm": 0.58,
+    "fer": 0.413,
+    "mu": 3.19,
+    "q": [
+     1,
+     2,
+     3,
+     5,
+     7
+    ],
+    "min": 20.0,
+    "pros": 3.92,
+    "p5": 4.6,
+    "u": 1.67,
+    "o": 2.3,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 3,5 je viša od onoga što realno očekujemo, a to je oko tri skoka, iz ovih razloga:",
+     "Otkad se vratio Marinkovic i Hayes (1 utakmice), igra oko 15 minuta i daje 2 skoka po utakmici, naspram 4,1 ranije; procena to uzima u obzir.",
+     "Vraća se Kevarrius Hayes, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Hayes igrao, Tanaskovic je imao oko 18 minuta i 3,5 skoka; bez njega oko 25 minuta i 5,3."
+    ],
+    "protiv": [
+     "Kod Partizana ne igraju Lamar Stevens, Ethan Thompson i Luca Vildoza, pa ostaje više minuta i lopti za ostale.",
+     "Ove sezone daje oko četiri skoka po utakmici i granicu od 3,5 prebacio je u 9 od 13 utakmica."
+    ]
+   }
+  ],
+  "140": [
+   {
+    "k": "sasha vezenkov",
+    "ime": "Sasha Vezenkov",
+    "tim": "OLY",
+    "pos": "F",
+    "s": "P",
+    "l": 20.5,
+    "strana": "u",
+    "pp": 0.534,
+    "neodl": false,
+    "pm": 0.402,
+    "fer": 0.514,
+    "mu": 19.45,
+    "q": [
+     9,
+     13,
+     19,
+     27,
+     36
+    ],
+    "min": 27.7,
+    "pros": 20.15,
+    "p5": 24.2,
+    "u": 1.97,
+    "o": 1.87,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 20,5 je viša od onoga što realno očekujemo, a to je 19 do 20 poena: češće ostaje ispod nego preko ove granice."
+    ],
+    "protiv": [
+     "Jedna je od prvih opcija u napadu Olimpijakosa.",
+     "U poslednje tri utakmice: 20, 37 i 14 poena, više nego inače."
+    ]
+   },
+   {
+    "k": "sasha vezenkov",
+    "ime": "Sasha Vezenkov",
+    "tim": "OLY",
+    "pos": "F",
+    "s": "S",
+    "l": 6.5,
+    "strana": "u",
+    "pp": 0.544,
+    "neodl": false,
+    "pm": 0.402,
+    "fer": 0.5,
+    "mu": 6.13,
+    "q": [
+     2,
+     4,
+     6,
+     9,
+     11
+    ],
+    "min": 27.7,
+    "pros": 6.15,
+    "p5": 6.0,
+    "u": 1.85,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 6,5 je viša od onoga što realno očekujemo, a to je oko šest skokova: češće ostaje ispod nego preko ove granice."
+    ],
+    "protiv": [
+     "Glavni je skakač Olimpijakosa: niko u timu ne hvata više odbijenih lopti."
+    ]
+   },
+   {
+    "k": "sasha vezenkov",
+    "ime": "Sasha Vezenkov",
+    "tim": "OLY",
+    "pos": "F",
+    "s": "A",
+    "l": 1.5,
+    "strana": "u",
+    "pp": 0.637,
+    "neodl": false,
+    "pm": 0.347,
+    "fer": 0.39,
+    "mu": 1.07,
+    "q": [
+     0,
+     0,
+     1,
+     2,
+     3
+    ],
+    "min": 27.7,
+    "pros": 1.0,
+    "p5": 1.0,
+    "u": 1.5,
+    "o": 2.35,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 1,5 je viša od onoga što realno očekujemo, a to je oko jedne asistencije, iz ovih razloga:",
+     "Vraća se Bryant Dunston, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Dunston igrao, Vezenkov je imao oko 29 minuta i 0,3 asistencija; bez njega oko 27 minuta i 1,2.",
+     "Ove sezone daje oko jedne asistencije po utakmici; ispod 1,5 je ostao u 11 od 13 utakmica."
+    ],
+    "protiv": []
+   },
+   {
+    "k": "evan fournier",
+    "ime": "Evan Fournier",
+    "tim": "OLY",
+    "pos": "F",
+    "s": "P",
+    "l": 17.5,
+    "strana": "u",
+    "pp": 0.682,
+    "neodl": false,
+    "pm": 0.297,
+    "fer": 0.48,
+    "mu": 13.44,
+    "q": [
+     5,
+     9,
+     13,
+     19,
+     26
+    ],
+    "min": 26.2,
+    "pros": 14.1,
+    "p5": 15.8,
+    "u": 1.85,
+    "o": 2.02,
+    "knjiga": 4,
+    "pred": "u",
+    "za": [
+     "Granica od 17,5 je viša od onoga što realno očekujemo, a to je 13 do 14 poena, iz ovih razloga:",
+     "Vraća se Bryant Dunston, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Dunston igrao, Fournier je imao oko 25 minuta i 9,7 poena; bez njega oko 27 minuta i 16.",
+     "Ove sezone daje oko 14 poena po utakmici; ispod 17,5 je ostao u 7 od 10 utakmica."
+    ],
+    "protiv": [
+     "Vraća se Nikola Milutinov, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Milutinov igrao, Fournier je imao oko 27 minuta i 15,4 poena; bez njega oko 25 minuta i 12,8.",
+     "U poslednjim utakmicama igra više nego ranije (26, 34 i 29 minuta)."
+    ]
+   },
+   {
+    "k": "evan fournier",
+    "ime": "Evan Fournier",
+    "tim": "OLY",
+    "pos": "F",
+    "s": "S",
+    "l": 1.5,
+    "strana": "o",
+    "pp": 0.635,
+    "neodl": false,
+    "pm": 0.671,
+    "fer": 0.637,
+    "mu": 2.11,
+    "q": [
+     0,
+     1,
+     2,
+     3,
+     5
+    ],
+    "min": 26.2,
+    "pros": 2.1,
+    "p5": 2.0,
+    "u": 2.55,
+    "o": 1.45,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 1,5 je niža od onoga što realno očekujemo, a to je oko dva skoka, iz ovih razloga:",
+     "Vraća se Bryant Dunston, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Dunston igrao, Fournier je imao oko 25 minuta i 3,7 skoka; bez njega oko 27 minuta i 1,4.",
+     "Ove sezone daje oko dva skoka po utakmici i granicu od 1,5 prebacio je u 5 od 10 utakmica."
+    ],
+    "protiv": [
+     "Vraća se Nikola Milutinov, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Milutinov igrao, Fournier je imao oko 27 minuta i 1,4 skok; bez njega oko 25 minuta i 2,8.",
+     "Glavni skakač Olimpijakosa je Vezenkov, pa za njega ostaje manje odbijenih lopti."
+    ]
+   },
+   {
+    "k": "evan fournier",
+    "ime": "Evan Fournier",
+    "tim": "OLY",
+    "pos": "F",
+    "s": "A",
+    "l": 3.5,
+    "strana": "o",
+    "pp": 0.513,
+    "neodl": true,
+    "pm": 0.463,
+    "fer": 0.554,
+    "mu": 3.51,
+    "q": [
+     1,
+     2,
+     4,
+     5,
+     7
+    ],
+    "min": 26.2,
+    "pros": 3.4,
+    "p5": 3.8,
+    "u": 2.1,
+    "o": 1.69,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Vraća se Nikola Milutinov, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Milutinov igrao, Fournier je imao oko 27 minuta i 4,2 asistencije; bez njega oko 25 minuta i 2,6.",
+     "Vraća se Bryant Dunston, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Dunston igrao, Fournier je imao oko 25 minuta i 4,3 asistencije; bez njega oko 27 minuta i 3.",
+     "U poslednjim utakmicama igra više nego ranije (26, 34 i 29 minuta)."
+    ],
+    "protiv": [
+     "Ove sezone daje tri do četiri asistencije po utakmici; ispod 3,5 je ostao u 5 od 10 utakmica.",
+     "Nije glavni organizator; loptu kod Olimpijakosa uglavnom vode Miller-Mcintyre i Ward."
+    ]
+   },
+   {
+    "k": "tyson ward",
+    "ime": "Tyson Ward",
+    "tim": "OLY",
+    "pos": "F",
+    "s": "P",
+    "l": 8.5,
+    "strana": "u",
+    "pp": 0.537,
+    "neodl": false,
+    "pm": 0.425,
+    "fer": 0.5,
+    "mu": 7.91,
+    "q": [
+     2,
+     5,
+     8,
+     12,
+     17
+    ],
+    "min": 23.6,
+    "pros": 8.31,
+    "p5": 8.2,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 8,5 je viša od onoga što realno očekujemo, a to je oko osam poena, iz ovih razloga:",
+     "Vraća se Bryant Dunston, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Dunston igrao, Ward je imao oko 21 minuta i 5,7 poena; bez njega oko 25 minuta i 9,1.",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Vezenkov i Fournier."
+    ],
+    "protiv": [
+     "Ove sezone daje osam do devet poena po utakmici i granicu od 8,5 prebacio je u 7 od 13 utakmica."
+    ]
+   },
+   {
+    "k": "tyson ward",
+    "ime": "Tyson Ward",
+    "tim": "OLY",
+    "pos": "F",
+    "s": "S",
+    "l": 3.5,
+    "strana": "o",
+    "pp": 0.547,
+    "neodl": false,
+    "pm": 0.478,
+    "fer": 0.595,
+    "mu": 3.82,
+    "q": [
+     1,
+     2,
+     4,
+     6,
+     7
+    ],
+    "min": 23.6,
+    "pros": 3.69,
+    "p5": 3.6,
+    "u": 2.3,
+    "o": 1.6,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 3,5 je niža od onoga što realno očekujemo, a to je oko četiri skoka: češće je preko nego ispod ove granice."
+    ],
+    "protiv": [
+     "Vraća se Bryant Dunston, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Dunston igrao, Ward je imao oko 21 minuta i 3 skoka; bez njega oko 25 minuta i 3,9.",
+     "Glavni skakač Olimpijakosa je Vezenkov, pa za njega ostaje manje odbijenih lopti."
+    ]
+   },
+   {
+    "k": "tyson ward",
+    "ime": "Tyson Ward",
+    "tim": "OLY",
+    "pos": "F",
+    "s": "A",
+    "l": 2.5,
+    "strana": "u",
+    "pp": 0.514,
+    "neodl": true,
+    "pm": 0.5,
+    "fer": 0.5,
+    "mu": 2.39,
+    "q": [
+     1,
+     1,
+     2,
+     4,
+     5
+    ],
+    "min": 23.6,
+    "pros": 2.15,
+    "p5": 2.8,
+    "u": 1.85,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Vraća se Nikola Milutinov, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Milutinov igrao, Ward je imao oko 24 minuta i 1,9 asistencije; bez njega oko 24 minuta i 2,5.",
+     "Ove sezone daje oko dve asistencije po utakmici; ispod 2,5 je ostao u 8 od 13 utakmica.",
+     "Nije glavni organizator; loptu kod Olimpijakosa uglavnom vode Miller-Mcintyre i Fournier."
+    ],
+    "protiv": [
+     "U poslednje tri utakmice: 2, 6 i 3 asistencije, više nego inače."
+    ]
+   },
+   {
+    "k": "codi miller mcintyre",
+    "ime": "Codi Miller-Mcintyre",
+    "tim": "OLY",
+    "pos": "G",
+    "s": "P",
+    "l": 7.5,
+    "strana": "u",
+    "pp": 0.52,
+    "neodl": true,
+    "pm": 0.482,
+    "fer": 0.5,
+    "mu": 7.17,
+    "q": [
+     2,
+     4,
+     7,
+     11,
+     16
+    ],
+    "min": 22.6,
+    "pros": 7.69,
+    "p5": 9.0,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 7,5 je viša od onoga što realno očekujemo, a to je oko sedam poena, iz ovih razloga:",
+     "Vraća se Bryant Dunston, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Dunston igrao, Miller-Mcintyre je imao oko 21 minuta i 4,7 poena; bez njega oko 23 minuta i 8,6.",
+     "Ove sezone daje sedam do osam poena po utakmici; ispod 7,5 je ostao u 7 od 13 utakmica."
+    ],
+    "protiv": [
+     "Vraća se Nikola Milutinov, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Milutinov igrao, Miller-Mcintyre je imao oko 22 minuta i 8,4 poena; bez njega oko 24 minuta i 6,8.",
+     "Kod kuće postiže više poena nego u gostima (oko deset poena naspram oko šest poena), a sada igra kod kuće."
+    ]
+   },
+   {
+    "k": "codi miller mcintyre",
+    "ime": "Codi Miller-Mcintyre",
+    "tim": "OLY",
+    "pos": "G",
+    "s": "S",
+    "l": 2.5,
+    "strana": "o",
+    "pp": 0.513,
+    "neodl": true,
+    "pm": 0.508,
+    "fer": 0.536,
+    "mu": 2.59,
+    "q": [
+     1,
+     1,
+     3,
+     4,
+     5
+    ],
+    "min": 22.6,
+    "pros": 2.77,
+    "p5": 2.2,
+    "u": 2,
+    "o": 1.75,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Vraća se Nikola Milutinov, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Milutinov igrao, Miller-Mcintyre je imao oko 22 minuta i 3,3 skoka; bez njega oko 24 minuta i 2,2.",
+     "Ove sezone daje oko tri skoka po utakmici i granicu od 2,5 prebacio je u 7 od 13 utakmica."
+    ],
+    "protiv": [
+     "Kao bek retko ide u skok; odbijene lopte kod Olimpijakosa uglavnom hvataju Vezenkov i Milutinov.",
+     "U poslednje tri utakmice: 2, 1 i 2 skoka, manje nego inače."
+    ]
+   },
+   {
+    "k": "codi miller mcintyre",
+    "ime": "Codi Miller-Mcintyre",
+    "tim": "OLY",
+    "pos": "G",
+    "s": "A",
+    "l": 5.5,
+    "strana": "u",
+    "pp": 0.523,
+    "neodl": true,
+    "pm": 0.402,
+    "fer": 0.53,
+    "mu": 5.26,
+    "q": [
+     2,
+     3,
+     5,
+     7,
+     10
+    ],
+    "min": 22.6,
+    "pros": 5.08,
+    "p5": 4.8,
+    "u": 1.97,
+    "o": 1.75,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Vraća se Nikola Milutinov, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Milutinov igrao, Miller-Mcintyre je imao oko 22 minuta i 4,1 asistencije; bez njega oko 24 minuta i 6,2."
+    ],
+    "protiv": [
+     "Vraća se Bryant Dunston, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Dunston igrao, Miller-Mcintyre je imao oko 21 minuta i 6 asistencija; bez njega oko 23 minuta i 4,8.",
+     "Ove sezone daje oko pet asistencija po utakmici i granicu od 5,5 prebacio je u 8 od 13 utakmica."
+    ]
+   },
+   {
+    "k": "cory joseph",
+    "ime": "Cory Joseph",
+    "tim": "OLY",
+    "pos": "G",
+    "s": "P",
+    "l": 6.5,
+    "strana": "u",
+    "pp": 0.536,
+    "neodl": false,
+    "pm": 0.427,
+    "fer": 0.5,
+    "mu": 5.99,
+    "q": [
+     1,
+     3,
+     6,
+     10,
+     14
+    ],
+    "min": 17.9,
+    "pros": 5.33,
+    "p5": 7.6,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 6,5 je viša od onoga što realno očekujemo, a to je oko šest poena, iz ovih razloga:",
+     "Vraća se Nikola Milutinov, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Milutinov igrao, Joseph je imao oko 16 minuta i 4,6 poena; bez njega oko 21 minuta i 6,4.",
+     "Ove sezone daje pet do šest poena po utakmici; ispod 6,5 je ostao u 8 od 12 utakmica."
+    ],
+    "protiv": [
+     "Vraća se Bryant Dunston, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Dunston igrao, Joseph je imao oko 15 minuta i 6,7 poena; bez njega oko 19 minuta i 4,9.",
+     "U poslednjim utakmicama igra više nego ranije (25, 30 i 15 minuta)."
+    ]
+   },
+   {
+    "k": "cory joseph",
+    "ime": "Cory Joseph",
+    "tim": "OLY",
+    "pos": "G",
+    "s": "A",
+    "l": 3.5,
+    "strana": "u",
+    "pp": 0.609,
+    "neodl": false,
+    "pm": 0.289,
+    "fer": 0.459,
+    "mu": 2.88,
+    "q": [
+     1,
+     2,
+     3,
+     4,
+     6
+    ],
+    "min": 17.9,
+    "pros": 1.75,
+    "p5": 2.6,
+    "u": 1.7,
+    "o": 2.03,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 3,5 je viša od onoga što realno očekujemo, a to je oko tri asistencije, iz ovih razloga:",
+     "Vraća se Nikola Milutinov, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Milutinov igrao, Joseph je imao oko 16 minuta i 0,7 asistencija; bez njega oko 21 minuta i 3,2.",
+     "Ove sezone daje oko dve asistencije po utakmici; ispod 3,5 je ostao u 9 od 12 utakmica."
+    ],
+    "protiv": [
+     "U poslednjim utakmicama igra više nego ranije (25, 30 i 15 minuta).",
+     "U poslednje tri utakmice: 1, 5 i 5 asistencija, više nego inače."
+    ]
+   },
+   {
+    "k": "mbaye ndiaye",
+    "ime": "Mbaye Ndiaye",
+    "tim": "OLY",
+    "pos": "F",
+    "s": "P",
+    "l": 7.5,
+    "strana": "u",
+    "pp": 0.569,
+    "neodl": false,
+    "pm": 0.323,
+    "fer": 0.5,
+    "mu": 6.49,
+    "q": [
+     2,
+     3,
+     6,
+     11,
+     15
+    ],
+    "min": 16.6,
+    "pros": 8.23,
+    "p5": 5.4,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 7,5 je viša od onoga što realno očekujemo, a to je šest do sedam poena, iz ovih razloga:",
+     "Vraća se Nikola Milutinov, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Milutinov igrao, Ndiaye je imao oko 16 minuta i 5,9 poena; bez njega oko 18 minuta i 11.",
+     "Ove sezone daje oko osam poena po utakmici; ispod 7,5 je ostao u 7 od 13 utakmica."
+    ],
+    "protiv": [
+     "Vraća se Bryant Dunston, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Dunston igrao, Ndiaye je imao oko 15 minuta i 12 poena; bez njega oko 17 minuta i 7,1."
+    ]
+   },
+   {
+    "k": "mbaye ndiaye",
+    "ime": "Mbaye Ndiaye",
+    "tim": "OLY",
+    "pos": "F",
+    "s": "S",
+    "l": 2.5,
+    "strana": "o",
+    "pp": 0.572,
+    "neodl": false,
+    "pm": 0.579,
+    "fer": 0.589,
+    "mu": 2.95,
+    "q": [
+     1,
+     2,
+     3,
+     5,
+     6
+    ],
+    "min": 16.6,
+    "pros": 3.23,
+    "p5": 3.6,
+    "u": 2.25,
+    "o": 1.6,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 2,5 je niža od onoga što realno očekujemo, a to je oko tri skoka, iz ovih razloga:",
+     "Vraća se Bryant Dunston, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Dunston igrao, Ndiaye je imao oko 15 minuta i 5 skokova; bez njega oko 17 minuta i 2,7.",
+     "Ove sezone daje oko tri skoka po utakmici i granicu od 2,5 prebacio je u 7 od 13 utakmica."
+    ],
+    "protiv": [
+     "Glavni skakač Olimpijakosa je Vezenkov, pa za njega ostaje manje odbijenih lopti.",
+     "Dolazi sa klupe i igra 16 do 17 minuta."
+    ]
+   },
+   {
+    "k": "kostas papanikolaou",
+    "ime": "Kostas Papanikolaou",
+    "tim": "OLY",
+    "pos": "F",
+    "s": "P",
+    "l": 3.5,
+    "strana": "u",
+    "pp": 0.533,
+    "neodl": false,
+    "pm": 0.391,
+    "fer": 0.52,
+    "mu": 3.18,
+    "q": [
+     0,
+     1,
+     3,
+     6,
+     9
+    ],
+    "min": 16.1,
+    "pros": 3.08,
+    "p5": 2.6,
+    "u": 2,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 3,5 je viša od onoga što realno očekujemo, a to je oko tri poena, iz ovih razloga:",
+     "Ove sezone daje oko tri poena po utakmici; ispod 3,5 je ostao u 9 od 12 utakmica.",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Vezenkov i Fournier."
+    ],
+    "protiv": [
+     "Vraća se Nikola Milutinov, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Milutinov igrao, Papanikolaou je imao oko 18 minuta i 4,5 poena; bez njega oko 15 minuta i 1,7.",
+     "Kod kuće postiže više poena nego u gostima (oko četiri poena naspram dva do tri poena), a sada igra kod kuće."
+    ]
+   },
+   {
+    "k": "tyrique jones",
+    "ime": "Tyrique Jones",
+    "tim": "OLY",
+    "pos": "C",
+    "s": "P",
+    "l": 6.5,
+    "strana": "u",
+    "pp": 0.537,
+    "neodl": false,
+    "pm": 0.486,
+    "fer": 0.473,
+    "mu": 5.97,
+    "q": [
+     1,
+     3,
+     6,
+     10,
+     15
+    ],
+    "min": 14.1,
+    "pros": 7.15,
+    "p5": 7.8,
+    "u": 1.8,
+    "o": 2.04,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 6,5 je viša od onoga što realno očekujemo, a to je oko šest poena, iz ovih razloga:",
+     "Vraća se Nikola Milutinov, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Milutinov igrao, Jones je imao oko 13 minuta i 5,7 poena; bez njega oko 15 minuta i 8,8.",
+     "Vraća se Bryant Dunston, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Dunston igrao, Jones je imao oko 11 minuta i 5,7 poena; bez njega oko 15 minuta i 7,6."
+    ],
+    "protiv": [
+     "U poslednjim utakmicama igra više nego ranije (19, 13 i 22 minuta).",
+     "U poslednje tri utakmice: 8, 4 i 22 poena, više nego inače."
+    ]
+   },
+   {
+    "k": "tyrique jones",
+    "ime": "Tyrique Jones",
+    "tim": "OLY",
+    "pos": "C",
+    "s": "S",
+    "l": 3.5,
+    "strana": "o",
+    "pp": 0.539,
+    "neodl": false,
+    "pm": 0.44,
+    "fer": 0.601,
+    "mu": 3.78,
+    "q": [
+     1,
+     2,
+     4,
+     6,
+     8
+    ],
+    "min": 14.1,
+    "pros": 3.31,
+    "p5": 2.8,
+    "u": 2.3,
+    "o": 1.53,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "U poslednjim utakmicama igra više nego ranije (19, 13 i 22 minuta)."
+    ],
+    "protiv": [
+     "Vraća se Bryant Dunston, koji je propustio poslednje 2 utakmice. Ove sezone, kad je Dunston igrao, Jones je imao oko 11 minuta i 2 skoka; bez njega oko 15 minuta i 3,7.",
+     "Ove sezone daje tri do četiri skoka po utakmici; ispod 3,5 je ostao u 7 od 13 utakmica."
+    ]
+   },
+   {
+    "k": "elijah bryant",
+    "ime": "Elijah Bryant",
+    "tim": "HTA",
+    "pos": "G",
+    "s": "P",
+    "l": 14.5,
+    "strana": "u",
+    "pp": 0.552,
+    "neodl": false,
+    "pm": 0.428,
+    "fer": 0.477,
+    "mu": 13.39,
+    "q": [
+     6,
+     9,
+     13,
+     19,
+     26
+    ],
+    "min": 29.5,
+    "pros": 14.69,
+    "p5": 14.2,
+    "u": 1.85,
+    "o": 2.01,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 14,5 je viša od onoga što realno očekujemo, a to je 13 do 14 poena, iz ovih razloga:",
+     "Olimpijakos dobro brani bekove; to je i jedna od najboljih odbrana u ligi.",
+     "U gostima postiže manje poena nego kod kuće (oko 13 poena naspram oko 17 poena), a sada igra u gostima."
+    ],
+    "protiv": [
+     "Ove sezone daje 14 do 15 poena po utakmici i granicu od 14,5 prebacio je u 7 od 13 utakmica.",
+     "Jedna je od prvih opcija u napadu Hapoela."
+    ]
+   },
+   {
+    "k": "elijah bryant",
+    "ime": "Elijah Bryant",
+    "tim": "HTA",
+    "pos": "G",
+    "s": "S",
+    "l": 4.5,
+    "strana": "u",
+    "pp": 0.522,
+    "neodl": true,
+    "pm": 0.474,
+    "fer": 0.5,
+    "mu": 4.37,
+    "q": [
+     2,
+     3,
+     4,
+     6,
+     8
+    ],
+    "min": 29.5,
+    "pros": 5.31,
+    "p5": 4.0,
+    "u": 1.85,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [],
+    "protiv": [
+     "Ove sezone daje pet do šest skokova po utakmici i granicu od 4,5 prebacio je u 7 od 13 utakmica.",
+     "Igra velike minute, 29 do 30 minuta po utakmici."
+    ]
+   },
+   {
+    "k": "elijah bryant",
+    "ime": "Elijah Bryant",
+    "tim": "HTA",
+    "pos": "G",
+    "s": "A",
+    "l": 3.5,
+    "strana": "u",
+    "pp": 0.509,
+    "neodl": true,
+    "pm": 0.425,
+    "fer": 0.54,
+    "mu": 3.4,
+    "q": [
+     1,
+     2,
+     3,
+     5,
+     7
+    ],
+    "min": 29.5,
+    "pros": 3.77,
+    "p5": 2.4,
+    "u": 2,
+    "o": 1.72,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Ove sezone daje oko četiri asistencije po utakmici; ispod 3,5 je ostao u 9 od 13 utakmica.",
+     "U gostima deli manje asistencija nego kod kuće (oko tri asistencije naspram četiri do pet asistencija), a sada igra u gostima."
+    ],
+    "protiv": [
+     "Igra velike minute, 29 do 30 minuta po utakmici.",
+     "Protiv Olimpijakosa lopta dobro kruži; dozvoljavaju dosta asistencija."
+    ]
+   },
+   {
+    "k": "vasilije micic",
+    "ime": "Vasilije Micic",
+    "tim": "HTA",
+    "pos": "G",
+    "s": "P",
+    "l": 13.5,
+    "strana": "u",
+    "pp": 0.549,
+    "neodl": false,
+    "pm": 0.383,
+    "fer": 0.501,
+    "mu": 12.49,
+    "q": [
+     5,
+     8,
+     12,
+     18,
+     24
+    ],
+    "min": 26.6,
+    "pros": 13.75,
+    "p5": 14.6,
+    "u": 1.93,
+    "o": 1.91,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 13,5 je viša od onoga što realno očekujemo, a to je 12 do 13 poena, iz ovih razloga:",
+     "Olimpijakos dobro brani bekove; to je i jedna od najboljih odbrana u ligi.",
+     "U poslednje tri utakmice: 14, 14 i 6 poena, manje nego inače."
+    ],
+    "protiv": [
+     "Ove sezone daje oko 14 poena po utakmici i granicu od 13,5 prebacio je u 8 od 12 utakmica.",
+     "Jedna je od prvih opcija u napadu Hapoela."
+    ]
+   },
+   {
+    "k": "vasilije micic",
+    "ime": "Vasilije Micic",
+    "tim": "HTA",
+    "pos": "G",
+    "s": "S",
+    "l": 3.5,
+    "strana": "u",
+    "pp": 0.633,
+    "neodl": false,
+    "pm": 0.402,
+    "fer": 0.371,
+    "mu": 2.78,
+    "q": [
+     1,
+     2,
+     3,
+     4,
+     6
+    ],
+    "min": 26.6,
+    "pros": 3.0,
+    "p5": 3.8,
+    "u": 1.5,
+    "o": 2.5,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 3,5 je viša od onoga što realno očekujemo, a to je oko tri skoka, iz ovih razloga:",
+     "Ove sezone daje oko tri skoka po utakmici; ispod 3,5 je ostao u 7 od 12 utakmica.",
+     "Kao bek retko ide u skok; odbijene lopte kod Hapoela uglavnom hvataju Oturu i Bryant."
+    ],
+    "protiv": [
+     "U poslednje tri utakmice: 5, 2 i 5 skokova, više nego inače.",
+     "Protiv Olimpijakosa se skače: dozvoljavaju dosta odbijenih lopti."
+    ]
+   },
+   {
+    "k": "vasilije micic",
+    "ime": "Vasilije Micic",
+    "tim": "HTA",
+    "pos": "G",
+    "s": "A",
+    "l": 5.5,
+    "strana": "u",
+    "pp": 0.551,
+    "neodl": false,
+    "pm": 0.391,
+    "fer": 0.494,
+    "mu": 5.07,
+    "q": [
+     2,
+     3,
+     5,
+     7,
+     9
+    ],
+    "min": 26.6,
+    "pros": 4.75,
+    "p5": 6.0,
+    "u": 1.85,
+    "o": 1.95,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 5,5 je viša od onoga što realno očekujemo, a to je oko pet asistencija: češće ostaje ispod nego preko ove granice."
+    ],
+    "protiv": [
+     "Prvi je organizator igre Hapoela: lopta je najčešće u njegovim rukama.",
+     "Protiv Olimpijakosa lopta dobro kruži; dozvoljavaju dosta asistencija."
+    ]
+   },
+   {
+    "k": "antonio blakeney",
+    "ime": "Antonio Blakeney",
+    "tim": "HTA",
+    "pos": "G",
+    "s": "P",
+    "l": 11.5,
+    "strana": "u",
+    "pp": 0.51,
+    "neodl": true,
+    "pm": 0.51,
+    "fer": 0.501,
+    "mu": 11.19,
+    "q": [
+     4,
+     7,
+     11,
+     17,
+     24
+    ],
+    "min": 21.8,
+    "pros": 13.92,
+    "p5": 11.4,
+    "u": 1.93,
+    "o": 1.91,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 11,5 je viša od onoga što realno očekujemo, a to je oko 11 poena, iz ovih razloga:",
+     "Ove sezone daje oko 14 poena po utakmici; ispod 11,5 je ostao u 7 od 13 utakmica.",
+     "Olimpijakos dobro brani bekove; to je i jedna od najboljih odbrana u ligi."
+    ],
+    "protiv": []
+   },
+   {
+    "k": "tomas satoransky",
+    "ime": "Tomas Satoransky",
+    "tim": "HTA",
+    "pos": "G",
+    "s": "P",
+    "l": 4.5,
+    "strana": "o",
+    "pp": 0.505,
+    "neodl": true,
+    "pm": 0.564,
+    "fer": 0.5,
+    "mu": 4.49,
+    "q": [
+     1,
+     2,
+     4,
+     8,
+     12
+    ],
+    "min": 21.6,
+    "pros": 5.08,
+    "p5": 5.6,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Ove sezone daje oko pet poena po utakmici i granicu od 4,5 prebacio je u 7 od 12 utakmica."
+    ],
+    "protiv": [
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Bryant i Blakeney.",
+     "Olimpijakos dobro brani bekove; to je i jedna od najboljih odbrana u ligi."
+    ]
+   },
+   {
+    "k": "tomas satoransky",
+    "ime": "Tomas Satoransky",
+    "tim": "HTA",
+    "pos": "G",
+    "s": "S",
+    "l": 2.5,
+    "strana": "o",
+    "pp": 0.555,
+    "neodl": false,
+    "pm": 0.523,
+    "fer": 0.589,
+    "mu": 2.82,
+    "q": [
+     1,
+     2,
+     3,
+     4,
+     6
+    ],
+    "min": 21.6,
+    "pros": 3.42,
+    "p5": 3.8,
+    "u": 2.25,
+    "o": 1.6,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 2,5 je niža od onoga što realno očekujemo, a to je oko tri skoka, iz ovih razloga:",
+     "Ove sezone daje tri do četiri skoka po utakmici i granicu od 2,5 prebacio je u 8 od 12 utakmica.",
+     "Protiv Olimpijakosa se skače: dozvoljavaju dosta odbijenih lopti."
+    ],
+    "protiv": [
+     "Kao bek retko ide u skok; odbijene lopte kod Hapoela uglavnom hvataju Oturu i Bryant.",
+     "U gostima hvata manje skokova nego kod kuće (oko tri skoka naspram oko četiri skoka), a sada igra u gostima."
+    ]
+   },
+   {
+    "k": "tomas satoransky",
+    "ime": "Tomas Satoransky",
+    "tim": "HTA",
+    "pos": "G",
+    "s": "A",
+    "l": 3.5,
+    "strana": "o",
+    "pp": 0.532,
+    "neodl": false,
+    "pm": 0.513,
+    "fer": 0.56,
+    "mu": 3.63,
+    "q": [
+     1,
+     2,
+     4,
+     5,
+     7
+    ],
+    "min": 21.6,
+    "pros": 4.08,
+    "p5": 4.6,
+    "u": 2.1,
+    "o": 1.65,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Ove sezone daje oko četiri asistencije po utakmici i granicu od 3,5 prebacio je u 7 od 12 utakmica.",
+     "Protiv Olimpijakosa lopta dobro kruži; dozvoljavaju dosta asistencija.",
+     "U gostima deli više asistencija nego kod kuće (četiri do pet asistencija naspram oko tri asistencije), a sada igra u gostima."
+    ],
+    "protiv": []
+   },
+   {
+    "k": "zach leday",
+    "ime": "Zach Leday",
+    "tim": "HTA",
+    "pos": "F",
+    "s": "P",
+    "l": 9.5,
+    "strana": "u",
+    "pp": 0.553,
+    "neodl": false,
+    "pm": 0.369,
+    "fer": 0.502,
+    "mu": 8.59,
+    "q": [
+     3,
+     5,
+     9,
+     13,
+     19
+    ],
+    "min": 21.4,
+    "pros": 9.85,
+    "p5": 5.4,
+    "u": 1.93,
+    "o": 1.91,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 9,5 je viša od onoga što realno očekujemo, a to je osam do devet poena, iz ovih razloga:",
+     "Ove sezone daje oko deset poena po utakmici; ispod 9,5 je ostao u 7 od 13 utakmica.",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Bryant i Blakeney."
+    ],
+    "protiv": []
+   },
+   {
+    "k": "zach leday",
+    "ime": "Zach Leday",
+    "tim": "HTA",
+    "pos": "F",
+    "s": "S",
+    "l": 4.5,
+    "strana": "o",
+    "pp": 0.506,
+    "neodl": true,
+    "pm": 0.378,
+    "fer": 0.581,
+    "mu": 4.56,
+    "q": [
+     2,
+     3,
+     5,
+     7,
+     9
+    ],
+    "min": 21.4,
+    "pros": 4.69,
+    "p5": 4.2,
+    "u": 2.2,
+    "o": 1.6,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Ove sezone daje četiri do pet skokova po utakmici i granicu od 4,5 prebacio je u 7 od 13 utakmica.",
+     "Protiv Olimpijakosa se skače: dozvoljavaju dosta odbijenih lopti."
+    ],
+    "protiv": []
+   },
+   {
+    "k": "dan oturu",
+    "ime": "Dan Oturu",
+    "tim": "HTA",
+    "pos": "C",
+    "s": "P",
+    "l": 10.5,
+    "strana": "u",
+    "pp": 0.545,
+    "neodl": false,
+    "pm": 0.446,
+    "fer": 0.479,
+    "mu": 9.67,
+    "q": [
+     3,
+     6,
+     10,
+     15,
+     20
+    ],
+    "min": 21.3,
+    "pros": 11.0,
+    "p5": 11.6,
+    "u": 1.85,
+    "o": 2.02,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 10,5 je viša od onoga što realno očekujemo, a to je devet do deset poena, iz ovih razloga:",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Bryant i Blakeney.",
+     "Olimpijakos dobro brani centre; to je i jedna od najboljih odbrana u ligi."
+    ],
+    "protiv": [
+     "Ove sezone daje oko 11 poena po utakmici i granicu od 10,5 prebacio je u 7 od 13 utakmica."
+    ]
+   },
+   {
+    "k": "dan oturu",
+    "ime": "Dan Oturu",
+    "tim": "HTA",
+    "pos": "C",
+    "s": "S",
+    "l": 5.5,
+    "strana": "u",
+    "pp": 0.503,
+    "neodl": true,
+    "pm": 0.37,
+    "fer": 0.573,
+    "mu": 5.5,
+    "q": [
+     2,
+     4,
+     5,
+     8,
+     10
+    ],
+    "min": 21.3,
+    "pros": 5.54,
+    "p5": 4.8,
+    "u": 2.2,
+    "o": 1.65,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Ove sezone daje pet do šest skokova po utakmici; ispod 5,5 je ostao u 8 od 13 utakmica."
+    ],
+    "protiv": [
+     "Glavni je skakač Hapoela: niko u timu ne hvata više odbijenih lopti.",
+     "Protiv Olimpijakosa se skače: dozvoljavaju dosta odbijenih lopti."
+    ]
+   },
+   {
+    "k": "tai odiase",
+    "ime": "Tai Odiase",
+    "tim": "HTA",
+    "pos": "C",
+    "s": "P",
+    "l": 6.5,
+    "strana": "u",
+    "pp": 0.541,
+    "neodl": false,
+    "pm": 0.374,
+    "fer": 0.517,
+    "mu": 5.93,
+    "q": [
+     1,
+     3,
+     6,
+     10,
+     14
+    ],
+    "min": 14.2,
+    "pros": 7.17,
+    "p5": 9.0,
+    "u": 2.01,
+    "o": 1.9,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 6,5 je viša od onoga što realno očekujemo, a to je oko šest poena, iz ovih razloga:",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Bryant i Blakeney.",
+     "Olimpijakos dobro brani centre; to je i jedna od najboljih odbrana u ligi."
+    ],
+    "protiv": [
+     "Ove sezone daje oko sedam poena po utakmici i granicu od 6,5 prebacio je u 7 od 12 utakmica.",
+     "U poslednje tri utakmice: 8, 16 i 8 poena, više nego inače."
+    ]
+   },
+   {
+    "k": "tai odiase",
+    "ime": "Tai Odiase",
+    "tim": "HTA",
+    "pos": "C",
+    "s": "S",
+    "l": 2.5,
+    "strana": "u",
+    "pp": 0.504,
+    "neodl": true,
+    "pm": 0.448,
+    "fer": 0.537,
+    "mu": 2.49,
+    "q": [
+     1,
+     1,
+     2,
+     4,
+     6
+    ],
+    "min": 14.2,
+    "pros": 2.0,
+    "p5": 1.8,
+    "u": 2,
+    "o": 1.75,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Ove sezone daje oko dva skoka po utakmici; ispod 2,5 je ostao u 8 od 12 utakmica.",
+     "Glavni skakač Hapoela je Oturu, pa za njega ostaje manje odbijenih lopti.",
+     "Dolazi sa klupe i igra oko 14 minuta."
+    ],
+    "protiv": [
+     "Protiv Olimpijakosa se skače: dozvoljavaju dosta odbijenih lopti."
+    ]
+   }
+  ],
+  "138": [
+   {
+    "k": "dj stewart",
+    "ime": "Dj Stewart",
+    "tim": "BAS",
+    "pos": "F",
+    "s": "P",
+    "l": 12.5,
+    "strana": "u",
+    "pp": 0.584,
+    "neodl": false,
+    "pm": 0.336,
+    "fer": 0.472,
+    "mu": 10.97,
+    "q": [
+     4,
+     7,
+     11,
+     16,
+     22
+    ],
+    "min": 26.5,
+    "pros": 9.62,
+    "p5": 11.0,
+    "u": 1.8,
+    "o": 2.02,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 12,5 je viša od onoga što realno očekujemo, a to je oko 11 poena, iz ovih razloga:",
+     "Ove sezone daje devet do deset poena po utakmici; ispod 12,5 je ostao u 9 od 13 utakmica.",
+     "Efes dobro brani krila."
+    ],
+    "protiv": [
+     "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
+     "Otkad se vratio Kamenjas i Kurucs (2 utakmice), igra oko 28 minuta i daje 16 poena po utakmici, naspram 8,5 ranije; procena to uzima u obzir."
+    ]
+   },
+   {
+    "k": "dj stewart",
+    "ime": "Dj Stewart",
+    "tim": "BAS",
+    "pos": "F",
+    "s": "S",
+    "l": 3.5,
+    "strana": "o",
+    "pp": 0.545,
+    "neodl": false,
+    "pm": 0.603,
+    "fer": 0.54,
+    "mu": 3.81,
+    "q": [
+     1,
+     2,
+     4,
+     6,
+     7
+    ],
+    "min": 26.5,
+    "pros": 2.54,
+    "p5": 4.6,
+    "u": 2,
+    "o": 1.7,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 3,5 je niža od onoga što realno očekujemo, a to je oko četiri skoka, iz ovih razloga:",
+     "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
+     "Otkad se vratio Kamenjas i Kurucs (2 utakmice), igra oko 28 minuta i daje 5 skokova po utakmici, naspram 2,1 ranije; procena to uzima u obzir."
+    ],
+    "protiv": [
+     "Ove sezone daje dva do tri skoka po utakmici; ispod 3,5 je ostao u 10 od 13 utakmica.",
+     "Glavni skakač Baskonije je Sedekerskis, pa za njega ostaje manje odbijenih lopti."
+    ]
+   },
+   {
+    "k": "kenan kamenjas",
+    "ime": "Kenan Kamenjas",
+    "tim": "BAS",
+    "pos": "C",
+    "s": "P",
+    "l": 11.5,
+    "strana": "u",
+    "pp": 0.552,
+    "neodl": false,
+    "pm": 0.332,
+    "fer": 0.52,
+    "mu": 10.46,
+    "q": [
+     4,
+     6,
+     10,
+     16,
+     22
+    ],
+    "min": 23.4,
+    "pros": 14.0,
+    "p5": 14.0,
+    "u": 2,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 11,5 je viša od onoga što realno očekujemo, a to je 10 do 11 poena: minutaža mu varira."
+    ],
+    "protiv": [
+     "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
+     "Ove sezone daje oko 14 poena po utakmici i granicu od 11,5 prebacio je u 2 od 2 utakmice."
+    ]
+   },
+   {
+    "k": "kenan kamenjas",
+    "ime": "Kenan Kamenjas",
+    "tim": "BAS",
+    "pos": "C",
+    "s": "S",
+    "l": 9.5,
+    "strana": "u",
+    "pp": 0.605,
+    "neodl": false,
+    "pm": 0.261,
+    "fer": 0.48,
+    "mu": 8.25,
+    "q": [
+     4,
+     6,
+     8,
+     12,
+     15
+    ],
+    "min": 23.4,
+    "pros": 12.5,
+    "p5": 12.5,
+    "u": 1.85,
+    "o": 2,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 9,5 je viša od onoga što realno očekujemo, a to je oko osam skokova: minutaža mu varira."
+    ],
+    "protiv": [
+     "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
+     "Ove sezone daje 12 do 13 skokova po utakmici i granicu od 9,5 prebacio je u 2 od 2 utakmice."
+    ]
+   },
+   {
+    "k": "kobi simmons",
+    "ime": "Kobi Simmons",
+    "tim": "BAS",
+    "pos": "G",
+    "s": "P",
+    "l": 11.5,
+    "strana": "u",
+    "pp": 0.535,
+    "neodl": false,
+    "pm": 0.431,
+    "fer": 0.5,
+    "mu": 10.82,
+    "q": [
+     4,
+     7,
+     11,
+     16,
+     22
+    ],
+    "min": 23.1,
+    "pros": 8.42,
+    "p5": 10.4,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 11,5 je viša od onoga što realno očekujemo, a to je oko 11 poena: u većini utakmica ostaje ispod ove granice."
+    ],
+    "protiv": [
+     "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
+     "Otkad se vratio Kamenjas i Kurucs (2 utakmice), igra oko 23 minuta i daje 11,5 poena po utakmici, naspram 7,8 ranije; procena to uzima u obzir."
+    ]
+   },
+   {
+    "k": "kobi simmons",
+    "ime": "Kobi Simmons",
+    "tim": "BAS",
+    "pos": "G",
+    "s": "S",
+    "l": 2.5,
+    "strana": "u",
+    "pp": 0.617,
+    "neodl": false,
+    "pm": 0.332,
+    "fer": 0.426,
+    "mu": 2.01,
+    "q": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "min": 23.1,
+    "pros": 2.33,
+    "p5": 2.2,
+    "u": 1.6,
+    "o": 2.19,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 2,5 je viša od onoga što realno očekujemo, a to je oko dva skoka, iz ovih razloga:",
+     "Ove sezone daje dva do tri skoka po utakmici; ispod 2,5 je ostao u 8 od 12 utakmica.",
+     "Kao bek retko ide u skok; odbijene lopte kod Baskonije uglavnom hvataju Sedekerskis i Kurucs."
+    ],
+    "protiv": [
+     "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
+     "Otkad se vratio Kamenjas i Kurucs (2 utakmice), igra oko 23 minuta i daje 3 skoka po utakmici, naspram 2,2 ranije; procena to uzima u obzir."
+    ]
+   },
+   {
+    "k": "kobi simmons",
+    "ime": "Kobi Simmons",
+    "tim": "BAS",
+    "pos": "G",
+    "s": "A",
+    "l": 3.5,
+    "strana": "o",
+    "pp": 0.538,
+    "neodl": false,
+    "pm": 0.501,
+    "fer": 0.574,
+    "mu": 3.66,
+    "q": [
+     1,
+     2,
+     4,
+     5,
+     7
+    ],
+    "min": 23.1,
+    "pros": 3.42,
+    "p5": 4.4,
+    "u": 2.2,
+    "o": 1.65,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
+     "Otkad se vratio Kamenjas i Kurucs (2 utakmice), igra oko 23 minuta i daje 6 asistencija po utakmici, naspram 2,9 ranije; procena to uzima u obzir.",
+     "U poslednje tri utakmice: 3, 7 i 5 asistencija, više nego inače."
+    ],
+    "protiv": [
+     "Ove sezone daje tri do četiri asistencije po utakmici; ispod 3,5 je ostao u 6 od 12 utakmica."
+    ]
+   },
+   {
+    "k": "rodions kurucs",
+    "ime": "Rodions Kurucs",
+    "tim": "BAS",
+    "pos": "F",
+    "s": "P",
+    "l": 5.5,
+    "strana": "u",
+    "pp": 0.52,
+    "neodl": true,
+    "pm": 0.482,
+    "fer": 0.5,
+    "mu": 5.23,
+    "q": [
+     1,
+     3,
+     5,
+     9,
+     13
+    ],
+    "min": 22.2,
+    "pros": 5.2,
+    "p5": 5.6,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Ove sezone daje oko pet poena po utakmici; ispod 5,5 je ostao u 6 od 10 utakmica.",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Lawson i Sedekerskis.",
+     "Efes dobro brani krila."
+    ],
+    "protiv": [
+     "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
+     "U poslednje tri utakmice: 10, 2 i 9 poena, više nego inače."
+    ]
+   },
+   {
+    "k": "rodions kurucs",
+    "ime": "Rodions Kurucs",
+    "tim": "BAS",
+    "pos": "F",
+    "s": "S",
+    "l": 3.5,
+    "strana": "o",
+    "pp": 0.51,
+    "neodl": true,
+    "pm": 0.494,
+    "fer": 0.537,
+    "mu": 3.58,
+    "q": [
+     1,
+     2,
+     4,
+     5,
+     7
+    ],
+    "min": 22.2,
+    "pros": 4.2,
+    "p5": 4.2,
+    "u": 2,
+    "o": 1.75,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
+     "Ove sezone daje oko četiri skoka po utakmici i granicu od 3,5 prebacio je u 6 od 10 utakmica."
+    ],
+    "protiv": [
+     "Na raspolaganju je ponovo i Rolands Smits, pa minuti na njegovoj poziciji mogu da budu podeljeni.",
+     "Kod kuće hvata manje skokova nego u gostima (oko tri skoka naspram oko pet skokova), a sada igra kod kuće."
+    ]
+   },
+   {
+    "k": "rodions kurucs",
+    "ime": "Rodions Kurucs",
+    "tim": "BAS",
+    "pos": "F",
+    "s": "A",
+    "l": 2.5,
+    "strana": "u",
+    "pp": 0.601,
+    "neodl": false,
+    "pm": 0.349,
+    "fer": 0.442,
+    "mu": 2.05,
+    "q": [
+     0,
+     1,
+     2,
+     3,
+     5
+    ],
+    "min": 22.2,
+    "pros": 3.3,
+    "p5": 3.4,
+    "u": 1.68,
+    "o": 2.15,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 2,5 je viša od onoga što realno očekujemo, a to je oko dve asistencije: minuti na njegovoj poziciji mogu da budu podeljeni."
+    ],
+    "protiv": [
+     "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
+     "Ove sezone daje tri do četiri asistencije po utakmici i granicu od 2,5 prebacio je u 7 od 10 utakmica."
+    ]
+   },
+   {
+    "k": "chris duarte",
+    "ime": "Chris Duarte",
+    "tim": "BAS",
+    "pos": "F",
+    "s": "P",
+    "l": 11.5,
+    "strana": "u",
+    "pp": 0.615,
+    "neodl": false,
+    "pm": 0.248,
+    "fer": 0.473,
+    "mu": 9.47,
+    "q": [
+     3,
+     6,
+     9,
+     14,
+     20
+    ],
+    "min": 20.0,
+    "pros": 9.9,
+    "p5": 7.4,
+    "u": 1.81,
+    "o": 2.02,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 11,5 je viša od onoga što realno očekujemo, a to je devet do deset poena, iz ovih razloga:",
+     "Ove sezone daje oko deset poena po utakmici; ispod 11,5 je ostao u 7 od 10 utakmica.",
+     "Efes dobro brani krila."
+    ],
+    "protiv": [
+     "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
+     "Jedna je od prvih opcija u napadu Baskonije."
+    ]
+   },
+   {
+    "k": "chris duarte",
+    "ime": "Chris Duarte",
+    "tim": "BAS",
+    "pos": "F",
+    "s": "S",
+    "l": 2.5,
+    "strana": "u",
+    "pp": 0.5,
+    "neodl": true,
+    "pm": 0.546,
+    "fer": 0.5,
+    "mu": 2.51,
+    "q": [
+     0,
+     1,
+     3,
+     4,
+     6
+    ],
+    "min": 20.0,
+    "pros": 3.5,
+    "p5": 2.2,
+    "u": 1.85,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Otkad se vratio Kamenjas i Kurucs (2 utakmice), igra oko 19 minuta i daje 2 skoka po utakmici, naspram 3,9 ranije; procena to uzima u obzir.",
+     "U poslednje tri utakmice: 3, 2 i 2 skoka, manje nego inače."
+    ],
+    "protiv": [
+     "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
+     "Ove sezone daje tri do četiri skoka po utakmici i granicu od 2,5 prebacio je u 6 od 10 utakmica."
+    ]
+   },
+   {
+    "k": "clement frisch",
+    "ime": "Clement Frisch",
+    "tim": "BAS",
+    "pos": "F",
+    "s": "P",
+    "l": 5.5,
+    "strana": "u",
+    "pp": 0.526,
+    "neodl": true,
+    "pm": 0.46,
+    "fer": 0.5,
+    "mu": 5.15,
+    "q": [
+     1,
+     3,
+     5,
+     9,
+     13
+    ],
+    "min": 18.2,
+    "pros": 6.2,
+    "p5": 7.8,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 5,5 je viša od onoga što realno očekujemo, a to je oko pet poena, iz ovih razloga:",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Lawson i Sedekerskis.",
+     "Efes dobro brani krila."
+    ],
+    "protiv": [
+     "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
+     "Otkad se vratio Kamenjas i Kurucs (2 utakmice), igra oko 19 minuta i daje 7 poena po utakmici, naspram 6 ranije; procena to uzima u obzir."
+    ]
+   },
+   {
+    "k": "rolands smits",
+    "ime": "Rolands Smits",
+    "tim": "BAS",
+    "pos": "F",
+    "s": "P",
+    "l": 7.5,
+    "strana": "u",
+    "pp": 0.565,
+    "neodl": false,
+    "pm": 0.337,
+    "fer": 0.5,
+    "mu": 6.56,
+    "q": [
+     2,
+     4,
+     7,
+     11,
+     15
+    ],
+    "min": 16.4,
+    "pros": 12.0,
+    "p5": 12.0,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 7,5 je viša od onoga što realno očekujemo, a to je šest do sedam poena, iz ovih razloga:",
+     "Efes dobro brani krila.",
+     "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
+    ],
+    "protiv": [
+     "Kod Baskonije ne igra Kenneth Faried, pa ostaje više minuta i lopti za ostale.",
+     "Ove sezone daje oko 12 poena po utakmici i granicu od 7,5 prebacio je u 1 od 1 utakmice."
+    ]
+   },
+   {
+    "k": "dario saric",
+    "ime": "Dario Saric",
+    "tim": "IST",
+    "pos": "F",
+    "s": "P",
+    "l": 14.5,
+    "strana": "u",
+    "pp": 0.581,
+    "neodl": false,
+    "pm": 0.288,
+    "fer": 0.5,
+    "mu": 12.82,
+    "q": [
+     5,
+     8,
+     13,
+     19,
+     25
+    ],
+    "min": 26.8,
+    "pros": 11.77,
+    "p5": 12.0,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 14,5 je viša od onoga što realno očekujemo, a to je oko 13 poena, iz ovih razloga:",
+     "Ove sezone daje oko 12 poena po utakmici; ispod 14,5 je ostao u 10 od 13 utakmica.",
+     "Baskonija dobro brani krila."
+    ],
+    "protiv": [
+     "Kod Efesa ne igra Bruno Fernando, pa ostaje više minuta i lopti za ostale."
+    ]
+   },
+   {
+    "k": "dario saric",
+    "ime": "Dario Saric",
+    "tim": "IST",
+    "pos": "F",
+    "s": "S",
+    "l": 6.5,
+    "strana": "u",
+    "pp": 0.594,
+    "neodl": false,
+    "pm": 0.305,
+    "fer": 0.473,
+    "mu": 5.72,
+    "q": [
+     2,
+     4,
+     6,
+     8,
+     10
+    ],
+    "min": 26.8,
+    "pros": 6.23,
+    "p5": 6.8,
+    "u": 1.75,
+    "o": 1.95,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 6,5 je viša od onoga što realno očekujemo, a to je pet do šest skokova, iz ovih razloga:",
+     "Ove sezone daje oko šest skokova po utakmici; ispod 6,5 je ostao u 8 od 13 utakmica.",
+     "U poslednje tri utakmice: 4, 4 i 7 skokova, manje nego inače."
+    ],
+    "protiv": [
+     "Kod Efesa ne igra Bruno Fernando, pa ostaje više minuta i lopti za ostale.",
+     "Glavni je skakač Efesa: niko u timu ne hvata više odbijenih lopti."
+    ]
+   },
+   {
+    "k": "dario saric",
+    "ime": "Dario Saric",
+    "tim": "IST",
+    "pos": "F",
+    "s": "A",
+    "l": 2.5,
+    "strana": "o",
+    "pp": 0.519,
+    "neodl": true,
+    "pm": 0.403,
+    "fer": 0.589,
+    "mu": 2.54,
+    "q": [
+     1,
+     1,
+     3,
+     4,
+     5
+    ],
+    "min": 26.8,
+    "pros": 2.31,
+    "p5": 3.6,
+    "u": 2.25,
+    "o": 1.6,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Kod Efesa ne igra Bruno Fernando, pa ostaje više minuta i lopti za ostale.",
+     "Ove sezone daje dve do tri asistencije po utakmici i granicu od 2,5 prebacio je u 7 od 13 utakmica."
+    ],
+    "protiv": [
+     "Nije glavni organizator; loptu kod Efesa uglavnom vode Payne i Strazel.",
+     "U gostima deli manje asistencija nego kod kuće (oko jedne asistencije naspram tri do četiri asistencije), a sada igra u gostima."
+    ]
+   },
+   {
+    "k": "collin malcolm",
+    "ime": "Collin Malcolm",
+    "tim": "IST",
+    "pos": "F",
+    "s": "P",
+    "l": 12.5,
+    "strana": "u",
+    "pp": 0.601,
+    "neodl": false,
+    "pm": 0.279,
+    "fer": 0.475,
+    "mu": 10.65,
+    "q": [
+     4,
+     7,
+     11,
+     16,
+     21
+    ],
+    "min": 26.5,
+    "pros": 10.62,
+    "p5": 13.6,
+    "u": 1.81,
+    "o": 2.02,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 12,5 je viša od onoga što realno očekujemo, a to je 10 do 11 poena, iz ovih razloga:",
+     "Ove sezone daje 10 do 11 poena po utakmici; ispod 12,5 je ostao u 7 od 13 utakmica.",
+     "Baskonija dobro brani krila."
+    ],
+    "protiv": [
+     "Kod Efesa ne igra Bruno Fernando, pa ostaje više minuta i lopti za ostale."
+    ]
+   },
+   {
+    "k": "collin malcolm",
+    "ime": "Collin Malcolm",
+    "tim": "IST",
+    "pos": "F",
+    "s": "S",
+    "l": 4.5,
+    "strana": "o",
+    "pp": 0.504,
+    "neodl": true,
+    "pm": 0.39,
+    "fer": 0.574,
+    "mu": 4.55,
+    "q": [
+     2,
+     3,
+     5,
+     6,
+     9
+    ],
+    "min": 26.5,
+    "pros": 4.08,
+    "p5": 4.6,
+    "u": 2.2,
+    "o": 1.65,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Kod Efesa ne igra Bruno Fernando, pa ostaje više minuta i lopti za ostale.",
+     "Ove sezone daje oko četiri skoka po utakmici i granicu od 4,5 prebacio je u 7 od 13 utakmica."
+    ],
+    "protiv": [
+     "Glavni skakač Efesa je Saric, pa za njega ostaje manje odbijenih lopti."
+    ]
+   },
+   {
+    "k": "jordan loyd",
+    "ime": "Jordan Loyd",
+    "tim": "IST",
+    "pos": "G",
+    "s": "P",
+    "l": 11.5,
+    "strana": "u",
+    "pp": 0.502,
+    "neodl": true,
+    "pm": 0.542,
+    "fer": 0.5,
+    "mu": 11.37,
+    "q": [
+     4,
+     7,
+     11,
+     17,
+     23
+    ],
+    "min": 24.6,
+    "pros": 10.69,
+    "p5": 12.6,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Ove sezone daje 10 do 11 poena po utakmici; ispod 11,5 je ostao u 8 od 13 utakmica."
+    ],
+    "protiv": [
+     "Kod Efesa ne igra Bruno Fernando, pa ostaje više minuta i lopti za ostale.",
+     "Protiv Baskonije bekovi postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi."
+    ]
+   },
+   {
+    "k": "jordan loyd",
+    "ime": "Jordan Loyd",
+    "tim": "IST",
+    "pos": "G",
+    "s": "S",
+    "l": 3.5,
+    "strana": "u",
+    "pp": 0.589,
+    "neodl": false,
+    "pm": 0.371,
+    "fer": 0.448,
+    "mu": 3.02,
+    "q": [
+     1,
+     2,
+     3,
+     5,
+     6
+    ],
+    "min": 24.6,
+    "pros": 3.46,
+    "p5": 3.4,
+    "u": 1.7,
+    "o": 2.2,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 3,5 je viša od onoga što realno očekujemo, a to je oko tri skoka, iz ovih razloga:",
+     "Ove sezone daje tri do četiri skoka po utakmici; ispod 3,5 je ostao u 7 od 13 utakmica.",
+     "Kao bek retko ide u skok; odbijene lopte kod Efesa uglavnom hvataju Saric i Malcolm."
+    ],
+    "protiv": [
+     "Kod Efesa ne igra Bruno Fernando, pa ostaje više minuta i lopti za ostale.",
+     "U poslednje tri utakmice: 5, 6 i 4 skoka, više nego inače."
+    ]
+   },
+   {
+    "k": "matthew strazel",
+    "ime": "Matthew Strazel",
+    "tim": "IST",
+    "pos": "G",
+    "s": "P",
+    "l": 11.5,
+    "strana": "u",
+    "pp": 0.524,
+    "neodl": true,
+    "pm": 0.467,
+    "fer": 0.5,
+    "mu": 11.0,
+    "q": [
+     4,
+     7,
+     11,
+     16,
+     22
+    ],
+    "min": 23.2,
+    "pros": 12.23,
+    "p5": 12.6,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 11,5 je viša od onoga što realno očekujemo, a to je oko 11 poena."
+    ],
+    "protiv": [
+     "Kod Efesa ne igra Bruno Fernando, pa ostaje više minuta i lopti za ostale.",
+     "Ove sezone daje oko 12 poena po utakmici i granicu od 11,5 prebacio je u 8 od 13 utakmica."
+    ]
+   },
+   {
+    "k": "matthew strazel",
+    "ime": "Matthew Strazel",
+    "tim": "IST",
+    "pos": "G",
+    "s": "A",
+    "l": 5.5,
+    "strana": "u",
+    "pp": 0.584,
+    "neodl": false,
+    "pm": 0.345,
+    "fer": 0.468,
+    "mu": 4.87,
+    "q": [
+     2,
+     3,
+     5,
+     7,
+     9
+    ],
+    "min": 23.2,
+    "pros": 4.62,
+    "p5": 6.0,
+    "u": 1.75,
+    "o": 1.98,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 5,5 je viša od onoga što realno očekujemo, a to je oko pet asistencija, iz ovih razloga:",
+     "Ove sezone daje četiri do pet asistencija po utakmici; ispod 5,5 je ostao u 8 od 13 utakmica.",
+     "U gostima deli manje asistencija nego kod kuće (oko tri asistencije naspram oko šest asistencija), a sada igra u gostima."
+    ],
+    "protiv": [
+     "Kod Efesa ne igra Bruno Fernando, pa ostaje više minuta i lopti za ostale.",
+     "U poslednje tri utakmice: 8, 5 i 6 asistencija, više nego inače."
+    ]
+   },
+   {
+    "k": "cameron payne",
+    "ime": "Cameron Payne",
+    "tim": "IST",
+    "pos": "G",
+    "s": "P",
+    "l": 13.5,
+    "strana": "u",
+    "pp": 0.538,
+    "neodl": false,
+    "pm": 0.381,
+    "fer": 0.518,
+    "mu": 12.68,
+    "q": [
+     5,
+     8,
+     13,
+     18,
+     25
+    ],
+    "min": 22.4,
+    "pros": 15.2,
+    "p5": 15.2,
+    "u": 1.99,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 13,5 je viša od onoga što realno očekujemo, a to je 12 do 13 poena, iz ovih razloga:",
+     "U poslednje tri utakmice: 9, 5 i 15 poena, manje nego inače.",
+     "U gostima postiže manje poena nego kod kuće (oko deset poena naspram 18 do 19 poena), a sada igra u gostima."
+    ],
+    "protiv": [
+     "Kod Efesa ne igra Bruno Fernando, pa ostaje više minuta i lopti za ostale.",
+     "Ove sezone daje oko 15 poena po utakmici i granicu od 13,5 prebacio je u 6 od 10 utakmica."
+    ]
+   },
+   {
+    "k": "cameron payne",
+    "ime": "Cameron Payne",
+    "tim": "IST",
+    "pos": "G",
+    "s": "A",
+    "l": 5.5,
+    "strana": "u",
+    "pp": 0.557,
+    "neodl": false,
+    "pm": 0.359,
+    "fer": 0.5,
+    "mu": 5.03,
+    "q": [
+     2,
+     3,
+     5,
+     7,
+     9
+    ],
+    "min": 22.4,
+    "pros": 5.3,
+    "p5": 7.4,
+    "u": 1.85,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 5,5 je viša od onoga što realno očekujemo, a to je oko pet asistencija, iz ovih razloga:",
+     "Ove sezone daje pet do šest asistencija po utakmici; ispod 5,5 je ostao u 5 od 10 utakmica.",
+     "U gostima deli manje asistencija nego kod kuće (oko četiri asistencije naspram oko šest asistencija), a sada igra u gostima."
+    ],
+    "protiv": [
+     "Kod Efesa ne igra Bruno Fernando, pa ostaje više minuta i lopti za ostale.",
+     "Prvi je organizator igre Efesa: lopta je najčešće u njegovim rukama."
+    ]
+   },
+   {
+    "k": "ercan osmani",
+    "ime": "Ercan Osmani",
+    "tim": "IST",
+    "pos": "F",
+    "s": "P",
+    "l": 4.5,
+    "strana": "u",
+    "pp": 0.506,
+    "neodl": true,
+    "pm": 0.517,
+    "fer": 0.505,
+    "mu": 4.39,
+    "q": [
+     1,
+     2,
+     4,
+     8,
+     12
+    ],
+    "min": 15.9,
+    "pros": 3.77,
+    "p5": 3.8,
+    "u": 1.99,
+    "o": 1.9,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Ove sezone daje oko četiri poena po utakmici; ispod 4,5 je ostao u 7 od 13 utakmica.",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Payne i Strazel.",
+     "Baskonija dobro brani krila."
+    ],
+    "protiv": [
+     "Kod Efesa ne igra Bruno Fernando, pa ostaje više minuta i lopti za ostale.",
+     "U poslednje tri utakmice: 5, 4 i 8 poena, više nego inače."
+    ]
+   },
+   {
+    "k": "santi yusta",
+    "ime": "Santi Yusta",
+    "tim": "IST",
+    "pos": "F",
+    "s": "P",
+    "l": 4.5,
+    "strana": "o",
+    "pp": 0.517,
+    "neodl": true,
+    "pm": 0.533,
+    "fer": 0.531,
+    "mu": 4.62,
+    "q": [
+     1,
+     2,
+     5,
+     8,
+     12
+    ],
+    "min": 13.6,
+    "pros": 6.08,
+    "p5": 5.6,
+    "u": 2.04,
+    "o": 1.8,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Kod Efesa ne igra Bruno Fernando, pa ostaje više minuta i lopti za ostale.",
+     "Ove sezone daje oko šest poena po utakmici i granicu od 4,5 prebacio je u 6 od 12 utakmica."
+    ],
+    "protiv": [
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Payne i Strazel.",
+     "Baskonija dobro brani krila."
+    ]
+   },
+   {
+    "k": "georgios papagiannis",
+    "ime": "Georgios Papagiannis",
+    "tim": "IST",
+    "pos": "C",
+    "s": "P",
+    "l": 3.5,
+    "strana": "u",
+    "pp": 0.505,
+    "neodl": true,
+    "pm": 0.48,
+    "fer": 0.522,
+    "mu": 3.41,
+    "q": [
+     0,
+     1,
+     3,
+     6,
+     10
+    ],
+    "min": 12.9,
+    "pros": 1.6,
+    "p5": 1.6,
+    "u": 1.98,
+    "o": 1.81,
+    "knjiga": 2,
+    "pred": null,
+    "za": [
+     "Ove sezone daje jedan do dva poena po utakmici; ispod 3,5 je ostao u 4 od 5 utakmica.",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Payne i Strazel.",
+     "Dolazi sa klupe i igra oko 12 minuta."
+    ],
+    "protiv": [
+     "Kod Efesa ne igra Bruno Fernando, pa ostaje više minuta i lopti za ostale.",
+     "Protiv Baskonije centri postižu više nego protiv većine ekipa; odbrana im je među slabijim u ligi."
+    ]
+   }
+  ],
+  "139": [
+   {
+    "k": "theo maledon",
+    "ime": "Theo Maledon",
+    "tim": "MAD",
+    "pos": "G",
+    "s": "P",
+    "l": 17.5,
+    "strana": "u",
+    "pp": 0.576,
+    "neodl": false,
+    "pm": 0.352,
+    "fer": 0.476,
+    "mu": 15.83,
+    "q": [
+     7,
+     11,
+     16,
+     22,
+     28
+    ],
+    "min": 23.4,
+    "pros": 16.91,
+    "p5": 19.0,
+    "u": 1.83,
+    "o": 2,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 17,5 je viša od onoga što realno očekujemo, a to je oko 16 poena: češće ostaje ispod nego preko ove granice."
+    ],
+    "protiv": [
+     "Jedna je od prvih opcija u napadu Reala.",
+     "U poslednje tri utakmice: 26, 22 i 17 poena, više nego inače."
+    ]
+   },
+   {
+    "k": "theo maledon",
+    "ime": "Theo Maledon",
+    "tim": "MAD",
+    "pos": "G",
+    "s": "S",
+    "l": 3.5,
+    "strana": "u",
+    "pp": 0.523,
+    "neodl": true,
+    "pm": 0.426,
+    "fer": 0.52,
+    "mu": 3.39,
+    "q": [
+     1,
+     2,
+     3,
+     5,
+     6
+    ],
+    "min": 23.4,
+    "pros": 4.09,
+    "p5": 4.4,
+    "u": 1.93,
+    "o": 1.8,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Žalgiris dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
+    ],
+    "protiv": [
+     "Ove sezone daje oko četiri skoka po utakmici i granicu od 3,5 prebacio je u 7 od 11 utakmica.",
+     "U poslednje tri utakmice: 7, 6 i 3 skoka, više nego inače."
+    ]
+   },
+   {
+    "k": "theo maledon",
+    "ime": "Theo Maledon",
+    "tim": "MAD",
+    "pos": "G",
+    "s": "A",
+    "l": 5.5,
+    "strana": "u",
+    "pp": 0.597,
+    "neodl": false,
+    "pm": 0.3,
+    "fer": 0.47,
+    "mu": 4.82,
+    "q": [
+     2,
+     3,
+     5,
+     7,
+     9
+    ],
+    "min": 23.4,
+    "pros": 5.18,
+    "p5": 4.4,
+    "u": 1.75,
+    "o": 1.98,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 5,5 je viša od onoga što realno očekujemo, a to je oko pet asistencija, iz ovih razloga:",
+     "Ove sezone daje oko pet asistencija po utakmici; ispod 5,5 je ostao u 6 od 11 utakmica.",
+     "U poslednje tri utakmice: 2, 3 i 7 asistencija, manje nego inače."
+    ],
+    "protiv": [
+     "Prvi je organizator igre Reala: lopta je najčešće u njegovim rukama."
+    ]
+   },
+   {
+    "k": "andres feliz",
+    "ime": "Andres Feliz",
+    "tim": "MAD",
+    "pos": "G",
+    "s": "P",
+    "l": 11.5,
+    "strana": "u",
+    "pp": 0.551,
+    "neodl": false,
+    "pm": 0.351,
+    "fer": 0.513,
+    "mu": 10.55,
+    "q": [
+     4,
+     7,
+     11,
+     16,
+     21
+    ],
+    "min": 22.1,
+    "pros": 12.77,
+    "p5": 13.0,
+    "u": 2,
+    "o": 1.95,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 11,5 je viša od onoga što realno očekujemo, a to je 10 do 11 poena, iz ovih razloga:",
+     "Otkad se vratio Maledon (2 utakmice), igra oko 22 minuta i daje 9,5 poena po utakmici, naspram 13,4 ranije; procena to uzima u obzir.",
+     "Ove sezone daje oko 13 poena po utakmici; ispod 11,5 je ostao u 7 od 13 utakmica."
+    ],
+    "protiv": [
+     "Jedna je od prvih opcija u napadu Reala.",
+     "Kod kuće postiže više poena nego u gostima (oko 16 poena naspram 10 do 11 poena), a sada igra kod kuće."
+    ]
+   },
+   {
+    "k": "andres feliz",
+    "ime": "Andres Feliz",
+    "tim": "MAD",
+    "pos": "G",
+    "s": "S",
+    "l": 3.5,
+    "strana": "u",
+    "pp": 0.534,
+    "neodl": false,
+    "pm": 0.434,
+    "fer": 0.5,
+    "mu": 3.32,
+    "q": [
+     1,
+     2,
+     3,
+     5,
+     7
+    ],
+    "min": 22.1,
+    "pros": 3.38,
+    "p5": 3.6,
+    "u": 1.85,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Kao bek retko ide u skok; odbijene lopte kod Reala uglavnom hvataju Tavares i Maledon.",
+     "Žalgiris dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
+    ],
+    "protiv": [
+     "Otkad se vratio Maledon (2 utakmice), igra oko 22 minuta i daje 5 skokova po utakmici, naspram 3,1 ranije; procena to uzima u obzir.",
+     "Ove sezone daje tri do četiri skoka po utakmici i granicu od 3,5 prebacio je u 7 od 13 utakmica."
+    ]
+   },
+   {
+    "k": "andres feliz",
+    "ime": "Andres Feliz",
+    "tim": "MAD",
+    "pos": "G",
+    "s": "A",
+    "l": 4.5,
+    "strana": "u",
+    "pp": 0.649,
+    "neodl": false,
+    "pm": 0.215,
+    "fer": 0.439,
+    "mu": 3.56,
+    "q": [
+     1,
+     2,
+     4,
+     5,
+     7
+    ],
+    "min": 22.1,
+    "pros": 3.85,
+    "p5": 3.8,
+    "u": 1.65,
+    "o": 2.15,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 4,5 je viša od onoga što realno očekujemo, a to je tri do četiri asistencije, iz ovih razloga:",
+     "Otkad se vratio Maledon (2 utakmice), igra oko 22 minuta i daje 2,5 asistencije po utakmici, naspram 4,1 ranije; procena to uzima u obzir.",
+     "Ove sezone daje oko četiri asistencije po utakmici; ispod 4,5 je ostao u 8 od 13 utakmica."
+    ],
+    "protiv": []
+   },
+   {
+    "k": "walter tavares",
+    "ime": "Walter Tavares",
+    "tim": "MAD",
+    "pos": "C",
+    "s": "P",
+    "l": 9.5,
+    "strana": "u",
+    "pp": 0.576,
+    "neodl": false,
+    "pm": 0.303,
+    "fer": 0.5,
+    "mu": 8.28,
+    "q": [
+     3,
+     5,
+     8,
+     13,
+     18
+    ],
+    "min": 20.8,
+    "pros": 8.92,
+    "p5": 7.6,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 9,5 je viša od onoga što realno očekujemo, a to je osam do devet poena, iz ovih razloga:",
+     "Otkad se vratio Maledon (2 utakmice), igra oko 21 minuta i daje 3,5 poena po utakmici, naspram 9,9 ranije; procena to uzima u obzir.",
+     "Ove sezone daje oko devet poena po utakmici; ispod 9,5 je ostao u 7 od 13 utakmica."
+    ],
+    "protiv": []
+   },
+   {
+    "k": "walter tavares",
+    "ime": "Walter Tavares",
+    "tim": "MAD",
+    "pos": "C",
+    "s": "S",
+    "l": 6.5,
+    "strana": "u",
+    "pp": 0.555,
+    "neodl": false,
+    "pm": 0.367,
+    "fer": 0.5,
+    "mu": 6.03,
+    "q": [
+     2,
+     4,
+     6,
+     8,
+     11
+    ],
+    "min": 20.8,
+    "pros": 6.77,
+    "p5": 5.2,
+    "u": 1.85,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 6,5 je viša od onoga što realno očekujemo, a to je oko šest skokova, iz ovih razloga:",
+     "Ove sezone daje oko sedam skokova po utakmici; ispod 6,5 je ostao u 7 od 13 utakmica.",
+     "U poslednje tri utakmice: 3, 8 i 4 skoka, manje nego inače."
+    ],
+    "protiv": [
+     "Glavni je skakač Reala: niko u timu ne hvata više odbijenih lopti."
+    ]
+   },
+   {
+    "k": "timothe luwawu cabarrot",
+    "ime": "Timothe Luwawu-Cabarrot",
+    "tim": "MAD",
+    "pos": "F",
+    "s": "P",
+    "l": 10.5,
+    "strana": "u",
+    "pp": 0.534,
+    "neodl": false,
+    "pm": 0.464,
+    "fer": 0.487,
+    "mu": 9.86,
+    "q": [
+     3,
+     6,
+     10,
+     15,
+     20
+    ],
+    "min": 19.9,
+    "pros": 9.46,
+    "p5": 9.8,
+    "u": 1.87,
+    "o": 1.97,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 10,5 je viša od onoga što realno očekujemo, a to je oko deset poena, iz ovih razloga:",
+     "Otkad se vratio Maledon (2 utakmice), igra oko 22 minuta i daje 7,5 poena po utakmici, naspram 9,8 ranije; procena to uzima u obzir.",
+     "Ove sezone daje devet do deset poena po utakmici; ispod 10,5 je ostao u 8 od 13 utakmica."
+    ],
+    "protiv": [
+     "U poslednje tri utakmice: 22, 8 i 7 poena, više nego inače."
+    ]
+   },
+   {
+    "k": "alberto abalde",
+    "ime": "Alberto Abalde",
+    "tim": "MAD",
+    "pos": "F",
+    "s": "P",
+    "l": 5.5,
+    "strana": "o",
+    "pp": 0.518,
+    "neodl": true,
+    "pm": 0.535,
+    "fer": 0.531,
+    "mu": 5.64,
+    "q": [
+     1,
+     3,
+     6,
+     9,
+     14
+    ],
+    "min": 19.2,
+    "pros": 7.62,
+    "p5": 10.2,
+    "u": 2.04,
+    "o": 1.8,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Ove sezone daje sedam do osam poena po utakmici i granicu od 5,5 prebacio je u 8 od 13 utakmica.",
+     "Kod kuće postiže više poena nego u gostima (oko deset poena naspram oko šest poena), a sada igra kod kuće."
+    ],
+    "protiv": [
+     "Otkad se vratio Maledon (2 utakmice), igra oko 20 minuta i daje 6 poena po utakmici, naspram 7,9 ranije; procena to uzima u obzir.",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Maledon i Feliz."
+    ]
+   },
+   {
+    "k": "alberto abalde",
+    "ime": "Alberto Abalde",
+    "tim": "MAD",
+    "pos": "F",
+    "s": "S",
+    "l": 2.5,
+    "strana": "u",
+    "pp": 0.523,
+    "neodl": true,
+    "pm": 0.385,
+    "fer": 0.537,
+    "mu": 2.4,
+    "q": [
+     1,
+     1,
+     2,
+     4,
+     5
+    ],
+    "min": 19.2,
+    "pros": 2.31,
+    "p5": 2.2,
+    "u": 2,
+    "o": 1.75,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Ove sezone daje dva do tri skoka po utakmici; ispod 2,5 je ostao u 8 od 13 utakmica.",
+     "Glavni skakač Reala je Tavares, pa za njega ostaje manje odbijenih lopti.",
+     "Dolazi sa klupe i igra oko 19 minuta."
+    ],
+    "protiv": [
+     "Kod kuće hvata više skokova nego u gostima (oko tri skoka naspram oko dva skoka), a sada igra kod kuće."
+    ]
+   },
+   {
+    "k": "alberto abalde",
+    "ime": "Alberto Abalde",
+    "tim": "MAD",
+    "pos": "F",
+    "s": "A",
+    "l": 1.5,
+    "strana": "u",
+    "pp": 0.577,
+    "neodl": false,
+    "pm": 0.38,
+    "fer": 0.461,
+    "mu": 1.24,
+    "q": [
+     0,
+     0,
+     1,
+     2,
+     3
+    ],
+    "min": 19.2,
+    "pros": 1.62,
+    "p5": 1.8,
+    "u": 1.72,
+    "o": 2,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Otkad se vratio Maledon (2 utakmice), igra oko 20 minuta i daje 1 asistencija po utakmici, naspram 1,7 ranije; procena to uzima u obzir.",
+     "Ove sezone daje jedna do dve asistencije po utakmici; ispod 1,5 je ostao u 8 od 13 utakmica.",
+     "Nije glavni organizator; loptu kod Reala uglavnom vode Maledon i Feliz."
+    ],
+    "protiv": []
+   },
+   {
+    "k": "chuma okeke",
+    "ime": "Chuma Okeke",
+    "tim": "MAD",
+    "pos": "C",
+    "s": "P",
+    "l": 5.5,
+    "strana": "o",
+    "pp": 0.503,
+    "neodl": true,
+    "pm": 0.48,
+    "fer": 0.533,
+    "mu": 5.47,
+    "q": [
+     1,
+     3,
+     5,
+     9,
+     13
+    ],
+    "min": 16.8,
+    "pros": 7.0,
+    "p5": 6.4,
+    "u": 2.04,
+    "o": 1.79,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Ove sezone daje oko sedam poena po utakmici i granicu od 5,5 prebacio je u 9 od 12 utakmica."
+    ],
+    "protiv": [
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Maledon i Feliz.",
+     "Dolazi sa klupe i igra oko 17 minuta."
+    ]
+   },
+   {
+    "k": "chuma okeke",
+    "ime": "Chuma Okeke",
+    "tim": "MAD",
+    "pos": "C",
+    "s": "S",
+    "l": 3.5,
+    "strana": "u",
+    "pp": 0.55,
+    "neodl": false,
+    "pm": 0.462,
+    "fer": 0.465,
+    "mu": 3.22,
+    "q": [
+     1,
+     2,
+     3,
+     5,
+     7
+    ],
+    "min": 16.8,
+    "pros": 3.0,
+    "p5": 4.2,
+    "u": 1.75,
+    "o": 2,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Otkad se vratio Maledon (2 utakmice), igra oko 15 minuta i daje 2,5 skoka po utakmici, naspram 3,1 ranije; procena to uzima u obzir.",
+     "Ove sezone daje oko tri skoka po utakmici; ispod 3,5 je ostao u 7 od 12 utakmica.",
+     "Glavni skakač Reala je Tavares, pa za njega ostaje manje odbijenih lopti."
+    ],
+    "protiv": [
+     "Kod kuće hvata više skokova nego u gostima (tri do četiri skoka naspram dva do tri skoka), a sada igra kod kuće."
+    ]
+   },
+   {
+    "k": "nick smith",
+    "ime": "Nick Smith Jr",
+    "tim": "MAD",
+    "pos": "F",
+    "s": "P",
+    "l": 7.5,
+    "strana": "u",
+    "pp": 0.582,
+    "neodl": false,
+    "pm": 0.337,
+    "fer": 0.475,
+    "mu": 6.34,
+    "q": [
+     2,
+     3,
+     6,
+     10,
+     15
+    ],
+    "min": 12.9,
+    "pros": 7.6,
+    "p5": 7.2,
+    "u": 1.81,
+    "o": 2.02,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 7,5 je viša od onoga što realno očekujemo, a to je šest do sedam poena, iz ovih razloga:",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Maledon i Feliz.",
+     "Minutaža mu dosta varira od utakmice do utakmice, pa je teško računati na veliki učinak."
+    ],
+    "protiv": [
+     "Otkad se vratio Maledon (2 utakmice), igra oko 12 minuta i daje 9 poena po utakmici, naspram 7,2 ranije; procena to uzima u obzir.",
+     "Ove sezone daje sedam do osam poena po utakmici i granicu od 7,5 prebacio je u 5 od 10 utakmica."
+    ]
+   },
+   {
+    "k": "azuolas tubelis",
+    "ime": "Azuolas Tubelis",
+    "tim": "ZAL",
+    "pos": "F",
+    "s": "P",
+    "l": 12.5,
+    "strana": "u",
+    "pp": 0.543,
+    "neodl": false,
+    "pm": 0.455,
+    "fer": 0.478,
+    "mu": 11.61,
+    "q": [
+     4,
+     7,
+     12,
+     17,
+     23
+    ],
+    "min": 23.5,
+    "pros": 12.54,
+    "p5": 14.4,
+    "u": 1.83,
+    "o": 2,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 12,5 je viša od onoga što realno očekujemo, a to je 11 do 12 poena."
+    ],
+    "protiv": [
+     "Ove sezone daje 12 do 13 poena po utakmici i granicu od 12,5 prebacio je u 7 od 13 utakmica.",
+     "Jedna je od prvih opcija u napadu Žalgirisa."
+    ]
+   },
+   {
+    "k": "azuolas tubelis",
+    "ime": "Azuolas Tubelis",
+    "tim": "ZAL",
+    "pos": "F",
+    "s": "S",
+    "l": 4.5,
+    "strana": "o",
+    "pp": 0.56,
+    "neodl": false,
+    "pm": 0.515,
+    "fer": 0.598,
+    "mu": 4.98,
+    "q": [
+     2,
+     3,
+     5,
+     7,
+     9
+    ],
+    "min": 23.5,
+    "pros": 6.0,
+    "p5": 6.0,
+    "u": 2.3,
+    "o": 1.57,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 4,5 je niža od onoga što realno očekujemo, a to je oko pet skokova, iz ovih razloga:",
+     "Vraća se Maodo Lo, koji je propustio poslednje tri utakmice. Ove sezone, kad je Lo igrao, Tubelis je imao oko 24 minuta i 6,6 skokova; bez njega oko 23 minuta i 5,3.",
+     "Ove sezone daje oko šest skokova po utakmici i granicu od 4,5 prebacio je u 8 od 13 utakmica."
+    ],
+    "protiv": [
+     "Glavni skakač Žalgirisa je Valanciunas, pa za njega ostaje manje odbijenih lopti.",
+     "Real dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
+    ]
+   },
+   {
+    "k": "carsen edwards",
+    "ime": "Carsen Edwards",
+    "tim": "ZAL",
+    "pos": "G",
+    "s": "P",
+    "l": 14.5,
+    "strana": "u",
+    "pp": 0.501,
+    "neodl": true,
+    "pm": 0.52,
+    "fer": 0.51,
+    "mu": 14.36,
+    "q": [
+     6,
+     9,
+     14,
+     21,
+     28
+    ],
+    "min": 23.1,
+    "pros": 16.46,
+    "p5": 17.8,
+    "u": 1.99,
+    "o": 1.9,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Na raspolaganju je ponovo i Maodo Lo, pa minuti na njegovoj poziciji mogu da budu podeljeni.",
+     "U gostima postiže manje poena nego kod kuće (14 do 15 poena naspram 18 do 19 poena), a sada igra u gostima."
+    ],
+    "protiv": [
+     "Ove sezone daje 16 do 17 poena po utakmici i granicu od 14,5 prebacio je u 9 od 13 utakmica.",
+     "Jedna je od prvih opcija u napadu Žalgirisa."
+    ]
+   },
+   {
+    "k": "carsen edwards",
+    "ime": "Carsen Edwards",
+    "tim": "ZAL",
+    "pos": "G",
+    "s": "A",
+    "l": 2.5,
+    "strana": "o",
+    "pp": 0.529,
+    "neodl": true,
+    "pm": 0.495,
+    "fer": 0.563,
+    "mu": 2.59,
+    "q": [
+     1,
+     1,
+     3,
+     4,
+     5
+    ],
+    "min": 23.1,
+    "pros": 2.77,
+    "p5": 3.4,
+    "u": 2.1,
+    "o": 1.65,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "U poslednje tri utakmice: 3, 4 i 5 asistencija, više nego inače."
+    ],
+    "protiv": [
+     "Ove sezone daje oko tri asistencije po utakmici; ispod 2,5 je ostao u 7 od 13 utakmica.",
+     "Na raspolaganju je ponovo i Maodo Lo, pa minuti na njegovoj poziciji mogu da budu podeljeni."
+    ]
+   },
+   {
+    "k": "jonas valanciunas",
+    "ime": "Jonas Valanciunas",
+    "tim": "ZAL",
+    "pos": "C",
+    "s": "P",
+    "l": 12.5,
+    "strana": "u",
+    "pp": 0.571,
+    "neodl": false,
+    "pm": 0.357,
+    "fer": 0.481,
+    "mu": 11.11,
+    "q": [
+     4,
+     7,
+     11,
+     17,
+     23
+    ],
+    "min": 21.4,
+    "pros": 12.46,
+    "p5": 13.8,
+    "u": 1.85,
+    "o": 2,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 12,5 je viša od onoga što realno očekujemo, a to je oko 11 poena: češće ostaje ispod nego preko ove granice."
+    ],
+    "protiv": [
+     "Protiv Reala centri postižu više nego protiv većine ekipa."
+    ]
+   },
+   {
+    "k": "jonas valanciunas",
+    "ime": "Jonas Valanciunas",
+    "tim": "ZAL",
+    "pos": "C",
+    "s": "S",
+    "l": 7.5,
+    "strana": "u",
+    "pp": 0.51,
+    "neodl": true,
+    "pm": 0.345,
+    "fer": 0.574,
+    "mu": 7.43,
+    "q": [
+     3,
+     5,
+     7,
+     10,
+     13
+    ],
+    "min": 21.4,
+    "pros": 8.85,
+    "p5": 10.0,
+    "u": 2.2,
+    "o": 1.65,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Real dobro zatvara skok: protiv njih se hvata malo odbijenih lopti."
+    ],
+    "protiv": [
+     "Ove sezone daje oko devet skokova po utakmici i granicu od 7,5 prebacio je u 8 od 13 utakmica.",
+     "Glavni je skakač Žalgirisa: niko u timu ne hvata više odbijenih lopti."
+    ]
+   },
+   {
+    "k": "keenan evans",
+    "ime": "Keenan Evans",
+    "tim": "ZAL",
+    "pos": "F",
+    "s": "P",
+    "l": 6.5,
+    "strana": "u",
+    "pp": 0.527,
+    "neodl": true,
+    "pm": 0.457,
+    "fer": 0.5,
+    "mu": 6.12,
+    "q": [
+     2,
+     3,
+     6,
+     10,
+     14
+    ],
+    "min": 19.2,
+    "pros": 5.67,
+    "p5": 6.0,
+    "u": 1.92,
+    "o": 1.92,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Granica od 6,5 je viša od onoga što realno očekujemo, a to je oko šest poena, iz ovih razloga:",
+     "Ove sezone daje pet do šest poena po utakmici; ispod 6,5 je ostao u 5 od 6 utakmica.",
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Edwards i Tubelis."
+    ],
+    "protiv": []
+   },
+   {
+    "k": "keenan evans",
+    "ime": "Keenan Evans",
+    "tim": "ZAL",
+    "pos": "F",
+    "s": "A",
+    "l": 3.5,
+    "strana": "u",
+    "pp": 0.688,
+    "neodl": false,
+    "pm": 0.206,
+    "fer": 0.54,
+    "mu": 2.54,
+    "q": [
+     1,
+     1,
+     3,
+     4,
+     5
+    ],
+    "min": 19.2,
+    "pros": 3.83,
+    "p5": 4.0,
+    "u": 2,
+    "o": 1.7,
+    "knjiga": 3,
+    "pred": "u",
+    "za": [
+     "Granica od 3,5 je viša od onoga što realno očekujemo, a to je dve do tri asistencije: u gostima deli manje."
+    ],
+    "protiv": [
+     "Ove sezone daje oko četiri asistencije po utakmici i granicu od 3,5 prebacio je u 3 od 6 utakmica.",
+     "Prvi je organizator igre Žalgirisa: lopta je najčešće u njegovim rukama."
+    ]
+   },
+   {
+    "k": "saben lee",
+    "ime": "Saben Lee",
+    "tim": "ZAL",
+    "pos": "G",
+    "s": "P",
+    "l": 4.5,
+    "strana": "o",
+    "pp": 0.526,
+    "neodl": true,
+    "pm": 0.674,
+    "fer": 0.48,
+    "mu": 4.72,
+    "q": [
+     1,
+     2,
+     5,
+     8,
+     12
+    ],
+    "min": 19.0,
+    "pros": 5.6,
+    "p5": 5.2,
+    "u": 1.85,
+    "o": 2,
+    "knjiga": 4,
+    "pred": "o",
+    "za": [
+     "Vraća se Maodo Lo, koji je propustio poslednje tri utakmice. Ove sezone, kad je Lo igrao, Lee je imao oko 19 minuta i 6,5 poena; bez njega oko 19 minuta i 5.",
+     "Ove sezone daje pet do šest poena po utakmici i granicu od 4,5 prebacio je u 5 od 10 utakmica.",
+     "U gostima postiže više poena nego kod kuće (šest do sedam poena naspram četiri do pet poena), a sada igra u gostima."
+    ],
+    "protiv": [
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Edwards i Tubelis.",
+     "U poslednje tri utakmice: 9, 0 i 3 poena, manje nego inače."
+    ]
+   },
+   {
+    "k": "saben lee",
+    "ime": "Saben Lee",
+    "tim": "ZAL",
+    "pos": "G",
+    "s": "A",
+    "l": 3.5,
+    "strana": "u",
+    "pp": 0.634,
+    "neodl": false,
+    "pm": 0.294,
+    "fer": 0.418,
+    "mu": 2.79,
+    "q": [
+     1,
+     2,
+     3,
+     4,
+     6
+    ],
+    "min": 19.0,
+    "pros": 3.5,
+    "p5": 2.2,
+    "u": 1.6,
+    "o": 2.2,
+    "knjiga": 3,
+    "pred": null,
+    "za": [
+     "Granica od 3,5 je viša od onoga što realno očekujemo, a to je oko tri asistencije, iz ovih razloga:",
+     "Ove sezone daje tri do četiri asistencije po utakmici; ispod 3,5 je ostao u 6 od 10 utakmica.",
+     "U poslednje tri utakmice: 1, 2 i 2 asistencije, manje nego inače."
+    ],
+    "protiv": [
+     "Vraća se Maodo Lo, koji je propustio poslednje tri utakmice. Ove sezone, kad je Lo igrao, Lee je imao oko 19 minuta i 4,8 asistencija; bez njega oko 19 minuta i 2,7."
+    ]
+   },
+   {
+    "k": "sterling brown",
+    "ime": "Sterling Brown",
+    "tim": "ZAL",
+    "pos": "G",
+    "s": "P",
+    "l": 8.5,
+    "strana": "u",
+    "pp": 0.501,
+    "neodl": true,
+    "pm": 0.489,
+    "fer": 0.523,
+    "mu": 8.39,
+    "q": [
+     3,
+     5,
+     8,
+     13,
+     19
+    ],
+    "min": 18.6,
+    "pros": 10.15,
+    "p5": 8.4,
+    "u": 2,
+    "o": 1.83,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Edwards i Tubelis.",
+     "Dolazi sa klupe i igra 18 do 19 minuta.",
+     "U gostima postiže manje poena nego kod kuće (osam do devet poena naspram 12 do 13 poena), a sada igra u gostima."
+    ],
+    "protiv": [
+     "Vraća se Maodo Lo, koji je propustio poslednje tri utakmice. Ove sezone, kad je Lo igrao, Brown je imao oko 19 minuta i 11 poena; bez njega oko 18 minuta i 9,2.",
+     "Ove sezone daje oko deset poena po utakmici i granicu od 8,5 prebacio je u 8 od 13 utakmica."
+    ]
+   },
+   {
+    "k": "dustin sleva",
+    "ime": "Dustin Sleva",
+    "tim": "ZAL",
+    "pos": "F",
+    "s": "P",
+    "l": 5.5,
+    "strana": "o",
+    "pp": 0.506,
+    "neodl": true,
+    "pm": 0.495,
+    "fer": 0.531,
+    "mu": 5.5,
+    "q": [
+     1,
+     3,
+     6,
+     9,
+     14
+    ],
+    "min": 18.0,
+    "pros": 6.23,
+    "p5": 5.6,
+    "u": 2.04,
+    "o": 1.8,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Vraća se Maodo Lo, koji je propustio poslednje tri utakmice. Ove sezone, kad je Lo igrao, Sleva je imao oko 17 minuta i 7,1 poena; bez njega oko 20 minuta i 5,2.",
+     "Ove sezone daje oko šest poena po utakmici i granicu od 5,5 prebacio je u 7 od 13 utakmica.",
+     "U gostima postiže više poena nego kod kuće (sedam do osam poena naspram oko pet poena), a sada igra u gostima."
+    ],
+    "protiv": [
+     "Nije među prvim opcijama u napadu; više šuteva dobijaju Edwards i Tubelis.",
+     "Dolazi sa klupe i igra oko 18 minuta."
+    ]
+   },
+   {
+    "k": "dustin sleva",
+    "ime": "Dustin Sleva",
+    "tim": "ZAL",
+    "pos": "F",
+    "s": "S",
+    "l": 3.5,
+    "strana": "u",
+    "pp": 0.537,
+    "neodl": false,
+    "pm": 0.424,
+    "fer": 0.5,
+    "mu": 3.29,
+    "q": [
+     1,
+     2,
+     3,
+     5,
+     7
+    ],
+    "min": 18.0,
+    "pros": 3.69,
+    "p5": 4.2,
+    "u": 1.85,
+    "o": 1.85,
+    "knjiga": 4,
+    "pred": null,
+    "za": [
+     "Ove sezone daje tri do četiri skoka po utakmici; ispod 3,5 je ostao u 8 od 13 utakmica.",
+     "Glavni skakač Žalgirisa je Valanciunas, pa za njega ostaje manje odbijenih lopti.",
+     "Dolazi sa klupe i igra oko 18 minuta."
+    ],
+    "protiv": []
+   }
   ]
  },
- "osvezeno": "24.11.2026. 23:15",
+ "osvezeno": "25.11.2026. 14:37",
  "utakmice": [
   {
    "g": 132,
@@ -7958,7 +12903,7 @@
    "gost": "PRS",
    "vreme": "24.11. 18:00",
    "dan": "2026-11-24",
-   "pocela": false,
+   "pocela": true,
    "pocetak": "2026-11-24T17:00:00+00:00",
    "sastav": null,
    "objava": "2026-11-24T12:00:00+01:00",
@@ -7982,7 +12927,7 @@
    "gost": "VIR",
    "vreme": "24.11. 19:00",
    "dan": "2026-11-24",
-   "pocela": false,
+   "pocela": true,
    "pocetak": "2026-11-24T18:00:00+00:00",
    "sastav": null,
    "objava": "2026-11-24T12:00:00+01:00",
@@ -8006,7 +12951,7 @@
    "gost": "TEL",
    "vreme": "24.11. 20:00",
    "dan": "2026-11-24",
-   "pocela": false,
+   "pocela": true,
    "pocetak": "2026-11-24T19:00:00+00:00",
    "sastav": null,
    "objava": "2026-11-24T12:00:00+01:00",
@@ -8030,7 +12975,7 @@
    "gost": "PAN",
    "vreme": "24.11. 20:30",
    "dan": "2026-11-24",
-   "pocela": false,
+   "pocela": true,
    "pocetak": "2026-11-24T19:30:00+00:00",
    "sastav": null,
    "objava": "2026-11-24T12:00:00+01:00",
@@ -8054,7 +12999,7 @@
    "gost": "MIL",
    "vreme": "24.11. 20:45",
    "dan": "2026-11-24",
-   "pocela": false,
+   "pocela": true,
    "pocetak": "2026-11-24T19:45:00+00:00",
    "sastav": null,
    "objava": "2026-11-24T12:00:00+01:00",
@@ -8078,7 +13023,7 @@
    "gost": "ULK",
    "vreme": "24.11. 21:00",
    "dan": "2026-11-24",
-   "pocela": false,
+   "pocela": true,
    "pocetak": "2026-11-24T20:00:00+00:00",
    "sastav": null,
    "objava": "2026-11-24T12:00:00+01:00",
@@ -8107,8 +13052,18 @@
    "sastav": null,
    "objava": "2026-11-25T12:00:00+01:00",
    "rok": "2026-11-25T16:00:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Mozzart",
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Admiral": "2026-11-25T12:50:31.783Z",
+    "MaxBet": "2026-11-25T08:58:10.020Z",
+    "Mozzart": "2026-11-25T13:35:22Z",
+    "Soccerbet": "2026-11-25T13:36:40+00:00"
+   }
   },
   {
    "g": 140,
@@ -8121,8 +13076,18 @@
    "sastav": null,
    "objava": "2026-11-25T12:00:00+01:00",
    "rok": "2026-11-25T16:00:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Mozzart",
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Admiral": "2026-11-25T12:50:31.783Z",
+    "MaxBet": "2026-11-25T08:58:10.020Z",
+    "Mozzart": "2026-11-25T13:35:22Z",
+    "Soccerbet": "2026-11-25T13:36:40+00:00"
+   }
   },
   {
    "g": 138,
@@ -8135,8 +13100,18 @@
    "sastav": null,
    "objava": "2026-11-25T12:00:00+01:00",
    "rok": "2026-11-25T16:00:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Mozzart",
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Admiral": "2026-11-25T12:50:31.783Z",
+    "MaxBet": "2026-11-25T08:58:10.020Z",
+    "Mozzart": "2026-11-25T13:35:22Z",
+    "Soccerbet": "2026-11-25T13:36:40+00:00"
+   }
   },
   {
    "g": 139,
@@ -8149,8 +13124,18 @@
    "sastav": null,
    "objava": "2026-11-25T12:00:00+01:00",
    "rok": "2026-11-25T16:00:00+01:00",
-   "ponude": [],
-   "snimci": {}
+   "ponude": [
+    "Admiral",
+    "MaxBet",
+    "Mozzart",
+    "Soccerbet"
+   ],
+   "snimci": {
+    "Admiral": "2026-11-25T12:50:31.783Z",
+    "MaxBet": "2026-11-25T08:58:10.020Z",
+    "Mozzart": "2026-11-25T13:35:22Z",
+    "Soccerbet": "2026-11-25T13:36:40+00:00"
+   }
   }
  ]
 }

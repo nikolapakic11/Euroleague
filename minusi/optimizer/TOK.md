@@ -119,3 +119,4 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
 - Osmice: dobitna 1 od ~134 (0,75%). Od 5.11. 314 osmica, očekivano ~3,5 dobitnih, stvarno 0 (nesreća, ~3%).
 - Isti parovi iz odigranih osmica na kraćim tiketima (sve kombinacije): 4 para 1 od 9 (+42%), 5 parova 1 od 17 (+48%), 6 parova 1 od 32 (+52%), osmica +44% bez povraćaja (povraćaji su do sada ~13% uloga osmica). Od 5.11.: 4 para +40%, 5 parova +39%, osmice −100% (+ povraćaji). Isti očekivani povraćaj, mnogo manje kolebanje → predlog: deo budžeta na petice.
 - Opsezi: 65 tiketa, ulog 5.732, isplata ~35.077 (2 dobitna) – najbolji deo, ali mali uzorak.
+- 25.11.: Admiral NE dozvoljava kombinovanje opsega poena (Specijali) sa poenima/skokovima/asistencijama na istom tiketu – opsezi uvek posebni tiketi.
