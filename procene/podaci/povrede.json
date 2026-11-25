@@ -1,8 +1,9 @@
 {
  "kolo": 14,
- "at": "25.11.2026. 10:00",
+ "at": "25.11.2026. 13:51",
  "izvori": [
-  "https://www.eurohoops.net/en/euroleague/2039943/injury-report-round-14-sloukas-rivero-peters-out-bolmaro-martin-gtd/"
+  "https://www.eurohoops.net/en/euroleague/2039943/injury-report-round-14-sloukas-rivero-peters-out-bolmaro-martin-gtd/",
+  "https://www.eurohoops.net/en/euroleague/2040477/luca-vildoza-tyler-dorsey-euroleague-round-14-injury-report-update/"
  ],
  "igraci": {
   "jaylen nowell": {
@@ -227,8 +228,8 @@
   },
   "dzanan musa": {
    "tim": "DUB",
-   "stanje": "upitan",
-   "tekst": "Uncertain: Eye injury in Round 13. DNP in the domestic league (11.22) | Eurohoops: Dzanan Musa did not play in the ABA League this past weekend",
+   "stanje": "igra",
+   "tekst": "Expected: Expected to play in Round 14 (eye injury in Round 13) | Eurohoops: Dzanan Musa did not play in the ABA League this past weekend",
    "izvor": "basketnews"
   },
   "davis bertans": {
@@ -246,13 +247,13 @@
   "kosta kondic": {
    "tim": "DUB",
    "stanje": "upitan",
-   "tekst": "Doubtful: DNP in Rounds 10-13, out indefinitely (hip/psoas muscle injury) | Eurohoops: Kosta Kondic last played in Round 9",
+   "tekst": "Game-time: Recovered after the injury and is available for selection after DNP in Rounds 10-13 (hip/psoas muscle injury) | Eurohoops: Kosta Kondic last played in Round 9",
    "izvor": "basketnews"
   },
   "klemen prepelic": {
    "tim": "DUB",
-   "stanje": "upitan",
-   "tekst": "Doubtful: DNP in Rounds 8-13 (coach's decision). DNP in the domestic league (11.22) FC Bayern Munich | Eurohoops: Klemen Prepelic has not featured in the EuroLeague so far this season",
+   "stanje": "van",
+   "tekst": "Out: Ruled out for Round 14 (national team duties) after DNP in Rounds 8-13 (coach's decision) FC Bayern Munich | Eurohoops: Klemen Prepelic has not featured in the EuroLeague so far this season",
    "izvor": "basketnews"
   },
   "kevarrius hayes": {
@@ -454,8 +455,8 @@
   },
   "justin anderson": {
    "tim": "DUB",
-   "stanje": "upitan",
-   "tekst": "Doubtful: DNP in Rounds 1-13 (hamstring). DNP in he domestic league (11.22) Can leave the team.",
+   "stanje": "van",
+   "tekst": "Out: Ruled out for Round 14 after DNP in Rounds 1-13 (hamstring, might leave the team)",
    "izvor": "basketnews"
   },
   "oz blayzer": {
