@@ -128,3 +128,4 @@ Test na istoj ponudi: ograničenje 10 → 6 smanjuje očekivani broj dobitnih ti
 - Cena ravnomernosti: pojas procene <0,54 bio je na 91 mestu i prošao samo 38%. Predlog: stavke <0,54 ograničiti na ~4–5 tiketa, a mesta popuniti širim izborom igrača.
 - Filtrirani timovi (Real, Baskonija, Partizan) u celoj ponudi ispod 23/42 (55%), isto kao ostali (54%) – filter danas nije pomogao; pratiti.
 - Opsezi: naših 45 prošlo 22% (−13,7 jed) prema 32% cele ponude – loš dan za model opsega.
+- 26.11.: r14d2-48 isplaćen 29.728 umesto 30.590 po kvotama iz plana – verovatno pale kvote između plana i uplate (stvarna kvota ~256,3 uz bonus 16%). Bonus za osmice ostaje 16%; pravu isplatu upisivati iz naloga.
